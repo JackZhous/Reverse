@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <Button android:textSize="15.0sp" android:textColor="#ff666666" android:layout_gravity="center_vertical" android:id="@id/btn_negative" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60.0dip" android:text="@string/dlg_negative" />
+        <Button android:textSize="15.0sp" android:textColor="#ff0bbe06" android:layout_gravity="center|right" android:id="@id/btn_positive" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="60.0dip" android:text="@string/dlg_positive" />
+    </FrameLayout>
+    <View android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <com.iqiyi.danmaku.redpacket.widget.WheelView android:id="@id/wv_street_picker" android:layout_width="fill_parent" android:layout_height="280.0dip" />
+</LinearLayout>

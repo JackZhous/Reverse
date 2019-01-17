@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/CardModelBase"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/ad_two_first_image" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="1.0px" android:scaleType="centerCrop" android:layout_weight="1.0" fresco:viewAspectRatio="1.765" fresco:placeholderImage="@drawable/phone_category_detail_rec_horizontal_big_default" fresco:placeholderImageScaleType="fitXY" fresco:pressedStateOverlayImage="@color/card_poster_mask_black_alpha_40" />
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/ad_two_second_image" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:scaleType="centerCrop" android:layout_weight="1.0" fresco:viewAspectRatio="1.765" fresco:placeholderImage="@drawable/phone_category_detail_rec_horizontal_big_default" fresco:placeholderImageScaleType="fitXY" fresco:pressedStateOverlayImage="@color/card_poster_mask_black_alpha_40" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip">
+        <TextView android:id="@id/ad_two_meta_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" style="@style/MetaTitle" />
+        <org.qiyi.basecore.widget.OuterFrameTextView android:id="@id/ad_two_meta_round_text" android:paddingLeft="5.0dip" android:paddingTop="1.0dip" android:paddingRight="5.0dip" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/ad_two_meta_text" android:layout_centerVertical="true" android:layout_marginStart="5.0dip" style="@style/MetaSubTitle" />
+        <org.qiyi.basecore.widget.OuterFrameTextView android:textSize="@dimen/card_text_size_12dp" android:textColor="@color/color_white" android:gravity="center" android:id="@id/download_text" android:layout_width="65.0dip" android:layout_height="26.0dip" android:text="@string/ad_download" android:layout_alignParentRight="true" android:layout_centerVertical="true" fresco:outer_frame="round_padding" fresco:out_frame_bg="@color/green_mormal" />
+    </RelativeLayout>
+</LinearLayout>

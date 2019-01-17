@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.iqiyi.paopao.middlecommon.ui.view.ptr.CommonPtrListView android:id="@id/pull_to_refresh_list" android:background="@color/color_ffffff" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" android:dividerHeight="0.0dip" android:showDividers="none" />
+        <include android:id="@id/no_network_recommd" android:visibility="gone" layout="@layout/pp_no_network_nocashe_warning_ll" />
+        <include android:id="@id/layout_fetch_data_fail" android:visibility="gone" layout="@layout/pp_layout_fetch_data_fail" />
+        <include android:id="@id/layout_fetch_data_loading" android:visibility="gone" layout="@layout/pp_circle_loading_layout" />
+    </RelativeLayout>
+</RelativeLayout>

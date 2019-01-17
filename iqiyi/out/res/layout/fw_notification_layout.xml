@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="64.0dip">
+        <ImageView android:id="@id/fw_noti_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/fw_noti_text_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_toLeftOf="@id/fw_noti_btn" android:layout_toRightOf="@id/fw_noti_icon" android:layout_centerVertical="true">
+            <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/fw_noti_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="花千骨" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:ellipsize="end" android:id="@id/fw_noti_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="等待中" android:maxLines="2" />
+        </LinearLayout>
+        <Button android:id="@id/fw_noti_btn" android:background="@drawable/fw_noti_del_btn" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</FrameLayout>

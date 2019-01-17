@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.iqiyi.video.image.PlayerDraweView android:id="@id/player_bg" android:background="@color/player_portriat_outsite_top_bg_color" android:layout_width="fill_parent" android:layout_height="200.0dip" />
+    <ImageView android:id="@id/player" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/player_portrait_playerarea_player" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/back_player" android:background="@drawable/qiyi_sdk_player_portrait_btn_back" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_alignParentTop="true" />
+</RelativeLayout>

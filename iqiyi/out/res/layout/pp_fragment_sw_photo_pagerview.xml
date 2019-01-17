@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.iqiyi.paopao.middlecommon.components.details.views.VerticalPullDownLayout android:id="@id/main_photo_pagerview" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.iqiyi.paopao.middlecommon.views.HorizontalPullRefreshLayout android:id="@id/pp_horizontal_pull_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.iqiyi.paopao.middlecommon.components.details.views.ImagePreviewViewPager android:id="@id/sw_download_viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.iqiyi.paopao.middlecommon.components.details.views.HorizontalPullHeadView android:layout_width="100.0dip" android:layout_height="fill_parent" />
+        </com.iqiyi.paopao.middlecommon.views.HorizontalPullRefreshLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/sw_download_viewGroup" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="bottom|center" android:layout_gravity="top" android:id="@id/sw_photopager_top_container" android:background="@color/transparent" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="64.0dip">
+        <TextView android:textSize="16.0dip" android:textColor="@color/color_cccccc" android:gravity="center" android:id="@id/sw_photopager_top" android:background="@drawable/pp_sw_feed_preview_textview_bg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="25.0dip" android:minWidth="60.0dip" android:includeFontPadding="false" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:id="@id/sw_photopager_bottom" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginBottom="15.0dip">
+        <Button android:textSize="14.0dip" android:textColor="@color/color_ffffff" android:id="@id/sw_photopager_detail" android:background="@drawable/pp_sw_feed_preview_btn_save_bg" android:layout_width="64.0dip" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:text="详情" />
+        <Button android:textSize="14.0dip" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@id/sw_photopager_save" android:background="@drawable/pp_sw_feed_preview_btn_save_bg" android:layout_width="64.0dip" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/pp_paopao_viewpager_save" android:layout_toRightOf="@id/sw_photopager_detail" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sw_photopager_sum_up_layout" android:background="@drawable/pp_sw_feed_preview_btn_save_bg" android:paddingLeft="17.0dip" android:paddingRight="17.0dip" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true">
+            <TextView android:textSize="14.0dip" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@id/sw_photopager_comment" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/pp_qz_feed_comments_white_new" android:drawablePadding="5.0dip" />
+            <View android:background="#40ffffff" android:layout_width="1.0px" android:layout_height="15.0dip" />
+            <LinearLayout android:gravity="center" android:id="@id/sw_photopager_like_layout" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/sw_photopager_like_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pp_qz_feed_unlike_white_new" />
+                <TextView android:textSize="14.0dip" android:textColor="@color/color_ffffff" android:gravity="center|left" android:id="@id/sw_photopager_like_tv" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</com.iqiyi.paopao.middlecommon.components.details.views.VerticalPullDownLayout>

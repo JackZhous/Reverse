@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/im_message_content_circle_padding_right" android:paddingRight="@dimen/im_message_content_circle_padding_right" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/tv_msg_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/im_mp_message_timestamp_margin_top" style="@style/PPTextView.TimeStamp" />
+    <com.iqiyi.im.chat.view.message.RichLinkMessageView android:id="@id/pp_rich_link_single_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/im_mp_message_to_margin_top"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</LinearLayout>

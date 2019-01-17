@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/qixiu_bg" android:paddingLeft="@dimen/card_padding_horizontal" android:paddingRight="@dimen/card_padding_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecard.common.widget.HorViewGroup android:id="@id/focus_group" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.qiyi.card.view.FocusGroupStatusBar android:id="@id/focusBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layout_alignBottom="@id/focus_group" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:id="@id/meta_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/focus_group">
+        <TextView android:layout_gravity="center_vertical" android:id="@id/meta_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" style="@style/MetaTitle" />
+        <TextView android:layout_gravity="center_vertical" android:id="@id/meta_sub_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/meta_title" style="@style/MetaSubTitle" />
+    </RelativeLayout>
+</RelativeLayout>

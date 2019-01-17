@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/spliteImg" android:background="@drawable/card_model_line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <TextView android:textSize="@dimen/default_middle" android:textColor="@color/default_color_middle" android:id="@id/groupTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选集" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/expandImg" android:background="@drawable/player_comment_detail_info_text_export" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

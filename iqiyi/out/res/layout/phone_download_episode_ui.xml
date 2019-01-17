@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/download_episode_main" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.video.qyskin.view.SkinTitleBar android:id="@id/phone_download_title_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignWithParentIfMissing="true" app:tb_title="@string/offline_video" app:tb_menu="@menu/phone_download_title_menu" />
+    <include layout="@layout/phone_download_vip_try_tips" />
+    <RelativeLayout android:id="@id/download_list_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/phoneDownloadSdcardLayout" android:layout_below="@id/download_vip_accelerate">
+        <ListView android:id="@id/phone_download_list" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="@null" android:divider="@null" android:layout_above="@id/whiteline" android:layout_alignParentTop="true" android:layout_alignWithParentIfMissing="true" />
+        <View android:id="@id/whiteline" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/phoneDownloadSdcardLayout" android:background="#ffc7c7c7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:id="@id/phone_download_storage_divider_line" android:background="#ffcecece" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <ProgressBar android:id="@id/phoneDownloadProgressBarNew" android:layout_width="fill_parent" android:layout_height="20.0dip" android:max="100" android:progress="50" android:indeterminate="false" android:progressDrawable="@drawable/phone_download_progress" style="?android:attr/progressBarStyleHorizontal" />
+        <TextView android:textSize="@dimen/phone_inc_download_sdcardsize" android:textColor="#ff4d4d4d" android:id="@id/phoneDownloadSdcard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/phone_download_store" android:maxLines="1" android:layout_below="@id/phone_download_storage_divider_line" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/deleteMenuLayout" android:background="@drawable/phone_download_shadow_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/phone_download_text_big_size" android:textColor="@color/phone_download_color_black" android:gravity="center" android:id="@id/menu_item_select_all" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/phone_bottom_select_all_text" android:layout_weight="1.0" />
+            <View android:background="@color/phone_download_color_divider" android:layout_width="1.0dip" android:layout_height="20.0dip" />
+            <TextView android:textSize="@dimen/phone_download_text_big_size" android:textColor="@color/phone_download_color_red" android:gravity="center" android:id="@id/menu_item_delete_video" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/phone_bottom_delete_text_no_num" android:layout_weight="1.0" />
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

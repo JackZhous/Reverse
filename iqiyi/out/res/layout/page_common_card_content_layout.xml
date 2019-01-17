@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/page_subscribe_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/progress_layout" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/lab_footer" />
+    <ListView android:id="@id/content_listview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:scrollingCache="false" android:cacheColorHint="@android:color/transparent" android:divider="@null" />
+    <include android:id="@id/content_rl_no_data_exception" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/phone_load_data_exception" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingBottom="50.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="13.0dip" android:textColor="#ff666666" android:gravity="center" android:id="@id/empty_text" android:paddingBottom="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_login_hint" android:drawableTop="@drawable/phone_my_reservation_empty" android:drawablePadding="10.0dip" />
+        <TextView android:textSize="13.0dip" android:textColor="#ffffffff" android:id="@id/login_button" android:background="@drawable/phone_my_submit_bg" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/phone_my_account_login_now" android:layout_below="@id/empty_text" />
+    </LinearLayout>
+</RelativeLayout>

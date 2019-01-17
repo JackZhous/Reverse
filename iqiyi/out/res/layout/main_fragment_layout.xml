@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/main_rl_tabs" android:background="@color/navigation_bg_color" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <View android:id="@id/bottom_divider" android:background="#ffe7e7e7" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+        <org.qiyi.android.video.view.MainPagerSlidingTabStrip android:id="@id/main_psts" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="42.0dip" android:layout_above="@id/bottom_divider" android:layout_centerVertical="true" app:pstsIndicatorColor="@color/default_grean" app:pstsDividerColor="#00000000" app:pstsIndicatorHeight="3.0dip" app:pstsTabPaddingLeftRight="12.5dip" app:pstsScrollToCenter="true" />
+        <RelativeLayout android:id="@id/main_btn_category_layout" android:paddingRight="12.0dip" android:layout_width="41.5dip" android:layout_height="fill_parent" android:layout_above="@id/bottom_divider" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/main_btn_category" android:layout_width="17.0dip" android:layout_height="17.0dip" android:layout_marginTop="7.0dip" android:src="@drawable/top_navi_selector" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="9.0sp" android:textColor="@color/ff666666" android:id="@id/main_txt_navi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.5dip" android:text="@string/category_navi" android:layout_below="@id/main_btn_category" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <ImageView android:layout_width="3.0dip" android:layout_height="41.0dip" android:src="@drawable/top_navi_shadow" android:layout_toLeftOf="@id/main_btn_category_layout" android:layout_above="@id/bottom_divider" />
+    </RelativeLayout>
+    <com.qiyi.video.pages.MainViewPager android:id="@id/main_vp_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/main_rl_tabs" />
+    <include android:id="@id/content_rl_no_data_exception" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/phone_load_data_exception" />
+</merge>

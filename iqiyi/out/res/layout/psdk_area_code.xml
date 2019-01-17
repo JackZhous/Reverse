@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.qiyi.android.video.ui.account.view.PRelativeLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.android.video.ui.account.view.PTextView android:textSize="15.0dip" android:textColor="@color/psdk_text_color" android:gravity="center_vertical" android:id="@id/phone_register_region" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/psdk_area_selected_margin_left" />
+    <org.qiyi.android.video.ui.account.view.PTextView android:textSize="15.0dip" android:textColor="@color/psdk_text_color" android:gravity="center_vertical" android:id="@id/phone_register_area_code" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/phone_register_region" />
+</org.qiyi.android.video.ui.account.view.PRelativeLayout>

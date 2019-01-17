@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/svUnCompleted" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.iqiyi.circle.view.customview.QZTaskHeaderView android:id="@id/qzTaskHead" android:background="@drawable/pp_circle_task_bar_list_header" android:layout_width="fill_parent" android:layout_height="105.0dip" android:layout_marginBottom="10.0dip" />
+        <android.support.v7.widget.RecyclerView android:id="@id/rvTodayTask" android:background="@color/pp_color_ffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/qzTaskHead" />
+        <View android:id="@id/todayTaskGap" android:background="@color/pp_color_e7e7e7" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="14.0dip" android:layout_below="@id/rvTodayTask" />
+        <include android:id="@id/laborReward" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/qzTaskHead" layout="@layout/pp_circle_task_labor_reward" />
+        <android.support.v7.widget.RecyclerView android:id="@id/rvDailyTask" android:background="@color/pp_color_ffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/laborReward" />
+    </RelativeLayout>
+</ScrollView>

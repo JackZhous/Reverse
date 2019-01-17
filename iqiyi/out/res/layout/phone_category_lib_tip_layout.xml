@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:layout_gravity="center_horizontal" android:id="@id/phone_category_lib_tip_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/phone_category_exception_tip" />
+        <TextView android:textSize="13.0dip" android:textColor="#ff666666" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/phone_category_lib_tip_text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/phone_loading_data_fail" />
+        <TextView android:textSize="13.0dip" android:textColor="#ff666666" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/phone_category_lib_tip_text2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+    </LinearLayout>
+</RelativeLayout>

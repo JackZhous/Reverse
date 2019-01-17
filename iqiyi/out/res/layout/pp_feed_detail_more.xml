@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/pp_feed_detail_pop_rename" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_marginRight="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

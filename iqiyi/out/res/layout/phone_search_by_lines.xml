@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.android.video.skin.view.SkinStatusBar android:id="@id/status_bar_mask" android:background="@color/title_bar_bg_color" android:layout_width="fill_parent" android:layout_height="@dimen/status_bar_height" />
+    <include android:id="@id/searchbar" android:layout_width="fill_parent" android:layout_height="41.0dip" android:layout_below="@id/status_bar_mask" layout="@layout/phone_search_bar" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/content_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/searchbar">
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff333333" android:gravity="center" android:id="@id/txt_left" android:layout_width="wrap_content" android:layout_height="60.0dip" android:layout_marginLeft="12.0dip" android:text="@string/search_by_image_hot" />
+        <android.support.v7.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="-10.0dip" android:layout_marginRight="12.0dip" android:layout_below="@id/txt_left" />
+    </RelativeLayout>
+    <TextView android:textSize="13.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/layout_error" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/phone_loading_data_fail" android:drawableTop="@drawable/phone_empty_data_img" android:drawablePadding="10.0dip" android:layout_centerInParent="true" android:lineSpacingExtra="2.0dip" />
+    <include android:id="@id/search_voice_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/phoneSearchVoiceSubmit" android:layout_below="@id/searchbar" layout="@layout/phone_search_voice_view" />
+    <include android:id="@id/search_voice_title_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/phoneSearchVoiceSubmit" android:layout_below="@id/searchbar" layout="@layout/phone_search_voice_title_view" />
+    <include android:id="@id/search_voice_result_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/phoneSearchVoiceSubmit" android:layout_below="@id/searchbar" layout="@layout/phone_search_voice_result_view" />
+    <include android:id="@id/phoneSearchVoiceSubmit" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_alignParentBottom="true" layout="@layout/phone_search_voice_button" />
+</RelativeLayout>

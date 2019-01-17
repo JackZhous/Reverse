@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="bottom|center|right" android:id="@id/flTask" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/flTaskBar" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="right" android:id="@id/ivGift" android:visibility="visible" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/pp_circle_task_gift_icon" />
+        <ImageView android:layout_gravity="right" android:id="@id/ivTaskEntrance" android:visibility="visible" android:layout_width="38.0dip" android:layout_height="114.0dip" android:layout_marginTop="15.0dip" android:src="@drawable/pp_circle_task_float_entrance_new" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/white" android:gravity="center" android:layout_gravity="right" android:id="@id/tvTaskCount" android:background="@drawable/pp_circle_undo_task_bubble" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="9.5dip" android:text="9" />
+    </FrameLayout>
+</RelativeLayout>

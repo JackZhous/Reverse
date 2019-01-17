@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ico_rec" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/title_rc_bg_vip" android:layout_alignParentRight="true" />
+    <TextView android:textSize="8.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/remindCount" android:background="@drawable/phone_common_reddot_ball" android:visibility="invisible" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginTop="-4.0dip" android:layout_marginRight="-4.0dip" android:layout_alignTop="@id/ico_rec" android:layout_alignRight="@id/ico_rec" />
+    <ImageView android:id="@id/ico_msg" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/ico_top_msg_bg_vip" android:layout_toLeftOf="@id/ico_rec" />
+    <TextView android:textSize="8.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/reddot_msg" android:background="@drawable/phone_common_reddot_ball" android:visibility="invisible" android:layout_width="9.0dip" android:layout_height="9.0dip" android:layout_marginTop="-4.0dip" android:layout_marginRight="-4.0dip" android:layout_alignTop="@id/ico_msg" android:layout_alignRight="@id/ico_msg" />
+</RelativeLayout>

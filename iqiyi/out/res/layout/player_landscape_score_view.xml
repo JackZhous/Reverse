@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/album_model" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/star_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/land_rating_icon" />
+    <FrameLayout android:layout_gravity="left" android:id="@id/score_star_frame" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_toRightOf="@id/star_icon">
+        <RelativeLayout android:id="@id/score_star_relative" android:background="@drawable/player_land_score_star_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+            <com.iqiyi.qyplayercardview.view.BetterRatingBar android:id="@id/rating_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" app:itemsNum="5" app:itemWidth="42.0dip" app:itemHeight="42.0dip" app:emptyRateItem="@drawable/rating_empty_star" app:halfRateItem="@drawable/rating_half_star" app:fullRateItem="@drawable/rating_full_star" app:enableSwipeRate="false" app:displayRate="0" />
+            <TextView android:id="@id/comment_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:maxHeight="30.0dip" android:layout_below="@id/rating_bar" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/text_color_rate_movie_submit_btn" android:gravity="center" android:id="@id/movie_rate_submit_btn" android:background="@drawable/bg_rate_movie_submit_btn" android:layout_width="80.0dip" android:layout_height="30.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="6.0dip" android:text="@string/movie_rating_submit_text" android:layout_below="@id/rating_bar" android:layout_alignRight="@id/rating_bar" />
+            <ImageView android:id="@id/close_score_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/land_score_close_icon" android:layout_toRightOf="@id/rating_bar" />
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

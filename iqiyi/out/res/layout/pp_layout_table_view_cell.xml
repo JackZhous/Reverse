@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/view_cell_header" android:background="@color/user_info_background_color" android:layout_width="fill_parent" android:layout_height="11.0dip" />
+    <View android:id="@id/view_cell_separate_dark_up" android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:id="@id/content_body_layout" android:background="@drawable/pp_selector_table_cell" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <ImageView android:id="@id/iv_cell_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/im_icon_app_logo_small" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+        <RelativeLayout android:id="@id/tv_cell_name_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/iv_cell_icon" android:layout_centerVertical="true">
+            <TextView android:textSize="16.0sp" android:textColor="@color/color_333333" android:id="@id/tv_cell_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Name" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:id="@id/tv_cell_sub_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="SubName" android:layout_below="@id/tv_cell_name" />
+        </RelativeLayout>
+        <ImageView android:id="@id/iv_cell_arrow_right" android:paddingLeft="12.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/im_icon_table_cell_details_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+        <ImageView android:gravity="right" android:id="@id/tv_cell_icon" android:visibility="invisible" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/im_icon_qrcode" android:layout_toLeftOf="@id/iv_cell_arrow_right" android:layout_centerVertical="true" android:contentDescription="@null" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/cell_details" android:gravity="right" android:id="@id/tv_cell_details" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/iv_cell_arrow_right" android:layout_toRightOf="@id/tv_cell_name_layout" android:layout_centerVertical="true" />
+        <ToggleButton android:id="@id/tb_cell_toggle" android:background="@drawable/im_toggle_button_bg" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:textOn="" android:textOff="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:id="@id/view_cell_separate_dark_down" android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <View android:id="@id/view_cell_footer" android:background="@color/user_info_background_color" android:layout_width="fill_parent" android:layout_height="11.0dip" />
+</LinearLayout>

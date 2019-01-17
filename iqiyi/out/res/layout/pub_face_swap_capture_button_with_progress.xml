@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:progress="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/outside_circle" android:layout_width="106.0dip" android:layout_height="106.0dip" android:src="@drawable/pub_outside_circle_selector" android:scaleType="center" android:layout_centerInParent="true" />
+    <View android:id="@id/inside_circle" android:background="@drawable/pub_inside_circle_selector" android:layout_width="76.0dip" android:layout_height="76.0dip" android:layout_centerInParent="true" />
+    <com.iqiyi.publisher.ui.view.SmoothRoundProgressBar android:id="@id/progressBar" android:layout_width="106.0dip" android:layout_height="106.0dip" android:layout_centerInParent="true" android:layout_centerHorizontal="true" progress:textColor="@color/pub_common_green" progress:roundColor="@color/pub_transparent" progress:roundProgressColor="@color/pub_common_green" progress:roundWidth="6.0dip" progress:textSize="12.0sp" progress:max="100" progress:startAngle="270" progress:textIsDisplayable="false" />
+    <TextView android:textSize="16.0sp" android:textColor="#ff0bbe06" android:id="@id/tv_capture_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerInParent="true" />
+    <com.iqiyi.publisher.ui.view.AnimationTickView android:id="@id/iv_capture_success_tick" android:visibility="gone" android:layout_width="35.0dip" android:layout_height="25.0dip" android:layout_centerInParent="true" />
+</RelativeLayout>

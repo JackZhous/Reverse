@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/container" android:background="@drawable/card_feed_share_guide_down_bg" android:layout_width="164.0dip" android:layout_height="112.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="4.0dip">
+        <org.qiyi.basecard.common.widget.MetaView android:id="@id/guide_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" app:text_size="13.0dip" app:text_color="@color/card_feed_like_share_guide2" app:text_gravity="center_horizontal" />
+        <org.qiyi.basecard.common.widget.ButtonView android:id="@id/btn_done" android:background="@drawable/card_feed_like_share_guide_btn_bg2" android:layout_width="90.0dip" android:layout_height="28.0dip" android:layout_marginTop="7.0dip" android:layout_below="@id/guide_text" android:layout_centerHorizontal="true" app:text_size="13.0dip" app:text_color="@color/color_white" />
+    </RelativeLayout>
+    <org.qiyi.basecard.common.widget.ButtonView android:layout_gravity="center|right|top" android:id="@id/btn_cancel" android:background="@drawable/card_feed_share_guide_cancel" android:layout_width="25.0dip" android:layout_height="25.0dip" />
+</FrameLayout>

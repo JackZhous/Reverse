@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/vip_cancel_renew_dialog_bg" android:layout_width="300.0dip" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textColor="#ffc8a06a" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:text="@string/vip_cancel_confirm_dialog_title" />
+        <LinearLayout android:orientation="vertical" android:id="@id/error_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vip_cancel_confirm_dialog_error" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/vip_cancel_confirm_dialog_error_tips1" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/vip_cancel_confirm_dialog_error_tips2" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/items_layout_1" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip">
+            <LinearLayout android:orientation="vertical" android:id="@id/item_1_1" android:layout_width="122.0dip" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip">
+                <org.qiyi.basecore.widget.QiyiDraweeView android:layout_gravity="center_horizontal" android:id="@id/item_img_1_1" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:gravity="left" android:id="@id/item_txt_1_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/item_1_2" android:layout_width="122.0dip" android:layout_height="wrap_content" android:layout_marginRight="24.0dip" android:layout_alignParentRight="true">
+                <org.qiyi.basecore.widget.QiyiDraweeView android:layout_gravity="center_horizontal" android:id="@id/item_img_1_2" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:gravity="left" android:id="@id/item_txt_1_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/items_layout_2" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip">
+            <LinearLayout android:orientation="vertical" android:id="@id/item_2_1" android:layout_width="122.0dip" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip">
+                <org.qiyi.basecore.widget.QiyiDraweeView android:layout_gravity="center_horizontal" android:id="@id/item_img_2_1" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:gravity="left" android:id="@id/item_txt_2_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/item_2_2" android:layout_width="122.0dip" android:layout_height="wrap_content" android:layout_marginRight="24.0dip" android:layout_alignParentRight="true">
+                <org.qiyi.basecore.widget.QiyiDraweeView android:layout_gravity="center_horizontal" android:id="@id/item_img_2_2" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:gravity="left" android:id="@id/item_txt_2_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="#fffefefe" android:gravity="center" android:id="@id/close_button" android:background="@drawable/vip_cancel_renew_dialog_left_button_bg" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="@string/vip_cancel_confirm_dialog_close_button" android:layout_weight="1.0" />
+            <TextView android:textSize="16.0sp" android:textColor="#ffc9a16d" android:gravity="center" android:id="@id/cancel_button" android:background="@drawable/vip_cancel_renew_dialog_right_button_bg" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="@string/vip_cancel_confirm_dialog_cancel_button" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

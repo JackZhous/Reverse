@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dip" android:textColor="@color/top_history_music_bg_selected" android:ellipsize="end" android:id="@id/tv_ti1tle1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="标题标题标题标题标题标题" android:maxLines="2" />
+    <TextView android:textSize="11.0dip" android:textColor="@color/a3_text" android:ellipsize="end" android:id="@id/tv_ti1tle2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.5dip" android:text="标题标题标题标题标题标题" android:singleLine="true" android:layout_below="@id/tv_ti1tle1" />
+    <TextView android:textSize="11.0dip" android:textColor="@color/a3_text" android:ellipsize="end" android:id="@id/tv_ti1tle3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="标题标题标题标题标题标题" android:singleLine="true" android:layout_below="@id/tv_ti1tle2" />
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="15.0dip" android:textColor="@color/p_color_999999" android:id="@id/content_privlige" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/p_tennis_content_info" android:layout_centerInParent="true" />
+        <View android:background="@color/p_color_7fcccccc" android:layout_width="13.0dip" android:layout_height="1.0dip" android:layout_toLeftOf="@id/content_privlige" android:layout_centerVertical="true" />
+        <View android:background="@color/p_color_7fcccccc" android:layout_width="13.0dip" android:layout_height="1.0dip" android:layout_marginLeft="6.0dip" android:layout_toRightOf="@id/content_privlige" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/firstLine" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.25">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/vip_privilege_aotc" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/p_color_666666" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/privilege_tennis_one" android:maxLines="1" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.25">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/vip_privilege_wta" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/p_color_666666" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/privilege_tennis_two" android:maxLines="1" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.25">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/vip_privilege_atp" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/p_color_666666" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/privilege_tennis_three" android:maxLines="1" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.25">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/vip_privilege_chinaopen" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/p_color_666666" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/privilege_tennis_four" android:maxLines="1" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/secondLine" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="28.0dip">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.25">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/vip_privilege_shmaster" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/p_color_666666" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/privilege_tennis_five" android:maxLines="1" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.25">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/vip_privilege_lvc" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/p_color_666666" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/privilege_tennis_six" android:maxLines="1" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.25">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/vip_privilege_historygame" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/p_color_666666" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/privilege_tennis_seven" android:maxLines="1" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.25">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/vip_privilege_nosharetalk" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/p_color_666666" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/privilege_tennis_eight" android:maxLines="1" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="15.0dip" android:textColor="@color/p_color_999999" android:id="@id/func_privlige" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/p_tennis_func_info" android:layout_centerInParent="true" />
+        <View android:background="@color/p_color_7fcccccc" android:layout_width="13.0dip" android:layout_height="1.0dip" android:layout_toLeftOf="@id/func_privlige" android:layout_centerVertical="true" />
+        <View android:background="@color/p_color_7fcccccc" android:layout_width="13.0dip" android:layout_height="1.0dip" android:layout_marginLeft="6.0dip" android:layout_toRightOf="@id/func_privlige" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/thirdLine" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/p_dimen_24">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.25">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/vip_privilege_6" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/p_color_666666" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/privilege_eleven" android:maxLines="1" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.25">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/vip_privilege_7" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/p_color_666666" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/privilege_seven" android:maxLines="1" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.25">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/vip_privilege_5" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/p_color_666666" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/privilege_five" android:maxLines="1" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.25">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/vip_privilege_dubi_icon" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/p_color_666666" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/privilege_dubi" android:maxLines="1" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/p_color_e5e5e5" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

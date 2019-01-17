@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/title_bar_live" android:visible="false" android:title="@string/ugc_live_record_title" />
+    <item android:id="@id/title_bar_feedback" android:visible="false" android:title="@string/phone_my_setting_help_and_feedback" />
+    <item android:id="@id/title_bar_common_text" android:visible="false" android:title="" />
+    <item android:icon="@drawable/top_close" android:id="@id/title_bar_common_icon" android:visible="false" android:title="" />
+    <item android:icon="@drawable/title_bar_search" android:id="@id/title_bar_search" android:visible="false" />
+    <item android:icon="@drawable/title_bar_common_share" android:id="@id/title_bar_share" android:visible="false" />
+</menu>

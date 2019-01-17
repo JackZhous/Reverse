@@ -1,0 +1,1235 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.qiyi.video" platformBuildVersionCode="26" platformBuildVersionName="8.0.0">
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.qiyi.video"/>
+    <permission android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.qiyi.video" android:protectionLevel="normal"/>
+    <uses-permission android:name="com.xiaomi.permission.AUTH_SERVICE"/>
+    <uses-permission android:name="com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="com.google.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.android.launcher3.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.android.launcher2.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.bbk.launcher2.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="com.qiyi.video.permission.MIPUSH_RECEIVE"/>
+    <permission android:name="com.qiyi.video.permission.MIPUSH_RECEIVE" android:protectionLevel="signatureOrSystem"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-feature android:glEsVersion="0x00020000"/>
+    <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="true"/>
+    <uses-feature android:name="android.hardware.sensor.gyroscope" android:required="true"/>
+    <uses-feature android:name="android.software.vr.mode" android:required="false"/>
+    <uses-feature android:name="android.hardware.vr.high_performance" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen.multitouch" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen.multitouch.distinct" android:required="false"/>
+    <application android:debuggable="true" android:allowBackup="false" android:hardwareAccelerated="true" android:icon="@drawable/qiyi_icon" android:label="@string/app_name" android:largeHeap="true" android:name="com.qiyi.video.VideoApplication" android:networkSecurityConfig="@xml/network_security_config" android:supportsRtl="true" android:theme="@style/QYAppTheme" android:uiOptions="splitActionBarWhenNarrow" android:vmSafeMode="@bool/lessEuqalJellyBean">
+        <meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="AZLOzsfT3ih6ZERYeY9QLyII"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="android.3dtouch.launcher_menu" android:resource="@xml/launcher_menu"/>
+        <meta-data android:name="com.sec.android.support.multiwindow" android:value="true"/>
+        <meta-data android:name="com.sec.android.multiwindow.DEFAULT_SIZE_W" android:resource="@dimen/app_defaultsize_w"/>
+        <meta-data android:name="com.sec.android.multiwindow.DEFAULT_SIZE_H" android:resource="@dimen/app_defaultsize_h"/>
+        <meta-data android:name="com.sec.android.multiwindow.MINIMUM_SIZE_W" android:resource="@dimen/app_minimumsize_w"/>
+        <meta-data android:name="com.sec.android.multiwindow.MINIMUM_SIZE_H" android:resource="@dimen/app_minimumsize_h"/>
+        <meta-data android:name="com.sec.android.multiwindow.STYLE" android:value="fixedRatio"/>
+        <meta-data android:name="com.push.baidu.version" android:value="5.7.0.95"/>
+        <meta-data android:name="com.push.huawei.version" android:value="2.7.05"/>
+        <meta-data android:name="com.push.xiaomi.version" android:value="3.1.2"/>
+        <meta-data android:name="com.push.oppo.version" android:value="1.0.1"/>
+        <meta-data android:name="unityplayer.SkipPermissionsDialog" android:value="true"/>
+​
+<meta-data android:name="HMT_APPKEY" android:value="UA-iqiyi-270001"/>
+        <meta-data android:name="HMT_CHANNEL" android:value="iqiyi"/>
+        <meta-data android:name="com.baidu.speech.APP_ID" android:value="7621379"/>
+        <meta-data android:name="com.baidu.speech.API_KEY" android:value="M5zwhM3LhncHpOTtomWHVM7B"/>
+        <meta-data android:name="com.baidu.speech.SECRET_KEY" android:value="b67a15cfc179f1e55fb931128bb14a54"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.activitys.DuboActivity" android:screenOrientation="portrait" android:theme="@style/activityDialogStyle"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.plugin.ui.views.activity.PluginBaseActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.plugin.ui.views.activity.PluginActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation"/>
+        <service android:exported="false" android:name="org.qiyi.android.plugin.ipc.PluginBootHelpService"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.activitys.TopActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.activitys.TopicActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.activitys.ProgramActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.activitys.AdActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.activitys.PhoneMessageNewActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation"/>
+        <activity android:name="org.iqiyi.video.livechat.redPacket.TransparentWebActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.activitys.pps.ChannelListActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.activitys.ReLaunchAppActivity" android:process=":relaunch" android:screenOrientation="behind" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.qiyi.video.WelcomeActivity" android:screenOrientation="portrait" android:theme="@style/ContentOverlay1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="qyvideo/*" android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="m.iqiyi.com"/>
+                <data android:host="www.iqiyi.com"/>
+                <data android:path="/"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="mobile"/>
+                <data android:scheme="iqiyi"/>
+                <data android:path="/launcher"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="org.qiyi.android.video.MainActivity" android:screenOrientation="portrait" android:theme="@style/QiyiMainTheme" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="org.qiyi.android.video.MAIN"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="self"/>
+                <data android:host="com.qiyi.video"/>
+                <data android:scheme="video"/>
+                <data android:scheme="qiyimobile"/>
+                <data android:pathPattern=".*\\.madeindexpage"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.qiyi.video" android:path="/global_search" android:scheme="flyme_3dtouch"/>
+                <data android:host="com.qiyi.video" android:path="/play_record" android:scheme="flyme_3dtouch"/>
+                <data android:host="com.qiyi.video" android:path="/download_videos" android:scheme="flyme_3dtouch"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="mobile"/>
+                <data android:scheme="iqiyi"/>
+                <data android:path="/home"/>
+                <data android:path="/mine"/>
+                <data android:path="/lehas"/>
+                <data android:path="/vip"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.qiyi.video.main"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="org.qiyi.android.search.view.PhoneSearchActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="mobile"/>
+                <data android:scheme="iqiyi"/>
+                <data android:path="/search"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="org.qiyi.android.search.view.ImageSearchCameraActivity" android:screenOrientation="portrait" android:theme="@style/ContentOverlay1" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="org.qiyi.android.search.view.SearchByImageActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="mobile"/>
+                <data android:scheme="iqiyi"/>
+                <data android:path="/searchimg"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="org.qiyi.android.search.view.SearchByImageResultActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="org.qiyi.android.search.view.SearchByLinesActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="mobile"/>
+                <data android:scheme="iqiyi"/>
+                <data android:path="/searchlines"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="org.qiyi.android.search.view.SearchByLinesResultActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="org.qiyi.android.search.view.PhoneSearchActivityForNotifycation" android:screenOrientation="portrait" android:taskAffinity="com.iqiyi.video.search" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleInstance" android:name="org.qiyi.android.search.view.PhoneSearchSettingActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="true" android:name="org.qiyi.android.video.activitys.CategoryDetailActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="org.qiyi.video.mymain.setting.PhoneSettingNewActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation">
+            <intent-filter>
+                <action android:name="org.qiyi.android.video.activitys.PhoneSettingNewActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.activitys.DiscoverServiceManagerActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.activitys.PhoneVipSuperTheatreActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="true" android:launchMode="singleTask" android:name="org.qiyi.android.video.ui.account.PhoneAccountActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.qiyivideo.phone.account"/>
+                <action android:name="android.intent.action.qiyivideo.phone.fortk.account.com.qiyi.video"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="iqiyi"/>
+                <data android:host="mobile"/>
+                <data android:host="com.qiyi.video"/>
+                <data android:path="/login"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.ui.account.lite.LiteAccountActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.ui.account.dialog.GuideReLoginActivity" android:screenOrientation="behind" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="org.qiyi.android.video.ui.account.dialog.VerificationPhoneActivity" android:screenOrientation="behind" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.ui.account.areacode.AreaCodeListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.activitys.WebViewActivity4PassportLite" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.baidu.sapi2.share.ShareService">
+            <intent-filter>
+                <action android:name="baidu.intent.action.account.SHARE_SERVICE"/>
+            </intent-filter>
+        </service>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="org.qiyi.android.video.ui.account.sns.BaiduPassBindActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="org.qiyi.android.video.ui.account.sns.BaiduLoginActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.xiaomi.account.openauth.AuthorizeActivity" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="com.xiaomi.account.openauth.action.AUTH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.qiyi.share.model.ShareFBActivity" android:screenOrientation="behind" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:label="@string/app_name" android:name="com.facebook.FacebookActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.ui.account.interflow.AuthorizationActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="true" android:launchMode="singleTask" android:name="org.qiyi.android.video.ui.account.interflow.InterflowActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation"/>
+        <service android:name="com.iqiyi.passportsdk.internal.ipc.UserTrackerService"/>
+        <service android:exported="true" android:name="com.iqiyi.passportsdk.interflow.core.InterflowService">
+            <intent-filter>
+                <action android:name="iqiyi.intent.action.passport.InterflowService"/>
+            </intent-filter>
+        </service>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.activitys.SearchLogActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.ui.account.PassportTestActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation"/>
+        <activity android:configChanges="keyboardHidden|layoutDirection|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="standard" android:name="org.iqiyi.video.activity.PlayerActivity" android:screenOrientation="portrait" android:stateNotNeeded="false" android:theme="@style/Theme.QiyiPlayerTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.qiyivideo.player"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.qiyivideo.player"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="self"/>
+                <data android:scheme="qiyimobile"/>
+                <data android:scheme="qiyinb"/>
+                <data android:scheme="video"/>
+                <data android:pathPattern=".*\\.made"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="iqiyi"/>
+                <data android:host="mobile"/>
+                <data android:path="/player"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:mimeType="video/*" android:scheme="pps_upload"/>
+                <data android:mimeType="video/*" android:scheme="pps_scanfile_pad"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="ppsplay"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:mimeType="video/*"/>
+                <data android:mimeType="application/mp4"/>
+                <data android:mimeType="*/rmvb"/>
+                <data android:mimeType="*/avi"/>
+                <data android:mimeType="*/mkv"/>
+                <data android:mimeType="audio/x-pn-realaudio"/>
+                <data android:mimeType="video/x-ms-asf"/>
+                <data android:mimeType="video/quicktime"/>
+                <data android:mimeType="application/mpeg*"/>
+                <data android:mimeType="application/vnd.rn-realmedia*"/>
+                <data android:mimeType="application/3gpp*"/>
+                <data android:mimeType="application/vnd.3gp*"/>
+                <data android:mimeType="application/vnd.dvb*"/>
+                <data android:mimeType="application/vnd.dolby*"/>
+                <data android:mimeType="application/octet-stream"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:mimeType="video/*" android:scheme="http"/>
+                <data android:mimeType="video/*" android:scheme="rtsp"/>
+                <data android:mimeType="video/*" android:scheme="file"/>
+                <data android:mimeType="video/*" android:scheme="content"/>
+                <data android:mimeType="video/*" android:scheme="mms"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:pathPattern=".*\\.qsv" android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="file"/>
+                <data android:scheme="content"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="ftp"/>
+                <data android:host="*"/>
+                <data android:pathPattern=".*\\.mov"/>
+                <data android:pathPattern=".*\\.3gp"/>
+                <data android:pathPattern=".*\\.m4a"/>
+                <data android:pathPattern=".*\\.3g2"/>
+                <data android:pathPattern=".*\\.mj2"/>
+                <data android:pathPattern=".*\\.wmv"/>
+                <data android:pathPattern=".*\\.ts"/>
+                <data android:pathPattern=".*\\.f4v"/>
+                <data android:pathPattern=".*\\.mpeg"/>
+                <data android:pathPattern=".*\\.mpe"/>
+                <data android:pathPattern=".*\\.m1v"/>
+                <data android:pathPattern=".*\\.mp2"/>
+                <data android:pathPattern=".*\\.mp3"/>
+                <data android:pathPattern=".*\\.mod"/>
+                <data android:pathPattern=".*\\.wma"/>
+                <data android:pathPattern=".*\\.rm"/>
+                <data android:pathPattern=".*\\.rmvb"/>
+                <data android:pathPattern=".*\\.vob"/>
+                <data android:pathPattern=".*\\.ogg"/>
+                <data android:pathPattern=".*\\.divx"/>
+                <data android:pathPattern=".*\\.qt"/>
+                <data android:pathPattern=".*\\.mpg"/>
+                <data android:pathPattern=".*\\.pfv"/>
+                <data android:pathPattern=".*\\.flv"/>
+                <data android:pathPattern=".*\\.mkv"/>
+                <data android:pathPattern=".*\\.avi"/>
+                <data android:pathPattern=".*\\.asf"/>
+                <data android:pathPattern=".*\\.m4v"/>
+                <data android:pathPattern=".*\\.mp4"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="org.iqiyi.video.activity.CustomWebViewActivity" android:process=":webview" android:screenOrientation="sensor" android:stateNotNeeded="false" android:theme="@style/Theme.NoBlackScreen"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.iqiyi.video.qyplayersdk.cupid.activity.ADActivity" android:screenOrientation="portrait" android:stateNotNeeded="false" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.iqiyi.video.qyplayersdk.cupid.activity.ADIndependentActivity" android:process=":webview" android:screenOrientation="portrait" android:stateNotNeeded="false" android:theme="@style/Theme.NoBlackScreen"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.qyplayercardview.picturebrowse.PictureBrowseViewActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="org.qiyi.android.video.activitys.OutSiteActivity" android:screenOrientation="portrait" android:stateNotNeeded="false" android:theme="@style/Theme.PageIndicatorDefaults"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="true" android:launchMode="singleTop" android:name="org.qiyi.android.video.activitys.AccountUIActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation"/>
+        <activity android:exported="true" android:name="com.qiyi.video.wxapi.WXEntryActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:exported="true" android:name="com.qiyi.share.model.SinaEntryActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="true" android:name="com.qiyi.video.apshare.ShareEntryActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.tencent.connect.common.AssistActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:launchMode="singleTask" android:name="org.qiyi.android.plugin.plugins.share.CustomAuthActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="tencent1101069854"/>
+                <data android:scheme="tencent100734807"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTask" android:name="com.tencent.tauth.AuthActivity" android:noHistory="true"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="org.qiyi.android.video.activitys.WebADActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.locale.AreaModeChangeDialogActivity" android:theme="@style/AreaModeChangeDialog" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.activitys.StarInfoActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.activitys.SearchAndRecordForPluginActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="org.qiyi.android.commonphonepad.pushmessage.PushMessageService">
+            <intent-filter>
+                <action android:name="com.qiyi.push.action.MESSAGE"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:name="com.xiaomi.push.service.XMPushService" android:process=":pushservice"/>
+        <service android:enabled="true" android:exported="false" android:name="com.xiaomi.push.service.XMJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":pushservice"/>
+        <service android:enabled="true" android:exported="true" android:name="com.xiaomi.mipush.sdk.PushMessageHandler"/>
+        <service android:enabled="true" android:name="com.xiaomi.mipush.sdk.MessageHandleService"/>
+        <receiver android:exported="true" android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.xiaomi.push.service.receivers.PingReceiver" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="org.qiyi.android.commonphonepad.pushmessage.xiaomi.XiaoMiPushMessageReceive">
+            <intent-filter android:priority="1000">
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE"/>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED"/>
+                <action android:name="com.xiaomi.mipush.ERROR"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="org.qiyi.android.commonphonepad.pushmessage.baidu.PushMsgBroadCastReceiver"/>
+        <receiver android:name="org.qiyi.android.commonphonepad.receiver.AddPackageBroadcast">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="org.qiyi.android.commonphonepad.receiver.CommonBroadcastReceiver">
+            <intent-filter>
+                <action android:name="org.qiyi.video.plugin_notify_servicepage_showreddot"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="org.qiyi.android.commonphonepad.receiver.ChessCardBroadcast">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="org.qiyi.android.commonphonepad.receiver.DownloadCompleteBroadcast">
+            <intent-filter>
+                <action android:name="com.qiyi.video.guide.COMPLETE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="org.qiyi.video.playrecord.model.ViewHistoryReceiver">
+            <intent-filter>
+                <action android:name="org.qiyi.videovertical.viewhistory.broadcast"/>
+                <action android:name="org.qiyi.videovertical.collection.broadcast"/>
+                <action android:name="org.qiyi.videovertical.collection.update.broadcast"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="BaiduMobAd_STAT_ID" android:value="15b45f79a0"/>
+        <meta-data android:name="BaiduMobAd_EXCEPTION_LOG" android:value="true"/>
+        <meta-data android:name="BaiduMobAd_SEND_STRATEGY" android:value="APP_START"/>
+        <meta-data android:name="BaiduMobAd_ONLY_WIFI" android:value="true"/>
+        <meta-data android:name="BaiduMobAd_CELL_LOCATION" android:value="false"/>
+        <meta-data android:name="BaiduMobAd_GPS_LOCATION" android:value="false"/>
+        <meta-data android:name="BaiduMobAd_WIFI_LOCATION" android:value="false"/>
+        <meta-data android:name="91SMARTUPDATE_CHANNEL" android:value="153"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.qiyi.video.wxapi.WXPayEntryActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.alipay.sdk.app.H5PayActivity" android:screenOrientation="behind"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.alipay.sdk.auth.AuthActivity" android:screenOrientation="behind"/>
+        <receiver android:name="org.qiyi.android.commonphonepad.pushmessage.QYPushMsgBootReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="org.qiyi.android.commonphonepad.pushmessage.baidu.BDPushMessageReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="com.baidu.android.pushservice.action.MESSAGE"/>
+                <action android:name="com.baidu.android.pushservice.action.RECEIVE"/>
+                <action android:name="com.baidu.android.pushservice.action.notification.CLICK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.baidu.android.pushservice.PushServiceReceiver" android:process=":bdservice_v1">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="com.baidu.android.pushservice.action.notification.SHOW"/>
+                <action android:name="com.baidu.android.pushservice.action.media.CLICK"/>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.baidu.android.pushservice.RegistrationReceiver" android:process=":bdservice_v1">
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.METHOD"/>
+                <action android:name="com.baidu.android.pushservice.action.BIND_SYNC"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.baidu.android.pushservice.PushService" android:process=":bdservice_v1">
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.PUSH_SERVICE"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.qiyi.video.bdpush" android:exported="true" android:name="com.baidu.android.pushservice.PushInfoProvider" android:protectionLevel="signature" android:writePermission="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.qiyi.video"/>
+        <service android:exported="true" android:name="com.baidu.android.pushservice.CommandService"/>
+        <meta-data android:name="api_key" android:value="vmHynnwGbO1iUyhP6OqBca0G"/>
+        <meta-data android:name="pps_api_key" android:value="pyGXczxDiih6v3zIM2D6KjoK"/>
+        <activity android:name="org.qiyi.android.plugin.appstore.GameInstallPopWindow" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="org.qiyi.video.playrecord.view.PhonePlayRecordActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.qiyivideo.record"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="self"/>
+                <data android:scheme="qiyimobile"/>
+                <data android:pathPattern=".*\\.made.record"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="org.qiyi.video.collection.view.PhoneCollectActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.qiyivideo.collect"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="self"/>
+                <data android:scheme="qiyimobile"/>
+                <data android:pathPattern=".*\\.made.collect"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="org.qiyi.video.fragment.PhoneFragmentActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="org.qiyi.android.video.activitys.pps.DarkIconJumpActivity" android:theme="@style/Activity_Animation">
+            <intent-filter>
+                <action android:name="com.qiyi.action.darkicon"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="org.qiyi.android.video.ppq.activitys.DarkIconInstallActivity" android:theme="@style/Activity_Animation">
+            <intent-filter>
+                <action android:name="com.qiyi.action.darkicon.install"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.qiyi.share.SharePanelActivity" android:screenOrientation="behind" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="org.qiyi.video.mymain.setting.feedback.PhoneFeedbackNewActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="org.qiyi.android.video.activitys.PhoneDailyNewsActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="org.qiyi.android.video.ugc.activitys.UgcFeedFragmentActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.ugc.activitys.UgcOtherTabActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="org.qiyi.android.video.ugc.activitys.UgcVideoFragmentActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation" android:windowSoftInputMode="adjustPan"/>
+        <service android:enabled="true" android:name="com.baidu.location.f"/>
+        <service android:exported="false" android:name="com.iqiyi.video.download.filedownload.QiyiDownloadCoreService" android:process=":downloader">
+            <intent-filter android:priority="1000">
+                <action android:name="com.iqiyi.video.filedownload"/>
+            </intent-filter>
+        </service>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="standard" android:name="org.qiyi.android.video.activitys.GuessLikeNewActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="org.qiyi.android.video.activitys.VideoSquareActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="org.qiyi.android.video.activitys.BillboardActivity" android:screenOrientation="sensor" android:theme="@style/Activity_Animation"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.qiyi.android.video.activitys.FrameJumpActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <data android:host="com.qiyi.video" android:scheme="iqiyi-phone"/>
+                <data android:pathPattern=".*res*"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="standard" android:name="org.qiyi.android.video.activitys.ToCheckMoreActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="standard" android:name="org.qiyi.android.video.activitys.SecondPageActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation">
+            <intent-filter>
+                <action android:name="com.qiyi.video.common.second.page"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="iqiyi"/>
+                <data android:host="mobile"/>
+                <data android:path="/card_page"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.video.react.RNCardPageActivity" android:process=":silk" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="org.qiyi.android.video.activitys.CommentsListActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.video.react.RNVivoActivity" android:process=":silk" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.video.react.RNVivoSuccActivity" android:process=":silk" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.video.react.QYH5VivoActivity" android:process=":silk" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:name="org.qiyi.android.commonphonepad.pushmessage.qiyi.QYPushMessageReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="com.iqiyi.sdk.android.pushservice.action.MESSAGE"/>
+                <action android:name="com.iqiyi.sdk.android.pushservice.action.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="org.qiyi.android.commonphonepad.pushmessage.qiyi.QYPushMsgBroadCastReceiver">
+            <intent-filter>
+                <action android:name="org.qiyi.android.video.pushmessage.ACTION_PUSH_CHANGE"/>
+                <action android:name="org.qiyi.android.video.pushmessage.ACTION_AD_DOWNLOAD"/>
+                <action android:name="org.qiyi.android.video.pushmessage.PUSH_MSG"/>
+                <action android:name="org.qiyi.android.video.pushmessage.STOP_PUSH"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.qiyi.video.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="android.support.v4.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/filepaths"/>
+        </provider>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="true" android:launchMode="standard" android:name="org.qiyi.android.video.activitys.CommonWebViewNewActivity" android:screenOrientation="portrait" android:theme="@style/CommonWebViewActivityTheme">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="org.qiyi.video.CommonWebViewNew"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="iqiyi"/>
+                <data android:host="mobile"/>
+                <data android:path="/webview"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="standard" android:name="org.qiyi.android.video.activitys.CommonWebViewNewActivity4RN" android:screenOrientation="portrait" android:theme="@style/CommonWebViewActivityTheme"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="standard" android:name="org.qiyi.android.video.activitys.CommonWebViewNewActivityForPP" android:screenOrientation="portrait" android:theme="@style/CommonWebViewActivityTheme">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.qiyi.video.CommonWebViewNewForPP"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="true" android:launchMode="standard" android:name="org.qiyi.android.video.activitys.OnLineServiceActivity" android:screenOrientation="portrait" android:theme="@style/CommonWebViewActivityTheme">
+            <intent-filter>
+                <action android:name="com.qiyi.video.OnLineCustomService"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="iqiyi"/>
+                <data android:host="mobile"/>
+                <data android:path="/cserver"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.qiyi.android.scan.ScanActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.qiyi.android.video.activitys.NotSupportMWJumpActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:taskAffinity="" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="android.a.test.VideoPlayTestActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="true" android:launchMode="singleTask" android:name="org.qiyi.android.upload.video.view.CloudActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation">
+            <intent-filter>
+                <action android:name="notification_action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="mobile"/>
+                <data android:scheme="iqiyi"/>
+                <data android:pathPrefix="/upload"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name="org.qiyi.android.upload.video.notification.UploadVideoNotificationReceiver">
+            <intent-filter>
+                <action android:name="notification_action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.ugc.activitys.ReportCommentActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation" android:windowSoftInputMode="adjustPan"/>
+        <service android:exported="false" android:name="org.qiyi.android.upload.video.service.UploadService" android:process=":downloader">
+            <intent-filter>
+                <action android:name="com.iqiyi.video.upload.ppq.service.IUploadService"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="org.qiyi.android.plugin.service.PluginRetryReceiver">
+            <intent-filter>
+                <action android:name="action_get_and_install_plugin"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="org.qiyi.android.plugin.ipc.PluginIPCConnectionRestorationService"/>
+        <service android:exported="false" android:name="org.qiyi.android.plugin.ipc.IPCService0"/>
+        <service android:exported="false" android:name="org.qiyi.android.plugin.ipc.IPCService1" android:process=":plugin1"/>
+        <service android:exported="false" android:name="org.qiyi.android.plugin.ipc.IPCService2" android:process=":plugin2"/>
+        <activity android:launchMode="singleTask" android:name="org.qiyi.android.plugin.activity.PluginTransferActivity" android:screenOrientation="portrait" android:theme="@style/Theme.PluginTransferTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.qiyi.video"/>
+                <data android:scheme="qiyiplug"/>
+                <data android:pathPattern=".*\\.plugintransferpage"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="mobile"/>
+                <data android:scheme="iqiyi"/>
+                <data android:pathPattern="/back"/>
+                <data android:pathPattern="/ticket"/>
+                <data android:pathPattern="/movieticketcoupon"/>
+                <data android:pathPattern="/show"/>
+                <data android:pathPattern="/reader"/>
+                <data android:pathPattern="/mall"/>
+                <data android:pathPattern="/game"/>
+                <data android:pathPattern="/appstore"/>
+                <data android:pathPattern="/ugc"/>
+                <data android:pathPattern="/payment"/>
+                <data android:pathPattern="/comic"/>
+                <data android:pathPattern="/register_business/.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="m.iqiyi.com"/>
+                <data android:host="m.tw.iqiyi.com"/>
+                <data android:host="www.iqiyi.com"/>
+                <data android:pathPrefix="/v_"/>
+                <data android:pathPrefix="/w_"/>
+                <data android:pathPrefix="/V_"/>
+                <data android:pathPrefix="/W_"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTask" android:name="org.qiyi.android.plugin.activity.PluginTransferActivityForShortCut" android:screenOrientation="portrait" android:theme="@style/ContentOverlay1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity> // Temporary declare this activity in case of plugin invoking plugin through
+        // QiYi client
+<activity android:name="org.qiyi.android.plugin.activity.PluginTransferActivityNew" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.music.MusicTopListActivity" android:screenOrientation="portrait" android:theme="@style/Theme.PageIndicatorDefaults"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="org.qiyi.android.video.music.MusicTopMainActivity" android:screenOrientation="portrait" android:theme="@style/Theme.PageIndicatorDefaults"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="android.a.test.DebugInfoActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <service android:name="org.qiyi.basecore.filedownload.FileDownloadRemoteService" android:process=":downloader"/>
+        <service android:name="org.qiyi.android.video.download.FileDownloadNotificationService"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.pay.base.PayBaseActivity" android:screenOrientation="portrait" android:theme="@style/Pay_Activity_Animation"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.pay.order.activity.PhonePayActivity" android:screenOrientation="portrait" android:theme="@style/Pay_Activity_Animation">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="iqiyi"/>
+                <data android:host="mobile"/>
+                <data android:path="/payment/order"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="org.qiyi.android.video.pay.common.activity.QYCommonPayActivity" android:screenOrientation="portrait" android:theme="@style/Transparent_Page" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="iqiyi"/>
+                <data android:host="mobile"/>
+                <data android:path="/payment/common"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="org.qiyi.android.video.pay.single.activities.QYSinglePayActivity" android:screenOrientation="portrait" android:theme="@style/Transparent_Page" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="iqiyi"/>
+                <data android:host="mobile"/>
+                <data android:path="/payment/single"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.pay.coupon.activities.VipCouponListActivity" android:screenOrientation="portrait" android:theme="@style/Pay_Activity_Animation"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.pay.coupon.activities.VipCouponExchangeActivity" android:screenOrientation="portrait" android:theme="@style/Pay_Activity_Animation"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.pay.views.webview.PayWebViewActivity" android:screenOrientation="portrait" android:theme="@style/Pay_Activity_Animation"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.banneduser.BannedUserActivity" android:screenOrientation="portrait" android:theme="@style/Pay_Activity_Animation"/> android:theme="@android:style/Theme.NoTitleBar" /&gt;
+<receiver android:exported="false" android:name="org.qiyi.android.video.ui.phone.download.plugin.comic.ComicReddotReceiver">
+            <intent-filter>
+                <action android:name="com.qiyi.video.comic.reddot"/>
+                <action android:name="com.qiyi.video.comic.record"/>
+                <action android:name="com.qiyi.video.reader.record"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.ui.phone.download.offlinevideo.view.LocalVideoActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation">
+            <intent-filter>
+                <action android:name="com.qiyi.video.download.localvideo"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="android.debug.DebugLaunchTimesActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="org.qiyi.android.video.ui.phone.download.DownloadMoviesActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="org.iqiyi.video.episodeui.OutterEpisodeActivity" android:screenOrientation="portrait" android:theme="@style/Theme.PageIndicatorDefaults"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="org.iqiyi.video.download.OutterDownloadActivity" android:screenOrientation="portrait" android:theme="@style/Theme.PageIndicatorDefaults"/>
+        <provider android:authorities="com.qiyi.video" android:exported="false" android:multiprocess="true" android:name="org.qiyi.basecore.db.QiyiContentProvider">
+            <path-permission android:pathPrefix="/provider/SharedPreference_tabl" android:permission="com.qiyi.video.SharedPreference_tabl.PERMISSION"/>
+        </provider>
+        <activity android:label="@string/title_activity_iresearch_test" android:launchMode="singleTask" android:name="org.qiyi.android.video.activitys.IResearchTestActivity" android:screenOrientation="portrait"/>
+        <activity android:name="org.qiyi.android.video.activitys.IResearchTestListActivity" android:theme="@style/ActionBarStyle"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.ugc.activitys.UgcMySubscriptionActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.ugc.activitys.UgcVSpaceActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.activitys.VipCardActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation"/>
+        <service android:label="@string/acc_service_name" android:name="org.qiyi.android.plugin.plugins.appstore.autoinstall.AccessibilityDispatcher" android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService"/>
+            </intent-filter>
+            <meta-data android:name="android.accessibilityservice" android:resource="@xml/phone_accessibility"/>
+        </service>
+        <receiver android:enabled="false" android:name="org.qiyi.android.corejar.pingback.PingbackReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.activitys.PhoneMySkinActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.qiyi.video.pages.category.HomeTopMenuListActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="iqiyi"/>
+                <data android:host="mobile"/>
+                <data android:path="/channel"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.qiyi.video.pages.category.HomeTopMenuManagerActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.qiyi.video.qycontext" android:exported="false" android:multiprocess="false" android:name="org.qiyi.context.provider.QyContextProvider"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.iqiyi.video.livechat.LiveChatReportActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.iqiyi.video.videorpt.RankVideoReportActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:label="@string/app_name" android:name="org.qiyi.android.commonphonepad.debug.DebugPushMessageActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.activitys.PhoneMyOrderActivity" android:theme="@style/Activity_Animation"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.video.myvip.view.PhoneMyVIPActivity" android:theme="@style/Activity_Animation"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.activitys.PhoneVipActivity" android:theme="@style/Activity_Animation">
+            <intent-filter>
+                <action android:name="com.iqiyi.video.vip.page"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="iqiyi"/>
+                <data android:host="mobile"/>
+                <data android:path="/vip_club"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.pay.wallet.base.WBaseActivity" android:screenOrientation="portrait" android:theme="@style/Pay_Activity_Animation"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.pay.wallet.pwd.activities.WSecuritySettingActivity" android:screenOrientation="portrait" android:theme="@style/Pay_Activity_Animation"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.pay.wallet.pwd.activities.WPayPwdControllerActivity" android:screenOrientation="portrait" android:theme="@style/Pay_Activity_Animation"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.pay.wallet.balance.activities.WBalanceControllerActivity" android:screenOrientation="portrait" android:theme="@style/Pay_Activity_Animation"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.pay.wallet.balance.activities.WPopVerifyPwdActivity" android:screenOrientation="portrait" android:theme="@style/Transparent_Page"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.pay.wallet.bankcard.activities.WPopBankCardListActivity" android:screenOrientation="portrait" android:theme="@style/Transparent_Page"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.pay.wallet.balance.activities.WBalanceActivity" android:screenOrientation="portrait" android:theme="@style/Pay_Activity_Animation"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.pay.wallet.bankcard.activities.WBankCardListActivity" android:screenOrientation="portrait" android:theme="@style/Pay_Activity_Animation"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="org.qiyi.android.video.pay.wallet.bankcard.activities.WBankCardControllerActivity" android:screenOrientation="portrait" android:theme="@style/Pay_Activity_Animation"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="org.qiyi.android.video.pay.finance.activities.WFinanceActivity" android:screenOrientation="portrait" android:theme="@style/Pay_Activity_Animation"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.pay.wallet.bankcard.activities.WBankCardPayActivity" android:screenOrientation="portrait" android:theme="@style/Transparent_Page"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.domand.DomandCouponsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="org.qiyi.android.video.pay.wallet.scan.ui.CaptureActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.activitys.OlympicCalendarActivity" android:theme="@style/Activity_Animation"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="10240000"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.video.page.localsite.view.LocalSiteActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.activitys.MyWalletAddCouponActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.qiyi.video.action_add_counpons"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.video.page.videoinfo.view.VideoInfoActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="org.qiyi.android.qywallet.QYWalletEntranceActivity" android:screenOrientation="portrait" android:theme="@style/Pay_Activity_Animation" android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="iqiyi"/>
+                <data android:host="mobile"/>
+                <data android:path="/qy_wallet"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="org.qiyi.video.react.ActivityCenterRNActivity" android:process=":silk" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:launchMode="singleTask" android:name="org.qiyi.video.myvip.view.BannedUserActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:name="com.huawei.android.pushagent.PushEventReceiver" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.huawei.android.push.intent.REFRESH_PUSH_CHANNEL"/>
+                <action android:name="com.huawei.intent.action.PUSH"/>
+                <action android:name="com.huawei.intent.action.PUSH_ON"/>
+                <action android:name="com.huawei.android.push.PLUGIN"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.huawei.android.pushagent.PushBootReceiver" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.huawei.android.push.intent.REGISTER"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <meta-data android:name="CS_cloud_version" android:value="2705"/>
+        </receiver>
+        <service android:name="com.huawei.android.pushagent.PushService" android:process=":pushservice"/>
+        <receiver android:name="org.qiyi.android.commonphonepad.pushmessage.huawei.HWPushMessageReceiver">
+            <intent-filter>
+                <action android:name="com.huawei.android.push.intent.REGISTRATION"/>
+                <action android:name="com.huawei.android.push.intent.RECEIVE"/>
+                <action android:name="com.huawei.android.push.intent.CLICK"/>
+                <action android:name="com.huawei.intent.action.PUSH_STATE"/>
+                <action android:name="com.huawei.android.push.plugin.RESPONSE"/>
+            </intent-filter>
+            <meta-data android:name="CS_cloud_ablitity" android:value="successRateAnalytics"/>
+        </receiver>
+        <activity android:exported="true" android:name="org.qiyi.android.commonphonepad.pushmessage.huawei.HWPushTransferActivity">
+            <intent-filter>
+                <action android:name="android.app.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="com.huawei.pushtest" android:path="/notify_detail" android:scheme="customscheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="true" android:name="org.qiyi.android.video.activitys.CropImageViewActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.qiyi.video.CROP"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:exported="false" android:name="org.qiyi.video.module.icommunication.ipc.HostService"/>
+        <service android:enabled="true" android:exported="false" android:name="org.qiyi.video.react.RNCardService"/>
+        <receiver android:enabled="false" android:exported="false" android:name="org.qiyi.android.commonphonepad.receiver.StartPlayActivityReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.qiyivideo.mp4player"/>
+                <data android:scheme="video"/>
+                <data android:scheme="intent"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="false" android:exported="false" android:name="org.qiyi.android.commonphonepad.receiver.StartWelcomeActivityReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.qiyivideo.welcomeactivity"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="false" android:exported="false" android:name="org.qiyi.android.commonphonepad.receiver.StartPlayerFromWeixinReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.qiyivideo.startplayerfromhtmlweixin"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="false" android:exported="false" android:name="org.qiyi.android.commonphonepad.receiver.StartPlayerFromThirdEntranceReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.qiyivideo.startplayerfromThirdEntrance"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="org.qiyi.android.video.ui.phone.traffic.receiver.TrafficReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="com.qiyi.video.traffic.poll"/>
+                <action android:name="com.qiyi.video.traffic.download"/>
+                <action android:name="com.qiyi.video.traffic.player"/>
+                <action android:name="com.qiyi.video.traffic.qiyi"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="oppo_appID" android:value="gsvjmj0fnRFCJK6jqYSIIqA1"/>
+        <meta-data android:name="oppo_appKey" android:value="UEf4DVUTDTFCJK6jqYSIIqA1"/>
+        <meta-data android:name="oppo_appSecret" android:value="kLhJx7Xfr5w8vNPkz2V2ERHd"/>
+        <service android:name="com.coloros.mcssdk.PushService">
+            <intent-filter>
+                <action android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="true" android:name="org.qiyi.android.commonphonepad.pushmessage.oppo.OppoPushTransferActivity">
+            <intent-filter>
+                <action android:name="opush.app.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.activitys.PhoneGetTennisVIPActivity" android:screenOrientation="portrait" android:theme="@style/Pay_Activity_Animation"/>
+        <activity android:exported="true" android:name="com.facebook.react.devsupport.DevSettingsActivity"/>
+        <provider android:authorities="com.qiyi.video.lifecycle" android:exported="false" android:multiprocess="false" android:name="android.arch.lifecycle.LifecycleRuntimeTrojanProvider"/>
+        <service android:exported="false" android:name="com.iqiyi.paopao.base.utils.diagnose.CrashHandlerService" android:process=":ppexservice"/>
+        <activity android:configChanges="keyboardHidden|layoutDirection|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:hardwareAccelerated="true" android:name="com.iqiyi.paopao.middlecommon.components.photoselector.ui.activity.TakePhotoEmptyActivity" android:screenOrientation="portrait"/>
+        <meta-data android:name="pluginapp_cfg_data_with_prefix" android:value="true"/>
+        <meta-data android:name="pluginapp_class_inject" android:value="true"/>
+        <activity android:name="com.android.share.camera.ui.AndroidNTransterActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:taskAffinity=".FullScreen" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.android.share.camera.ui.BaseLineCameraHighActivity" android:screenOrientation="portrait" android:theme="@style/ppq_fullscr_Activity_Animation"/>
+        <activity android:name="com.android.share.camera.ui.BaseLineCameraLowActivity" android:screenOrientation="portrait" android:theme="@style/ppq_fullscr_Activity_Animation"/>
+        <activity android:name="com.android.share.camera.ui.BaseLinePreviewActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.iqiyi.plug.papaqi.ui.EnterCameraActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.android.share.camera.ui.DirVideoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.android.share.camera.ui.TimeVideoActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.android.share.camera.ui.PaoPaoCameraHighActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:taskAffinity=".FullScreen" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:launchMode="singleTask" android:name="com.android.share.camera.ui.PaoPaoCameraLowActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:taskAffinity=".FullScreen" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.android.share.camera.ui.PaoPaoPreviewActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboard|keyboardHidden|locale|orientation|screenSize" android:launchMode="singleTop" android:name="com.android.share.camera.ui.ShootSightHighActivity" android:screenOrientation="portrait" android:theme="@style/Translucent">
+            <meta-data android:name="pluginapp_activity_special" android:value="Translucent"/>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|locale|orientation|screenSize" android:launchMode="singleTop" android:name="com.android.share.camera.ui.ShootSightLowActivity" android:screenOrientation="portrait" android:theme="@style/Translucent">
+            <meta-data android:name="pluginapp_activity_special" android:value="Translucent"/>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.im.debug.ShowMsg" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.iqiyi.im.chat.view.activity.PPChatActivity" android:screenOrientation="portrait" android:theme="@style/pp_Activity_Animation" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="com.iqiyi.im.ui.activity.SightPlayActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.iqiyi.im.ui.activity.MediaPlatformActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.iqiyi.im.ui.activity.JoinPaoPaoFromH5" android:screenOrientation="portrait" android:theme="@style/Translucent" android:windowSoftInputMode="adjustNothing">
+            <meta-data android:name="pluginapp_activity_special" android:value="Translucent"/>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.im.ui.activity.PaoPaoRelativeGroupsActivity" android:screenOrientation="portrait" android:theme="@style/StyledIndicators" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.publisher.ui.activity.MagicSwapDemoActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.publisher.ui.activity.PicSwapPhotoCropActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.iqiyi.publisher.ui.activity.PublishActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="com.iqiyi.publisher.ui.activity.SelectCategoryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iqiyi.publisher.ui.activity.SelectPrivacyActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iqiyi.publisher.ui.activity.SelectPaoPaoCircleActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iqiyi.publisher.ui.activity.SelectCoverActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.iqiyi.publisher.ui.activity.QZSightPublishActivity" android:screenOrientation="portrait" android:taskAffinity=".FullScreen" android:theme="@android:style/Theme.Light.NoTitleBar" android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.publisher.ui.activity.PicTxtPublisherActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:taskAffinity=".FullScreen" android:theme="@android:style/Theme.Light.NoTitleBar" android:windowSoftInputMode="stateAlwaysVisible|adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.publisher.ui.activity.SoundPublisherActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:taskAffinity=".FullScreen" android:theme="@android:style/Theme.Light.NoTitleBar" android:windowSoftInputMode="stateAlwaysVisible|adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.iqiyi.publisher.ui.activity.UniPublisherActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:taskAffinity=".FullScreen" android:theme="@android:style/Theme.Light.NoTitleBar" android:windowSoftInputMode="stateAlwaysVisible|adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.publisher.ui.activity.MoodActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:taskAffinity=".FullScreen" android:theme="@android:style/Theme.Light.NoTitleBar" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.publisher.ui.activity.QZVoteActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.publisher.ui.activity.MaterialDownloadActivity" android:screenOrientation="portrait" android:theme="@style/Theme.notAnimation" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.publisher.ui.activity.SightPlaybackActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.publisher.ui.activity.FeedPublisherEntranceActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.publisher.ui.activity.MakeVarietyShowActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.publisher.ui.activity.SelfMadeVideoPublisherActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.publisher.ui.activity.MagicSwapPublishActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.publisher.ui.activity.VideoCallWithStarActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.iqiyi.publisher.ui.activity.MusicSMVActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.publisher.ui.activity.FaceSwapTakePhotoActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.publisher.ui.activity.FreestyleVideoCaptureActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.publisher.ui.activity.FreestyleVideoCapActivityBottom" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.publisher.ui.activity.VideoPreviewActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.iqiyi.paopao.client.component.publisher.userinterface.PaoPaoUserDraftActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="com.iqiyi.circle.activity.QZFansCircleBeautyPicActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.iqiyi.paopao.client.component.homepage.activity.PPQiyiHomeActivity" android:screenOrientation="portrait" android:theme="@style/pp_Activity_Animation" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.circle.activity.PaoPaoLargeAvatarImageActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.iqiyi.paopao.client.component.homepage.activity.PaopaoSelectToShareActivityBottom" android:screenOrientation="portrait" android:theme="@style/StyledIndicators" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="com.iqiyi.feed.ui.activity.GCSearchMoreCircleActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="com.iqiyi.feed.ui.activity.PaopaoSearchActivityInNet" android:screenOrientation="portrait" android:theme="@style/Translucent" android:windowSoftInputMode="stateHidden"/>
+        <service android:name="com.iqiyi.im.service.PPMessageService"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.client.ui.activity.GeneralCircleActivity" android:screenOrientation="portrait" android:theme="@style/pp_Activity_Animation" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.circle.activity.PPFeedBackActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.iqiyi.paopao.client.ui.activity.GeneralCircleActivityBottom" android:screenOrientation="portrait" android:theme="@style/pp_Activity_Animation" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.feed.ui.activity.HotEventC3Activity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.feed.ui.activity.EventC3Activity" android:screenOrientation="portrait" android:theme="@style/pp_Activity_Animation" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.client.component.circle.playerpages.PPVideoAlbumActivity" android:screenOrientation="portrait" android:theme="@style/pp_Activity_Animation" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.iqiyi.feed.ui.activity.FeedDetailActivityBottom" android:screenOrientation="portrait" android:theme="@style/pp_Activity_Animation" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|layoutDirection|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:hardwareAccelerated="true" android:name="com.iqiyi.feed.ui.activity.FundPayActivity" android:screenOrientation="portrait" android:theme="@style/Translucent" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|layoutDirection|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:hardwareAccelerated="true" android:name="com.iqiyi.feed.ui.activity.TrailDetailActivity" android:screenOrientation="portrait" android:theme="@style/pp_Activity_Animation" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|layoutDirection|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:hardwareAccelerated="true" android:name="com.iqiyi.feed.ui.activity.CrowFundingDetailActivity" android:screenOrientation="portrait" android:theme="@style/pp_Activity_Animation" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="com.iqiyi.paopao.client.ui.activity.DownLoadViewPagerActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.client.component.circle.userpages.activity.PaopaoUserInfoActivity" android:screenOrientation="portrait" android:theme="@style/pp_Activity_Animation" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.client.component.circle.userpages.shortvideo.PPShortVideoMaterialActivity" android:screenOrientation="portrait" android:theme="@style/pp_Activity_Animation" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.iqiyi.paopao.client.component.circle.userpages.shortvideo.PPShortVideoMaterialActivityBottom" android:screenOrientation="portrait" android:theme="@style/pp_Activity_Animation" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.iqiyi.paopao.client.component.circle.userpages.activity.PaopaoUserInfoActivityBottom" android:screenOrientation="portrait" android:theme="@style/pp_Activity_Animation" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.middlecommon.components.qyconponent.emotion.activity.PPExpressionStoreModifyActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.iqiyi.paopao.middlecommon.components.qyconponent.emotion.activity.PPExpressionStoreNewActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.middlecommon.components.qyconponent.emotion.activity.PPExpressionPackageDetailActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:label="@string/pp_title_activity_custom_camera" android:name="com.iqiyi.paopao.middlecommon.components.photoselector.ui.activity.TakePhotoActivity" android:theme="@android:style/Theme.Light.NoTitleBar" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.iqiyi.paopao.client.ui.activity.ConflictActivity" android:theme="@style/Translucent" android:windowSoftInputMode="adjustNothing">
+            <meta-data android:name="pluginapp_activity_special" android:value="Translucent"/>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:label="@string/pp_title_activity_test_plugin_login" android:name="com.iqiyi.paopao.client.ui.activity.TestPluginLoginActivity" android:theme="@android:style/Theme.Light.NoTitleBar" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:label="@string/pp_title_activity_collection_list_activityn" android:name="com.iqiyi.circle.activity.CollectionListActivity" android:screenOrientation="portrait" android:theme="@style/pp_Activity_Animation" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.iqiyi.paopao.client.ui.activity.GCFindMoreCircleActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.starwall.ui.activity.ShowOffSpiritActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.middlecommon.components.photoselector.ui.activity.ImageSelectActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.middlecommon.components.photoselector.ui.activity.ImagePreviewActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.client.component.publisher.userinterface.QZSharePublishActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:taskAffinity=".FullScreen" android:theme="@android:style/Theme.Light.NoTitleBar" android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.client.ui.activity.QZPreViewPagerActivity" android:theme="@android:style/Theme.Light.NoTitleBar" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.common.ui.webview.WebViewActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.client.ui.activity.PaoPaoHotPublishActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar" android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.middlecommon.components.qyconponent.emotion.activity.DownLoadExpressionsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.feed.ui.activity.EventListC3Activity" android:screenOrientation="portrait" android:theme="@style/pp_Activity_Animation"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.client.component.circle.playerpages.PPVideoListActivity" android:screenOrientation="portrait" android:theme="@style/pp_Activity_Animation" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.client.component.circle.playerpages.PPAboutVideoActivity" android:screenOrientation="portrait" android:theme="@style/pp_Activity_Animation" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.client.component.circle.playerpages.PPDetailAlbumVideoActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.iqiyi.paopao.client.ui.activity.PPVideoListActivityBottom" android:screenOrientation="portrait" android:theme="@style/pp_Activity_Animation" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.client.ui.activity.StartComingFloatLayerActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.middlecommon.library.audiorecord.ui.AudioRecordActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.client.ui.activity.StarComeCircleActivity" android:screenOrientation="portrait" android:theme="@style/pp_Activity_Animation"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.client.ui.activity.StarCirclePopupWindowActivity" android:theme="@style/AlphaBlackTransparent"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.circle.activity.ShareSpiritActivity" android:theme="@style/AlphaBlackTransparent"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.starwall.ui.activity.FansLevelRewardActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.iqiyi.paopao.client.ui.activity.PPTransferFromOutActivity" android:screenOrientation="portrait" android:theme="@style/Translucent" android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="mobile"/>
+                <data android:scheme="iqiyi"/>
+                <data android:pathPattern="/paopao"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.middlecommon.components.h5.activity.CommonWebViewNewActivity" android:screenOrientation="portrait" android:theme="@style/pp_Activity_Animation"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.client.ui.activity.FansContributionRankListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|locale|orientation|screenSize" android:name="com.iqiyi.feed.ui.activity.PPAdmirerActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.iqiyi.paopao.reactnative.QYReactSignInCalendarActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.reactnative.QYReactFundPaySuccessActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.reactnative.QYReactPPRosterCardActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.reactnative.QYReactPaoPaoUserInfoSettingsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.reactnative.QYReactQZFansDetailActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.reactnative.PaoPaoBaseReactActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.reactnative.QYReactPPPrivateChatSettingsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.reactnative.QYReactStarCircleNotificationSettingActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.reactnative.QYReactMediaPlatformSettingsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.reactnative.QYReactPaoPaoMemberListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.client.ui.activity.PPVideoAlbumListActivity" android:screenOrientation="portrait" android:theme="@style/pp_Activity_Animation" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.client.component.publisher.userinterface.SelectSMVMaterialActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.client.component.publisher.userinterface.SelectSMVMaterialActivityBottom" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.client.component.publisher.userinterface.SelectAlbumVideoMaterialActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.client.component.publisher.userinterface.SelectOneKindVideoMaterialActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.client.component.publisher.userinterface.SelectAudioMaterialActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.iqiyi.paopao.client.component.circle.userpages.activity.PPShortVideoActivity" android:screenOrientation="portrait" android:theme="@style/pp_Activity_Animation" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.client.component.circle.userpages.shortvideo.ShortVideoDetailActivity" android:screenOrientation="portrait" android:theme="@style/pp_Activity_Animation"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.client.component.circle.userpages.shortvideo.ShortVideoSampleActivity" android:screenOrientation="portrait" android:theme="@style/pp_Activity_Animation"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.iqiyi.paopao.client.component.circle.userpages.shortvideo.ShortVideoDetailActivityBottom" android:screenOrientation="portrait" android:theme="@style/pp_Activity_Animation"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.client.component.albums.AlbumAndImageActivity" android:screenOrientation="portrait" android:theme="@style/pp_Activity_Animation" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.client.component.albums.ImagesInAlbumActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboardHidden|layoutDirection|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:hardwareAccelerated="true" android:name="com.iqiyi.circle.activity.TrailActivity" android:screenOrientation="portrait" android:theme="@style/pp_Activity_Animation" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|layoutDirection|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:hardwareAccelerated="true" android:name="com.iqiyi.paopao.client.component.star.interview.PPStarInterViewActivity" android:screenOrientation="portrait" android:theme="@style/pp_Activity_Animation" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|layoutDirection|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:hardwareAccelerated="true" android:name="com.iqiyi.feed.ui.activity.StarRankActivity" android:screenOrientation="portrait" android:theme="@style/pp_Activity_Animation" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.client.component.circle.userpages.shortvideo.PPShortVideoEventActivity" android:screenOrientation="portrait" android:theme="@style/pp_Activity_Animation" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.iqiyi.paopao.client.component.circle.userpages.shortvideo.PPShortVideoCollectionBaseActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.client.component.star.center.PPStarCenterActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.paopao.client.component.im.IMHomeActivity" android:screenOrientation="portrait" android:theme="@style/pp_Activity_Animation"/>
+        <activity android:configChanges="keyboard|keyboardHidden|locale|orientation|screenSize" android:name="com.iqiyi.paopao.client.component.im.TaiWanIMHomeActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|layoutDirection|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:hardwareAccelerated="true" android:name="com.iqiyi.feed.ui.activity.FeedDetailActivity" android:screenOrientation="portrait" android:theme="@style/pp_Activity_Animation" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.feed.ui.activity.HotCommentsActivity" android:theme="@android:style/Theme.Light.NoTitleBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.iqiyi.feed.ui.activity.CommentsActivity" android:theme="@android:style/Theme.Light.NoTitleBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.iqiyi.feed.ui.activity.CommentsActivityBottom" android:theme="@android:style/Theme.Light.NoTitleBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="org.iqiyi.video.simple.BaseShareVideoPlayerActivity" android:screenOrientation="sensor" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="org.iqiyi.video.simple.BaseShareVideoPlayerActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.iqiyi.danmaku.redpacket.AddressActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.iqiyi.danmaku.bizjump.RouterActivity" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.iqiyi.danmaku.im.GroupSettingActivity" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.iqiyi.danmaku.im.GroupMemberActivity" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.iqiyi.danmaku.im.DeleteMemberActivity" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.iqiyi.danmaku.im.GroupEditActivity" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <service android:name="com.iqiyi.hcim.service.IMService">
+            <intent-filter>
+                <action android:name="com.iqiyi.hcim.service.im.start"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.iqiyi.hcim.service.BroadcastCenter">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.intent.action.SCREEN_ON"/>
+                <action android:name="android.intent.action.SCREEN_OFF"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.iqiyi.pushservice.PushServiceReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:label="iQiyiGlobalPushService" android:name="com.iqiyi.pushservice.PushService" android:process=".iqiyipushserviceGlobal">
+            <intent-filter>
+                <action android:name="com.iqiyi.pushservice.PushService"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.iqiyi.daemonservice.DaemonService" android:process=".DaemonService"/>
+        <receiver android:name="com.iqiyi.daemonservice.DaemonReceiver" android:process=".DaemonService"/>
+        <receiver android:name="com.iqiyi.impushservice.receiver.ImPushServiceReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.iqiyi.sdk.android.pushservice.PushServiceReceiver"/>
+        <service android:exported="false" android:name="com.iqiyi.video.download.QiyiDownloadCenterService" android:process=":downloader">
+            <intent-filter android:priority="1000">
+                <action android:name="com.iqiyi.video.download.IQiyiDownloadCenter.com.qiyi.video.baseline"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.iqiyi.video.download.notification.NotificationService" android:process=":downloader"/>
+        <service android:exported="false" android:name="com.iqiyi.video.download.DownloadJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="org.qiyi.android.video.ui.phone.download.PhoneDownloadCenterActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="self"/>
+                <data android:host="com.qiyi.video"/>
+                <data android:scheme="qiyimobile"/>
+                <data android:pathPattern=".*\\.downloadpage"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.qiyi.video.download.offlineui"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="iqiyi"/>
+                <data android:host="mobile"/>
+                <data android:path="/download"/> /&gt;
+</intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.ui.phone.download.PhoneDownloadEpisodeActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation">
+            <intent-filter>
+                <action android:name="com.qiyi.video.download.episodeui"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.android.video.ui.phone.download.PhoneDownloadVideoActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation">
+            <intent-filter>
+                <action android:name="com.qiyi.video.download.videoui"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="org.qiyi.android.video.ui.phone.download.a.DownloadDebugActivity" android:screenOrientation="portrait" android:theme="@style/Activity_Animation">
+            <intent-filter>
+                <action android:name="com.qiyi.video.download.debugui"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.qiyi.video.qypassportsdk" android:exported="false" android:multiprocess="false" android:name="com.iqiyi.passportsdk.internal.ipc.PsdkContentProvider"/>
+        <meta-data android:name="android.support.VERSION" android:value="26.0.2"/>
+        <service android:exported="false" android:name="org.qiyi.pluginlibrary.install.PluginInstallerService" android:process=":pluginInstaller">
+            <intent-filter>
+                <action android:name="com.qiyi.video.plugin.installed.service.INSTALL"/>
+            </intent-filter>
+        </service>
+        <service android:name="org.qiyi.pluginlibrary.pm.PluginPackageManagerService"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.pluginlibrary.component.InstrActivityProxy0" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.pluginlibrary.component.InstrActivityProxy1" android:process=":plugin1" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.pluginlibrary.component.InstrActivityProxy2" android:process=":plugin2" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.pluginlibrary.component.InstrActivityProxyTranslucent0" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.pluginlibrary.component.InstrActivityProxyTranslucent1" android:process=":plugin1" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.pluginlibrary.component.InstrActivityProxyTranslucent2" android:process=":plugin2" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.pluginlibrary.component.InstrActivityProxyLandscape0" android:screenOrientation="landscape"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.pluginlibrary.component.InstrActivityProxyLandscape1" android:process=":plugin1" android:screenOrientation="landscape"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.pluginlibrary.component.InstrActivityProxyLandscape2" android:process=":plugin2" android:screenOrientation="landscape"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.pluginlibrary.component.InstrActivityProxyHandleConfigChange0"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.pluginlibrary.component.InstrActivityProxyHandleConfigChange1" android:process=":plugin1"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="org.qiyi.pluginlibrary.component.InstrActivityProxyHandleConfigChange2" android:process=":plugin2"/>
+        <service android:name="org.qiyi.pluginlibrary.component.ServiceProxy0"/>
+        <service android:name="org.qiyi.pluginlibrary.component.ServiceProxy1" android:process=":plugin1"/>
+        <service android:name="org.qiyi.pluginlibrary.component.ServiceProxy2" android:process=":plugin2"/>
+        <service android:exported="false" android:name="com.qiyi.qyhotfix.reporter.QYPatchResultService"/>
+        <service android:exported="false" android:name="com.tencent.tinker.lib.service.TinkerPatchService" android:process=":patch"/>
+        <service android:exported="false" android:name="com.tencent.tinker.lib.service.TinkerPatchService$InnerService" android:process=":patch"/>
+        <service android:exported="false" android:name="com.tencent.tinker.lib.service.DefaultTinkerResultService"/>
+        <meta-data android:name="TINKER_ID" android:value="tinker_id_e930215"/>
+    </application>
+</manifest>

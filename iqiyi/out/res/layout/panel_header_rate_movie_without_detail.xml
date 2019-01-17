@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="24.0dip" android:textColor="#ffff7646" android:gravity="center" android:id="@id/movie_rate_num_without_detail" android:layout_width="113.0dip" android:layout_height="fill_parent" />
+    <View android:layout_gravity="center_vertical" android:background="#ffe6e6e6" android:layout_width="0.5dip" android:layout_height="16.0dip" />
+    <TextView android:textSize="14.0dip" android:textColor="#ff999999" android:gravity="center_vertical" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/movie_rating_no_detail_header_text" />
+</LinearLayout>

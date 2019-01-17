@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/pp_circle_background" android:background="#33000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0dip" android:textColor="#fff5f5f5" android:id="@id/pp_labor_bonus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="74.0dip" android:text="奖励随机" />
+    <TextView android:textSize="20.0dip" android:textColor="#ffff7e00" android:id="@id/pp_labor_bonus_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="23.0dip" android:text="等级越高奖励越多" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/pp_labor_shine_layout" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/pp_labor_star" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/pp_circle_star_anim1" android:background="@drawable/pp_circle_labor_sun1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/pp_circle_star_anim2" android:background="@drawable/pp_circle_labor_sun2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/pp_circle_star_anim3" android:background="@drawable/pp_circle_labor_sun3" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <ImageView android:id="@id/pp_labor_shine" android:background="@drawable/pp_circle_labor_sunshine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-100.0dip" android:layout_below="@id/pp_labor_star" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/pp_labor_background" android:background="@drawable/pp_circle_labor_bag_sunshine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-140.0dip" android:layout_below="@id/pp_labor_shine" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-110.0dip">
+        <RelativeLayout android:id="@id/pp_labor_img_layout" android:layout_width="280.0dip" android:layout_height="140.0dip" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/pp_labor_img_1" android:background="@drawable/pp_circle_labor_received_1" android:layout_width="75.0dip" android:layout_height="75.0dip" android:layout_marginRight="28.0dip" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/pp_labor_img_2" android:background="@drawable/pp_circle_labor_received_2" android:layout_width="75.0dip" android:layout_height="75.0dip" android:layout_marginRight="28.0dip" android:layout_toRightOf="@id/pp_labor_img_1" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/pp_labor_img_3" android:background="@drawable/pp_circle_labor_received_3" android:layout_width="75.0dip" android:layout_height="75.0dip" android:layout_toRightOf="@id/pp_labor_img_2" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/pp_labor_bag_background" android:background="@drawable/pp_circle_labor_bag_background" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-20.0dip" />
+    <TextView android:textSize="19.0sp" android:textColor="@color/color_ffffff" android:id="@id/pp_labor_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5.0dip" />
+    <TextView android:textSize="19.0sp" android:textColor="@color/color_ffffff" android:id="@id/pp_labor_tool" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" />
+    <ImageView android:id="@id/pp_iv_close" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/pp_user_upgrade_pop_window_close" />
+</LinearLayout>

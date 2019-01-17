@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/control_layout" android:background="@drawable/shape_video_footer_bg" android:layout_width="fill_parent" android:layout_height="75.0dip">
+        <RelativeLayout android:id="@id/progress_bar_layout" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="6.0dip" android:layout_alignParentBottom="true">
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/layout_video_footer_default" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_alignParentBottom="true">
+            <SeekBar android:id="@id/play_progress_landscape" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="2.0dip" android:progressDrawable="@drawable/video_player_progress_bar_bg" android:minHeight="2.0dip" android:thumb="@drawable/video_player_progress_seekbar_land_normal" android:thumbOffset="0.0dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <org.qiyi.basecard.common.video.defaults.layer.CardVideoLineProgressBar android:id="@id/line_progress_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.iqiyi.qyplayercardview.view.EpisodeGridView android:layout_gravity="top" android:id="@id/gridview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:horizontalSpacing="5.0dip" android:verticalSpacing="5.0dip" android:numColumns="5" />
+    <include android:id="@id/loading_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" layout="@layout/player_common_loadingview" />
+</RelativeLayout>

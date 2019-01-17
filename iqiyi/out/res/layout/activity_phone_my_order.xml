@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.video.qyskin.view.SkinTitleBar android:id="@id/phoneTitleLayout" android:background="@color/top_bar_bg_transparent" app:tb_title="@string/phone_my_order_title" style="@style/title_bar_base" />
+    <RelativeLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phoneTitleLayout" />
+    <include android:id="@id/login_page_from_push" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phoneTitleLayout" layout="@layout/fragment_loginpage" />
+</RelativeLayout>

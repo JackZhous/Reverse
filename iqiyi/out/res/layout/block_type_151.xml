@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta2_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/img" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta1_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/img" />
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/img1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/meta1_layout" android:layout_alignBottom="@id/meta1_layout" />
+    <TextView android:textSize="30.0dip" android:textColor="#ffffffff" android:id="@id/point_tex" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-20.0dip" android:text="+5" android:layout_toRightOf="@id/meta1_layout" android:layout_alignTop="@id/meta1_layout" />
+    <org.qiyi.basecard.common.widget.ButtonView android:id="@id/left_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <org.qiyi.basecard.common.widget.ButtonView android:id="@id/right_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+</RelativeLayout>

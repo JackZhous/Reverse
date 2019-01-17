@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:id="@id/pp_video_player_seek_progress_ind" android:background="#ff1d1d1d" android:layout_width="145.0dip" android:layout_height="76.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19.0dip" android:src="@drawable/pp_video_player_play_progress_froword" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/color_cccccc" android:id="@id/tv_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="01:32 / 32:55" />
+    <ProgressBar android:id="@id/pb_progress" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="3.0dip" android:max="100" android:progress="50" android:progressDrawable="@drawable/pp_qz_video_feeds_video_player_progress" android:layout_alignParentBottom="true" style="@android:style/Widget.ProgressBar.Horizontal" />
+</RelativeLayout>

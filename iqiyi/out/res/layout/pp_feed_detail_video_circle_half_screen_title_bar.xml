@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/title_bar_container" android:background="@color/pp_color_ffffff" android:clickable="true" android:layout_width="fill_parent" android:layout_height="45.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingLeft="12.0dip" android:paddingRight="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="18.0dip" android:textColor="@color/pp_color_333333" android:id="@id/title_bar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pp_sw_feeddetail_title" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <include layout="@layout/pp_start_play_video_button" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/qz_feeddetail_btn_container" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:gravity="center_horizontal" android:id="@id/title_bar_share" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pp_feed_detail_icon_share" />
+            <ImageView android:id="@id/title_bar_more" android:visibility="visible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/pp_feed_detail_icon_more" />
+            <View android:layout_gravity="center_vertical" android:background="@color/user_info_separate_color" android:layout_width="1.0px" android:layout_height="18.0dip" android:layout_marginLeft="7.0dip" />
+            <ImageView android:id="@id/title_bar_close" android:visibility="visible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:src="@drawable/pp_feed_detail_icon_close" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@id/title_bar_divider_bottom" android:background="@color/pp_color_e6e6e6" android:layout_width="fill_parent" android:layout_height="@dimen/pp_title_bar_bottom_divider_height" android:layout_alignParentBottom="true" />
+</RelativeLayout>

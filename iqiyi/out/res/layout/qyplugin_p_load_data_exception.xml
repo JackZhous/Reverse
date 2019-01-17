@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@android:color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/phone_empty_img" android:layout_width="180.0dip" android:layout_height="180.0dip" android:layout_marginTop="140.0dip" android:src="@drawable/phone_empty_data_img" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="#ff666666" android:id="@id/phoneEmptyText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="@string/phone_loading_data_fail" android:layout_below="@id/phone_empty_img" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</FrameLayout>

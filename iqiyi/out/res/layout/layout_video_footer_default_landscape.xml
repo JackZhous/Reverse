@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/left_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <RelativeLayout android:id="@id/play_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.airbnb.lottie.LottieAnimationView android:id="@id/btn_player_or_pause" android:layout_width="30.0dip" android:layout_height="30.0dip" app:lottie_fileName="player_pause_to_play_anim_vertical.json" app:lottie_autoPlay="false" app:lottie_loop="false" app:lottie_cacheStrategy="weak" />
+            <ImageView android:id="@id/btn_player_or_pause_selector" android:background="@drawable/video_player_footer_btn_pause" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/footer_right_btn_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <TextView android:textSize="14.0dip" android:textColor="@color/color_white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/btn_directional_flow" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/color_white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/btn_change_rate" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="20.0dip" />
+    </LinearLayout>
+    <org.qiyi.basecard.common.video.defaults.layer.landscape.CardVideoLandscapeProgressBar android:id="@id/progress_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginRight="7.0dip" android:layout_toLeftOf="@id/footer_right_btn_layout" android:layout_toRightOf="@id/left_layout" android:layout_centerVertical="true" />
+</merge>

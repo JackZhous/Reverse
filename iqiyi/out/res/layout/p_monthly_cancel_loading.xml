@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/progressbar" android:layout_width="43.0dip" android:layout_height="43.0dip" android:layout_marginTop="70.0dip" android:indeterminateDrawable="@drawable/loading_style_five" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/p_color_666666" android:id="@id/title_loading_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="@string/cancel_month_title_thirteen" android:layout_below="@id/progressbar" android:layout_centerHorizontal="true" />
+</RelativeLayout>

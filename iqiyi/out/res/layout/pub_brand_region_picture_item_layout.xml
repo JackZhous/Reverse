@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/pp_brand_region_picture" android:layout_width="140.0dip" android:layout_height="105.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:Fresco="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/video_cover" android:layout_width="140.0dip" android:layout_height="105.0dip" Fresco:placeholderImage="@drawable/pp_general_default_bg" Fresco:placeholderImageScaleType="fitXY" Fresco:failureImage="@drawable/pp_general_default_bg" Fresco:failureImageScaleType="fitXY" />
+    <TextView android:textSize="11.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/video_count" android:background="@drawable/pub_brand_region_count_bg" android:layout_width="47.0dip" android:layout_height="18.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="6.0dip" android:text="共10个" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

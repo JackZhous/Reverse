@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/title_layout" android:background="#ff202020" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/title_qiyi_image" android:background="@drawable/phone_account_back_bg" style="@style/top_title_item" />
+    <TextView android:id="@id/title_msg" android:text="@string/phone_ad_title" style="@style/top_title" />
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/TV_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

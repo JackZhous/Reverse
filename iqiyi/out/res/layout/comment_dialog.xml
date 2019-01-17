@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="#ff0bbd0a" android:gravity="center" android:id="@id/item_reply" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="回复" />
+    <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="18.0sp" android:textColor="#ff0bbd0a" android:gravity="center" android:id="@id/item_delete" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="删除" />
+    <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="18.0sp" android:textColor="#ff0bbd0a" android:gravity="center" android:id="@id/item_copy" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="复制" />
+    <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="18.0sp" android:textColor="#ff0bbd0a" android:gravity="center" android:id="@id/item_report" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="举报" />
+    <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="18.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/item_cancel" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="取消" />
+</LinearLayout>

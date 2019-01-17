@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/CardModelBase"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/unit_four_ver_img" />
+    <include android:id="@id/four_meta_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/unit_four_meta" />
+    <include android:id="@id/four_sub_meta_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/unit_four_sub_meta" />
+</LinearLayout>

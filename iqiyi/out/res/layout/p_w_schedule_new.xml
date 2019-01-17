@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/p_w_schedul_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/p_dimen_35">
+        <TextView android:textSize="@dimen/p_dimen_12" android:textColor="@android:color/white" android:gravity="center" android:id="@id/p_w_left_num" android:background="@drawable/oval_radius_19dp_selector" android:layout_width="@dimen/p_dimen_19" android:layout_height="@dimen/p_dimen_19" android:text="@string/p_first_num" />
+        <TextView android:textSize="@dimen/p_dimen_15" android:textColor="@drawable/p_w_text_ff7e00_999999_selector" android:id="@id/p_w_left_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/p_dimen_10" android:text="@string/p_w_verify_bank_card_num" android:layout_toRightOf="@id/p_w_left_num" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/p_w_schedul_mid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/p_w_schedul_right" android:layout_toRightOf="@id/p_w_schedul_left" android:layout_alignTop="@id/p_w_schedul_left" android:layout_alignBottom="@id/p_w_schedul_left">
+        <View android:id="@id/p_w_dividing_line" android:background="@drawable/corner_radius_3dp_selector" android:layout_width="@dimen/p_dimen_12" android:layout_height="@dimen/p_dimen_3" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/p_w_schedul_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/p_dimen_35" android:layout_alignParentRight="true">
+        <TextView android:textSize="@dimen/p_dimen_12" android:textColor="@android:color/white" android:gravity="center" android:id="@id/p_w_right_num" android:background="@drawable/oval_radius_19dp_selector" android:layout_width="@dimen/p_dimen_19" android:layout_height="@dimen/p_dimen_19" android:text="@string/p_w_second_num" />
+        <TextView android:textSize="@dimen/p_dimen_15" android:textColor="@drawable/p_w_text_ff7e00_999999_selector" android:id="@id/p_w_right_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/p_dimen_10" android:text="@string/p_w_set_pwd" android:layout_toRightOf="@id/p_w_right_num" />
+    </RelativeLayout>
+</RelativeLayout>

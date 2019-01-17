@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:background="#ff181638" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.86"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="20.0dip" android:textColor="@color/white" android:id="@id/tv_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="你今天陪伴爱豆8小时16分" />
+    <TextView android:textSize="20.0dip" android:textColor="@color/white" android:id="@id/tv_rank" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="13.0dip" android:text="超越了52%的家人" />
+    <RelativeLayout android:id="@id/rl_poster" android:layout_width="202.0dip" android:layout_height="171.0dip" android:layout_marginBottom="13.0dip">
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/lav_dots" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.iqiyi.paopao.middlecommon.views.slimviews.SlimImageView android:id="@id/iv_halo" android:layout_width="170.0dip" android:layout_height="170.0dip" android:scaleType="fitXY" android:layout_centerInParent="true" app:slimViewSrc="pp_check_in_halo" />
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/iv_avatar" android:layout_width="120.0dip" android:layout_height="120.0dip" android:layout_centerInParent="true" app:roundAsCircle="true" />
+    </RelativeLayout>
+    <TextView android:textSize="20.0dip" android:textColor="@color/white" android:id="@id/tv_check_in_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="守护完成" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="136.0dip" android:layout_marginBottom="19.0dip">
+        <TextView android:textSize="20.0dip" android:textColor="@color/white" android:id="@id/tv_vote" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="11.0dip" android:text="为鹿晗在奔跑吧兄投票" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/white" android:id="@id/tv_check_in_fans_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="签到粉丝值 +26" />
+        <TextView android:layout_width="fill_parent" android:layout_height="6.0dip" android:text=" " />
+        <TextView android:textSize="14.0dip" android:textColor="@color/white" android:id="@id/tv_fans_value_bonus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="守护奖励粉丝值 +6" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff0bbe06" android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/tv_other_task" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="看看还有哪些任务 >" />
+    </LinearLayout>
+    <ImageView android:id="@id/iv_close" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginBottom="37.0dip" android:src="@drawable/pp_user_upgrade_pop_window_close" />
+</LinearLayout>

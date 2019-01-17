@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:layout_width="125.0dip" android:layout_height="45.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/pop_left" android:layout_width="62.0dip" android:layout_height="45.0dip" android:layout_alignParentTop="true">
+        <ImageView android:layout_width="62.0dip" android:layout_height="45.0dip" android:src="@drawable/live_chat_report_pop_left" android:scaleType="fitXY" />
+        <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/live_chat_remove" android:layout_width="62.0dip" android:layout_height="36.0dip" android:text="删除" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="62.0dip" android:layout_height="45.0dip" android:layout_toRightOf="@id/pop_left" android:layout_alignParentTop="true">
+        <ImageView android:layout_width="62.0dip" android:layout_height="45.0dip" android:src="@drawable/live_chat_report_pop_right" android:scaleType="fitXY" />
+        <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/live_chat_ban_talk" android:layout_width="62.0dip" android:layout_height="36.0dip" android:text="禁言" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+</RelativeLayout>

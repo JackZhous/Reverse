@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/ll_more" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="#ff0bbe06" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more_group_member" />
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginLeft="8.0dip" android:src="@drawable/ic_dmk_more" />
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

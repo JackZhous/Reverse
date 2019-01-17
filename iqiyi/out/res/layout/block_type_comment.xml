@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clickable="true" android:longClickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/deliver_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/ugc_use_icon_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/deliver_line" fresco:roundAsCircle="true" />
+    <org.qiyi.basecard.common.widget.MetaView android:id="@id/ugc_use_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/deliver_line" />
+    <org.qiyi.basecard.common.widget.MetaView android:id="@id/comment_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/ugc_use_name" />
+    <RelativeLayout android:id="@id/use_info_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/comment_content">
+        <org.qiyi.basecard.common.widget.MetaView android:id="@id/comment_date" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <org.qiyi.basecard.common.widget.ButtonView android:id="@id/comment_reply_button" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+        <org.qiyi.basecard.common.widget.ButtonView android:id="@id/comment_attion_heart" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/comment_reply_button" />
+    </RelativeLayout>
+</RelativeLayout>

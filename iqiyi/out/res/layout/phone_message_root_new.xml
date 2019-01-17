@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/phoneTitleLayout" style="@style/top_base_item">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/phoneTopMyAccountBack" android:background="@drawable/phone_account_back_bg" style="@style/top_title_item" />
+        <TextView android:id="@id/phoneTitle" android:text="@string/title_message" style="@style/top_title" />
+    </RelativeLayout>
+    <org.qiyi.basecore.widget.ptr.widget.PtrSimpleListView android:id="@id/msgList" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/phone_new_card_margin_vertical" android:layout_below="@id/phoneTitleLayout" />
+    <RelativeLayout android:layout_gravity="bottom" android:id="@id/phoneEmptyLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phoneTitleLayout">
+        <include layout="@layout/phone_load_data_exception" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center" android:id="@id/phoneNoMsgLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phoneTitleLayout">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/phone_msg_img_no_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="200.0dip" android:src="@drawable/phone_msg_empty" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="13.0dip" android:textColor="#ff666666" android:gravity="center_horizontal" android:id="@id/phoneEmptyText1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/phone_msg_no_content" android:layout_below="@id/phone_msg_img_no_msg" android:layout_centerInParent="true" android:layout_centerHorizontal="true" android:lineSpacingExtra="2.0dip" />
+    </RelativeLayout>
+    <include android:id="@id/loading_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phoneTitleLayout" layout="@layout/lab_footer" />
+</RelativeLayout>

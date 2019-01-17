@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="82.0dip" android:layout_height="56.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0dip" android:textColor="@android:color/black" android:gravity="center" android:id="@id/age_text" android:background="@drawable/age_select_item_bg" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_centerInParent="true" />
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rating_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@id/panel_title_rate_movie" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="#ff333333" android:gravity="center_vertical" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/movie_rating_panel_title" android:layout_weight="1.0" />
+            <ImageView android:id="@id/panel_close_btn" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/player_common_close" android:scaleType="centerInside" />
+        </LinearLayout>
+        <View android:id="@id/panel_title_divider_rate_movie" android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/panel_title_rate_movie" />
+        <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/panel_title_divider_rate_movie" android:overScrollMode="never">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ViewStub android:id="@id/panel_header_rate_movie_with_detail" android:layout="@layout/panel_header_rate_movie_with_detail" android:layout_width="fill_parent" android:layout_height="109.0dip" />
+                <ViewStub android:id="@id/panel_header_rate_movie_without_detail" android:layout="@layout/panel_header_rate_movie_without_detail" android:layout_width="fill_parent" android:layout_height="60.0dip" />
+                <View android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="65.0dip">
+                    <org.iqiyi.video.image.PlayerDraweView android:id="@id/movie_rate_user_avatar" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="9.0dip" app:backgroundImage="@color/color_meta_title" app:roundAsCircle="true" app:roundingBorderWidth="0.5dip" app:roundingBorderColor="#ffe8e8e8" />
+                    <TextView android:textSize="13.0dip" android:textColor="#ff999999" android:id="@id/movie_rate_text_next_to_avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="#ff333333" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/movie_rating_my_rate_text" />
+                <TextView android:textSize="18.0dip" android:textColor="#ffff7646" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/movie_rate_rating_text" android:layout_width="wrap_content" android:layout_height="53.0dip" />
+                <com.iqiyi.qyplayercardview.view.BetterRatingBar android:layout_gravity="center_horizontal" android:id="@id/movie_rate_rating_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" app:itemsNum="5" app:itemWidth="@dimen/panel_rate_movie_rating_star_size" app:itemHeight="@dimen/panel_rate_movie_rating_star_size" app:emptyRateItem="@drawable/rating_empty_star" app:halfRateItem="@drawable/rating_half_star" app:fullRateItem="@drawable/rating_full_star" app:enableSwipeRate="false" app:displayRate="0" />
+                <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="24.0dip">
+                    <TextView android:textSize="12.0dip" android:textColor="@color/text_color_rate_movie_rating_level" android:gravity="center" android:id="@id/movie_rate_one_star_text" android:layout_width="@dimen/panel_rate_movie_rating_star_size" android:layout_height="fill_parent" android:text="@string/movie_rating_one_star" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/text_color_rate_movie_rating_level" android:gravity="center" android:id="@id/movie_rate_two_star_text" android:layout_width="@dimen/panel_rate_movie_rating_star_size" android:layout_height="fill_parent" android:text="@string/movie_rating_two_star" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/text_color_rate_movie_rating_level" android:gravity="center" android:id="@id/movie_rate_three_star_text" android:layout_width="@dimen/panel_rate_movie_rating_star_size" android:layout_height="fill_parent" android:text="@string/movie_rating_three_star" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/text_color_rate_movie_rating_level" android:gravity="center" android:id="@id/movie_rate_four_star_text" android:layout_width="@dimen/panel_rate_movie_rating_star_size" android:layout_height="fill_parent" android:text="@string/movie_rating_four_star" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/text_color_rate_movie_rating_level" android:gravity="center" android:id="@id/movie_rate_five_star_text" android:layout_width="@dimen/panel_rate_movie_rating_star_size" android:layout_height="fill_parent" android:text="@string/movie_rating_five_star" />
+                </LinearLayout>
+                <TextView android:textSize="14.0dip" android:textColor="@color/text_color_rate_movie_submit_btn" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/movie_rate_submit_btn" android:background="@drawable/bg_rate_movie_submit_btn" android:layout_width="80.0dip" android:layout_height="30.0dip" android:layout_marginTop="24.0dip" android:layout_marginBottom="24.0dip" android:text="@string/movie_rating_submit_text" />
+            </LinearLayout>
+        </ScrollView>
+        <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/panel_title_divider_rate_movie" layout="@layout/panel_common_loading_mask" />
+    </RelativeLayout>
+    <include android:id="@id/rating_result" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/panel_share_my_movie_rating" />
+</FrameLayout>

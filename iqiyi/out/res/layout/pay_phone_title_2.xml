@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mylayoutroot" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_44"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/wphoneTitleLayout" android:background="@color/p_color_FF7E00" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_44">
+        <ImageView android:id="@id/wphoneTopBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:src="@drawable/p_title_bar_arrow_white" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/p_dimen_18" android:textColor="@android:color/white" android:id="@id/wphoneTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p_pay_title" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/wphoneTitleRightImageView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" android:src="@drawable/qy_w_phone_title_setting" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

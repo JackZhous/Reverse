@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="16.0dip" android:textColor="@color/color_333333" android:gravity="center_vertical" android:id="@id/tv_publish_to_circle" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:text="发布到圈子:" />
+        <ImageView android:id="@id/iv_arrow" android:background="@drawable/pub_select_bar_right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="6.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0dip" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/tv_circle_name" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="4.0dip" android:text="请选择" android:layout_toLeftOf="@id/iv_arrow" />
+    </RelativeLayout>
+    <View android:id="@id/pulisher_publish_to_circle_divider2" android:background="@color/pub_color_f5f5f5" android:layout_width="fill_parent" android:layout_height="6.0dip" />
+</LinearLayout>

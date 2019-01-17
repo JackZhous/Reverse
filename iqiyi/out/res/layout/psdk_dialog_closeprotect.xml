@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.qiyi.android.video.ui.account.view.PLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.android.video.ui.account.view.PTextView android:textSize="18.0dip" android:textColor="#ffeb3f25" android:gravity="center" android:id="@id/tv_closeprotect_ok" android:background="@drawable/psdk_phone_setting_card_item_bg" android:layout_width="fill_parent" android:layout_height="@dimen/psdk_phone_normal_card_height_new" android:text="@string/psdk_phone_my_account_user_closeprotect" android:layout_below="@id/lv_problems" />
+    <org.qiyi.android.video.ui.account.view.PView android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <org.qiyi.android.video.ui.account.view.PTextView android:textSize="18.0dip" android:textColor="#ff666666" android:gravity="center" android:id="@id/tv_closeprotect_no" android:background="@drawable/psdk_phone_setting_card_item_bg" android:layout_width="fill_parent" android:layout_height="@dimen/psdk_phone_normal_card_height_new" android:text="@string/psdk_phone_my_account_cancel" android:layout_below="@id/lv_problems" />
+</org.qiyi.android.video.ui.account.view.PLinearLayout>

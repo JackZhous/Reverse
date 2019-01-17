@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/rl_second_page" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.video.qyskin.view.SkinTitleBar android:id="@id/home_title_bar" android:background="@color/top_bar_bg_transparent" android:layout_height="wrap_content" app:tb_menu="@menu/title_bar_second_page_menu" app:showDivider="true" style="@style/title_bar_base" />
+    <android.support.v4.view.ViewPager android:id="@id/vp_second_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/home_title_bar" />
+    <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phoneTitleLayout" layout="@layout/phone_load_data_exception" />
+    <RelativeLayout android:gravity="center" android:id="@id/video_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/login_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/home_title_bar" layout="@layout/fragment_loginpage" />
+</RelativeLayout>

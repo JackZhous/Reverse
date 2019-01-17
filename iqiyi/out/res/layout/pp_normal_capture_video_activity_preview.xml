@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_preview" android:background="@color/pp_color_background_212121" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:progress="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_player" android:background="@color/ppq_preview_gray" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.iqiyi.video.ppq.camcorder.PlayerGLView android:layout_gravity="center" android:id="@id/palyer_glview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <include android:id="@id/header" layout="@layout/pp_common_header" />
+    <ProgressBar android:layout_gravity="center_vertical" android:id="@id/progress_video" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_marginBottom="30.0dip" android:progress="0" android:progressDrawable="@drawable/pp_progressbar_pao_pao" android:layout_above="@id/layout_next" style="?android:attr/progressBarStyleHorizontal" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_current_time" android:background="@drawable/pp_time_background_black" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:layout_above="@id/progress_video" android:layout_alignParentRight="true">
+        <TextView android:textSize="14.0sp" android:textColor="@color/pp_color_time_b2ffffff" android:id="@id/tv_min_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginTop="3.0dip" android:text="3" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/pp_color_time_b2ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginRight="4.0dip" android:text="秒" android:layout_toRightOf="@id/tv_min_time" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/progress_video" android:layout_alignLeft="@id/rl_player" android:layout_alignTop="@id/rl_player" android:layout_alignRight="@id/rl_player" android:layout_alignBottom="@id/rl_player">
+        <ProgressBar android:id="@id/progress_combine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_play" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/header" android:layout_alignLeft="@id/rl_player" android:layout_alignTop="@id/rl_player" android:layout_alignRight="@id/rl_player" android:layout_alignBottom="@id/rl_player">
+        <ImageView android:id="@id/iv_video_play" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pp_video_play" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="60.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/iv_next_inner" android:visibility="visible" android:layout_width="80.0dip" android:layout_height="80.0dip" android:src="@drawable/pp_finish" android:layout_alignTop="@id/iv_next" android:layout_alignBottom="@id/iv_next" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="35.0dip" android:layout_below="@id/rl_player" android:layout_alignParentRight="true" android:layout_centerInParent="true">
+        <RelativeLayout android:gravity="center" android:id="@id/rl_video_edit" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:textColor="@color/ppq_white" android:id="@id/iv_video_edit" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/pp_edit_selector" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/pp_edit_text_selector" android:id="@id/tv_text_edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="6.0dip" android:text="@string/ppq_video_edit" android:layout_below="@id/iv_video_edit" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@id/layout_trans_code" android:background="@color/ppq_progress_bg" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:background="@drawable/pp_trans_code_shape" android:layout_width="85.0dip" android:layout_height="85.0dip">
+            <com.android.share.camera.view.RoundProgressBar android:id="@id/progress_trans_code" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="15.0dip" android:layout_centerHorizontal="true" progress:textColor="#ff9a32cd" progress:roundColor="#ff868686" progress:roundProgressColor="@color/ppq_text_gray" progress:roundWidth="7.0dip" progress:textSize="18.0sp" progress:textIsDisplayable="false" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/ppq_white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="正在导出..." android:layout_below="@id/progress_trans_code" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

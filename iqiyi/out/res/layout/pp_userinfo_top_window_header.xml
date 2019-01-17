@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:Fresco="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/fl_icon" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="16.0dip" android:layout_marginBottom="7.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_avatar" android:layout_width="fill_parent" android:layout_height="fill_parent" Fresco:placeholderImage="@drawable/pp_icon_avatar_default" Fresco:placeholderImageScaleType="centerCrop" Fresco:failureImage="@drawable/pp_icon_avatar_default" Fresco:failureImageScaleType="centerCrop" Fresco:roundAsCircle="true" />
+        <ImageView android:layout_gravity="bottom|center|right" android:id="@id/iv_user_info_header_verified" android:background="@drawable/pp_identity_v_pic" android:visibility="invisible" android:layout_width="15.0dip" android:layout_height="15.0dip" />
+        <ImageView android:layout_gravity="bottom|center|right" android:id="@id/kol_flag" android:background="@drawable/pp_kol_fag_by_user_icon" android:visibility="invisible" android:layout_width="15.0dip" android:layout_height="15.0dip" />
+    </FrameLayout>
+    <LinearLayout android:id="@id/ll_nick_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:layout_below="@id/fl_icon" android:layout_centerHorizontal="true">
+        <TextView android:textSize="18.0dip" android:textColor="@color/color_ffffff" android:id="@id/tv_user_info_head_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" " />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_gender_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_vip_level_icon" android:background="@drawable/pp_userinfo_vip_level_three" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="12.0dip" android:textColor="#b3ffffff" android:id="@id/pp_user_info_head_vertified_desc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="27.5dip" android:layout_marginRight="27.5dip" android:layout_marginBottom="18.0dip" android:text="认证:hahah" android:layout_below="@id/ll_nick_name" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_user_info_tabs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:layout_below="@id/pp_user_info_head_vertified_desc" android:layout_centerHorizontal="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_user_info_my_circle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="49.0dip">
+            <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="@color/color_ffffff" android:id="@id/tv_user_info_my_circle_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" " />
+            <TextView android:textSize="14.0dip" android:textColor="@color/color_ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/pp_userinfo_circle_tag" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_user_info_my_paopao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="49.0dip">
+            <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="@color/color_ffffff" android:id="@id/tv_user_info_my_paopao_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" " />
+            <TextView android:textSize="14.0dip" android:textColor="@color/color_ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/pp_userinfo_group_chat_tag" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_user_info_my_fans" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="@color/color_ffffff" android:id="@id/tv_user_info_my_fans_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" " />
+            <TextView android:textSize="14.0dip" android:textColor="@color/color_ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/pp_userinfo_fans_count" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/ll_user_info_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="27.5dip" android:layout_marginRight="27.5dip" android:layout_marginBottom="12.0dip" android:layout_below="@id/ll_user_info_tabs" android:layout_centerHorizontal="true">
+        <TextView android:textSize="12.0dip" android:textColor="@color/color_ffffff" android:ellipsize="end" android:id="@id/tv_user_info_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" " android:singleLine="true" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/tv_user_info_description_edit_btn" android:background="@drawable/pp_userinfo_edit_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/ll_client_operation" android:paddingBottom="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/ll_user_info_description" android:layout_centerHorizontal="true">
+        <FrameLayout android:id="@id/fl_tweet" android:background="@drawable/pp_userinfo_forbide_tweet_bg" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="35.0dip">
+            <TextView android:textSize="13.0dip" android:textColor="#ff0bbe06" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_tweet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="私聊" android:drawableLeft="@drawable/pp_userinfo_tweet_green_icon" android:drawablePadding="4.0dip" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/fl_join" android:background="@drawable/pp_userinfo_join_bg" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="13.0dip" android:textColor="@color/color_ffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_join" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="加入" android:drawableLeft="@drawable/pp_userinfo_join_icon" android:drawablePadding="4.0dip" />
+        </FrameLayout>
+    </LinearLayout>
+    <TextView android:id="@id/leftBackDoorTv" android:background="#00000000" android:clickable="true" android:layout_width="60.0dip" android:layout_height="120.0dip" android:text="" android:layout_alignBottom="@id/ll_client_operation" android:layout_alignParentLeft="true" />
+    <TextView android:id="@id/rightBackDoorTv" android:background="#00000000" android:clickable="true" android:layout_width="60.0dip" android:layout_height="120.0dip" android:text="" android:layout_alignBottom="@id/ll_client_operation" android:layout_alignParentRight="true" />
+</RelativeLayout>

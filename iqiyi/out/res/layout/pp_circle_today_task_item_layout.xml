@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dip" android:textColor="@color/pp_color_333333" android:id="@id/tvContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="都是佛时间点附近的搜救方大" android:maxLines="2" android:layout_weight="1.0" android:lineSpacingExtra="5.0dip" />
+    <TextView android:textSize="13.0dip" android:textColor="@color/pp_color_e60bbe06" android:gravity="center" android:id="@id/btnAction" android:background="@drawable/pp_green_stroke_btn_shape" android:paddingLeft="8.0dip" android:paddingTop="3.0dip" android:paddingRight="8.0dip" android:paddingBottom="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="去点赞" android:singleLine="true" />
+    <ImageView android:gravity="center" android:id="@id/ivFinish" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="@drawable/pp_fans_level_sign_in_status_finish" />
+</LinearLayout>

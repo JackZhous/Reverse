@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_camera_content" android:background="@color/ppq_app_background" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/header_paopao" android:visibility="invisible" layout="@layout/pp_camera_header" />
+    <RelativeLayout android:id="@id/camera_layout" android:background="@color/pp_color_background_212121" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip">
+        <com.iqiyi.video.ppq.camcorder.CameraGLView android:id="@id/camera_glview" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+        <AbsoluteLayout android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/camera_glview" android:layout_alignTop="@id/camera_glview" android:layout_alignRight="@id/camera_glview" android:layout_alignBottom="@id/camera_glview">
+            <com.android.share.camera.view.FocusView android:id="@id/iv_capture_focus" android:layout_width="80.0dip" android:layout_height="80.0dip" />
+        </AbsoluteLayout>
+        <com.android.share.camera.view.ProgressView android:id="@id/progress_view_shorter" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="3.5dip" android:layout_marginTop="3.0dip" android:layout_alignBottom="@id/camera_glview" />
+        <RelativeLayout android:id="@id/layout_time_tips" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-40.0dip" android:layout_below="@id/progress_view_shorter">
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/pp_time_background_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="10.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/pp_color_time_b2ffffff" android:id="@id/tv_min_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginTop="3.0dip" android:text="3" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/pp_color_time_b2ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginRight="4.0dip" android:text="秒" android:layout_toRightOf="@id/tv_min_time" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/pp_time_background_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentRight="true">
+                <TextView android:textSize="14.0sp" android:textColor="@color/pp_color_time_b2ffffff" android:id="@id/tv_most_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="3.0dip" android:text="18" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/pp_color_time_b2ffffff" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="秒" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/layout_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/progress_view_shorter">
+            <ImageView android:id="@id/circle_inner" android:layout_width="75.0dip" android:layout_height="75.0dip" android:src="@drawable/pp_capture_selector" android:layout_centerInParent="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/ppq_pao_pao_total_text" android:gravity="center" android:id="@id/tv_press_capture" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ppq_capture_press" android:layout_alignLeft="@id/circle_inner" android:layout_alignTop="@id/circle_inner" android:layout_alignRight="@id/circle_inner" android:layout_alignBottom="@id/circle_inner" />
+            <RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/circle_inner" android:layout_toRightOf="@id/circle_inner" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <RelativeLayout android:id="@id/layout_local_video" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/iv_local" android:visibility="visible" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/pp_local_video_selector" android:layout_centerHorizontal="true" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/pp_edit_text_selector" android:gravity="center" android:id="@id/tv_from_local" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/ppq_video_from_local" android:layout_below="@id/iv_local" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="top" android:id="@id/layout_slide_tips" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_below="@id/progress_view_shorter" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/iv_slide" android:layout_width="25.0dip" android:layout_height="36.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/pp_slide_delete" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/ppq_pao_pao_total_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/ppq_slide_delete" android:layout_toRightOf="@id/iv_slide" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_filter_guide_inner" android:background="@color/ppq_filter_guide_bg" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/header_paopao">
+        <ImageView android:id="@id/iv_blur" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/iv_guide_image_pao_pao" android:visibility="invisible" android:layout_width="81.0dip" android:layout_height="36.0dip" android:src="@drawable/pp_pao_pao_guide" android:layout_centerInParent="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/ppq_pao_pao_slide_text" android:id="@id/tv_text_guide" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/ppq_slide_tips" android:layout_below="@id/iv_guide_image_pao_pao" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/iv_eyes" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pp_eyes" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_finish_record_loading" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:gravity="center" android:background="@drawable/pp_round_gray_shape" android:layout_width="110.0dip" android:layout_height="80.0dip" android:layout_centerInParent="true">
+            <ProgressBar android:id="@id/progress_bar_loading" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/ppq_record_time" android:id="@id/tv_has_record_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已录制18秒" android:layout_below="@id/progress_bar_loading" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/ppq_record_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="视频正在处理中" android:layout_below="@id/tv_has_record_time" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

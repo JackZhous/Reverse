@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="10.0dip" android:textColor="@color/color_gray_white" android:gravity="center" android:id="@id/currentTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00:00" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="10.0dip" android:textColor="@color/color_gray_white" android:gravity="center" android:id="@id/durationTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="01:00:00" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <SeekBar android:id="@id/play_progress" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="2.0dip" android:progressDrawable="@drawable/video_player_progress_bar_bg" android:minHeight="2.0dip" android:thumb="@drawable/video_player_progress_seekbar_normal" android:thumbOffset="5.0dip" android:layout_toLeftOf="@id/durationTime" android:layout_toRightOf="@id/currentTime" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" />
+</RelativeLayout>

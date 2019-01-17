@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/p_w_title_layout" layout="@layout/pay_phone_title" />
+    <LinearLayout android:orientation="vertical" android:id="@id/mainContainer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p_dimen_19" android:layout_marginBottom="@dimen/p_dimen_29">
+            <TextView android:textSize="@dimen/p_dimen_15" android:textColor="@color/p_color_333333" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/p_w_order_pname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2" android:maxLines="1" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/p_dimen_25" android:textColor="@color/p_color_FF7E00" android:gravity="center" android:layout_gravity="center" android:id="@id/p_w_order_pay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p_dimen_13" android:text="2" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/p_dimen_35" android:layout_marginRight="@dimen/p_dimen_35">
+            <TextView android:textSize="@dimen/p_dimen_15" android:textColor="@color/p_color_333333" android:gravity="left" android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/p_dimen_8" android:text="@string/p_w_input_pwd1" android:layout_weight="1.0" />
+            <LinearLayout android:orientation="vertical" android:id="@id/p_w_order_kb" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/p_w_keyboard_pwd_layout" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p_dimen_13" android:layout_marginRight="@dimen/p_dimen_35">
+            <TextView android:textSize="@dimen/p_dimen_14" android:textColor="@color/p_color_FF7E00" android:layout_gravity="right" android:id="@id/p_w_order_pwdforget" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p_w_forget_pwd" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

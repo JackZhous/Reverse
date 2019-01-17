@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="1.0px" android:width="200.0dip" />
+    <solid android:color="@color/player_pp_cell_separate_line_dark" />
+</shape>

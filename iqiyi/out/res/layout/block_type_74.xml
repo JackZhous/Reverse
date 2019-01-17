@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/card_video_layout" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/video_header" android:background="@drawable/card_video_top_mask" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip">
+            <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta1" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <org.qiyi.basecard.common.widget.ButtonView android:id="@id/remove_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/video_footer" android:background="@drawable/card_video_bottom_mask" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+            <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta2" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <org.qiyi.basecard.v3.widget.CardDanmakuEditView android:id="@id/boot" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+</LinearLayout>

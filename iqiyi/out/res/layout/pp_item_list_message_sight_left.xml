@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/tv_msg_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/im_message_timestamp_margin_top" style="@style/PPTextView.TimeStamp" />
+    <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/im_message_to_margin_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.iqiyi.im.chat.view.message.ChatAvatarImageView android:id="@id/iv_left_avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.iqiyi.im.chat.view.message.ChatUserTextView android:id="@id/chat_user_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/im_message_user_text_margin_left" android:layout_marginTop="@dimen/im_message_user_text_margin_top" android:text="" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/im_message_content_margin_left" android:layout_marginTop="@dimen/im_message_content_margin_top">
+                <ImageView android:id="@id/iv_left_stroke" android:background="@drawable/im_icon_message_stroke_from" android:visibility="visible" android:layout_width="217.0dip" android:layout_height="217.0dip" android:layout_centerInParent="true" />
+                <com.iqiyi.im.chat.view.message.SightMessageView android:id="@id/iv_left_sight" android:layout_width="@dimen/im_message_sight_width" android:layout_height="@dimen/im_message_sight_width" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

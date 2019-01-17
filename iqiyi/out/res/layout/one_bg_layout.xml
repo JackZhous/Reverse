@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/icon" android:background="@drawable/phone_category_detail_rec_vertical_pic_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" />
+    <RelativeLayout android:id="@id/SingleItemCategoryLayout" android:background="#ff62b608" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/icon" android:layout_alignTop="@id/icon" android:layout_alignRight="@id/icon" android:layout_alignBottom="@id/icon">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/SingleItemCategoryIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_above="@id/SingleItemCategoryTitle" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/category_small_bg_title_text_size" android:textColor="#ffffffff" android:id="@id/SingleItemCategoryTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="电视剧" android:singleLine="true" android:layout_above="@id/SingleItemCategoryUpdate" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/category_small_bg_update_text_size" android:textColor="#ffffffff" android:gravity="center" android:id="@id/SingleItemCategoryUpdate" android:background="@drawable/phone_index_item_cat_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="10.0dip" android:text="更新到22集" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

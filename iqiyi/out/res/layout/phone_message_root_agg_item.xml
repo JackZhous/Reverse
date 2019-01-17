@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/phone_setting_card_item_bg" android:layout_width="fill_parent" android:layout_height="55.0dip">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/phone_avatar_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="@dimen/phone_card_margin_horizontal_new" android:src="@drawable/my_main_login_img" android:scaleType="fitXY" android:layout_centerVertical="true" />
+        <TextView android:textColor="#ff333333" android:id="@id/phone_message_agg_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="与我相关" android:layout_toRightOf="@id/phone_avatar_icon" android:layout_centerVertical="true" />
+        <TextView android:textSize="10.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/phone_message_agg_msgcount" android:background="@drawable/phone_common_reddot_ball" android:visibility="visible" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_toLeftOf="@id/phone_my_main_arrow" android:layout_centerInParent="true" />
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/phone_my_main_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/phone_my_inc_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:id="@id/divider" android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

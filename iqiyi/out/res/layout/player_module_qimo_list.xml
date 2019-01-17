@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/player_cast_device_list_header" android:layout_width="fill_parent" android:layout_height="50.0dip" layout="@layout/player_module_qimo_list_header" />
+    <ImageView android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="0.5dip" android:src="#80f2f2f2" />
+    <org.iqiyi.video.image.PlayerDraweView android:id="@id/player_cast_ad_above_device_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="60.0dip" app:actualImageScaleType="fitCenter" app:backgroundImage="@color/color_white" />
+    <org.iqiyi.video.view.LimitedLinearLayout android:id="@id/panel_cast_device_list_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ListView android:id="@id/player_module_dlan_devices_list" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/player_cast_devices_list_selector" android:divider="@null" android:overScrollMode="never" />
+    </org.iqiyi.video.view.LimitedLinearLayout>
+</LinearLayout>

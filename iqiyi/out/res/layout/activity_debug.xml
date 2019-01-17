@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/debug_tabs" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_alignParentTop="true">
+        <TextView android:textSize="16.0dip" android:textColor="#ff000000" android:gravity="center" android:id="@id/push_debug_tab" android:layout_width="0.0dip" android:layout_height="45.0dip" android:text="PUSH" android:layout_weight="1.0" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/phone_download_color_line_black" android:gravity="center" android:id="@id/webview_debug_tab" android:layout_width="0.0dip" android:layout_height="45.0dip" android:text="WEBVIEW" android:layout_weight="1.0" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/phone_download_color_line_black" android:gravity="center" android:id="@id/star_visit_debug_tab" android:layout_width="0.0dip" android:layout_height="45.0dip" android:text="明星驾到" android:layout_weight="1.0" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/phone_download_color_line_black" android:gravity="center" android:id="@id/popup_window_debug_tab" android:layout_width="0.0dip" android:layout_height="45.0dip" android:text="首页弹窗" android:layout_weight="1.0" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/phone_download_color_line_black" android:gravity="center" android:id="@id/plugin_center_debug_tab" android:layout_width="0.0dip" android:layout_height="45.0dip" android:text="插件中心" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:background="#ffc8c8c8" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/debug_tabs" />
+    <android.support.v4.view.ViewPager android:id="@id/debug_viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="46.0dip" />
+</RelativeLayout>

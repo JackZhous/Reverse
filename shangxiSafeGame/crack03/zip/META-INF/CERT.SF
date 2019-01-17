@@ -1,0 +1,40 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest: f/xkFoOI4TWbB96OVKM7S9hr8eE=
+Created-By: 1.0 (Android)
+
+Name: res/drawable-xhdpi-v4/ic_launcher.png
+SHA1-Digest: qLB+xSuTsdod1eS2aPJel/A5PvE=
+
+Name: AndroidManifest.xml
+SHA1-Digest: W10fZ2Dj4m07rXaX/9BfZIM4W0g=
+
+Name: com_example_xtu_GetString.h
+SHA1-Digest: FxUUHaC+Imh5YsxdVzZr5bsyW8w=
+
+Name: res/drawable-hdpi-v4/ic_launcher.png
+SHA1-Digest: nVLQ/wUjf9D4KSB2I7WqoHR14JY=
+
+Name: res/layout/activity_main.xml
+SHA1-Digest: nxjp/FkC6upZaZ6d3TpVO9yvyeA=
+
+Name: resources.arsc
+SHA1-Digest: OsU0+/grOpXLrc2C7sYF7xRbZxU=
+
+Name: res/drawable-mdpi-v4/ic_launcher.png
+SHA1-Digest: NBFXy1maYHW4TAiVCw6R9+EBNqI=
+
+Name: lib/armeabi/libXTU.so
+SHA1-Digest: eH7F1zJC66X/RPWnknw83hcEFqA=
+
+Name: classes.dex
+SHA1-Digest: +R15JcR0j0faIAG7/SnuaIR7+H0=
+
+Name: res/drawable-xxhdpi-v4/ic_launcher.png
+SHA1-Digest: W7nSszMeL1x0eIt3K2CoCIHU6Qg=
+
+Name: res/menu/main.xml
+SHA1-Digest: bUo9QbRUBNZbkiRj7nu4iMQwrjE=
+
+Name: res/drawable-hdpi-v4/a.png
+SHA1-Digest: BZ/u7H6hS37NG7tAb5PHlxdtG7s=
+

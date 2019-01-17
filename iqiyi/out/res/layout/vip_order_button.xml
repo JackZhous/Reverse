@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:clickable="true" android:layout_width="70.0dip" android:layout_height="21.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/iv_left_icon" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/movie_subscripted_icon_selector" android:layout_centerVertical="true" />
+    <TextView android:textSize="12.0dip" android:textColor="@color/green_mormal" android:id="@id/tv_movie_notify" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="预约" android:singleLine="true" android:layout_toRightOf="@id/iv_left_icon" android:layout_centerVertical="true" />
+</RelativeLayout>

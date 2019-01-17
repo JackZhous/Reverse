@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.iqiyi.paopao.middlecommon.ui.view.titlebar.CommonTitleBar android:id="@id/pp_search_circle_title_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <View android:id="@id/default_gray_view" android:background="@color/french_grey" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/pp_search_circle_title_bar" />
+    <ListView android:id="@id/list_search_more_circle" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@null" android:layout_below="@id/pp_search_circle_title_bar" />
+    <include android:id="@id/no_network_recommd" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/pp_search_circle_title_bar" layout="@layout/pp_no_network_nocashe_warning_ll" />
+    <include android:id="@id/layout_fetch_data_fail" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/pp_layout_fetch_data_fail" />
+</RelativeLayout>

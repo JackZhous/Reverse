@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/ppq_app_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/header" layout="@layout/pp_vw_common_header" />
+    <GridView android:id="@id/act_media_select_video" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="11.0dip" android:layout_marginRight="11.0dip" android:horizontalSpacing="7.0dip" android:verticalSpacing="7.0dip" android:numColumns="3" android:layout_below="@id/header" />
+</RelativeLayout>

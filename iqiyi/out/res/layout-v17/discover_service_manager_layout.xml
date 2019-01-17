@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/phoneTitleLayout" style="@style/top_base_item">
+        <TextView android:textSize="13.0dip" android:textColor="#ff8f8f91" android:gravity="center" android:id="@id/service_manager_back" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btn_cancel" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:id="@id/service_manager_title" android:text="@string/title_service_manager" style="@style/top_title" />
+        <TextView android:textSize="13.0dip" android:textColor="#ff0bbe06" android:id="@id/service_manager_finish" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_service_manager_finish" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/hit_content_layout" android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="30.0dip">
+        <TextView android:textSize="13.0dip" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/common_service" android:layout_centerVertical="true" android:layout_marginStart="10.0dip" />
+        <TextView android:textSize="11.0dip" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/common_service_hint" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="10.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/common_service_recyclerview" android:layout_width="fill_parent" android:layout_height="88.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <RelativeLayout android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="30.0dip">
+        <TextView android:textSize="13.0dip" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/recommend_service" android:layout_centerVertical="true" android:layout_marginStart="10.0dip" />
+        <TextView android:textSize="13.0dip" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/recommend_service_hint" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="10.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/recommend_service_recyclerview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+</LinearLayout>

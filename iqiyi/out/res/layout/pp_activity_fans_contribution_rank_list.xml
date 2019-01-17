@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/qz_fc_star_common_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.iqiyi.paopao.middlecommon.ui.view.titlebar.CommonTitleBar android:id="@id/pp_fans_contri_title_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <com.iqiyi.paopao.middlecommon.ui.view.ptr.CommonPtrRecyclerView android:id="@id/list_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <include android:id="@id/pp_layout_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/pp_fans_contri_title_bar" layout="@layout/pp_circle_loading_layout" />
+    <include android:id="@id/pp_loading_error_page" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/pp_fans_contri_title_bar" layout="@layout/pp_no_network_nocashe_warning_ll" />
+    <include android:id="@id/pp_no_data_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/pp_fans_contri_title_bar" layout="@layout/pp_layout_no_data" />
+</LinearLayout>

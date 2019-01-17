@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/category_presetskey_layout" android:background="@drawable/phone_card_style_bg" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/a3_text" android:paddingLeft="6.0dip" android:paddingTop="5.0dip" android:paddingRight="6.0dip" android:paddingBottom="8.0dip" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/phone_category_rec_presetkeys" />
+    <View android:background="@color/phone_setting_background_layout_lee" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/phone_adapter_category_filter_new_presetkeys" />
+</LinearLayout>

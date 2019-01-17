@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0dip" android:textColor="#ff999999" android:ellipsize="end" android:id="@id/meta1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_marginBottom="10.0dip" android:text="共1件，总价：199" android:lines="1" android:layout_alignParentRight="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/button_container" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginRight="12.0dip" android:layout_below="@id/meta1" android:layout_alignParentRight="true">
+        <TextView android:textSize="13.0dip" android:textColor="#ff999999" android:gravity="center" android:id="@id/button4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单超时未支付" android:maxLines="1" />
+        <TextView android:textSize="@dimen/card_text_size_14dp" android:gravity="center" android:id="@id/button1" android:layout_width="80.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:text="立即付款" />
+        <TextView android:textSize="@dimen/card_text_size_13dp" android:textColor="#ffff6000" android:gravity="center" android:id="@id/button2" android:background="@drawable/btn_card_order_footer_shape_2" android:layout_width="80.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:text="取消订单" />
+        <TextView android:textSize="@dimen/card_text_size_13dp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/button3" android:background="@drawable/btn_card_order_footer_shape_3" android:layout_width="80.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:text="立即付款" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/meta_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="18.0dip" android:layout_below="@id/button_container">
+        <LinearLayout android:id="@id/tickets_info" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0dip" android:textColor="@color/color_meta_sub_title" android:id="@id/meta2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="25.0dip" android:text="mate2 序列号" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/color_meta_sub_title" android:id="@id/meta3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="mate2 兑换码" android:layout_toRightOf="@id/meta2" />
+        </LinearLayout>
+        <TextView android:textSize="12.0dip" android:textColor="@color/color_meta_sub_title" android:id="@id/meta4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="mate3 取票机" android:layout_below="@id/tickets_info" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/color_meta_title" android:id="@id/meta5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单出票中" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

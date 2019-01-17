@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.qiyi.basecard.common.video.defaults.videoview.CardVideoWindowManager android:id="@id/video_area" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecard.common.widget.ButtonView android:layout_gravity="bottom|center|right" android:id="@id/button_Ad" android:background="@drawable/shape_video_ad_button_bg" android:paddingLeft="10.0dip" android:paddingTop="4.0dip" android:paddingRight="10.0dip" android:paddingBottom="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:text_size="12.0dip" app:text_color="#ffffffff" />
+    <include android:id="@id/video_poster_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/card_video_poster_layout1" />
+    <include android:id="@id/video_completion_tip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/card_video_finish_tip" />
+</org.qiyi.basecard.common.video.defaults.videoview.CardVideoWindowManager>

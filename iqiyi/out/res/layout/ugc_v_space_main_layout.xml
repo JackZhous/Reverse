@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/bottom_block" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_alignParentBottom="true" />
+    <org.qiyi.basecore.widget.ptr.widget.PtrSimpleListView android:id="@id/ugc_my_base_listview" android:fadingEdge="none" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@null" android:divider="@null" android:layout_above="@id/bottom_block" />
+    <RelativeLayout android:id="@id/listView_layout" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/layout_add_comment" android:background="#fff9f9f9" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_alignParentBottom="true">
+            <View android:background="#ffe7e7e7" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:id="@id/btn_send_recomment" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/send" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <EditText android:textSize="13.0sp" android:textColor="#ff666666" android:id="@id/edt_add_recomment" android:background="@drawable/shape_white_round_r5" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:layout_toLeftOf="@id/btn_send_recomment" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/empty_textView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include android:id="@id/phone_category_loading_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="200.0dip" layout="@layout/lab_footer" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/v_space_title_layout" android:background="#ff191919" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/v_space_title_back" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="4.5dip" android:layout_marginBottom="4.5dip" android:src="@drawable/ugc_ico_back" />
+        <TextView android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/v_space_title" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginLeft="90.0dip" android:layout_marginTop="4.5dip" android:layout_marginRight="90.0dip" android:maxLines="1" android:layout_centerVertical="false" style="@style/top_title" />
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/v_space_share" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginTop="4.5dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="4.5dip" android:src="@drawable/ugc_ico_share" android:layout_alignParentRight="true" />
+        <org.qiyi.basecore.widget.SubscribeButton android:id="@id/v_space_title_subcribe" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="30.0dip" android:layout_marginTop="4.5dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="4.5dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/v_space_header_category_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/v_space_title_layout" />
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/image1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/image1">
+        <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+        <org.qiyi.card.widget.CrowdfundingProgressBar android:id="@id/progressbar1" android:layout_width="fill_parent" android:layout_height="6.0dip" android:indeterminate="false" android:indeterminateOnly="false" android:layout_below="@id/meta1" android:layout_alignLeft="@id/meta1" android:layout_alignRight="@id/meta2" app:bgColor="#ffe6e6e6" app:startColor="#ffff8533" app:endColor="#ffff6200" />
+        <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/progressbar1" />
+        <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_toRightOf="@id/meta3" android:layout_below="@id/progressbar1" />
+        <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/meta4" android:layout_below="@id/progressbar1" android:layout_alignBaseline="@id/meta4" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/input_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/comment_bar_right_ll" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="12.0dip" android:textColor="#ff666666" android:gravity="center_vertical" android:id="@id/comment_bar_comment_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/pp_show_comment" android:drawableLeft="@drawable/pp_qz_feed_comments" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/pp_comment_bar_like_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                <ImageView android:id="@id/pp_comment_bar_like_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pp_qz_feed_unlike" />
+                <TextView android:textSize="12.0dip" android:textColor="#ff666666" android:gravity="center|left" android:id="@id/pp_comment_bar_like_tv" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/pp_record_audio_origin" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="11.0dip" android:layout_marginRight="9.0dip" android:src="@drawable/pp_star_audio_comments" android:layout_centerVertical="true" />
+        <com.iqiyi.im.chat.view.input.PPInputEditText android:textSize="14.0dip" android:textColorHint="@color/user_info_text_gray" android:gravity="center_vertical" android:id="@id/comment_bar_content" android:background="@drawable/pp_comment_edit_style" android:paddingLeft="15.0dip" android:paddingTop="6.0dip" android:paddingRight="16.0dip" android:paddingBottom="6.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="8.0dip" android:minHeight="@dimen/pp_input_bar_height" android:maxLines="3" android:includeFontPadding="false" android:layout_toLeftOf="@id/comment_bar_right_ll" android:layout_toRightOf="@id/pp_record_audio_origin" android:layout_centerVertical="true" android:textCursorDrawable="@drawable/pp_shape_edit_cursor_color" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_under_input_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/pp_publish_keyboard_top_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_above="@id/ll_expression_parent">
+            <ImageView android:id="@id/pp_record_audio" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/pp_star_audio_comments_bold" />
+            <ImageView android:id="@id/pp_publish_expression_iv" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/pub_expression_btn" android:layout_toRightOf="@id/pp_record_audio" />
+            <ImageView android:id="@id/pp_publish_pic_iv" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/pub_comment_pic_btn" android:layout_toRightOf="@id/pp_publish_expression_iv" />
+            <TextView android:textSize="13.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/comment_bar_send" android:background="@drawable/pp_qz_comment_send_background" android:clickable="false" android:layout_width="60.0dip" android:layout_height="28.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="10.0dip" android:text="@string/pp_msgs_input_btn_send" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <FrameLayout android:orientation="vertical" android:id="@id/ll_expression_parent" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.iqiyi.paopao.middlecommon.components.qyconponent.emotion.views.ExpressionsLayout android:id="@id/ll_expressions" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.iqiyi.paopao.middlecommon.ui.view.ImageSelectView android:id="@id/ll_images" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <View android:id="@id/v_none_expression_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

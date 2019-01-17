@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/qixiu_bg" android:paddingLeft="@dimen/card_padding_horizontal" android:paddingRight="@dimen/card_padding_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/poster" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" fresco:viewAspectRatio="2.0" fresco:placeholderImage="@drawable/focus_cover_default" fresco:placeholderImageScaleType="fitXY" fresco:pressedStateOverlayImage="@color/card_poster_mask_black_alpha_40" />
+    <RelativeLayout android:id="@id/meta_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/poster">
+        <TextView android:layout_gravity="center_vertical" android:id="@id/meta_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" style="@style/MetaTitle" />
+        <TextView android:layout_gravity="center_vertical" android:id="@id/meta_sub_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/meta_title" style="@style/MetaSubTitle" />
+    </RelativeLayout>
+</RelativeLayout>

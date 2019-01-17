@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.iqiyi.paopao.middlecommon.components.details.views.ImagePreviewViewPager android:id="@id/beauty_pic_viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.iqiyi.paopao.middlecommon.ui.view.titlebar.SuperTitleBar android:id="@id/pp_beauty_title_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" app:titleBarUnderline="false" app:titleBarStyle="custom" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/pp_video_player_paused_traffic_layout" android:background="@drawable/pp_video_player_paused_bkg" android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:layout_width="wrap_content" android:layout_height="35.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/pp_video_player_paused_icon" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/color_0bbe06" android:id="@id/pp_video_player_paused_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" />
+    <TextView android:textSize="14.0dip" android:textColor="#ffeeeeee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pp_mobile_traffic" />
+</LinearLayout>

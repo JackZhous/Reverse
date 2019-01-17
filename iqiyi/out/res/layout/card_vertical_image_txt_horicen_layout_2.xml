@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/poster" android:layout_width="@dimen/card_vip_clue_privilege_image_size" android:layout_height="@dimen/card_vip_clue_privilege_image_size" android:scaleType="fitCenter" android:layout_centerHorizontal="true" />
+    <TextView android:id="@id/meta" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/card_vip_clue_privilege_meta_mtop" android:layout_below="@id/poster" style="@style/VIP_Privilege_meta" />
+</RelativeLayout>

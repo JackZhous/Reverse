@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecore.widget.ptr.widget.PtrSimpleListView android:id="@id/phone_vip_tab_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/phone_vip_tab_loading_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phoneTitleLayout" layout="@layout/lab_footer" />
+    <include android:id="@id/phone_vip_tab_empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phoneTitleLayout" layout="@layout/phone_load_data_exception" />
+</RelativeLayout>

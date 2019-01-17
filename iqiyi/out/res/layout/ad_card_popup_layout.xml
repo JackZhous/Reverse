@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/mask_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="bottom" android:id="@id/ad_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_shadow" android:background="@drawable/popupad_shadow_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <org.qiyi.basecore.widget.IconViewClose android:id="@id/popupad_close_btn" android:layout_width="37.0dip" android:layout_height="37.0dip" android:layout_marginTop="5.0dip" android:layout_alignParentRight="true" app:iconStrokeWidth="1.0dip" app:iconPadding="13.0dip" app:lineColor="#ffefefef" app:circleBg="true" app:circleColor="#7f000000" app:circlePadding="6.0dip" />
+    </RelativeLayout>
+</FrameLayout>

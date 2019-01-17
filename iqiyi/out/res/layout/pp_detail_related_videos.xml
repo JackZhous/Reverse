@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_ffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/color_f0f0f0" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/color_333333" android:id="@id/pp_detail_relatevideo_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="猜你喜欢" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/color_999999" android:id="@id/pp_detail_relatevideo_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看更多" android:layout_toLeftOf="@id/pp_detail_relatevideo_all_arraw" />
+        <ImageView android:id="@id/pp_detail_relatevideo_all_arraw" android:layout_width="19.0dip" android:layout_height="19.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/pp_detail_related_video_arrow" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <com.iqiyi.paopao.middlecommon.ui.view.recyclerview.PPFamiliarRecyclerView android:id="@id/pp_detail_relatevideo_recyclerview" android:paddingLeft="5.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" />
+</LinearLayout>

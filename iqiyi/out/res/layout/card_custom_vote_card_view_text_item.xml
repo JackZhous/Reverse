@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecard.v3.widget.progressbar.VoteProgressBar android:id="@id/card_view_item_progressbar" android:layout_width="fill_parent" android:layout_height="45.0dip" style="@style/VoteProgressbar" />
+    <ImageView android:layout_gravity="center|right" android:id="@id/card_view_item_check_icon" android:background="@drawable/card_vote_unchecked_icon" android:layout_width="19.0dip" android:layout_height="19.0dip" android:layout_marginRight="13.0dip" />
+    <TextView android:textSize="12.0dip" android:textColor="#ff999999" android:gravity="center_vertical" android:layout_gravity="center|right" android:id="@id/card_view_item_show_num" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="19.0dip" android:layout_marginRight="13.0dip" />
+    <TextView android:textSize="15.0dip" android:textColor="#ff0bbe06" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/card_view_item_vote_text" android:layout_width="220.0dip" android:layout_height="45.0dip" android:singleLine="true" />
+</FrameLayout>

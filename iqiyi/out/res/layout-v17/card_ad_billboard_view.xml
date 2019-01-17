@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="31.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/left_icon" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffc8a06a" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/ad_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxLines="1" android:singleLine="true" android:layout_toLeftOf="@id/right_icon" android:layout_toRightOf="@id/left_icon" android:layout_toStartOf="@id/right_icon" android:layout_toEndOf="@id/left_icon" />
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/right_icon" android:layout_width="31.0dip" android:layout_height="31.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

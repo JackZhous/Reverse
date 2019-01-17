@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/qiyi_sdk_player_black_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/mraid_view_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/player_10" android:layout_marginRight="@dimen/player_10" android:layout_marginBottom="@dimen/player_07" android:layout_alignParentBottom="true">
+        <TextView android:id="@id/btn_ads_player_mraid_ad" android:background="@drawable/qiyi_sdk_play_ads_pause" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:id="@id/btn_ads_silence_mraid_ad" android:background="@drawable/qiyi_sdk_player_btn_volume" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/player_10" android:layout_toRightOf="@id/btn_ads_player_mraid_ad" android:layout_centerVertical="true" />
+        <TextView android:id="@id/btn_ads_to_landscape_mraid_ad" android:background="@drawable/qiyi_sdk_play_ads_to_landscape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/top_area_mraid_ad" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/player_10" android:layout_marginTop="@dimen/player_03" android:layout_marginRight="@dimen/player_10">
+        <LinearLayout android:orientation="horizontal" android:id="@id/ads_skip_ad_info_area_mraid_ad" android:background="@drawable/qiyi_sdk_player_ad_detail_bg_black" android:paddingLeft="12.0dip" android:paddingTop="7.0dip" android:paddingRight="12.0dip" android:paddingBottom="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="13.0dip" android:textColor="@color/qiyi_green" android:layout_gravity="center_vertical" android:id="@id/account_ad_time_mraid_ad" android:layout_width="@dimen/player_30" android:layout_height="wrap_content" android:text="60" />
+            <TextView android:textSize="12.0dip" android:textColor="@drawable/qiyi_sdk_play_skip_ads_text_color" android:layout_gravity="center_vertical" android:id="@id/skip_mraid_ad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/player_module_ad_mraid_skipads" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/embedded_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/ads_skip_ad_info_area_mraid_ad" android:layout_toRightOf="@id/player_ads_back_mraid_ad" android:layout_alignWithParentIfMissing="true" />
+        <TextView android:id="@id/player_ads_back_mraid_ad" android:background="@drawable/qiyi_sdk_player_portrait_btn_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="2.0dip" />
+    </RelativeLayout>
+</RelativeLayout>

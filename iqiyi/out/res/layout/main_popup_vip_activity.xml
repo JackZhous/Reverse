@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_centerVertical="true">
+        <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff666666" android:id="@id/sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/click_btn" android:background="@drawable/main_popup_vip_activity_btn_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="" android:layout_toLeftOf="@id/close_btn" android:layout_centerVertical="true" />
+    <org.qiyi.basecore.widget.IconViewClose android:id="@id/close_btn" android:layout_width="27.0dip" android:layout_height="27.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:iconStrokeWidth="1.5dip" app:iconPadding="8.0dip" app:lineColor="#ff666666" />
+</RelativeLayout>

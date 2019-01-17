@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/pp_search_root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/pp_search_inner_root_layout" android:background="@color/pp_color_ffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="12.0dip" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@id/pp_search_fragment_go_top_hint" android:background="@color/pp_color_23d41e" android:padding="1.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/search_action_bar_go_top" />
+        <include android:id="@id/search_bar_input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/pp_search_fragment_go_top_hint" layout="@layout/pp_search_input_layout" />
+        <include android:id="@id/search_key" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/search_bar_input" layout="@layout/pp_search_key_layout" />
+        <ListView android:id="@id/suggest_list_view" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/pp_selector_list_white" android:divider="@color/transparent" android:layout_below="@id/search_bar_input" />
+        <View android:id="@id/listview_bottom_horizontal_divider" android:background="@color/line_bulletin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/suggest_list_view" />
+        <FrameLayout android:id="@id/search_fragment_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/search_bar_input" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/tips_layout" android:background="@color/user_info_background_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/search_bar_input">
+            <com.iqiyi.paopao.middlecommon.views.slimviews.SlimImageView android:id="@id/tips_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="150.0dip" android:layout_marginBottom="20.0dip" app:slimViewSrc="pp_search_find_no_result" />
+            <TextView android:textSize="16.0dip" android:textColor="@color/sw_mood_unselect_textcolor" android:id="@id/tips_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pp_search_no_result" />
+            <TextView android:textSize="16.0dip" android:textColor="@color/sw_mood_unselect_textcolor" android:id="@id/pp_no_network_no_cache_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pp_search_no_result" />
+        </LinearLayout>
+    </RelativeLayout>
+    <include layout="@layout/pp_search_origin_layout" />
+</RelativeLayout>

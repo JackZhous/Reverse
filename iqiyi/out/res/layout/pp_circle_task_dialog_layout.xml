@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/midlayout" android:layout_width="290.0dip" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginRight="25.0dip" android:layout_centerInParent="true">
+        <ImageView android:id="@id/ivTop" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/pp_user_merge_top_icon" android:scaleType="fitXY" android:layout_alignParentTop="true" />
+        <TextView android:textSize="21.0dip" android:textColor="@color/color_333333" android:gravity="center" android:id="@id/tvTitle" android:background="@color/white" android:paddingTop="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/ivTop" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/color_666666" android:gravity="center" android:id="@id/tvContent" android:background="@color/white" android:paddingTop="10.0dip" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/tvTitle" android:layout_centerHorizontal="true" />
+        <View android:id="@id/divider" android:background="@color/pp_color_e7e7e7" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/tvContent" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/llButtons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/divider">
+            <TextView android:textSize="18.0dip" android:textColor="@color/pp_color_333333" android:gravity="center" android:id="@id/tvCancel" android:background="@drawable/pp_selector_white_button_bottom_left_round_corner" android:layout_width="0.0dip" android:layout_height="45.0dip" android:text="@string/pp_offical_vote_dialog_abandon_support_action" android:layout_weight="1.0" />
+            <TextView android:textSize="18.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/tvOK" android:background="@drawable/pp_selector_cyan_button_bottom_right_round_corner" android:layout_width="0.0dip" android:layout_height="45.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/ivClose" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="-50.0dip" android:layout_marginTop="40.0dip" android:src="@drawable/pp_dialog_close_with_vertical_line" android:scaleType="centerCrop" android:layout_toRightOf="@id/midlayout" />
+</RelativeLayout>

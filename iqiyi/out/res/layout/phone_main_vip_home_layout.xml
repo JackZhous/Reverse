@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffe7e7e7" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/phoneTitleLayout" style="@style/top_base_item">
+        <TextView android:id="@id/phoneTitle" android:text="@string/vip_home_title" style="@style/top_title" />
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/phoneSearchSubmit" style="@style/top_search_item" />
+    </RelativeLayout>
+    <TextView android:id="@id/divier_line" android:background="@color/vip_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/phoneTitleLayout" />
+    <LinearLayout android:orientation="vertical" android:id="@id/phone_vip_home_content_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/divier_line">
+        <org.qiyi.android.video.view.VipTabPageIndicator android:id="@id/phone_vip_home_page_tabs" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:id="@id/phoneNavi_vip_tab_devide_line" android:background="@color/phoneNavi_devide_line_color" android:layout_width="fill_parent" android:layout_height="0.5px" />
+        <org.iqiyi.video.view.DetailsViewPager android:id="@id/phone_vip_home_view_pager" android:background="@color/color_grey_light" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <include android:id="@id/phone_vip_home_loading_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phoneTitleLayout" layout="@layout/lab_footer" />
+    <include android:id="@id/phone_vip_home_empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phoneTitleLayout" layout="@layout/phone_load_data_exception" />
+</RelativeLayout>

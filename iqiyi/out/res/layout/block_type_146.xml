@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/img1_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/img1" android:layout_width="wrap_content" android:layout_height="wrap_content" fresco:pressedStateOverlayImage="@color/card_poster_mask_black_alpha_40" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/button_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <org.qiyi.basecard.common.widget.ButtonView android:id="@id/button1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/img2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/button_layout" fresco:pressedStateOverlayImage="@color/card_poster_mask_black_alpha_40" />
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/img3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/img2" fresco:pressedStateOverlayImage="@color/card_poster_mask_black_alpha_40" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/img3" android:layout_toRightOf="@id/img1_layout">
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_layout1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta1_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" fresco:text_layout_weight="1" />
+            <org.qiyi.basecard.common.widget.AutoIconSizeMetaView android:id="@id/meta2_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" fresco:left_icon_showDeed="wapImageWidth" />
+            <org.qiyi.basecard.common.widget.AutoIconSizeMetaView android:id="@id/meta3_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" fresco:left_icon_showDeed="wapImageWidth" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_layout2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/ll_layout1">
+            <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta4_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta5_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_layout3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/ll_layout2">
+            <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta6_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta7_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/img4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" fresco:pressedStateOverlayImage="@color/card_poster_mask_black_alpha_40" />
+</RelativeLayout>

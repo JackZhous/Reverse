@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/progress_percent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:max="100" android:progressDrawable="@drawable/pp_vote_option_drawable" style="?android:attr/progressBarStyleHorizontal" />
+    <TextView android:textSize="15.0dip" android:textColor="@color/default_text_color" android:gravity="center_vertical" android:id="@id/tv_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="梅长苏真的死了" android:maxLength="12" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="12.0dip" android:textColor="@color/pp_color_999999" android:gravity="center|right" android:id="@id/tv_percent" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="14.0dip" android:layout_marginRight="20.0dip" android:text="80%" android:layout_toRightOf="@id/tv_text" android:layout_alignParentRight="true" />
+</RelativeLayout>

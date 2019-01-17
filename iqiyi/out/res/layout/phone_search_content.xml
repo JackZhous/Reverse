@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/phoneSearchSuggestLayout" android:background="@color/white" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/phone_search_content_midpage" />
+    </ScrollView>
+    <ListView android:id="@id/phoneSearchSuggest" android:background="@color/white" android:visibility="gone" android:fadingEdge="none" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/phone_album_listed_selector_bg" android:cacheColorHint="@android:color/transparent" android:divider="#00000000" android:dividerHeight="0.0px" />
+    <include android:id="@id/phoneSearchResultLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/phone_search_content_result" />
+</RelativeLayout>

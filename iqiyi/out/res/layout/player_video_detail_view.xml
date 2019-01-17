@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="29.0dip">
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/content_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip">
+            <TextView android:textSize="14.0dip" android:id="@id/tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView android:id="@id/content_stars" android:layout_width="wrap_content" android:layout_height="120.0dip" android:layout_marginTop="32.0dip" android:layout_below="@id/content_tag" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff333333" android:id="@id/introduce" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="34.0dip" android:layout_marginRight="12.0dip" android:singleLine="false" android:includeFontPadding="false" android:layout_below="@id/content_stars" android:layout_alignWithParentIfMissing="true" android:lineSpacingExtra="14.0dip" />
+        <RelativeLayout android:id="@id/bottom_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="33.0dip" android:layout_marginBottom="53.0dip" android:layout_below="@id/introduce" android:layout_alignWithParentIfMissing="true">
+            <TextView android:textSize="14.0dip" android:textColor="#ff999999" android:gravity="center_vertical" android:id="@id/down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:text="6618" android:drawableLeft="@drawable/player_detail_down_selector" android:drawablePadding="5.0dip" android:layout_alignParentRight="true" />
+            <TextView android:textSize="14.0dip" android:textColor="#ff999999" android:gravity="center_vertical" android:id="@id/top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="21.0dip" android:text="1200" android:drawableLeft="@drawable/player_detail_top_selector" android:drawablePadding="5.0dip" android:layout_toLeftOf="@id/down" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/player_portrait_vv_text_color_selector" android:gravity="center_vertical" android:id="@id/vv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1.2亿" android:drawableLeft="@drawable/player_portrait_bar_vv" android:drawablePadding="6.0dip" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

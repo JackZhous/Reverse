@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/view_root_container" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/v_space_title_layout" style="@style/top_base_item">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/v_space_title_back" android:background="@drawable/phone_account_back_bg" android:onClick="onBack" style="@style/top_title_item" />
+        <TextView android:ellipsize="end" android:id="@id/v_space_title" android:layout_marginLeft="90.0dip" android:layout_marginRight="90.0dip" android:text="举报" android:singleLine="true" style="@style/top_title" />
+    </RelativeLayout>
+    <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="请选择原因：" />
+    <RadioGroup android:id="@id/group_report" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioButton android:textSize="18.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/report_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="广告" />
+        <RadioButton android:textSize="18.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/report_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="色情" />
+        <RadioButton android:textSize="18.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/report_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="虚假信息" />
+        <RadioButton android:textSize="18.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/report_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="人身攻击" />
+        <RadioButton android:textSize="18.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/report_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="恶意灌水" />
+    </RadioGroup>
+    <EditText android:textSize="18.0sp" android:textColor="#ff333333" android:id="@id/report_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:hint="其他原因" />
+    <Button android:textSize="18.0sp" android:layout_gravity="center" android:id="@id/btn_submit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="提交" android:onClick="report" />
+</LinearLayout>

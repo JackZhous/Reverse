@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@android:color/white" android:layout_width="fill_parent" style="@style/CardModelBase"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:freso="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="60.0dip" android:layout_toLeftOf="@id/card_top_banner_operation_layout">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/card_top_banner_icon" android:layout_width="@dimen/card_top_banner_icon_size" android:layout_height="@dimen/card_top_banner_icon_size" android:layout_marginLeft="5.0dip" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/card_top_banner_title_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/card_top_banner_icon" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true">
+            <TextView android:textSize="@dimen/card_text_size_15dp" android:textStyle="bold" android:layout_gravity="center_vertical" android:id="@id/card_top_banner_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_alignWithParentIfMissing="true" style="@style/CardTitle" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/color_meta_sub_title" android:id="@id/card_top_banner_sub_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:maxLines="2" android:layout_alignWithParentIfMissing="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/card_top_banner_operation_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/card_top_banner_operation_icon" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" android:maxWidth="61.0dip" android:layout_toLeftOf="@id/card_top_banner_operation" />
+        <TextView android:gravity="center" android:id="@id/card_top_banner_operation" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_toLeftOf="@id/card_top_banner_operation_mark" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" style="@style/CardOperationText" />
+        <org.qiyi.basecore.widget.QiyiDraweeView android:gravity="center" android:id="@id/card_top_banner_operation_mark" android:visibility="invisible" android:layout_width="19.0dip" android:layout_height="19.0dip" android:layout_marginLeft="1.0dip" android:src="@drawable/card_operation_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/CardOperationText" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/phone_back_img" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/phone_account_back_small_bg" android:onClick="quit" />
+    <RelativeLayout android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phoneTitleLayout" />
+    <ImageView android:id="@id/btn_share" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="6.0dip" android:src="@drawable/search_by_image_share" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:onClick="doShare" />
+    <RelativeLayout android:id="@id/layout_upload" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/img_upload" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+        <View android:background="#7f000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/ico_center" android:layout_width="90.0dip" android:layout_height="90.0dip" android:src="@drawable/image_search_upload" android:layout_centerInParent="true" />
+        <ProgressBar android:id="@id/progress_bar" android:layout_width="160.0dip" android:layout_height="2.0dip" android:layout_marginTop="12.0dip" android:max="100" android:progressDrawable="@drawable/play_seekbar_fullscreen_bg" android:layout_below="@id/ico_center" android:layout_centerHorizontal="true" style="@android:style/Widget.ProgressBar.Horizontal" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/txt_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/search_by_image_uploading" android:layout_below="@id/progress_bar" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/img_anima" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_marginBottom="-15.0dip" android:layout_above="@id/ico_center" android:layout_centerHorizontal="true" />
+        <RelativeLayout android:background="#4c000000" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentBottom="true">
+            <org.qiyi.basecore.widget.IconViewClose android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_centerInParent="true" android:onClick="quit" app:iconStrokeWidth="1.5dip" app:iconPadding="10.0dip" app:lineColor="#ff999999" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textSize="16.0dip" android:textColor="#ff333333" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/pp_convention_text" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="泡泡官方社区公约" android:maxLines="1" />
+        <View android:id="@id/pp_divider_view" android:background="@color/feed_card_divider_v14" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:layout_marginBottom="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <View android:id="@id/pp_item_bottom_gap" android:background="@color/user_info_background_color" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+</LinearLayout>

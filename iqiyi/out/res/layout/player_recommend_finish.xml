@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/qiyi_sdk_player_land_detail_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/topbar" android:background="@color/color_black_bottom" android:layout_width="fill_parent" android:layout_height="@dimen/player_48.5">
+        <TextView android:id="@id/btn_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/play_btn_write_close_bg" android:layout_centerVertical="true" />
+        <TextView android:textSize="22.0sp" android:textColor="@color/color_to_Downloadlist" android:id="@id/title_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/phone_guess_yourfavor" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/listLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" layout="@layout/main_play_err_tip" />
+        <ListView android:id="@id/listView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@color/transparent" android:divider="@null" android:dividerHeight="0.0dip" />
+    </RelativeLayout>
+</LinearLayout>

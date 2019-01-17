@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="58.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/change_icon" android:background="@drawable/ic_change_site" android:layout_width="16.0dip" android:layout_height="19.0dip" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/color_meta_title" android:gravity="center" android:id="@id/change_text" android:layout_width="wrap_content" android:layout_height="58.0dip" android:layout_marginLeft="7.0dip" android:text="切换城市" />
+</LinearLayout>

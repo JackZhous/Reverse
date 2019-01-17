@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ll_head_layout" android:background="@color/navigation_bg_color" android:layout_width="fill_parent" android:layout_height="39.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/layout_filter" android:tag="false" android:background="@drawable/pinned_search_bg" android:paddingLeft="3.0dip" android:visibility="invisible" android:layout_width="81.0dip" android:layout_height="28.0dip" android:layout_marginRight="12.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <TextView android:textSize="13.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/tv_category_filter" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/filter" />
+        <ImageView android:id="@id/icon_more_skin" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="1.0dip" android:src="@drawable/search_icon_more_normal" android:layout_toRightOf="@id/tv_category_filter" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:id="@id/right_block" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_alignParentRight="true" />
+    <RelativeLayout android:id="@id/layout_search" android:layout_width="fill_parent" android:layout_height="28.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_toLeftOf="@id/right_block" android:layout_centerVertical="true">
+        <View android:background="@drawable/pinned_search_bg_no_stroke" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="1.0dip" />
+        <ImageView android:id="@id/right_button_layout" android:layout_width="53.0dip" android:layout_height="28.0dip" android:src="@drawable/pinned_search_right" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/right_search_icon" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="19.0dip" android:src="@drawable/pinned_search" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/qiyi_green" android:gravity="center" android:id="@id/txt_left" android:paddingLeft="33.0dip" android:paddingRight="33.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/search_all_net" android:maxLines="1" android:layout_toLeftOf="@id/right_button_layout" />
+        <View android:id="@id/search_stroke" android:background="@drawable/pinned_search_bg1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+</RelativeLayout>

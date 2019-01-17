@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/layout_camera_content" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/layout_bottom" android:background="#ff04040e" android:layout_width="fill_parent" android:layout_height="83.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="14.0sp" android:textColor="@color/pp_selector_action_bar_text" android:gravity="center" android:id="@id/circle_inner" android:background="@drawable/pp_selector_shoot_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="7.0dip" android:layout_centerInParent="true" />
+        <ImageButton android:id="@id/ib_shoot_back" android:background="@drawable/pp_icon_shoot_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/camera_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/layout_bottom">
+        <RelativeLayout android:id="@id/camera_top_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:background="@color/pp_color_background_212121" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_alignParentTop="true">
+                <ImageView android:id="@id/camera_sight_record" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_sight_recording" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <com.iqiyi.video.ppq.camcorder.CameraGLView android:id="@id/camera_glview" android:clickable="true" android:layout_width="fill_parent" android:layout_height="280.0dip" android:layout_marginTop="20.0dip" />
+            <ImageView android:id="@id/pp_sight_eys" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pp_eyes" android:layout_centerInParent="true" />
+            <AbsoluteLayout android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/camera_glview" android:layout_alignTop="@id/camera_glview" android:layout_alignRight="@id/camera_glview" android:layout_alignBottom="@id/camera_glview">
+                <com.android.share.camera.view.FocusView android:id="@id/iv_capture_focus" android:layout_width="80.0dip" android:layout_height="80.0dip" />
+            </AbsoluteLayout>
+        </RelativeLayout>
+        <ImageView android:id="@id/iv_timer_tips" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pp_timer_tips" android:layout_alignBottom="@id/camera_top_layout" android:layout_centerHorizontal="true" />
+        <com.android.share.camera.view.ProgressView android:id="@id/progress_view" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_alignBottom="@id/camera_top_layout" />
+        <com.android.share.camera.view.ProgressView android:id="@id/progress_view_shorter" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="3.5dip" android:layout_alignBottom="@id/camera_top_layout" />
+        <RelativeLayout android:gravity="top" android:id="@id/layout_slide_tips" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/iv_slide" android:layout_width="25.0dip" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:textColor="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/ppq_slide_delete" android:layout_toRightOf="@id/iv_slide" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/header_base_line" android:background="#ff04040e" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_above="@id/camera_layout">
+        <ImageView android:layout_width="8.0dip" android:layout_height="8.0dip" android:src="@drawable/pp_shape_sight_recording" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <View android:id="@id/v_sight_shoot_gap" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/header_base_line" android:layout_alignParentTop="true" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/square_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" fresco:viewAspectRatio="1.0" fresco:placeholderImage="@drawable/phone_square_image_default" fresco:placeholderImageScaleType="centerCrop" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignLeft="@id/square_image" android:layout_alignTop="@id/square_image" android:layout_alignRight="@id/square_image" android:layout_alignBottom="@id/square_image" layout="@layout/card_poster_mask" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/color_meta_title" android:id="@id/square_image_meta" android:paddingLeft="7.0dip" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/square_image" android:lineSpacingExtra="7.0dip" style="@style/MetaTitle.TwoLines" />
+</RelativeLayout>

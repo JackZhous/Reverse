@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="10.0dip" android:paddingBottom="10.0dip" style="@style/CardModelBase"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:ellipsize="end" android:id="@id/title1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="煎饼侠发布终极预告" style="@style/Name" />
+    <TextView android:textSize="@dimen/card_text_size_11dp" android:textColor="@color/run_man_rank_header_text" android:ellipsize="end" android:id="@id/title2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="大鹏跌唐追梦忠诚蒸锅" android:singleLine="true" android:layout_below="@id/title1" />
+</RelativeLayout>

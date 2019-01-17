@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:Fresco="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/sw_multiimage_img" android:layout_width="106.0dip" android:layout_height="106.0dip" Fresco:placeholderImage="@drawable/pp_icon_avatar_default" Fresco:placeholderImageScaleType="centerCrop" Fresco:failureImage="@drawable/pp_icon_avatar_default" Fresco:failureImageScaleType="centerCrop" />
+    <ImageView android:id="@id/sw_multiimage_checkbox" android:background="@drawable/im_image_selecimg_bg_normal" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="4.0dip" android:layout_alignTop="@id/sw_multiimage_img" android:layout_alignRight="@id/sw_multiimage_img" />
+</RelativeLayout>

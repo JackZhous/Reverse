@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/qz_fc_home_episode_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:id="@id/ll_share_collect_cache" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <TextView android:textSize="9.0dip" android:textColor="#ff666666" android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:id="@id/tv_video_circle_fun_share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="分享" android:drawableTop="@drawable/pp_video_circle_function_bar_share" />
+            <TextView android:textSize="9.0dip" android:textColor="#ff666666" android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:id="@id/tv_video_circle_fun_collect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="收藏" android:drawableTop="@drawable/pp_video_circle_function_bar_collect" />
+            <TextView android:textSize="9.0dip" android:textColor="#ff666666" android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:id="@id/tv_video_circle_fun_cache" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="缓存" android:drawableTop="@drawable/pp_video_circle_function_bar_offline_video" />
+        </LinearLayout>
+        <TextView android:textSize="12.0dip" android:textColor="@color/color_666666" android:ellipsize="end" android:gravity="center|left" android:layout_gravity="center_vertical" android:id="@id/pp_video_circle_episode_meta_tips" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:text="微微一笑很倾城 第15集" android:maxLines="1" android:layout_weight="1.0" />
+        <LinearLayout android:id="@id/ll_video_circle_function_bar_episode_collector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_episode_select_view_mode" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/pp_video_circle_function_bar_episode_select_cells" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_episode_select_view_close" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="15.0dip" android:src="@drawable/pp_video_circle_function_bar_episode_select_close" />
+        </LinearLayout>
+        <TextView android:textSize="13.0dip" android:textColor="@color/color_0bbe06" android:gravity="center|right" android:id="@id/pp_video_circle_episode_btn" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="选集" android:includeFontPadding="false" android:drawableRight="@drawable/pp_video_circle_episode_arrow_right" android:drawablePadding="3.0dip" />
+    </LinearLayout>
+    <View android:id="@id/divide_line" android:background="@color/pp_color_e7e7e7" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" />
+    <View android:background="@color/pp_color_e7e7e7" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+</RelativeLayout>

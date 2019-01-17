@@ -1,0 +1,18 @@
+syntax = "proto2";
+option java_package = "com.qiyi.protobuf";
+option java_outer_classname = "ChatMessage";
+message ChatMessageProto {
+    message SubChatMessageProto {
+        optional int64 id = 1;
+        optional int64 u = 2;
+        optional string nk = 3;
+        optional string ic = 4;
+        optional int64 r = 5;
+        optional int32 t = 6;
+        optional int32 st = 7;
+        optional string ct = 8;
+        optional string ex = 9;
+        optional int64 ts = 10;
+    }
+    repeated SubChatMessageProto msg = 1;
+}

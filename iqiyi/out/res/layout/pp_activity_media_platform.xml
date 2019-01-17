@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/color_f0f0f0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.iqiyi.paopao.middlecommon.ui.view.titlebar.SuperTitleBar android:id="@id/mp_detail_titlebar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:state_activated="true" app:titleBarStyle="custom" />
+    <android.support.v7.widget.RecyclerView android:id="@id/rv_mp_message_container" android:background="@color/french_grey" android:paddingBottom="@dimen/pp_message_timestamp_margin_top" android:visibility="gone" android:scrollbars="vertical" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/mp_detail_titlebar" />
+    <include android:id="@id/mp_no_network_session" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/mp_detail_titlebar" layout="@layout/pp_no_network_nocashe_warning_ll" />
+    <include android:id="@id/mp_fetch_data_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/mp_detail_titlebar" layout="@layout/pp_circle_loading_layout" />
+    <include android:id="@id/mp_no_data_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/mp_detail_titlebar" android:layout_centerInParent="true" layout="@layout/pp_layout_no_data" />
+</RelativeLayout>

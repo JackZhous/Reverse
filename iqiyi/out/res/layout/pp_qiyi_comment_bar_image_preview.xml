@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.iqiyi.paopao.middlecommon.ui.view.CommentImagePreview android:id="@id/pp_commit_image_preview" android:background="@drawable/pp_comment_image_preview_bg" android:visibility="invisible" android:layout_width="75.0dip" android:layout_height="75.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/pp_pre_img" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" />
+    <ImageView android:id="@id/pp_delete_image_view" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/pp_delete_image_btn" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</com.iqiyi.paopao.middlecommon.ui.view.CommentImagePreview>

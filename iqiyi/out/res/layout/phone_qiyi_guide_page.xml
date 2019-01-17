@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/phone_qiyi_guide_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="30.0dip">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/phone_qiyi_guide_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/phone_qiyi_guide_top1" android:scaleType="centerInside" />
+        </FrameLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/phone_qiyi_guide_enter" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40.0dip" android:src="@drawable/phone_qiyi_guide_enter" android:layout_centerHorizontal="true" />
+            <LinearLayout android:gravity="center" android:id="@id/phone_qiyi_guide_checkbox3_install" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:layout_centerHorizontal="true">
+                <ImageView android:id="@id/check3" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/phone_qiyi_guide_checked_install_bg" />
+                <ImageView android:id="@id/phone_qiyi_guide_checkbox3_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/phone_qiyi_guide_checkbox3_text" />
+                <TextView android:textSize="15.0sp" android:textColor="#ff8e8e8e" android:id="@id/phone_qiyi_guide_install_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/red" android:id="@id/phone_qiyi_guide_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="@string/phone_guide_view_no_wifi_tips" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/color_white" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.iqiyi.video.image.PlayerDraweView android:id="@id/limit_free_img" android:background="@drawable/player_portrait_limit_bg" android:layout_width="43.0dip" android:layout_height="30.0dip" android:layout_marginTop="7.5dip" android:layout_marginBottom="7.5dip" android:layout_centerVertical="true" />
+    <TextView android:textSize="13.0dip" android:textColor="#ff32b4e4" android:ellipsize="middle" android:id="@id/limit_free_des" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/limit_free_img" android:layout_centerVertical="true" />
+</RelativeLayout>

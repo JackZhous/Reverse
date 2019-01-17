@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.iqiyi.video.image.PlayerDraweView android:id="@id/ratead" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/rate_img_ad_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rate_img_ad_tag" android:layout_alignTop="@id/ratead" android:layout_alignRight="@id/ratead" />
+    <RelativeLayout android:id="@id/hdr_ly" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="-5.0dip" android:layout_below="@id/ratead">
+        <ImageView android:id="@id/hdr_select_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:src="@drawable/player_landscape_rate_hdr_selector" android:layout_centerVertical="true" />
+        <TextView android:textSize="13.0dip" android:textColor="@drawable/player_landscape_rate_hdr_text_color_selector" android:id="@id/hdr_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/player_landscape_rate_hdr_text" android:layout_toRightOf="@id/hdr_select_img" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/hdr_helper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:src="@drawable/player_landscape_rate_hdr_helper" android:layout_toRightOf="@id/hdr_text" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ListView android:id="@id/rateListView" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:scrollingCache="false" android:divider="@null" android:dividerHeight="0.0dip" android:layout_above="@id/ipad_1080_guide_layout" android:layout_below="@id/ratead" android:overScrollMode="never" />
+    <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/hdr_helper_tip" android:background="@drawable/player_landscape_rate_hdr_helper_tip_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60.0dip" android:layout_marginTop="10.0dip" android:text="@string/player_landscape_rate_hdr_helper_tip" android:layout_below="@id/hdr_ly" android:layout_alignLeft="@id/hdr_ly" android:lineSpacingExtra="5.0dip" />
+    <LinearLayout android:gravity="center" android:id="@id/ipad_1080_guide_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ipad_1080_guide" />
+        <TextView android:textSize="13.0dip" android:textColor="@color/ipad_1080_guide_color_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="1080P免费享，尽在爱奇艺IPAD版" />
+    </LinearLayout>
+</RelativeLayout>

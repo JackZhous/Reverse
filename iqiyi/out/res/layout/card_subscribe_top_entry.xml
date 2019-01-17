@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.qiyi.card.view.AverageHorizontalView android:id="@id/horizontal_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/rl_fix_item" />
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/iv_shadow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_service_more" android:layout_toLeftOf="@id/rl_fix_item" android:layout_centerInParent="true" />
+    <include android:id="@id/rl_fix_item" android:background="@drawable/bg_service_more" android:layout_width="@dimen/round_item_size" android:layout_height="wrap_content" android:layout_alignParentRight="true" layout="@layout/card_round_image_item" />
+</RelativeLayout>

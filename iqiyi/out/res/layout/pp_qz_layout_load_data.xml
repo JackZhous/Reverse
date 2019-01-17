@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/pp_load_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:id="@id/load_fail_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_no_data_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pp_global_page_loading_fail" android:layout_centerHorizontal="true" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_below="@id/iv_no_data_error" android:layout_centerHorizontal="true">
+                <TextView android:textSize="14.0dip" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="获取数据失败，" />
+                <TextView android:textSize="14.0dip" android:textColor="@color/color_0bbe06" android:id="@id/tv_fetch_data_again" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点击重试" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/load_no_network_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@id/imageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pp_global_page_network_error" android:layout_above="@id/pp_no_cache_no_network_desc_first" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/item_text_value_gary" android:layout_gravity="center" android:id="@id/pp_no_cache_no_network_desc_first" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="@string/pp_network_fail_tip" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/no_data_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0dip" android:textColor="#ff999999" android:gravity="center" android:id="@id/no_data_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pp_data_empty" android:drawableTop="@drawable/pp_general_no_data_icon" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/deleted_layout" android:background="@color/user_info_background_color" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/already_delete_icon" android:layout_width="114.0dip" android:layout_height="114.0dip" android:layout_marginTop="64.0dip" android:src="@drawable/pp_general_no_data_icon" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="16.0dip" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21.0dip" android:text="@string/pp_alread_delete" android:layout_below="@id/already_delete_icon" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

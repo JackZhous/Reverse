@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/tip_concurrent_layout" android:background="@drawable/qiyi_sdk_player_land_detail_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/tip_concurrent_close_img" android:background="@drawable/play_btn_write_close_bg" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/tip_change_rate_title_size" android:textColor="#ff00ff00" android:id="@id/tip_concurrent_action2" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/tip_concurrent_close_img" android:layout_centerVertical="true" />
+    <RelativeLayout android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/tip_concurrent_close_img" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/tip_change_rate_title_size" android:textColor="#ff00ff00" android:id="@id/tip_concurrent_action" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/tip_change_rate_title_size" android:textColor="@color/tip_change_rate_title" android:ellipsize="end" android:id="@id/tip_concurrent_title" android:paddingLeft="@dimen/tip_change_rate_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_toLeftOf="@id/tip_concurrent_action" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

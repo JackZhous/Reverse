@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/header_bg_img" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/pp_circle_task_bar_list_header" android:scaleType="centerCrop" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/pp_color_666666" android:id="@id/static_desc_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pp_circle_task_join_desc" android:layout_above="@id/desc_tv" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/pp_color_666666" android:id="@id/desc_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_above="@id/on_click_btn" android:layout_centerHorizontal="true" />
+    <TextView android:textColor="@color/color_ffffff" android:gravity="center" android:id="@id/on_click_btn" android:background="@drawable/pp_gc_joined_circle_signin_bg" android:layout_width="110.0dip" android:layout_height="35.0dip" android:layout_marginTop="30.0dip" android:layout_marginBottom="140.0dip" android:text="登录或者加圈" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

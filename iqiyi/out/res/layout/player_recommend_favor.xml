@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff191919" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <ImageView android:id="@id/btn_back" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="3.0dip" android:src="@drawable/title_bar_back_new" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0dip" android:textColor="@color/color_white" android:id="@id/title_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/phone_guess_yourfavor" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" layout="@layout/main_play_err_tip" />
+        <GridView android:id="@id/favorGridView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:verticalSpacing="10.0dip" android:columnWidth="130.0dip" android:numColumns="auto_fit" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/pp_fresh_arraw_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="center" android:id="@id/pp_fresh_arraw" android:background="@drawable/pp_arrow_to_left" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+</FrameLayout>

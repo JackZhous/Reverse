@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup android:orientation="horizontal" android:id="@id/phone_category_top_tab" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioButton android:textSize="14.0dip" android:textStyle="bold" android:textColor="@drawable/phone_category_top_text_color_bg" android:gravity="center" android:id="@id/phone_category_top_tab_left" android:background="@drawable/phone_category_top_tab_left_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:text="@string/phone_category_top_recommend" />
+    <RadioButton android:textSize="14.0dip" android:textStyle="bold" android:textColor="@drawable/phone_category_top_text_color_bg" android:gravity="center" android:id="@id/phone_category_top_tab_right" android:background="@drawable/phone_category_top_tab_right_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:button="@null" android:text="@string/phone_category_top_video_library" />
+</RadioGroup>

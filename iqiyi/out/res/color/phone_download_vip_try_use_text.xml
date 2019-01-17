@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:color="@color/phone_download_color_disable_grey" />
+    <item android:color="#ffc8a16a" />
+</selector>

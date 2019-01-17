@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/webview_toolbar" style="@style/top_base_item_new">
+        <TextView android:textSize="14.0sp" android:textColor="#ffb0b0b0" android:gravity="center" android:id="@id/wb_backward" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/wb_back" android:drawableLeft="@drawable/webview_title_bar_back" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/wb_closed" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toRightOf="@id/wb_backward" android:layout_centerVertical="true">
+            <View android:layout_gravity="center_vertical" android:id="@id/wb_close_separator" android:background="#ffb0b0b0" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="14.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffb0b0b0" android:gravity="center_vertical" android:id="@id/wb_close_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/wb_close" />
+        </LinearLayout>
+        <TextView android:ellipsize="end" android:id="@id/wb_title" android:layout_width="fill_parent" android:layout_marginLeft="70.0dip" android:layout_marginRight="70.0dip" style="@style/top_title_new" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/webview_toolbar_right_view_RL" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:id="@id/separator_line" android:background="#ffcccccc" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/webview_toolbar" />
+    <FrameLayout android:id="@id/phone_common_webview_container" android:background="#ffe7e7e7" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/separator_line">
+        <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/phone_common_webview_origin" android:background="#ffe7e7e7" android:paddingLeft="30.0dip" android:paddingTop="15.0dip" android:paddingRight="30.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/head_text" android:maxLines="1" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/webview_progressbar_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/separator_line" />
+    <RelativeLayout android:id="@id/empty_layout" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/separator_line">
+        <TextView android:textSize="13.0dip" android:textColor="#ff666666" android:gravity="center" android:id="@id/phoneEmptyText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="90.0dip" android:text="@string/phone_loading_data_fail" android:drawableTop="@drawable/phone_empty_data_img" android:drawablePadding="10.0dip" android:layout_centerHorizontal="true" android:lineSpacingExtra="2.0dip" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/videolayout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="18.0sp" android:id="@id/process_debug" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0%" android:layout_below="@id/separator_line" />
+</RelativeLayout>

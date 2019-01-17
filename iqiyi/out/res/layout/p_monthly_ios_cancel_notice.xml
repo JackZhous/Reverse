@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/q_color_7f000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/corner_radius_10dp_white" android:layout_width="@dimen/p_dimen_285" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/p_dimen_17" android:textStyle="bold" android:textColor="@color/p_color_333333" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p_dimen_17" android:text="@string/p_vip_tw_month_cancle_subscribe" />
+        <TextView android:textSize="@dimen/p_dimen_15" android:textColor="@color/p_color_fc6520" android:id="@id/p_tw_cancel_notice" android:paddingLeft="@dimen/p_dimen_15" android:paddingRight="@dimen/p_dimen_15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p_dimen_12" />
+        <TextView android:textSize="@dimen/p_dimen_13" android:textColor="@color/p_color_333333" android:id="@id/p_tw_cancel_method_title" android:paddingLeft="@dimen/p_dimen_15" android:paddingTop="@dimen/p_dimen_14" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/p_vip_tw_cancel_method" />
+        <TextView android:textSize="@dimen/p_dimen_13" android:textColor="@color/p_color_333333" android:id="@id/p_tw_p_tw_cancel_method" android:paddingLeft="@dimen/p_dimen_15" android:paddingRight="@dimen/p_dimen_15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p_dimen_11" />
+        <View android:background="@color/black" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_0.5" android:layout_marginTop="@dimen/p_dimen_20" />
+        <TextView android:textSize="@dimen/p_dimen_15" android:textColor="@color/white" android:gravity="center" android:id="@id/p_tw_i_know" android:background="@drawable/corner_radius_10dp_ff7e00_3" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_40" android:text="@string/p_vip_tw_i_know" />
+    </LinearLayout>
+</RelativeLayout>

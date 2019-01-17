@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="217.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/data_loading_view" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="225.0dip">
+        <org.qiyi.basecore.widget.CircleLoadingView android:id="@id/circle_loading_view" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/danmaku_enmoji_view" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="225.0dip">
+        <RelativeLayout android:id="@id/danmaku_emoji_tab" android:background="@drawable/player_module_spitslot_category_normal" android:layout_width="fill_parent" android:layout_height="37.0dip" android:layout_alignParentBottom="true">
+            <RelativeLayout android:orientation="horizontal" android:id="@id/face_tab" android:background="@color/white" android:layout_width="84.0dip" android:layout_height="fill_parent">
+                <ImageView android:gravity="center" android:id="@id/player_module_spitslot_faceimg" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/danmu_emoticon" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <ImageView android:id="@id/danmaku_delelte" android:background="@drawable/player_module_spitslot_category_selector" android:layout_width="60.0dip" android:layout_height="37.0dip" android:src="@drawable/player_danmaku_delete" android:scaleType="center" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            <ImageView android:id="@id/danmaku_line" android:background="@color/color_grey_light" android:layout_width="0.20000005dip" android:layout_height="37.0dip" android:layout_marginRight="0.0dip" android:layout_toLeftOf="@id/danmaku_delelte" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/page_Indicator_layout" android:background="@color/transparent" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/danmaku_emoji_tab">
+            <com.iqiyi.danmaku.contract.view.PageIndicatorDrawable android:id="@id/indicator" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+        </RelativeLayout>
+        <org.iqiyi.video.spitslot.SpitslotViewPager android:id="@id/danmaku_emoji_viewpager" android:paddingLeft="15.0dip" android:paddingTop="25.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="180.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+</RelativeLayout>

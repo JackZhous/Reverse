@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecard.common.widget.ButtonView android:id="@id/block_140_button" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/block_140_button" android:layout_alignLeft="@id/block_140_button" android:layout_alignRight="@id/block_140_button">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:layout_gravity="center" android:id="@id/block_140_img" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

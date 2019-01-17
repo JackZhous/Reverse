@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="32.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/pp_star_influence" android:layout_centerVertical="true" />
+        <TextView android:textSize="13.0dip" android:textColor="@color/pp_color_ff8022" android:gravity="center" android:id="@id/go2star_rank_bt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="去打榜" android:drawableRight="@drawable/pp_video_circle_show_more" android:drawablePadding="2.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/star_rank_recyclerview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:background="@color/color_f0f0f0" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.iqiyi.publisher.ui.view.MakeVSGuideView android:orientation="vertical" android:id="@id/make_variety_show_guide_view" android:background="@color/pub_transparent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/make_vs_progress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/pub_make_vs_progress_line" android:layout_centerInParent="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/make_vs_progress_step_bar_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <RelativeLayout android:id="@id/make_vs_progress_step_point_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/pub_make_vs_step_hint" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/pub_make_vs_my_show_hint" android:layout_above="@id/make_vs_progress" />
+    <TextView android:textSize="22.0dip" android:textColor="@color/pub_white" android:gravity="center_horizontal" android:id="@id/make_vs_text_hint_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="38.0dip" android:text="TA对你说..." android:layout_above="@id/make_vs_progress" />
+</com.iqiyi.publisher.ui.view.MakeVSGuideView>

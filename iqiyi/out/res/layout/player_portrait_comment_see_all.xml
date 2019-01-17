@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clickable="true" android:longClickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/comment_reply_up_divider_line" android:background="@color/divide_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="50.0dip" android:layout_marginRight="10.0dip" />
+    <TextView android:textSize="13.0dip" android:textColor="@color/player_common_green" android:gravity="center" android:id="@id/see_all" android:background="#fffafafa" android:clickable="true" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="50.0dip" android:layout_marginRight="10.0dip" android:text="查看全部" android:layout_below="@id/comment_reply_up_divider_line" />
+</RelativeLayout>

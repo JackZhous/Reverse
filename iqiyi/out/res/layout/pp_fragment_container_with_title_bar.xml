@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_f0f0f0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.iqiyi.paopao.middlecommon.ui.view.titlebar.CommonTitleBar android:id="@id/pp_trail_title_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <com.iqiyi.paopao.middlecommon.ui.view.TabLayout.CommonTabLayout android:id="@id/tab_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip" app:tl_divider_width="0.0px" app:tl_indicator_color="#ff0bbe06" app:tl_indicator_corner_radius="5.0dip" app:tl_indicator_height="3.0dip" app:tl_indicator_margin_bottom="2.0dip" app:tl_indicator_width="12.0dip" app:tl_textSelectColor="#ff0bbe06" app:tl_textUnselectColor="@color/color_333333" app:tl_textsize="15.0dip" app:tl_iconVisible="false" />
+    <View android:background="@color/separate_line_grey" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <com.iqiyi.paopao.base.views.PPViewPager android:id="@id/vp_fragments" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/pp_layout_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/pp_circle_loading_layout" />
+    <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/pp_no_network_nocashe_warning_ll" />
+    <include android:id="@id/pp_no_data_layout" android:visibility="gone" layout="@layout/pp_layout_no_data" />
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/gift_flow_keyboard_root" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/title_shadow" android:background="@drawable/top_sepa_line_shadow" android:layout_width="fill_parent" android:layout_height="3.0dip" android:layout_alignParentTop="true" />
+    <RelativeLayout android:id="@id/gift_flow_keyboad_amount_bar" android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="@dimen/gift_flow_kbd_ht" android:layout_marginTop="3.0dip">
+        <EditText android:textSize="16.0dip" android:textColor="#ff333333" android:textColorHint="#ff999999" android:gravity="center_vertical" android:id="@id/gift_flow_keyboard_amount" android:background="@drawable/round_border_grey" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/gift_flow_kbd_rect_ht" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:hint="@string/gift_flow_num_pic_hint" android:layout_centerInParent="true" android:textCursorDrawable="@drawable/color_cursor" />
+        <TextView android:textColor="@color/white" android:id="@id/gift_flow_pic_number_ok" android:background="@drawable/tick_gray_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:layout_alignRight="@id/gift_flow_keyboard_amount" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/gift_flow_balance_row" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="28.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="#ff999999" android:id="@id/gift_flow_keyboard_balance_a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/gift_flow_total_points" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/gift_low_light_orange" android:id="@id/gift_flow_keyboard_enchage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_marginRight="10.0dip" android:text="@string/gift_flow_encharge" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <include layout="@layout/gift_flow_quick_num_pick" />
+    <View android:id="@id/gift_flow_key_board_sepa_2" android:background="#ffe7e7e7" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <org.iqiyi.video.livechat.uiUtils.GiftKeyBoardView android:id="@id/gift_flow_keyboard" android:layout_width="fill_parent" android:layout_height="216.0dip" />
+</LinearLayout>

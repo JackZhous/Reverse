@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_feed_share_item" android:background="@color/pp_color_f7f7f7" android:layout_width="fill_parent" android:layout_height="68.0dip">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/qz_share_feed_item_img" android:layout_width="68.0dip" android:layout_height="68.0dip" android:scaleType="centerCrop" app:placeholderImage="@drawable/pp_general_default_bg" />
+        <TextView android:textSize="11.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/qz_share_feed_item_count" android:background="@drawable/share_feed_imgs_count_bg" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="18.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_alignTop="@id/qz_share_feed_item_img" android:layout_alignRight="@id/qz_share_feed_item_img" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_toRightOf="@id/qz_share_feed_item_img" android:layout_centerInParent="true">
+            <TextView android:textSize="15.0dip" android:textColor="@color/color_333333" android:id="@id/qz_feed_share_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:text="" android:maxLines="1" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/color_666666" android:id="@id/qz_feed_share_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:maxLines="1" />
+        </LinearLayout>
+    </RelativeLayout>
+    <include layout="@layout/pp_feed_share_deleted" />
+</RelativeLayout>

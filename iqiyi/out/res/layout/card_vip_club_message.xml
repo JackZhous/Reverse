@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="@dimen/run_man_pk_left_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/CardModelBase"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/vip_club_face" android:background="@drawable/vip_poster_normal" android:layout_width="65.0dip" android:layout_height="65.0dip" android:layout_centerVertical="true" fresco:roundAsCircle="true" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/vip_club_face" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/card_text_size_15dp" android:textColor="@color/run_man_rank_name_text" android:gravity="center" android:id="@id/vip_club_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="甜蜜的等待" />
+        <TextView android:textSize="@dimen/card_text_size_15dp" android:textColor="@color/run_man_rank_name_text" android:id="@id/vip_club_login" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点击登录" android:layout_centerVertical="true" />
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/vip_club_level" android:layout_width="25.0dip" android:layout_height="18.0dip" android:layout_marginLeft="4.0dip" android:src="@drawable/vip_club_defule" android:layout_toRightOf="@id/vip_club_name" android:layout_alignTop="@id/vip_club_name" android:layout_alignBottom="@id/vip_club_name" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/run_man_pk_top_hot_text" android:gravity="center" android:id="@id/vip_club_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="黄金会员  2015.11.23到期" android:layout_below="@id/vip_club_name" />
+    </RelativeLayout>
+    <TextView android:textSize="14.0dip" android:textColor="@color/run_man_pk_vote_text" android:gravity="center" android:id="@id/vip_club_click" android:background="@drawable/vip_club_click_bck" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="立即续费" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

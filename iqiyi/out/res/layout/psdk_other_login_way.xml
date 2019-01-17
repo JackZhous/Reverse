@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.android.video.ui.account.view.PLinearLayout android:gravity="center_vertical" android:id="@id/ll_txt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="36.0dip" android:layout_marginRight="36.0dip">
+        <org.qiyi.android.video.ui.account.view.PView android:background="@color/psdk_divide_line_color" android:layout_width="0.0dip" android:layout_height="0.5dip" android:layout_weight="1.0" />
+        <org.qiyi.android.video.ui.account.view.PTextView android:textSize="12.0dip" android:textColor="@color/psdk_text_hint_color" android:id="@id/ptv_other_way" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/psdk_phone_my_account_login_other_way" />
+        <org.qiyi.android.video.ui.account.view.PView android:background="@color/psdk_divide_line_color" android:layout_width="0.0dip" android:layout_height="0.5dip" android:layout_marginLeft="15.0dip" android:layout_weight="1.0" />
+    </org.qiyi.android.video.ui.account.view.PLinearLayout>
+    <org.qiyi.android.video.ui.account.login.OtherWayViewPager android:id="@id/vp_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_below="@id/ll_txt" />
+    <org.qiyi.android.video.ui.account.view.PLinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/ll_point" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/vp_content" />
+</merge>

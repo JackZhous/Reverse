@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.ptr.widget.PtrSimpleListView android:id="@id/content_listview_data" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" app:load_auto="false" />
+    <include android:id="@id/content_rl_no_data_exception" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/card_page_data_exception_view" />
+    <include android:id="@id/progress_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/card_page_loading_view" />
+</FrameLayout>

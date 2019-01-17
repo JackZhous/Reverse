@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/dev_react_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/react_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="end|bottom|center" android:orientation="horizontal" android:id="@id/react_native_dev_view" android:background="#337abcfa" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:background="@drawable/react_fragment_dev_btn_selector" android:layout_width="50.0dip" android:layout_height="50.0dip">
+            <Button android:id="@id/react_dev_btn_reload" android:background="@drawable/react_native_debug_refresh" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@drawable/react_fragment_dev_btn_selector" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="5.0dip">
+            <Button android:id="@id/react_dev_btn_shake" android:background="@drawable/react_native_debug_menu" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

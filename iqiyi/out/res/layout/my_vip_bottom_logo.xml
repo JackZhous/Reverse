@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:layout_gravity="center_horizontal" android:id="@id/vipLogo" android:layout_width="110.0dip" android:layout_height="35.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/vip_slogan" />
+    <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#ffdadada" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:layout_marginBottom="13.0dip" android:text="@string/vip_club_cooperate_email" />
+    <View android:layout_width="fill_parent" android:layout_height="50.0dip" />
+</LinearLayout>

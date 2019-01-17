@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="5.0dip" android:paddingBottom="5.0dip" style="@style/CardModelBase"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="12.0sp" android:textColor="@color/color_meta_sub_title" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:maxLines="1" android:layout_centerVertical="true" />
+    <org.qiyi.basecore.widget.OuterFrameTextView android:textSize="13.0sp" android:textColor="@color/default_grean" android:gravity="center" android:id="@id/btn_text" android:layout_width="65.0dip" android:layout_height="30.0dip" android:layout_marginRight="12.0dip" android:layout_alignParentRight="true" fresco:outer_frame="round" />
+</RelativeLayout>

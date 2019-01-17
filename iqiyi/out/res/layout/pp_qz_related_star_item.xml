@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/qz_relate_star_item_root" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:Fresco="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/qz_relate_star_item_icon" android:layout_width="@dimen/qz_home_poster_related_circle_list_item_icon_w" android:layout_height="@dimen/qz_home_poster_related_circle_list_item_icon_h" Fresco:placeholderImage="@drawable/pp_icon_avatar_default" Fresco:placeholderImageScaleType="centerCrop" Fresco:failureImage="@drawable/pp_icon_avatar_default" Fresco:failureImageScaleType="centerCrop" Fresco:roundedCornerRadius="3.0dip" />
+    <ImageView android:id="@id/qz_relate_star_item_mark" android:layout_width="@dimen/qz_home_poster_related_circle_list_item_type_icon_w" android:layout_height="@dimen/qz_home_poster_related_circle_list_item_type_icon_h" android:src="@drawable/pp_qz_home_poster_related_cricle_type_star" />
+    <LinearLayout android:orientation="vertical" android:layout_width="@dimen/qz_home_poster_related_circle_list_item_icon_w" android:layout_height="wrap_content" android:layout_marginTop="@dimen/qz_home_poster_related_circle_list_item_title_margin_top" android:layout_marginBottom="7.0dip" android:layout_below="@id/qz_relate_star_item_icon">
+        <TextView android:textSize="@dimen/qz_home_poster_related_circle_list_item_title_text_size" android:textColor="@color/qz_home_poster_relate_circle_item_title_text_color" android:ellipsize="end" android:id="@id/qz_relate_star_item_name" android:layout_width="@dimen/qz_home_poster_related_circle_list_item_icon_w" android:layout_height="wrap_content" android:maxLines="2" />
+        <TextView android:textSize="12.0dip" android:textColor="#ff999999" android:ellipsize="end" android:id="@id/qz_relate_star_item_name_description" android:layout_width="@dimen/qz_home_poster_related_circle_list_item_icon_w" android:layout_height="wrap_content" android:maxLines="2" android:layout_below="@id/qz_relate_star_item_name" />
+    </LinearLayout>
+</RelativeLayout>

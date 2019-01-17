@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/pp_selector_title_bar_group_chat_activated" android:state_activated="true" />
+    <item android:drawable="@drawable/pp_selector_title_bar_group_chat_normal" />
+</selector>

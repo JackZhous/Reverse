@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/CardModelBase"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/voterank_layout_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" layout="@layout/item_vote_rank" />
+    <include android:id="@id/voterank_layout_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" layout="@layout/item_vote_rank" />
+    <include android:id="@id/voterank_layout_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="22.0dip" android:layout_alignParentRight="true" layout="@layout/item_vote_rank" />
+</RelativeLayout>

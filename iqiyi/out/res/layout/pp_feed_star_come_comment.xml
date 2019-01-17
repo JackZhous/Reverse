@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/pp_feed_star_come_comment_layout" android:paddingTop="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/star_come_list_top_divider" android:background="@color/color_f0f0f0" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_marginLeft="60.0dip" />
+    <com.iqiyi.paopao.middlecommon.ui.view.LinearLayoutForListView android:orientation="vertical" android:id="@id/star_comment_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/star_come_list_top_divider" />
+    <FrameLayout android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/star_comment_list">
+        <TextView android:textSize="13.0dip" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/qz_fc_view_all_star_comment" android:background="@drawable/pp_round_btn_pink" android:paddingLeft="18.0dip" android:paddingTop="5.0dip" android:paddingRight="18.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginTop="14.0dip" android:text="@string/pp_qz_fc_view_all_open_comment" />
+    </FrameLayout>
+</RelativeLayout>

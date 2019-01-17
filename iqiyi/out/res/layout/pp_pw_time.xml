@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <Button android:textSize="18.0dip" android:textColor="@color/pink_red" android:gravity="center" android:id="@id/btnCancel" android:background="@android:color/transparent" android:padding="13.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取消" />
+        <Button android:textSize="18.0dip" android:textColor="@color/paopao_green" android:gravity="center" android:id="@id/btnSubmit" android:background="@android:color/transparent" android:padding="13.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="保存" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:background="#ffd8d3d3" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/timepicker" layout="@layout/pp_include_timepicker" />
+        <View android:background="@drawable/pp_bg_above_timepicker" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/timepicker" android:layout_alignBottom="@id/timepicker" />
+    </RelativeLayout>
+</LinearLayout>

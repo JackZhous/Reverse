@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_feed_share_empty_item" android:background="@color/pp_color_f7f7f7" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <ImageView android:id="@id/iv_share_item_delete" android:layout_width="21.0dip" android:layout_height="21.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/pp_remove_comment_icon_new" android:scaleType="centerCrop" android:layout_centerVertical="true" />
+        <TextView android:textSize="15.0dip" android:textColor="@color/pp_color_999999" android:id="@id/tv_share_item_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pp_qz_share_feed_delete" android:includeFontPadding="false" android:layout_toRightOf="@id/iv_share_item_delete" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/pp_video_circle_header_root" android:layout_width="fill_parent" android:layout_height="270.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/pp_video_circle_bottom_layer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <com.iqiyi.paopao.middlecommon.components.playcore.PPVideoPlayerLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:mode="full" app:viewRatio="1.78" app:loadingViewType="1" />
+            <ImageView android:id="@id/pp_video_circle_btn_back_circle" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pp_video_c_btn_back_circle_normal" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <include android:id="@id/qz_fc_home_episode_layout" android:layout_width="fill_parent" android:layout_height="50.0dip" layout="@layout/pp_video_circle_header_function_bar" />
+        <View android:id="@id/qz_home_episode_space" android:background="@color/color_f0f0f0" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/pp_video_circle_top_layer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <RelativeLayout android:id="@id/pp_video_circle_top_cover" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="60.0dip">
+            <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/pp_video_circle_top_poster" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" app:actualImageScaleType="centerCrop" app:backgroundImage="@color/color_f0f0f0" app:overlayImage="@color/pp_video_circle_header_cover" />
+            <FrameLayout android:paddingBottom="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:id="@id/pp_video_circle_top_play" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/pp_sight_play_btn" />
+            </FrameLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/pp_video_circle_top_layer_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+            <View android:id="@id/pp_video_circle_bottom_onclick_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true" />
+            <View android:background="@drawable/pp_video_c_header_meta_bg" android:layout_width="fill_parent" android:layout_height="28.0dip" android:layout_above="@id/pp_video_circle_bottom_onclick_layout" />
+            <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_marginBottom="4.0dip" android:layout_above="@id/pp_video_circle_bottom_onclick_layout" android:layout_alignParentRight="true">
+                <TextView android:textSize="11.0dip" android:textColor="@color/white" android:id="@id/pp_video_circle_meta_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="28集：" />
+                <TextView android:textSize="11.0dip" android:textColor="#fffe722e" android:id="@id/pp_video_circle_meta_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="8.4" />
+                <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/pp_video_circle_meta_icon" android:layout_width="12.0dip" android:layout_height="12.0dip" android:scaleType="fitXY" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/pp_video_circle_icon_layout" android:layout_width="74.0dip" android:layout_height="74.0dip" android:layout_marginLeft="12.0dip" android:layout_marginBottom="14.0dip" android:layout_alignParentBottom="true">
+                <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/pp_video_circle_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" app:placeholderImage="@drawable/pp_icon_avatar_default" app:placeholderImageScaleType="centerCrop" app:actualImageScaleType="centerCrop" app:roundedCornerRadius="7.0dip" app:roundingBorderWidth="2.0dip" app:roundingBorderColor="@color/white" />
+                <ImageView android:id="@id/pp_video_circle_vip" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginRight="2.0dip" android:layout_marginBottom="2.0dip" android:src="@drawable/pp_video_vip" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:id="@id/pp_video_circle_add_rl" android:background="@drawable/pp_qz_add_btn_green" android:layout_width="80.0dip" android:layout_height="30.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="15.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+                <TextView android:textSize="13.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/pp_video_circle_add_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pp_qz_fc_home_add_circle" android:drawableLeft="@drawable/pp_qz_circle_add_video" android:drawablePadding="4.0dip" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/pp_video_circle_info_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="13.0dip" android:layout_toLeftOf="@id/pp_video_circle_add_rl" android:layout_toRightOf="@id/pp_video_circle_icon_layout" android:layout_alignParentBottom="true">
+                <TextView android:textSize="17.0dip" android:textColor="@color/color_333333" android:ellipsize="end" android:id="@id/pp_video_circle_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="微微一笑" android:maxLines="1" />
+                <TextView android:textSize="11.0dip" android:textColor="@color/color_999999" android:ellipsize="end" android:id="@id/pp_video_circle_infos" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.5dip" android:text="1.5亿次播放  11人加入  22万内容" android:lines="1" android:scrollHorizontally="true" android:singleLine="true" android:layout_below="@id/pp_video_circle_name" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:id="@id/pp_video_circle_header_divider" android:background="#ffe7e7e7" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+</RelativeLayout>

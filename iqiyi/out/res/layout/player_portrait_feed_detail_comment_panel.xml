@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/commentContentLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/line" android:background="@drawable/send_comment_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/detail_comment_layout" android:background="@color/iqiyiwhite" android:paddingLeft="12.0dip" android:paddingTop="@dimen/player_08" android:paddingRight="12.0dip" android:paddingBottom="@dimen/player_08" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.iqiyi.qyplayercardview.view.PortraitCommentEditText android:textSize="14.0dip" android:textColor="@color/player_pp_default_text_color" android:layout_gravity="center_vertical" android:id="@id/commentContent" android:background="@drawable/player_pp_textview_bar" android:paddingLeft="15.0dip" android:paddingRight="@dimen/player_09" android:layout_width="0.0dip" android:layout_height="35.0dip" android:hint="@string/input_hint_text" android:maxLines="2" android:layout_weight="1.0" android:textCursorDrawable="@color/player_common_green" />
+            <Button android:textSize="14.0dip" android:textColor="@color/iqiyiwhite" android:layout_gravity="center_vertical" android:id="@id/commentSend" android:background="@drawable/player_pp_comment_send_style" android:layout_width="60.0dip" android:layout_height="33.0dip" android:layout_marginLeft="12.0dip" android:text="发送" android:contentDescription="@string/app_name" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

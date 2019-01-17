@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/focus_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" fresco:viewAspectRatio="1.38" fresco:placeholderImageScaleType="centerCrop" />
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/header_gif" android:background="@color/color_transparent" android:layout_width="fill_parent" android:layout_height="150.0dip" android:scaleType="centerCrop" />
+    <org.qiyi.basecore.widget.ultraviewpager.UltraViewPager android:id="@id/card_gallery" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="90.0dip" />
+</RelativeLayout>

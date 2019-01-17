@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.iqiyi.paopao.middlecommon.ui.view.titlebar.CommonTitleBar android:id="@id/rl_star_come_wall_title_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" app:title="@string/pp_search_star_coming" />
+    <FrameLayout android:id="@id/fl_star_come_wall_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/rl_star_come_wall_title_bar" />
+</RelativeLayout>

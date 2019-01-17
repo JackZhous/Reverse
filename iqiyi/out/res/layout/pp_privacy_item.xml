@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/ppq_white" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/PPQAuthSetTextLayout">
+        <TextView android:id="@id/privacy_title" android:text="@string/ppq_app_name" style="@style/PPQAuthSetTextTitle" />
+        <TextView android:id="@id/privacy_desc" android:layout_marginTop="5.0dip" android:text="@string/ppq_app_name" style="@style/PPQAuthSetTextDescription" />
+    </LinearLayout>
+    <ImageView android:id="@id/privacy_isSelected_imageView" android:visibility="gone" style="@style/PPQAuthSelectedIcon" />
+    <View android:background="@color/pp_color_e6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+</RelativeLayout>

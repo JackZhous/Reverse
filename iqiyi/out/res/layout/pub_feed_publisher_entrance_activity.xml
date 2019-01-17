@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/pp_fanslevel_popwindow" android:background="@color/pub_transparent_60_percent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/content_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:id="@id/gridview_background" android:background="@color/pub_transparent_white_10" android:layout_width="fill_parent" android:layout_height="400.0dip" android:layout_alignParentBottom="true" />
+        <View android:id="@id/empty_hole" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/gridview_background" />
+        <GridView android:gravity="center" android:id="@id/button_container" android:paddingLeft="30.0dip" android:paddingTop="42.0dip" android:paddingRight="30.0dip" android:paddingBottom="120.0dip" android:scrollbars="none" android:fadingEdge="none" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="#00000000" android:verticalSpacing="45.0dip" android:numColumns="3" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/pop_activity_close_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="18.0dip" android:src="@drawable/pub_pop_activity_close_btn" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

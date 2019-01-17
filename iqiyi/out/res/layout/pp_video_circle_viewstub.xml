@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="17.0dip" android:textColor="@color/color_0bbe06" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/pp_video_circle_title_play" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/pp_action_title_height" android:text="立即播放" android:drawableLeft="@drawable/pp_video_c_title_play_icon" android:drawablePadding="6.0dip" android:layout_centerHorizontal="true" />
+    <FrameLayout android:id="@id/pp_feed_detail_page" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

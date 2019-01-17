@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="@dimen/round_item_size" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/unknow_user" android:scaleType="fitCenter" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/card_text_size_13dp" android:textColor="#ff666666" android:id="@id/meta" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:maxEms="5" android:layout_below="@id/image" android:layout_centerHorizontal="true" style="@style/MetaTitle" />
+    <View android:id="@id/dot" android:background="@drawable/shape_red_dot" android:layout_width="9.0dip" android:layout_height="9.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="-2.0dip" android:layout_alignTop="@id/image" android:layout_alignRight="@id/image" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="0.5dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/iv_beauty_pic" android:background="#fff5f5f5" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" app:placeholderImage="@drawable/pp_general_default_bg" app:placeholderImageScaleType="centerInside" app:actualImageScaleType="centerCrop" />
+    <View android:background="@drawable/pp_shape_image_album_facade_bottom" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/rl_up" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_marginBottom="8.0dip" android:layout_alignRight="@id/iv_beauty_pic" android:layout_alignBottom="@id/iv_beauty_pic">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_up" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/pp_qz_fc_beauty_pic_unlike" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/color_ffffff" android:layout_gravity="center_vertical" android:id="@id/tv_up_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="240" />
+    </LinearLayout>
+</RelativeLayout>

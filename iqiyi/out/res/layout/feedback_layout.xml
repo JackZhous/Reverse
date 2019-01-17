@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/phoneTitleLayout" style="@style/top_base_item_new">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/phoneTitleBack" android:background="@drawable/phone_download_back_selector" style="@style/top_title_item_new" />
+        <TextView android:id="@id/phoneTitleText" android:text="@string/title_my_feedback" style="@style/top_title_new" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

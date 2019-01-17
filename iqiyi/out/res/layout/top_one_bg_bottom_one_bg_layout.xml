@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/icon" android:background="@drawable/phone_category_detail_rec_vertical_pic_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/DoubleItemCategoryLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/icon" android:layout_alignTop="@id/icon" android:layout_alignRight="@id/icon" android:layout_alignBottom="@id/icon">
+        <include android:id="@id/layoutup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/index_category_card_one_bg_one_name" />
+        <View android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="2.0dip" android:layout_weight="0.0" />
+        <include android:id="@id/layoutdown" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/index_category_card_one_bg_one_name" />
+    </LinearLayout>
+</RelativeLayout>

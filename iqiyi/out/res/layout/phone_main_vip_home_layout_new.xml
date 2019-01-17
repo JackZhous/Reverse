@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/phoneTitleLayout" android:layout_width="fill_parent" android:layout_height="41.0dip">
+        <org.qiyi.android.video.skin.view.SkinVipTitleBar android:id="@id/phone_vip_title_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <org.qiyi.video.qyskin.view.SkinTextView android:id="@id/top_bar_title_default" android:visibility="visible" android:text="@string/main_vip_tab_title" app:skinColor="titleTextColor" app:defaultColor="#ffffffff" style="@style/top_title_new" />
+        <View android:id="@id/v_divide_line" android:background="#26ffffff" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/top_filter_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/phoneTitleLayout">
+        <org.qiyi.android.video.skin.view.SkinSearchBarVip android:id="@id/ll_head" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <org.qiyi.basecore.widget.PagerSlidingTabStrip android:id="@id/vip_main_tabs" android:background="#fffafafa" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="41.0dip" android:layout_below="@id/top_filter_layout" app:pstsIndicatorColor="@color/qiyi_vip_golden_new" app:pstsDividerColor="#00000000" app:pstsIndicatorHeight="3.0dip" app:pstsUnderlineHeight="0.0dip" app:pstsTabPaddingLeftRight="12.5dip" app:pstsShouldExpand="false" app:pstsScrollToCenter="true" />
+    <View android:id="@id/vip_main_split_line" android:background="#ffe7e7e7" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/vip_main_tabs" />
+    <android.support.v4.view.ViewPager android:id="@id/vip_main_vp_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/vip_main_split_line" />
+    <include android:id="@id/phone_vip_home_loading_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phoneTitleLayout" layout="@layout/lab_footer" />
+    <include android:id="@id/phone_vip_home_empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phoneTitleLayout" layout="@layout/phone_load_data_exception" />
+</RelativeLayout>

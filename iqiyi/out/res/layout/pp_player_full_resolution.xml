@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_left" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:alpha="0.0" />
+    <RelativeLayout android:background="#e61e1e1e" android:layout_width="260.0dip" android:layout_height="fill_parent">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/pp_player_resolution_ad" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="15.0dip" android:scaleType="fitXY" app:viewAspectRatio="2.17" app:actualImageScaleType="fitXY" />
+        <ImageView android:id="@id/pp_player_resolution_ad_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pp_player_resolution_ad_icon" android:layout_alignTop="@id/pp_player_resolution_ad" android:layout_alignRight="@id/pp_player_resolution_ad" />
+        <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/pp_player_resolution_ad" android:layout_centerInParent="true">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/right_area" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>

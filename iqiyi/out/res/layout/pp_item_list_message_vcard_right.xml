@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingRight="@dimen/im_message_avatar_margin_right" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/tv_msg_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/im_message_timestamp_margin_top" style="@style/PPTextView.TimeStamp" />
+    <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/im_message_to_margin_left" android:layout_marginTop="@dimen/im_message_to_margin_top">
+        <include android:layout_width="25.0dip" android:layout_height="fill_parent" layout="@layout/im_chat_message_send_status_layout" />
+        <com.iqiyi.im.chat.view.message.VCardMessageView android:id="@id/pp_vcard_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/im_message_user_text_margin_top" android:layout_weight="1.0" />
+        <com.iqiyi.im.chat.view.message.ChatAvatarImageView android:id="@id/iv_right_avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" app:imageMode="right" />
+    </LinearLayout>
+</LinearLayout>

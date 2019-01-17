@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/phone_setting_card_item_bg" android:layout_width="fill_parent" android:layout_height="65.0dip">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/phone_avatar_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="@dimen/phone_card_margin_horizontal_new" android:src="@drawable/my_main_login_img" android:layout_centerVertical="true" />
+        <TextView android:textSize="15.0dip" android:textColor="#ff333333" android:id="@id/phone_message_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="用户" android:layout_toRightOf="@id/phone_avatar_icon" />
+        <TextView android:textSize="11.0dip" android:textColor="#ff999999" android:ellipsize="end" android:id="@id/phone_message_action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="@dimen/phone_card_margin_horizontal_new" android:text="动作" android:layout_below="@id/phone_message_title" android:layout_alignLeft="@id/phone_message_title" />
+        <TextView android:textSize="11.0dip" android:textColor="#ff0bbe06" android:ellipsize="end" android:id="@id/phone_message_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="@dimen/phone_card_margin_horizontal_new" android:text="内容" android:singleLine="true" android:layout_toRightOf="@id/phone_message_action" android:layout_below="@id/phone_message_title" />
+        <TextView android:textSize="11.0dip" android:textColor="#ff999999" android:id="@id/phone_message_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/phone_card_margin_horizontal_new" android:text="时间" android:layout_alignBaseline="@id/phone_message_title" android:layout_alignParentRight="true" />
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/phone_message_red_dot" android:layout_width="5.0dip" android:layout_height="5.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="2.0dip" android:src="@drawable/phone_common_reddot_ball" android:layout_alignParentRight="true" />
+        <View android:id="@id/divider" android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

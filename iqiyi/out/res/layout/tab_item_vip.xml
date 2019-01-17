@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="13.0dip" android:textColor="#ffd4b27e" android:gravity="center" android:id="@id/tab_text" android:background="@drawable/shape_vip_round_tab_border" android:padding="5.0dip" android:layout_width="50.0dip" android:layout_height="50.0dip" android:maxLines="2" />
+    <com.qiyi.card.view.NibIndicatorLine android:id="@id/tab_line" android:background="@color/color_white" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="10.0dip" app:nib_height="5.0dip" app:nib_angle="30" app:nib_line_width="1.5dip" app:nib_line_color="#ffd4b27e" />
+</LinearLayout>

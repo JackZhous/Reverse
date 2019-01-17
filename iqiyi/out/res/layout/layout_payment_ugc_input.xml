@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_title" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <ImageView android:id="@id/btn_back" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/player_btn_wb_backward" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="17.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reward_fee" android:layout_centerInParent="true" />
+        <View android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_input" android:layout_width="fill_parent" android:layout_height="88.0dip" android:layout_below="@id/layout_title">
+        <EditText android:textColor="#ff333333" android:id="@id/edit_fee" android:background="@drawable/round_border_grey" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:hint="@string/reward_fee_hint" android:layout_centerInParent="true" android:inputType="numberDecimal" />
+    </RelativeLayout>
+    <Button android:enabled="false" android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/btn_payment" android:background="@drawable/payment_btn_color" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/reward_pay" android:layout_below="@id/layout_input" android:layout_centerHorizontal="true" />
+</RelativeLayout>

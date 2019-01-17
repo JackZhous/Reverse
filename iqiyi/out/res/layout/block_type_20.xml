@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/img1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" fresco:pressedStateOverlayImage="@color/card_poster_mask_black_alpha_40" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/img1" android:layout_centerVertical="true">
+        <ProgressBar android:id="@id/progress_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:max="100" android:layout_alignLeft="@id/meta1" android:layout_alignTop="@id/meta1" android:layout_alignRight="@id/meta1" android:layout_alignBottom="@id/meta1" style="?android:attr/progressBarStyleHorizontal" />
+        <org.qiyi.basecard.common.widget.ButtonView android:id="@id/meta1" android:background="@drawable/pp_feed_vote_option_bg_grey" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true" fresco:text_size="14.0dip" fresco:text_maxLength="12" />
+        <org.qiyi.basecard.common.widget.MetaView android:gravity="center_vertical" android:id="@id/meta2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_alignTop="@id/meta1" android:layout_alignRight="@id/meta1" android:layout_alignBottom="@id/meta1" android:layout_centerVertical="true" fresco:text_size="11.0dip" fresco:meta_gravity="center_vertical" />
+    </RelativeLayout>
+</RelativeLayout>

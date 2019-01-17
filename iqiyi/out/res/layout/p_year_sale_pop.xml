@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/p_color_4c000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="@dimen/p_dimen_300" android:layout_height="@dimen/p_dimen_342.5" android:layout_centerInParent="true">
+        <ImageView android:id="@id/pop_bg" android:layout_width="@dimen/p_dimen_300" android:layout_height="@dimen/p_dimen_297.5" android:scaleType="fitXY" />
+        <ImageView android:id="@id/year_close" android:layout_width="@dimen/p_dimen_15" android:layout_height="@dimen/p_dimen_15" android:layout_marginTop="@dimen/p_dimen_15" android:layout_marginRight="@dimen/p_dimen_15" android:src="@drawable/p_close_button_style1" android:layout_alignParentRight="true" />
+        <TextView android:textSize="@dimen/p_dimen_18" android:textColor="@color/p_color_ffffff" android:gravity="center" android:id="@id/year_btn" android:background="@drawable/p_year_sale_btn" android:layout_width="@dimen/p_dimen_300" android:layout_height="@dimen/p_dimen_45" android:text="@string/p_vip_autorenew_panel_btn" android:layout_below="@id/pop_bg" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.iqiyi.video.ppq.camcorder.CameraGLView android:id="@id/camera_glview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.iqiyi.video.ppq.camcorder.SimplePlayerGLView android:id="@id/player_glview" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true" />
+    <View android:background="@drawable/pub_self_made_video_rounded_coner_background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/buttons_rl" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/pub_self_made_video_base_activity_buttons_layout" />
+    <include android:id="@id/filter_rl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/pub_self_made_video_base_activity_filter_rl" />
+    <View android:id="@id/mongolia_layer_view" android:background="#99000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.iqiyi.publisher.ui.view.SMVHorizontalProgressBar android:id="@id/progress_bar" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="6.0dip" android:layout_marginBottom="148.0dip" android:layout_alignParentBottom="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_current_time" android:background="@drawable/pp_time_background_black" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:layout_above="@id/progress_bar" android:layout_alignParentRight="true">
+        <TextView android:textSize="14.0sp" android:textColor="@color/pp_color_time_b2ffffff" android:id="@id/tv_min_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginTop="3.0dip" android:text="3" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/pp_color_time_b2ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginRight="4.0dip" android:text="秒" android:layout_toRightOf="@id/tv_min_time" />
+    </LinearLayout>
+    <ImageView android:id="@id/cancel_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="36.0dip" android:layout_marginBottom="36.0dip" android:src="@drawable/pub_retake_picture" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/confirm_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="36.0dip" android:layout_marginBottom="36.0dip" android:src="@drawable/pub_confirm_face_picture" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="36.0dip" android:layout_marginBottom="36.0dip" android:layout_toLeftOf="@id/rl_capture" android:layout_toRightOf="@id/rl_capture" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/layout_local_video" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_local" android:visibility="visible" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/pp_local_video_selector" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/pp_edit_text_selector" android:gravity="center" android:id="@id/tv_from_local" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/pub_video_from_local" android:layout_below="@id/iv_local" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.iqiyi.publisher.ui.view.FilterScrollView android:id="@id/filter_scroll_view" android:background="#ff222222" android:paddingLeft="6.0dip" android:layout_width="wrap_content" android:layout_height="126.0dip" android:layout_alignParentBottom="true" />
+    <com.iqiyi.publisher.ui.view.CountDownView android:id="@id/count_down_view" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pub_count_down_3" android:layout_centerInParent="true" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffe7e7e7" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/phoneTitleLayout" style="@style/top_base_item">
+        <TextView android:textSize="@dimen/phoneTitle_size" android:textColor="#ff8f8f91" android:gravity="center" android:id="@id/title_back" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="视频" android:drawableLeft="@drawable/phone_account_back_bg" android:layout_toRightOf="@id/title_icon_back" />
+    </RelativeLayout>
+    <RelativeLayout android:background="#ffe7e7e7" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phoneTitleLayout">
+        <ListView android:id="@id/ugc_video_list_listview" android:background="#ffe7e7e7" android:padding="5.0dip" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@null" android:divider="@null" />
+    </RelativeLayout>
+</RelativeLayout>

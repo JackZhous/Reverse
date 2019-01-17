@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_input" android:background="@color/ppq_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textSize="14.0sp" android:textColor="@color/ppq_black" android:textColorHint="@color/ppq_text_publish_gray" android:gravity="top" android:id="@id/edt_video_des" android:background="@null" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginTop="12.0dip" android:layout_marginBottom="30.0dip" android:hint="@string/ppq_video_title_hint" android:lines="1" android:singleLine="false" android:inputType="text" android:imeOptions="actionDone" android:imeActionLabel="@string/ppq_input_finish" android:textCursorDrawable="@null" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="26.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="12.0dip" android:layout_below="@id/edt_video_des" android:layout_alignParentRight="true">
+        <TextView android:textSize="14.0sp" android:textColor="@color/ppq_text_publish_gray" android:id="@id/title_text_input" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/ppq_text_publish_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/ppq_text_publish_gray" android:id="@id/title_text_limit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="50" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/p_w_title_layout" layout="@layout/pay_phone_title" />
+    <RelativeLayout android:id="@id/sview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/p_w_title_layout">
+        <include android:id="@id/p_w_have_no_record" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/p_w_no_transaction_record" />
+        <android.support.v7.widget.RecyclerView android:id="@id/p_w_record_recyclerview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/tk_empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/p_w_title_layout">
+        <include layout="@layout/p_load_data_exception" />
+    </RelativeLayout>
+</RelativeLayout>

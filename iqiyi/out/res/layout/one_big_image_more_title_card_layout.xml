@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/phone_search_result_adapter_first_top_layout" android:layout_width="fill_parent" android:layout_height="100.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:layout_centerVertical="true">
+        <com.qiyi.video.android.bitmapfun.ui.RoundImageView android:id="@id/phone_search_result_adapter_first_avator" android:background="@drawable/face_icon_large" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="10.0dip" android:scaleType="fitXY" android:layout_centerVertical="true" />
+        <RelativeLayout android:id="@id/phone_search_result_adapter_first_text_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/phone_search_result_adapter_first_avator" android:layout_centerVertical="true">
+            <TextView android:textSize="15.0dip" android:textColor="@color/phone_title_black" android:ellipsize="end" android:id="@id/phone_search_result_adapter_first_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="邓超" android:singleLine="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/tk_card_rank" android:ellipsize="end" android:id="@id/phone_search_result_adapter_first_meta1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="生日 : 1979-02-08" android:layout_below="@id/phone_search_result_adapter_first_title" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/tk_card_rank" android:ellipsize="end" android:id="@id/phone_search_result_adapter_first_meta2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="星座 : 水瓶座" android:layout_below="@id/phone_search_result_adapter_first_meta1" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:id="@id/bottom_line" android:background="#ff949494" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

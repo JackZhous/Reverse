@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/qz_feeddetail_action_start" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.5dip" android:src="@drawable/pp_feed_detail_title_bar_start_play" />
+    <TextView android:textSize="17.0dip" android:textColor="@color/color_0bbe06" android:id="@id/qz_feeddetail_action_start_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pp_sw_feeddetail_title_video" />
+</LinearLayout>

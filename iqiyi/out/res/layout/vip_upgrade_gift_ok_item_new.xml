@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/left_layout" android:layout_width="fill_parent" android:layout_height="62.0dip" android:layout_weight="1.0">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/left_layout_bg" android:layout_width="161.0dip" android:layout_height="62.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" app:placeholderImage="@drawable/vip_upgrade_gift_ok_dialog_item_bg" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="161.0dip" android:layout_height="62.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true">
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff572b00" android:ellipsize="end" android:id="@id/coupon_item_name_left" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <TextView android:textSize="11.0sp" android:textColor="#ff572b00" android:ellipsize="end" android:id="@id/coupon_item_info_left" android:paddingTop="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/right_layout" android:layout_width="fill_parent" android:layout_height="62.0dip" android:layout_weight="1.0">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/right_layout_bg" android:layout_width="161.0dip" android:layout_height="62.0dip" android:layout_marginLeft="5.0dip" android:layout_alignParentLeft="true" app:placeholderImage="@drawable/vip_upgrade_gift_ok_dialog_item_bg" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="161.0dip" android:layout_height="62.0dip" android:layout_marginLeft="5.0dip" android:layout_alignParentLeft="true">
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff572b00" android:ellipsize="end" android:id="@id/coupon_item_name_right" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <TextView android:textSize="11.0sp" android:textColor="#ff572b00" android:ellipsize="end" android:id="@id/coupon_item_info_right" android:paddingTop="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:Fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/sample_video_ly" android:layout_width="fill_parent" android:layout_height="85.0dip">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/sample_video_icon" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="10.0dip" android:layout_centerVertical="true" Fresco:placeholderImage="@drawable/pp_icon_avatar_default" Fresco:placeholderImageScaleType="centerCrop" Fresco:failureImage="@drawable/pp_icon_avatar_default" Fresco:failureImageScaleType="centerCrop" Fresco:roundedCornerRadius="5.0dip" />
+        <ImageView android:layout_width="27.0dip" android:layout_height="27.0dip" android:layout_marginLeft="16.5dip" android:src="@drawable/pub_sample_video_play_icon" android:layout_alignLeft="@id/sample_video_icon" android:layout_centerVertical="true" />
+        <TextView android:textSize="13.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/sample_video_button" android:background="@drawable/pp_publish_bg_selector" android:layout_width="80.0dip" android:layout_height="30.0dip" android:layout_marginRight="12.0dip" android:text="@string/pub_select_material_head_look_up" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/sample_video_button" android:layout_toRightOf="@id/sample_video_icon" android:layout_centerVertical="true">
+            <TextView android:textSize="16.0dip" android:textColor="@color/pub_color_333333" android:ellipsize="end" android:id="@id/sample_video_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="test_text" android:singleLine="true" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/pub_color_999999" android:ellipsize="end" android:id="@id/sample_video_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="test_text" android:singleLine="true" android:layout_below="@id/sample_video_name" />
+        </RelativeLayout>
+        <View android:background="@color/pub_color_e6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

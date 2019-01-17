@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:layout_gravity="center_horizontal" android:id="@id/qdv_avatar" android:layout_width="50.0dip" android:layout_height="50.0dip" app:placeholderImage="@drawable/def_avatar" app:roundAsCircle="true" />
+    <TextView android:textSize="12.0sp" android:textColor="#ff333333" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_nickname" android:layout_width="60.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:maxLines="1" />
+</LinearLayout>

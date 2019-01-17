@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/cancel_no" android:background="@color/p_color_d4b27e" android:layout_width="150.0dip" android:layout_height="40.0dip" android:text="@string/cancel_month_no_cancel" />
+    <TextView android:textSize="16.0dip" android:textColor="@color/p_color_d4b27e" android:gravity="center" android:id="@id/cancel_next" android:background="@color/p_color_f1f1f1" android:layout_width="150.0dip" android:layout_height="40.0dip" android:text="@string/cancel_month_next_step" android:layout_toRightOf="@id/cancel_no" />
+</RelativeLayout>

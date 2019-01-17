@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center_vertical" android:id="@id/tips_layout" android:background="@color/main_bottom_tips_bg_color" android:layout_width="wrap_content" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/text_tips" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/hotspot_login_tip" android:layout_centerVertical="true" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/btn_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25.0dip" android:text="@string/login_atonce" android:layout_toLeftOf="@id/btn_close" android:layout_centerVertical="true" />
+    <org.qiyi.basecore.widget.IconViewClose android:id="@id/btn_close" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:iconStrokeWidth="1.1999817dip" app:iconPadding="10.0dip" app:lineColor="#ffffffff" />
+</RelativeLayout>

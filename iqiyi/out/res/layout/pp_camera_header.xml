@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/pp_color_background_212121" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_blur_header" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    <TextView android:id="@id/btn_close_top" android:background="@drawable/pp_capture_close" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="15.0dip" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/iv_camera_switch_top" android:padding="3.0dip" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/pp_capture_camera_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/iv_camera_flash_top" android:visibility="visible" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="25.0dip" android:src="@drawable/pp_iv_paopao_close_flash_selector" android:layout_toLeftOf="@id/iv_camera_switch_top" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/iv_camera_timer_top" android:visibility="invisible" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/pp_iv_timer_selector" android:layout_toLeftOf="@id/iv_camera_flash_top" android:layout_centerVertical="true" />
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/ppq_pao_pao_filter_selected" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="小视频" android:layout_centerInParent="true" />
+</RelativeLayout>

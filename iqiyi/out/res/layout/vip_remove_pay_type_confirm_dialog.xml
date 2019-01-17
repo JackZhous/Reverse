@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/vip_cancel_renew_dialog_bg" android:layout_width="300.0dip" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0dip" android:textColor="#ff666666" android:gravity="center" android:id="@id/dialog_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="22.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="#fffefefe" android:gravity="center" android:id="@id/close_button" android:background="@drawable/vip_cancel_renew_dialog_left_button_bg" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="@string/vip_cancel_confirm_dialog_close_button" android:layout_weight="1.0" />
+            <TextView android:textSize="16.0sp" android:textColor="#ffc9a16d" android:gravity="center" android:id="@id/cancel_button" android:background="@drawable/vip_cancel_renew_dialog_right_button_bg" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="@string/vip_cancel_confirm_dialog_cancel_button" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

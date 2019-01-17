@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/pageview" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:id="@id/sview" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="40.0dip" android:layout_above="@id/bottom_layout">
+            <RelativeLayout android:id="@id/infos" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include android:id="@id/page_linear_p0" android:visibility="gone" layout="@layout/p_float_common_time_line" />
+                    <include android:id="@id/page_linear_p1" layout="@layout/p_float_common_item_info_line" />
+                    <org.qiyi.android.video.pay.paytype.view.PayTypesView android:orientation="vertical" android:id="@id/page_linear_p2" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p_dimen_0.5" />
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+        <RelativeLayout android:gravity="top" android:id="@id/float_title_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="49.0dip">
+            <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/p_color_333333" android:gravity="center" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p_float_title" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/float_title_close_btn" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/p_close_button_style1" android:layout_centerVertical="true" />
+            <View android:background="@color/p_color_f2f2f2" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/bottom_layout" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <include layout="@layout/p_bottom_price_and_submit_layout" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

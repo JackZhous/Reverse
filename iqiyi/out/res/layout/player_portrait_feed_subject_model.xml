@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/subject_root" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.iqiyi.video.image.PlayerDraweView android:id="@id/feed_subjecticon" android:layout_width="fill_parent" android:layout_height="119.0dip" android:src="@drawable/player_feed_default_image_bg" android:scaleType="fitXY" />
+    <ImageView android:id="@id/flag" android:visibility="gone" android:layout_width="62.0dip" android:layout_height="69.0dip" android:src="@drawable/player_feed_subjectflag" android:layout_alignTop="@id/feed_subjecticon" android:layout_alignRight="@id/feed_subjecticon" />
+    <RelativeLayout android:background="@color/subjectbg" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_alignBottom="@id/feed_subjecticon">
+        <TextView android:textSize="12.0sp" android:textColor="@color/iqiyiwhite" android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:text="asfdf" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/iqiyiwhite" android:gravity="center" android:id="@id/hotcount" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginRight="5.0dip" android:text="asfdf" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

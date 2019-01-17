@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/blockLayout" android:layout_width="60.0dip" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:id="@id/pp_player_episode_item_layout" android:background="@drawable/pp_player_landscape_episode_gridview_item_bkg" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="5.0dip">
+        <ImageView android:id="@id/ivPlayVip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pp_player_episode_vip" android:layout_alignParentRight="true" />
+        <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:id="@id/tvEpisode" android:layout_width="fill_parent" android:layout_height="fill_parent" android:lines="1" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/ivEpisode" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pp_player_common_album_playing" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/ivPrevnue" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pp_player_episode_pre" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/ivLocal" android:visibility="visible" android:layout_width="20.0dip" android:layout_height="12.0dip" android:src="@drawable/pp_player_episode_local" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</FrameLayout>

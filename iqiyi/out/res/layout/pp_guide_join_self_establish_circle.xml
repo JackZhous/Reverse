@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/pp_color_000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.85" />
+    <TextView android:textSize="18.0dip" android:textColor="@color/pp_color_obbe06" android:id="@id/title1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" android:text="@string/pp_circle_join_success" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="18.0dip" android:textColor="@color/pp_color_ffffff" android:id="@id/title2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/pp_guide_join_self_circle_desc" android:layout_below="@id/title1" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23.0dip" android:layout_above="@id/pp_guide_close_iv" android:layout_below="@id/title2" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/pp_guide_icon_id1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pp_slef_circle_join_guide_1" android:layout_alignParentTop="true" />
+        <ImageView android:id="@id/pp_guide_icon_id2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_marginBottom="9.0dip" android:src="@drawable/pp_slef_circle_join_guide_2" android:layout_below="@id/pp_guide_icon_id1" android:layout_centerHorizontal="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pp_slef_circle_join_guide_3" android:layout_below="@id/pp_guide_icon_id2" />
+    </RelativeLayout>
+    <ImageView android:id="@id/pp_guide_close_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="60.0dip" android:src="@drawable/pp_guide_close_btn" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

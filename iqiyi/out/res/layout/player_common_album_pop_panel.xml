@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center_vertical" android:id="@id/album_panel_title" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" style="@style/cardtitle" />
+    <ImageView android:id="@id/album_panel_close" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="7.0dip" android:src="@drawable/player_common_close" android:layout_alignTop="@id/album_panel_title" android:layout_alignBottom="@id/album_panel_title" android:layout_alignParentRight="true" />
+    <ListView android:id="@id/album_panel_list" android:fitsSystemWindows="true" android:scrollbars="none" android:fadingEdge="none" android:animationCache="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:scrollingCache="false" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="0.0dip" android:layout_below="@id/album_panel_title" />
+</RelativeLayout>

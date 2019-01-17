@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/pp_trail_pull_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.iqiyi.paopao.middlecommon.ui.view.ptr.CommonPtrListView android:id="@id/pp_trail_listview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:divider="@color/transparent" android:dividerHeight="0.0dip" />
+    <include android:id="@id/pp_layout_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/pp_circle_loading_layout" />
+    <include android:id="@id/pp_loading_error_page" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/pp_no_network_nocashe_warning_ll" />
+    <include android:id="@id/pp_no_data_layout" android:visibility="gone" layout="@layout/pp_layout_no_data" />
+</RelativeLayout>

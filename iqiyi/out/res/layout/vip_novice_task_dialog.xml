@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/novice_task_dialog_panel" android:background="@drawable/vip_novice_task_dialog_bg" android:layout_width="300.0dip" android:layout_height="156.0dip" android:layout_alignLeft="@id/linearLayout" android:layout_centerVertical="true">
+        <TextView android:textSize="18.0dip" android:textColor="#ffc8a06a" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="21.0dip" android:text="@string/novice_task_dialog_label" android:lines="1" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff333333" android:gravity="left" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:text="@string/novice_task_dialog_text" android:lines="2" android:lineSpacingExtra="9.0dip" />
+        <TextView android:textSize="11.0dip" android:textColor="#ff999999" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:text="@string/novice_task_dialog_subtext" android:lines="1" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout" android:layout_width="300.0dip" android:layout_height="40.0dip" android:layout_below="@id/novice_task_dialog_panel" android:layout_centerHorizontal="true">
+        <Button android:textSize="16.0dip" android:textColor="#ffc8a06a" android:id="@id/novice_task_dialog_close" android:background="@drawable/vip_novice_task_dialog_left_button_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/novice_task_dialog_button_left" android:layout_weight="1.0" />
+        <Button android:textSize="16.0dip" android:textColor="#ffffffff" android:id="@id/novice_task_dialog_jump" android:background="@drawable/vip_novice_task_dialog_right_button_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/novice_task_dialog_button_right" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ImageView android:id="@id/novice_task_dialog_deer" android:layout_width="100.0dip" android:layout_height="66.0dip" android:src="@drawable/novice_task_dialog_deer" android:scaleType="centerInside" android:layout_above="@id/novice_task_dialog_panel" android:layout_centerHorizontal="true" android:translationX="6.0dip" android:translationY="6.0dip" />
+</RelativeLayout>

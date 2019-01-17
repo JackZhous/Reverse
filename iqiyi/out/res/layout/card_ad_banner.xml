@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/CardModelBase"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/banner_img_bg" android:background="#fff4f4f4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/banner_default_logo" android:scaleType="centerInside" />
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/banner_img" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_alignLeft="@id/banner_img_bg" android:layout_alignTop="@id/banner_img_bg" android:layout_alignRight="@id/banner_img_bg" android:layout_alignBottom="@id/banner_img_bg" />
+</RelativeLayout>

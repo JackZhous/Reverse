@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/feed_card_video_set" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="7.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/feed_video_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <org.iqiyi.video.image.PlayerDraweView android:id="@id/feed_inner_video_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/player_feed_default_image_bg" android:scaleType="centerCrop" />
+        <ImageView android:id="@id/feed_inner_video_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/player_video_play" android:layout_centerInParent="true" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/color_white" android:id="@id/feed_archive_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/player_pp_qz_feed_audit_hint" android:layout_centerInParent="true" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/color_white" android:gravity="center" android:id="@id/feed_inner_video_duration" android:background="#99000000" android:padding="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@id/feed_inner_video_bg" android:layout_alignBottom="@id/feed_inner_video_bg" />
+        <RelativeLayout android:id="@id/small_video_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

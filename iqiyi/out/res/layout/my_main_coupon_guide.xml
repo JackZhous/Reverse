@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/emptyBlock" android:layout_width="50.0dip" android:layout_height="260.0dip" />
+    <ImageView android:id="@id/my_main_coupon_guide" android:background="@drawable/my_main_coupon_guide" android:layout_width="110.5dip" android:layout_height="49.5dip" android:layout_toRightOf="@id/emptyBlock" android:layout_below="@id/emptyBlock" />
+    <ImageView android:id="@id/up_black_mask" android:background="#c7000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/my_main_coupon_guide" />
+    <ImageView android:id="@id/down_black_mask" android:background="#c7000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/my_main_coupon_guide" android:layout_alignLeft="@id/my_main_coupon_guide" android:layout_alignRight="@id/my_main_coupon_guide" />
+    <ImageView android:id="@id/right_black_mask" android:background="#c7000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/my_main_coupon_guide" android:layout_alignTop="@id/my_main_coupon_guide" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/left_black_mask" android:background="#c7000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/my_main_coupon_guide" android:layout_below="@id/up_black_mask" android:layout_alignTop="@id/my_main_coupon_guide" />
+    <TextView android:textSize="17.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/my_main_coupon_guide_tip" android:layout_below="@id/my_main_coupon_guide" android:layout_alignLeft="@id/my_main_coupon_guide" android:layout_centerHorizontal="true" />
+</RelativeLayout>

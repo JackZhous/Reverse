@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center" android:id="@id/fl_root" android:layout_width="266.79688dip" android:layout_height="268.0dip">
+        <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom|center" android:orientation="vertical" android:background="@drawable/bg_award_result" android:layout_width="204.0dip" android:layout_height="200.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="82.0dip" android:text="@string/dlg_not_winning_1" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/dlg_not_winning_2" />
+                <Button android:textSize="13.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/btn_continue" android:background="@drawable/bg_dlg_continue_btn_long" android:layout_width="130.0dip" android:layout_height="30.0dip" android:layout_marginTop="22.0dip" android:text="@string/dlg_continue_btn" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="126.0dip" android:layout_height="137.0dip" android:src="@drawable/not_winning" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="right" android:id="@id/fl_close" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="16.099976dip">
+            <ImageButton android:layout_gravity="center" android:background="@null" android:clickable="false" android:layout_width="19.199982dip" android:layout_height="19.199982dip" android:src="@drawable/bg_dlg_close_btn" />
+        </FrameLayout>
+    </FrameLayout>
+    <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@id/lav_heart" android:layout_width="wrap_content" android:layout_height="wrap_content" app:lottie_fileName="red_packet_heart.json" />
+</FrameLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_back" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/ic_dmk_back" />
+        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_address" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/address_text_color_primary" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/label_award" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/address_text_color_primary" android:layout_gravity="center_vertical" android:id="@id/tv_award" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="84.0dip" />
+        <View android:layout_gravity="bottom" android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/address_text_color_primary" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/label_recipient" />
+        <EditText android:textSize="15.0sp" android:textColor="@color/address_text_color_primary" android:textColorHint="@color/address_text_color_hint" android:layout_gravity="center_vertical" android:id="@id/et_name" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="84.0dip" android:hint="@string/hint_recipient" />
+        <View android:layout_gravity="bottom" android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/address_text_color_primary" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/label_phone" />
+        <EditText android:textSize="15.0sp" android:textColor="@color/address_text_color_primary" android:textColorHint="@color/address_text_color_hint" android:layout_gravity="center_vertical" android:id="@id/et_phone" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="84.0dip" android:hint="@string/hint_phone" android:inputType="phone" />
+        <View android:layout_gravity="bottom" android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/rl_area" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/address_text_color_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/label_area" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/area_right_arrow" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/ic_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/address_text_color_hint" android:id="@id/tv_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:text="@string/hint_select" android:layout_toLeftOf="@id/area_right_arrow" android:layout_centerVertical="true" />
+        <View android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_street" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/address_text_color_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/label_street" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/street_right_arrow" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/ic_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/address_text_color_hint" android:id="@id/tv_steet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:text="@string/hint_select" android:layout_toLeftOf="@id/street_right_arrow" android:layout_centerVertical="true" />
+        <View android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/address_text_color_primary" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/label_detailed_address" />
+        <EditText android:textSize="15.0sp" android:textColor="@color/address_text_color_primary" android:textColorHint="@color/address_text_color_hint" android:layout_gravity="center_vertical" android:id="@id/et_detailed_addr" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="84.0dip" android:hint="@string/hint_detailed_address" />
+        <View android:layout_gravity="bottom" android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </FrameLayout>
+    <Button android:textSize="15.0sp" android:textColor="#ffffffff" android:id="@id/btn_submit" android:background="@drawable/bg_address_submit_btn" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="36.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="36.0dip" android:text="@string/btn_submit" />
+    <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="@string/address_reminder" />
+    <TextView android:textSize="12.0sp" android:textColor="#ffff2727" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" />
+</LinearLayout>

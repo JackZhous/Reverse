@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/qiyi_sdk_player_land_detail_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.iqiyi.video.image.PlayerDraweView android:id="@id/ad_image" android:layout_width="71.0dip" android:layout_height="40.0dip" android:layout_margin="4.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <Button android:id="@id/ad_tip_close" android:background="@drawable/phone_bottom_tips_close_button" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/player_size_13" android:textColor="@color/color_green" android:id="@id/click_to_h5" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/ad_tip_close" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/player_size_13" android:textColor="@color/player_land_textcolor" android:ellipsize="end" android:id="@id/ad_tip_text" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_toLeftOf="@id/click_to_h5" android:layout_toRightOf="@id/ad_image" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" />
+</RelativeLayout>

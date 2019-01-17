@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.iqiyi.publisher.ui.view.PhotoCropView android:id="@id/cv_crop_image" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/tv_action_return" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:src="@drawable/pub_back_button_with_shadow" android:layout_alignParentTop="true" />
+    <RelativeLayout android:id="@id/rl_picswap_photoadjust_confirm" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginBottom="20.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/confirm_picture" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="36.0dip" android:src="@drawable/pub_confirm_face_picture" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/return_to_rechoose" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="36.0dip" android:src="@drawable/pub_retake_picture" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="140.0dip" android:layout_alignParentBottom="true">
+        <com.iqiyi.publisher.ui.view.MagicSwapCaptureButtonWithProgress android:id="@id/rl_capture" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

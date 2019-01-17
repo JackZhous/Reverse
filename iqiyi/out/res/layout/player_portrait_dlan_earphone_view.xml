@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="fill_parent" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/player_cast_earphone_panel_content" android:paddingLeft="@dimen/player_cast_earphone_panel_horizontal_padding" android:paddingRight="@dimen/player_cast_earphone_panel_horizontal_padding" android:paddingBottom="@dimen/player_cast_earphone_panel_horizontal_padding" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/earphone_ll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/player_cast_earphone_panel_switch_top_margin" android:layout_marginBottom="@dimen/player_cast_earphone_panel_switch_bottom_margin">
+            <TextView android:textSize="@dimen/player_cast_earphone_panel_normal_text_size" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dlan_play_earphone_tv" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/earphone_switch" android:layout_width="@dimen/player_cast_right_panel_switch_width" android:layout_height="@dimen/player_cast_right_panel_switch_height" android:src="@drawable/player_dlan_earphone_switch_bg" android:scaleType="fitCenter" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/player_cast_earphone_panel_description_text_size" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dlan_play_earphone_description" android:lineSpacingExtra="5.0dip" />
+        <RelativeLayout android:id="@id/earphone_sync_rl" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/player_cast_earphone_panel_sync_top_margin">
+            <TextView android:textSize="@dimen/player_cast_earphone_panel_normal_text_size" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/dlan_play_earphone_sync_tv" />
+            <TextView android:textSize="@dimen/player_cast_earphone_panel_normal_text_size" android:textColor="#ff0bbe06" android:gravity="center" android:id="@id/earphone_sync" android:background="@drawable/land_cast_earphone_syn_background" android:layout_width="90.0dip" android:layout_height="30.0dip" android:text="@string/dlan_play_earphone_sync_button" android:layout_alignParentRight="true" />
+            <TextView android:textSize="@dimen/player_cast_earphone_panel_description_text_size" android:textColor="#ffffffff" android:id="@id/earphone_sync_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/player_cast_earphone_panel_sync_bottom_margin" android:text="@string/dlan_play_earphone_sync_description" android:layout_below="@id/earphone_sync" android:lineSpacingExtra="5.0dip" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

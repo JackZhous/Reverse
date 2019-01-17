@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/start_loading_layout" android:background="@drawable/card_video_player_black_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/qiyi_logo" android:layout_width="190.0dip" android:layout_height="68.0dip" android:src="@drawable/video_loading_logo" android:layout_centerInParent="true" />
+        <org.qiyi.basecard.common.video.defaults.layer.CardVideoCircleLoadingView android:id="@id/loading_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/qiyi_logo" android:layout_centerHorizontal="true" app:load_text="@string/card_video_ready_to_play" />
+    </RelativeLayout>
+    <org.qiyi.basecard.common.video.defaults.layer.CardVideoLoadingView android:id="@id/buffer_loading_layout" android:visibility="gone" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_centerInParent="true" />
+</RelativeLayout>

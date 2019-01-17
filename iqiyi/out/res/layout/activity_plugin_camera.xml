@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/view_background" android:background="#7f000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/view_close" android:layout_width="fill_parent" android:layout_height="100.0dip" />
+    <RelativeLayout android:id="@id/view_content" android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/view_close">
+        <org.qiyi.basecore.widget.PagerSlidingTabStrip android:id="@id/tab_pager" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="60.0dip" android:layout_marginRight="60.0dip" android:layout_centerHorizontal="true" app:pstsIndicatorColor="@color/default_grean" app:pstsDividerColor="#00000000" app:pstsIndicatorHeight="3.0dip" app:pstsUnderlineHeight="0.0px" app:pstsTabPaddingLeftRight="15.0dip" app:pstsShouldExpand="true" app:pstsScrollToCenter="false" />
+        <android.support.v4.view.ViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tab_pager" />
+        <View android:id="@id/btn_close" android:background="@drawable/ic_close" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="7.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

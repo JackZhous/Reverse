@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/paopao_instruction_code_dialog_bg" android:layout_width="290.0dip" android:layout_height="200.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/paopao_instruction_code_content" android:background="@drawable/paopao_instruction_code_dialog_bg" android:layout_width="fill_parent" android:layout_height="155.5dip" android:layout_alignParentTop="true">
+        <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/qiyi_instruction_code_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/paopao_instruction" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="16.0dip" android:layout_below="@id/qiyi_instruction_code_tv">
+            <ImageView android:id="@id/qiyi_instruction_code_iv" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/paopao_instruction_icon" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/paopao_instruction_code_dsc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="14.0dip" android:layout_toRightOf="@id/qiyi_instruction_code_iv" android:layout_alignTop="@id/qiyi_instruction_code_iv" android:layout_alignBottom="@id/qiyi_instruction_code_iv" android:layout_alignParentRight="true" android:lineSpacingExtra="6.0dip" />
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/paopao_instruction_not_show_for_owner" android:layout_width="fill_parent" android:layout_height="43.5dip" android:layout_below="@id/paopao_instruction_code_dsc">
+                <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/paopao_instruction_code_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:text="@string/paopao_instruction_not_show_for_owner" android:layout_alignParentRight="true" />
+                <CheckBox android:id="@id/paopao_instruction_cb" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginRight="6.0dip" android:button="@drawable/paopao_instruction_dialog_cb_selector" android:layout_toLeftOf="@id/paopao_instruction_code_tips" android:layout_alignTop="@id/paopao_instruction_code_tips" android:layout_alignBottom="@id/paopao_instruction_code_tips" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:background="#ffe1e1e1" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/paopao_instruction_code_content" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/paopao_instruction_code_btn_cancel" android:background="@drawable/paopao_instruction_code_text_bg_white" android:layout_width="145.0dip" android:layout_height="fill_parent" android:text="CANCEL" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/paopao_instruction_code_btn_ok" android:background="@drawable/paopao_instruction_code_text_bg_green" android:layout_width="145.0dip" android:layout_height="fill_parent" android:text="OK" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

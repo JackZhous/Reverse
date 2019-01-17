@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/img_layout" android:background="@drawable/player_multi_camera_cover_selector" android:padding="1.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+        <org.iqiyi.video.image.PlayerDraweView android:id="@id/camera_img" android:visibility="gone" android:duplicateParentState="true" android:layout_width="110.0dip" android:layout_height="62.0dip" />
+        <TextView android:textSize="12.0dip" android:textColor="#ff666666" android:gravity="center" android:id="@id/end_img_text" android:background="#fff4f4f4" android:visibility="gone" android:layout_width="110.0dip" android:layout_height="62.0dip" android:text="@string/player_multi_camera" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0dip" android:textColor="@drawable/player_portrait_multi_camera_title_selector" android:ellipsize="end" android:id="@id/camera_title" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:maxWidth="100.0dip" android:maxLines="1" android:layout_below="@id/img_layout" android:layout_centerHorizontal="true" />
+</RelativeLayout>

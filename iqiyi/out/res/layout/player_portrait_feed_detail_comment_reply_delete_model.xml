@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/comment_reply_delete_root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/player_color_f5f5f5" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="47.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="9.0dip" android:text="@string/player_feed_comment_delete" android:drawableLeft="@drawable/player_comment_reply_delete" android:drawablePadding="5.0dip" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

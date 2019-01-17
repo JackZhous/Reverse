@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/phone_search_no_result_layout" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/phone_search_no_result_icon" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="20.0dip" android:src="@drawable/phone_search_none" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/phoneSearchNoResultTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_below="@id/phone_search_no_result_icon" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/phoneSearchNoResult" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_below="@id/phoneSearchNoResultTitle" android:layout_centerHorizontal="true" />
+        <View android:id="@id/line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="18.0sp" android:layout_below="@id/phoneSearchNoResult" />
+        <View android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</FrameLayout>

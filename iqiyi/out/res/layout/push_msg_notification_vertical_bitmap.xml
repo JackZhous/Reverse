@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/notification_background" android:paddingTop="7.0dip" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="94.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/notification_vertical_poster_image" android:layout_width="60.0dip" android:layout_height="80.0dip" android:layout_marginLeft="7.0dip" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/notification_vertical_small_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" android:src="@drawable/notification_small_icon" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginLeft="7.0dip" android:layout_marginTop="5.0dip" android:layout_toRightOf="@id/notification_vertical_poster_image">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textColor="@color/notification_title" android:id="@id/notification_vertical_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="46.0dip" android:maxEms="12" android:singleLine="true" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/notification_time" android:id="@id/notification_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:textSize="11.0sp" android:textColor="@color/notificaiton_content" android:id="@id/notification_vertical_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="46.0dip" android:maxEms="18" android:singleLine="true" />
+        <TextView android:textSize="11.0sp" android:textColor="#ffff4e00" android:id="@id/notification_vertical_details" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="46.0dip" android:maxEms="18" android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

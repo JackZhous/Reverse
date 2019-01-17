@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/qixiu_bg" android:paddingLeft="@dimen/card_padding_horizontal" android:paddingRight="@dimen/card_padding_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/card_poster" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" fresco:viewAspectRatio="2.0" fresco:placeholderImage="@drawable/phone_category_detail_rec_header_poster_qx" fresco:placeholderImageScaleType="centerCrop" fresco:pressedStateOverlayImage="@color/card_poster_mask_black_alpha_40" />
+    <TextView android:textSize="@dimen/card_text_size_13dp" android:textColor="@color/qixiu_bg_meta" android:id="@id/card_meta_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:singleLine="true" android:layout_below="@id/card_poster" />
+    <TextView android:textSize="@dimen/card_text_size_13dp" android:textColor="@color/qixiu_bg_meta" android:id="@id/card_meta_sub_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:singleLine="true" android:layout_below="@id/card_meta_title" />
+    <RelativeLayout android:id="@id/uploader_user_info" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/card_meta_title">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/uploader_avatar" android:background="@drawable/face_icon_xlarge" android:layout_width="25.0dip" android:layout_height="25.0dip" android:scaleType="centerCrop" fresco:roundAsCircle="true" />
+        <TextView android:id="@id/uploader_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/uploader_avatar" android:layout_centerVertical="true" style="@style/MetaTitle" />
+        <org.qiyi.basecore.widget.SubscribeButton android:id="@id/btn_layout" android:layout_width="80.0dip" android:layout_height="30.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

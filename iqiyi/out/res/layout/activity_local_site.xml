@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/activity_local_site_list" android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout style="@style/top_base_item">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/localSiteBackImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/phone_account_back_small_bg" />
+        <TextView android:id="@id/localSiteTitle" android:text="@string/local_site_title_empty" style="@style/top_title" />
+    </RelativeLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <org.qiyi.video.page.localsite.view.widget.SideBar android:id="@id/sidebar" android:layout_width="19.0dip" android:layout_height="380.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <android.support.v7.widget.RecyclerView android:id="@id/localSiteRecyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:transcriptMode="alwaysScroll" android:layout_toLeftOf="@id/sidebar" />
+        </RelativeLayout>
+        <include android:id="@id/localSiteEmptyView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/phone_load_data_exception" />
+    </FrameLayout>
+</LinearLayout>

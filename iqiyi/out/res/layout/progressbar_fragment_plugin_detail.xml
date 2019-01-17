@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/plugin_detail_progressbar_text_size_plugin_downloaded_size_text_view" android:textColor="@color/plugin_detail_progressbar_text_color_plugin_downloaded_size_text_view" android:id="@id/plugin_size_downloaded" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="0MB" />
+    <ProgressBar android:id="@id/plugin_download_progress_bar" android:layout_width="fill_parent" android:layout_height="2.0dip" android:progressDrawable="@drawable/plugin_detail_download_progress_bg_grey" android:layout_below="@id/plugin_size_downloaded" style="?android:attr/progressBarStyleHorizontal" />
+    <TextView android:textSize="@dimen/plugin_detail_progressbar_text_size_plugin_download_percent" android:textColor="@color/plugin_detail_progressbar_text_color_stop_state_plugin_download_percent_text" android:id="@id/plugin_download_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="0%" android:layout_alignTop="@id/plugin_size_downloaded" android:layout_alignRight="@id/plugin_download_progress_bar" android:layout_alignWithParentIfMissing="true" />
+</merge>

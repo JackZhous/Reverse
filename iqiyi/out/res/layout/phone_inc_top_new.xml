@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/phoneTopLayout" android:background="#ffe7e7e7" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/phoneTitleLayout" style="@style/top_base_item">
+        <TextView android:id="@id/phoneTopMyAccountBack" android:background="@drawable/phone_account_back_small_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/phoneTitle_size" android:textColor="#ff8f8f91" android:id="@id/phoneTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/phone_top_title" android:layout_centerInParent="true" />
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/filtermark" android:background="@drawable/top_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/phoneTitle_size" android:textColor="#ff8f8f91" android:gravity="center_vertical" android:id="@id/filterTitle" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="过滤" android:layout_toLeftOf="@id/filtermark" android:layout_centerVertical="true" />
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/TV_icon" android:background="@drawable/qimo_titile_icon_pushing_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/filterTitle" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/phoneTopSortLinear" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/phoneTitleLayout" />
+    <View android:id="@id/line" android:background="#ffe7e7e7" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/phoneTopSortLinear" />
+    <org.qiyi.android.video.animation.QiYiMainPagerView android:id="@id/ScrollLayoutTest" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/line" />
+    <RelativeLayout android:layout_gravity="bottom" android:id="@id/phoneTopEmptyLayout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="200.0dip" android:layout_centerInParent="true">
+        <include layout="@layout/phone_load_data_exception" />
+    </RelativeLayout>
+    <GridView android:id="@id/gridView" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/category_grid_item_bg" android:drawSelectorOnTop="true" android:numColumns="5" android:layout_below="@id/phoneTitleLayout" />
+    <View android:id="@id/line2" android:background="#ffe7e7e7" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/gridView" />
+</RelativeLayout>

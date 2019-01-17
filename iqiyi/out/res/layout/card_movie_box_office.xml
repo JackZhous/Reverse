@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" style="@style/CardModelBase"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/left_layout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.8">
+        <RelativeLayout android:id="@id/top_info_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_alignParentBottom="true">
+            <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/top_icon" android:background="@drawable/top_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+            <TextView android:id="@id/top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_toLeftOf="@id/top_icon" style="@style/MetaTitle.TwoLines" />
+            <TextView android:textSize="@dimen/card_text_size_11dp" android:textColor="@color/color_meta_sub_title" android:ellipsize="end" android:id="@id/top_sub_meta" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:maxLines="2" android:layout_toLeftOf="@id/top_icon" android:layout_below="@id/top_title" />
+        </RelativeLayout>
+        <include android:id="@id/layout_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/top_info_layout" layout="@layout/unit_ver_box_office" />
+    </RelativeLayout>
+    <View android:layout_width="8.0dip" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <include android:id="@id/layout_2" layout="@layout/unit_ver_box_office" />
+        <include android:id="@id/layout_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" layout="@layout/unit_ver_box_office" />
+    </LinearLayout>
+</LinearLayout>

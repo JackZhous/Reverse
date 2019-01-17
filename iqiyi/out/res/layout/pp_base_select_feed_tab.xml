@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_feed_tab_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/ll_feed_tab_layout_top_span" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <RelativeLayout android:id="@id/pp_feed_tab_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:textSize="14.0dip" android:textColor="@color/color_666666" android:id="@id/pp_feed_sort_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/pp_color_999999" android:gravity="center_vertical" android:id="@id/pp_feed_sort_tv" android:background="@drawable/pp_feed_sort_tv_bg" android:paddingLeft="14.5dip" android:paddingTop="6.5dip" android:paddingRight="11.0dip" android:paddingBottom="6.5dip" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginRight="12.0dip" android:minWidth="60.0dip" android:text="排序" android:includeFontPadding="false" android:drawableRight="@drawable/pp_feed_tab_sort_arrow_down" android:drawablePadding="2.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:id="@id/ll_feed_tab_layout_bottom_span" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+</LinearLayout>

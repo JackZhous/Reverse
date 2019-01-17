@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/nextTvTipLayout" android:background="@drawable/player_bottom_gradient_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/nextTvCloseImg" android:background="@drawable/player_next_tips_close" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="17.0dip" android:layout_marginBottom="12.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/nextTvPlay" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginBottom="12.0dip" android:src="@drawable/player_next_tips_play" android:layout_toLeftOf="@id/nextTvCloseImg" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center|left" android:id="@id/nextTvTitle" android:paddingLeft="26.0dip" android:paddingRight="26.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:maxLines="1" android:layout_toLeftOf="@id/nextTvPlay" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:layout_alignWithParentIfMissing="true" />
+</RelativeLayout>

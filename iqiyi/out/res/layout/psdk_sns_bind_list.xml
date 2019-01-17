@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.qiyi.android.video.ui.account.view.PLinearLayout android:orientation="vertical" android:id="@id/snslistbindLayout" android:background="@color/psdk_white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.android.video.ui.account.view.PLinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <org.qiyi.android.video.ui.account.view.PRelativeLayout android:id="@id/weibobindLayout" android:padding="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <org.qiyi.android.video.ui.account.view.PTextView android:textSize="15.0dip" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/text_bind_weibo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/psdk_sina_weibo" android:drawableLeft="@drawable/psdk_share_login_sina" android:drawablePadding="@dimen/psdk_qqzone_icon_text_marginLeft" />
+            <org.qiyi.android.video.ui.account.view.PTextView android:textSize="13.0dip" android:textColor="@color/psdk_white" android:gravity="center" android:id="@id/btn_bind_weibo" android:background="@drawable/psdk_bg_button_green" android:layout_width="80.0dip" android:layout_height="30.0dip" android:text="@string/psdk_snslist_bind" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+        </org.qiyi.android.video.ui.account.view.PRelativeLayout>
+        <org.qiyi.android.video.ui.account.view.PView style="@style/psdk_divideLine" />
+    </org.qiyi.android.video.ui.account.view.PLinearLayout>
+</org.qiyi.android.video.ui.account.view.PLinearLayout>

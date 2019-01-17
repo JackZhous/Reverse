@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.qiyi.android.video.ui.account.view.PLinearLayout android:orientation="vertical" android:layout_width="270.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.android.video.ui.account.view.PFrameLayout android:layout_width="270.0dip" android:layout_height="wrap_content">
+        <org.qiyi.android.video.ui.account.view.PTextView android:textSize="15.0dip" android:textColor="#ff333333" android:gravity="center" android:id="@id/tv_text" android:background="@drawable/psdk_shape_dialog_top" android:paddingLeft="10.0dip" android:paddingTop="50.0dip" android:paddingRight="10.0dip" android:paddingBottom="32.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="53.0dip" android:text="@string/psdk_log_off_alert_msgnew" android:lineSpacingMultiplier="1.2" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="130.0dip" android:src="@drawable/psdk_phone_logout_dialog_icon" android:scaleType="fitCenter" />
+    </org.qiyi.android.video.ui.account.view.PFrameLayout>
+    <include android:id="@id/logout_bottom" android:layout_width="270.0dip" android:layout_height="45.5dip" layout="@layout/psdk_confirm_dialog_logout" />
+</org.qiyi.android.video.ui.account.view.PLinearLayout>

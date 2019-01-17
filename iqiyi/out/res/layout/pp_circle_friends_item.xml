@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:Fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/qz_joined_circle_info_layout" android:layout_width="fill_parent" android:layout_height="80.0dip">
+        <FrameLayout android:id="@id/qz_joined_circle_fl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/qz_joined_circle_icon" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" Fresco:placeholderImage="@drawable/pp_icon_avatar_default" Fresco:placeholderImageScaleType="centerCrop" Fresco:failureImage="@drawable/pp_icon_avatar_default" Fresco:failureImageScaleType="centerCrop" Fresco:roundAsCircle="true" />
+            <ImageView android:layout_gravity="bottom|center|right" android:id="@id/pp_circle_friends_vertified" android:background="@drawable/pp_identity_v_pic" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" />
+        </FrameLayout>
+        <RelativeLayout android:gravity="center" android:id="@id/qz_friends_add_btn_layout" android:background="@drawable/pp_gc_joined_circle_signin_bg" android:layout_width="80.0dip" android:layout_height="30.0dip" android:layout_marginRight="12.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="13.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/qz_joined_circle_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="加入" android:drawableLeft="@drawable/pp_tv_add_circle_btn_pic" android:drawablePadding="6.0dip" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/qz_joined_circle_right_rl" android:layout_width="80.0dip" android:layout_height="30.0dip" android:layout_marginRight="12.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="13.0dip" android:textColor="@color/color_0bbe06" android:gravity="center" android:id="@id/qz_joined_video_btn" android:background="@drawable/pp_to_join" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="30.0dip" android:text="@string/pp_gc_go_to_circle" android:layout_below="@id/qz_joined_circle_tv" android:layout_alignRight="@id/qz_joined_circle_tv" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/pp_dimen_dp_16" android:textColor="@color/color_333333" android:ellipsize="end" android:id="@id/qz_joined_circle_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="我是昵称我是昵称我是昵称我" android:singleLine="true" android:layout_toRightOf="@id/qz_joined_circle_fl" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</FrameLayout>

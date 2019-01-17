@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/CardModelBase"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/poster_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentLeft="true">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/poster" android:layout_width="69.0dip" android:layout_height="92.0dip" android:scaleType="centerCrop" android:layout_centerInParent="true" fresco:placeholderImage="@drawable/phone_category_detail_rec_vertical_pic_default" fresco:placeholderImageScaleType="centerCrop" fresco:pressedStateOverlayImage="@color/card_poster_mask_black_alpha_40" />
+        <ImageView android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/ic_video_play" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0dip" android:textColor="@color/color_white" android:gravity="center" android:id="@id/btn_buy" android:background="@drawable/phone_green_btn" android:layout_width="60.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:maxLines="1" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/title_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/poster_layout" android:layout_alignParentTop="true">
+        <TextView android:textSize="13.0dip" android:textColor="#ff333333" android:id="@id/movie_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:singleLine="true" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/movie_info_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_toLeftOf="@id/btn_buy" android:layout_toRightOf="@id/poster_layout" android:layout_below="@id/title_layout">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/movie_score_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <org.qiyi.basecard.common.widget.PentagramViewSet android:id="@id/movie_score_view" android:layout_width="wrap_content" android:layout_height="wrap_content" fresco:child_num="5" fresco:child_size="13.0dip" fresco:child_margin="5.0dip" fresco:child_fill_color="#ffff6000" fresco:child_border_color="#ffff6000" fresco:child_border_width="1.0dip" />
+            <TextView android:textColor="#ff666666" android:id="@id/movie_score_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/movie_preview_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="11.0dip" android:textColor="#ff666666" android:id="@id/movie_preview_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </FrameLayout>
+    <TextView android:textSize="11.0dip" android:textColor="#ff999999" android:ellipsize="end" android:id="@id/movie_extra_info1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:singleLine="true" android:layout_toLeftOf="@id/btn_buy" android:layout_toRightOf="@id/poster_layout" android:layout_below="@id/movie_info_layout" />
+    <TextView android:textSize="11.0dip" android:textColor="#ff999999" android:ellipsize="end" android:id="@id/movie_extra_info2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:singleLine="true" android:layout_toLeftOf="@id/btn_buy" android:layout_toRightOf="@id/poster_layout" android:layout_below="@id/movie_extra_info1" />
+</RelativeLayout>

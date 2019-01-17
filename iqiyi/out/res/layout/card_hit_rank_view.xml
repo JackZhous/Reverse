@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:clipChildren="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="79.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_rank" android:layout_width="wrap_content" android:layout_height="22.5dip" android:layout_marginLeft="6.0dip" android:layout_marginTop="12.0dip">
+        <TextView android:textSize="16.0dip" android:id="@id/t_rank_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="影响力榜" />
+        <TextView android:textSize="16.0dip" android:textColor="#ffff7e00" android:id="@id/t_rank_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="4.0dip" android:text="1000" />
+        <ImageView android:layout_width="8.0dip" android:layout_height="8.0dip" android:src="@drawable/card_hit_top_rank_arrow" />
+    </LinearLayout>
+    <org.qiyi.card.widget.RecyclerViewFlipper android:id="@id/rank_flipper" android:clipChildren="true" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_below="@id/ll_rank" android:layout_alignLeft="@id/ll_rank" />
+    <FrameLayout android:id="@id/fl_right_button" android:layout_width="92.0dip" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <TextView android:textSize="13.0dip" android:textColor="@color/color_white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/b_hitrank" android:background="@drawable/card_hitrank_button_bg" android:layout_width="80.0dip" android:layout_height="30.0dip" android:layout_marginTop="33.0dip" android:layout_marginBottom="16.0dip" android:text="为TA冲榜" />
+        <TextView android:textSize="12.0dip" android:textColor="#ffff7e00" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/t_jiayoubang" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:text="加油棒 5个" />
+    </FrameLayout>
+    <TextView android:textSize="20.0dip" android:textColor="#ffff7e00" android:id="@id/t_rank_dynamic" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="影响力 +100" android:layout_alignParentTop="true" />
+    <TextView android:textAppearance="@android:style/TextAppearance.Small" android:textSize="14.0dip" android:textColor="@color/color_white" android:gravity="center" android:id="@id/t_rank_toast" android:background="@drawable/card_hitrank_toast_bg" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="36.0dip" android:text="唐嫣距离上一名还差200影响力" android:shadowColor="#bb000000" android:shadowRadius="2.75" android:layout_centerInParent="true" />
+</merge>

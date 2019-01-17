@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/red_packet_icon" android:layout_width="55.0dip" android:layout_height="50.0dip" android:scaleType="centerCrop" />
+    <TextView android:textSize="12.0dip" android:textColor="#ff333333" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/red_packet_timing" android:background="@drawable/chat_red_packet_timing_portrait" android:layout_width="45.0dip" android:layout_height="18.0dip" />
+</FrameLayout>

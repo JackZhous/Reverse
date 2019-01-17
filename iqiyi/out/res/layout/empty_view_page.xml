@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/empty_page_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/empty_image" android:layout_width="180.0dip" android:layout_height="180.0dip" android:layout_marginTop="140.0dip" android:layout_marginBottom="25.0dip" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/empty_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="什么也没有~" android:layout_below="@id/empty_image" android:layout_centerHorizontal="true" />
+    <Button android:textColor="#ff0fd651" android:id="@id/empty_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="立即登录" android:layout_below="@id/empty_text" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/no_network_tips_rl_nocahe" android:background="@color/color_f0f0f0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_mp_no_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pp_general_no_data_icon" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/color_999999" android:id="@id/tv_mp_no_data_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/pp_no_data_information" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_mp_no_data_go_to_circle" android:background="@drawable/pp_bg_no_data_go_to_circle" android:visibility="visible" android:layout_width="200.0dip" android:layout_height="40.0dip" android:layout_marginTop="14.0dip" android:text="@string/pp_no_data_go_to_circle" />
+    </LinearLayout>
+</LinearLayout>

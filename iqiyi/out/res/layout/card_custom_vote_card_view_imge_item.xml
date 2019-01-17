@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecard.v3.widget.progressbar.VoteProgressBar android:id="@id/card_view_item_progressbar" android:layout_width="fill_parent" android:layout_height="60.0dip" style="@style/ImageVoteProgressbar" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/card_view_image_item_Image" android:visibility="visible" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" app:placeholderImage="@drawable/card_icon_avatar_default" app:failureImage="@drawable/card_icon_avatar_default" app:roundAsCircle="true" />
+        <TextView android:textSize="15.0dip" android:textColor="#ff0bbe06" android:ellipsize="end" android:id="@id/card_view_item_vote_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="52.0dip" android:singleLine="true" android:layout_toRightOf="@id/card_view_image_item_Image" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/card_view_item_check_icon" android:background="@drawable/card_vote_unchecked_icon" android:layout_width="19.0dip" android:layout_height="19.0dip" android:layout_marginRight="19.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0dip" android:textColor="#ff999999" android:gravity="center_vertical" android:id="@id/card_view_item_show_num" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="19.0dip" android:layout_marginRight="19.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/pageview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <ScrollView android:id="@id/sview" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/p_dimen_40" android:textStyle="bold" android:textColor="@color/p_color_FF7E00" android:id="@id/qd_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p_dimen_16" android:text="0.00" android:singleLine="true" />
+                    <TextView android:textSize="@dimen/p_dimen_14" android:textStyle="bold" android:textColor="@color/p_color_666666" android:id="@id/qd_count2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p_dimen_17" android:text="@string/p_qd_qdcount" />
+                </LinearLayout>
+                <ImageView android:background="@color/p_color_f0f0f0" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_0.5" android:layout_marginTop="@dimen/p_dimen_16" />
+                <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:paddingLeft="@dimen/p_dimen_20" android:paddingRight="@dimen/p_dimen_20" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p_dimen_14">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/p_dimen_15" android:textStyle="bold" android:textColor="@color/p_color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p_select_qd_title" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <TextView android:textSize="@dimen/p_dimen_14" android:textColor="@color/p_color_999999" android:id="@id/qd_phone_pay_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/p_dimen_5" android:text="@string/p_qd_phone_pay" android:layout_toLeftOf="@id/qd_arrow" android:layout_centerVertical="true" />
+                        <ImageView android:id="@id/qd_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <org.qiyi.android.video.pay.views.PayNoneScrollGridView android:id="@id/qd_orders" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p_dimen_14" android:listSelector="@color/transparent" android:horizontalSpacing="10.0dip" android:verticalSpacing="10.0dip" android:numColumns="3" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/page_linear_p2" android:background="@android:color/white" android:paddingLeft="@dimen/p_dimen_20" android:paddingRight="@dimen/p_dimen_20" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <ImageView android:background="@color/p_color_f0f0f0" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_0.5" android:layout_marginTop="@dimen/p_dimen_10" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/p_dimen_20" android:layout_marginTop="@dimen/p_dimen_15" android:layout_marginRight="@dimen/p_dimen_20">
+                    <TextView android:textSize="@dimen/p_dimen_15" android:textStyle="bold" android:textColor="@color/p_color_333333" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p_qd_info_0" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/pay_tips_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/p_dimen_65" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <include layout="@layout/p_bottom_price_and_submit_layout" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

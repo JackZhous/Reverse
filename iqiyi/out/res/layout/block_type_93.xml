@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/replay_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignTop="@id/replay_more" android:layout_alignBottom="@id/replay_more" />
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/deliver_line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <org.qiyi.basecard.common.widget.MetaView android:id="@id/replay_more" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</RelativeLayout>

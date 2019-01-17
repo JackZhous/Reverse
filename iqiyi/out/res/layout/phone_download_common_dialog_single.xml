@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/titlelayout" android:paddingLeft="30.0dip" android:paddingTop="10.0dip" android:paddingRight="30.0dip" android:paddingBottom="10.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:textSize="15.0dip" android:textColor="#ff333333" android:gravity="center" android:layout_gravity="center" android:id="@id/phone_download_tv_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/phone_download_mobile_network_tips" android:lineSpacingExtra="4.0dip" />
+        </LinearLayout>
+        <View android:background="#ffd7d7d7" android:layout_width="wrap_content" android:layout_height="0.5dip" android:layout_alignTop="@id/exitlayout" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="#ff00c000" android:gravity="center" android:id="@id/phone_download_dialog_btn_confirm" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/phone_download_auto_know" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

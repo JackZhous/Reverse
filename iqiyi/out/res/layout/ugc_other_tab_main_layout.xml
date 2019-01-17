@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffe7e7e7" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/phoneTitleLayout" style="@style/top_base_item">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/title_back" android:background="@drawable/phone_account_back_bg" style="@style/top_title_item" />
+        <TextView android:ellipsize="end" android:id="@id/phoneUgcTitle" android:layout_marginLeft="90.0dip" android:layout_marginRight="90.0dip" android:singleLine="true" style="@style/top_title" />
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/ugc_other_share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ugc_other_share_btn_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/indexLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phoneTitleLayout" />
+</RelativeLayout>

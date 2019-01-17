@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/phone_my_setting_about_us_item_0" android:background="@drawable/phone_download_grey_click_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:layout_gravity="center_vertical" android:tag="binding_1" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="@dimen/phone_card_margin_horizontal_new" />
+        <TextView android:textSize="@dimen/phone_setting_text_size_lee1" android:textColor="@color/phone_my_setting_text_color" android:gravity="center_vertical" android:tag="binding_2" android:paddingLeft="@dimen/phone_card_margin_horizontal_new" android:paddingRight="11.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip" android:drawableRight="@drawable/phone_my_inc_arrow" />
+    </LinearLayout>
+    <View style="@style/divideLine" />
+</LinearLayout>

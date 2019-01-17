@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/item_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/preview_episode_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="60.0dip" android:text="路飞的童年路飞的童年路飞的" android:layout_centerVertical="true" android:lineSpacingExtra="2.0dip" />
+        <org.iqiyi.video.image.PlayerDraweView android:id="@id/preview_episode_load_view" android:visibility="visible" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/portrait_player_preview_episode" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff0bbe06" android:id="@id/preview_episode_play" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在播放" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textSize="14.0dip" android:textColor="#ff000000" android:id="@id/preview_episode_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="路飞的童年路飞的童年路飞的童年路飞的童年路飞的童年路飞的童年路飞的童年路飞的童年路飞的童年路飞的童年路飞的童年路飞的童年路飞的童年" android:layout_below="@id/item_top" android:lineSpacingExtra="14.0dip" />
+</RelativeLayout>

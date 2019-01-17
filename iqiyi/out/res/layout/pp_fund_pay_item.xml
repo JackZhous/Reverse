@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/pp_fund_pay_item_bg" android:layout_width="wrap_content" android:layout_height="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dip" android:textColor="@color/pp_fund_pay_name_color" android:gravity="center_vertical" android:id="@id/pp_pay_item_name_tv" android:paddingLeft="16.0dip" android:paddingRight="4.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="蛋糕" android:singleLine="true" android:layout_weight="1.0" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/pp_fund_pay_price_color" android:gravity="center" android:id="@id/pp_pay_item_price_tv" android:paddingLeft="4.0dip" android:paddingRight="16.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="1元" android:singleLine="true" />
+</LinearLayout>

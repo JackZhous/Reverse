@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="wrap_content" style="@style/CardModelBase"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/card_text_size_12dp" android:textColor="@color/color_meta_sub_title" android:gravity="center_vertical" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="30.0dip" />
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/arrow_icon" android:background="@drawable/arrow_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginRight="6.0dip" android:layout_toLeftOf="@id/arrow_icon">
+        <com.qiyi.card.view.TwoBorderQiyiDraweeView android:id="@id/avatar3" android:background="@drawable/face_icon_xlarge" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="-4.0dip" android:layout_alignParentRight="true" fresco:roundAsCircle="true" fresco:outerColor="@color/color_white" fresco:outerWidth="1.0dip" />
+        <com.qiyi.card.view.TwoBorderQiyiDraweeView android:id="@id/avatar2" android:background="@drawable/face_icon_xlarge" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="-4.0dip" android:layout_toLeftOf="@id/avatar3" android:layout_alignWithParentIfMissing="true" fresco:roundAsCircle="true" fresco:outerColor="@color/color_white" fresco:outerWidth="1.0dip" />
+        <com.qiyi.card.view.TwoBorderQiyiDraweeView android:id="@id/avatar1" android:background="@drawable/face_icon_xlarge" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_toLeftOf="@id/avatar2" android:layout_alignWithParentIfMissing="true" fresco:roundAsCircle="true" fresco:outerColor="@color/color_white" fresco:outerWidth="1.0dip" />
+    </RelativeLayout>
+</RelativeLayout>

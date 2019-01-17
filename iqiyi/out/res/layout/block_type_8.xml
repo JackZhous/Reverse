@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/coupon_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/img1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+    <RelativeLayout android:id="@id/left_layout" android:layout_width="96.0dip" android:layout_height="wrap_content" android:layout_toRightOf="@id/img1">
+        <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta1_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_centerHorizontal="true" />
+        <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta2_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/meta1_layout" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/dottedLine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:src="@drawable/coupon_dotted_line" android:layout_toRightOf="@id/left_layout" />
+    <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta3_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/dottedLine" />
+    <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta4_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/meta3_layout" />
+    <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta5_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/dottedLine" android:layout_below="@id/meta3_layout" />
+    <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta6_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/img1" android:layout_alignParentBottom="true" />
+    <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta7_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/meta6_layout" android:layout_alignParentBottom="true" />
+    <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta8_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/img2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

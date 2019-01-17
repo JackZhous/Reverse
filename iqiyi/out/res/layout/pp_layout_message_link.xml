@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_msg_link" android:background="@drawable/im_icon_mp_link_message_background_from" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_msg_link_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0dip" android:id="@id/tv_msg_title" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="进入圈子吗？" android:includeFontPadding="false" android:maxLength="13" />
+        <TextView android:textSize="14.0dip" android:id="@id/tv_msg_content" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="小米笔记本采用全金属机身，配置分为12.5寸和13.3寸两种版本，前者主打轻薄便携，后者主打性能便携。" android:includeFontPadding="false" />
+        <View android:id="@id/view_separate" android:background="@color/separate_line_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" />
+        <RelativeLayout android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <ImageView android:id="@id/iv_msg_link_arrow_right" android:layout_width="10.0dip" android:layout_height="10.0dip" android:src="@drawable/im_rich_link_single_single_read_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0dip" android:id="@id/tv_msg_link_jump" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点击查看" android:includeFontPadding="true" android:maxLength="16" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

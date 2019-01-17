@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/no_network_layout" layout="@layout/pp_no_network_tips_linearlayout" />
+    <include android:id="@id/pp_no_data" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/pp_layout_no_data" />
+    <org.qiyi.basecore.widget.ptr.widget.PtrSimpleListView android:id="@id/lv_session" android:focusable="true" android:scrollbars="none" android:fadingEdge="none" android:duplicateParentState="true" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@null" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="0.0dip" android:headerDividersEnabled="false" android:footerDividersEnabled="false" />
+</LinearLayout>

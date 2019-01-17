@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/pp_search_root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/search_view_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/pp_search_input_layout" />
+    <include android:id="@id/search_key" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/search_view_layout" layout="@layout/pp_search_key_layout" />
+    <ListView android:id="@id/suggest_list_view" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@color/color_f7f7f7" android:dividerHeight="1.0px" android:layout_below="@id/search_view_layout" />
+    <ListView android:id="@id/search_list_view" android:background="@color/color_f7f7f7" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@null" android:dividerHeight="0.0dip" android:layout_below="@id/search_view_layout" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/tips_layout" android:background="@color/color_f7f7f7" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/search_view_layout">
+        <com.iqiyi.paopao.middlecommon.views.slimviews.SlimImageView android:id="@id/tips_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="150.0dip" android:layout_marginBottom="20.0dip" app:slimViewSrc="pp_search_find_no_result" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/color_999999" android:id="@id/tips_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pp_search_no_result" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/color_999999" android:id="@id/pp_no_network_no_cache_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pp_search_no_result" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/guide_bubble_left" android:background="#c7000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/guide_bubble_right" android:background="#c7000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/guide_bubble_bottom" android:background="#c7000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/guide_bubble_top" android:background="#c7000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/guide_bubble" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/player_gyro_guide_bubble" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/guide_bubble_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.5dip" android:layout_marginRight="25.0dip" android:layout_below="@id/guide_bubble" android:layout_alignParentRight="true">
+            <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/player_gyro_guide_before" />
+            <TextView android:textSize="14.0dip" android:textColor="#ff0bbe06" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/player_gyro_guide_green" />
+            <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/player_gyro_guide_after" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

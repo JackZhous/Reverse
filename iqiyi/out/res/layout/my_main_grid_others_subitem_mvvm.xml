@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/mymain_others_grid_item_bg" android:tag="layout/my_main_grid_others_subitem_mvvm_0" android:background="#ffffffff" android:paddingLeft="10.0dip" android:paddingTop="7.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="90.0dip" android:layout_height="48.0dip">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/mymain_others_subitem_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:scaleType="fitXY" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <View android:tag="binding_1" android:background="@drawable/phone_common_reddot_ball" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_toRightOf="@id/mymain_others_subitem_icon" android:layout_alignTop="@id/mymain_others_subitem_icon" />
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/mymain_others_subitem_tag" android:visibility="gone" android:layout_width="34.0dip" android:layout_height="24.0dip" android:scaleType="fitXY" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="#ff333333" android:layout_gravity="center_horizontal" android:id="@id/mymain_others_subitem_name" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:lines="1" />
+    <TextView android:textSize="10.0dip" android:textColor="#ff999999" android:layout_gravity="center_horizontal" android:id="@id/mymain_others_subitem_hint" android:paddingBottom="17.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="5.0dip" android:text=" " android:singleLine="true" />
+</LinearLayout>

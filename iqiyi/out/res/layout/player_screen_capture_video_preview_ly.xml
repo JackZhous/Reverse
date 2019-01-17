@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/video_preview_main" android:background="#d7000000" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:gravity="center" android:id="@id/capture_preview_video_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:src="@drawable/capture_video_preview_video_cancel_selector" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <RelativeLayout android:id="@id/capture_video_pre_view" android:background="@drawable/capture_video_prview_background" android:layout_width="280.0dip" android:layout_height="170.0dip" android:layout_marginTop="25.0dip" android:layout_below="@id/capture_preview_video_cancel" android:layout_centerHorizontal="true">
+            <VideoView android:id="@id/video_preview" android:layout_width="280.0dip" android:layout_height="170.0dip" android:layout_centerInParent="true" android:layout_centerHorizontal="true" />
+            <ProgressBar android:id="@id/capture_download_progress" android:visibility="gone" android:layout_width="280.0dip" android:layout_height="170.0dip" android:progress="70" android:indeterminateOnly="false" android:progressDrawable="@drawable/capture_video_progress_download_layer_list" />
+            <TextView android:textSize="12.0dip" android:textColor="#ffffffff" android:id="@id/capture_download_percent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/capture_video_pre_view" android:layout_centerHorizontal="true">
+            <android.support.v7.widget.RecyclerView android:id="@id/video_share_recycler_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_centerVertical="true" />
+            <View android:id="@id/div_line" android:background="#33ffffff" android:layout_width="1.0px" android:layout_height="60.0dip" android:layout_marginRight="10.0dip" android:layout_toRightOf="@id/video_share_recycler_view" android:layout_centerVertical="true" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/div_line" android:layout_centerVertical="true">
+                <TextView android:textSize="13.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/capture_result" android:background="@drawable/capture_video_result_doing_shap" android:layout_width="80.0dip" android:layout_height="30.0dip" android:text="@string/player_landscape_screen_capture_video_result_button" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="13.0dip" android:textColor="#ff23d41e" android:id="@id/capture_result_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/player_landscape_screen_capture_video_login_tip" android:layout_below="@id/capture_result" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <org.qiyi.basecore.widget.CircleLoadingView android:id="@id/save_loading" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_centerInParent="true" app:auto_animation="true" app:static_play="true" />
+    <View android:layout_width="1.0dip" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

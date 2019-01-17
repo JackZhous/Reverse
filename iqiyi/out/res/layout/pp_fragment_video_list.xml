@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/pp_color_121318" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.iqiyi.paopao.middlecommon.ui.view.recyclerview.PPFamiliarRecyclerView android:id="@id/pp_video_list_rv" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/pp_video_list_top_cover" android:background="@drawable/pp_video_list_title_hide" android:layout_width="fill_parent" android:layout_height="70.0dip" />
+    <ImageView android:gravity="center" android:id="@id/pp_action_bar_left_tv" android:layout_width="32.0dip" android:layout_height="30.0dip" android:src="@drawable/pp_video_list_arrow_left" />
+</RelativeLayout>

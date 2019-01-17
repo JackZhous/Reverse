@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/leadImg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_below="@id/leadImg">
+        <org.qiyi.basecore.widget.OuterFrameTextView android:textColor="@color/music_top_points" android:id="@id/leadIcon" android:paddingLeft="5.0dip" android:paddingTop="1.0dip" android:paddingRight="5.0dip" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lead" fresco:outer_frame="round_padding" fresco:out_frame_color="#ffffcca7" style="@style/MetaSubTitle" />
+        <TextView android:gravity="center_vertical" android:id="@id/leadText" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="2" android:lineSpacingExtra="2.5dip" style="@style/MetaTitle" />
+    </LinearLayout>
+</RelativeLayout>

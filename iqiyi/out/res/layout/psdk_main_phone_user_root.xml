@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.qiyi.android.video.ui.account.view.PRelativeLayout android:id="@id/indexLayout" android:background="@color/psdk_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.android.video.ui.account.view.PRelativeLayout android:id="@id/phoneTitleLayout" style="@style/psdk_passport_top_bar">
+        <org.qiyi.android.video.ui.account.view.PTextView android:id="@id/phoneTopMyAccountBack" style="@style/psdk_passport_top_bar_back" />
+        <org.qiyi.android.video.ui.account.view.PTextView android:id="@id/phoneTitle" style="@style/psdk_passport_top_title" />
+        <org.qiyi.android.video.ui.account.view.PTextView android:textSize="15.0dip" android:textColor="@color/psdk_top_right_selector" android:gravity="center" android:id="@id/btn_top_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/img_question" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:src="@drawable/psdk_account_question" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </org.qiyi.android.video.ui.account.view.PRelativeLayout>
+    <org.qiyi.android.video.ui.account.view.PLinearLayout android:orientation="vertical" android:id="@id/mainContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phoneTitleLayout" />
+</org.qiyi.android.video.ui.account.view.PRelativeLayout>

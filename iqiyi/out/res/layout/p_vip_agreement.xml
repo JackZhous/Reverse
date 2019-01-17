@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="44.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <TextView android:textSize="13.0dip" android:textColor="@color/p_color_333333" android:gravity="center" android:layout_gravity="center" android:id="@id/t_vip_click1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p_vip_hyfwxy_wa" android:layout_weight="0.5" android:layout_centerVertical="true" />
+        <TextView android:textSize="13.0dip" android:textColor="@color/p_color_333333" android:gravity="center" android:layout_gravity="center" android:id="@id/t_vip_click2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p_vip_lxbyfwxy_tw" android:layout_weight="0.5" android:layout_toRightOf="@id/t_vip_click1" android:layout_centerVertical="true" />
+    </LinearLayout>
+    <View android:layout_gravity="center" android:id="@id/agreement_divider" android:background="@color/p_color_e5e5e5" android:layout_width="1.0px" android:layout_height="12.0dip" android:layout_centerInParent="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+</RelativeLayout>

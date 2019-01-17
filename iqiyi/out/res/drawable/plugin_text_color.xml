@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:color="@color/plugin_plugin_list_item_textview_pressed_state_color" />
+    <item android:state_focused="true" android:color="@color/qiyi_green_mysetting" />
+    <item android:state_selected="true" android:color="@color/qiyi_green_mysetting" />
+    <item android:color="@color/phone_title_black" />
+</selector>

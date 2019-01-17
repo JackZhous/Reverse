@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0dip" android:textColor="@drawable/pp_gc_selector_star_rank_tv" android:gravity="center" android:id="@id/tv_content" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="A" android:layout_centerInParent="true" />
+</RelativeLayout>

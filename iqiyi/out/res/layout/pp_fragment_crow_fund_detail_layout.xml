@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/trail_detail_root_layout" android:background="@color/color_ffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.iqiyi.paopao.middlecommon.ui.view.ptr.CommonPtrRecyclerView android:id="@id/pp_detail_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:divider="@null" android:layout_above="@id/tv_pp_crowd_fund_support" />
+    <com.iqiyi.feed.ui.view.FeedDetailTitleBar android:id="@id/pp_detail_tittle_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:detailType="trail" />
+    <View android:id="@id/view_pop_bg" android:background="@color/pp_color_9a000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="16.0dip" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@id/tv_pp_crowd_fund_support" android:background="@color/pp_color_ff8022" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/pp_crowd_funding_support" android:layout_alignParentBottom="true" />
+    <include android:id="@id/qz_already_delete_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/pp_detail_tittle_bar" layout="@layout/pp_layout_page_expired" />
+    <include android:id="@id/pp_layout_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/pp_circle_loading_layout" />
+    <include android:id="@id/pp_loading_error_page" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/pp_no_network_nocashe_warning_ll" />
+</RelativeLayout>

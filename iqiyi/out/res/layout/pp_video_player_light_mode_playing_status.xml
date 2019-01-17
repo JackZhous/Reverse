@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/pp_video_player_play_area_root" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/pp_video_player_common_playing_ui" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/pp_video_player_light_info_lo" android:background="@drawable/pp_player_gradient_bottom_40" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="75.0dip">
+        <LinearLayout android:layout_gravity="end|bottom|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/pp_video_player_light_ind_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pp_qz_feeds_video_play_anmi" />
+            <View android:background="@color/pp_color_66ffffff" android:layout_width="1.0px" android:layout_height="11.0dip" android:layout_marginRight="3.0dip" />
+            <TextView android:textSize="11.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/pp_video_player_light_info_left_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:includeFontPadding="false" />
+        </LinearLayout>
+    </FrameLayout>
+    <ViewStub android:layout_gravity="bottom|center|right" android:id="@id/pp_vs_player_advertise_action" android:layout="@layout/pp_player_full_advertise_action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" />
+</FrameLayout>

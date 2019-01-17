@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/content_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <org.qiyi.basecard.common.widget.ButtonView android:id="@id/expand_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta_layout_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/expand_button" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/content_vv_and_meta" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/content_title">
+        <org.qiyi.basecard.common.widget.ButtonView android:id="@id/vv_buttion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/vv_buttion" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rate_movie_entrance" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/content_vv_and_meta" android:layout_alignLeft="@id/content_vv_and_meta">
+        <TextView android:textSize="14.0dip" android:textColor="#ffff7646" android:gravity="center" android:id="@id/movie_sns_rate_value" android:layout_width="wrap_content" android:layout_height="28.0dip" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff999999" android:gravity="center" android:id="@id/movie_sns_rate_user_count" android:layout_width="wrap_content" android:layout_height="28.0dip" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff0bbe06" android:gravity="center" android:id="@id/rate_movie_i_want_to_rate" android:layout_width="wrap_content" android:layout_height="28.0dip" android:drawableRight="@drawable/movie_rating_i_want_to_rate" android:drawableEnd="@drawable/movie_rating_i_want_to_rate" />
+    </LinearLayout>
+</RelativeLayout>

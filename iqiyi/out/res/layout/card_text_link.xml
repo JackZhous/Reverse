@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" style="@style/CardModelBase.TextLink"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:layout_gravity="center_vertical" android:layout_width="10.0dip" android:layout_height="10.0dip" android:src="@drawable/card_textlink_arrow" />
+    <TextView android:textColor="@color/card_textlink" android:layout_gravity="center_vertical" android:id="@id/textview1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" style="@style/MetaTitle" />
+</LinearLayout>

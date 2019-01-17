@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/CardModelBase"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/unit_three_ver_img" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/unit_three_meta" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" layout="@layout/unit_three_hori_button" />
+</LinearLayout>

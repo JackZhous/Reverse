@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.qiyi.android.video.ui.account.view.PLinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.android.video.ui.account.view.PRelativeLayout android:id="@id/rl_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="36.0dip">
+        <ImageView android:id="@id/img_one" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="9.0dip" android:layout_centerHorizontal="true" />
+        <org.qiyi.android.video.ui.account.view.PTextView android:textSize="12.0dip" android:textColor="@color/psdk_text_hint_color" android:id="@id/tv_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/img_one" android:layout_centerHorizontal="true" />
+    </org.qiyi.android.video.ui.account.view.PRelativeLayout>
+    <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <org.qiyi.android.video.ui.account.view.PRelativeLayout android:id="@id/rl_two" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img_two" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="9.0dip" android:layout_centerHorizontal="true" />
+        <org.qiyi.android.video.ui.account.view.PTextView android:textSize="12.0dip" android:textColor="@color/psdk_text_hint_color" android:id="@id/tv_two" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/img_two" android:layout_centerHorizontal="true" />
+    </org.qiyi.android.video.ui.account.view.PRelativeLayout>
+    <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <org.qiyi.android.video.ui.account.view.PRelativeLayout android:id="@id/rl_three" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img_three" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="9.0dip" android:layout_centerHorizontal="true" />
+        <org.qiyi.android.video.ui.account.view.PTextView android:textSize="12.0dip" android:textColor="@color/psdk_text_hint_color" android:id="@id/tv_three" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/img_three" android:layout_centerHorizontal="true" />
+    </org.qiyi.android.video.ui.account.view.PRelativeLayout>
+    <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <org.qiyi.android.video.ui.account.view.PRelativeLayout android:id="@id/rl_four" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="36.0dip">
+        <ImageView android:id="@id/img_four" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="9.0dip" android:layout_centerHorizontal="true" />
+        <org.qiyi.android.video.ui.account.view.PTextView android:textSize="12.0dip" android:textColor="@color/psdk_text_hint_color" android:id="@id/tv_four" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/img_four" android:layout_centerHorizontal="true" />
+    </org.qiyi.android.video.ui.account.view.PRelativeLayout>
+</org.qiyi.android.video.ui.account.view.PLinearLayout>

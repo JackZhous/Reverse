@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/index_header_layout" android:clickable="true" android:longClickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.qiyi.video.cardview.customview.HorViewGroup android:id="@id/FocusGroup" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="15.0dip" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/FocusGroupTitle" android:background="@drawable/phone_index_focus_title_new_bg" android:paddingLeft="3.0dip" android:paddingRight="45.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignBottom="@id/FocusGroup" />
+    <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_FocusGroup_status" android:background="#00ffffff" android:padding="5.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:minEms="4" android:singleLine="true" android:layout_alignBottom="@id/FocusGroup" android:layout_alignParentRight="true" />
+    <com.qiyi.video.cardview.customview.CustomFocusStateBar android:id="@id/FocusGroupState" android:layout_width="fill_parent" android:layout_height="3.0dip" android:layout_below="@id/FocusGroup" />
+</RelativeLayout>

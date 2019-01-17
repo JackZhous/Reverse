@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecard.common.widget.MetaView android:id="@id/trail_item" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <org.qiyi.basecard.common.widget.MetaView android:id="@id/trail_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/trail_item" android:layout_alignLeft="@id/trail_item" />
+    <org.qiyi.basecard.common.widget.MetaView android:id="@id/trail_local" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/trail_date" android:layout_alignBottom="@id/trail_date" />
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/trail_line_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/trail_local" android:layout_alignLeft="@id/trail_local" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/trail_line_view_shu" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/trail_line_view_dot" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

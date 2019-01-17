@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/background" android:layout_width="fill_parent" android:layout_height="173.0dip" android:scaleType="centerCrop" fresco:placeholderImageScaleType="centerCrop" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_1" android:layout_width="0.0dip" android:layout_height="173.0dip" android:layout_weight="1.0">
+            <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/img1" android:layout_width="48.0dip" android:layout_height="44.0dip" android:scaleType="fitCenter" />
+            <TextView android:textSize="14.0dip" android:textColor="#ffffcfa1" android:id="@id/meta1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" />
+            <TextView android:textSize="22.0dip" android:textColor="#ffffffff" android:id="@id/meta2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_2" android:layout_width="0.0dip" android:layout_height="173.0dip" android:layout_weight="1.0">
+            <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/img2" android:layout_width="48.0dip" android:layout_height="44.0dip" android:scaleType="fitCenter" />
+            <TextView android:textSize="14.0dip" android:textColor="#ffffcfa1" android:id="@id/meta3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" />
+            <TextView android:textSize="22.0dip" android:textColor="#ffffffff" android:id="@id/meta4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_3" android:layout_width="0.0dip" android:layout_height="173.0dip" android:layout_weight="1.0">
+            <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/img3" android:layout_width="48.0dip" android:layout_height="44.0dip" android:scaleType="fitCenter" />
+            <TextView android:textSize="14.0dip" android:textColor="#ffffcfa1" android:id="@id/meta5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" />
+            <TextView android:textSize="22.0dip" android:textColor="#ffffffff" android:id="@id/meta6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

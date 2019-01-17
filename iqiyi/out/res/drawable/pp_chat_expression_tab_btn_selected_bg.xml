@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/qy_cmpt_emo_list_item_line_gray" />
+        </shape>
+    </item>
+    <item android:left="1.0px" android:right="1.0px">
+        <shape>
+            <solid android:color="@color/qy_cmpt_emo_chat_expression_bg" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ugc_other_basic_info_view" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_below="@id/phoneTitleLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/ugc_other_bg_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginBottom="15.0dip">
+            <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.qiyi.video.android.bitmapfun.ui.RoundImageView android:background="@drawable/face_icon_xlarge" android:layout_width="73.0dip" android:layout_height="73.0dip" />
+                <com.qiyi.video.android.bitmapfun.ui.RoundImageView android:layout_gravity="center" android:id="@id/ugc_other_basic_avatar" android:layout_width="70.0dip" android:layout_height="70.0dip" />
+            </FrameLayout>
+            <RelativeLayout android:id="@id/ugc_other_basic_name_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:minHeight="35.0dip">
+                <TextView android:textColor="#ffffffff" android:id="@id/ugc_other_basic_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="180.0dip" style="@style/ugc_other_basic_name" />
+                <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/ugc_other_basic_gender" android:layout_width="18.0dip" android:layout_height="22.0dip" android:layout_marginLeft="3.0dip" android:src="@drawable/gender_white_female" android:layout_toRightOf="@id/ugc_other_basic_name" />
+                <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/ugc_other_basic_star_icon" android:layout_width="wrap_content" android:layout_height="22.0dip" android:layout_marginLeft="3.0dip" android:src="@drawable/star_icon" android:layout_toRightOf="@id/ugc_other_basic_gender" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/attentionLayout" android:layout_below="@id/ugc_other_basic_name">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订阅:" style="@style/ugc_other_basic_intro" />
+                    <TextView android:id="@id/ugc_user_following_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="0" style="@style/ugc_other_basic_intro" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="粉丝:" style="@style/ugc_other_basic_intro" />
+                    <TextView android:id="@id/ugc_user_follower_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="0" style="@style/ugc_other_basic_intro" />
+                </LinearLayout>
+                <FrameLayout android:id="@id/attentionLayout" android:layout_width="80.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_below="@id/ugc_other_basic_name" android:layout_alignParentRight="true">
+                    <TextView android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:id="@id/attentionImage" android:focusable="true" android:layout_width="80.0dip" android:layout_height="wrap_content" android:text="订阅" android:singleLine="true" />
+                    <ProgressBar android:layout_gravity="center" android:id="@id/attentionProgressBar" android:paddingLeft="2.0dip" android:paddingRight="7.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" style="?android:attr/progressBarStyleSmall" />
+                </FrameLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ugc_user_verify_info" android:background="#55000000" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="20.0dip">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="认证信息:" style="@style/ugc_other_basic_intro" />
+            <TextView android:ellipsize="end" android:id="@id/ugc_user_verify_info_introduce" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" style="@style/ugc_other_basic_intro" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

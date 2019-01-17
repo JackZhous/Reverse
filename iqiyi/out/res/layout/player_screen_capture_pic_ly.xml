@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/capture_preview" android:background="#d7000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="14.0dip" android:textColor="#ffdcdcdc" android:gravity="center" android:id="@id/capture_cancel" android:padding="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:text="@string/player_landscape_screen_capture_cancel" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@id/pic_view" android:layout_width="300.0dip" android:layout_height="180.0dip" android:scaleType="centerCrop" android:layout_centerHorizontal="true" />
+            <TextView android:textColor="#ffffffff" android:id="@id/save_capture_tip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/player_landscape_screen_capture_save_ok_tip" android:drawableLeft="@drawable/player_screen_capture_save_ok_tip" android:drawablePadding="5.0dip" android:layout_below="@id/pic_view" android:layout_centerHorizontal="true" />
+            <android.support.v7.widget.RecyclerView android:id="@id/share_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/save_capture_tip" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/transition_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+</RelativeLayout>

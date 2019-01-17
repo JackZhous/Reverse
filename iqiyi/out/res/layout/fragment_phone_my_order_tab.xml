@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecore.widget.ptr.widget.PtrSimpleListView android:id="@id/my_order_tab_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/my_order_loading_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/lab_footer" />
+    <FrameLayout android:id="@id/my_order_empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="61.0dip">
+        <TextView android:textSize="13.0dip" android:textColor="#ff666666" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/phone_my_order_empty" android:drawableTop="@drawable/phone_my_order_empty" android:drawablePadding="25.0dip" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/my_order_error_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="61.0dip">
+        <TextView android:textSize="13.0dip" android:textColor="#ff666666" android:gravity="center_horizontal" android:id="@id/phoneEmptyText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/phone_loading_data_fail" android:drawableTop="@drawable/phone_empty_data_img" android:drawablePadding="25.0dip" android:layout_centerHorizontal="true" android:lineSpacingExtra="2.0dip" />
+    </RelativeLayout>
+</RelativeLayout>

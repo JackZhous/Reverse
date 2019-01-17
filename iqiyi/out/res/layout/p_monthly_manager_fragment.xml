@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/phone_pay_title" layout="@layout/pay_phone_title" />
+    <LinearLayout android:orientation="vertical" android:id="@id/content_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phone_pay_title">
+        <LinearLayout android:orientation="horizontal" android:id="@id/userinfoline" android:background="@color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <ImageView android:layout_gravity="center" android:id="@id/userIcon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/user_icon" android:scaleType="centerCrop" />
+            <TextView android:textSize="15.0dip" android:textColor="@color/p_color_333333" android:ellipsize="end" android:layout_gravity="center" android:id="@id/userName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxLines="1" android:maxEms="8" />
+            <ImageView android:layout_gravity="center" android:id="@id/userLevelIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/p_dimen_5" android:layout_marginRight="@dimen/p_dimen_5" />
+        </LinearLayout>
+        <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:orientation="horizontal" android:id="@id/line1" android:background="@color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <ImageView android:id="@id/monthly_status_icon" android:layout_width="18.0dip" android:layout_height="15.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/p_monthly_icon_1" android:layout_centerVertical="true" />
+                    <TextView android:textSize="15.0dip" android:textColor="@color/p_color_333333" android:ellipsize="end" android:id="@id/monthly_status1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/p_monthly_status" android:maxLines="1" android:maxEms="8" android:layout_toRightOf="@id/monthly_status_icon" android:layout_centerVertical="true" />
+                    <TextView android:textSize="15.0dip" android:textColor="@color/p_color_999999" android:ellipsize="end" android:id="@id/monthly_status2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="" android:maxLines="1" android:maxEms="8" android:layout_toRightOf="@id/monthly_status1" android:layout_centerVertical="true" />
+                    <TextView android:textSize="13.0dip" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/monthly_cancel_button" android:background="@drawable/corner_radius_15dp_dab176" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:text="" android:maxLines="1" android:maxEms="8" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View android:id="@id/div" android:background="@color/p_color_ebebeb" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/line1" />
+                <LinearLayout android:orientation="vertical" android:id="@id/line2" android:background="@color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/div">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+                        <ImageView android:id="@id/month_detail_icon_4" android:layout_width="19.0dip" android:layout_height="19.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/p_monthly_icon_9" android:layout_centerVertical="true" />
+                        <TextView android:textSize="14.0dip" android:textColor="@color/p_color_333333" android:id="@id/month_detail_title_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/p_monthly_pay_product" android:layout_toRightOf="@id/month_detail_icon_4" android:layout_centerVertical="true" />
+                        <TextView android:textSize="14.0dip" android:textColor="@color/p_color_666666" android:id="@id/month_detail_subtitle_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+                        <ImageView android:id="@id/month_detail_icon_1" android:layout_width="19.0dip" android:layout_height="19.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/p_monthly_icon_4" android:layout_centerVertical="true" />
+                        <TextView android:textSize="14.0dip" android:textColor="@color/p_color_333333" android:id="@id/month_detail_title_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/p_monthly_pay_money" android:layout_toRightOf="@id/month_detail_icon_1" android:layout_centerVertical="true" />
+                        <TextView android:textSize="14.0dip" android:textColor="@color/p_color_666666" android:id="@id/month_detail_subtitle_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                        <TextView android:textSize="14.0dip" android:textColor="@color/p_color_666666" android:id="@id/month_detail_subtitle_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/month_detail_subtitle_5" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+                        <ImageView android:id="@id/month_detail_icon_2" android:layout_width="19.0dip" android:layout_height="19.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/p_monthly_icon_5" android:layout_centerVertical="true" />
+                        <TextView android:textSize="14.0dip" android:textColor="@color/p_color_333333" android:id="@id/month_detail_title_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/p_monthly_pay_date" android:layout_toRightOf="@id/month_detail_icon_2" android:layout_centerVertical="true" />
+                        <TextView android:textSize="14.0dip" android:textColor="@color/p_color_666666" android:id="@id/month_detail_subtitle_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/month_pay_type_line" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                        <ImageView android:id="@id/month_detail_icon_3" android:layout_width="19.0dip" android:layout_height="19.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/p_monthly_icon_6" android:layout_centerVertical="true" />
+                        <TextView android:textSize="14.0dip" android:textColor="@color/p_color_333333" android:id="@id/month_detail_title_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/p_monthly_pay_type" android:layout_toRightOf="@id/month_detail_icon_3" android:layout_centerVertical="true" />
+                        <TextView android:textSize="14.0dip" android:textColor="@color/p_color_666666" android:id="@id/month_detail_subtitle_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <View android:id="@id/div4" android:background="@color/p_color_ebebeb" android:layout_width="fill_parent" android:layout_height="6.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/line3" android:background="@color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_below="@id/line2">
+                    <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/p_color_333333" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/p_monthly_privilege_title" android:maxLines="1" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/line4" android:background="@color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="25.0dip" android:layout_below="@id/line3">
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+                        <ImageView android:layout_gravity="center" android:id="@id/pri_icon_1" android:layout_width="60.0dip" android:layout_height="73.0dip" />
+                        <TextView android:textSize="15.0dip" android:textColor="@color/p_color_333333" android:ellipsize="end" android:layout_gravity="center" android:id="@id/pri_first_title_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5.0dip" android:text="" android:maxLines="1" />
+                        <TextView android:textSize="12.0dip" android:textColor="@color/p_color_999999" android:ellipsize="end" android:layout_gravity="center" android:id="@id/pri_second_title_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="" android:maxLines="1" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_weight="1.0">
+                        <ImageView android:layout_gravity="center" android:id="@id/pri_icon_2" android:layout_width="60.0dip" android:layout_height="73.0dip" />
+                        <TextView android:textSize="15.0dip" android:textColor="@color/p_color_333333" android:ellipsize="end" android:layout_gravity="center" android:id="@id/pri_first_title_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5.0dip" android:text="" android:maxLines="1" />
+                        <TextView android:textSize="12.0dip" android:textColor="@color/p_color_999999" android:ellipsize="end" android:layout_gravity="center" android:id="@id/pri_second_title_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="" android:maxLines="1" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+                        <ImageView android:layout_gravity="center" android:id="@id/pri_icon_3" android:layout_width="60.0dip" android:layout_height="73.0dip" />
+                        <TextView android:textSize="15.0dip" android:textColor="@color/p_color_333333" android:ellipsize="end" android:layout_gravity="center" android:id="@id/pri_first_title_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5.0dip" android:text="" android:maxLines="1" />
+                        <TextView android:textSize="12.0dip" android:textColor="@color/p_color_999999" android:ellipsize="end" android:layout_gravity="center" android:id="@id/pri_second_title_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="" android:maxLines="1" />
+                    </LinearLayout>
+                </LinearLayout>
+                <RelativeLayout android:id="@id/open_line" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="51.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/line4">
+                    <TextView android:textSize="15.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/monthly_open_button" android:background="@drawable/month_open_button_style" android:layout_width="fill_parent" android:layout_height="36.0dip" android:text="@string/p_monthly_goto_open" />
+                </RelativeLayout>
+                <View android:id="@id/div2" android:background="@color/p_color_ebebeb" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/open_line" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/line5" android:background="@color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_below="@id/div2">
+                    <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/p_color_333333" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/p_monthly_welfare_title" android:maxLines="1" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/line6" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/line5">
+                    <ImageView android:id="@id/welfare_icon" android:layout_width="fill_parent" android:layout_height="150.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:scaleType="fitXY" />
+                    <TextView android:textSize="13.0dip" android:textColor="@color/p_color_333333" android:ellipsize="end" android:id="@id/welfare_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="25.0dip" android:text="" android:maxLines="1" />
+                </LinearLayout>
+                <View android:id="@id/div3" android:background="@color/p_color_ebebeb" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/line6" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/line7" android:background="@color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_below="@id/div3">
+                    <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/p_color_333333" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/p_monthly_service_title" android:maxLines="1" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/line8" android:background="@color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="25.0dip" android:layout_below="@id/line7">
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+                        <ImageView android:layout_gravity="center" android:id="@id/service_icon_1" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+                        <TextView android:textSize="15.0dip" android:textColor="@color/p_color_333333" android:ellipsize="end" android:layout_gravity="center" android:id="@id/service_first_title_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="" android:maxLines="1" />
+                        <TextView android:textSize="12.0dip" android:textColor="@color/p_color_999999" android:ellipsize="end" android:layout_gravity="center" android:id="@id/service_second_title_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="" android:maxLines="1" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <ImageView android:layout_gravity="center" android:id="@id/service_icon_2" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+                        <TextView android:textSize="15.0dip" android:textColor="@color/p_color_333333" android:ellipsize="end" android:layout_gravity="center" android:id="@id/service_first_title_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="" android:maxLines="1" />
+                        <TextView android:textSize="12.0dip" android:textColor="@color/p_color_999999" android:ellipsize="end" android:layout_gravity="center" android:id="@id/service_second_title_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="" android:maxLines="1" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+                        <ImageView android:layout_gravity="center" android:id="@id/service_icon_3" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+                        <TextView android:textSize="15.0dip" android:textColor="@color/p_color_333333" android:ellipsize="end" android:layout_gravity="center" android:id="@id/service_first_title_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="" android:maxLines="1" />
+                        <TextView android:textSize="12.0dip" android:textColor="@color/p_color_999999" android:ellipsize="end" android:layout_gravity="center" android:id="@id/service_second_title_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="" android:maxLines="1" />
+                    </LinearLayout>
+                </LinearLayout>
+                <RelativeLayout android:id="@id/line9" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_below="@id/line8">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <TextView android:textSize="13.0dip" android:textColor="@color/p_color_666666" android:gravity="center" android:id="@id/auto_renew_plan" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/p_monthly_pay_provisions" android:layout_weight="1.0" />
+                        <TextView android:textSize="13.0dip" android:textColor="@color/p_color_666666" android:gravity="center" android:id="@id/help_plan" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/p_monthly_pay_help" android:layout_weight="1.0" />
+                    </LinearLayout>
+                    <View android:layout_gravity="center" android:background="@color/p_color_ebebeb" android:layout_width="1.0px" android:layout_height="15.0dip" android:layout_centerInParent="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+    <include android:id="@id/not_login_layout" android:visibility="gone" layout="@layout/qd_logout_view" />
+    <RelativeLayout android:id="@id/tk_empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phone_pay_title">
+        <include layout="@layout/p_load_data_exception" />
+    </RelativeLayout>
+</RelativeLayout>

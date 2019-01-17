@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" style="@style/CardModelBase"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/left_layout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.5">
+        <TextView android:textSize="12.0dip" android:textColor="@color/qiyi_btn_color" android:ellipsize="end" android:gravity="center" android:id="@id/left_btn" android:background="@drawable/phone_green_btn" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginTop="6.0dip" android:maxLines="1" android:layout_alignParentBottom="true" />
+        <RelativeLayout android:id="@id/top_info_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/left_btn">
+            <TextView android:id="@id/top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" style="@style/MetaTitle.TwoLines" />
+            <TextView android:textSize="@dimen/card_text_size_11dp" android:textColor="@color/color_meta_sub_title" android:ellipsize="end" android:id="@id/top_sub_meta" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:maxLines="1" android:layout_below="@id/top_title" />
+        </RelativeLayout>
+        <include android:id="@id/layout_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/top_info_layout" layout="@layout/unit_ver_box_office_with_button" />
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/top_icon" android:background="@drawable/top_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:layout_marginBottom="2.0dip" android:layout_alignBottom="@id/top_info_layout" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:layout_width="9.0dip" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <include android:id="@id/layout_2" layout="@layout/unit_ver_box_office_with_button" />
+        <include android:id="@id/layout_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" layout="@layout/unit_ver_box_office_with_button" />
+    </LinearLayout>
+</LinearLayout>

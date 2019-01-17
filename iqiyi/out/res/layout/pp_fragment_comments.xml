@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.iqiyi.paopao.middlecommon.ui.view.CommentAutoHeightLayout android:id="@id/activity_hot_comments" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/circle_feed_detail_btm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/pp_qiyi_comment_bar" />
+    <com.iqiyi.paopao.middlecommon.ui.view.ptr.CommonPtrRecyclerView android:id="@id/pp_detail_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="#00000000" android:divider="@null" android:layout_above="@id/circle_feed_detail_btm" />
+    <View android:background="@drawable/pp_home_tab_shadow" android:layout_width="fill_parent" android:layout_height="7.0dip" android:layout_above="@id/circle_feed_detail_btm" />
+    <include layout="@layout/pp_feed_back_to_replied_floor" />
+    <include android:id="@id/qz_already_delete_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/pp_comments_title_bar" layout="@layout/pp_layout_page_expired" />
+    <include android:id="@id/pp_layout_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/pp_comments_title_bar" layout="@layout/pp_circle_loading_layout" />
+    <include android:id="@id/pp_loading_error_page" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/pp_comments_title_bar" layout="@layout/pp_no_network_nocashe_warning_ll" />
+    <FrameLayout android:id="@id/pp_fragment_comments_half_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.iqiyi.paopao.middlecommon.ui.view.CommentAutoHeightLayout>

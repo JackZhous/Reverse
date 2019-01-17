@@ -1,0 +1,32 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: yuanbao.apk
+compressionType: false
+doNotCompress:
+- assets/qiyi.properties.bin
+- webp
+- gzip
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '14'
+  targetSdkVersion: '25'
+sharedLibrary: false
+unknownFiles:
+  publicsuffixes.gz: '0'
+  bin/AndroidManifest.xml: '8'
+  bin/jarlist.cache: '8'
+  org/apache/http/version.properties: '8'
+  org/apache/http/entity/mime/version.properties: '8'
+  org/qiyi/android/upload/video/service/IUploadService.aidl: '8'
+  org/qiyi/android/upload/video/service/IUploadServiceCallback.aidl: '8'
+  protobuf/ChatMessage.proto: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.3.0
+versionInfo:
+  versionCode: '80980'
+  versionName: 8.11.5

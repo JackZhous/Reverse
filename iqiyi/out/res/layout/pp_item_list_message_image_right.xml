@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingRight="@dimen/im_message_avatar_margin_right" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:Fresco="http://schemas.android.com/apk/res-auto">
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/tv_msg_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/im_message_timestamp_margin_top" style="@style/PPTextView.TimeStamp" />
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:paddingTop="@dimen/im_message_to_margin_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:layout_width="wrap_content" android:layout_height="fill_parent" layout="@layout/im_chat_message_send_status_layout" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/im_message_content_margin_top">
+            <ImageView android:id="@id/iv_right_background" android:background="@drawable/im_icon_message_background_white_to" android:visibility="visible" android:layout_width="140.0dip" android:layout_height="140.0dip" android:layout_marginTop="@dimen/im_message_content_margin_top" android:layout_centerInParent="true" />
+            <com.iqiyi.im.chat.view.message.ImageMessageView android:id="@id/iv_right_image" android:layout_width="140.0dip" android:layout_height="140.0dip" android:layout_marginTop="@dimen/im_message_content_margin_top" android:layout_centerInParent="true" android:contentDescription="@null" Fresco:placeholderImage="@drawable/im_icon_default_message_background_to" Fresco:placeholderImageScaleType="fitXY" Fresco:failureImage="@drawable/im_icon_default_message_background_to" Fresco:failureImageScaleType="fitXY" />
+            <ImageView android:id="@id/iv_right_stroke" android:background="@drawable/im_icon_message_stroke_to" android:visibility="visible" android:layout_width="140.0dip" android:layout_height="140.0dip" android:layout_marginTop="@dimen/im_message_content_margin_top" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/iv_black_layer" android:background="@drawable/im_icon_message_layer_to" android:visibility="gone" android:layout_width="140.0dip" android:layout_height="140.0dip" android:layout_marginTop="@dimen/im_message_content_margin_top" android:layout_centerInParent="true" android:alpha="0.5" />
+            <ImageView android:id="@id/iv_breathe_loading" android:background="@drawable/im_breathe_loading" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_centerInParent="true" />
+            <TextView android:textSize="11.0dip" android:textColor="@color/white" android:id="@id/tv_progress_right_sight" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="30%" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <com.iqiyi.im.chat.view.message.ChatAvatarImageView android:id="@id/iv_right_avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" Fresco:imageMode="right" />
+    </LinearLayout>
+</LinearLayout>

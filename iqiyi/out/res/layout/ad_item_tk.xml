@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clickable="true" android:longClickable="true" android:layout_width="fill_parent" android:layout_height="83.5dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip">
+        <LinearLayout android:gravity="center|right" android:orientation="vertical" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_centerVertical="true">
+            <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/phoneAdAvator" android:background="@drawable/phone_qy_ad_default" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" />
+            <TextView android:textSize="14.0sp" android:ellipsize="end" android:id="@id/phoneTitleMeta1" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+            <TextView android:textSize="18.0sp" android:ellipsize="end" android:id="@id/phoneTitleMeta2" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="" android:singleLine="true" />
+        </LinearLayout>
+        <View android:id="@id/deliver" android:background="#ffd5d5d5" android:layout_width="1.0px" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_toRightOf="@id/title" android:layout_alignTop="@id/body" android:layout_alignBottom="@id/body" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_toRightOf="@id/deliver">
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff464646" android:ellipsize="end" android:id="@id/phoneBodyMeta1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="" android:singleLine="true" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff949494" android:ellipsize="end" android:id="@id/phoneBodyMeta2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="" android:singleLine="true" android:maxLength="14" />
+            <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/phoneBodyMeta3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="#ffff823e" android:ellipsize="end" android:id="@id/phoneBodyMeta4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:layout_toRightOf="@id/phoneBodyMeta3" android:layout_alignBottom="@id/phoneBodyMeta3" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/phoneAdapterPayTicket" android:background="@drawable/tks_btn_orange_bg" android:layout_width="55.0dip" android:layout_height="25.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="39.0dip" android:layout_marginRight="5.0dip" android:text="选座购票" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

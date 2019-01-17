@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.iqiyi.paopao.middlecommon.ui.view.QYImageGridViewNew android:id="@id/gc_feed_image_res" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pp_feed_left_gap" android:layout_marginRight="@dimen/pp_feed_left_gap" android:scaleType="centerCrop" />
+    <ImageView android:id="@id/gc_feed_image_un_support_type" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/pp_need_update_icon" android:scaleType="centerCrop" android:layout_below="@id/gc_feed_image_res" />
+</merge>

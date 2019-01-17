@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/player_pp_shape_dialog_bg" android:layout_width="250.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dip" android:textColor="@color/player_pp_item_text_black" android:gravity="center|left" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="54.0dip" android:text="@string/player_feed_shutup" />
+    <View android:background="@color/player_pp_cell_separate_line_dark" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="18.0dip" android:textColor="@color/player_pp_common_green" android:gravity="center|left" android:id="@id/feed_more_day1" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="54.0dip" android:text="@string/player_feed_shutup_day1" />
+    <View android:id="@id/divider_feed_day1" android:background="@color/player_pp_cell_separate_line_dark" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="18.0dip" android:textColor="@color/player_pp_common_green" android:gravity="center|left" android:id="@id/feed_more_day3" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="54.0dip" android:text="@string/player_feed_shutup_day3" />
+    <View android:id="@id/divider_feed_day3" android:background="@color/player_pp_cell_separate_line_dark" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="18.0dip" android:textColor="@color/player_pp_common_green" android:gravity="center|left" android:id="@id/feed_more_day7" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="54.0dip" android:text="@string/player_feed_shutup_day7" />
+    <View android:id="@id/divider_feed_day7" android:background="@color/player_pp_cell_separate_line_dark" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="18.0dip" android:textColor="@color/player_pp_common_green" android:gravity="center|left" android:id="@id/feed_more_cancel" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="54.0dip" android:text="@string/player_pp_dialog_cancel_play" />
+</LinearLayout>

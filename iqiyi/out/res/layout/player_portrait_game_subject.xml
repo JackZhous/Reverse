@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/subject_layout" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/game_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/card_padding_horizontal" android:layout_centerVertical="true">
+        <org.iqiyi.video.image.PlayerDraweView android:id="@id/game_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:scaleType="fitXY" android:layout_centerVertical="true" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/game_icon" android:layout_centerVertical="true">
+            <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/game_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxEms="18" android:singleLine="true" />
+            <TextView android:textSize="11.0sp" android:textColor="#ff666666" android:id="@id/sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:singleLine="true" android:layout_below="@id/game_title" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <org.iqiyi.video.image.PlayerDraweView android:id="@id/enter_arrow" android:layout_width="20.0dip" android:layout_height="40.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/player_portrait_operation_arrow_nomal" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

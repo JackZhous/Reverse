@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.iqiyi.publisher.player.VideoPlayerLayout android:id="@id/v_player" android:layout_width="fill_parent" android:layout_height="270.0dip" android:layout_centerInParent="true" />
+    <TextView android:textSize="18.0dip" android:textColor="@color/color_23d42f" android:gravity="center" android:id="@id/start_making_btn" android:background="@drawable/pub_start_make_smv_btn_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="78.0dip" android:text="立即制作" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="18.0dip" android:textColor="@color/color_23d42f" android:gravity="center" android:id="@id/upload_photo_btn" android:background="@drawable/pub_start_make_smv_btn_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="78.0dip" android:text="上传照片" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/iv_cancel" android:background="@drawable/pub_back_button_with_shadow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+</RelativeLayout>

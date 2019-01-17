@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:background="@color/q_color_7f000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/corner_radius_10dp_white" android:layout_width="@dimen/p_dimen_270" android:layout_height="@dimen/p_dimen_200" android:layout_centerInParent="true">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/p_dimen_22" android:paddingRight="@dimen/p_dimen_22" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:id="@id/p_coupon_unlock_icon" android:layout_width="@dimen/p_dimen_48" android:layout_height="wrap_content" android:scaleType="centerInside" android:adjustViewBounds="true" />
+                <ProgressBar android:id="@id/p_coupon_unlock_progress_bar" android:layout_width="@dimen/p_dimen_48" android:layout_height="@dimen/p_dimen_48" style="@style/p_coupon_unlock_progress_bar" />
+                <TextView android:textSize="@dimen/p_dimen_15" android:textColor="@color/p_color_333333" android:ellipsize="end" android:gravity="center|top" android:id="@id/p_coupon_unlock_prompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p_dimen_18" android:maxHeight="@dimen/p_dimen_63" android:lineSpacingExtra="5.0dip" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="center|right|top" android:id="@id/p_coupon_unlock_close" android:layout_width="34.0dip" android:layout_height="34.0dip" android:src="@drawable/p_coupon_unlock_close_popup" />
+        </FrameLayout>
+        <View android:id="@id/p_coupon_unlock_separator" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_1" />
+        <TextView android:textSize="@dimen/p_dimen_18" android:textColor="@color/white" android:gravity="center" android:id="@id/p_coupon_unlock_button" android:background="@drawable/corner_radius_10dp_ff7e00_3" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_45" android:text="@string/p_coupon_unlock_button" />
+    </LinearLayout>
+</RelativeLayout>

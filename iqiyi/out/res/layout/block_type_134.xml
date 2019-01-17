@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/block_134_head_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/block_134_meta_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/block_134_button_right" android:layout_toRightOf="@id/block_134_head_img">
+        <org.qiyi.basecard.common.widget.MetaView android:id="@id/block_134_meta1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <org.qiyi.basecard.common.widget.MetaView android:id="@id/block_134_meta3" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <org.qiyi.basecard.common.widget.MetaView android:id="@id/block_134_meta2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <org.qiyi.basecard.common.widget.ButtonView android:id="@id/block_134_button_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="9.0dip" android:textColor="@android:color/white" android:gravity="center" android:id="@id/block_134_bubble_text" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="35.0dip" android:includeFontPadding="false" android:layout_toLeftOf="@id/block_134_button_right" android:layout_centerInParent="true" android:translationX="36.0dip" android:translationY="-17.0dip" />
+</RelativeLayout>

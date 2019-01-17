@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecore.widget.ptr.widget.PtrSimpleListView android:id="@id/calendar_tab_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/calendar_loading_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/lab_footer" />
+    <FrameLayout android:id="@id/calendar_empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="13.0sp" android:textColor="#ff666666" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/olympic_calendar_empty_tips" android:drawableTop="@drawable/phone_category_exception_tip" android:drawablePadding="10.0dip" />
+    </FrameLayout>
+    <include android:id="@id/calendar_error_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/phone_load_data_exception" />
+</RelativeLayout>

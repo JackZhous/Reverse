@@ -1,0 +1,53 @@
+.class Lorg/qiyi/android/corejar/pingback/com8;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lorg/qiyi/android/corejar/b/com4;
+
+
+# instance fields
+.field final synthetic gJp:Lorg/qiyi/android/corejar/pingback/Pingback;
+
+.field final synthetic gJr:Lorg/qiyi/android/corejar/pingback/PingbackManager;
+
+
+# direct methods
+.method constructor <init>(Lorg/qiyi/android/corejar/pingback/PingbackManager;Lorg/qiyi/android/corejar/pingback/Pingback;)V
+    .locals 0
+
+    iput-object p1, p0, Lorg/qiyi/android/corejar/pingback/com8;->gJr:Lorg/qiyi/android/corejar/pingback/PingbackManager;
+
+    iput-object p2, p0, Lorg/qiyi/android/corejar/pingback/com8;->gJp:Lorg/qiyi/android/corejar/pingback/Pingback;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getLog()Ljava/lang/String;
+    .locals 2
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v1, "handlePingback: no default url: "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lorg/qiyi/android/corejar/pingback/com8;->gJp:Lorg/qiyi/android/corejar/pingback/Pingback;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method

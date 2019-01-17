@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/tv_msg_time" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/im_message_timestamp_margin_top" android:layout_centerHorizontal="true" style="@style/PPTextView.TimeStamp" />
+    <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/im_message_to_margin_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/tv_msg_time">
+        <com.iqiyi.im.chat.view.message.ChatAvatarImageView android:id="@id/circle_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <RelativeLayout android:id="@id/tv_msg_layout" android:background="@drawable/im_circle_text_content" android:paddingTop="@dimen/im_message_content_margin_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/im_message_content_margin_left" android:layout_marginTop="@dimen/im_message_user_text_margin_top" android:layout_marginRight="@dimen/im_message_to_margin_right">
+            <TextView android:textSize="15.0dip" android:id="@id/circle_item_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/im_message_content_circle_padding_left" android:layout_marginRight="12.0dip" android:text="圈主大人，您已经连续7天未进入您管理的圈子“我的男神女神”，圈主身份已被回收T_T 等待抢回身份吧！" />
+            <RelativeLayout android:id="@id/circle_click_enter_qz" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_below="@id/circle_item_msg">
+                <ImageView android:id="@id/circle_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:src="@drawable/pp_circle_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="12.0dip" android:textColor="#ff0bbe06" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="点击进入" android:layout_toLeftOf="@id/circle_arrow_right" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

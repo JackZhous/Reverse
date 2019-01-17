@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/line" android:background="@drawable/send_comment_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:background="@color/white" android:paddingLeft="12.0dip" android:paddingTop="8.0dip" android:paddingRight="12.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.iqiyi.qyplayercardview.view.PortraitCommentEditText android:textSize="14.0sp" android:textColor="@color/player_text_color_333333" android:textColorHint="@color/player_common_text_color_999999" android:gravity="center_vertical" android:id="@id/et_comment" android:background="@drawable/player_pp_textview_bar" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:focusableInTouchMode="false" android:layout_width="0.0dip" android:layout_height="33.0dip" android:hint="@string/input_hint_text" android:layout_weight="1.0" />
+            <ImageView android:id="@id/iv_total_comments" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/player_feed_comments" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/player_pp_sw_feed_textcolor" android:gravity="center" android:id="@id/tv_total_comments" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/player_pp_show_comment" />
+            <ImageView android:id="@id/iv_total_agree" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/player_feed_like" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/player_pp_sw_feed_textcolor" android:gravity="center" android:id="@id/tv_total_agree" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/player_pp_show_agree" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/related_layout" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/star_tabs" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+            <com.qiyi.video.cardview.view.HorizontalListView android:gravity="center" android:layout_gravity="center" android:id="@id/tabsListView" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="wrap_content" android:layout_height="45.0dip" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/vertical_images" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_below="@id/star_tabs">
+            <include android:id="@id/vimage1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/phone_inc_category_detail_rec_film_template_single_new_item" />
+            <include android:id="@id/vimage2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/phone_inc_category_detail_rec_film_template_single_new_item" />
+            <include android:id="@id/vimage3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/phone_inc_category_detail_rec_film_template_single_new_item" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/hasmore_layout" android:background="#ffffffff" android:clickable="true" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_below="@id/related_layout">
+        <TextView android:textSize="13.0dip" android:textColor="#ff85c210" android:gravity="center" android:id="@id/hasmore_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="查看更多" />
+    </LinearLayout>
+</RelativeLayout>

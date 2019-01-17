@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/upload_item_backgroud" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:Fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_cloud_upload_close" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/iv_cloud_upload_close" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/pp_upload_close" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_cloud_upload_body" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_toLeftOf="@id/rl_cloud_upload_close">
+        <RelativeLayout android:id="@id/rl_cloud_upload_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_cloud_upload_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" Fresco:placeholderImage="@drawable/pp_icon_avatar_default" Fresco:placeholderImageScaleType="centerCrop" Fresco:failureImage="@drawable/pp_icon_avatar_default" Fresco:failureImageScaleType="centerCrop" />
+            <ImageView android:id="@id/iv_cloud_upload_dark_layer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@color/upload_item_dark_layer" />
+            <ImageView android:id="@id/iv_cloud_upload_status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout android:paddingLeft="10.0dip" android:paddingTop="7.0dip" android:paddingBottom="11.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/rl_cloud_upload_icon">
+            <TextView android:textSize="12.0dip" android:textColor="@color/user_info_text_gray" android:id="@id/tv_cloud_upload_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pp_status_upload_wait" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/user_info_text_gray" android:id="@id/tv_cloud_upload_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0M/0M" android:layout_alignParentRight="true" />
+            <ProgressBar android:id="@id/pb_cloud_upload_progress" android:layout_width="fill_parent" android:layout_height="4.0dip" android:max="100" android:progress="0" android:progressDrawable="@drawable/pp_upload_progress_bar" android:layout_alignParentBottom="true" style="?android:attr/progressBarStyleHorizontal" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:id="@id/v_cloud_upload_separate" android:background="@color/user_info_separate_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignBottom="@id/rl_cloud_upload_body" />
+    <View android:id="@id/v_cloud_upload_bottom_separate" android:background="@color/user_info_separate_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_below="@id/rl_cloud_upload_body" />
+</RelativeLayout>

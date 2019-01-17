@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingLeft="11.0dip" android:paddingTop="11.0dip" android:paddingRight="6.0dip" android:paddingBottom="12.0dip" style="@style/CardModelBase"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/user_portrait" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="9.0dip" android:src="@drawable/bg_run_man_pk_portrait_default" fresco:roundAsCircle="true" fresco:roundingBorderWidth="1.0px" fresco:roundingBorderColor="#fff1f1f1" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:id="@id/comment_favor_btn" android:background="@drawable/comment_favour_btn_selector" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/card_text_size_14dp" android:textColor="#ff818181" android:id="@id/comment_favor_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_toLeftOf="@id/comment_favor_btn" android:layout_centerVertical="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="26.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/comment_favor_count" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/card_text_size_14dp" android:textColor="#ff333333" android:ellipsize="end" android:id="@id/comment_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+                <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/comment_user_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:scaleType="fitXY" />
+                <TextView android:textSize="@dimen/card_text_size_13dp" android:textColor="@color/text_hint_color" android:gravity="center" android:id="@id/comment_reply" android:layout_width="35.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/comment_reply" />
+                <TextView android:textSize="@dimen/card_text_size_13dp" android:textColor="@color/qiyi_text_color2" android:ellipsize="end" android:id="@id/comment_reply_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:lines="1" />
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/card_text_size_10dp" android:textColor="#ff999999" android:id="@id/comment_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+        <TextView android:textSize="@dimen/card_text_size_13dp" android:textColor="@color/color_meta_sub_title" android:id="@id/comment_conent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+    </LinearLayout>
+</LinearLayout>

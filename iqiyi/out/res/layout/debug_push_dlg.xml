@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="300.0dip" android:layout_height="600.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <org.qiyi.basecore.widget.IconViewClose android:layout_gravity="right" android:id="@id/debug_push_dlg_close" android:layout_width="50.0dip" android:layout_height="50.0dip" app:iconStrokeWidth="3.0dip" app:iconPadding="11.0dip" app:lineColor="#cc8e8c8c" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/debug_push_dlg_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="3.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

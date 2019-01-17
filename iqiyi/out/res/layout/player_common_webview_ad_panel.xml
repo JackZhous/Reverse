@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/common_webview_panel_rl" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/left_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true">
+            <ImageView android:id="@id/left_back_img" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/webview_phone_back_bg" />
+        </RelativeLayout>
+        <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/player_panel_title" android:visibility="visible" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:maxEms="16" android:singleLine="true" android:layout_centerHorizontal="true" style="@style/cardtitle" />
+        <ImageView android:id="@id/player_panel_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:src="@drawable/player_common_close" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/common_webview_panel_rl">
+        <RelativeLayout android:id="@id/play_common_ad_webview" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:id="@id/circle_loading_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <org.qiyi.basecore.widget.CircleLoadingView android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_centerHorizontal="true" app:auto_animation="true" app:static_play="true" />
+            <TextView android:textSize="13.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="加载中..." android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <TextView android:textSize="13.0dip" android:textColor="#ff666666" android:gravity="center" android:id="@id/empty_page_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/phone_loading_data_fail" android:drawableTop="@drawable/phone_empty_data_img" android:drawablePadding="10.0dip" android:layout_centerInParent="true" android:lineSpacingExtra="2.0dip" />
+    </RelativeLayout>
+</RelativeLayout>

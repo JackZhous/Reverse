@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/devide_line" android:background="@color/player_portrait_episode_devider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <FrameLayout android:id="@id/indicator_cnt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/devide_line">
+        <com.iqiyi.qyplayercardview.view.EpisodeTabNewIndicator android:id="@id/episode_indicator" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginRight="12.0dip" />
+    </FrameLayout>
+    <com.iqiyi.qyplayercardview.view.EpisodeViewPager android:layout_gravity="center" android:id="@id/episode_viewpager" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/indicator_cnt" />
+    <include android:id="@id/loading_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" layout="@layout/player_common_loadingview" />
+</RelativeLayout>

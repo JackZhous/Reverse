@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/image1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:id="@id/header_layout" android:background="@drawable/card_video_top_mask" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <org.qiyi.basecard.common.widget.ButtonView android:id="@id/button1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <LinearLayout android:gravity="bottom" android:id="@id/footer_layout" android:background="@drawable/card_video_bottom_mask" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+        <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

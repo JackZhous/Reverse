@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/corner_radius_6dp_white" android:layout_width="300.0dip" android:layout_height="377.0dip">
+        <TextView android:textSize="18.0dip" android:textColor="@color/p_color_cba06a" android:gravity="center" android:id="@id/title_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23.0dip" android:text="@string/cancel_month_title_two" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="13.0dip" android:textColor="@color/p_color_333333" android:id="@id/title_two" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="26.0dip" android:layout_marginRight="20.0dip" android:text="@string/cancel_month_title_three" android:layout_below="@id/title_one" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/p_color_666666" android:id="@id/title_three" android:layout_width="145.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="87.0dip" android:layout_marginRight="2.0dip" android:text="@string/cancel_month_title_one" android:layout_below="@id/title_two" />
+        <ImageView android:id="@id/img" android:layout_width="113.0dip" android:layout_height="133.0dip" android:layout_marginTop="34.0dip" android:src="@drawable/cancel_monthly_cartoon_icon" android:layout_toRightOf="@id/title_three" android:layout_below="@id/title_two" />
+        <TextView android:textSize="13.0dip" android:textColor="@color/p_color_d4b27e" android:id="@id/contact_us" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="@string/cancel_month_connect_us" android:layout_below="@id/img" android:layout_centerHorizontal="true" />
+        <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/p_monthly_cancel_buttons" />
+    </RelativeLayout>
+</RelativeLayout>

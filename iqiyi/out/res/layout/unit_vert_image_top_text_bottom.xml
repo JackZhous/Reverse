@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.KeepRatioImageView android:id="@id/poster" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" fresco:viewAspectRatio="1.35" fresco:placeholderImage="@drawable/phone_category_detail_rec_vertical_pic_default" fresco:placeholderImageScaleType="centerCrop" fresco:pressedStateOverlayImage="@color/card_poster_mask_black_alpha_40" />
+    <TextView android:textSize="@dimen/card_text_size_13dp" android:textColor="@color/color_meta_title" android:gravity="center_vertical" android:id="@id/meta_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:maxLines="2" android:layout_below="@id/poster" />
+</RelativeLayout>

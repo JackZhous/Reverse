@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ugc_tip_layout" android:background="#66000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/close_ugc_tip" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="7.0dip" android:src="@drawable/player_ugc_live_subscribe_close_bg" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <org.iqiyi.video.image.PlayerDraweView android:id="@id/head_img" android:background="@drawable/player_video_ugc_anchor_head" android:layout_width="65.0dip" android:layout_height="65.0dip" android:src="@drawable/player_ugc_live_face_icon" />
+        <TextView android:textSize="15.0dip" android:textColor="#ffffffff" android:id="@id/ugc_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+        <org.qiyi.basecore.widget.SubscribeButton android:layout_gravity="center" android:id="@id/subscribe_ugc" android:layout_width="85.0dip" android:layout_height="30.0dip" />
+    </LinearLayout>
+</RelativeLayout>

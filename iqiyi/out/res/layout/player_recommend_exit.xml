@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff191919" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/topbar" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_centerVertical="true">
+        <ImageView android:id="@id/btn_back" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="3.0dip" android:src="@drawable/title_bar_back_new" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0dip" android:textColor="@color/color_to_Downloadlist" android:id="@id/title_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/phone_guess_yourfavor" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/listLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" layout="@layout/main_play_err_tip" />
+        <org.iqiyi.video.cardview.customview.BottomListView android:id="@id/listView" android:visibility="gone" android:animationCache="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollingCache="false" android:cacheColorHint="@color/transparent" android:divider="@null" android:dividerHeight="0.0dip" />
+    </RelativeLayout>
+</LinearLayout>

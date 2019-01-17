@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/CardModelBase"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/live_poster" android:background="@drawable/phone_category_detail_rec_header_poster" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" fresco:viewAspectRatio="1.78" />
+    <ImageView android:id="@id/image_layer" android:background="@drawable/hot_live_poster_bottom_layer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignBottom="@id/live_poster" />
+    <TextView android:textSize="@dimen/card_text_size_13dp" android:textColor="@color/color_white" android:ellipsize="end" android:id="@id/live_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginBottom="8.0dip" android:singleLine="true" android:layout_alignBottom="@id/live_poster" />
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingBottom="12.0dip" style="@style/CardModelBase"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/card_poster" android:layout_width="270.0dip" android:layout_height="240.0dip" android:layout_marginBottom="12.0dip" android:scaleType="fitXY" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" fresco:placeholderImage="@drawable/card_popup_poster_default" fresco:placeholderImageScaleType="fitCenter" fresco:pressedStateOverlayImage="@color/card_poster_mask_black_alpha_40" />
+    <TextView android:textSize="@dimen/card_text_size_14dp" android:textColor="#ff666666" android:gravity="center" android:id="@id/card_meta_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/card_poster" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/card_text_size_14dp" android:textColor="#ff666666" android:gravity="center" android:id="@id/card_meta_sub_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:singleLine="true" android:layout_below="@id/card_meta_title" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/button_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/card_meta_sub_title">
+        <FrameLayout android:visibility="visible" android:layout_width="0.0dip" android:layout_height="35.0dip" android:layout_weight="1.0">
+            <org.qiyi.basecore.widget.RoundRecFrameLayout android:layout_gravity="center" android:id="@id/button1" android:layout_width="105.0dip" android:layout_height="35.0dip" fresco:radius="1000.0dip">
+                <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/button1_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+                <TextView android:textSize="@dimen/card_text_size_14dp" android:textColor="@color/green_normal" android:ellipsize="end" android:gravity="center" android:id="@id/button1_text" android:background="@drawable/rect_white_stroke_green" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Button1" android:singleLine="true" />
+            </org.qiyi.basecore.widget.RoundRecFrameLayout>
+        </FrameLayout>
+        <FrameLayout android:visibility="gone" android:layout_width="0.0dip" android:layout_height="35.0dip" android:layout_weight="1.0">
+            <org.qiyi.basecore.widget.RoundRecFrameLayout android:layout_gravity="center" android:id="@id/button2" android:layout_width="105.0dip" android:layout_height="35.0dip" fresco:radius="1000.0dip">
+                <org.qiyi.basecore.widget.QiyiDraweeView android:layout_gravity="center" android:id="@id/button2_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+                <TextView android:textSize="@dimen/card_text_size_14dp" android:textColor="@color/green_mormal" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/button2_text" android:background="@drawable/rect_white_stroke_green" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Button2" android:singleLine="true" />
+            </org.qiyi.basecore.widget.RoundRecFrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

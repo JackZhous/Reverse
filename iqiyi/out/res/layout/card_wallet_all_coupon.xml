@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="83.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/layout1" android:layout_width="0.0dip" android:layout_height="83.0dip" android:layout_weight="1.0" layout="@layout/card_wallet_coupon" />
+    <View android:background="#fff0f0f0" android:layout_width="1.0px" android:layout_height="83.0dip" />
+    <include android:id="@id/layout2" android:layout_width="0.0dip" android:layout_height="83.0dip" android:layout_weight="1.0" layout="@layout/card_wallet_coupon" />
+    <View android:background="#fff0f0f0" android:layout_width="1.0px" android:layout_height="83.0dip" />
+    <include android:id="@id/layout3" android:layout_width="0.0dip" android:layout_height="83.0dip" android:layout_weight="1.0" layout="@layout/card_wallet_coupon" />
+</LinearLayout>

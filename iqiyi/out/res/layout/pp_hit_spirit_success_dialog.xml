@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/pp_color_ffffff" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_spirit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/pp_double_spirit_keeper" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/pp_color_ff7e00" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:layout_marginBottom="30.0dip" android:text="@string/pp_hit_rank_dialog_desc" android:layout_alignParentTop="true" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:visibility="gone" layout="@layout/player_vote_notice_layout" />
+    <include android:visibility="gone" layout="@layout/player_vote_voteresultview_layout" />
+    <include android:visibility="gone" layout="@layout/player_vote_votingview_layout" />
+    <include layout="@layout/player_vote_clickview_layout" />
+</FrameLayout>

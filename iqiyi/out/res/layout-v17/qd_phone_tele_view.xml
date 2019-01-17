@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/p_dimen_35" android:layout_marginTop="@dimen/p_dimen_40" android:layout_marginRight="@dimen/p_dimen_35">
+        <EditText android:textSize="15.0dip" android:textColor="@color/p_color_333333" android:textColorHint="@color/p_color_999999" android:gravity="center|left" android:layout_gravity="center" android:id="@id/qd_phone_pay_tel_et" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/p_pay_sms_phonenumber_hint" android:digits="\ 1234567890" android:inputType="number" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/qd_phone_pay_tel_X" android:background="@drawable/icon_clear_edit" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <ImageView android:background="@color/p_color_EDEDED" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/p_dimen_35" android:layout_marginTop="@dimen/p_dimen_17" android:layout_marginRight="@dimen/p_dimen_35" />
+    <RelativeLayout android:orientation="horizontal" android:paddingLeft="@dimen/p_dimen_35" android:paddingRight="@dimen/p_dimen_35" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p_dimen_27">
+        <EditText android:textSize="15.0dip" android:textColor="@color/p_color_333333" android:textColorHint="@color/p_color_999999" android:id="@id/qd_phone_pay_code_et" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/p_pay_sms_code_hint" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:inputType="number" android:layout_alignParentStart="true" />
+        <ImageView android:id="@id/qy_phone_icon" android:layout_width="@dimen/p_dimen_10" android:layout_height="@dimen/p_dimen_13" android:layout_marginRight="@dimen/p_dimen_5" android:src="@drawable/qy_phone_icon" android:layout_toLeftOf="@id/qd_phone_pay_code_sub" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/p_dimen_14" android:textColor="@color/p_color_FF7E00" android:layout_gravity="center_vertical" android:id="@id/qd_phone_pay_code_sub" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p_pay_sms_getcode" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <ImageView android:background="@color/p_color_EDEDED" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/p_dimen_35" android:layout_marginTop="@dimen/p_dimen_17" android:layout_marginRight="@dimen/p_dimen_35" />
+</LinearLayout>

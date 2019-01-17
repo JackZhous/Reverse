@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/phone_download_title_bar" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="44.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/phone_download_back" android:background="@drawable/phone_download_back_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="18.0dip" android:textColor="@color/phone_download_color_black" android:ellipsize="end" android:gravity="center" android:id="@id/phone_download_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="250.0dip" android:text="@string/offline_center" android:maxLines="1" android:layout_centerInParent="true" />
+    <TextView android:textSize="15.0dip" android:textColor="@color/phone_download_color_black" android:id="@id/phone_download_edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="@string/phone_download_common_edit" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:background="@color/phone_download_color_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

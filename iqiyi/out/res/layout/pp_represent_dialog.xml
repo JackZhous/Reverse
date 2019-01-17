@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:layout_gravity="center" android:background="@drawable/pp_represent_rectangle_halfcircle" android:layout_width="290.0dip" android:layout_height="230.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textSize="16.0dip" android:textColorHint="@color/color_999999" android:gravity="center|left|top" android:id="@id/pp_represent_content" android:background="@null" android:layout_width="fill_parent" android:layout_height="186.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="13.0dip" android:layout_marginRight="15.0dip" android:hint=" 请输入申述理由" android:maxLength="1000" android:textCursorDrawable="@drawable/pp_edit_cursor_color" />
+    <View android:id="@id/pp_transparent_layer" android:background="@drawable/im_represent_transparent_layer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="20.0dip" />
+    <View android:id="@id/pp_represent_line" android:background="@color/color_e7e7e7" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/pp_represent_content" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="44.0dip" android:weightSum="2.0" android:layout_below="@id/pp_represent_line">
+        <TextView android:textSize="18.0dip" android:textColor="@color/color_333333" android:gravity="center" android:id="@id/pp_represent_cancel" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="取消" android:layout_weight="1.0" />
+        <TextView android:textSize="18.0dip" android:textColor="@color/color_999999" android:gravity="center" android:id="@id/pp_represent_commit" android:background="@drawable/pp_represent_no_commit" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="提交" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

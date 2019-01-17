@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/pp_publish_recommend_title" android:layout="@layout/pub_select_video_recommend_viewstub" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="7.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="7.0dip" />
+    <include android:id="@id/pub_video_entrance" layout="@layout/pub_select_video_entrance_header" />
+    <include android:id="@id/pub_brand_region" layout="@layout/pub_select_video_brand_region_header" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/pub_top_rank_video_head" android:background="#fff6f6f6" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="49.0dip">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:background="#fff6f6f6" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:layout_gravity="center" android:background="#66999999" android:layout_width="14.0dip" android:layout_height="2.0px" android:layout_marginRight="5.0dip" />
+            <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="#ff666666" android:layout_gravity="center" android:id="@id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="人气素材推荐" />
+            <View android:layout_gravity="center" android:background="#66999999" android:layout_width="14.0dip" android:layout_height="2.0px" android:layout_marginLeft="5.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

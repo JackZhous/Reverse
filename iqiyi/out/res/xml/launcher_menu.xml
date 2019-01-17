@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launcher_menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <menu android:title="@string/play_record" data="flyme_3dtouch://com.qiyi.video/play_record" icon="" />
+    <menu android:title="@string/download_videos" data="flyme_3dtouch://com.qiyi.video/download_videos" icon="" />
+    <menu android:title="@string/global_search" data="flyme_3dtouch://com.qiyi.video/global_search" icon="" />
+</launcher_menu>

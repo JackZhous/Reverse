@@ -1,0 +1,161 @@
+.class public Lorg/qiyi/android/card/d/a/lpt9;
+.super Lorg/qiyi/android/card/d/a/aux;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lorg/qiyi/android/card/d/a/aux",
+        "<",
+        "Lorg/qiyi/basecard/v3/action/IActionContext;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lorg/qiyi/a/a/a/aux;
+    cLy = .enum Lorg/qiyi/a/a/a/con;->AFTERACTION:Lorg/qiyi/a/a/a/con;
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Lorg/qiyi/android/card/d/a/aux;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public doAction(Landroid/view/View;Lorg/qiyi/basecard/v3/viewholder/AbsViewHolder;Lorg/qiyi/basecard/v3/adapter/ICardAdapter;Ljava/lang/String;Lorg/qiyi/basecard/v3/event/EventData;ILorg/qiyi/basecard/v3/action/IActionContext;)Z
+    .locals 8
+
+    const/4 v6, 0x1
+
+    const/4 v1, 0x0
+
+    invoke-interface {p7}, Lorg/qiyi/basecard/v3/action/IActionContext;->getContext()Landroid/content/Context;
+
+    move-result-object v7
+
+    if-nez p5, :cond_0
+
+    move v0, v1
+
+    :goto_0
+    return v0
+
+    :cond_0
+    const/4 v2, 0x0
+
+    invoke-virtual {p5}, Lorg/qiyi/basecard/v3/event/EventData;->getData()Ljava/lang/Object;
+
+    move-result-object v0
+
+    instance-of v3, v0, Lorg/qiyi/basecard/v3/data/element/Element;
+
+    if-eqz v3, :cond_5
+
+    check-cast v0, Lorg/qiyi/basecard/v3/data/element/Element;
+
+    iget-object v0, v0, Lorg/qiyi/basecard/v3/data/element/Element;->item:Lorg/qiyi/basecard/v3/data/component/ITEM;
+
+    :goto_1
+    if-nez v0, :cond_1
+
+    move v0, v1
+
+    goto :goto_0
+
+    :cond_1
+    iget-object v0, v0, Lorg/qiyi/basecard/v3/data/component/ITEM;->card:Lorg/qiyi/basecard/v3/data/Card;
+
+    if-eqz v0, :cond_4
+
+    if-eqz p3, :cond_4
+
+    invoke-interface {p3, v0}, Lorg/qiyi/basecard/v3/adapter/ICardAdapter;->removeCard(Lorg/qiyi/basecard/v3/data/ICard;)Z
+
+    move-result v0
+
+    invoke-static {p5}, Lorg/qiyi/basecard/v3/utils/CardDataUtils;->getCardModelHolder(Lorg/qiyi/basecard/v3/event/EventData;)Lorg/qiyi/basecard/v3/viewmodelholder/CardModelHolder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lorg/qiyi/basecard/v3/viewmodelholder/CardModelHolder;->getModelSize()I
+
+    move-result v1
+
+    if-ne v1, v6, :cond_2
+
+    :cond_2
+    invoke-static {p2}, Lorg/qiyi/basecard/v3/utils/CardDataUtils;->getRowViewHolder(Lorg/qiyi/basecard/v3/viewholder/AbsViewHolder;)Lorg/qiyi/basecard/v3/viewholder/RowViewHolder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lorg/qiyi/basecard/v3/viewholder/RowViewHolder;->getListPosition()I
+
+    if-eqz v0, :cond_4
+
+    invoke-interface {p3}, Lorg/qiyi/basecard/v3/adapter/ICardAdapter;->notifyDataChanged()V
+
+    invoke-interface {p3}, Lorg/qiyi/basecard/v3/adapter/ICardAdapter;->getOutEventListener()Lorg/qiyi/basecard/v3/event/IEventListener;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_3
+
+    invoke-virtual {p5}, Lorg/qiyi/basecard/v3/event/EventData;->getEvent()Lorg/qiyi/basecard/v3/data/event/Event;
+
+    move-result-object v1
+
+    iget v5, v1, Lorg/qiyi/basecard/v3/data/event/Event;->action_type:I
+
+    move-object v1, p1
+
+    move-object v2, p2
+
+    move-object v3, p4
+
+    move-object v4, p5
+
+    invoke-interface/range {v0 .. v5}, Lorg/qiyi/basecard/v3/event/IEventListener;->onEvent(Landroid/view/View;Lorg/qiyi/basecard/v3/viewholder/AbsViewHolder;Ljava/lang/String;Lorg/qiyi/basecard/v3/event/EventData;I)Z
+
+    :cond_3
+    invoke-virtual {p5}, Lorg/qiyi/basecard/v3/event/EventData;->getEvent()Lorg/qiyi/basecard/v3/data/event/Event;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_4
+
+    iget-object v1, v0, Lorg/qiyi/basecard/v3/data/event/Event;->data:Lorg/qiyi/basecard/v3/data/event/Event$Data;
+
+    if-eqz v1, :cond_4
+
+    iget-object v1, v0, Lorg/qiyi/basecard/v3/data/event/Event;->data:Lorg/qiyi/basecard/v3/data/event/Event$Data;
+
+    iget-object v1, v1, Lorg/qiyi/basecard/v3/data/event/Event$Data;->msg:Ljava/lang/String;
+
+    invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_4
+
+    iget-object v0, v0, Lorg/qiyi/basecard/v3/data/event/Event;->data:Lorg/qiyi/basecard/v3/data/event/Event$Data;
+
+    iget-object v0, v0, Lorg/qiyi/basecard/v3/data/event/Event$Data;->msg:Ljava/lang/String;
+
+    invoke-static {v7, v0}, Lorg/qiyi/basecore/widget/ac;->dS(Landroid/content/Context;Ljava/lang/String;)V
+
+    :cond_4
+    move v0, v6
+
+    goto :goto_0
+
+    :cond_5
+    move-object v0, v2
+
+    goto :goto_1
+.end method

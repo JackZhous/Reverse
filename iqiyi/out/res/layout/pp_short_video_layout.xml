@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/pp_online_data_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/cover_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="190.0dip" android:layout_toRightOf="@id/play_icon" android:layout_alignParentBottom="true">
+                <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/video_cover_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" app:placeholderImage="@drawable/pp_general_default_bg" app:placeholderImageScaleType="fitXY" app:actualImageScaleType="centerCrop" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/rl_bottom_bar" android:background="@drawable/pp_video_c_header_meta_bg" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_alignParentBottom="true">
+                    <org.qiyi.basecore.widget.QiyiDraweeView android:layout_gravity="center_vertical" android:id="@id/feed_author_icon" android:visibility="visible" android:layout_width="20.0dip" android:layout_height="20.0dip" app:placeholderImage="@drawable/pp_icon_avatar_default" app:placeholderImageScaleType="centerCrop" app:actualImageScaleType="centerCrop" app:roundedCornerRadius="10.0dip" />
+                    <TextView android:textSize="12.0dip" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/video_des" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:maxLines="1" android:layout_weight="1.0" />
+                    <LinearLayout android:layout_gravity="center_vertical" android:id="@id/ll_agree" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/iv_agree" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/pp_qz_feed_unlike" />
+                        <TextView android:textSize="12.0dip" android:textColor="#ffffffff" android:gravity="center|left" android:id="@id/tv_agree" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:text="1.2万" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <ImageView android:id="@id/iv_hot" android:layout_width="35.0dip" android:layout_height="16.0dip" android:layout_marginTop="1.0dip" android:layout_marginRight="1.0dip" android:src="@drawable/pp_short_video_hot_rank1" android:layout_alignParentRight="true" />
+            <ImageView android:id="@id/video_flag" android:layout_width="50.0dip" android:layout_height="20.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            <ImageView android:id="@id/play_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pp_short_video_player_icon" android:layout_centerInParent="true" />
+            <include android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/pp_video_player_paused_traffic" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/pp_offline_data_layout" android:background="#99000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/pp_short_video_upload_state_fail_icon" android:visibility="gone" android:layout_width="35.0dip" android:layout_height="35.0dip" app:placeholderImage="@drawable/pub_short_video_upload_fail" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/pp_short_video_upload_loading" android:layout_width="35.0dip" android:layout_height="35.0dip" android:indeterminateDrawable="@drawable/pp_qz_feeds_play_loading_anmi" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/white" android:id="@id/pp_short_video_upload_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:layout_marginBottom="18.0dip" android:text="上传失败,点击重试" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/pp_short_video_operation_left" android:background="@drawable/pp_short_video_operation_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="左边文字" />
+                <TextView android:textSize="12.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/pp_short_video_operation_right" android:background="@drawable/pp_short_video_operation_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="右边文字" />
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/pp_smv_draft_cover_layout" />
+    </FrameLayout>
+</merge>

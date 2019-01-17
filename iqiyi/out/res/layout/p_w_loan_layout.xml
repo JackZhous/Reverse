@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/p_w_borrow_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/p_w_title_layout" layout="@layout/pay_phone_title" />
+    <ImageView android:id="@id/p_w_loan_title_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/p_dimen_29" android:scaleType="center" android:layout_above="@id/p_w_loan_tv" android:layout_below="@id/p_w_title_layout" />
+    <TextView android:textSize="@dimen/p_dimen_18" android:textColor="@android:color/white" android:gravity="center" android:id="@id/p_w_loan_tv" android:background="@drawable/corner_radius_45dp_ff7b3c_to_f98d58" android:layout_width="@dimen/p_dimen_305" android:layout_height="@dimen/p_dimen_45" android:layout_marginBottom="@dimen/p_dimen_17" android:text="@string/p_w_loan" android:layout_above="@id/p_w_loan_protocol_rel" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/p_w_loan_protocol_rel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/p_dimen_50" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <CheckBox android:textSize="@dimen/p_dimen_15" android:textColor="@color/p_color_666666" android:id="@id/p_w_loan_protocol_cb" android:paddingLeft="@dimen/p_dimen_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@drawable/p_w_protocol_check_bg" android:text="@string/p_w_i_agree" />
+        <TextView android:textSize="@dimen/p_dimen_15" android:textColor="@color/p_color_f86414" android:id="@id/p_w_loan_protocol_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/p_w_loan_protocol_cb" />
+    </RelativeLayout>
+</RelativeLayout>

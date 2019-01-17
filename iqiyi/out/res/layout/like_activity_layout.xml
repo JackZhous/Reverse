@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/view_root_container" android:background="#ffe7e7e7" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/phoneTitleLayout" style="@style/top_base_item">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/phoneGuessBack" android:background="@drawable/phone_account_back_small_bg" style="@style/top_title_item" />
+        <TextView android:textSize="18.0dip" android:id="@id/phoneTitle" android:text="@string/title_guess_like" style="@style/top_title" />
+    </RelativeLayout>
+    <org.qiyi.basecore.widget.ptr.widget.PtrSimpleListView android:id="@id/mainlist" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phoneTitleLayout" />
+    <RelativeLayout android:id="@id/guss_emptyLayout" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/phoneTitleLayout" android:layout_centerInParent="true">
+        <include layout="@layout/phone_load_data_exception" />
+    </RelativeLayout>
+</RelativeLayout>

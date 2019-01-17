@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecore.widget.OuterFrameTextView android:textColor="@color/qixiu_bg_meta" android:id="@id/sub_title1" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginRight="3.0dip" android:layout_weight="1.0" android:layout_below="@id/meta" style="@style/MetaSubTitle" />
+    <org.qiyi.basecore.widget.OuterFrameTextView android:textColor="@color/qixiu_bg_meta" android:id="@id/sub_title2" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="3.0dip" android:layout_weight="1.0" android:layout_below="@id/meta" style="@style/MetaSubTitle" />
+    <org.qiyi.basecore.widget.OuterFrameTextView android:textColor="@color/qixiu_bg_meta" android:id="@id/sub_title3" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginTop="6.0dip" android:layout_weight="1.0" android:layout_below="@id/meta" style="@style/MetaSubTitle" />
+</LinearLayout>

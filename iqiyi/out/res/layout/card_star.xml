@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/faceimage" android:background="@drawable/face_icon_xlarge" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="17.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="17.0dip" android:scaleType="centerCrop" android:layout_centerVertical="true" fresco:roundAsCircle="true" />
+    <TextView android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/faceimage" android:layout_centerVertical="true" style="@style/Name" />
+    <TextView android:textSize="10.0sp" android:textColor="#ff949494" android:id="@id/times" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/heartimg" android:layout_centerVertical="true" />
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/heartimg" android:background="@drawable/star_heart_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toLeftOf="@id/arrow" android:layout_centerVertical="true" />
+    <TextView android:id="@id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:drawableRight="@drawable/card_operation_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

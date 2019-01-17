@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/color_white" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:layout_gravity="center_horizontal" android:id="@id/vip_level_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" />
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/vip_levevel_lock" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vip_level_lock" android:scaleType="centerInside" android:layout_alignRight="@id/vip_level_icon" android:layout_alignBottom="@id/vip_level_icon" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0dip" android:textColor="@color/text_hint_color" android:layout_gravity="center_horizontal" android:id="@id/level_title" android:paddingTop="8.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的特权" />
+</LinearLayout>

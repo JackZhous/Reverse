@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/p_top_transparent_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="11.0" />
+    <LinearLayout android:orientation="vertical" android:background="@color/p_color_f0f0f0" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="19.0">
+        <RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/phoneTopBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/p_dimen_7" android:src="@drawable/p_title_bar_arrow_black" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/p_dimen_18" android:textStyle="bold" android:textColor="@color/p_color_333333" android:id="@id/phoneTitle" android:paddingTop="@dimen/p_dimen_15" android:paddingBottom="@dimen/p_dimen_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p_w_add_bank_card" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <View android:background="@color/p_color_f2f2f2" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_0.5" />
+        <RelativeLayout android:id="@id/sview" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.v7.widget.RecyclerView android:id="@id/p_w_card_list_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/p_dimen_10" />
+            <RelativeLayout android:id="@id/tk_empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <include layout="@layout/p_load_data_exception_float" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

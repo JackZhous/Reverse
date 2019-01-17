@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/card_text_size_15dp" android:gravity="center_horizontal" android:id="@id/box_office_meta0" android:layout_width="0.0dip" android:layout_height="wrap_content" android:bufferType="spannable" android:includeFontPadding="false" android:layout_weight="1.0" android:lineSpacingExtra="5.0dip" />
+    <TextView android:textSize="@dimen/card_text_size_15dp" android:gravity="center_horizontal" android:id="@id/box_office_meta1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:bufferType="spannable" android:includeFontPadding="false" android:layout_weight="1.0" android:lineSpacingExtra="5.0dip" />
+    <TextView android:textSize="@dimen/card_text_size_15dp" android:gravity="center_horizontal" android:id="@id/box_office_meta2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:bufferType="spannable" android:includeFontPadding="false" android:layout_weight="1.0" android:lineSpacingExtra="5.0dip" />
+</LinearLayout>

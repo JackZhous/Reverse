@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/player_danmaku_filter_keywords_refresh_background" android:paddingLeft="10.0dip" android:paddingRight="8.0dip" android:layout_width="130.0dip" android:layout_height="20.0dip" android:layout_marginBottom="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:enabled="true" android:textSize="13.0sp" android:textColor="@drawable/player_danmaku_setting_text_color" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/keyword_item" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <ImageView android:id="@id/keyword_delete" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/player_land_danmaku_keyword_delete" android:scaleType="center" />
+</LinearLayout>

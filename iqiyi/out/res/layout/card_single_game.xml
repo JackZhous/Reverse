@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/CardModelBase"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/imageview" android:layout_width="70.0dip" android:layout_height="70.0dip" android:scaleType="centerCrop" fresco:placeholderImage="@drawable/phone_qy_ad_default" fresco:placeholderImageScaleType="centerCrop" />
+    <TextView android:ellipsize="end" android:gravity="center|left|top" android:id="@id/title1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="75.0dip" android:layout_toRightOf="@id/imageview" style="@style/MetaTitle" />
+    <TextView android:ellipsize="end" android:gravity="center|left|top" android:id="@id/title2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="75.0dip" android:maxLines="2" android:singleLine="false" android:layout_toRightOf="@id/imageview" android:layout_below="@id/title1" style="@style/MetaSubTitle" />
+    <TextView android:textSize="12.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/downloadText" android:background="@drawable/phone_green_btn" android:layout_width="65.0dip" android:layout_height="30.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="0.0dip" android:text="@string/card_download" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/phoneTitleLayout" style="@style/top_base_item">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/title_back" android:background="@drawable/phone_account_back_small_bg" style="@style/top_title_item" />
+        <TextView android:ellipsize="end" android:id="@id/phoneUgcTitle" android:layout_marginLeft="90.0dip" android:layout_marginRight="90.0dip" android:text="@string/music_top_history" android:lines="1" style="@style/top_title" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phoneTitleLayout">
+        <org.qiyi.basecore.widget.PagerSlidingTabStrip android:id="@id/indicator" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+        <org.iqiyi.video.view.DetailsViewPager android:id="@id/viewpager" android:background="@color/color_white" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phoneTitleLayout">
+        <include android:id="@id/networkErrorView" layout="@layout/phone_load_data_exception" />
+    </RelativeLayout>
+</RelativeLayout>

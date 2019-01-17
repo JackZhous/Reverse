@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/pp_activity_paopao_insearch_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/action_header" android:background="@color/pp_action_bar_bg" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <ImageView android:id="@id/back_press" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/pp_selector_titlebar_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0dip" android:textColor="@color/default_text_color" android:id="@id/head_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pp_circle_list_hot" android:layout_centerInParent="true" />
+        <View android:id="@id/group_bottom_devider" android:background="@color/user_info_separate_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/search_main_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

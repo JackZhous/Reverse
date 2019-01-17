@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/tv_msg_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/im_message_timestamp_margin_top" style="@style/PPTextView.TimeStamp" />
+    <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/im_message_to_margin_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.iqiyi.im.chat.view.message.ChatAvatarImageView android:id="@id/iv_left_avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:id="@id/ll_msg_textpic_layout" android:background="@drawable/im_icon_mp_message_background_from" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/im_message_content_margin_left" android:layout_marginTop="@dimen/im_message_content_margin_top" android:layout_marginRight="@dimen/im_message_to_margin_right">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+                <TextView android:textSize="16.0dip" android:id="@id/tv_msg_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="由于最近比较沉默，你从最爱爱怕说泡泡中调出来，再次加入" android:includeFontPadding="false" android:maxLength="60" />
+                <com.iqiyi.im.chat.view.message.ImageMessageView android:id="@id/iv_left_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="15.0dip" android:src="@drawable/pp_general_default_bg" android:contentDescription="@null" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

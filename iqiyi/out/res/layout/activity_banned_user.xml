@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/activity_banned_user" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/phoneTitleLayout" style="@style/top_base_item">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/title_back_layout" android:background="@drawable/phone_account_back_bg" style="@style/top_title_item" />
+        <TextView android:id="@id/phoneTitle" android:text="@string/title_banned_user" style="@style/top_title" />
+    </RelativeLayout>
+    <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" android:text="@string/banned_user_logo_text" android:drawableTop="@drawable/p_banned_user_logo" android:layout_below="@id/phoneTitleLayout" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:gravity="left" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="30.0dip" android:text="@string/banned_user_tips_content_tmp" android:layout_below="@id/logo" android:layout_centerHorizontal="true" android:lineSpacingExtra="2.0dip" />
+    <TextView android:textSize="17.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/button" android:background="@drawable/activity_banned_user_button_bg" android:layout_width="125.0dip" android:layout_height="33.0dip" android:layout_marginTop="40.0dip" android:text="@string/banned_user_button_text_tmp" android:layout_below="@id/content" android:layout_centerHorizontal="true" />
+</RelativeLayout>

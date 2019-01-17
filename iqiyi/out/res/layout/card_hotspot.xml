@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/posterholder" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/video_player" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/card_padding_horizontal" android:layout_marginRight="@dimen/card_padding_horizontal" layout="@layout/unit_video_player" />
+        <TextView android:layout_gravity="left" android:id="@id/meta_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/card_padding_horizontal" android:layout_marginTop="10.0dip" android:layout_marginRight="@dimen/card_padding_horizontal" android:layout_below="@id/video_player" style="@style/MetaTitle" />
+        <TextView android:layout_gravity="left" android:id="@id/meta_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/card_padding_horizontal" android:layout_marginTop="10.0dip" android:layout_marginRight="@dimen/card_padding_horizontal" android:layout_below="@id/meta_title" style="@style/MetaSubTitle" />
+    </LinearLayout>
+    <View android:id="@id/single_line" android:background="@color/divide_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/card_padding_horizontal" android:layout_marginTop="10.0dip" android:layout_marginRight="@dimen/card_padding_horizontal" android:layout_below="@id/posterholder" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/card_padding_horizontal" android:layout_marginTop="6.0dip" android:layout_marginRight="@dimen/card_padding_horizontal" android:layout_marginBottom="6.0dip" android:weightSum="4.0" android:layout_below="@id/single_line">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/hot_btn_up" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <org.qiyi.basecore.widget.QiyiDraweeView android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/btn_up_selector" />
+            <TextView android:id="@id/hot_up_count" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MetaSubTitle" />
+        </LinearLayout>
+        <org.qiyi.basecore.widget.QiyiDraweeView android:background="@color/divide_line_color" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_alignParentLeft="true" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/hot_btn_down" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <org.qiyi.basecore.widget.QiyiDraweeView android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/btn_down_selector" />
+            <TextView android:id="@id/hot_down_count" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MetaSubTitle" />
+        </LinearLayout>
+        <org.qiyi.basecore.widget.QiyiDraweeView android:background="@color/divide_line_color" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/comment_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/hot_btn_comment" android:visibility="invisible" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/btn_comment_selector" />
+        </LinearLayout>
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/right_divider_line" android:background="@color/divide_line_color" android:visibility="invisible" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/share_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/hot_btn_share" android:visibility="invisible" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/btn_share_selector" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/gift_flow_challenge_center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="@drawable/gift_flow_challenge_b" android:layout_centerInParent="true" />
+    <org.iqiyi.video.image.PlayerDraweView android:id="@id/gift_flow_challenge_tool" android:layout_width="80.0dip" android:layout_height="40.0dip" android:scaleType="fitCenter" android:layout_toLeftOf="@id/gift_flow_challenge_center" android:layout_centerInParent="true" />
+    <TextView android:textColor="@drawable/sele_gift_flow_amount_text" android:gravity="center" android:id="@id/gift_flow_prop_total_amount_challenge" android:background="@drawable/sele_gift_flow_amout_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:height="32.0dip" android:width="60.0dip" android:layout_toRightOf="@id/gift_flow_challenge_center" android:layout_centerVertical="true" />
+    <TextView android:textSize="12.0dip" android:textColor="#ff999999" android:gravity="center_horizontal" android:id="@id/gift_flow_chll_prop_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_below="@id/gift_flow_challenge_tool" android:layout_alignLeft="@id/gift_flow_challenge_tool" android:layout_alignRight="@id/gift_flow_challenge_tool" />
+</RelativeLayout>

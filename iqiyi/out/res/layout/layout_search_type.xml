@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/search_by_image_bg" android:layout_width="100.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/txt_normal" android:layout_width="100.0dip" android:layout_height="38.0dip" android:layout_marginTop="12.0dip" android:text="@string/search_by_normal" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/txt_imagesearch" android:layout_width="100.0dip" android:layout_height="38.0dip" android:text="@string/search_by_image" android:layout_below="@id/txt_normal" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/txt_linessearch" android:layout_width="100.0dip" android:layout_height="38.0dip" android:layout_marginBottom="4.0dip" android:text="@string/search_by_lines" android:layout_below="@id/txt_imagesearch" />
+</RelativeLayout>

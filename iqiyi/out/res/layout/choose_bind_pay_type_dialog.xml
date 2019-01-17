@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@drawable/choose_bind_pay_type_dialog_bg" android:layout_width="260.0dip" android:layout_height="190.0dip">
+        <org.qiyi.basecore.widget.IconViewClose android:id="@id/dialog_close" android:layout_width="26.0dip" android:layout_height="26.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="7.0dip" android:layout_alignParentRight="true" app:iconStrokeWidth="1.5dip" app:iconPadding="5.0dip" app:lineColor="#ff666666" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/dialog_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="@string/choose_bind_pay_type_title" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/pay_type_zhifubao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="55.0dip" android:layout_marginTop="25.0dip" android:text="@string/choose_bind_pay_type_zhifubao" android:drawableTop="@drawable/choose_bind_pay_type_zfb" android:drawablePadding="10.0dip" android:layout_below="@id/dialog_title" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/pay_type_weixin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_marginRight="55.0dip" android:text="@string/choose_bind_pay_type_weixin" android:drawableTop="@drawable/choose_bind_pay_type_weixin" android:drawablePadding="10.0dip" android:layout_below="@id/dialog_title" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

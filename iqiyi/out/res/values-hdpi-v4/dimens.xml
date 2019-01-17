@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="player_cast_portrait_device_name_margin_right">0.0dip</dimen>
+    <dimen name="player_cast_portrait_device_name_max_width">65.0dip</dimen>
+    <dimen name="player_cast_portrait_exit_btn_margin_top">92.0dip</dimen>
+    <dimen name="player_cast_portrait_network_bad_tips_margin_top">1.5dip</dimen>
+    <dimen name="player_cast_portrait_panel_height_tools">240.0px</dimen>
+    <dimen name="player_cast_portrait_state_tips_margin_top">1.5dip</dimen>
+    <dimen name="welcome_ads_banner_height">90.0dip</dimen>
+</resources>

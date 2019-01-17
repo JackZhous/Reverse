@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.qiyi.android.video.ui.account.view.PRelativeLayout android:background="@color/psdk_color_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.android.video.ui.account.view.PFrameLayout android:id="@id/mainContainer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v7.widget.RecyclerView android:id="@id/rv" android:background="@android:color/white" android:paddingTop="41.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="16.0dip" />
+        <org.qiyi.android.video.ui.account.view.PRelativeLayout android:id="@id/phoneTitleLayout" android:background="#f2191919" style="@style/psdk_passport_top_bar">
+            <ImageView android:id="@id/title_back_layout" style="@style/psdk_passport_top_bar_back" />
+            <org.qiyi.android.video.ui.account.view.PTextView android:id="@id/phoneTitle" android:text="@string/psdk_phone_register_region" style="@style/psdk_passport_top_title" />
+        </org.qiyi.android.video.ui.account.view.PRelativeLayout>
+        <org.qiyi.android.video.ui.account.view.PRelativeLayout android:id="@id/phone_overseas_register_error_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+            <include layout="@layout/psdk_load_data_exception" />
+        </org.qiyi.android.video.ui.account.view.PRelativeLayout>
+        <org.qiyi.android.video.ui.account.view.PRelativeLayout android:id="@id/phone_overseas_register_not_network_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+            <include layout="@layout/psdk_load_data_exception_hint" />
+        </org.qiyi.android.video.ui.account.view.PRelativeLayout>
+    </org.qiyi.android.video.ui.account.view.PFrameLayout>
+    <org.qiyi.android.video.ui.account.areacode.IndexBar android:id="@id/indexBar" android:layout_width="16.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+    <org.qiyi.android.video.ui.account.view.PTextView android:textSize="40.0dip" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tvSideBarHint" android:background="@drawable/psdk_shape_side_bar_bg" android:visibility="gone" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_centerInParent="true" />
+</org.qiyi.android.video.ui.account.view.PRelativeLayout>

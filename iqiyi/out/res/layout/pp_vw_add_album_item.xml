@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.iqiyi.share.sdk.videoedit.view.EditSquareLayout android:gravity="center" android:orientation="vertical" android:background="#ff22232d" android:layout_width="fill_parent" android:layout_height="108.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/vw_add_album_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pp_add_album" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/vw_add_album_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="capture" android:layout_below="@id/vw_add_album_image" android:layout_alignLeft="@id/vw_add_album_image" android:layout_alignRight="@id/vw_add_album_image" />
+    </RelativeLayout>
+</com.iqiyi.share.sdk.videoedit.view.EditSquareLayout>

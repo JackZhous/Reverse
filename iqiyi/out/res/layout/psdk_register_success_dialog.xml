@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.qiyi.android.video.ui.account.view.PLinearLayout android:orientation="vertical" android:layout_width="270.0dip" android:layout_height="241.5dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.android.video.ui.account.view.PFrameLayout android:layout_width="270.0dip" android:layout_height="88.0dip">
+        <org.qiyi.android.video.ui.account.view.PView android:id="@id/ll_content" android:background="@drawable/psdk_shape_register_success_dialog_top" android:layout_width="fill_parent" android:layout_height="33.0dip" android:layout_marginTop="55.0dip" />
+        <ImageView android:id="@id/dialog_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/psdk_phone_register_success_dialog_icon" android:scaleType="fitCenter" />
+    </org.qiyi.android.video.ui.account.view.PFrameLayout>
+    <org.qiyi.android.video.ui.account.view.PRelativeLayout android:background="@color/psdk_color_e8ffe6" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <org.qiyi.android.video.ui.account.view.PTextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/psdk_text_color" android:gravity="center" android:id="@id/tv_congratulation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="@string/psdk_phone_register_success_msg1" />
+        <org.qiyi.android.video.ui.account.view.PTextView android:textSize="14.0dip" android:textColor="@color/psdk_phone_my_setting_text_color_title" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginBottom="25.0dip" android:text="@string/psdk_phone_register_success_msg2" android:layout_below="@id/tv_congratulation" />
+    </org.qiyi.android.video.ui.account.view.PRelativeLayout>
+    <org.qiyi.android.video.ui.account.view.PView android:background="@color/psdk_divide_line_color" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <org.qiyi.android.video.ui.account.view.PTextView android:textSize="18.0dip" android:textColor="@color/psdk_phone_my_account_q_register" android:gravity="center" android:id="@id/tv_confirm" android:background="@drawable/psdk_shape_dialog_bottom" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/psdk_phone_register_success_btn" />
+</org.qiyi.android.video.ui.account.view.PLinearLayout>

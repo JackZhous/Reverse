@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/p_color_191919" android:layout_width="fill_parent" android:layout_height="44.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/phoneTopBack" android:background="@drawable/p_title_bar_arrow_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_centerVertical="true" />
+    <TextView android:textSize="18.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/phoneTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p_pay_title" android:maxLines="1" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="15.0dip" android:textColor="@drawable/p_b0b0b0_9e9e9e_selector" android:id="@id/phoneRightTxt" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

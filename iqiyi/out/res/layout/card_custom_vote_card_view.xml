@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/card_view_vote_title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="13.0dip">
+        <org.qiyi.basecard.v3.style.text.SpanClickableTextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/card_view_vote_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:lineSpacingExtra="7.0dip" />
+        <TextView android:textSize="12.0dip" android:textColor="#ff999999" android:id="@id/card_view_vote_participant_count_timeline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/card_view_vote_title" />
+        <TextView android:textSize="12.0dip" android:textColor="#ff999999" android:id="@id/card_view_vote_check_type" android:background="@drawable/card_vote_card_view_bg_grey" android:paddingLeft="7.0dip" android:paddingRight="7.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/card_view_vote_title" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/card_view_vote_list_view" android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <LinearLayout android:id="@id/card_view_vote_action_layout" android:paddingTop="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0dip" android:textColor="#ff999999" android:gravity="center" android:id="@id/card_view_vote_action_view" android:background="@drawable/card_vote_card_view_bg_grey" android:layout_width="fill_parent" android:layout_height="45.0dip" />
+    </LinearLayout>
+    <View android:id="@id/card_view_vote_margin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="22.0dip" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/card_view_expand_layout" android:paddingTop="20.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="#ff0bbe06" android:gravity="center_horizontal" android:id="@id/card_view_expand_layout_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/card_view_expand_layout_icon" android:background="@drawable/card_vote_expand_icon" android:layout_width="30.0dip" android:layout_height="20.0dip" android:layout_marginTop="-1.5dip" />
+    </LinearLayout>
+</LinearLayout>

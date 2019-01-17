@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/pp_feed_long_pic_loading_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/pp_circle_loading_layout" />
+    <include android:id="@id/qz_feed_long_pic_txt_detail_load_failed_lo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/pp_layout_fetch_data_fail" />
+    <RelativeLayout android:id="@id/pp_webView_nonVideoLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.iqiyi.feed.widget.VideoEnabledWebView android:id="@id/pp_webView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/pp_webView_videoLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

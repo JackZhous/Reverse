@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/tv_title" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="47.5dip" />
+        <View android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    </LinearLayout>
+    <TextView android:textSize="16.0sp" android:textColor="#ff09be05" android:gravity="center" android:id="@id/tv_positive" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="47.5dip" />
+    <View android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/tv_negative" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="47.5dip" />
+</LinearLayout>

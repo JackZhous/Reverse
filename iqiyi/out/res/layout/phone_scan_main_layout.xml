@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <SurfaceView android:layout_gravity="center" android:id="@id/preview_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <org.qiyi.android.scan.ViewfinderView android:id="@id/viewfinder_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <org.qiyi.android.scan.ScanLineView android:layout_gravity="center_horizontal" android:id="@id/scan_line" android:layout_width="260.0dip" android:layout_height="2.0dip" android:layout_marginTop="135.0dip" />
+    <org.qiyi.video.qyskin.view.SkinTitleBar android:id="@id/phoneTitleLayout" android:background="@color/top_bar_bg_transparent" app:tb_title="@string/scanner_title" app:tb_menu="@menu/title_bar_scan_activity_menu" style="@style/title_bar_base" />
+    <TextView android:textSize="12.0dip" android:textColor="#fffd2500" android:gravity="center" android:id="@id/login_fail" android:paddingTop="65.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/scan_fail_text" />
+    <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="440.0dip">
+        <ImageView android:id="@id/icon" android:background="@drawable/scan_icon" android:layout_width="43.0dip" android:layout_height="43.0dip" android:layout_marginRight="17.0dip" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/scan_tips_watch_video" android:layout_toRightOf="@id/icon" android:layout_alignTop="@id/icon" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:id="@id/tv_download_app" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="@string/scan_tips_download_app" android:layout_toRightOf="@id/icon" android:layout_alignBottom="@id/icon" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/scan_tips_auth_com_pad_login" android:layout_below="@id/tv_download_app" android:layout_alignLeft="@id/tv_download_app" />
+    </RelativeLayout>
+</FrameLayout>

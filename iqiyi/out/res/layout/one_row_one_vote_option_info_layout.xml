@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/FocusNewsAlbumLayoutItem" android:paddingBottom="13.0dip" android:clickable="true" android:longClickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/line" android:background="@drawable/card_model_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+    <RelativeLayout android:id="@id/option1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="19.0dip" android:layout_marginTop="13.0dip">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/point1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vote_point" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0dip" android:textColor="#ff464646" android:ellipsize="end" android:id="@id/title1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="19.0dip" android:text="大波屌丝女" android:layout_toRightOf="@id/point1" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/option2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="19.0dip" android:layout_marginTop="13.0dip" android:layout_below="@id/option1">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/point2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vote_point" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0dip" android:textColor="#ff464646" android:ellipsize="end" android:id="@id/title2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="19.0dip" android:text="金色波兰妞" android:layout_toRightOf="@id/point2" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_auto_install_done">Done</string>
+    <string name="app_auto_install_install">Install</string>
+    <string name="app_auto_install_next">Next</string>
+    <string name="app_auto_install_replace">Replace</string>
+    <string name="app_name">iQIYI</string>
+    <string name="iqiyi_app_name">iQIYI</string>
+    <string name="pull_to_refresh_pull_label">Pull to refresh...</string>
+    <string name="pull_to_refresh_refreshing_label">Loading...</string>
+    <string name="pull_to_refresh_release_label">Release to refresh...</string>
+</resources>

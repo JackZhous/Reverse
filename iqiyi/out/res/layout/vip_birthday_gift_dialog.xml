@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/top_title_layout" android:layout_width="342.0dip" android:layout_height="171.0dip" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/top_title_img" android:layout_width="342.0dip" android:layout_height="171.0dip" android:src="@drawable/vip_birthday_gift_dialog_top_img_done" android:scaleType="center" />
+        <org.qiyi.basecore.widget.IconViewClose android:id="@id/close_button" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="50.0dip" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" app:iconStrokeWidth="2.0dip" app:iconPadding="8.5dip" app:lineColor="#fff7f7f7" app:circleBg="true" app:circleColor="#99434343" app:circlePadding="0.0dip" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/vip_birthday_gift_dialog_bg" android:layout_width="288.0dip" android:layout_height="200.0dip" android:layout_below="@id/top_title_layout" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vip_birthday_gift_dialog_logo" />
+        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:id="@id/content_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:text="" android:maxLines="1" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffdea3ff" android:layout_gravity="center_horizontal" android:id="@id/content_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:text="" android:maxLines="1" />
+        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/button" android:background="@drawable/vip_birthday_gift_dialog_button_bg" android:layout_width="150.0dip" android:layout_height="40.0dip" android:layout_marginTop="17.0dip" android:text="" />
+    </LinearLayout>
+</RelativeLayout>

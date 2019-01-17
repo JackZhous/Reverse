@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/img1" android:layout_width="wrap_content" android:layout_height="wrap_content" fresco:pressedStateOverlayImage="@color/card_poster_mask_black_alpha_40" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignLeft="@id/img1" android:layout_alignRight="@id/img1">
+        <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta3" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta4" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta5" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta6" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

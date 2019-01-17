@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.qiyi.android.video.ui.account.view.AccountResizeLayout android:background="@color/psdk_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.android.video.ui.account.view.PDraweeView android:id="@id/phone_avatar_icon" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginTop="20.0dip" android:src="@drawable/psdk_my_main_login_img" android:scaleType="fitCenter" android:layout_centerHorizontal="true" app:fadeDuration="0" app:roundAsCircle="true" />
+    <org.qiyi.android.video.ui.account.view.PTextView android:textSize="15.0dip" android:textColor="#ff333333" android:id="@id/tv_relogin_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/phone_avatar_icon" android:layout_centerHorizontal="true" />
+    <org.qiyi.android.video.ui.account.view.PTextView android:id="@id/tv_submit" android:layout_marginTop="30.0dip" android:text="@string/psdk_phone_my_account_reg_phone_verify" android:layout_below="@id/tv_relogin_name" style="@style/psdk_passport_button_green" />
+    <org.qiyi.android.video.ui.account.view.PLinearLayout android:gravity="center" android:id="@id/ll_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/tv_submit" android:layout_centerHorizontal="true">
+        <org.qiyi.android.video.ui.account.view.PTextView android:id="@id/tv_chg_login" android:text="@string/psdk_account_primarydevice_chg_account" style="@style/psdk_passport_middle_panel_text" />
+        <org.qiyi.android.video.ui.account.view.PView android:id="@id/line_help" style="@style/psdk_passport_bottom_panel_line" />
+        <org.qiyi.android.video.ui.account.view.PTextView android:id="@id/tv_help" android:text="@string/psdk_phone_my_account_help" style="@style/psdk_passport_middle_panel_text" />
+    </org.qiyi.android.video.ui.account.view.PLinearLayout>
+    <org.qiyi.android.video.ui.account.login.OtherWayView android:id="@id/other_way_view" style="@style/psdk_passport_bottom_other_way_login" />
+</org.qiyi.android.video.ui.account.view.AccountResizeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/phoneSearchLocalLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/phoneSearchLocalText" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginLeft="12.0dip" android:text="@string/phone_search_local" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/btn_clear" android:layout_width="26.0dip" android:layout_height="26.0dip" android:layout_marginTop="17.0dip" android:layout_marginRight="9.0dip" android:src="@drawable/search_delete" android:layout_alignParentRight="true" />
+        <org.qiyi.basecore.widget.flowlayout.TagFlowLayout android:id="@id/phoneSearchLocal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="-5.0dip" android:layout_marginRight="7.0dip" android:layout_marginBottom="-5.0dip" android:layout_below="@id/phoneSearchLocalText" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layoutHistoryDivide" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="17.0dip" android:layout_below="@id/phoneSearchLocalLayout">
+        <ImageView android:id="@id/btnShowAllHistory" android:background="#ffffffff" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="33.0dip" android:src="@drawable/ico_show_all_search_history" />
+        <View android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/phoneSearchHotLayout" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layoutHistoryDivide">
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff333333" android:gravity="center" android:id="@id/phoneSearchHotText" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginLeft="12.0dip" android:text="@string/phone_search_hot" />
+        <ImageView android:id="@id/arrow_right" android:layout_width="19.0dip" android:layout_height="19.0dip" android:layout_marginTop="15.5dip" android:layout_marginRight="6.0dip" android:src="@drawable/search_arrow_right" android:layout_alignParentRight="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:gravity="center_vertical" android:id="@id/btn_more" android:layout_width="wrap_content" android:layout_height="50.0dip" android:text="@string/search_hotword_more" android:layout_toLeftOf="@id/arrow_right" />
+        <org.qiyi.android.commonphonepad.view.QyNoneScorllGridView android:id="@id/phoneSearchHot" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-7.0dip" android:listSelector="#00000000" android:numColumns="2" android:layout_below="@id/phoneSearchHotText" />
+        <View android:id="@id/lint_bottom" android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="5.0dip" android:layout_below="@id/phoneSearchHot" />
+    </RelativeLayout>
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/search_qiyi_logo" android:layout_width="95.0dip" android:layout_height="23.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:src="@drawable/search_qiyi_logo" android:layout_below="@id/phoneSearchHotLayout" android:layout_centerHorizontal="true" />
+</RelativeLayout>

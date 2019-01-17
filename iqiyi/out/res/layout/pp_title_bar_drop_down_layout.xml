@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/qz_album_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/pp_back_text_color" android:ellipsize="end" android:gravity="center|right" android:id="@id/drop_down_text" android:layout_width="wrap_content" android:layout_height="40.0dip" android:maxWidth="150.0dip" android:maxLines="1" />
+    <ImageView android:gravity="center_vertical" android:id="@id/drop_down_arrow" android:layout_width="19.0dip" android:layout_height="19.0dip" android:layout_marginLeft="5.0dip" />
+</LinearLayout>

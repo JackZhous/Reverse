@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:progress="http://schemas.android.com/apk/res-auto">
+    <com.iqiyi.publisher.ui.view.SmoothRoundProgressBar android:id="@id/round_progress" android:layout_width="51.0dip" android:layout_height="51.0dip" android:layout_centerInParent="true" progress:textColor="@color/pub_common_green" progress:roundColor="@color/pub_transparent_cccccc_40" progress:roundProgressColor="@color/pub_common_green" progress:roundWidth="4.0dip" progress:textSize="12.0sp" progress:max="100" progress:startAngle="270" progress:textIsDisplayable="false" />
+    <ImageView android:id="@id/publisher_success_tick" android:background="@drawable/pub_success_tick" android:visibility="invisible" android:layout_width="30.0dip" android:layout_height="30.0dip" android:scaleType="centerInside" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/publisher_fail_tick" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pub_short_video_upload_fail" android:layout_centerInParent="true" />
+    <TextView android:textSize="13.0dip" android:textColor="@color/pub_common_green" android:id="@id/publisher_progress_tv" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerInParent="true" />
+</RelativeLayout>

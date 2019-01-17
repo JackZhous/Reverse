@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/img1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/img2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <org.qiyi.basecard.common.widget.AutoIconSizeMetaView android:id="@id/meta1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <org.qiyi.basecard.common.widget.AutoIconSizeMetaView android:id="@id/meta2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <org.qiyi.basecard.common.widget.ButtonView android:id="@id/button1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <org.qiyi.basecard.common.widget.ButtonView android:id="@id/button2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

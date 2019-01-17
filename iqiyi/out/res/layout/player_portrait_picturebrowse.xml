@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/qiyi_sdk_player_black_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.iqiyi.qyplayercardview.picturebrowse.ImagePreviewViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="16.0dip" android:textColor="@color/player_download_download_all_unable_text_color" android:layout_gravity="center|top" android:id="@id/image_which" android:layout_width="wrap_content" android:layout_height="27.0dip" android:layout_marginTop="10.0dip" />
+    <Button android:textSize="12.0sp" android:textColor="@color/player_download_download_all_unable_text_color" android:layout_gravity="bottom|center|right" android:id="@id/savebtn" android:background="@drawable/player_feed_preview_btn_save_bg" android:layout_width="60.0dip" android:layout_height="27.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="10.0dip" android:text="@string/save" />
+</FrameLayout>

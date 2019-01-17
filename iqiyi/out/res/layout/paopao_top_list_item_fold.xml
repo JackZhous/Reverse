@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/head_layout" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/layout_search" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_centerInParent="true">
+        <TextView android:textSize="14.0dip" android:id="@id/meta" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MetaTitle" />
+        <CheckBox android:id="@id/cb_spread" android:layout_width="30.0dip" android:layout_height="20.0dip" android:button="@drawable/checked_spreadout_selector" />
+    </LinearLayout>
+    <View android:id="@id/v_line_bottom" android:background="@color/card_item_devider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</RelativeLayout>

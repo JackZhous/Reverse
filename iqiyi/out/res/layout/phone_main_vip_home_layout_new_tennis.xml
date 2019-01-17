@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/phoneTitleLayout" android:background="@color/title_bar_bg" android:layout_width="fill_parent" android:layout_height="@dimen/title_bar_hight">
+        <TextView android:id="@id/top_bar_title_default" android:visibility="visible" style="@style/top_title_new" />
+        <org.qiyi.android.video.skin.view.SkinVipTennisTitleBar android:id="@id/vip_tennis_title_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <org.qiyi.android.video.vip.view.VipHomeViewPager android:id="@id/vip_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phoneTitleLayout" />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/ll_switch_camera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/iv_switch_camera" android:background="@drawable/pub_self_made_video_base_activity_switch_camera_selector" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+        <TextView android:textSize="12.0sp" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_swtich_camera_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/pp_publisher_video_with_star_turn_camera" android:layout_below="@id/iv_switch_camera" android:layout_alignLeft="@id/iv_switch_camera" android:layout_alignRight="@id/iv_switch_camera" style="@style/PubSelfMadeVideoTextStyle" />
+    </RelativeLayout>>
+<RelativeLayout android:id="@id/ll_filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/ll_switch_camera" android:layout_alignParentRight="true">
+        <com.android.share.camera.view.roundview.RoundedImageView android:id="@id/iv_filter" android:background="@drawable/pub_self_made_video_base_activity_filter_btn_selector" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="20.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <TextView android:textSize="12.0sp" android:gravity="center" android:id="@id/tv_filter_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/pp_publisher_video_with_star_filter" android:layout_below="@id/iv_filter" android:layout_alignLeft="@id/iv_filter" android:layout_alignRight="@id/iv_filter" style="@style/PubSelfMadeVideoTextStyle" />
+    </RelativeLayout>
+</RelativeLayout>

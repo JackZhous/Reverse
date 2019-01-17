@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/p_w_title_layout" layout="@layout/pay_phone_title" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p_dimen_30">
+        <ImageView android:layout_width="@dimen/p_dimen_48" android:layout_height="@dimen/p_dimen_48" android:layout_marginTop="@dimen/p_dimen_20" android:src="@drawable/loading_style_3" />
+        <TextView android:textSize="@dimen/p_dimen_18" android:textStyle="bold" android:textColor="@color/p_color_333333" android:id="@id/p_w_success_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p_dimen_24" android:text="@string/p_w_apply_withdraw_success" />
+        <TextView android:textSize="@dimen/p_dimen_12" android:textColor="@color/p_color_999999" android:id="@id/p_w_time_notice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p_dimen_12" android:text="@string/p_w_withdraw_result_time_notice" />
+    </LinearLayout>
+    <View android:background="@color/p_color_f0f0f0" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_1" android:layout_marginLeft="@dimen/p_dimen_20" android:layout_marginTop="@dimen/p_dimen_45" android:layout_marginRight="@dimen/p_dimen_20" />
+    <RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/p_dimen_20" android:layout_marginTop="@dimen/p_dimen_19" android:layout_marginRight="@dimen/p_dimen_20">
+        <TextView android:textSize="@dimen/p_dimen_15" android:textColor="@color/p_color_666666" android:id="@id/p_w_first_line_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p_w_withdraw_result_to_card" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/p_dimen_15" android:textColor="@color/p_color_333333" android:id="@id/p_w_first_line_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/p_dimen_20" android:layout_marginTop="@dimen/p_dimen_26" android:layout_marginRight="@dimen/p_dimen_20">
+        <TextView android:textSize="@dimen/p_dimen_15" android:textColor="@color/p_color_666666" android:id="@id/p_w_second_line_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p_w_withdraw_result_cash" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/p_dimen_15" android:textColor="@color/p_color_333333" android:id="@id/p_w_second_line_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/p_color_f0f0f0" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_1" android:layout_marginLeft="@dimen/p_dimen_20" android:layout_marginTop="@dimen/p_dimen_17" android:layout_marginRight="@dimen/p_dimen_20" />
+    <TextView android:textSize="@dimen/p_dimen_18" android:textColor="@color/p_color_FF7E00" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/p_w_complete" android:background="@drawable/corner_outline_radius45_ff7e00" android:layout_width="@dimen/p_dimen_305" android:layout_height="@dimen/p_dimen_45" android:layout_marginTop="@dimen/p_dimen_33" android:text="@string/p_w_complete" />
+</LinearLayout>

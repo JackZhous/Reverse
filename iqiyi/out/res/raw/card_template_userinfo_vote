@@ -1,0 +1,759 @@
+{
+  "code": 0,
+  "base": 
+  {
+    "layout_files": "base_layout"
+  },
+  "cards": 
+  [
+    {
+      "name": "文字投票",
+      "card_type": 3,
+      "card_class": "card_rN_c1_s1_feed",
+      "alias_name": "{alias_name}",
+      "total_num": 2,
+      "has_top_bg": 0,
+      "has_bottom_bg": 1,
+      "show_control": 
+      {
+        "show_all": 0,
+        "float_type": 0,
+        "top_separate_style": "card_separation_16",
+        "bottom_separate_style": "card_separation_1",
+        "background_color": "card_bg",
+        "scale_type": "1"
+      },
+      "bottom_banner": 
+      {
+        "effective": 1,
+        "blocks": 
+        [
+          {
+            "block_type": 13,
+            "images": 
+            [
+              {
+                "image_class": "b13_img",
+                "url": "http://pic0.qiyipic.com/common/20161103/8b7504202cb64a1ab6f98c746ba3ed7d.png"
+              },
+              {
+                "image_class": "b13_img",
+                "url": "http://pic0.qiyipic.com/common/20161103/8b7504202cb64a1ab6f98c746ba3ed7d.png"
+              }
+            ],
+            "buttons": 
+            [
+              {
+                "button_class": "b13_btn",
+                "icon_class": "b13_btn_icon",
+                "icon_url": "http://pic9.qiyipic.com/common/20170609/212aef1fdc2d4891912523a6829d473a.png",
+                "id": "1",
+                "text": "分享",
+                "actions": 
+                {
+                  "click_event": 
+                  {
+                    "action_type": 502,
+                    "data": 
+                    {
+                      "feed_data": "{feedData}"
+                    }
+                  }
+                }
+              },
+              {
+                "button_class": "b13_btn",
+                "icon_class": "b13_btn_icon",
+                "icon_url": "http://pic8.qiyipic.com/common/20170609/011e377dbdc447ce9a48635d70761d6b.png",
+                "id": "2",
+                "text": "评论",
+                "actions": 
+                {
+                  "click_event": 
+                  {
+                    "action_type": 501,
+                    "sub_type": 5,
+                    "data": 
+                    {
+                      "comment_count": "{comment_count}",
+                      "source_type": "7",
+                      "wall_id": "{wallId}",
+                      "feed_id": "{feed_id}"
+                    }
+                  }
+                }
+              },
+              {
+                "button_class": "b13_btn",
+                "icon_class": "b13_btn_icon",
+                "icon_url": "http://pic8.qiyipic.com/common/20170609/f2117f028673407b91f1fa6cc56e6162.png",
+                "id": "3",
+                "text": "点赞",
+                "event_key": "disagree",
+                "is_default": "1",
+                "actions": 
+                {
+                  "click_event": 
+                  {
+                    "action_type": 503,
+                    "sub_type": 1,
+                    "data": 
+                    {
+                      "uid": "{uploader_id}",
+                      "release_date": "{releaseDate}",
+                      "source_type": "7",
+                      "wall_id": "{wallId}",
+                      "feed_id": "{feed_id}"
+                    },
+                    "event_path": 
+                    {
+                      "1": "agree",
+                      "0": "disagree"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "3",
+                "button_class": "b13_btn",
+                "text": "1",
+                "icon_class": "b13_btn_icon",
+                "icon_url": "http://pic1.qiyipic.com/common/20170609/3d1c45d330554a6c91c7992df3fd683a.png",
+                "event_key": "agree",
+                "is_default": "0",
+                "actions": 
+                {
+                  "click_event": 
+                  {
+                    "action_type": 503,
+                    "sub_type": 2,
+                    "event_path": 
+                    {
+                      "1": "disagree",
+                      "0": "agree"
+                    },
+                    "data": 
+                    {
+                      "uid": "{uploader_id}",
+                      "release_date": "{releaseDate}",
+                      "source_type": "7",
+                      "wall_id": "{wallId}",
+                      "feed_id": "{feed_id}"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "blocks": 
+      [
+        {
+          "desc": "上传者-feed",
+          "block_id": "0",
+          "block_type": 11,
+          "metas": 
+          [
+            {
+              "meta_class": "b11_p_m1_dt",
+              "text": "0阅读量"
+            }
+          ],
+          "images": 
+          [
+            {
+              
+            },
+            {
+              "default_image": -1
+            },
+            {
+              "default_image": -1
+            }
+          ],
+          "buttons": 
+          [
+            {
+              "button_class": "b11_p_btn1",
+              "icon_class": "b11_p_btn1_icon_person",
+              "icon_url": "http://pic2.qiyipic.com/common/20170629/021566d5f93b48b580035c9719481a9b.png",
+              "id": "1",
+              "actions": 
+              {
+                "click_event": 
+                {
+                  "action_type": 505,
+                  "data": 
+                  {
+                    "blocks": 
+                    [
+                      {
+                        "block_type": 0,
+                        "metas": 
+                        [
+                          {
+                            "text": "删除"
+                          }
+                        ],
+                        "actions": 
+                        {
+                          "click_event": 
+                          {
+                            "action_type": 510,
+                            "data": 
+                            {
+                              "source_type": "7",
+                              "wall_id": "{wallId}",
+                              "feed_id": "{feed_id}"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "block_type": 0,
+                        "metas": 
+                        [
+                          {
+                            "text": "取消"
+                          }
+                        ],
+                        "actions": 
+                        {
+                          "click_event": 
+                          {
+                            "action_type": 511,
+                            "data": 
+                            {
+                              
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "pop_type": "7"
+                  }
+                }
+              }
+            }
+          ],
+          "actions": 
+          {
+            "click_event": 
+            {
+              "action_type": 501,
+              "sub_type": 4,
+              "data": 
+              {
+                "source_type": "7",
+                "wall_id": "{wallId}",
+                "feed_id": "{feed_id}"
+              }
+            }
+          }
+        },
+        {
+          "block_id": "0",
+          "block_type": 21,
+          "metas": 
+          [
+            {
+              "meta_class": "b21_m1_1",
+              "text": "{vote_title}",
+              "extra_type": "1",
+              "spans": 
+              [
+                {
+                  "span_class": "b14_m1",
+                  "content": "",
+                  "content_type": "0"
+                },
+                {
+                  "span_class": "span_top",
+                  "content": "",
+                  "content_type": "2",
+                  "prefix": "fs"
+                }
+              ],
+              "actions": 
+              {
+                "click_event": 
+                {
+                  "action_type": 501,
+                  "sub_type": 4,
+                  "data": 
+                  {
+                    "source_type": "7",
+                    "wall_id": "{wall_id}",
+                    "feed_id": "{feed_id}"
+                  }
+                },
+                "long_click_event": 
+                {
+                  "action_type": 522,
+                  "data": 
+                  {
+                    "title": "{vote_title}"
+                  }
+                }
+              }
+            }
+          ],
+          "actions": 
+          {
+            "click_event": 
+            {
+              "action_type": 501,
+              "sub_type": 4,
+              "data": 
+              {
+                "source_type": "7",
+                "wall_id": "{wall_id}",
+                "feed_id": "{feed_id}"
+              }
+            }
+          }
+        },
+        {
+          "block_type": 20,
+          "metas": 
+          [
+            {
+              "meta_class": "b20_m2_1",
+              "text": "{text}"
+            }
+          ],
+          "actions": 
+          {
+            "click_event": 
+            {
+              "action_type": 521,
+              "data": 
+              {
+                "status": "2",
+                "oid": "{oid}",
+                "vcid": "{vc_id}",
+                "source_type": "7",
+                "wall_id": "{wall_id}",
+                "vote_id": "{vote_id}",
+                "feed_id": "{feed_id}"
+              }
+            }
+          },
+          "other": 
+          {
+            "show_join_times": "0",
+            "vote_status": "1",
+            "show_num": "0",
+            "oid": "{oid}",
+            "user_join_times": "0",
+            "vote_id": "{vote_id}",
+            "is_max_option": "false",
+            "isJoined": "false"
+          }
+        },
+        {
+          "block_type": 20,
+          "metas": 
+          [
+            {
+              "meta_class": "b20_m2_1",
+              "text": "{text}"
+            }
+          ],
+          "actions": 
+          {
+            "click_event": 
+            {
+              "action_type": 521,
+              "data": 
+              {
+                "status": "2",
+                "oid": "{oid}",
+                "vcid": "{vc_id}",
+                "source_type": "7",
+                "wall_id": "{wall_id}",
+                "vote_id": "{vote_id}",
+                "feed_id": "{feed_id}"
+              }
+            }
+          },
+          "other": 
+          {
+            "show_join_times": "0",
+            "vote_status": "1",
+            "show_num": "0",
+            "oid": "{oid}",
+            "user_join_times": "0",
+            "vote_id": "{vote_id}",
+            "is_max_option": "false",
+            "isJoined": "false"
+          }
+        },
+        {
+          "block_type": 20,
+          "metas": 
+          [
+            {
+              "meta_class": "b20_m2_1",
+              "text": "{text}"
+            }
+          ],
+          "actions": 
+          {
+            "click_event": 
+            {
+              "action_type": 521,
+              "data": 
+              {
+                "status": "2",
+                "oid": "{oid}",
+                "vcid": "{vc_id}",
+                "source_type": "7",
+                "wall_id": "{wall_id}",
+                "vote_id": "{vote_id}",
+                "feed_id": "{feed_id}"
+              }
+            }
+          },
+          "other": 
+          {
+            "show_join_times": "0",
+            "vote_status": "1",
+            "show_num": "0",
+            "oid": "{oid}",
+            "user_join_times": "0",
+            "vote_id": "{vote_id}",
+            "is_max_option": "false",
+            "isJoined": "false"
+          }
+        },
+        {
+          "block_type": 20,
+          "metas": 
+          [
+            {
+              "meta_class": "b20_m2_1",
+              "text": "{text}"
+            }
+          ],
+          "actions": 
+          {
+            "click_event": 
+            {
+              "action_type": 521,
+              "data": 
+              {
+                "status": "2",
+                "oid": "{oid}",
+                "vcid": "{vc_id}",
+                "source_type": "7",
+                "wall_id": "{wall_id}",
+                "vote_id": "{vote_id}",
+                "feed_id": "{feed_id}"
+              }
+            }
+          },
+          "other": 
+          {
+            "show_join_times": "0",
+            "vote_status": "1",
+            "show_num": "0",
+            "oid": "{oid}",
+            "user_join_times": "0",
+            "vote_id": "{vote_id}",
+            "is_max_option": "false",
+            "isJoined": "false"
+          }
+        },
+        {
+          "block_type": 20,
+          "metas": 
+          [
+            {
+              "meta_class": "b20_m2_1",
+              "text": "{text}"
+            }
+          ],
+          "actions": 
+          {
+            "click_event": 
+            {
+              "action_type": 521,
+              "data": 
+              {
+                "status": "2",
+                "oid": "{oid}",
+                "vcid": "{vc_id}",
+                "source_type": "7",
+                "wall_id": "{wall_id}",
+                "vote_id": "{vote_id}",
+                "feed_id": "{feed_id}"
+              }
+            }
+          },
+          "other": 
+          {
+            "show_join_times": "0",
+            "vote_status": "1",
+            "show_num": "0",
+            "oid": "{oid}",
+            "user_join_times": "0",
+            "vote_id": "{vote_id}",
+            "is_max_option": "false",
+            "isJoined": "false"
+          }
+        },
+        {
+          "block_type": 20,
+          "metas": 
+          [
+            {
+              "meta_class": "b20_m2_1",
+              "text": "{text}"
+            }
+          ],
+          "actions": 
+          {
+            "click_event": 
+            {
+              "action_type": 521,
+              "data": 
+              {
+                "status": "2",
+                "oid": "{oid}",
+                "vcid": "{vc_id}",
+                "source_type": "7",
+                "wall_id": "{wall_id}",
+                "vote_id": "{vote_id}",
+                "feed_id": "{feed_id}"
+              }
+            }
+          },
+          "other": 
+          {
+            "show_join_times": "0",
+            "vote_status": "1",
+            "show_num": "0",
+            "oid": "{oid}",
+            "user_join_times": "0",
+            "vote_id": "{vote_id}",
+            "is_max_option": "false",
+            "isJoined": "false"
+          }
+        },
+        {
+          "block_type": 20,
+          "metas": 
+          [
+            {
+              "meta_class": "b20_m2_1",
+              "text": "{text}"
+            }
+          ],
+          "actions": 
+          {
+            "click_event": 
+            {
+              "action_type": 521,
+              "data": 
+              {
+                "status": "2",
+                "oid": "{oid}",
+                "vcid": "{vc_id}",
+                "source_type": "7",
+                "wall_id": "{wall_id}",
+                "vote_id": "{vote_id}",
+                "feed_id": "{feed_id}"
+              }
+            }
+          },
+          "other": 
+          {
+            "show_join_times": "0",
+            "vote_status": "1",
+            "show_num": "0",
+            "oid": "{oid}",
+            "user_join_times": "0",
+            "vote_id": "{vote_id}",
+            "is_max_option": "false",
+            "isJoined": "false"
+          }
+        },
+        {
+          "block_type": 20,
+          "metas": 
+          [
+            {
+              "meta_class": "b20_m2_1",
+              "text": "{text}"
+            }
+          ],
+          "actions": 
+          {
+            "click_event": 
+            {
+              "action_type": 521,
+              "data": 
+              {
+                "status": "2",
+                "oid": "{oid}",
+                "vcid": "{vc_id}",
+                "source_type": "7",
+                "wall_id": "{wall_id}",
+                "vote_id": "{vote_id}",
+                "feed_id": "{feed_id}"
+              }
+            }
+          },
+          "other": 
+          {
+            "show_join_times": "0",
+            "vote_status": "1",
+            "show_num": "0",
+            "oid": "{oid}",
+            "user_join_times": "0",
+            "vote_id": "{vote_id}",
+            "is_max_option": "false",
+            "isJoined": "false"
+          }
+        },
+        {
+          "block_type": 20,
+          "metas": 
+          [
+            {
+              "meta_class": "b20_m2_1",
+              "text": "{text}"
+            }
+          ],
+          "actions": 
+          {
+            "click_event": 
+            {
+              "action_type": 521,
+              "data": 
+              {
+                "status": "2",
+                "oid": "{oid}",
+                "vcid": "{vc_id}",
+                "source_type": "7",
+                "wall_id": "{wall_id}",
+                "vote_id": "{vote_id}",
+                "feed_id": "{feed_id}"
+              }
+            }
+          },
+          "other": 
+          {
+            "vote_status": "1",
+            "show_join_times": "0",
+            "show_num": "0",
+            "oid": "{oid}",
+            "user_join_times": "0",
+            "vote_id": "{vote_id}",
+            "is_max_option": "false",
+            "isJoined": "false"
+          }
+        },
+        {
+          "block_type": 20,
+          "metas": 
+          [
+            {
+              "meta_class": "b20_m2_1",
+              "text": "{text}"
+            }
+          ],
+          "actions": 
+          {
+            "click_event": 
+            {
+              "action_type": 521,
+              "data": 
+              {
+                "status": "2",
+                "oid": "{oid}",
+                "vcid": "{vc_id}",
+                "source_type": "7",
+                "wall_id": "{wall_id}",
+                "vote_id": "{vote_id}",
+                "feed_id": "{feed_id}"
+              }
+            }
+          },
+          "other": 
+          {
+            "vote_status": "1",
+            "show_join_times": "0",
+            "show_num": "0",
+            "oid": "{oid}",
+            "user_join_times": "0",
+            "vote_id": "{vote_id}",
+            "is_max_option": "false",
+            "isJoined": "false"
+          }
+        },
+        {
+          "block_id": "0",
+          "block_type": 1,
+          "images": 
+          [
+            {
+              "image_class": "pp_blank_bottom1",
+              "url": "",
+              "default_img": "none",
+              "default_image": -1
+            }
+          ],
+          "show_control": 
+          {
+            
+          }
+        },
+        {
+          "block_id": "0",
+          "block_type": 23,
+          "metas": 
+          [
+            {
+              "meta_class": "b23_m1_1",
+              "text": "来自泡泡圈:"
+            },
+            {
+              "meta_class": "b23_m2_1",
+              "text": "{from_wall_name}",
+              "actions": 
+              {
+                "click_event": 
+                {
+                  "action_type": 515,
+                  "data": 
+                  {
+                    "uid": "{uid}",
+                    "wall_type": "{wall_type}",
+                    "sub_type": "0",
+                    "wall_id": "{wall_id}"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "block_id": "0",
+          "block_type": 1,
+          "images": 
+          [
+            {
+              "image_class": "pp_splitter_20px",
+              "url": "",
+              "default_img": "none",
+              "default_image": -1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

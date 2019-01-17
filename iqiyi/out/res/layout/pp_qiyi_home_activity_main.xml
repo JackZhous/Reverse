@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/pp_activity_tv_paopao_list_root" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.iqiyi.paopao.middlecommon.views.PPScrollLinearLayout android:orientation="vertical" android:id="@id/pp_qiyi_home_scrolllayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="49.0dip">
+        <com.iqiyi.paopao.middlecommon.ui.view.titlebar.PPHomeTitleBar android:id="@id/pp_home_title_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.iqiyi.paopao.middlecommon.ui.view.NoScrollViewPager android:id="@id/pp_qiyi_home_pager_main" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.iqiyi.paopao.middlecommon.views.PPScrollLinearLayout>
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/float_window_image" android:visibility="gone" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_marginBottom="74.0dip" android:layout_above="@id/pp_home_tab_title_container" android:layout_alignParentRight="true" />
+    <View android:id="@id/pp_home_layer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/pp_action_title_height" android:layout_above="@id/pp_home_tab_title_container" />
+    <LinearLayout android:orientation="vertical" android:id="@id/pp_home_tab_title_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:background="@drawable/pp_home_tab_shadow" android:layout_width="fill_parent" android:layout_height="7.0dip" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/pp_qiyi_home_tab_title_container" android:background="@color/white" android:visibility="visible" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="49.0dip" />
+    </LinearLayout>
+    <ImageView android:id="@id/feed_publisher_btn" android:background="@drawable/pp_feed_publisher_global_btn" android:layout_width="65.0dip" android:layout_height="65.0dip" android:layout_marginBottom="12.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/feed_publisher_add_btn" android:background="@drawable/pp_feed_publisher_add_btn" android:layout_width="65.0dip" android:layout_height="65.0dip" android:layout_marginBottom="12.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="10.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="@string/pp_qz_selectimg_commit" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <include android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginBottom="100.0dip" android:layout_alignParentBottom="true" layout="@layout/pp_global_message_alert_layout" />
+</RelativeLayout>

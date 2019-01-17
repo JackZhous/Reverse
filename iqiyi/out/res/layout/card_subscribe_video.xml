@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/top_padding_layout" android:layout_width="fill_parent" android:layout_height="7.0dip">
+        <View android:background="@color/divide_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <include android:id="@id/subscribe_video_container" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/layout_card_video2" />
+    <include android:id="@id/subscribe_reward_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" layout="@layout/layout_subscribe_reward" />
+    <include android:layout_width="fill_parent" android:layout_height="40.0dip" layout="@layout/layout_subscribe_footer" />
+</LinearLayout>

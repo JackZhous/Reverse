@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/player_cast_coderate_item_text_size" android:textColor="@color/color_white_2_green" android:gravity="center" android:id="@id/portrait_dlan_rate_item" android:paddingTop="@dimen/player_cast_coderate_item_vertical_padding" android:paddingBottom="@dimen/player_cast_coderate_item_vertical_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

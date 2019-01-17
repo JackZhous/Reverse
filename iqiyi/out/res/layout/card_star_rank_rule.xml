@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/CardModelBase"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/rule_icon" android:background="@drawable/rank_rule_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/card_text_size_14dp" android:textColor="@color/color_meta_title" android:gravity="center_vertical" android:id="@id/rule_title" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="7.0dip" android:layout_toRightOf="@id/rule_icon" />
+    <TextView android:textSize="@dimen/card_text_size_12dp" android:textColor="@color/text_hint_color" android:gravity="center" android:id="@id/card_top_banner_operation_mark" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" >" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/card_text_size_12dp" android:textColor="@color/text_hint_color" android:gravity="center_vertical" android:id="@id/rule_right_meta" android:layout_width="wrap_content" android:layout_height="40.0dip" android:singleLine="true" android:layout_toLeftOf="@id/card_top_banner_operation_mark" />
+</RelativeLayout>

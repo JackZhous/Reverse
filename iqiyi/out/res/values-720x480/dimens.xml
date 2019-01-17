@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bk_h">360.0px</dimen>
+    <dimen name="bk_t">47.0px</dimen>
+    <dimen name="bk_w">360.0px</dimen>
+    <dimen name="button_h">56.0px</dimen>
+    <dimen name="button_t">18.0px</dimen>
+    <dimen name="button_w">174.0px</dimen>
+    <dimen name="list_button_h">33.0px</dimen>
+    <dimen name="list_button_w">87.0px</dimen>
+    <dimen name="mode_layout_t">27.0px</dimen>
+    <dimen name="poster_button_h">33.0px</dimen>
+    <dimen name="poster_button_w">87.0px</dimen>
+    <dimen name="text_h">50.0px</dimen>
+    <dimen name="text_t">3.0px</dimen>
+    <dimen name="text_w">309.0px</dimen>
+</resources>

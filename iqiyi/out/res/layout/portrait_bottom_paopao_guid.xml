@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:layout_marginBottom="2.0dip" android:src="@drawable/player_portrait_paopao_bottom_guid" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

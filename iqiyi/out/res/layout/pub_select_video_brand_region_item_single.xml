@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/pub_source_video_brand_region_single" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/pp_brand_region_picture" layout="@layout/pub_brand_region_picture_item_layout" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip">
+        <TextView android:textSize="16.0dip" android:textColor="#ff333333" android:ellipsize="end" android:id="@id/pp_brand_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="大美乐教你如何（美美哒我我我我我我问问" android:maxEms="10" android:singleLine="true" />
+        <TextView android:textSize="12.0dip" android:textColor="#ff999999" android:ellipsize="end" android:id="@id/pub_brand_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="23.0dip" android:layout_marginBottom="10.0dip" android:text="小编推荐: 撒娇卖萌效果更好，亲亲抱抱举高高，拉巴拉小魔仙哈哈哈哈哈哈哈哈" android:maxLines="3" android:lineSpacingExtra="6.0dip" />
+    </LinearLayout>
+</LinearLayout>

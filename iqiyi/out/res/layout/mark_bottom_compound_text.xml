@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/focus_image_txt_bg" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/card_text_size_14dp" android:textColor="@color/ugc_white_color" android:gravity="bottom" android:id="@id/id_hot_title" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginLeft="8.0dip" android:singleLine="true" android:layout_alignParentTop="true" />
+    <RelativeLayout android:id="@id/bottom_layout" android:layout_width="fill_parent" android:layout_height="28.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/card_text_size_12dp" android:textColor="#ffffffff" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_marginBottom="9.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="@dimen/card_text_size_12dp" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/comments_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="9.0dip" android:maxLines="1" android:layout_toLeftOf="@id/time" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

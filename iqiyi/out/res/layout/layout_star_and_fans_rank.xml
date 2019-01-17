@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="279.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/title_bar" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginTop="3.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/text_title" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/btn_close" android:clickable="true" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/close_btn_gift_flow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:background="#ffe7e7e7" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <org.qiyi.basecore.widget.ptr.widget.PtrSimpleRecyclerView android:id="@id/star_and_user_list" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title_bar" />
+</RelativeLayout>

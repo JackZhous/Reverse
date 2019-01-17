@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/poster" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/poster" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/card_text_size_13dp" android:textColor="@color/color_meta_title" android:gravity="left" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="女王节专属游戏" android:singleLine="true" />
+        <TextView android:textSize="@dimen/card_text_size_11dp" android:textColor="#ff999999" android:gravity="left" android:id="@id/sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="叫我女王大人" android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

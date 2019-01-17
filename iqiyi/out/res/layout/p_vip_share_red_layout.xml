@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/p_vip_share_red_layout" android:background="#bf000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/p_vip_share_red_content" android:layout_width="@dimen/p_dimen_333.5" android:layout_height="@dimen/p_dimen_400.5" android:layout_centerInParent="true">
+        <ImageView android:id="@id/share_red_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:textSize="@dimen/p_dimen_22" android:textColor="@color/p_color_ffea7c" android:id="@id/p_vip_share_red_fisrt_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p_dimen_235" android:maxWidth="@dimen/p_dimen_225" android:maxLines="1" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/p_dimen_14" android:textColor="@color/white" android:id="@id/p_vip_share_red_second_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p_dimen_4" android:maxWidth="@dimen/p_dimen_220" android:maxLines="2" android:layout_below="@id/p_vip_share_red_fisrt_line" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/p_dimen_18" android:textColor="@color/p_color_db2540" android:gravity="center" android:id="@id/p_vip_share_red_send_tv" android:background="@drawable/p_vip_share_red_send_btn_bg_new" android:layout_width="@dimen/p_dimen_194" android:layout_height="@dimen/p_dimen_35" android:layout_marginBottom="@dimen/p_dimen_50" android:text="发送红包" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/p_vip_share_red_close_img" android:background="@drawable/p_vip_share_red_close_img_bg_new" android:layout_width="@dimen/p_dimen_30" android:layout_height="@dimen/p_dimen_30" android:layout_marginTop="@dimen/p_dimen_40" android:layout_marginRight="@dimen/p_dimen_17" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

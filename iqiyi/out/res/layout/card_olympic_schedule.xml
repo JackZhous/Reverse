@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/poster_layout" android:layout_width="59.0dip" android:layout_height="55.0dip" android:layout_marginTop="5.0dip">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/poster" android:layout_width="35.0dip" android:layout_height="35.0dip" android:scaleType="centerCrop" />
+        <TextView android:textSize="@dimen/card_text_size_10dp" android:textColor="@color/color_meta_sub_title" android:id="@id/project" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <View android:id="@id/line" android:background="#ffe6e6e6" android:layout_width="0.5dip" android:layout_height="40.0dip" android:layout_toRightOf="@id/poster_layout" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/date_layout" android:layout_width="55.0dip" android:layout_height="60.0dip" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/line" android:layout_centerVertical="true">
+        <TextView android:textSize="12.0sp" android:textColor="@color/color_meta_title" android:id="@id/dateText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/color_meta_title" android:id="@id/timeText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:singleLine="true" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="12.0dip" android:layout_toRightOf="@id/date_layout" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/card_text_size_13dp" android:textColor="@color/color_meta_title" android:id="@id/meta1" android:layout_width="155.0dip" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="@dimen/card_text_size_11dp" android:textColor="@color/text_hint_color" android:id="@id/meta2" android:layout_width="155.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:singleLine="true" android:layout_below="@id/meta1" />
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/btn_play" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginTop="1.0dip" android:layout_marginRight="10.0dip" android:scaleType="centerCrop" android:layout_alignTop="@id/meta1" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

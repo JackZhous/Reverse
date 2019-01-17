@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/player_paopao_tab_relativelayout" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/paopao_tab_content" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:layout_centerInParent="true" android:layout_centerVertical="true">
+        <ImageView android:id="@id/tab_icon" android:duplicateParentState="true" android:layout_width="14.5dip" android:layout_height="14.5dip" android:layout_marginTop="4.0dip" android:src="@drawable/portrait_paopao_tab_selector" />
+        <TextView android:textSize="15.0dip" android:textColor="@drawable/player_portrait_viewpager_tab" android:id="@id/portrait_viewpager_tab_title" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_toRightOf="@id/tab_icon" />
+    </RelativeLayout>
+</RelativeLayout>

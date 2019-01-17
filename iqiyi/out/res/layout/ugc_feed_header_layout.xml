@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ugc_header_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/my_head_feed_info" android:background="@drawable/phone_card_style_bg" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/ugc_feed_friends_icon_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/phone_avatar_layout" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ugc_feed_friends_infromation_layout" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/ugc_feed_friends_icon_layout" android:layout_centerInParent="true">
+            <LinearLayout android:gravity="center_vertical" android:id="@id/ugc_feed_friends_name_and_class" android:padding="5.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="17.0dip" android:textColor="@color/ugc_deep_black_color" android:ellipsize="end" android:id="@id/ugc_feed_friends_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="甜美的等待" android:singleLine="true" android:layout_weight="1.0" />
+                <TextView android:id="@id/my_main_user_status_icon" android:background="@drawable/vip_rank_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" />
+            </LinearLayout>
+            <FrameLayout android:id="@id/ugc_feed_friends_layout" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/ugc_feed_friends_videos_and_fans_count_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:id="@id/ugc_feed_friends_videos_count" android:text="18个视频" style="@style/textViewStyleTextSizeNormal" />
+                    <TextView android:id="@id/ugc_feed_friends_fans_count" android:text="288粉丝" style="@style/textViewStyleTextSizeNormal" />
+                </LinearLayout>
+                <TextView android:textColor="@color/ugc_green_like_color" android:id="@id/ugc_personal_credit" android:visibility="gone" android:text="粉丝：288" style="@style/textViewStyleTextSizeNormal" />
+            </FrameLayout>
+        </LinearLayout>
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/ugc_feed_friends_add_layout" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/ugc_feed_friends_infromation_layout" android:layout_alignParentRight="true" android:layout_centerInParent="true">
+            <TextView android:id="@id/ugc_feed_friends_add" android:background="@drawable/phone_my_main_vip_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:id="@id/noFollowedLinearLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_below="@id/my_head_feed_info">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="12.0dip" android:textColor="@color/ugc_shallow_black_color" android:id="@id/no_followed_view" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="你还没有订阅任何人，看看爱奇艺为您推荐的人气达人和热门视频吧" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.RecyclerView android:id="@id/dialog_list_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/tex_left_title" />
+    <org.qiyi.basecard.common.widget.ButtonView android:gravity="center_vertical" android:id="@id/dialog_cancel" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" app:text_color="@color/card_hotspot_text_color" app:left_icon_width="30.0dip" app:left_icon_height="30.0dip" app:icon_text_margin="7.0dip" />
+    <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/card_hotspot_share_title" android:id="@id/tex_left_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="12.0dip" android:text="@string/card_hotspot_share_title" />
+</RelativeLayout>

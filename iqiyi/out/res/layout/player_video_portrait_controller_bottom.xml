@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/portrait_controller_bottom" android:background="#99000000" android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/play_or_pause" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/qiyi_sdk_play_portrait_btn_pause_normal" />
+    <TextView android:textSize="11.0dip" android:textColor="@color/color_white" android:gravity="center" android:id="@id/play_current_time" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toRightOf="@id/play_or_pause" />
+    <ImageView android:id="@id/change_to_landscape" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/qiyi_sdk_play_btn_tolandscape_normal" android:layout_alignParentRight="true" />
+    <TextView android:textSize="11.0dip" android:textColor="@color/color_white" android:gravity="center" android:id="@id/duration_time" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/change_to_landscape" android:layout_alignWithParentIfMissing="true" />
+    <SeekBar android:id="@id/play_seekBar" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="2.0dip" android:progressDrawable="@drawable/player_video_seekbar_bg" android:minHeight="2.0dip" android:thumb="@drawable/qiyi_sdk_player_portrait_seekbar_ball" android:layout_toLeftOf="@id/duration_time" android:layout_toRightOf="@id/play_current_time" android:layout_centerVertical="true" />
+</RelativeLayout>

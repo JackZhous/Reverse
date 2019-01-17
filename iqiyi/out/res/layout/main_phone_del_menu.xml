@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/phoneMenuLayout" android:background="@drawable/phone_viewhistory_shadow_bg" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="15.0dip" android:textColor="#ff333333" android:gravity="center" android:id="@id/phone_menu_item_select_all" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/phone_bottom_select_all_text" android:layout_weight="1.0" />
+    <View android:background="#ffe9e9e9" android:layout_width="1.0dip" android:layout_height="14.0dip" />
+    <Button android:textSize="15.0dip" android:textColor="#ff999999" android:gravity="center" android:id="@id/phone_menu_item_delete" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/phone_bottom_delete_text_no_num" android:layout_weight="1.0" />
+</LinearLayout>

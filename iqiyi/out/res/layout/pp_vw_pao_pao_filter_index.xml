@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:iqiyi="http://schemas.android.com/apk/res-auto">
+    <com.android.share.camera.view.roundview.RoundedImageView android:id="@id/iv_filter_img" android:padding="3.0dip" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" iqiyi:sdk_ppq_border_color="@color/ppq_common_filter_border" iqiyi:sdk_circle="true" />
+    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/pp_filter_text_selector" android:id="@id/tv_filter_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="@string/ppq_album_dir_list" android:layout_below="@id/iv_filter_img" android:layout_centerHorizontal="true" />
+</RelativeLayout>

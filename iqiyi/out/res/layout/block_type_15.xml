@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:ngl="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta1" android:layout_width="fill_parent" android:layout_height="wrap_content" ngl:text_ellipsize="end" />
+    <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/meta1" ngl:text_ellipsize="end" />
+    <org.qiyi.basecard.v3.widget.CardV3NineGridLayout android:id="@id/nine_grid_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:layout_below="@id/meta2" ngl:showStyle="grid" />
+</RelativeLayout>

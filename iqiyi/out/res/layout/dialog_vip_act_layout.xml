@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/vip_act_dialog_top_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <org.qiyi.basecore.widget.IconViewClose android:layout_gravity="right" android:id="@id/vip_act_dialog_close_btn" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" app:iconStrokeWidth="1.0dip" app:lineColor="#ffd4b27e" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/vip_act_dialog_bottom_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0dip" android:textColor="#ff333333" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/vip_act_dialog_tips" />
+            <RelativeLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/btn_vip_act_entry" android:background="@drawable/vip_act_dialog_button_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip">
+                <TextView android:textSize="15.0dip" android:textColor="#ffffffff" android:paddingLeft="35.0dip" android:paddingTop="8.0dip" android:paddingRight="35.0dip" android:paddingBottom="8.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vip_act_dialog_button" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

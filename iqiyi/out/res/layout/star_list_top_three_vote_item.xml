@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/status" android:layout_width="38.0dip" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <TextView android:textSize="21.0dip" android:textColor="#ff333333" android:id="@id/ranking" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_centerHorizontal="true" />
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/rank_status_mark" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="wrap_content" android:src="@drawable/star_list_rise" android:layout_below="@id/ranking" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/poster_layout" android:layout_width="wrap_content" android:layout_height="105.0dip" android:layout_toRightOf="@id/status" android:layout_centerVertical="true">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/poster" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_alignBottom="@id/ranking_mask" android:layout_centerHorizontal="true" fresco:placeholderImage="@drawable/face_icon_xlarge" fresco:roundAsCircle="true" />
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/ranking_mask" android:visibility="visible" android:layout_width="82.0dip" android:layout_height="82.0dip" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="14.0dip" android:layout_toLeftOf="@id/btn_hit_list" android:layout_toRightOf="@id/poster_layout">
+        <TextView android:textSize="17.0dip" android:textColor="#ffff5269" android:ellipsize="end" android:id="@id/meta1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="@dimen/card_text_size_12dp" android:textColor="#ffff5269" android:id="@id/meta2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+        <TextView android:textSize="@dimen/card_text_size_12dp" android:textColor="@color/text_hint_color" android:ellipsize="end" android:id="@id/meta3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="李易峰粉丝力挺！" android:singleLine="true" />
+    </LinearLayout>
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/champion_last_week" android:layout_width="53.0dip" android:layout_height="53.0dip" android:scaleType="fitXY" android:layout_alignParentRight="true" />
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/cup_icon" android:layout_width="87.0dip" android:layout_height="100.0dip" android:scaleType="fitXY" android:layout_alignParentRight="true" />
+    <org.qiyi.basecore.widget.OuterFrameTextView android:textSize="15.0dip" android:textColor="#ffffffff" android:id="@id/btn_hit_list" android:layout_width="80.0dip" android:layout_height="30.0dip" android:layout_marginRight="12.0dip" android:text="打榜" android:layout_alignParentRight="true" android:layout_centerVertical="true" fresco:outer_frame="round_padding" fresco:out_frame_bg="@color/default_orange" />
+</RelativeLayout>

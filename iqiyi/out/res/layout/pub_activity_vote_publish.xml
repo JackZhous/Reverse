@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.iqiyi.publisher.ui.view.resizelayout.QZPublisherAutoHeightLayout android:id="@id/rl_auto_height" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:paopao="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/root_relative_layout" android:background="@color/pub_new_activity_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <include android:id="@id/feed_publisher_actionbar" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/pub_common_actionbar" />
+        <RelativeLayout android:id="@id/pp_layout_content" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/feed_publisher_actionbar">
+            <ScrollView android:id="@id/qz_vote_option_scorll" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/pp_layout_content_keboard_top" android:layout_alignParentTop="true">
+                <LinearLayout android:orientation="vertical" android:id="@id/qz_vote_option_layout" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.iqiyi.publisher.ui.view.TagEditText android:textSize="16.0dip" android:textColor="@color/color_333333" android:textColorHint="@color/pub_color_999999" android:gravity="top" android:id="@id/qz_vote_publish_content" android:background="@color/white" android:paddingLeft="12.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_marginTop="15.0dip" android:minLines="2" android:editable="true" android:lineSpacingExtra="10.0dip" android:textCursorDrawable="@drawable/pub_text_curor_drawable" paopao:hard_hint_color="@color/qz_publisher_title_color" paopao:real_hint="@string/pp_qz_vote_hint" paopao:real_hint_color="#ff999999" />
+                    <TextView android:textSize="13.0dip" android:textColor="@color/pub_color_999999" android:gravity="center|right" android:id="@id/qz_vote_publish_content_summary" android:background="@color/white" android:paddingTop="10.0dip" android:paddingRight="12.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pp_sw_vote_publish_text_summary" />
+                    <View android:background="@color/pub_color_e6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="10.0dip" />
+                    <Button android:textSize="18.0dip" android:textColor="@color/color_0bbe06" android:gravity="center|left" android:layout_gravity="center_horizontal" android:id="@id/qz_vote_option_add" android:background="@drawable/pub_rectangle_fillet_mint_green" android:paddingLeft="100.0dip" android:layout_width="305.0dip" android:layout_height="45.0dip" android:layout_marginTop="30.0dip" android:layout_marginBottom="10.0dip" android:text="@string/pp_qz_vote_selection_add_btn_text" android:drawableLeft="@drawable/pub_add_new_option" android:drawablePadding="5.0dip" />
+                </LinearLayout>
+            </ScrollView>
+            <include android:id="@id/pp_layout_content_keboard_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/ll_expression_parent" layout="@layout/pub_publisher_tool_bar" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_expression_parent" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <com.iqiyi.paopao.middlecommon.components.qyconponent.emotion.views.ExpressionsLayout android:id="@id/ll_expressions" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View android:id="@id/v_none_expression_bg" android:background="#fff0f0f0" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/ll_expression_parent" android:layout_alignTop="@id/ll_expression_parent" android:layout_alignRight="@id/ll_expression_parent" android:layout_alignBottom="@id/ll_expression_parent" />
+        </RelativeLayout>
+    </RelativeLayout>
+</com.iqiyi.publisher.ui.view.resizelayout.QZPublisherAutoHeightLayout>

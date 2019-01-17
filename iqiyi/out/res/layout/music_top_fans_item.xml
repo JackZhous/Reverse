@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:id="@id/music_top_fans_rank" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="5.0dip" android:minWidth="25.0dip" android:layout_centerVertical="true">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/music_top_fans_rank1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/music_top_fans_1" />
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/music_top_fans_rank2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/music_top_fans_1" />
+    </LinearLayout>
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/music_top_fans_face" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="23.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="23.0dip" android:layout_toRightOf="@id/music_top_fans_rank" fresco:placeholderImage="@drawable/face_icon_xlarge" fresco:placeholderImageScaleType="centerCrop" fresco:roundAsCircle="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/top_info_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginRight="50.0dip" android:layout_toRightOf="@id/music_top_fans_face">
+        <TextView android:textSize="@dimen/generic_content_font_large" android:textColor="#ff000000" android:id="@id/music_top_fans_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="超级马里奥" android:layout_weight="1.0" style="@style/MetaTitle" />
+        <TextView android:ellipsize="end" android:id="@id/support_music_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="最新支持：SBS歌谣大战" android:maxLines="1" android:layout_weight="1.0" style="@style/MetaSubTitle" />
+        <TextView android:textSize="@dimen/generic_default_small" android:textColor="@color/music_top_points" android:id="@id/music_top_fans_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="66.55分" android:layout_weight="0.0" />
+    </LinearLayout>
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/support_music_player" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/music_top_fans_play" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

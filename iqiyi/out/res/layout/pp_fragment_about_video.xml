@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.iqiyi.paopao.middlecommon.ui.view.pullrefresh.PPHomePullRefreshLayout android:id="@id/base_video_pull_to_refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.iqiyi.paopao.middlecommon.ui.view.recyclerview.PPFamiliarRecyclerView android:id="@id/base_video_recycler_view" android:scrollbars="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <include android:id="@id/hot_no_network_no_cache" android:visibility="gone" layout="@layout/pp_no_network_nocashe_warning_ll" />
+            <include android:id="@id/hot_fetch_data_fail" android:visibility="gone" layout="@layout/pp_layout_fetch_data_fail" />
+            <include android:id="@id/hot_fetch_data_loading" android:visibility="gone" layout="@layout/pp_circle_loading_layout" />
+        </RelativeLayout>
+    </com.iqiyi.paopao.middlecommon.ui.view.pullrefresh.PPHomePullRefreshLayout>
+</LinearLayout>

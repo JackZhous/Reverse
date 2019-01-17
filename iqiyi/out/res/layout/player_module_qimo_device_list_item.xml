@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#80f2f2f2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/device_ip_ly" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="24.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:textSize="11.0dip" android:textColor="#ff999999" android:gravity="bottom" android:id="@id/device_ip_tv" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="IP地址：192.168.131.103" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/device_ly" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="19.0dip">
+        <ImageView android:id="@id/device_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <TextView android:textSize="15.0dip" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/dlan_module_device_list_name" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@id/device_icon" />
+        <TextView android:textSize="15.0dip" android:textColor="#ff02c300" android:gravity="center_vertical" android:id="@id/device_recommend" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:text="@string/player_cast_device_list_item_recommend" android:layout_toRightOf="@id/dlan_module_device_list_name" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/device_connected" android:background="@drawable/player_module_dlan_list_connected" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

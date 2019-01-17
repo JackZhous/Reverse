@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/icon_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <ImageView android:id="@id/category_icon" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/cate_1" />
+        <TextView android:id="@id/category_name" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="热点" style="@style/category_name_style" />
+    </LinearLayout>
+    <ImageView android:id="@id/category_opt" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginTop="3.0dip" android:src="@drawable/category_add_icon" android:layout_toRightOf="@id/icon_layout" android:layout_alignTop="@id/icon_layout" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/color_gray_block" android:gravity="center" android:id="@id/custom_blank" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/category_blank_hint" />
+    <View android:id="@id/line_left" android:background="@color/category_item_line_bg" android:visibility="gone" android:layout_width="0.14999998dip" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="@id/icon_layout" android:layout_alignParentBottom="@id/icon_layout" />
+    <View android:id="@id/line_Right" android:background="@color/category_item_line_bg" android:visibility="gone" android:layout_width="0.14999998dip" android:layout_height="fill_parent" android:layout_alignParentTop="@id/icon_layout" android:layout_alignParentRight="true" android:layout_alignParentBottom="@id/icon_layout" />
+    <View android:id="@id/line_top" android:background="@color/category_item_line_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.14999998dip" android:layout_alignParentTop="true" />
+    <View android:id="@id/line_bottom" android:background="@color/category_item_line_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.14999998dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

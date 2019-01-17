@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ContentOverlay1" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:windowBackground">@drawable/phone_boot_bg_traditional</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/noAnimation</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="WelcomeAdsBannerIcon">
+        <item name="android:src">@drawable/welcome_ads_banner_iqiyi_tranditional</item>
+    </style>
+    <style name="WelcomeAdsTag">
+        <item name="android:background">@drawable/welcome_advertisement_traditional_icon</item>
+    </style>
+</resources>

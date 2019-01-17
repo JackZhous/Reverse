@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#e61e1e1e" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.iqiyi.video.image.PlayerDraweView android:layout_gravity="center_horizontal" android:id="@id/player_cast_ad_above_device_list" android:layout_width="fill_parent" android:layout_height="47.0dip" android:layout_marginLeft="21.0dip" android:layout_marginRight="21.0dip" app:actualImageScaleType="fitCenter" />
+    <include android:id="@id/player_cast_device_list_header" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_below="@id/player_cast_ad_above_device_list" layout="@layout/cast_panel_qimo_list_header" />
+    <ListView android:id="@id/player_module_dlan_devices_list" android:background="#e61e1e1e" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/player_cast_devices_list_selector_panel" android:layout_below="@id/player_cast_device_list_header" android:overScrollMode="never" />
+</RelativeLayout>

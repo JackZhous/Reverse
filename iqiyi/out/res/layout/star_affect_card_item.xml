@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/poster_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.qiyi.card.view.TwoBorderQiyiDraweeView android:id="@id/poster" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" fresco:placeholderImage="@drawable/face_icon_xlarge" fresco:roundAsCircle="true" fresco:innerColor="#ffffffff" fresco:innerWidth="1.0dip" fresco:outerWidth="1.5dip" />
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/rank_status_mark" android:layout_width="15.0dip" android:layout_height="17.0dip" android:layout_marginLeft="-5.0dip" android:layout_marginTop="-5.0dip" android:layout_alignLeft="@id/poster" android:layout_alignTop="@id/poster" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_toRightOf="@id/poster_layout" android:layout_centerVertical="true">
+        <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="#ff333333" android:ellipsize="end" android:id="@id/meta1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxEms="8" android:singleLine="true" />
+        <TextView android:textSize="10.0dip" android:textColor="#ffff6941" android:id="@id/meta2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:maxEms="8" style="@style/MetaSubTitle" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_title" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/player_detail_synopsis" android:maxEms="17" android:singleLine="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/close" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="7.0dip" android:src="@drawable/player_common_close" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/video_detail_vg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_title" />
+</RelativeLayout>

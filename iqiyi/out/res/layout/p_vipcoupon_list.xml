@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/p_color_f5f5f5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/phone_pay_title" layout="@layout/pay_phone_title" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/couponlistlayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.v7.widget.RecyclerView android:id="@id/couponlist" android:visibility="visible" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:cacheColorHint="@color/transparent" android:layout_weight="1.0" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <View android:id="@id/dv1" android:background="@color/p_color_d5d5d5" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:textSize="18.0dip" android:textColor="@color/p_color_FF7E00" android:gravity="center" android:id="@id/unuse_coupon" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/p_vipcoupon_unusecoupon" android:layout_weight="1.0" />
+                    <TextView android:textSize="18.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/use_coupon" android:background="@color/p_color_FF7E00" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/p_vipcoupon_usecoupon" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@id/tk_empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/p_load_data_exception" />
+        </RelativeLayout>
+        <include android:id="@id/list_empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/p_vipcoupon_empty_layout" />
+    </FrameLayout>
+</LinearLayout>

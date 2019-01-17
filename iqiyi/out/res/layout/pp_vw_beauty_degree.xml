@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="30.0dip" android:layout_marginBottom="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.android.share.camera.view.VerticalSeekBarWrapper android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <com.android.share.camera.view.VerticalSeekBar android:id="@id/beauty_degree_seekbar" android:padding="22.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxHeight="3.0dip" android:progress="50" android:progressDrawable="@drawable/pp_beauty_degree_seekbar" android:minHeight="1.0dip" android:thumb="@drawable/pp_beauty_degree_thumb" app:seekBarRotation="CW270" />
+    </com.android.share.camera.view.VerticalSeekBarWrapper>
+</RelativeLayout>

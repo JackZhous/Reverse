@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/paopao_top_page_more_menus" android:layout_width="135.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/rl_pop_item1" android:layout_width="wrap_content" android:layout_height="40.0dip" layout="@layout/paopao_top_list_title_more_pop_item" />
+    <include android:id="@id/rl_pop_item2" android:layout_width="wrap_content" android:layout_height="40.0dip" layout="@layout/paopao_top_list_title_more_pop_item" />
+    <include android:id="@id/rl_pop_item3" android:layout_width="wrap_content" android:layout_height="40.0dip" layout="@layout/paopao_top_list_title_more_pop_item" />
+    <include android:id="@id/rl_pop_item4" android:layout_width="wrap_content" android:layout_height="40.0dip" layout="@layout/paopao_top_list_title_more_pop_item" />
+    <include android:id="@id/rl_pop_item5" android:layout_width="wrap_content" android:layout_height="40.0dip" layout="@layout/paopao_top_list_title_more_pop_item" />
+</LinearLayout>

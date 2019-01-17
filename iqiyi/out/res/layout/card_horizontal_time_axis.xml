@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" style="@style/CardModelBase"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/firstTime" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/unit_hori_time_axis" />
+    <include android:id="@id/secondTime" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/unit_hori_time_axis" />
+    <include android:id="@id/thirdTime" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/unit_hori_time_axis" />
+</LinearLayout>

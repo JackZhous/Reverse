@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="20.0dip" android:layout_marginBottom="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0dip" android:textColor="#ff666666" android:gravity="center" android:id="@id/pk_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/pk_layout" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="15.0dip" android:layout_below="@id/pk_title">
+        <LinearLayout android:id="@id/leftbg" android:background="@drawable/card_v2_pk_left_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@id/left" android:paddingLeft="25.0dip" android:paddingRight="30.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="20.0dip" android:maxLines="2" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/rightbg" android:background="@drawable/card_v2_pk_right_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@id/right" android:paddingLeft="30.0dip" android:paddingRight="25.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:maxLines="2" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/pk_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/pk_title">
+        <LinearLayout android:id="@id/result" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="left" android:id="@id/left_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="18.0dip" android:textColor="#ffff6600" android:layout_gravity="center_vertical" android:id="@id/left_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="12.0dip" android:textColor="#ffff6700" android:ellipsize="end" android:gravity="left" android:layout_gravity="center_vertical" android:id="@id/left_text" android:layout_width="110.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:maxLines="2" />
+            </LinearLayout>
+            <LinearLayout android:gravity="right" android:id="@id/right_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="12.0dip" android:textColor="#ff0bbe06" android:ellipsize="end" android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/right_text" android:layout_width="110.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:maxLines="2" />
+                <TextView android:textSize="18.0dip" android:textColor="#ff0bbe06" android:layout_gravity="center_vertical" android:id="@id/right_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@id/result_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/result">
+            <ImageView android:background="@drawable/card_v2_pk_left_circle" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="-2.0dip" />
+            <ImageView android:id="@id/left_vote" android:background="@drawable/card_v2_pk_select_icon" android:visibility="gone" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="-13.0dip" android:layout_marginTop="5.0dip" />
+            <ProgressBar android:id="@id/left_progressBar" android:layout_width="0.0dip" android:layout_height="5.0dip" android:max="100" android:progress="100" android:progressDrawable="@drawable/card_v2_pk_left_progress_bar" android:layout_weight="1.0" style="?android:attr/progressBarStyleHorizontal" />
+            <ProgressBar android:id="@id/right_progressBar" android:layout_width="0.0dip" android:layout_height="5.0dip" android:max="100" android:progress="100" android:progressDrawable="@drawable/card_v2_pk_right_progress_bar" android:layout_weight="1.0" style="?android:attr/progressBarStyleHorizontal" />
+            <ImageView android:background="@drawable/card_v2_pk_right_circle" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="-2.0dip" android:layout_marginTop="5.0dip" />
+            <ImageView android:id="@id/right_vote" android:background="@drawable/card_v2_pk_select_icon" android:visibility="gone" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="-14.0dip" android:layout_marginTop="5.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/pk_ball" android:background="@drawable/card_v2_pk_anim_icon" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginTop="-30.0dip" android:layout_below="@id/pk_layout" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/pk_image_bg" android:background="@drawable/card_v2_pk_bg" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="-51.0dip" android:layout_below="@id/pk_layout" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="24.0dip" android:textColor="#ff999999" android:gravity="center" android:id="@id/vote_pk_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-45.0dip" android:text="PK" android:layout_below="@id/pk_layout" android:layout_centerHorizontal="true" />
+</RelativeLayout>

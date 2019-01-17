@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/top_time_layer" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:id="@id/msg_date" android:background="#ffcccccc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="2016-12-23" />
+        <TextView android:textSize="18.0sp" android:id="@id/msg_from_time" android:background="#ffcccccc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="00:00" />
+        <TextView android:textSize="18.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="--" />
+        <TextView android:textSize="18.0sp" android:id="@id/msg_to_time" android:background="#ffcccccc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="23:59" />
+        <Spinner android:entries="@array/msg_actions" android:id="@id/msg_action_selector" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:spinnerMode="dropdown" />
+    </LinearLayout>
+    <ListView android:id="@id/debug_msg_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_below="@id/query_btn" />
+    <Button android:id="@id/query_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查询" android:layout_below="@id/top_time_layer" android:layout_centerHorizontal="true" />
+</RelativeLayout>

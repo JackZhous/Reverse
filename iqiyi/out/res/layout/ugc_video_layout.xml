@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_view" android:background="#ffe7e7e7" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/phoneTitleLayout" style="@style/top_base_item">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/title_back" android:background="@drawable/phone_account_back_bg" style="@style/top_title_item" />
+        <TextView android:id="@id/phoneUgcTitle" android:text="@string/ugc_feed_videos_title" style="@style/top_title" />
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/phoneUgcDelete" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="2.0dip" android:src="@drawable/top_title_offline_delete_button" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/emptyLaout" android:background="#ffe7e7e7" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phoneTitleLayout">
+        <RelativeLayout android:id="@id/listView_layout" android:background="#ffe7e7e7" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <org.qiyi.basecore.widget.ptr.widget.PtrSimpleListView android:id="@id/ugc_my_base_listview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/delete_layout" />
+            <include android:id="@id/delete_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/phone_bottom_delete" />
+        </RelativeLayout>
+        <TextView android:textSize="14.0dip" android:textColor="#ff000000" android:gravity="center" android:id="@id/empty_textView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawableTop="@drawable/phone_upload_video_icon" android:layout_centerInParent="true" />
+        <RelativeLayout android:id="@id/empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/networkErrorView" layout="@layout/phone_load_data_exception" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

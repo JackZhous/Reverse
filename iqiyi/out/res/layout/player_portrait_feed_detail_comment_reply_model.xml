@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/comment_reply_root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="#fff7f7f7" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="57.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="10.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="#ff999999" android:id="@id/reply_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/reply_floor" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff666666" android:id="@id/reply_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_below="@id/reply_title" android:layout_alignLeft="@id/reply_title" android:lineSpacingExtra="4.0dip" />
+        <TextView android:textColor="@color/voice_time_color" android:gravity="center_vertical" android:id="@id/voice_time" android:background="@drawable/portrait_feed_voice_bg" android:paddingLeft="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="32.0dip" android:layout_marginTop="6.0dip" android:drawableLeft="@drawable/card_sound_item_volume_1" android:drawablePadding="2.0dip" android:layout_below="@id/reply_title" android:layout_alignLeft="@id/reply_title" />
+        <TextView android:textSize="12.0dip" android:textColor="#ff999999" android:id="@id/reply_floor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

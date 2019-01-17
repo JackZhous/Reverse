@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff8f8f8" android:layout_width="200.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/poster" android:layout_width="200.0dip" android:layout_height="113.0dip" android:scaleType="centerCrop" fresco:placeholderImage="@drawable/df_2" fresco:placeholderImageScaleType="fitXY" />
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/video_ico" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="26.0dip" android:src="@drawable/search_video_ico" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/color_meta_title" android:id="@id/txt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="12.0dip" android:maxLines="2" android:layout_below="@id/poster" android:lineSpacingExtra="1.0dip" />
+    <TextView android:textSize="11.0sp" android:textColor="@color/color_meta_sub_title" android:id="@id/txt_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginBottom="8.0dip" android:maxLines="1" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="11.0sp" android:textColor="@color/color_meta_sub_title" android:id="@id/txt_res" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginBottom="8.0dip" android:maxLines="1" android:layout_toRightOf="@id/txt_date" android:layout_alignParentBottom="true" />
+</RelativeLayout>

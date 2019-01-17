@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/flMain" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="bottom|center|right" android:id="@id/fl_main_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip">
+        <ImageView android:layout_gravity="bottom|center|right" android:id="@id/ivCollapse" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="234.0dip" android:layout_marginBottom="4.0dip" android:src="@drawable/pp_circle_task_float_collapse_icon" />
+        <RelativeLayout android:layout_gravity="center|right" android:id="@id/rlTaskContent" android:background="@color/pp_color_ffffff" android:layout_width="235.0dip" android:layout_height="439.0dip" />
+        <include android:layout_gravity="center|right" android:id="@id/layoutNoNetwork" android:visibility="gone" android:layout_width="235.0dip" android:layout_height="439.0dip" layout="@layout/pp_no_network_nocashe_warning_ll" />
+        <include android:layout_gravity="center|right" android:id="@id/layoutFail" android:visibility="gone" android:layout_width="235.0dip" android:layout_height="439.0dip" layout="@layout/pp_layout_fetch_data_fail" />
+        <include android:layout_gravity="center|right" android:id="@id/layoutLoading" android:visibility="gone" android:layout_width="235.0dip" android:layout_height="439.0dip" layout="@layout/pp_layout_fetch_data_loading" />
+    </FrameLayout>
+</FrameLayout>

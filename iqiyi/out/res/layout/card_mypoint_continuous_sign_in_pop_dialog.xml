@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout1" android:background="@drawable/card_my_point_dialog_shape_bg" android:layout_width="270.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="15.0dip" android:textColor="#ff333333" android:id="@id/meta1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="79.0dip" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/img2" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+                <TextView android:textSize="19.0dip" android:textColor="#ffff7e00" android:id="@id/meta2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView android:textSize="13.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/meta3" android:background="@drawable/continuous_sign_in_pop_tv_bg" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginTop="19.0dip" />
+        </LinearLayout>
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/title_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/layout1" android:layout_centerHorizontal="true" android:translationY="52.0dip" />
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/img_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:src="@drawable/my_point_cancel" android:layout_below="@id/layout1" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

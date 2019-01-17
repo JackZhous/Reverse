@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:orientation="vertical" android:id="@id/rl_punch" android:background="@drawable/vip_punch_dialog_bg" android:paddingTop="60.0dip" android:paddingBottom="40.0dip" android:layout_width="270.0dip" android:layout_height="300.0dip" android:layout_centerInParent="true">
+            <TextView android:textSize="17.0dip" android:textColor="@color/vip_punch_dialog_title_color" android:id="@id/tv_punch_dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="15.0dip" android:textColor="@color/vip_punch_dialog_text_color" android:id="@id/tv_punch_dialog_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:layout_below="@id/tv_punch_dialog_title" />
+            <Button android:textSize="17.0dip" android:textColor="@color/white" android:id="@id/bt_punch" android:background="@drawable/vip_punch_dialog_bt" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginRight="40.0dip" android:layout_alignParentBottom="true" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/vip_punch_dialog_warn_color" android:id="@id/tv_punch_dialog_warn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="30.0dip" android:layout_above="@id/bt_punch" />
+        </RelativeLayout>
+        <org.qiyi.basecore.widget.IconViewClose android:id="@id/iv_dismiss" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="-20.0dip" android:layout_marginBottom="-11.0dip" android:layout_toRightOf="@id/rl_punch" android:layout_above="@id/rl_punch" app:iconStrokeWidth="1.5dip" app:iconPadding="18.0dip" app:lineColor="#ffffffff" app:circleBg="true" app:circleColor="#ff14b18e" app:circlePadding="11.0dip" />
+    </RelativeLayout>
+</RelativeLayout>

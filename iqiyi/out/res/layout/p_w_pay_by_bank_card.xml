@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/p_top_transparent_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="11.0" />
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="19.0">
+        <RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/phoneTopBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/p_dimen_7" android:src="@drawable/p_title_bar_arrow_black" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/p_dimen_18" android:textStyle="bold" android:textColor="@color/p_color_333333" android:id="@id/phoneTitle" android:paddingTop="@dimen/p_dimen_15" android:paddingBottom="@dimen/p_dimen_15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p_w_input_pwd" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <View android:background="@color/p_color_f2f2f2" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_0.5" />
+        <RelativeLayout android:id="@id/p_w_pay_by_bank_card_p2" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_50">
+            <ImageView android:id="@id/p_w_pay_by_bank_card_icon" android:layout_width="@dimen/p_dimen_20" android:layout_height="@dimen/p_dimen_20" android:layout_marginLeft="@dimen/p_dimen_10" android:src="@drawable/p_w_default_bank_card_icon" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/p_dimen_16" android:textColor="@color/p_color_333333" android:id="@id/p_w_pay_by_bank_card_name" android:paddingLeft="@dimen/p_dimen_11" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/p_w_pay_by_bank_card_arrow" android:layout_toRightOf="@id/p_w_pay_by_bank_card_icon" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/p_dimen_13" android:textColor="@color/p_color_999999" android:id="@id/p_w_pay_by_bank_card_pro_info" android:paddingRight="@dimen/p_dimen_15" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/p_w_pay_by_bank_card_arrow" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/p_w_pay_by_bank_card_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/p_dimen_10" android:src="@drawable/p_arrow_style1" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/p_w_gifts_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/p_dimen_10">
+            <ImageView android:layout_width="@dimen/p_dimen_20" android:layout_height="@dimen/p_dimen_20" android:src="@drawable/p_w_default_bank_card_icon" />
+            <TextView android:textSize="@dimen/p_dimen_10" android:textColor="@color/p_color_FF7E00" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/p_w_gifts_tv" android:paddingLeft="@dimen/p_dimen_11" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxLines="1" />
+        </LinearLayout>
+        <View android:background="@color/p_color_f2f2f2" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_0.5" android:layout_marginLeft="@dimen/p_dimen_10" android:layout_marginRight="@dimen/p_dimen_10" />
+        <RelativeLayout android:id="@id/set_pay_pwd_tip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/p_dimen_15" android:textColor="@color/p_color_999999" android:gravity="center" android:id="@id/tip_text" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_150" android:layout_marginLeft="@dimen/p_dimen_30" android:layout_marginRight="@dimen/p_dimen_30" android:text="@string/p_w_set_pwd_tip" android:lineSpacingExtra="@dimen/p_dimen_8" />
+            <TextView android:textSize="@dimen/p_dimen_15" android:textColor="@color/p_color_ffffff" android:gravity="center" android:id="@id/set_pwd_btn" android:background="@drawable/p_set_pay_pwd_btn_bg" android:layout_width="@dimen/p_dimen_303" android:layout_height="@dimen/p_dimen_45" android:text="@string/p_w_set_pwd_tip_btn" android:layout_below="@id/tip_text" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/input_pwd_layout" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:id="@id/p_w_pay_by_bank_card_p4" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_50" android:layout_marginLeft="@dimen/p_dimen_35" android:layout_marginTop="@dimen/p_dimen_10" android:layout_marginRight="@dimen/p_dimen_35">
+                <include layout="@layout/p_w_keyboard_pwd_layout" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/p_dimen_14" android:textColor="@color/p_color_FF7E00" android:id="@id/p_w_pay_by_bank_card_forget" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/p_dimen_35" android:text="@string/p_w_forget_pwd" android:layout_below="@id/p_w_pay_by_bank_card_p4" android:layout_alignParentRight="true" />
+            <include layout="@layout/p_w_loading_layout" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

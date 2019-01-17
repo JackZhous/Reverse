@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/loading_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="#ff000000" android:id="@id/tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/net_busy" android:layout_centerInParent="true" android:layout_centerHorizontal="true" android:layout_alignWithParentIfMissing="true" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:layout_width="@dimen/player_20" android:layout_height="@dimen/player_20" android:indeterminateDrawable="@drawable/qiyi_sdk_player_loading_image" android:layout_toLeftOf="@id/tips" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/tips_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_net_retry" android:layout_above="@id/tips" android:layout_centerInParent="true" />
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/player_share_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="#ff2e2e2e" android:layout_width="350.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="15.0dip" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_sharedia_title" android:layout_width="wrap_content" android:layout_height="50.0dip" />
+        <View android:background="#ff3a3a3a" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_alignTop="@id/exitlayout" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_sharedia_cancel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="取消" android:layout_weight="1.0" />
+            <View android:gravity="center" android:background="#ff3a3a3a" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <TextView android:textSize="16.0dip" android:textColor="#ff85bf13" android:gravity="center" android:id="@id/tv_sharedia_do" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="升级" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

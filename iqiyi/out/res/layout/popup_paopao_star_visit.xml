@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/paopao_star_visit_image" android:layout_width="240.0dip" android:layout_height="125.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="4.0dip" android:layout_alignParentRight="true" />
+    <org.qiyi.basecore.widget.IconViewClose android:id="@id/paopao_star_visit_close" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginTop="31.0dip" android:layout_marginRight="8.0dip" android:layout_below="@id/v_main" android:layout_alignParentRight="true" app:iconStrokeWidth="1.1999817dip" app:iconPadding="8.0dip" app:lineColor="#ffefefef" app:circleBg="true" app:circleColor="#ff333333" app:circleStrokeColor="#ffb3b0aa" app:circleStrokeWidth="1.5dip" app:circlePadding="1.0dip" />
+</RelativeLayout>

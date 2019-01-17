@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/image" android:background="@drawable/one_row_one_big_image_default" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+    <TextView android:id="@id/tv_tl" android:layout_alignLeft="@id/image" android:layout_alignTop="@id/image" style="@style/MarkTextStyle" />
+    <TextView android:id="@id/tv_tr" android:layout_alignTop="@id/image" android:layout_alignRight="@id/image" style="@style/MarkTextStyle" />
+    <TextView android:id="@id/tv_bl" android:layout_alignLeft="@id/image" android:layout_alignBottom="@id/image" style="@style/MarkTextStyle" />
+    <TextView android:id="@id/tv_br" android:layout_alignRight="@id/image" android:layout_alignBottom="@id/image" style="@style/MarkTextStyle" />
+</RelativeLayout>

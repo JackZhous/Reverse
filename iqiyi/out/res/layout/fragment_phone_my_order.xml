@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.PagerSlidingTabStrip android:id="@id/my_order_main_tabs" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_below="@id/phoneTitleLayout" app:pstsIndicatorColor="@color/my_order_tab_orange" app:pstsDividerColor="#00000000" app:pstsIndicatorHeight="3.0dip" app:pstsUnderlineHeight="0.0px" app:pstsTabPaddingLeftRight="15.0dip" app:pstsShouldExpand="true" app:pstsScrollToCenter="true" />
+    <View android:id="@id/my_order_main_tabs_split_line" android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/my_order_main_tabs" />
+    <android.support.v4.view.ViewPager android:id="@id/my_order_main_vp_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/my_order_main_tabs_split_line" />
+    <include android:id="@id/my_order_loading_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phoneTitleLayout" layout="@layout/lab_footer" />
+    <include android:id="@id/my_order_empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phoneTitleLayout" layout="@layout/phone_load_data_exception" />
+</RelativeLayout>

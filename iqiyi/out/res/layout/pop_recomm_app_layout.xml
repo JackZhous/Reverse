@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/round_rect_white_bg" android:layout_width="270.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <org.qiyi.basecore.widget.IconViewClose android:id="@id/phone_download_cancel_btn" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" app:iconStrokeWidth="1.5dip" app:iconPadding="10.0dip" app:lineColor="#ff666666" />
+        <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:layout_marginBottom="14.0dip" android:text="@string/pop_recommend_app_title" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <org.qiyi.basecore.widget.QiyiDraweeView android:layout_gravity="center" android:id="@id/phone_content_image" android:layout_width="258.0dip" android:layout_height="145.0dip" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="22.0dip" android:src="@drawable/card_popup_poster_default" android:scaleType="centerCrop" />
+    <View android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="18.0dip" android:textColor="#ff0bbe06" android:gravity="center" android:id="@id/phone_download_ok_btn" android:clickable="true" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/currently_download" />
+</LinearLayout>

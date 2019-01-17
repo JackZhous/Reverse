@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:color="@color/player_portrait_episode_viptext" />
+    <item android:state_focused="true" android:color="@color/player_portrait_episode_viptext" />
+    <item android:state_selected="true" android:color="@color/player_portrait_episode_viptext" />
+    <item android:color="@color/player_episode_text_color_666666" />
+</selector>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/topLine" android:background="@color/ppc_color_e7e7e7" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <com.iqiyi.paopao.middlecommon.ui.view.TabLayout.CommonTabLayout android:id="@id/llMainTab" android:paddingLeft="15.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_alignParentTop="true" app:tl_indicator_color="#ff0bbe06" app:tl_indicator_height="3.0dip" app:tl_indicator_margin_bottom="2.0dip" app:tl_indicator_width="12.0dip" app:tl_tab_padding="15.0dip" app:tl_tab_space_equal="false" app:tl_textSelectColor="#ff0bbe06" app:tl_textUnselectColor="@color/pp_color_333333" app:tl_textsize="14.0sp" app:tl_iconVisible="false" />
+    <com.iqiyi.paopao.base.views.PPViewPager android:id="@id/albumpagers" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/llMainTab" />
+</RelativeLayout>

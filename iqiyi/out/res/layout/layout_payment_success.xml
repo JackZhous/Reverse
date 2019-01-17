@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@drawable/reward_success_bg" android:layout_width="290.0dip" android:layout_height="200.0dip" android:layout_centerInParent="true">
+        <TextView android:textSize="17.0sp" android:textColor="#ffff6000" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="15.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/btn_ok" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/i_know" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <View android:background="#ffd4d4d4" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_above="@id/btn_ok" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffff6000" android:gravity="center" android:id="@id/rankInfo" android:background="@drawable/shape_orange_round_15" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="17.0dip" android:maxLines="1" android:drawableRight="@drawable/arrow_right_orange" android:drawablePadding="8.0dip" android:layout_above="@id/btn_ok" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/words" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/rankInfo" android:layout_below="@id/title" />
+    </RelativeLayout>
+</RelativeLayout>

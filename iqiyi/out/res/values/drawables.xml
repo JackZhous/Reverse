@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="action_over_bg">#ff202020</item>
+    <item type="drawable" name="color_login_grey">#ffc8c8c8</item>
+    <item type="drawable" name="default_empty_drawable_transparent">#00000000</item>
+    <item type="drawable" name="gallerytips_background">#60000000</item>
+    <item type="drawable" name="notification_template_icon_bg">#3333b5e5</item>
+    <item type="drawable" name="notification_template_icon_low_bg">#0cffffff</item>
+    <item type="drawable" name="orange_line">#ffef8100</item>
+    <item type="drawable" name="package_icon_1">@drawable/qiyi_icon</item>
+    <item type="drawable" name="phone_download_progress_bg">#ffdddddd</item>
+    <item type="drawable" name="player_danmaku_setting_font_normal">@color/player_text_color_666666</item>
+    <item type="drawable" name="player_danmaku_setting_font_selected">@color/player_common_green</item>
+    <item type="drawable" name="player_danmaku_setting_text_disabled">@color/player_text_color_666666</item>
+    <item type="drawable" name="player_danmaku_setting_text_enabled">@color/color_white</item>
+    <item type="drawable" name="player_danmaku_setting_text_pressed">@color/player_common_green</item>
+    <item type="drawable" name="player_module_spitslot_category_normal">#fff4f5f6</item>
+    <item type="drawable" name="player_module_spitslot_category_select">#ffffffff</item>
+    <item type="drawable" name="player_module_spitslot_character_normal">#ffffffff</item>
+    <item type="drawable" name="player_module_spitslot_character_selected">#ffeeeeee</item>
+    <item type="drawable" name="player_module_spitslot_color_transparent">#00000000</item>
+    <item type="drawable" name="pp_female">@drawable/pp_icon_group_gender_female</item>
+    <item type="drawable" name="pp_male">@drawable/pp_icon_group_gender_male</item>
+    <item type="drawable" name="psdk_color_login_grey">#ffc8c8c8</item>
+    <item type="drawable" name="qqappwall_backgroud">#00000000</item>
+    <item type="drawable" name="screen_background_black">#ff000000</item>
+    <item type="drawable" name="translucent">#00000000</item>
+    <item type="drawable" name="translucent_background">#e0000000</item>
+    <item type="drawable" name="transparent_background">#00000000</item>
+</resources>

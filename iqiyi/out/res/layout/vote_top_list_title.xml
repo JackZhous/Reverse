@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/phoneTitleLayout" android:background="@color/white" style="@style/top_base_item"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/phone_back_img" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@drawable/back_selector" android:layout_centerVertical="true" />
+    <TextView android:textColor="@color/black" android:id="@id/phoneTitle" android:layout_height="44.0dip" style="@style/top_title" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <TextView android:textSize="13.0dip" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_vote_rule" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_toLeftOf="@id/iv_page_share" android:layout_centerVertical="true" />
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/iv_page_share" android:visibility="visible" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="9.0dip" android:src="@drawable/share_common" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </LinearLayout>
+</RelativeLayout>

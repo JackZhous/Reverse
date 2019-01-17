@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/qixiu_bg" android:paddingLeft="@dimen/card_padding_horizontal" android:paddingRight="@dimen/card_padding_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/poster_layout_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:layout_weight="1.0" layout="@layout/unit_hori_image_top_text_bottom_qx" />
+    <include android:id="@id/poster_layout_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_weight="1.0" layout="@layout/unit_hori_image_top_text_bottom_qx" />
+</LinearLayout>

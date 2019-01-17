@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/msg_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/img1_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/img1" android:layout_width="wrap_content" android:layout_height="wrap_content" fresco:pressedStateOverlayImage="@color/card_poster_mask_black_alpha_40" />
+        </RelativeLayout>
+        <org.qiyi.basecard.common.widget.ButtonView android:id="@id/button1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/button1" android:layout_toRightOf="@id/img1_layout">
+            <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/img2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+            <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/img2" android:layout_alignParentLeft="true" />
+            <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/img2" android:layout_below="@id/meta1" android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

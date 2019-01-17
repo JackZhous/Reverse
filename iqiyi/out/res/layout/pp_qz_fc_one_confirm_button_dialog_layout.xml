@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/root_layout" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dip" android:textColor="@color/color_333333" android:gravity="center" android:id="@id/dialog_title" android:background="@drawable/pp_text_bg_top_round_corner" android:layout_width="fill_parent" android:layout_height="84.0dip" android:text="title" />
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/content_container" android:background="@color/pp_color_ffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:background="@color/color_e6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="18.0dip" android:textColor="@color/pp_color_00be06" android:gravity="center" android:id="@id/button" android:background="@drawable/pp_sw_dialog_confirm_btn_round_corner" android:layout_width="270.0dip" android:layout_height="45.0dip" android:text="@string/pp_common_dialog_commit" />
+</LinearLayout>

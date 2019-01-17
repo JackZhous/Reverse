@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:gravity="center_vertical" android:id="@id/img1" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta1_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta2_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/meta1_layout" />
+    </LinearLayout>
+    <org.qiyi.basecard.common.widget.ButtonView android:gravity="center_vertical" android:id="@id/button1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:weightSum="1.0" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

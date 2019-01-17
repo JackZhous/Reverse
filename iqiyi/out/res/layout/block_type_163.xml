@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/img" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@id/img" android:layout_alignParentLeft="true" />
+    <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/img" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/meta2">
+        <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta3" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/meta3" />
+        <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

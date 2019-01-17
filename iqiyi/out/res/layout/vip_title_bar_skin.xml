@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@id/phoneTitleLayout_skin" style="@style/top_base_item"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/vip_title_layout_right" />
+    <RelativeLayout android:id="@id/user_avatar_layout" android:layout_width="37.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip" android:layout_centerVertical="true">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/user_avatar" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" app:placeholderImage="@drawable/vip_top_bar_avatar_default" app:roundAsCircle="true" />
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/vip_level" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="10.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/vip_top_bar_text_color_normal" android:gravity="center" android:id="@id/top_bar_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/phone_vip_top_bar_to_login" android:layout_toRightOf="@id/user_avatar_layout" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/top_bar_arrow" android:visibility="gone" android:layout_width="9.0dip" android:layout_height="16.0dip" android:layout_marginLeft="4.0dip" android:src="@drawable/vip_top_bar_arrow" android:layout_toRightOf="@id/top_bar_text" android:layout_centerVertical="true" />
+    <RelativeLayout android:id="@id/top_bar_button" android:background="@drawable/vip_top_bar_button_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_toRightOf="@id/top_bar_arrow" android:layout_centerVertical="true">
+        <TextView android:textSize="12.0sp" android:textColor="#ffc8a06a" android:gravity="center" android:id="@id/top_bar_button_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/phone_vip_top_bar_buy_vip" />
+    </RelativeLayout>
+</RelativeLayout>

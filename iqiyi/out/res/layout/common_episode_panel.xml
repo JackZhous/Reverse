@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.iqiyi.video.cardview.customview.PopuPanelRelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/titlebar" android:background="#ff191919" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <ImageView android:id="@id/back" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="3.0dip" android:src="@drawable/title_bar_back_new" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0dip" android:textColor="#ffffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="250.0dip" android:text="@string/player_episode" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <FrameLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/titlebar">
+        <FrameLayout android:id="@id/gridepisode" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <FrameLayout android:id="@id/listepisode" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include layout="@layout/player_common_loadingview" />
+    </FrameLayout>
+</org.iqiyi.video.cardview.customview.PopuPanelRelativeLayout>

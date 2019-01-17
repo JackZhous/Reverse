@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/pub_brand_divider" android:background="#ffe6e6e6" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:id="@id/pub_brand_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="12.0dip" android:src="@drawable/pub_video_brand_region" />
+        <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="#ff333333" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="明星专辑" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/pub_brand_list_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" />
+</LinearLayout>

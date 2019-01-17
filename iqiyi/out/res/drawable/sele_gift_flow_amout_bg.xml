@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/dr_round_rect_orange" android:state_activated="true" />
+    <item android:drawable="@drawable/dr_round_rect_green_sl" />
+</selector>

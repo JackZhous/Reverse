@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="270.0dip" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/content_area" android:background="@drawable/corner_radius_10dp_white" android:layout_width="270.0dip" android:layout_height="wrap_content" android:layout_marginTop="85.0dip">
+            <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/p_color_333333" android:gravity="center" android:id="@id/content_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="22.0dip" android:layout_marginRight="18.0dip" android:layout_marginBottom="13.0dip" android:text="@string/p_qd_info_0" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="15.0dip" android:textColor="@color/p_color_333333" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginRight="18.0dip" android:layout_marginBottom="22.0dip" android:text="" android:layout_below="@id/content_title" android:lineSpacingExtra="9.0dip" />
+            <View android:id="@id/div1" android:background="@color/p_color_e6e6e6" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/content" />
+            <View android:id="@id/div2" android:background="@color/p_color_e6e6e6" android:layout_width="0.5dip" android:layout_height="45.0dip" android:layout_below="@id/div1" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="18.0dip" android:textColor="@color/p_color_c8a06a" android:gravity="center" android:id="@id/ok_button" android:layout_width="135.0dip" android:layout_height="45.0dip" android:text="@string/p_confirm_delete" android:layout_below="@id/div1" />
+            <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/p_color_c8a06a" android:gravity="center" android:id="@id/no_button" android:layout_width="135.0dip" android:layout_height="45.0dip" android:text="@string/cancel_month_no_cancel" android:layout_toRightOf="@id/ok_button" android:layout_below="@id/div1" />
+        </RelativeLayout>
+        <ImageView android:id="@id/xiaolu_icon" android:background="@drawable/cancel_monthly_cartoon_icon_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

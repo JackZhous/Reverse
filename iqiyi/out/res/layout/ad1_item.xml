@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clickable="true" android:longClickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/phoneAdAvator" android:background="@drawable/phone_qy_ad_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="60.0dip" android:layout_toRightOf="@id/phoneAdAvator" android:layout_centerVertical="true">
+        <TextView android:textSize="18.0dip" android:textColor="#ff555555" android:ellipsize="end" android:id="@id/phoneAdAdapterListedTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="title" android:singleLine="true" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff777777" android:ellipsize="end" android:id="@id/phoneAdAdapterListedDescInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="desc" android:singleLine="true" android:layout_below="@id/phoneAdAdapterListedTitle" />
+    </RelativeLayout>
+    <TextView android:textSize="10.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/phoneAdapterDownload" android:background="@drawable/ugc_feed_unfollowed_bg" android:layout_width="45.0dip" android:layout_height="25.0dip" android:layout_marginRight="5.0dip" android:text="安装" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+</RelativeLayout>

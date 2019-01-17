@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/black_alpha_86" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/CardModelBase"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/image" android:layout_width="50.0dip" android:layout_height="50.0dip" android:scaleType="centerCrop" fresco:viewAspectRatio="1.0" fresco:placeholderImage="@drawable/face_icon_xlarge" fresco:placeholderImageScaleType="fitXY" fresco:roundAsCircle="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toLeftOf="@id/button" android:layout_toRightOf="@id/image" android:layout_centerInParent="true">
+        <TextView android:textColor="@color/white" android:id="@id/meta1" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MetaTitle" />
+        <TextView android:textColor="#ffa3a3a3" android:id="@id/meta2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" style="@style/MetaSubTitle" />
+    </LinearLayout>
+    <org.qiyi.basecore.widget.OuterFrameTextView android:textSize="@dimen/card_text_size_13dp" android:textColor="#ffff7b23" android:id="@id/button" android:layout_width="60.0dip" android:layout_height="28.0dip" android:text="打榜" android:layout_alignParentRight="true" android:layout_centerInParent="true" fresco:outer_frame="round_padding" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/phone_title_bar" android:background="#ff191919" android:layout_width="fill_parent" android:layout_height="41.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/phone_title_logo" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="3.0dip" android:src="@drawable/title_bar_back_new" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <FrameLayout android:id="@id/phone_title_content_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="18.0dip" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/phone_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="280.0dip" android:maxLines="1" android:layout_centerInParent="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/phone_title_menu_container" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:id="@id/phone_title_divider" android:background="#ffe7e7e7" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

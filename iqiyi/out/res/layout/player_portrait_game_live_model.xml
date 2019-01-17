@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:background="@drawable/player_game_live_bg" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.iqiyi.video.image.PlayerDraweView android:id="@id/live_icon" android:layout_width="20.0dip" android:layout_height="12.0dip" android:src="@drawable/game_live_now" android:scaleType="fitXY" android:layout_centerVertical="true" />
+    <TextView android:textSize="12.0sp" android:textColor="#ff0bbe06" android:ellipsize="end" android:id="@id/live_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:text="正在直播：小时光的程咬金" android:maxEms="22" android:singleLine="true" android:layout_toRightOf="@id/live_icon" android:layout_centerVertical="true" />
+    <org.iqiyi.video.image.PlayerDraweView android:id="@id/enter_arrow" android:layout_width="6.0dip" android:layout_height="9.0dip" android:layout_marginLeft="9.0dip" android:src="@drawable/game_live_enter" android:layout_toRightOf="@id/live_content" android:layout_centerVertical="true" />
+</RelativeLayout>

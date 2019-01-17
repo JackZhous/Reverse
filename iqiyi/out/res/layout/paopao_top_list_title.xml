@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/phoneTitleLayout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/white" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/fl_expandtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/black" android:layout_gravity="center" android:id="@id/phoneTitle" android:layout_centerInParent="true" style="@style/top_title" />
+        </FrameLayout>
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/phone_back_img" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/back_selector" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0dip" android:textStyle="bold" android:id="@id/tv_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/phone_back_img" android:layout_centerVertical="true" style="@style/MetaTitle" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_prop" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_toLeftOf="@id/ll_more" android:layout_centerVertical="true">
+            <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/im_prop" android:visibility="visible" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ic_prop" />
+            <TextView android:textSize="10.0dip" android:gravity="center" android:id="@id/tv_prop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/prop" android:layout_below="@id/ic_prop" style="@style/MetaTitle" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_more" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/iv_more" android:visibility="visible" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/ic_more" android:scaleType="fitCenter" />
+            <TextView android:textSize="10.0dip" android:gravity="center" android:id="@id/tv_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more" android:includeFontPadding="false" android:layout_below="@id/ic_prop" style="@style/MetaTitle" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

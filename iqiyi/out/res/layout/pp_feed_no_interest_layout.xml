@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:flowlayout="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/pp_content_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="13.0dip" android:textColor="@color/color_999999" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="选择不感兴趣的原因(多选)" android:includeFontPadding="false" />
+        <com.iqiyi.paopao.middlecommon.ui.view.flowLayout.CenterFlowLayout android:id="@id/pp_no_interest_flowlayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="15.0dip" />
+        <View android:background="@color/pp_color_e7e7e7" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <TextView android:textSize="18.0dip" android:textColor="@color/color_0bbe06" android:gravity="center" android:id="@id/pp_no_interest_confirm" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="确定" />
+    </LinearLayout>
+</RelativeLayout>

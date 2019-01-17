@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:background="#ffffffff" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignWithParentIfMissing="true">
+            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/player_module_spitslot_send_tx" android:background="@drawable/livechat_message_send_bt" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="50.0dip" android:layout_height="35.0dip" android:layout_marginRight="6.0dip" android:text="发送" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <com.iqiyi.qyplayercardview.view.PortraitCommentEditText android:textSize="16.0sp" android:textColor="@color/player_chatroom_input" android:textColorHint="#ff999999" android:id="@id/player_module_spitslot_et" android:background="@drawable/livechat_message_edit_text_bg" android:paddingLeft="17.5dip" android:paddingRight="35.0dip" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="5.5dip" android:hint="@string/spitslot_input_chatroom_hint" android:lines="1" android:layout_toLeftOf="@id/player_module_spitslot_send_tx" android:layout_centerVertical="true" android:imeOptions="flagNoExtractUi|flagNoFullscreen" />
+            <TextView android:id="@id/player_module_spitslot_more" android:background="@drawable/player_module_chatroom_more_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_toLeftOf="@id/player_module_spitslot_send_tx" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/spitslot_setting_area" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="208.0dip" android:layout_alignParentBottom="true" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.Titlebar android:layout_width="fill_parent" android:layout_height="wrap_content" app:tb_title="@string/phone_get_tennis_vip_title" />
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginTop="30.0dip" android:src="@drawable/phone_tennis_vip_icon" />
+    <TextView android:textSize="18.0dip" android:textColor="#ff333333" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/phone_get_tennis_vip_info" />
+    <View android:layout_marginTop="23.0dip" style="@style/divideLine" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="53.0dip" android:layout_marginLeft="18.0dip" android:layout_marginRight="18.0dip">
+        <TextView android:textSize="15.0dip" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/phone_get_tennis_vip_nickname" />
+        <TextView android:textSize="15.0dip" android:textColor="#ff333333" android:gravity="right" android:layout_gravity="center|right" android:id="@id/vip_name" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View style="@style/divideLine" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="53.0dip" android:layout_marginLeft="18.0dip" android:layout_marginRight="18.0dip">
+        <TextView android:textSize="15.0dip" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/phone_get_tennis_vip_deadline" />
+        <TextView android:textSize="15.0dip" android:textColor="#ff333333" android:gravity="right" android:layout_gravity="center|right" android:id="@id/vip_deadline" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View style="@style/divideLine" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="53.0dip" android:layout_marginLeft="18.0dip" android:layout_marginRight="18.0dip">
+        <TextView android:textSize="15.0dip" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/phone_get_tennis_vip_type" />
+        <TextView android:textSize="15.0dip" android:textColor="#ff333333" android:gravity="right" android:layout_gravity="center|right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/phone_get_tennis_vip" />
+    </LinearLayout>
+    <View style="@style/divideLine" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginLeft="18.0dip" android:layout_marginRight="18.0dip">
+        <TextView android:textSize="15.0dip" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/phone_get_tennis_vip_phone_number" />
+        <TextView android:textSize="15.0dip" android:textColor="#ff333333" android:id="@id/vip_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_alignParentRight="true" />
+        <TextView android:textSize="12.0dip" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/phone_get_tennis_vip_hint" android:layout_below="@id/vip_phone" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View style="@style/divideLine" />
+    <TextView android:textSize="15.0dip" android:textColor="#ffffffff" android:gravity="center" android:background="@drawable/phone_get_tennis_vip_back_bg" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="24.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="24.0dip" android:text="@string/phone_get_tennis_vip_back" />
+    <TextView android:textSize="12.0dip" android:textColor="#ff00c13b" android:layout_gravity="center_horizontal" android:id="@id/vip_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="@string/phone_get_tennis_vip_tips" />
+</LinearLayout>

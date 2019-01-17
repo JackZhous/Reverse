@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="splash_ad_countdown_margin_top">40.0dip</dimen>
+    <dimen name="splash_ad_des_height">87.0dip</dimen>
+    <dimen name="splash_ad_des_padding_left">13.0dip</dimen>
+    <dimen name="splash_ad_des_padding_right">23.0dip</dimen>
+</resources>

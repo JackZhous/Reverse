@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.CircleLoadingView android:layout_width="20.0dip" android:layout_height="20.0dip" app:auto_animation="true" app:static_play="true" />
+    <TextView android:textSize="12.0dip" android:textColor="#ffafafaf" android:layout_gravity="center_vertical" android:id="@id/mainPlayBufferTxt2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/card_video_ready_to_play" />
+</LinearLayout>

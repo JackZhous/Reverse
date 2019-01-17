@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.iqiyi.video.android.bitmapfun.ui.RoundImageView android:background="@drawable/face_icon_large" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="0.5dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

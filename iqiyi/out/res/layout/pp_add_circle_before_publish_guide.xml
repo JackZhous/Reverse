@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/pp_add_circle_before_publish_guide_rl" android:layout_width="188.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.iqiyi.paopao.middlecommon.views.slimviews.SlimImageView android:id="@id/pp_add_circle_before_publish_guide_iv" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_centerHorizontal="true" app:slimViewSrc="pp_add_circle_before_publish_guide_bg" />
+    <ImageView android:id="@id/pp_add_circle_before_publish_close" android:layout_width="34.0dip" android:layout_height="34.0dip" android:layout_marginLeft="154.0dip" android:layout_marginTop="31.0dip" android:src="@drawable/pp_add_circle_before_publish_close" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/pp_add_circle_before_publish_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="61.0dip" android:text="@string/pp_qz_add_circle_before_publish" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/pp_add_circle_before_publish_add_tv" android:background="@drawable/pp_gc_recmd_circle_add_bg" android:layout_width="80.0dip" android:layout_height="30.0dip" android:layout_marginTop="7.0dip" android:text="@string/pp_qz_fc_details_add_circle" android:layout_below="@id/pp_add_circle_before_publish_description" android:layout_centerHorizontal="true" />
+</RelativeLayout>

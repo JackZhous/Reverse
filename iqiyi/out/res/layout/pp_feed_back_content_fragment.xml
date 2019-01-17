@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:windowSoftInputMode="adjustPan"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/pp_feed_back_help_online" layout="@layout/pp_item_list_feed_back_help_online" />
+    <View android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="7.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/pp_feed_back_content_webview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

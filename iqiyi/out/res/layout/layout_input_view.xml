@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/send_area" android:background="@android:color/transparent" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/bottom_half_part" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/send_layout" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <View android:background="#ffe7e7e7" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" />
+            <Button android:textSize="12.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/btn_send" android:background="@drawable/livechat_message_send_bt" android:visibility="visible" android:layout_width="50.0dip" android:layout_height="35.0dip" android:layout_marginRight="6.0dip" android:text="发送" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <ImageButton android:id="@id/gift_box" android:background="@drawable/gift_box" android:visibility="invisible" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="16.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <EditText android:textSize="16.0sp" android:textColor="#ff333333" android:textColorHint="#ff999999" android:id="@id/edit_content" android:background="@drawable/livechat_message_edit_text_bg" android:paddingLeft="17.5dip" android:paddingRight="34.0dip" android:focusable="true" android:longClickable="true" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="5.5dip" android:hint="@string/spitslot_input_chatroom_hint" android:cursorVisible="true" android:maxLength="21" android:layout_toLeftOf="@id/btn_send" android:layout_centerVertical="true" android:inputType="text" />
+            <FrameLayout android:id="@id/imagebtn_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_toLeftOf="@id/btn_send" android:layout_centerVertical="true">
+                <ImageButton android:id="@id/btn_emoji" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/player_module_chatroom_more" android:scaleType="fitXY" />
+                <ImageButton android:id="@id/btn_key_board" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/player_module_chatroom_input" android:scaleType="fitXY" />
+            </FrameLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="bottom" android:id="@id/layout_emoji_keyboard" android:background="#fffdfdfd" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="208.0dip" />
+    </LinearLayout>
+    <View android:id="@id/top_half_part" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_half_part" android:layout_alignParentTop="true" />
+    <ImageButton android:id="@id/prop_guidance" android:background="@drawable/prop_guidance" android:visibility="invisible" android:layout_width="210.0dip" android:layout_height="140.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

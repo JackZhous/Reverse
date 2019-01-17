@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="@dimen/pp_feed_detail_related_video_thumbnail_width" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/video_image_frame" android:layout_width="@dimen/pp_feed_detail_related_video_thumbnail_width" android:layout_height="@dimen/pp_feed_detail_related_video_thumbnail_height">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/video_image" android:layout_width="@dimen/pp_feed_detail_related_video_thumbnail_width" android:layout_height="@dimen/pp_feed_detail_related_video_thumbnail_height" />
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pp_video_player_play_btn" />
+        <ImageView android:background="@drawable/pp_detail_relatedvideos_bg" android:layout_width="@dimen/pp_feed_detail_related_video_thumbnail_width" android:layout_height="@dimen/pp_feed_detail_related_video_thumbnail_height" />
+    </FrameLayout>
+    <TextView android:textSize="10.0dip" android:textColor="@color/color_ffffff" android:id="@id/video_play_count" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1234.5万次播放" android:layout_alignLeft="@id/video_image_frame" android:layout_alignBottom="@id/video_image_frame" />
+    <TextView android:textSize="10.0dip" android:textColor="@color/color_ffffff" android:id="@id/video_play_during" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="02:17" android:layout_alignRight="@id/video_image_frame" android:layout_alignBottom="@id/video_image_frame" />
+    <TextView android:textSize="12.0dip" android:textColor="@color/color_ffffff" android:ellipsize="end" android:id="@id/video_title" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈" android:lines="1" android:includeFontPadding="false" android:layout_below="@id/video_image_frame" />
+</RelativeLayout>

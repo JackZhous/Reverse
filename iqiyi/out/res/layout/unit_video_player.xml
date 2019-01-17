@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center" android:id="@id/video_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/poster_layout" android:layout_alignTop="@id/poster_layout" android:layout_alignRight="@id/poster_layout" android:layout_alignBottom="@id/poster_layout" android:layout_centerInParent="true" />
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/poster_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:layout_gravity="center_horizontal" android:id="@id/poster" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" fresco:viewAspectRatio="1.333" fresco:placeholderImage="@drawable/phone_category_detail_rec_horizontal_big_default" fresco:placeholderImageScaleType="centerCrop" />
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignLeft="@id/poster" android:layout_alignTop="@id/poster" android:layout_alignRight="@id/poster" android:layout_alignBottom="@id/poster" layout="@layout/card_poster_mask" />
+    </RelativeLayout>
+    <org.qiyi.basecard.common.widget.ButtonView android:id="@id/btn_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" fresco:left_icon="@drawable/card_player_ic_play" fresco:left_icon_width="52.0dip" fresco:left_icon_height="52.0dip" />
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/video_loading_icon" android:visibility="gone" android:layout_width="52.0dip" android:layout_height="52.0dip" android:src="@drawable/card_video_player_loading" android:layout_centerInParent="true" />
+</RelativeLayout>

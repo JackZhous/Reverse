@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/qiyi_sdk_player_seekbar_ta_progress_drawable" />
+    <item android:drawable="@drawable/qiyi_sdk_player_seekbar_progress_drawable" />
+</selector>

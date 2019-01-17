@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/pub_prompt_layout" android:background="@drawable/pub_select_video_recommend_backgroud" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <TextView android:textColor="#ff999999" android:id="@id/pub_recommend_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="小泡提示: " android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <TextView android:textColor="#ff0bbe06" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="文明拍摄，尊重明星，从我做起" android:layout_toRightOf="@id/pub_recommend_title" />
+    </LinearLayout>
+    <Button android:id="@id/pp_publish_cancel_button" android:background="@drawable/pub_video_cancel_prompt" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

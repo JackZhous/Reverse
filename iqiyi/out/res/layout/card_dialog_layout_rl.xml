@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/card_dialog_bg" android:layout_width="270.0dip" android:layout_height="130.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dip" android:textColor="#ff424242" android:gravity="center" android:layout_gravity="center" android:id="@id/dialog_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" />
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/dialog_img" android:visibility="gone" android:layout_width="245.0dip" android:layout_height="283.0dip" android:layout_marginLeft="13.0dip" android:layout_marginTop="33.0dip" android:layout_marginRight="13.0dip" android:layout_marginBottom="33.0dip" android:src="@drawable/card_movie_push_tips" />
+    <TextView android:textSize="14.0dip" android:textColor="#ff333333" android:gravity="center" android:layout_gravity="center" android:id="@id/dialog_message" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_above="@id/ll_layout" android:layout_centerHorizontal="true" android:lineSpacingMultiplier="1.5" />
+    <LinearLayout android:layout_gravity="center" android:id="@id/ll_layout" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="16.0dip" android:textColor="#ff4a4a4a" android:gravity="center" android:id="@id/dialog_cancel" android:background="@drawable/card_dialog_left_button_bg" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/dialog_ok" android:background="@drawable/card_dialog_right_button_bg" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

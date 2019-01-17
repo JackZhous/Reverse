@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/mainLayout" android:background="@drawable/share_popup_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:id="@id/titleLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/phone_variety_font_size_24" android:textColor="#ffbebebe" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/noWonderfulRecommendedAlbum" android:layout_centerVertical="true" />
+            <org.qiyi.basecore.widget.IconViewClose android:id="@id/close" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_margin="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:iconStrokeWidth="2.0dip" app:iconPadding="7.0dip" app:lineColor="#cc8e8c8c" />
+        </RelativeLayout>
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/loadData" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="100.0dip" android:src="@drawable/phone_index_bg_no_data" android:layout_centerInParent="true" />
+        <TextView android:gravity="center" android:id="@id/noData" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/noWonderfulRecommendedAlbum" android:layout_centerInParent="true" />
+        <ListView android:textColor="@android:color/black" android:id="@id/list" android:focusable="true" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:listSelector="@drawable/wonderful_item_select" android:cacheColorHint="#00000000" android:divider="#1a000000" android:dividerHeight="1.0dip" android:layout_below="@id/titleLayout" />
+    </RelativeLayout>
+</RelativeLayout>

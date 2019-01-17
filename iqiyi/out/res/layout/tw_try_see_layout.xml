@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/trySeeTipLayout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0dip" android:textColor="@color/player_land_textcolor" android:ellipsize="end" android:id="@id/tipContent" android:paddingLeft="15.0dip" android:paddingTop="8.0dip" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:maxLines="1" android:layout_centerVertical="true" />
+    <Button android:textSize="13.0dip" android:textColor="#ffc8a06a" android:gravity="center" android:id="@id/login" android:background="#00ffffff" android:layout_width="70.0dip" android:layout_height="30.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="4.0dip" android:text="@string/player_login_righnow" android:layout_alignParentRight="true" />
+    <Button android:textSize="13.0dip" android:textColor="#ff0bbe60" android:gravity="center" android:id="@id/operation" android:background="#00ffffff" android:layout_width="70.0dip" android:layout_height="30.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="4.0dip" android:text="开通会员" android:layout_toLeftOf="@id/login" android:layout_alignWithParentIfMissing="true" />
+</RelativeLayout>

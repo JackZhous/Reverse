@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="270.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dip" android:textColor="#ff333333" android:gravity="center_horizontal" android:id="@id/my_vip_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="21.0dip" android:text="@string/my_vip_titile" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="13.0dip" android:textColor="#ff666666" android:id="@id/my_vip_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="24.0dip" android:text="@string/my_vip_content" android:layout_below="@id/my_vip_title" />
+    <TextView android:textSize="13.0dip" android:textColor="#ff666666" android:id="@id/my_vip_content_next" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="22.0dip" android:layout_marginRight="24.0dip" android:text="@string/my_vip_content_next" android:layout_below="@id/my_vip_content" />
+    <View android:id="@id/divider" android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="24.0dip" android:layout_below="@id/my_vip_content_next" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_below="@id/divider">
+        <TextView android:textSize="18.0dip" android:textColor="#ffc8a06a" android:gravity="center" android:id="@id/btnNegative" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/my_vip_cancel" android:layout_weight="1.0" />
+        <TextView android:textSize="18.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/btnPositive" android:background="#ffdab176" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/my_vip_renew" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

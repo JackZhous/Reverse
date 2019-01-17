@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta1_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" fresco:text_ellipsize="end" />
+        <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta2_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/meta1_layout" fresco:text_ellipsize="end" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/title">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/img1" android:layout_width="wrap_content" android:layout_height="wrap_content" fresco:pressedStateOverlayImage="@color/card_poster_mask_black_alpha_40" />
+        <org.qiyi.basecard.common.widget.ButtonView android:id="@id/button1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/img1" android:layout_alignTop="@id/img1" android:layout_alignRight="@id/img1">
+            <org.qiyi.basecard.common.widget.AutoIconSizeMetaView android:id="@id/meta3_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/msg_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/meta3_layout" android:layout_centerVertical="true">
+                <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta4_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta5_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.webkit.WebView android:id="@id/feed_web" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+    <TextView android:id="@id/loading_view" android:background="@drawable/player_feed_default_image_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="200.0dip" />
+</RelativeLayout>

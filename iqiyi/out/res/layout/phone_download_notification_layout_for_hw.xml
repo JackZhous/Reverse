@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/notification_layout" android:background="#ffffffff" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_cover" android:background="@drawable/phone_download_common_h_default" android:layout_width="106.0dip" android:layout_height="60.0dip" android:layout_alignParentTop="true" android:layout_centerVertical="true" />
+    <RelativeLayout android:id="@id/progress_layout" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/iv_logo" android:layout_toRightOf="@id/iv_cover" android:layout_alignTop="@id/iv_cover" android:layout_alignBottom="@id/iv_cover" android:layout_centerVertical="true">
+        <TextView android:textSize="14.0dip" android:textColor="#ff333333" android:ellipsize="end" android:id="@id/tv_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我是状态" android:singleLine="true" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff0bbe06" android:id="@id/tv_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="(70%)" android:singleLine="true" android:layout_toRightOf="@id/tv_status" />
+        <TextView android:textSize="12.0dip" android:textColor="#ff666666" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="我是标题" android:singleLine="true" android:layout_below="@id/tv_status" />
+        <ProgressBar android:id="@id/pb_progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="3.0dip" android:layout_marginBottom="3.0dip" android:progressDrawable="@drawable/phone_download_progress_bg_green" android:layout_alignParentBottom="true" style="?android:attr/progressBarStyleHorizontal" />
+    </RelativeLayout>
+    <ImageView android:id="@id/iv_logo" android:background="@drawable/qiyi_sdk_qiyi_icon" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginRight="3.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

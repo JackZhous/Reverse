@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/router" android:background="#f71b1b1c" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="-2.0dip" android:layout_marginRight="-2.0dip" android:text="TPLINK" android:layout_centerHorizontal="true" style="@style/DownloadRateRatioTextLand" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="pp_fanslevel_popupwindow_bottom_divider_space">16.0dip</dimen>
+    <dimen name="pp_fanslevel_popwindow_anim_images_height">200.0dip</dimen>
+    <dimen name="pp_fanslevel_popwindow_anim_images_width">200.0dip</dimen>
+    <dimen name="pp_fanslevel_popwindow_margin">25.0dip</dimen>
+    <dimen name="pp_fanslevel_popwindow_txt_layout_margin_bottom">16.0dip</dimen>
+    <dimen name="welcome_ads_banner_height">103.0dip</dimen>
+</resources>

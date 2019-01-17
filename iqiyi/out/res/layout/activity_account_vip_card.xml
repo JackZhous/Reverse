@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffe7e7e7" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/vip_card_btn_back" android:background="@drawable/vip_card_btn_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginTop="13.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:layout_toRightOf="@id/vip_card_btn_back" android:layout_centerInParent="true">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/iv_vipcard_bg" android:layout_width="510.0dip" android:layout_height="300.0dip" android:src="@drawable/shape_vip_cardbg_default" android:layout_centerInParent="true" />
+        <RelativeLayout android:paddingLeft="20.0dip" android:layout_width="510.0dip" android:layout_height="300.0dip" android:layout_centerInParent="true">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="23.0dip">
+                <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/iv_vipcard_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+                <TextView android:textSize="22.0dip" android:gravity="center" android:id="@id/tv_vipcard_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_toRightOf="@id/iv_vipcard_type" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/iv_vipcard_vcode" android:layout_width="110.0dip" android:layout_height="110.0dip" android:layout_marginLeft="15.0dip" android:layout_centerVertical="true" fresco:failureImage="@drawable/vip_card_vcode_fail" fresco:failureImageScaleType="fitCenter" />
+            <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/iv_vipcard_xufei" android:visibility="gone" android:layout_width="110.0dip" android:layout_height="33.0dip" android:layout_marginLeft="15.0dip" android:layout_marginBottom="30.0dip" android:src="@drawable/vip_card_btn_xufei" android:layout_alignParentBottom="true" />
+            <TextView android:textSize="16.0dip" android:textColor="#ff999999" android:gravity="center" android:id="@id/tv_vipcard_biz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginBottom="30.0dip" android:text="@string/phone_my_account_vip_card_biz" android:layout_toRightOf="@id/iv_vipcard_xufei" android:layout_alignTop="@id/iv_vipcard_xufei" android:layout_alignBottom="@id/iv_vipcard_xufei" android:layout_alignParentBottom="true" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_toRightOf="@id/iv_vipcard_vcode" android:layout_alignTop="@id/iv_vipcard_vcode" android:layout_alignBottom="@id/iv_vipcard_vcode">
+                <TextView android:textSize="18.0dip" android:ellipsize="end" android:gravity="center" android:id="@id/tv_vipcard_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxLines="1" android:maxEms="6" />
+                <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/iv_vipcard_level" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/tv_vipcard_name" />
+                <TextView android:textSize="14.0dip" android:textColor="#ff666666" android:gravity="center" android:id="@id/tv_vipcard_grow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+                <TextView android:textSize="14.0dip" android:textColor="#ff666666" android:gravity="center" android:id="@id/tv_vipcard_deadline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:layout_above="@id/tv_vipcard_grow" />
+                <TextView android:textSize="14.0dip" android:textColor="#ff666666" android:gravity="center" android:id="@id/tv_vipcard_birthday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:layout_above="@id/tv_vipcard_deadline" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

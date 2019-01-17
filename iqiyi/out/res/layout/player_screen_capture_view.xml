@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/capture_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/capture_pic_anchor" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <org.iqiyi.video.view.FitWindowsRelativeLayout android:id="@id/capture_video_count_time_anchor" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <org.iqiyi.video.view.FitWindowsRelativeLayout android:id="@id/capture_video_preview_anchor" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

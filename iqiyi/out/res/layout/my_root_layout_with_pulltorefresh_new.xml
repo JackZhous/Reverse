@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/ugc_gray_like_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/phoneTitleLayout" style="@style/top_base_item">
+        <TextView android:textSize="@dimen/phoneTitle_size" android:textColor="#ff8f8f91" android:id="@id/phoneTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的" android:layout_centerInParent="true" />
+        <TextView android:id="@id/phone_search_icon" android:background="@drawable/title_search_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <org.qiyi.basecore.widget.ptr.widget.PtrSimpleListView android:id="@id/my_root_listview" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phoneTitleLayout" />
+</RelativeLayout>

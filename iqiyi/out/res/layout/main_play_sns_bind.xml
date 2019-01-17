@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/relativeLayout1" android:background="@drawable/play_share_top_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/btn_back" android:background="@drawable/phone_account_back_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textColor="@color/color_white" android:id="@id/sns_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <include android:id="@id/include1" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/snsbind_webview" />
+</LinearLayout>

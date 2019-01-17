@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/connect_tip_container" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/progress_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ProgressBar android:id="@id/progress_bar" android:layout_width="32.0dip" android:layout_height="32.0dip" android:indeterminate="true" android:indeterminateDrawable="@drawable/livechat_chatroom_connecting_ani" />
+        <ImageView android:id="@id/image_conncted" android:visibility="gone" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/connected" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:id="@id/txt_connectting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.5dip" android:layout_below="@id/progress_container" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/top_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:layout_marginRight="55.0dip" android:layout_toLeftOf="@id/play">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@drawable/phone_category_qidan_item_color" android:ellipsize="end" android:id="@id/title1" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="播单标题" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff9c9c9c" android:id="@id/title2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="播主：" android:layout_below="@id/title1" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff9c9c9c" android:id="@id/title3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="23个视频 15号更新" android:layout_below="@id/title2" />
+    </RelativeLayout>
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/play" android:background="@drawable/topic_play" android:paddingRight="5.0dip" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <RelativeLayout android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:layout_below="@id/top_layout">
+        <TextView android:textSize="16.0sp" android:textColor="#ff9c9c9c" android:id="@id/desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="播单内容 ：" />
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/textend" android:background="@drawable/text_end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

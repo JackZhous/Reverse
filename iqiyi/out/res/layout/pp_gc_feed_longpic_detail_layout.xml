@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/gc_feed_content_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/feed_star_come" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/feed_header_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <include android:id="@id/gc_feed_title_description_area" layout="@layout/pp_gc_feed_title_description" />
+    <include android:id="@id/feed_detail_long_pic_txt" layout="@layout/pp_qz_feedactivity_long_pic_txt_detail_item" />
+    <RelativeLayout android:id="@id/comment_star_come" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/feed_sum_up_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

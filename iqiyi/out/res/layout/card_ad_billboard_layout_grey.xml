@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecard.common.widget.AutoScrollTextView android:id="@id/scroll_text" android:layout_width="fill_parent" android:layout_height="31.0dip" />
+    <include android:id="@id/view1" layout="@layout/card_ad_billboard_view_grey" />
+    <include android:id="@id/view2" layout="@layout/card_ad_billboard_view_grey" />
+    <ImageView android:id="@id/ad_billboard_close" android:visibility="gone" android:layout_width="31.0dip" android:layout_height="31.0dip" android:src="@drawable/ad_billboard_close" android:scaleType="center" android:layout_alignParentRight="true" />
+    <View android:id="@id/bottom_padding" android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="7.0dip" android:layout_below="@id/scroll_text" />
+</RelativeLayout>

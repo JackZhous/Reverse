@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.qiyi.android.video.ui.account.view.PRelativeLayout android:background="@color/psdk_phone_login_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.android.video.ui.account.view.PRelativeLayout android:id="@id/phoneTitleLayout" style="@style/psdk_passport_top_bar">
+        <org.qiyi.android.video.ui.account.view.PTextView android:id="@id/phoneTopMyAccountBack" style="@style/psdk_passport_top_bar_back" />
+        <org.qiyi.android.video.ui.account.view.PTextView android:id="@id/phoneTitle" style="@style/psdk_passport_top_title" />
+    </org.qiyi.android.video.ui.account.view.PRelativeLayout>
+    <com.iqiyi.passportsdk.thirdparty.ThirdpartyWebView android:id="@id/thirdpartyWebView" android:background="@color/psdk_color_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phoneTitleLayout" />
+</org.qiyi.android.video.ui.account.view.PRelativeLayout>

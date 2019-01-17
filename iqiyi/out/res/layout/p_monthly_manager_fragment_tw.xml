@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/phone_pay_title" layout="@layout/pay_phone_title" />
+    <ScrollView android:id="@id/container_scroller" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/phone_pay_title">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/img_activity" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+            <include android:id="@id/p_monthly_layout_1" layout="@layout/p_monthly_one_line" />
+            <include android:id="@id/p_monthly_layout_2" layout="@layout/p_monthly_one_line" />
+            <include android:id="@id/p_monthly_layout_3" layout="@layout/p_monthly_one_line" />
+            <include android:id="@id/p_monthly_layout_4" layout="@layout/p_monthly_one_line" />
+            <ImageView android:background="@color/white" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+            <TextView android:textSize="16.0dip" android:textColor="#ff333333" android:gravity="center|left" android:background="@color/white" android:paddingLeft="14.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="10.0dip" android:text="@string/p_vip_item_month_paytype" />
+            <ImageView android:background="@color/p_color_e6e6e6" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingLeft="14.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/img_pay_icon" android:layout_width="35.0dip" android:layout_height="35.0dip" />
+                <TextView android:textSize="16.0dip" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/tex_pay_type" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="14.0dip" android:text="电信小额支付" />
+            </LinearLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/protocl_layout" android:background="@color/white" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="16.0dip" android:textColor="#ff333333" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="@string/p_vip_item_month_protocl" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="16.0dip" android:textColor="#ff333333" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text=">" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <TextView android:textSize="16.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/monthly_cancle" android:background="@color/p_color_d4b27e" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/p_vip_item_month_cancle" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:id="@id/tk_empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phone_pay_title">
+        <include layout="@layout/p_load_data_exception" />
+    </RelativeLayout>
+    <WebView android:id="@id/webview_baifubao" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phone_pay_title" />
+</RelativeLayout>

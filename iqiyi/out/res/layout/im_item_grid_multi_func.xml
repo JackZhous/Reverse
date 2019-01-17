@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ib_multi_func_icon" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/im_icon_multi_func_camera_hl" android:scaleType="centerInside" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+    <ImageView android:id="@id/iv_multi_func_beta" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/ib_multi_func_icon" android:layout_alignTop="@id/ib_multi_func_icon" android:contentDescription="@null" />
+    <TextView android:textSize="12.0dip" android:textColor="@color/gray" android:id="@id/tv_multi_func_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_below="@id/ib_multi_func_icon" android:layout_centerHorizontal="true" />
+</RelativeLayout>

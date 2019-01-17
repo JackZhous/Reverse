@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_left_bar" android:layout_width="31.0dip" android:layout_height="wrap_content" android:layout_alignTop="@id/time_layout" android:layout_alignBottom="@id/content_layout">
+        <View android:id="@id/pp_top_line" android:background="#ffdcdcdc" android:layout_width="1.0px" android:layout_height="22.299988dip" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/iv_dot" android:layout_width="11.0dip" android:layout_height="11.0dip" android:src="@drawable/pp_circle_trail_green_dot" android:layout_below="@id/pp_top_line" android:layout_centerHorizontal="true" />
+        <View android:id="@id/left_line" android:background="#ffdcdcdc" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_below="@id/iv_dot" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/time_layout" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_toRightOf="@id/rl_left_bar">
+        <TextView android:textSize="16.0dip" android:textColor="#ff333333" android:id="@id/tv_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="今日" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff666666" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="19:00-21:00" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/content_layout" android:background="@drawable/pp_trail_background" android:paddingLeft="12.349976dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-7.0dip" android:layout_marginRight="12.0dip" android:layout_toRightOf="@id/rl_left_bar" android:layout_below="@id/time_layout">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="7.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/iv_category_icon" android:layout_width="35.0dip" android:layout_height="40.0dip" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/color_333333" android:id="@id/tv_category" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.649994dip" android:text="" />
+        </LinearLayout>
+        <View android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginRight="12.0dip" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/color_333333" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="21.5dip" android:maxLines="2" android:includeFontPadding="false" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="21.5dip" android:layout_marginBottom="13.0dip">
+            <ImageView android:id="@id/iv_icon_location" android:layout_width="14.0dip" android:layout_height="14.0dip" android:src="@drawable/pp_star_trail_icon_location" />
+            <TextView android:textSize="12.0dip" android:textColor="#ff999999" android:id="@id/tv_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:singleLine="true" />
+            <ImageView android:id="@id/iv_icon_star" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="20.0dip" android:src="@drawable/pp_star_trail_icon_star" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/color_999999" android:ellipsize="end" android:id="@id/tv_stars" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

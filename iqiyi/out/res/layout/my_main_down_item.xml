@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/my_exposed_item_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/my_exposed_item_title" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/phone_my_main_oneitem_layout_n" />
+    <android.support.v7.widget.RecyclerView android:id="@id/my_exposed_item_view" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginBottom="18.0dip" />
+</LinearLayout>

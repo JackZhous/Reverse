@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="200.0dip" android:layout_height="200.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="17.0dip" android:textColor="@color/white" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/round_guide" android:background="@drawable/red_circle" android:visibility="gone" android:layout_width="5.0dip" android:layout_height="5.0dip" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/title" android:layout_alignTop="@id/title" app:roundAsCircle="true" />
+</RelativeLayout>

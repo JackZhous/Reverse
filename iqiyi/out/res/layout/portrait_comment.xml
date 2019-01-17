@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingBottom="5.0dip" android:clickable="true" android:longClickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/ugc_use_icon_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+        <include android:id="@id/ugc_use_icon_image" android:layout_width="30.0dip" android:layout_height="30.0dip" layout="@layout/player_one_row_small_face_icon" />
+    </LinearLayout>
+    <TextView android:textSize="10.0sp" android:textColor="#ff9c9c9c" android:gravity="bottom" android:id="@id/ugc_use_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="大头贴王子" android:layout_toRightOf="@id/ugc_use_icon_layout" android:layout_alignTop="@id/ugc_use_icon_layout" android:layout_centerVertical="true" />
+    <TextView android:textSize="13.0sp" android:textColor="#ff464646" android:id="@id/comment_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="5.0dip" android:text="该剧剧情紧凑，内容丰富，故事饱满，人物关系复杂" android:layout_below="@id/ugc_use_name" android:layout_alignLeft="@id/ugc_use_name" android:lineSpacingExtra="3.0dip" />
+    <RelativeLayout android:id="@id/use_info_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_toRightOf="@id/ugc_use_icon_layout" android:layout_below="@id/comment_content">
+        <TextView android:textSize="10.0sp" android:textColor="#ff9c9c9c" android:id="@id/comment_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="五分钟前" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/comment_reply_button" android:background="@drawable/player_portrait_comment_bt_selector" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_alignParentRight="true" />
+        <View android:id="@id/splitImage" android:background="#ffe7e7e7" android:layout_width="1.0px" android:layout_height="15.0dip" android:layout_marginRight="6.0dip" android:layout_toLeftOf="@id/comment_reply_button" android:layout_centerVertical="true" />
+        <TextView android:textSize="10.0sp" android:textColor="@drawable/player_comment_text_color" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/comment_attion_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:text="29" android:drawableRight="@drawable/player_star_heart_bg" android:drawablePadding="6.0dip" android:layout_toLeftOf="@id/splitImage" />
+    </RelativeLayout>
+</RelativeLayout>

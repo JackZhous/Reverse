@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qiyi.video.cardview.view.MovieTimeAxisRelativeLayout android:id="@id/rl_movie_time_axis_horizontal" android:background="@drawable/phone_card_style_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_time_axis" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:baselineAligned="false" android:layout_below="@id/v_devide_line">
+        <include android:id="@id/rl_movie" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/movie_timeaxis_item_layout" />
+        <include android:id="@id/rl_movie1" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/movie_timeaxis_item_layout" />
+        <include android:id="@id/rl_movie2" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="15.0dip" android:layout_weight="1.0" layout="@layout/movie_timeaxis_item_layout" />
+        <include android:id="@id/rl_movie_more" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/movie_timeaxis_item_layout" />
+    </LinearLayout>
+</com.qiyi.video.cardview.view.MovieTimeAxisRelativeLayout>

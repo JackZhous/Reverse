@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/top_layer" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <EditText android:id="@id/msg_id" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:hint="请输入消息id" android:layout_weight="1.0" />
+        <Button android:id="@id/query_btn" android:layout_width="60.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="查询" android:layout_weight="0.0" />
+    </LinearLayout>
+    <ScrollView android:scrollbars="vertical" android:fadingEdge="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/top_layer">
+        <TextView android:textSize="16.0sp" android:id="@id/msg_detail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="查询结果消息详情" android:layout_below="@id/top_layer" android:isScrollContainer="true" />
+    </ScrollView>
+</RelativeLayout>

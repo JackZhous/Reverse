@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/image" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="@dimen/round_size" android:scaleType="fitCenter" android:layout_centerInParent="true" android:layout_centerHorizontal="true" />
+    <TextView android:textColor="#ff333333" android:gravity="center" android:id="@id/meta" android:background="@drawable/ic_relation_map_arrow" android:layout_width="47.0dip" android:layout_height="22.0dip" android:layout_centerInParent="true" android:layout_centerHorizontal="true" style="@style/MetaSubTitle" />
+</RelativeLayout>

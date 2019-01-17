@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:layout_gravity="center_horizontal" android:id="@id/carousel_poster" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" fresco:viewAspectRatio="1.28" fresco:placeholderImage="@drawable/focus_cover_default" fresco:placeholderImageScaleType="centerCrop" fresco:pressedStateOverlayImage="@color/card_poster_mask_black_alpha_40" />
+    <ImageView android:background="@drawable/carousel_poster_cover" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignLeft="@id/carousel_poster" android:layout_alignRight="@id/carousel_poster" android:layout_alignBottom="@id/carousel_poster" />
+    <RelativeLayout android:id="@id/carousel_video_container_parent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="12.0dip" android:layout_alignBottom="@id/carousel_poster">
+        <include android:id="@id/carousel_video_container" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/layout_card_video2" />
+        <RelativeLayout android:id="@id/carousel_tip_layout" android:background="@drawable/mark_bg" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignBottom="@id/carousel_video_container">
+            <TextView android:textSize="14.0dip" android:textColor="@color/color_white" android:id="@id/carousel_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+            <ImageView android:id="@id/carousel_live_icon" android:background="@drawable/card_video_carousel_live_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/carousel_tip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <View android:id="@id/carousel_touch_area" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignLeft="@id/carousel_video_container" android:layout_alignTop="@id/carousel_video_container" android:layout_alignRight="@id/carousel_video_container" android:layout_alignBottom="@id/carousel_video_container" />
+    </RelativeLayout>
+</RelativeLayout>

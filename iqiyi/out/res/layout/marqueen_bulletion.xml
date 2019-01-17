@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#cc0bbe06" android:layout_width="fill_parent" android:layout_height="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/bulletin_animation" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ImageView android:id="@id/chat_bulletin_img" android:background="@drawable/chat_room_bulletin" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/bulletin_txt" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:singleLine="true" android:layout_toRightOf="@id/chat_bulletin_img" />
+    </RelativeLayout>
+</RelativeLayout>

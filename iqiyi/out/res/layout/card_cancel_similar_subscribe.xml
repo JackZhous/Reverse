@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/CardModelBase"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center_vertical" android:id="@id/meta" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginLeft="12.0dip" android:layout_centerVertical="true" style="@style/CardTitle" />
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/close_card" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="12.0dip" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

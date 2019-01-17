@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_back" android:background="@drawable/pub_back_button_with_shadow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <ImageView android:background="@drawable/pub_self_made_video_camera_pannel" android:layout_width="fill_parent" android:layout_height="300.0dip" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="16.0sp" android:ellipsize="end" android:gravity="center" android:id="@id/prompt_text" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:maxLines="1" android:layout_below="@id/iv_back" style="@style/PubSelfMadeVideoTextStyle" />
+    <include android:id="@id/capture_and_finish_rl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="28.0dip" android:layout_alignParentBottom="true" layout="@layout/pub_self_made_video_base_activity_capture_btn_layout" />
+    <include android:id="@id/ll_side_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="227.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" layout="@layout/pub_self_made_video_base_activity_sidebar_ll" />
+</RelativeLayout>

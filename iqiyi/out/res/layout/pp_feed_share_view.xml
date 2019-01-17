@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/pp_feed_share_content_layout" android:background="@drawable/pp_share_feed_content_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/pp_feed_share_header" />
+    <include layout="@layout/pp_feed_share_title_description" />
+</LinearLayout>

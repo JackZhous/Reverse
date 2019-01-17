@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <org.qiyi.basecore.widget.OuterFrameTextView android:gravity="center" android:id="@id/sub_title1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="7.0dip" app:out_frame_color="#ffcef0cd" app:out_frame_line_width="1.0dip" style="@style/MetaSubTitle" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <org.qiyi.basecore.widget.OuterFrameTextView android:gravity="center" android:id="@id/sub_title2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="7.0dip" app:out_frame_color="#ffcef0cd" app:out_frame_line_width="1.0dip" style="@style/MetaSubTitle" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <org.qiyi.basecore.widget.OuterFrameTextView android:gravity="center" android:id="@id/sub_title3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="7.0dip" app:out_frame_color="#ffcef0cd" app:out_frame_line_width="1.0dip" style="@style/MetaSubTitle" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ads_app_download_layout" android:background="@drawable/qiyi_sdk_player_ads_download_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/divide_line" android:layout_width="1.0px" android:layout_height="1.0px" android:layout_centerInParent="true" />
+    <TextView android:textSize="@dimen/default_middle" android:textColor="#ffffffff" android:gravity="center" android:id="@id/ads_app_download_ok" android:background="@drawable/qiyi_sdk_player_ads_download_confirm" android:padding="6.0dip" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/player_ads_download_ok" android:layout_toLeftOf="@id/divide_line" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/default_middle" android:textColor="#ffffffff" android:gravity="center" android:id="@id/ads_app_download_cancel" android:background="@drawable/qiyi_sdk_player_ads_download_no" android:padding="6.0dip" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="@string/player_ads_download_cancel" android:layout_toRightOf="@id/divide_line" android:layout_centerVertical="true" />
+</RelativeLayout>

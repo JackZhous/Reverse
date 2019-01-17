@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/movie_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <View android:background="#ff333333" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.85" />
+    <RelativeLayout android:id="@id/poster_layout" android:layout_width="fill_parent" android:layout_height="148.0dip">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/movie_poster" android:layout_width="93.0dip" android:layout_height="124.0dip" android:layout_margin="12.0dip" android:scaleType="centerCrop" android:layout_alignParentLeft="true" fresco:placeholderImage="@drawable/poster_big_default" fresco:placeholderImageScaleType="centerCrop" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/movie_poster">
+            <TextView android:textSize="14.0dip" android:textColor="@color/color_white" android:id="@id/movie_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" style="@style/MetaTitle" />
+            <TextView android:textColor="@color/white_70" android:id="@id/movie_meta1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" style="@style/MetaSubTitle" />
+            <TextView android:textColor="@color/white_70" android:id="@id/movie_meta2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" style="@style/MetaSubTitle" />
+            <TextView android:textColor="@color/white_70" android:id="@id/movie_meta3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" style="@style/MetaSubTitle" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="9.0dip">
+                <TextView android:textSize="13.0dip" android:textColor="@color/white_70" android:gravity="center" android:id="@id/buy_button" android:background="@drawable/round_rect_gray_fill" android:layout_width="80.0dip" android:layout_height="30.0dip" android:text="@string/card_ticket_buy" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/buy_button" android:layout_alignParentBottom="true">
+                    <TextView android:textSize="@dimen/card_text_size_11dp" android:textColor="@color/green_mormal" android:id="@id/box_office" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="@dimen/card_text_size_11dp" android:textColor="@color/green_mormal" android:id="@id/box_office_num" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/box_office" />
+                    <TextView android:textSize="11.0dip" android:textColor="@color/white_70" android:id="@id/show_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_below="@id/box_office" style="@style/MetaSubTitle" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

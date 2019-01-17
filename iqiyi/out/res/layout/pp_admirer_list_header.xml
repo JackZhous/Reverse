@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/color_f0f0f0" android:layout_width="fill_parent" android:layout_height="34.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0dip" android:textColor="@color/pp_color_ff8022" android:id="@id/pp_admirer_total_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+    <TextView android:textSize="13.0dip" android:textColor="@color/pp_color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pp_admirer_total_count_description" />
+</LinearLayout>

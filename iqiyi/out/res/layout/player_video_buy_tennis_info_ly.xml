@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/qiyi_sdk_player_video_buy_tennis_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/player_msg_layer_buy_info_back" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:src="@drawable/qiyi_sdk_player_portrait_btn_back" android:layout_alignParentTop="true" />
+    <RelativeLayout android:id="@id/player_buy_info_parent_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <TextView android:textColor="#ffffffff" android:id="@id/tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开通网球会员，立即观看完整版" android:layout_centerHorizontal="true" />
+        <RelativeLayout android:id="@id/login_or_buy_tennis_vip" android:background="@drawable/player_video_buy_tennis_round_bg" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginTop="35.0dip" android:layout_below="@id/tips" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/tennis_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/player_tennis_panel_icon" android:layout_centerVertical="true" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff1d3900" android:id="@id/login_or_buy_tennis" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_toRightOf="@id/tennis_icon" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

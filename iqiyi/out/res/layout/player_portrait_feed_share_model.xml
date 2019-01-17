@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/sw_feed_share_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.iqiyi.video.image.PlayerDraweView android:id="@id/sw_feed_card_share_image" android:layout_width="68.0dip" android:layout_height="68.0dip" android:layout_marginLeft="6.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/player_feed_default_image_bg" android:scaleType="centerCrop" />
+    <RelativeLayout android:id="@id/sw_feed_card_share_sourcelayout" android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="68.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="7.0dip" android:layout_toRightOf="@id/sw_feed_card_share_image" android:layout_alignTop="@id/sw_feed_card_share_image">
+        <TextView android:textSize="15.0dip" android:textColor="@color/player_pp_item_text_black" android:id="@id/sw_feed_card_source_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="" android:singleLine="true" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/player_common_text_color_999999" android:gravity="center" android:id="@id/sw_feed_card_source_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="" android:singleLine="true" android:layout_below="@id/sw_feed_card_source_title" android:layout_alignLeft="@id/sw_feed_card_source_title" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/portrait_view_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/commentLayout" android:background="@color/player_pp_card_publish_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_alignParentBottom="true">
+        <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" />
+        <TextView android:gravity="center" android:id="@id/comment_bar_refresh" android:background="@drawable/player_portrait_comment_refresh_normal" android:layout_width="wrap_content" android:layout_height="33.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColorHint="@color/player_pp_item_text_value_gary" android:gravity="center_vertical" android:id="@id/comment_bar_content" android:background="@drawable/player_portrait_comment_edit_border" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="33.0dip" android:layout_marginLeft="10.0dip" android:hint="@string/player_pp_feed_detail_comment_hint" android:layout_toLeftOf="@id/comment_bar_refresh" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <org.qiyi.basecore.widget.ptr.widget.PtrSimpleRecyclerView android:id="@id/recyclerView" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/commentLayout" />
+    <RelativeLayout android:id="@id/fix_content" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <include layout="@layout/player_common_loadingview" />
+    <ViewStub android:id="@id/portrait_paopao_guid" android:layout="@layout/portrait_bottom_paopao_guid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/commentLayout" />
+</RelativeLayout>

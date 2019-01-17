@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/az_pre_photo_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.iqiyi.paopao.middlecommon.components.details.views.ImagePreviewViewPager android:id="@id/qz_pre_viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_gravity="top" android:orientation="horizontal" android:id="@id/qz_pre_img_actiontitle" android:background="@color/pp_color_photo_b2121212" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <TextView android:id="@id/qz_pre_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:drawableLeft="@drawable/im_titlebar_arrow_left_white" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/color_ffffff" android:gravity="center_vertical" android:id="@id/qz_pre_num" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="1/9" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/qz_pre_delete" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/pp_sw_feed_delete_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</FrameLayout>

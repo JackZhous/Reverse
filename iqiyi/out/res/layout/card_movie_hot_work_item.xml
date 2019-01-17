@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="@dimen/card_hot_word_padding" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/phone_category_detail_rec_horizontal_big_default" android:scaleType="fitXY" />
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/image_layer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/image" android:layout_alignTop="@id/image" android:layout_alignRight="@id/image" android:layout_alignBottom="@id/image" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MetaTitle" />
+        <TextView android:textColor="#ccffffff" android:id="@id/sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MetaSubTitle" />
+    </LinearLayout>
+</RelativeLayout>

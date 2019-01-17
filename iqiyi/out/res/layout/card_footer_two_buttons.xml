@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="50.0dip" android:minHeight="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip" android:minHeight="50.0dip">
+        <FrameLayout android:id="@id/card_footer_button_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/card_footer_button_text_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="7.0dip" style="@style/CardBottomBannerText" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/card_footer_button_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/card_footer_button_text_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="7.0dip" style="@style/CardBottomBannerText" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

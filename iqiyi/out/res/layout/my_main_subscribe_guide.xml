@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/my_main_subscribe_guid_step1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/up_black_mask" android:background="#c7000000" android:layout_width="fill_parent" android:layout_height="200.0dip" />
+        <ImageView android:id="@id/my_main_subscribe_guide_icon" android:layout_width="64.0dip" android:layout_height="69.0dip" android:layout_marginLeft="30.0dip" android:layout_marginBottom="12.0dip" android:src="@drawable/my_main_subscribe_guide" android:layout_above="@id/my_main_coupon_guide" />
+        <TextView android:textSize="17.0dip" android:textColor="#ffffffff" android:id="@id/my_main_subscribe_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="25.0dip" android:text="@string/my_main_subscribe_guide_tip" android:layout_toRightOf="@id/my_main_subscribe_guide_icon" android:layout_above="@id/my_main_coupon_guide" />
+        <ImageView android:id="@id/my_main_coupon_guide" android:layout_width="fill_parent" android:layout_height="130.0dip" android:layout_below="@id/up_black_mask" />
+    </RelativeLayout>
+    <ImageView android:id="@id/down_black_mask" android:background="#c7000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_navi" android:layout_below="@id/my_main_subscribe_guid_step1" />
+    <TextView android:textSize="17.0dip" android:textColor="#ffffffff" android:id="@id/my_main_subscribe_tip2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginBottom="38.0dip" android:text="@string/my_main_subscribe_guide_tip2" android:layout_toRightOf="@id/my_main_subscribe_guide_icon2" android:layout_above="@id/bottom_navi" />
+    <ImageView android:id="@id/my_main_subscribe_guide_icon2" android:visibility="gone" android:layout_width="64.0dip" android:layout_height="69.0dip" android:layout_marginLeft="30.0dip" android:layout_marginBottom="12.0dip" android:src="@drawable/my_main_subscribe_guide" android:layout_above="@id/bottom_navi" />
+    <ImageView android:id="@id/bottom_navi" android:background="#1a000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="49.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

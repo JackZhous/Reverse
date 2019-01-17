@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/background" android:background="#ffe7cba2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <View android:background="@color/black_alpha_40" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/phoneTitleLayout" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageView android:id="@id/title_back_layout" android:background="@drawable/phone_vip_super_theatre_back_img" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/p_dimen_18" android:textStyle="bold" android:textColor="@color/color_white" android:id="@id/vip_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/phone_vip_super_theatre_title" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <org.qiyi.android.video.view.TabZoomOutTabIndicator android:id="@id/tab_strip" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginTop="6.0dip" android:layout_marginBottom="25.0dip" android:layout_below="@id/phoneTitleLayout" />
+    <android.support.v4.view.ViewPager android:id="@id/content_viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tab_strip" />
+    <include android:id="@id/loading_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phoneTitleLayout" layout="@layout/lab_footer" />
+    <include android:id="@id/empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phoneTitleLayout" layout="@layout/phone_load_data_exception" />
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/qz_fc_home_root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.iqiyi.paopao.middlecommon.ui.view.pullrefresh.QZDrawerView android:orientation="vertical" android:id="@id/drawer_view" android:layout_width="fill_parent" android:layout_height="fill_parent" app:headMax="@dimen/pp_action_title_height">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/ll_circle_header">
+            <com.iqiyi.paopao.middlecommon.ui.view.TabLayout.CommonTabLayout android:id="@id/page_slide_tab_strip" android:background="@color/white" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip" app:tl_indicator_color="#ff0bbe06" app:tl_indicator_corner_radius="5.0dip" app:tl_indicator_height="3.0dip" app:tl_indicator_margin_bottom="2.0dip" app:tl_indicator_width="12.0dip" app:tl_textSelectColor="#ff0bbe06" app:tl_textUnselectColor="@color/color_333333" app:tl_textsize="17.0dip" app:tl_underline_height="0.0dip" app:tl_iconVisible="false" />
+            <View android:id="@id/divider" android:background="@color/separate_line_grey" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <include layout="@layout/pp_un_published_alert" />
+            <com.iqiyi.paopao.base.views.PPViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_circle_header" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ViewStub android:id="@id/vs_header_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <include android:id="@id/qz_title_container" layout="@layout/pp_super_title_bar" />
+    </com.iqiyi.paopao.middlecommon.ui.view.pullrefresh.QZDrawerView>
+    <ViewStub android:id="@id/pp_circle_viewstub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/task_today_container" android:layout="@layout/pp_sw_task_floating_bars" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <include android:id="@id/pp_global_msg_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginBottom="100.0dip" android:layout_alignParentBottom="true" layout="@layout/pp_global_message_alert_layout" />
+    <ViewStub android:id="@id/viewstub_gift_layout" android:layout="@layout/pp_qz_level_gift_view_stub_layout" android:layout_width="47.0dip" android:layout_height="56.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="137.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

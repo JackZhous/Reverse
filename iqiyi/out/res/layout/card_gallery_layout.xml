@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/card_gallery_bg_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/card_gallery_top_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <org.qiyi.basecore.widget.ultraviewpager.UltraViewPager android:id="@id/card_gallery" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <org.qiyi.basecore.widget.ultraviewpager.UltraViewPager android:id="@id/card_gallery_end" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <FrameLayout android:id="@id/card_gallery_bottom_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:id="@id/card_cinema_end" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

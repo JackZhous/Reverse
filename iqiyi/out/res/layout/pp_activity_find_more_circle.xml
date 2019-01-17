@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/pp_fragment_tv_root" android:background="@color/color_ffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.iqiyi.paopao.middlecommon.ui.view.titlebar.CommonTitleBar android:id="@id/pp_all_circle_title_bar" android:background="@color/color_ffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" app:title="@string/pp_circle_list_title" app:titleBarUnderline="false" />
+    <include android:id="@id/paopao_search_auto_bar_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/pp_all_circle_title_bar" layout="@layout/pp_search_entrance_layout" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/find_more_content" android:background="@color/color_ffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/paopao_search_auto_bar_layout">
+        <android.support.v7.widget.RecyclerView android:id="@id/rv_more_circle_tab" android:background="@color/color_f8f8f8" android:visibility="gone" android:scrollbars="none" android:layout_width="65.0dip" android:layout_height="fill_parent" />
+        <android.support.v4.view.ViewPager android:id="@id/vp_more_circle" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <include android:id="@id/no_network_recommd" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/paopao_search_auto_bar_layout" layout="@layout/pp_no_network_nocashe_warning_ll" />
+    <include android:id="@id/layout_fetch_data_fail" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/paopao_search_auto_bar_layout" layout="@layout/pp_layout_fetch_data_fail" />
+    <include android:id="@id/pp_layout_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/pp_circle_loading_layout" />
+</RelativeLayout>

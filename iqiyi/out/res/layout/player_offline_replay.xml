@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/player_replay" android:background="@drawable/qiyi_sdk_player_black_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/player_msg_layer_loading_info_back" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:src="@drawable/qiyi_sdk_player_portrait_btn_back" android:layout_alignParentTop="true" />
+    <RelativeLayout android:id="@id/tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/replay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/offline_replay" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/iqiyiwhite" android:id="@id/replay_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/phone_offline_replay" android:layout_below="@id/replay" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/p_w_title_layout" layout="@layout/pay_phone_title" />
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="@dimen/p_dimen_35" android:paddingTop="50.0dip" android:paddingRight="@dimen/p_dimen_35" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="15.0dip" android:textColor="@color/p_color_666666" android:gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/qy_w_bankcardscan_result_hint" />
+        <ImageView android:id="@id/qy_w_bankcardscan_result_image" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_55" android:layout_marginTop="15.0dip" android:scaleType="fitXY" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/qy_w_bankcardscan_result_editor_container" android:background="@drawable/qy_w_bankcardscan_result_editor_bg" android:layout_width="fill_parent" android:layout_height="45.0dip" />
+        <Button android:enabled="false" android:textColor="@color/white" android:id="@id/qy_w_bankcardscan_result_next" android:background="@drawable/qy_w_bankcardscan_btn_next" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_45" android:layout_marginTop="@dimen/p_dimen_30" android:text="@string/cancel_month_next_step" />
+    </LinearLayout>
+</LinearLayout>

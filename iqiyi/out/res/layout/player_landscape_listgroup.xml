@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/item_layout" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0dip" android:textColor="@color/color_white" android:gravity="center" android:id="@id/groupTitle" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginLeft="15.0dip" android:text="选集" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <org.iqiyi.video.image.PlayerDraweView android:id="@id/expandImg" android:background="@drawable/player_download_rate_land_selector" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="12.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:background="#ff2d2d2d" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    <View android:id="@id/top_divider" android:background="#ff2d2d2d" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" />
+</RelativeLayout>

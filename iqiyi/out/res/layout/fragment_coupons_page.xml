@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/category_card_page_content" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/no_coupons_tip_layout" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="100.0dip">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/tip_image" android:layout_width="100.0dip" android:layout_height="100.0dip" android:scaleType="centerInside" />
+        <TextView android:textSize="13.0dip" android:textColor="@color/color_meta_sub_title" android:id="@id/tip_meta1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:singleLine="true" />
+        <TextView android:textSize="13.0dip" android:textColor="@color/color_meta_sub_title" android:id="@id/tip_meta2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:singleLine="true" />
+        <TextView android:textSize="15.0dip" android:textColor="@color/color_white" android:gravity="center" android:id="@id/tip_btn" android:background="@drawable/phone_green_btn" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="40.0dip" android:layout_marginTop="20.0dip" android:text="@string/coupons_tip_btn" />
+    </LinearLayout>
+</RelativeLayout>

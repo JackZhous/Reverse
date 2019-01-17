@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/qy_cmpt_emo_ffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:Fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.iqiyi.paopao.middlecommon.ui.view.titlebar.SuperTitleBar android:id="@id/pp_title_bar_expression_package_detail" android:layout_width="fill_parent" android:layout_height="wrap_content" app:titleBarStyle="custom" />
+    <RelativeLayout android:id="@id/paopao_no_net_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/no_network_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true" layout="@layout/pp_no_network_nocashe_warning_ll" />
+    </RelativeLayout>
+    <ScrollView android:id="@id/expression_detail_scrollView" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_horizontal" android:id="@id/expression_package_icon" android:layout_width="125.0dip" android:layout_height="125.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" app:placeholderImage="@drawable/pp_icon_avatar_default" app:placeholderImageScaleType="centerCrop" app:failureImage="@drawable/pp_icon_avatar_default" app:failureImageScaleType="centerCrop" app:roundAsCircle="true" />
+            <TextView android:textSize="16.0dip" android:textColor="@color/qy_cmpt_emo_333333" android:id="@id/expression_package_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:text="某某某表情包" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/qy_cmpt_emo_999999" android:id="@id/expression_package_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="12.0dip" android:text="某某某表情包描述表情包描述表情包描述表情包描述表情包描述" android:lineSpacingExtra="4.0dip" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19.0dip">
+                <ProgressBar android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/expression_download_progressbar" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:progressDrawable="@drawable/pp_background_23d41e_radius22" style="?android:attr/progressBarStyleHorizontal" />
+                <TextView android:textSize="18.0dip" android:textColor="@color/qy_cmpt_emo_ffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/expression_download" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:text="下载" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="38.0dip">
+                <TextView android:textSize="12.0dip" android:textColor="@color/qy_cmpt_emo_999999" android:id="@id/text_unread_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/qy_cmpt_emo_long_press_to_see" android:layout_centerInParent="true" />
+                <View android:background="@color/qy_cmpt_emo_e6e6e6" android:layout_width="20.0dip" android:layout_height="1.0px" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/text_unread_count" android:layout_centerVertical="true" />
+                <View android:background="@color/qy_cmpt_emo_e6e6e6" android:layout_width="20.0dip" android:layout_height="1.0px" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/text_unread_count" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <com.iqiyi.paopao.middlecommon.ui.view.gridview.PPGridViewInScoller android:id="@id/expression_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="40.0dip" android:horizontalSpacing="14.0dip" android:verticalSpacing="14.0dip" android:numColumns="4" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

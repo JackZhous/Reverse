@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/pp_admirer_item_root" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/pp_admirer_icon" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginRight="10.0dip" android:layout_centerVertical="true" app:placeholderImage="@drawable/pp_icon_avatar_default" app:placeholderImageScaleType="centerCrop" app:failureImage="@drawable/pp_icon_avatar_default" app:failureImageScaleType="centerCrop" app:actualImageScaleType="centerCrop" app:roundAsCircle="true" />
+    <TextView android:textSize="16.0dip" android:textColor="@color/pp_color_333333" android:ellipsize="end" android:id="@id/pp_admirer_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:lines="1" android:layout_toRightOf="@id/pp_admirer_icon" />
+    <RelativeLayout android:id="@id/pp_admirer_gender_layout" android:background="@drawable/im_default_gender" android:layout_width="43.0dip" android:layout_height="14.0dip" android:layout_marginTop="6.0dip" android:layout_toRightOf="@id/pp_admirer_icon" android:layout_below="@id/pp_admirer_nickname">
+        <TextView android:textSize="10.0dip" android:textColor="@color/white" android:id="@id/pp_admirer_age" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/user_info_separate_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_toRightOf="@id/pp_admirer_icon" android:layout_alignParentBottom="true" />
+</RelativeLayout>

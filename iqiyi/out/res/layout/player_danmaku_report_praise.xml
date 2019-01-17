@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/page_reason" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="14.0dip" android:textColor="#ff999999" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/player_danmaku_report_res" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/player_danmaku_report_res" />
+        <ScrollView android:paddingBottom="5.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/player_danmaku_report_res">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="15.0dip" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/reason_no_use" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/player_danmaku_report_res_no_use" />
+                <TextView android:textSize="15.0dip" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/reason_sexy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" android:text="@string/player_danmaku_report_res_sexy" />
+                <TextView android:textSize="15.0dip" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/reason_abuse" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" android:text="@string/player_danmaku_report_res_abuse" />
+                <TextView android:textSize="15.0dip" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/reason_spoiler" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" android:text="@string/player_danmaku_report_res_spoiler" />
+                <TextView android:textSize="15.0dip" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/reason_ad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" android:text="@string/player_danmaku_report_res_ad" />
+                <TextView android:textSize="15.0dip" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/reason_other" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" android:layout_marginBottom="30.0dip" android:text="@string/player_danmaku_report_res_other" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/page_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <TextView android:textSize="14.0dip" android:textColor="#ff999999" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/player_danmaku_report_title" />
+        <TextView android:textSize="15.0dip" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/danmaku_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:text="" />
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" android:layout_centerInParent="true">
+                <TextView android:textSize="14.0dip" android:textColor="@color/color_white" android:gravity="center_horizontal" android:id="@id/report_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25.0dip" android:text="@string/player_danmaku_report_detail" android:drawableTop="@drawable/damaku_report" android:drawablePadding="10.0dip" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="14.0dip" android:textColor="@color/color_white" android:gravity="center_horizontal" android:id="@id/praise_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="1.0dip" android:text="@string/player_danmaku_praise_detail" android:drawableTop="@drawable/danmaku_praise" android:drawablePadding="10.0dip" android:layout_alignParentRight="true" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

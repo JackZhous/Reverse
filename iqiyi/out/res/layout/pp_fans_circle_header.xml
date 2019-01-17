@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="159.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/pp_fans_circle_header_body" />
+    <include android:id="@id/pp_qz_fc_bottom_small_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="54.0dip" android:layout_alignParentBottom="true" layout="@layout/pp_qz_fc_bottom_small_header_layout" />
+</RelativeLayout>

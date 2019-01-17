@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="#cc000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/dialog_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:id="@id/title_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_centerHorizontal="true">
+                <ImageView android:layout_width="204.0dip" android:layout_height="54.0dip" android:src="@drawable/vip_upgrade_gift_dialog_title" />
+                <ImageView android:id="@id/title_vip_level" android:layout_width="50.0dip" android:layout_height="54.0dip" android:layout_marginLeft="9.0dip" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/logo_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="33.5dip" android:layout_centerHorizontal="true">
+                <ImageView android:id="@id/star_halo" android:layout_width="250.0dip" android:layout_height="250.0dip" android:src="@drawable/vip_upgrade_gift_dialog_halo" />
+                <ImageView android:id="@id/star_left_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vip_upgrade_ok_gift_dialog_star_l1" android:layout_centerInParent="true" />
+                <ImageView android:id="@id/star_left_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vip_upgrade_ok_gift_dialog_star_l2" android:layout_centerInParent="true" />
+                <ImageView android:id="@id/star_left_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vip_upgrade_ok_gift_dialog_star_l3" android:layout_centerInParent="true" />
+                <ImageView android:id="@id/star_right_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vip_upgrade_ok_gift_dialog_star_r1" android:layout_centerInParent="true" />
+                <ImageView android:id="@id/star_right_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vip_upgrade_ok_gift_dialog_star_r2" android:layout_centerInParent="true" />
+                <ImageView android:id="@id/logo" android:layout_width="160.0dip" android:layout_height="140.0dip" android:src="@drawable/vip_upgrade_gift_dialog_logo" android:layout_centerInParent="true" />
+                <ImageView android:id="@id/logo_vip_level" android:layout_width="160.0dip" android:layout_height="140.0dip" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <ImageView android:id="@id/divider_layout_top" android:layout_width="308.0dip" android:layout_height="15.0dip" android:layout_marginTop="268.0dip" android:src="@drawable/vip_upgrade_gift_dialog_my_power_new" android:layout_centerHorizontal="true" />
+            <android.support.v7.widget.RecyclerView android:id="@id/my_new_power_recycler_view" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:layout_below="@id/divider_layout_top" />
+            <ImageView android:id="@id/divider_layout_bottom" android:layout_width="308.0dip" android:layout_height="15.0dip" android:layout_marginTop="22.0dip" android:src="@drawable/vip_upgrade_gift_dialog_my_gift_new" android:layout_below="@id/my_new_power_recycler_view" android:layout_centerHorizontal="true" />
+            <RelativeLayout android:id="@id/my_upgrade_gift_layout" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-26.0dip" android:layout_below="@id/divider_layout_bottom" android:layout_centerHorizontal="true">
+                <ImageView android:id="@id/star_halo_0" android:layout_width="250.0dip" android:layout_height="250.0dip" android:src="@drawable/vip_upgrade_gift_dialog_halo" />
+                <ImageView android:id="@id/gift_bag" android:visibility="visible" android:layout_width="250.0dip" android:layout_height="250.0dip" android:src="@drawable/vip_upgrade_gift_dialog_gift_bag_new" android:layout_toRightOf="@id/gift_bag_open" android:layout_alignParentTop="true" android:layout_toEndOf="@id/gift_bag_open" />
+                <ImageView android:id="@id/gift_bag_open" android:visibility="gone" android:layout_width="184.0dip" android:layout_height="131.0dip" android:src="@drawable/vip_upgrade_gift_dialog_gift_bag_open_new" android:layout_centerInParent="true" />
+                <ImageView android:id="@id/gift_bag_open_bg" android:visibility="gone" android:layout_width="230.0dip" android:layout_height="230.0dip" android:src="@drawable/vip_upgrade_gift_dialog_gift_bag_open_bg_new" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <android.support.v7.widget.RecyclerView android:id="@id/my_gift_bag_recycler_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.5dip" android:layout_below="@id/divider_layout_bottom" />
+            <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/get_gift_bag" android:background="@drawable/vip_upgrade_gift_dialog_button_bg" android:visibility="visible" android:layout_width="150.0dip" android:layout_height="35.0dip" android:layout_marginTop="-52.0dip" android:layout_marginBottom="61.0dip" android:layout_below="@id/my_upgrade_gift_layout" android:layout_centerHorizontal="true" />
+            <LinearLayout android:gravity="center" android:id="@id/button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginBottom="61.0dip" android:layout_below="@id/my_gift_bag_recycler_view">
+                <LinearLayout android:gravity="right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="16.0sp" android:textColor="#ffe0b263" android:gravity="center" android:id="@id/i_see" android:background="@drawable/i_see_button_style" android:layout_width="123.0dip" android:layout_height="34.0dip" android:layout_marginRight="21.0dip" />
+                </LinearLayout>
+                <LinearLayout android:gravity="left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/look_gift_bag" android:background="@drawable/check_right_now_button_style" android:layout_width="123.0dip" android:layout_height="34.0dip" android:layout_marginLeft="21.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

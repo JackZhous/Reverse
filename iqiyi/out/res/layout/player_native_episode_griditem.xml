@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/blockLayout" android:background="@drawable/player_landscape_episode_gridview_item_selector" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:textColor="@color/color_white" android:ellipsize="end" android:gravity="center" android:id="@id/playControlEpisodeAdapterTxt" android:layout_width="wrap_content" android:layout_height="@dimen/player_episode_grid_item_height" android:minHeight="50.0dip" android:text="1" android:singleLine="true" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/episode_playing_flag" android:visibility="gone" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/player_episode_playing" android:layout_centerInParent="true" />
+</RelativeLayout>

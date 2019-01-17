@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:background="@drawable/pp_player_bkg_half" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.iqiyi.paopao.middlecommon.views.slimviews.SlimImageView android:id="@id/pp_player_loading_default_logo" android:layout_width="190.0dip" android:layout_height="68.0dip" android:layout_marginBottom="1.0dip" android:layout_centerHorizontal="true" app:slimViewSrc="pp_player_loading_default_logo" />
+    <ViewStub android:id="@id/pp_player_loading_default_anim" android:layout="@layout/pp_player_loading_full_anim" android:layout_width="245.0dip" android:layout_height="4.0dip" android:layout_below="@id/pp_player_loading_default_logo" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="11.0dip" android:textColor="@color/white" android:id="@id/pp_player_loading_default_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="即将播放" android:layout_below="@id/pp_player_loading_default_anim" android:layout_centerHorizontal="true" />
+</RelativeLayout>

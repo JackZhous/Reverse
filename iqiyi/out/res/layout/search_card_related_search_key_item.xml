@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0dip" android:textColor="@drawable/related_search_item_text" android:id="@id/search_card_related_search_key_item_text1" android:paddingTop="12.5dip" android:paddingBottom="12.5dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="10.0dip" android:text="刘诗诗11111111111111111111111111111111" android:singleLine="true" android:layout_weight="1.0" />
+    <TextView android:textSize="13.0dip" android:textColor="@drawable/related_search_item_text" android:id="@id/search_card_related_search_key_item_text2" android:paddingTop="12.5dip" android:paddingBottom="12.5dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="刘诗诗彭于晏111111111111111111111111" android:singleLine="true" android:layout_weight="1.0" />
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:gravity="center" android:id="@id/layout_no_data" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/pp_load_data_exception" />
+    <LinearLayout android:orientation="vertical" android:background="@color/ppq_white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/actionbar" android:background="@color/ppq_white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <RelativeLayout android:id="@id/left_back_layout" android:layout_width="40.0dip" android:layout_height="fill_parent">
+                <ImageView android:id="@id/vw_actionbar_back" android:background="@drawable/pp_actionbar_back_publish_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <TextView android:textSize="18.0sp" android:textColor="@color/ppq_title_bar_text" android:gravity="center_vertical" android:id="@id/vw_actionbar_title_text" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            <View android:background="@color/pp_color_e6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView android:id="@id/paopao_recommend_topic_qz_recyclerView" android:background="@color/ppq_white" android:padding="10.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:id="@id/progressbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ProgressBar android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_margin="3.0dip" android:indeterminateDrawable="@drawable/pp_sdk_player_loading_image" />
+        <TextView android:textColor="@color/qiyi_dark_grey" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/phone_loading_data_waiting" />
+    </LinearLayout>
+</FrameLayout>

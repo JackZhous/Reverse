@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/vip_task_img" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_toLeftOf="@id/vip_task_status" android:layout_toRightOf="@id/vip_task_img">
+        <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/vip_task_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+        <RelativeLayout android:layout_width="175.0dip" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layout_above="@id/vip_task_progress_bar">
+            <TextView android:textSize="10.0sp" android:textColor="#ff666666" android:id="@id/vip_task_start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            <TextView android:textSize="10.0sp" android:textColor="#ff666666" android:id="@id/vip_task_end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <ProgressBar android:id="@id/vip_task_progress_bar" android:layout_width="175.0dip" android:layout_height="3.0dip" android:layout_marginBottom="4.0dip" android:max="100" android:progress="50" android:progressDrawable="@drawable/vip_task_progress_bar_bg" android:layout_alignParentBottom="true" style="?android:attr/progressBarStyleHorizontal" />
+    </RelativeLayout>
+    <TextView android:textSize="13.0sp" android:textColor="#ffc8a06a" android:id="@id/vip_task_status" android:paddingBottom="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

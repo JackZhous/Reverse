@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="100.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lineWithDot" android:layout_width="100.0dip" android:layout_height="15.5dip" android:layout_marginBottom="9.0dip">
+        <View android:id="@id/lineText2" android:background="#ff0bbe60" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_toLeftOf="@id/firstTitle" android:layout_centerVertical="true" />
+        <TextView android:textSize="11.0dip" android:textColor="#ff0bbe60" android:ellipsize="end" android:id="@id/firstTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:maxEms="5" android:singleLine="true" android:layout_centerInParent="true" />
+        <View android:id="@id/lineText1" android:background="#ff0bbe60" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_toRightOf="@id/firstTitle" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/padd" android:layout_width="98.0dip" android:layout_height="wrap_content" android:layout_below="@id/lineWithDot">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/imageview" android:layout_width="98.0dip" android:layout_height="wrap_content" android:scaleType="centerCrop" fresco:viewAspectRatio="0.741" fresco:placeholderImage="@drawable/phone_category_detail_rec_vertical_pic_default" fresco:placeholderImageScaleType="centerCrop" />
+        <TextView android:textSize="13.0dip" android:id="@id/meta2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:minHeight="9.0dip" android:lines="1" android:layout_below="@id/imageview" android:layout_centerHorizontal="true" style="@style/MetaTitle" />
+        <include android:id="@id/rl_movie_notify" android:layout_width="70.0dip" android:layout_height="21.0dip" android:layout_marginTop="9.0dip" android:layout_below="@id/meta2" android:layout_centerHorizontal="true" layout="@layout/vip_order_button" />
+    </RelativeLayout>
+</RelativeLayout>

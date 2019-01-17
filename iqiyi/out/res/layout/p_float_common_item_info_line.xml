@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_60"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/content_layout" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_50">
+        <TextView android:textSize="16.0dip" android:textColor="@color/p_color_333333" android:ellipsize="end" android:gravity="center" android:id="@id/left_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:maxLines="1" android:maxEms="15" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0dip" android:textColor="@color/p_color_FF7E00" android:ellipsize="end" android:gravity="center" android:id="@id/right_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:maxLines="1" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/p_color_f2f2f2" android:paddingBottom="@dimen/p_dimen_10" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/p_dimen_10" android:layout_marginRight="@dimen/p_dimen_10" android:layout_below="@id/content_layout" />
+</RelativeLayout>

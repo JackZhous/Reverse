@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/emptyLaout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phoneTitleLayout">
+        <TextView android:textSize="14.0dip" android:textColor="#ff000000" android:gravity="center" android:id="@id/empty_textView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        <RelativeLayout android:id="@id/empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/networkErrorView" layout="@layout/phone_load_data_exception" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <include android:id="@id/phone_category_loading_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phoneTitleLayout" layout="@layout/lab_footer" />
+    <org.qiyi.android.video.ugc.UgcTabListView android:id="@id/ugc_my_base_listview" android:scrollbars="@null" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@null" android:divider="@null" />
+</RelativeLayout>

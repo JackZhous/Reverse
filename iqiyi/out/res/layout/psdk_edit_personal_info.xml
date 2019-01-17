@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.qiyi.android.video.ui.account.view.PLinearLayout android:orientation="vertical" android:background="@color/psdk_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.android.video.ui.account.view.PView style="@style/psdk_divideLine" />
+    <ScrollView android:id="@id/sv_edit_info" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <org.qiyi.android.video.ui.account.view.PLinearLayout android:orientation="vertical" android:id="@id/edit_info_content_relativelayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <org.qiyi.android.video.ui.account.view.PLinearLayout android:id="@id/avatar_layout" android:background="@drawable/psdk_selector_item_bg" style="@style/psdk_passport_edit_personal_item">
+                <org.qiyi.android.video.ui.account.view.PTextView android:textSize="15.0sp" android:textColor="#ff333333" android:id="@id/tv_avatar_title" android:paddingTop="22.0dip" android:paddingBottom="22.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/psdk_edit_info_avatar" android:layout_weight="1.0" />
+                <org.qiyi.android.video.ui.account.view.PDraweeView android:id="@id/iv_avatar" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/psdk_my_main_login_img" app:roundAsCircle="true" />
+                <ImageView android:background="@drawable/psdk_phone_my_inc_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </org.qiyi.android.video.ui.account.view.PLinearLayout>
+            <org.qiyi.android.video.ui.account.view.PView android:id="@id/line_avatar" style="@style/psdk_divideLine" />
+            <org.qiyi.android.video.ui.account.view.PLinearLayout android:id="@id/nickname_layout" style="@style/psdk_passport_edit_personal_item">
+                <org.qiyi.android.video.ui.account.view.PTextView android:textSize="15.0dip" android:textColor="#ff333333" android:id="@id/tv_nickname_title" android:paddingTop="22.0dip" android:paddingRight="18.0dip" android:paddingBottom="22.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/psdk_edit_info_nickname" />
+                <org.qiyi.android.video.ui.account.view.PEditText android:textSize="15.0sp" android:textColor="#ff999999" android:id="@id/et_nickname" android:background="@null" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxEms="30" android:singleLine="true" android:maxLength="30" android:textCursorDrawable="@drawable/psdk_shape_text_cursor" />
+            </org.qiyi.android.video.ui.account.view.PLinearLayout>
+            <org.qiyi.android.video.ui.account.view.PView android:id="@id/line_nickname" style="@style/psdk_divideLine" />
+            <org.qiyi.android.video.ui.account.view.PLinearLayout android:id="@id/sex_layout" android:background="@drawable/psdk_selector_item_bg" style="@style/psdk_passport_edit_personal_item">
+                <org.qiyi.android.video.ui.account.view.PTextView android:textSize="15.0sp" android:textColor="#ff333333" android:id="@id/tv_sex_title" android:paddingTop="22.0dip" android:paddingRight="18.0dip" android:paddingBottom="22.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/psdk_edit_info_sex" />
+                <org.qiyi.android.video.ui.account.view.PTextView android:textSize="15.0sp" android:textColor="#ff999999" android:id="@id/tv_sex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/psdk_please_choice" />
+            </org.qiyi.android.video.ui.account.view.PLinearLayout>
+            <org.qiyi.android.video.ui.account.view.PView android:id="@id/line_gender" style="@style/psdk_divideLine" />
+            <org.qiyi.android.video.ui.account.view.PLinearLayout android:id="@id/birth_layout" android:background="@drawable/psdk_selector_item_bg" style="@style/psdk_passport_edit_personal_item">
+                <org.qiyi.android.video.ui.account.view.PTextView android:textSize="15.0sp" android:textColor="#ff333333" android:id="@id/tv_birth_title" android:paddingTop="22.0dip" android:paddingRight="18.0dip" android:paddingBottom="22.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/psdk_edit_info_birthday" />
+                <org.qiyi.android.video.ui.account.view.PTextView android:textSize="15.0dip" android:textColor="#ff999999" android:id="@id/tv_birth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/psdk_please_choice" />
+            </org.qiyi.android.video.ui.account.view.PLinearLayout>
+            <org.qiyi.android.video.ui.account.view.PView android:id="@id/line_birthday" style="@style/psdk_divideLine" />
+            <org.qiyi.android.video.ui.account.view.PLinearLayout android:orientation="horizontal" android:id="@id/sign_layout" android:paddingLeft="12.0dip" android:paddingRight="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <org.qiyi.android.video.ui.account.view.PTextView android:textSize="15.0sp" android:textColor="#ff333333" android:id="@id/tv_sign_title" android:paddingTop="22.0dip" android:paddingRight="18.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/psdk_edit_info_sign" />
+                <org.qiyi.android.video.ui.account.view.PEditText android:textSize="15.0sp" android:textColor="#ff999999" android:gravity="top" android:id="@id/et_sign" android:background="@null" android:paddingTop="22.0dip" android:paddingBottom="22.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/psdk_edit_info_sign_tips" android:lines="2" android:maxEms="100" android:maxLength="100" android:inputType="textMultiLine" android:textCursorDrawable="@drawable/psdk_shape_text_cursor" />
+            </org.qiyi.android.video.ui.account.view.PLinearLayout>
+            <org.qiyi.android.video.ui.account.view.PView android:id="@id/line_sign" style="@style/psdk_divideLine" />
+            <org.qiyi.android.video.ui.account.view.PTextView android:textSize="10.0dip" android:textColor="#ffadadad" android:gravity="center" android:id="@id/tv_uid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" />
+        </org.qiyi.android.video.ui.account.view.PLinearLayout>
+    </ScrollView>
+    <org.qiyi.android.video.ui.account.view.PRelativeLayout android:layout_gravity="bottom" android:id="@id/phoneEmptyLayout" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/psdk_load_data_exception" />
+    </org.qiyi.android.video.ui.account.view.PRelativeLayout>
+</org.qiyi.android.video.ui.account.view.PLinearLayout>

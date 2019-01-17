@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/img1" android:layout_width="wrap_content" android:layout_height="wrap_content" fresco:pressedStateOverlayImage="@color/card_poster_mask_black_alpha_40" />
+    <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta1_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/img1" />
+    <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta2_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/img1" android:layout_below="@id/meta1_layout" />
+    <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta3_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/img1" android:layout_below="@id/meta2_layout" />
+    <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta4_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/img1" android:layout_below="@id/meta3_layout" />
+    <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta5_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/img1" android:layout_below="@id/meta4_layout" />
+    <org.qiyi.basecard.common.widget.ButtonView android:id="@id/meta6_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/img1" />
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/img2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" fresco:pressedStateOverlayImage="@color/card_poster_mask_black_alpha_40" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/feed_video_tail" android:background="#fff7f7f7" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="@dimen/pp_feed_left_gap" android:layout_marginTop="15.0dip" android:layout_marginRight="@dimen/pp_feed_left_gap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:paopao="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="44.0dip" android:layout_height="44.0dip">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/feed_base_video_icon" android:layout_width="44.0dip" android:layout_height="44.0dip" paopao:failureImage="@drawable/pp_icon_avatar_default" />
+        <ImageView android:id="@id/pp_feed_tail_video_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pp_qz_feed_tail_video_play" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <TextView android:textSize="15.0dip" android:textColor="@color/color_333333" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/feed_base_video_title" android:layout_width="100.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:maxLines="2" android:layout_weight="1.0" />
+    <View android:layout_gravity="center_vertical" android:background="@color/color_cccccc" android:layout_width="1.0px" android:layout_height="15.0dip" android:layout_marginLeft="10.0dip" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/color_0bbe06" android:gravity="center" android:id="@id/feed_view_video" android:layout_width="60.0dip" android:layout_height="fill_parent" android:text="观看" />
+</LinearLayout>

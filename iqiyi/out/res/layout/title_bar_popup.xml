@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/tips_dialog_bg" android:paddingRight="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/popup_videoparty" android:clickable="true" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <ImageView android:id="@id/ico_videoparty" android:clickable="false" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="14.0dip" android:src="@drawable/pop_up_party" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/pop_up_text_size" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/txt_videoparty" android:clickable="false" android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_marginLeft="14.0dip" android:text="@string/popup_txt_party" android:layout_toRightOf="@id/ico_videoparty" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/reddot_videoparty" android:visibility="gone" android:layout_width="34.0dip" android:layout_height="24.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/newtip_videoparty" android:layout_toRightOf="@id/txt_videoparty" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/popup_ugc" android:clickable="true" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <ImageView android:clickable="false" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="14.0dip" android:src="@drawable/pop_up_ugc" />
+        <TextView android:textSize="@dimen/pop_up_text_size" android:textColor="@android:color/white" android:gravity="center_vertical" android:clickable="false" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="14.0dip" android:text="@string/popup_txt_ugc" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/popup_capture_upload" android:clickable="true" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <ImageView android:clickable="false" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="14.0dip" android:src="@drawable/pop_up_camera" />
+        <TextView android:textSize="@dimen/pop_up_text_size" android:textColor="@android:color/white" android:gravity="center_vertical" android:clickable="false" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="14.0dip" android:text="@string/capture_and_upload" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/popup_scan" android:clickable="true" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <ImageView android:clickable="false" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="14.0dip" android:src="@drawable/pop_up_scan" />
+        <TextView android:textSize="@dimen/pop_up_text_size" android:textColor="@android:color/white" android:gravity="center_vertical" android:clickable="false" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="14.0dip" android:text="@string/scanner_title" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/popup_transfer" android:clickable="true" android:layout_width="wrap_content" android:layout_height="45.0dip">
+        <ImageView android:clickable="false" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="14.0dip" android:src="@drawable/pop_up_transfer" />
+        <TextView android:textSize="@dimen/pop_up_text_size" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/textView2" android:clickable="false" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="14.0dip" android:text="@string/phone_download_transfer_video" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/popup_live_show" android:clickable="true" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <ImageView android:clickable="false" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="14.0dip" android:src="@drawable/pop_up_camera" />
+        <TextView android:textSize="@dimen/pop_up_text_size" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/textView3" android:clickable="false" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="14.0dip" android:text="@string/ugc_live_record_title" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/popup_image_search" android:clickable="true" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <ImageView android:clickable="false" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="14.0dip" android:src="@drawable/pop_up_camera_1" />
+        <TextView android:textSize="@dimen/pop_up_text_size" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/textView4" android:clickable="false" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="14.0dip" android:text="@string/search_by_image" />
+    </LinearLayout>
+</LinearLayout>

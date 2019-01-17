@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/player_gesture_seek_progress_bar_radius" />
+            <size android:height="@dimen/player_gesture_seek_progress_bar_height" />
+            <solid android:color="#99494949" />
+        </shape>
+    </item>
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape android:shape="rectangle">
+                <corners android:radius="@dimen/player_gesture_seek_progress_bar_radius" />
+                <size android:height="@dimen/player_gesture_seek_progress_bar_height" />
+                <solid android:color="@color/player_progress_buffered" />
+            </shape>
+        </clip>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="rectangle">
+                <corners android:radius="@dimen/player_gesture_seek_progress_bar_radius" />
+                <size android:height="@dimen/player_gesture_seek_progress_bar_height" />
+                <solid android:color="#ff20bc22" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

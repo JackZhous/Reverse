@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="booster_whitelist_filterword">
+        <item>.apk</item>
+        <item>.rmvb</item>
+        <item>.epub</item>
+        <item>.umd</item>
+        <item>.txt</item>
+        <item>.mp3</item>
+    </string-array>
+    <string-array name="channle_sort_list">
+        <item>排序:</item>
+        <item>最熱</item>
+        <item>最新</item>
+        <item>評分</item>
+        <item>字母</item>
+    </string-array>
+    <string-array name="music_top_titles">
+        <item>本期榜單</item>
+        <item>往期榜單</item>
+        <item>粉絲榜</item>
+    </string-array>
+    <string-array name="phone_register_region_name">
+        <item>中國大陸</item>
+        <item>台灣</item>
+        <item>香港</item>
+        <item>澳門</item>
+        <item>日本</item>
+        <item>韓國</item>
+        <item>美國</item>
+        <item>英國</item>
+        <item>澳大利亞</item>
+        <item>加拿大</item>
+    </string-array>
+    <string-array name="psdk_account_problems_login">
+        <item>註冊新賬號</item>
+        <item>用微信/QQ/微博登錄</item>
+        <item>更多問題...</item>
+    </string-array>
+    <string-array name="psdk_account_problems_register">
+        <item>登錄已有賬號</item>
+        <item>用微信/QQ/微博註冊</item>
+        <item>更多問題...</item>
+    </string-array>
+    <string-array name="psdk_account_problems_repwd">
+        <item>切換賬號</item>
+        <item>註冊新賬號</item>
+        <item>用微信/QQ/微博登錄</item>
+        <item>更多問題...</item>
+    </string-array>
+    <string-array name="psdk_account_problems_resms">
+        <item>切換賬號</item>
+        <item>註冊新賬號</item>
+        <item>用微信/QQ/微博登錄</item>
+        <item>更多問題...</item>
+    </string-array>
+    <string-array name="psdk_account_problems_sms">
+        <item>註冊新賬號</item>
+        <item>用微信/QQ/微博登錄</item>
+        <item>手機號換了,無法收短信</item>
+        <item>更多問題...</item>
+    </string-array>
+    <string-array name="psdk_account_problems_verify">
+        <item>沒法收到短信</item>
+        <item>更多問題...</item>
+    </string-array>
+    <string-array name="psdk_account_problems_verify2">
+        <item>手機號換了,無法接收短信</item>
+        <item>未收到短信驗證碼</item>
+        <item>更多問題</item>
+    </string-array>
+    <string-array name="psdk_account_problems_verify3">
+        <item>未收到短信驗證碼</item>
+        <item>更多問題</item>
+    </string-array>
+    <string-array name="psdk_account_problems_verify4">
+        <item>手機號換了,無法接收短信</item>
+        <item>更多問題</item>
+    </string-array>
+    <string-array name="psdk_phone_register_region_name">
+        <item>中國大陸</item>
+        <item>台灣</item>
+        <item>香港</item>
+        <item>澳門</item>
+        <item>日本</item>
+        <item>韓國</item>
+        <item>美國</item>
+        <item>英國</item>
+        <item>澳大利亞</item>
+        <item>加拿大</item>
+    </string-array>
+    <string-array name="psdk_search_selected_length">
+        <item>時長:</item>
+        <item>全部</item>
+        <item>0-10分</item>
+        <item>10-30分</item>
+        <item>30-60分</item>
+        <item>60分鐘以上</item>
+    </string-array>
+    <string-array name="psdk_search_selected_publish_time">
+        <item>發布時間:</item>
+        <item>全部</item>
+        <item>壹天</item>
+        <item>壹周</item>
+        <item>壹月</item>
+    </string-array>
+    <string-array name="psdk_search_selected_quality">
+        <item>畫質:</item>
+        <item>全部</item>
+        <item>高清</item>
+        <item>超清</item>
+        <item>720P</item>
+        <item>1080P</item>
+    </string-array>
+    <string-array name="search_selected_length">
+        <item>時長:</item>
+        <item>全部</item>
+        <item>0-10分</item>
+        <item>10-30分</item>
+        <item>30-60分</item>
+        <item>60分鐘以上</item>
+    </string-array>
+    <string-array name="search_selected_publish_time">
+        <item>發布時間:</item>
+        <item>全部</item>
+        <item>壹天</item>
+        <item>壹周</item>
+        <item>壹月</item>
+    </string-array>
+    <string-array name="search_selected_quality">
+        <item>畫質:</item>
+        <item>全部</item>
+        <item>高清</item>
+        <item>超清</item>
+        <item>720P</item>
+        <item>1080P</item>
+    </string-array>
+    <string-array name="psdk_search_selected_channel">
+        <item>頻道:</item>
+        <item>全部</item>
+        <item>電影</item>
+        <item>電視劇</item>
+        <item>紀錄片</item>
+        <item>動漫</item>
+        <item>音樂</item>
+        <item>綜藝</item>
+        <item>娛樂</item>
+        <item>遊戲</item>
+        <item>旅遊</item>
+        <item>片花</item>
+        <item>教育</item>
+        <item>時尚</item>
+        <item>少兒</item>
+        <item>微電影</item>
+        <item>體育</item>
+        <item>生活</item>
+        <item>廣告</item>
+        <item>搞笑</item>
+        <item>財經</item>
+        <item>資訊</item>
+        <item>汽車</item>
+        <item>原創</item>
+        <item>軍事</item>
+        <item>母嬰</item>
+        <item>科技</item>
+        <item>脫口秀</item>
+        <item>健康</item>
+    </string-array>
+</resources>

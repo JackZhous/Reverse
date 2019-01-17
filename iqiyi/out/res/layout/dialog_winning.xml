@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@id/lav_light" android:layout_width="wrap_content" android:layout_height="wrap_content" app:lottie_fileName="red_packet_light.json" app:lottie_imageAssetsFolder="light_imgs" />
+    <FrameLayout android:layout_gravity="center" android:id="@id/fl_root" android:layout_width="300.0dip" android:layout_height="300.0dip">
+        <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:layout_marginBottom="9.0dip">
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom|center" android:orientation="vertical" android:background="@drawable/bg_award_result" android:layout_width="204.0dip" android:layout_height="235.0dip">
+                <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/qdv_award_img" android:layout_width="150.0dip" android:layout_height="86.0dip" android:layout_marginTop="20.0dip" app:roundedCornerRadius="6.0dip" />
+                <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:id="@id/tv_award_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/tv_award_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_btn_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip">
+                    <Button android:textSize="13.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/btn_fill_addr" android:background="@drawable/bg_dlg_fill_addr_btn" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="30.0dip" android:layout_marginRight="16.0dip" android:text="@string/dlg_fill_addr_btn" />
+                    <Button android:textSize="13.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/btn_continue" android:background="@drawable/bg_dlg_continue_btn_long" android:layout_width="130.0dip" android:layout_height="30.0dip" android:text="@string/dlg_continue_btn" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.799988dip">
+                    <TextView android:textSize="11.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dlg_business_1" />
+                    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/qdv_business_img" android:layout_width="28.0dip" android:layout_height="22.199982dip" />
+                    <TextView android:textSize="11.0sp" android:textColor="#ff999999" android:id="@id/tv_business_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="11.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dlg_business_2" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="240.0dip" android:layout_height="70.0dip" android:src="@drawable/winning" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="right" android:id="@id/fl_close" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="7.0999756dip" android:layout_marginRight="0.9dip">
+            <ImageButton android:layout_gravity="center" android:background="@null" android:clickable="false" android:layout_width="19.199982dip" android:layout_height="19.199982dip" android:src="@drawable/bg_dlg_close_btn" />
+        </FrameLayout>
+    </FrameLayout>
+    <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@id/lav_heart" android:layout_width="wrap_content" android:layout_height="wrap_content" app:lottie_fileName="red_packet_heart.json" />
+</FrameLayout>

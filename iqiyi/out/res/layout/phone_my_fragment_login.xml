@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="96.0dip" android:src="@drawable/phone_my_fragment_empty" />
+    <TextView android:textSize="14.0dip" android:textColor="#ff666666" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="@string/fragment_login_tips" />
+    <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/fragment_login_btn" android:background="@drawable/phone_play_record_green_normal" android:visibility="visible" android:layout_width="94.0dip" android:layout_height="30.0dip" android:layout_marginTop="20.0dip" android:text="@string/phone_my_record_login" />
+</LinearLayout>

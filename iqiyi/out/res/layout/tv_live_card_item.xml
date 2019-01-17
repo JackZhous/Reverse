@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/phone_search_result_adapter_first_top_layout" android:paddingTop="13.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/phone_search_result_adapter_first_avator_layout" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true">
+        <com.qiyi.video.android.bitmapfun.ui.RoundImageView android:id="@id/phone_search_result_adapter_first_avator" android:layout_width="35.0dip" android:layout_height="35.0dip" android:scaleType="fitXY" android:layout_centerInParent="true" />
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/phone_search_result_adapter_first_avator_shadow" android:background="@drawable/search_bg_tv" android:layout_width="60.0dip" android:layout_height="60.0dip" android:scaleType="fitXY" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/phone_search_result_adapter_first_text_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toLeftOf="@id/look_now_layout" android:layout_toRightOf="@id/phone_search_result_adapter_first_avator_layout" android:layout_alignTop="@id/phone_search_result_adapter_first_avator_layout" android:layout_alignBottom="@id/phone_search_result_adapter_first_avator_layout">
+        <RelativeLayout android:id="@id/phone_search_result_adapter_first_title_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0dip" android:id="@id/title_l" android:layout_width="50.0dip" android:layout_height="wrap_content" android:text="title1" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/phone_title_black" android:ellipsize="end" android:id="@id/phone_search_result_adapter_first_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="风中奇缘未删减版" android:maxLines="1" android:layout_toRightOf="@id/title_l" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/phone_search_result_adapter_first_meta1_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/phone_search_result_adapter_first_title_layout" android:layout_centerVertical="true">
+            <TextView android:textSize="12.0dip" android:textColor="@color/tk_card_rank" android:gravity="center_vertical" android:id="@id/meta1_l" android:layout_width="50.0dip" android:layout_height="wrap_content" android:text="正在直播" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/tk_card_rank" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/phone_search_result_adapter_first_meta1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="年份：2014" android:singleLine="true" android:layout_toRightOf="@id/meta1_l" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/phone_search_result_adapter_first_meta2_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_below="@id/phone_search_result_adapter_first_meta1_layout">
+            <TextView android:textSize="12.0dip" android:textColor="@color/tk_card_rank" android:id="@id/meta2_l" android:layout_width="50.0dip" android:layout_height="wrap_content" android:text="meta2" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/tk_card_rank" android:ellipsize="end" android:id="@id/phone_search_result_adapter_first_meta2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="主演 : 刘诗诗  彭于晏 胡歌 陈法拉 涵洞 秦昊" android:singleLine="true" android:layout_toRightOf="@id/meta2_l" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/look_now_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignTop="@id/phone_search_result_adapter_first_avator_layout" android:layout_alignBottom="@id/phone_search_result_adapter_first_avator_layout" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <Button android:id="@id/look_now_btn" android:background="@drawable/phone_search_firstitem_playbtn_bg" android:layout_width="75.0dip" android:layout_height="30.0dip" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

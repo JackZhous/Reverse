@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_48"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/p_color_ebebeb" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_0.5" />
+    <TextView android:textSize="@dimen/p_dimen_14" android:textColor="@color/p_color_333333" android:gravity="center" android:id="@id/submit_title1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/p_dimen_10" android:text="@string/p_vip_submit_price2" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/p_dimen_18" android:textColor="@color/p_color_FF7E00" android:ellipsize="end" android:gravity="center" android:id="@id/price1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/p_dimen_8" android:text="239" android:maxLines="1" android:layout_toRightOf="@id/submit_title1" android:layout_centerVertical="true" />
+    <View android:id="@id/devmsg" android:background="@color/p_color_ebebeb" android:visibility="visible" android:layout_width="0.5dip" android:layout_height="10.0dip" android:layout_marginLeft="4.0dip" android:layout_marginRight="10.0dip" android:layout_toRightOf="@id/price1" android:layout_centerVertical="true" />
+    <TextView android:textSize="12.0dip" android:textColor="@color/p_color_999999" android:ellipsize="end" android:id="@id/price2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已优惠50元" android:maxLines="1" android:layout_toRightOf="@id/devmsg" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/p_dimen_16" android:textColor="@color/white" android:gravity="center" android:id="@id/txt_submit" android:background="@color/p_color_FF7E00" android:layout_width="108.0dip" android:layout_height="fill_parent" android:text="@string/p_vip_paysubmit" android:layout_alignParentRight="true" />
+</RelativeLayout>

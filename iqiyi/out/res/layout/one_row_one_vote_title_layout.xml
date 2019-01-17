@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/vote_root" android:clickable="true" android:longClickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:textColor="#ff464646" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="10.0dip" android:text="破产姐妹你更喜欢谁？破产姐妹你更喜欢谁？" android:layout_toLeftOf="@id/image1" />
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/image" android:background="@drawable/vote_has" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_below="@id/title" android:layout_alignLeft="@id/title" />
+    <TextView android:textSize="14.0dip" android:textColor="#ff949494" android:id="@id/title1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="7.0dip" android:text="已有66188人投票" android:layout_toRightOf="@id/image" android:layout_below="@id/title" />
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/image1" android:background="@drawable/vote_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

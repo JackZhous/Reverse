@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/replyAllLayout" android:background="@color/color_grey_light" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/replyAllBtnLayout" android:background="@color/color_black_bottom" android:paddingLeft="@dimen/player_10" android:paddingRight="@dimen/player_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:id="@id/seeAllBack" android:background="@drawable/phone_account_back_bg" android:paddingLeft="@dimen/player_15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/player_15" android:layout_marginBottom="@dimen/player_15" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ListView android:id="@id/replyListView" android:paddingTop="7.0dip" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:scrollingCache="false" android:cacheColorHint="@color/transparent" android:divider="@null" android:dividerHeight="0.0dip" android:layout_above="@id/replyAllBtnLayout" />
+</RelativeLayout>

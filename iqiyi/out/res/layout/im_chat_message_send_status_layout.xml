@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:layout_width="25.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/im_message_user_text_margin_top" android:layout_marginRight="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/pb_msg_sending" android:visibility="invisible" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="5.0dip" android:indeterminate="true" android:indeterminateDrawable="@drawable/pp_costum_progress_bar" />
+    <com.iqiyi.im.ui.view.MsgSendStatusImageView android:id="@id/iv_warn_msg_fail" android:background="@drawable/pp_selector_resend_message" android:visibility="invisible" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="5.0dip" android:contentDescription="@null" />
+</RelativeLayout>

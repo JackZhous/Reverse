@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/one_row_big_face_layout" android:padding="10.0dip" android:clickable="true" android:longClickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/left_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/reward_layout" android:layout_alignParentLeft="true">
+        <org.iqiyi.video.image.PlayerDraweView android:id="@id/player_faceIcon" android:background="@drawable/face_icon_large" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_centerVertical="true" fresco:roundAsCircle="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/title1_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="3.0dip" android:layout_toRightOf="@id/player_faceIcon" android:layout_alignTop="@id/player_faceIcon">
+            <TextView android:textSize="@dimen/one_row_big_face_name_size" android:textColor="#ff333333" android:ellipsize="end" android:id="@id/title1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <org.iqiyi.video.image.PlayerDraweView android:layout_gravity="center" android:id="@id/starIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="11.0dip" android:textColor="#ff999999" android:ellipsize="end" android:id="@id/title2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="3.0dip" android:text="" android:singleLine="true" android:layout_below="@id/title1_layout" android:layout_alignLeft="@id/title1_layout" />
+        <TextView android:textSize="11.0dip" android:textColor="#ff949494" android:ellipsize="end" android:id="@id/title3" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:layout_toRightOf="@id/title2" android:layout_alignTop="@id/title2" android:layout_alignBottom="@id/title2" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/attentionLayout" android:layout_width="wrap_content" android:layout_height="30.0dip" android:minWidth="65.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <TextView android:textSize="13.0dip" android:gravity="center" android:id="@id/attentionImage" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/attentionProgressBar" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" android:indeterminateDrawable="@drawable/qiyi_sdk_player_loading_image" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/reward_layout" android:paddingTop="5.0dip" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginRight="4.0dip" android:layout_toLeftOf="@id/attentionLayout">
+        <TextView android:textSize="13.0dip" android:textColor="#fffc5830" android:gravity="center" android:id="@id/reward" android:background="@drawable/player_portrait_reward_btn_stroke_new" android:paddingLeft="11.0dip" android:paddingRight="12.0dip" android:layout_width="65.0dip" android:layout_height="30.0dip" android:text="打赏" android:singleLine="true" />
+    </RelativeLayout>
+    <TextView android:textSize="9.0dip" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:id="@id/reward_num" android:background="@drawable/player_portrait_reward_num_bg" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:layout_alignTop="@id/reward_layout" android:layout_alignRight="@id/reward_layout" />
+</RelativeLayout>

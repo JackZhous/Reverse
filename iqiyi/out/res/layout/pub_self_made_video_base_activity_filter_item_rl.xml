@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/video_call_layout_filter" android:layout_width="57.0dip" android:layout_height="126.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:iqiyi="http://schemas.android.com/apk/res-auto">
+    <com.android.share.camera.view.roundview.RoundedImageView android:id="@id/iv_filter_img" android:padding="2.0dip" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="25.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/pub_filter_text_selector" android:id="@id/tv_filter_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/pub_album_dir_list" android:layout_below="@id/iv_filter_img" android:layout_centerHorizontal="true" />
+</RelativeLayout>

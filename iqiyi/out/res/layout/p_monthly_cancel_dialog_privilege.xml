@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/corner_radius_10dp_white" android:layout_width="300.0dip" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/loaded_content" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="22.0dip">
+            <TextView android:textSize="15.0dip" android:textColor="@color/p_color_333333" android:id="@id/content_title_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" android:text="@string/p_monthly_pay_cancel_notice" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/loaded_line_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip" android:layout_below="@id/content_title_1">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@id/img1" android:layout_width="71.0dip" android:layout_height="72.0dip" />
+                    <TextView android:textSize="11.0dip" android:textColor="@color/p_color_666666" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/title1" android:layout_width="71.0dip" android:layout_height="wrap_content" android:maxLines="2" android:lineSpacingExtra="4.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@id/img2" android:layout_width="71.0dip" android:layout_height="72.0dip" />
+                    <TextView android:textSize="11.0dip" android:textColor="@color/p_color_666666" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/title2" android:layout_width="71.0dip" android:layout_height="wrap_content" android:maxLines="2" android:lineSpacingExtra="4.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@id/img3" android:layout_width="71.0dip" android:layout_height="72.0dip" />
+                    <TextView android:textSize="11.0dip" android:textColor="@color/p_color_666666" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/title3" android:layout_width="71.0dip" android:layout_height="wrap_content" android:maxLines="2" android:lineSpacingExtra="4.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="15.0dip" android:textColor="@color/p_color_333333" android:gravity="center_vertical" android:id="@id/content_title_2" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/p_monthly_pay_agreement" android:layout_below="@id/loaded_line_1" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/loaded_line_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:layout_below="@id/content_title_2">
+                <View android:layout_gravity="center_vertical" android:background="@drawable/corner_radius_5dp_dab176" android:layout_width="5.0dip" android:layout_height="5.0dip" android:layout_marginLeft="21.0dip" />
+                <TextView android:textSize="13.0dip" android:textColor="@color/p_color_666666" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/title4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginRight="20.0dip" android:maxLines="1" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/loaded_line_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:layout_below="@id/loaded_line_3">
+                <View android:layout_gravity="center_vertical" android:background="@drawable/corner_radius_5dp_dab176" android:layout_width="5.0dip" android:layout_height="5.0dip" android:layout_marginLeft="21.0dip" />
+                <TextView android:textSize="13.0dip" android:textColor="@color/p_color_666666" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/title5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginRight="20.0dip" android:maxLines="1" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/loaded_line_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:layout_below="@id/loaded_line_4">
+                <View android:layout_gravity="center_vertical" android:background="@drawable/corner_radius_5dp_dab176" android:layout_width="5.0dip" android:layout_height="5.0dip" android:layout_marginLeft="21.0dip" />
+                <TextView android:textSize="13.0dip" android:textColor="@color/p_color_666666" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/title6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginRight="20.0dip" android:maxLines="1" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/loaded_content">
+            <View android:id="@id/div1" android:background="@color/p_color_e6e6e6" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <View android:id="@id/div2" android:background="@color/p_color_e6e6e6" android:layout_width="0.5dip" android:layout_height="45.0dip" android:layout_below="@id/div1" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="18.0dip" android:textColor="@color/p_color_c8a06a" android:gravity="center" android:id="@id/ok_button" android:layout_width="150.0dip" android:layout_height="45.0dip" android:text="@string/p_confirm_delete" android:layout_below="@id/div1" />
+            <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/p_color_c8a06a" android:gravity="center" android:id="@id/no_button" android:layout_width="150.0dip" android:layout_height="45.0dip" android:text="@string/p_use_again" android:layout_toRightOf="@id/ok_button" android:layout_below="@id/div1" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.iqiyi.paopao.middlecommon.ui.view.loadingview.LoadingCircleLayout android:gravity="center" android:orientation="horizontal" android:id="@id/pp_loading_layout" android:background="@color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecore.widget.CircleLoadingView android:id="@id/pp_loading_view" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+    <TextView android:textColor="#ff3a3a3a" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/pp_textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="内容即将呈现..." />
+</com.iqiyi.paopao.middlecommon.ui.view.loadingview.LoadingCircleLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p_dimen_95">
+        <ImageView android:id="@id/p_w_not_bind_card_icon" android:layout_width="@dimen/p_dimen_180" android:layout_height="@dimen/p_dimen_180" android:src="@drawable/p_w_no_bank_card_img" />
+        <TextView android:textSize="@dimen/p_dimen_14" android:textColor="@color/p_color_666666" android:id="@id/p_w_not_bind_card_notice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p_dimen_24" android:text="@string/p_w_not_bind_card_notice" android:layout_below="@id/p_w_not_bind_card_icon" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/p_dimen_14" android:textColor="@android:color/white" android:gravity="center" android:id="@id/p_w_not_bind_card_add_card" android:background="@drawable/corner_radius30_ff7e00" android:layout_width="@dimen/p_dimen_105" android:layout_height="@dimen/p_dimen_30" android:layout_marginTop="@dimen/p_dimen_20" android:text="@string/p_w_add_bank_card" android:layout_below="@id/p_w_not_bind_card_notice" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

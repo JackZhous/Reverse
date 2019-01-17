@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/poster" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" fresco:placeholderImage="@drawable/face_icon_xlarge" fresco:placeholderImageScaleType="centerCrop" fresco:pressedStateOverlayImage="@color/card_poster_mask_black_alpha_40" fresco:roundAsCircle="true" />
+    <TextView android:id="@id/meta" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/card_vip_clue_privilege_meta_mtop" android:layout_below="@id/poster" style="@style/MetaTitle.Small" />
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/phone_pay_title" android:background="@drawable/pay_tab_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <ImageView android:id="@id/phoneTopBack" android:background="@drawable/p_title_bar_arrow_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/phoneTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p_pay_title" android:maxLines="1" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="15.0dip" android:textColor="@drawable/p_b0b0b0_9e9e9e_selector" android:id="@id/phoneRightTxt" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ScrollView android:id="@id/sview" android:paddingBottom="44.0dip" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phone_pay_title">
+        <LinearLayout android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/user_info_pannel" layout="@layout/p_vip_userinfo" />
+            <include android:id="@id/act_info_pannel" android:visibility="gone" layout="@layout/p_vip_actinfo_item" />
+            <include layout="@layout/p_vip_product" />
+            <LinearLayout android:orientation="vertical" android:id="@id/coupon_line" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:background="@color/p_color_f7f7f7" android:layout_width="fill_parent" android:layout_height="6.0dip" />
+                <include layout="@layout/p_vip_coupon" />
+            </LinearLayout>
+            <View android:background="@color/p_color_f7f7f7" android:layout_width="fill_parent" android:layout_height="6.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/paymethod_line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View android:background="@color/p_color_f7f7f7" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+            <include android:id="@id/tw_privilege_pannel" layout="@layout/p_vip_privilege_tw" />
+            <include android:id="@id/privilege_pannel" layout="@layout/p_vip_privilege" />
+            <include android:id="@id/tennis_privilege_pannel" android:visibility="gone" layout="@layout/p_tennis_privilege" />
+            <include android:id="@id/agreement_pannel" layout="@layout/p_vip_agreement" />
+            <View android:background="@color/p_color_f7f7f7" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+            <include android:id="@id/common_ques_pannel" layout="@layout/p_vip_common_question" />
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@id/price_line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <include layout="@layout/p_bottom_price_and_submit_layout" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/tk_empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phone_pay_title">
+        <include layout="@layout/p_load_data_exception" />
+    </RelativeLayout>
+</RelativeLayout>

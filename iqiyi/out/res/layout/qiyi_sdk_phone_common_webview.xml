@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/webview_toolbar" android:background="#ff202020" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textColor="#ff8c8c8c" android:gravity="center" android:id="@id/wb_backward" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="@string/wb_back" android:drawableLeft="@drawable/qiyi_sdk_phone_account_back_small_bg" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff8c8c8c" android:gravity="center|right" android:id="@id/wb_closed" android:paddingLeft="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wb_close" android:drawableLeft="@drawable/qiyi_sdk_phone_webview_divideline" android:drawablePadding="5.0dip" android:layout_toRightOf="@id/wb_backward" android:layout_alignTop="@id/wb_backward" android:layout_alignBottom="@id/wb_backward" android:layout_centerVertical="true" />
+        <TextView android:ellipsize="end" android:gravity="center" android:id="@id/wb_title" android:layout_width="150.0dip" android:layout_height="wrap_content" android:text="" android:layout_centerInParent="true" style="@style/top_title" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/webview_toolbar_right_view_RL" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <org.qiyi.basecore.widget.CircleLoadingView android:id="@id/hint_webview_skip_progressBar" android:visibility="visible" android:layout_width="@dimen/player_20" android:layout_height="@dimen/player_20" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/webview_toolbar_right_view_RL" android:layout_centerVertical="true" app:auto_animation="true" app:static_play="true" />
+    </RelativeLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/webview_toolbar">
+        <RelativeLayout android:id="@id/wb_input_url" android:background="@android:color/background_dark" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:id="@id/wb_input_url_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/wb_input_url_btn" />
+            <Button android:id="@id/wb_input_url_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Go!" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <FrameLayout android:id="@id/phone_common_webview_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/empty_layout" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/webview_toolbar">
+        <include layout="@layout/qiyi_sdk_phone_load_data_exception_hint" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/videolayout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</RelativeLayout>

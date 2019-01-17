@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/img2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    <RelativeLayout android:id="@id/layout1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/img1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/layout1" app:text_maxLines="2" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/layout1" android:layout_below="@id/meta1">
+        <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta2" android:layout_width="wrap_content" android:layout_height="wrap_content" app:text_maxLines="2" app:text_ellipsize="end" />
+        <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/meta2" android:layout_below="@id/meta1" />
+    </LinearLayout>
+</RelativeLayout>

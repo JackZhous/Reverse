@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/card_my_point_dialog_shape_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta3" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta4" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta5" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <org.qiyi.basecard.common.widget.ButtonView android:id="@id/button" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/p_w_title_layout" layout="@layout/pay_phone_title" />
+    <include layout="@layout/p_w_schedule" />
+    <TextView android:textSize="@dimen/p_dimen_15" android:textColor="@color/p_color_333333" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/p_dimen_35" android:layout_marginTop="@dimen/p_dimen_20" android:layout_marginRight="@dimen/p_dimen_35" android:text="@string/p_w_input_original_pwd" />
+    <LinearLayout android:orientation="vertical" android:id="@id/p_w_input_pwd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/p_dimen_35" android:layout_marginTop="@dimen/p_dimen_30" android:layout_marginRight="@dimen/p_dimen_35">
+        <include layout="@layout/p_w_keyboard_pwd_layout" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/p_dimen_14" android:textColor="@color/p_color_FF7E00" android:layout_gravity="center_horizontal" android:id="@id/p_w_forget_pwd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p_dimen_30" android:text="@string/p_w_forget_pwd" />
+</LinearLayout>

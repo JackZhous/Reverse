@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/box_office_poster" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" fresco:viewAspectRatio="0.72" fresco:placeholderImage="@drawable/poster_big_default" fresco:placeholderImageScaleType="centerCrop" fresco:pressedStateOverlayImage="@color/card_poster_mask_black_alpha_40" />
+    <TextView android:ellipsize="end" android:gravity="top" android:id="@id/box_office_title" android:layout_width="fill_parent" android:layout_height="37.0dip" android:layout_marginTop="5.0dip" android:maxLines="2" android:layout_below="@id/box_office_poster" style="@style/MetaTitle.TwoLines" />
+    <TextView android:textSize="12.0dip" android:textColor="@color/qiyi_btn_color" android:ellipsize="end" android:gravity="center" android:id="@id/box_office_btn" android:background="@drawable/phone_green_btn" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginTop="6.0dip" android:maxLines="1" android:layout_below="@id/box_office_title" />
+</RelativeLayout>

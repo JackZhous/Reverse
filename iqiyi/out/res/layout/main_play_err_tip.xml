@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/tipLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/errTip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="#ff949494" android:gravity="center_horizontal" android:id="@id/getFail" android:paddingTop="@dimen/player_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/player_getData_fail_recommend" android:drawableTop="@drawable/player_tab_retry_button" android:layout_centerHorizontal="true" />
+        <TextView android:id="@id/dataRefresh" android:paddingTop="@dimen/player_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/getFail" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/player_loading" />
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.iqiyi.publisher.ui.view.resizelayout.QZPublisherAutoHeightLayout android:id="@id/rl_auto_height" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:paopao="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/pub_new_activity_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/feed_publisher_actionbar" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/pub_common_actionbar" />
+        <RelativeLayout android:id="@id/pp_layout_content" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/feed_publisher_actionbar">
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_expression_parent" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <com.iqiyi.paopao.middlecommon.components.qyconponent.emotion.views.ExpressionsLayout android:id="@id/ll_expressions" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View android:id="@id/v_none_expression_bg" android:background="#fff0f0f0" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/ll_expression_parent" android:layout_alignTop="@id/ll_expression_parent" android:layout_alignRight="@id/ll_expression_parent" android:layout_alignBottom="@id/ll_expression_parent" />
+            <include android:id="@id/pp_layout_content_keboard_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/ll_expression_parent" layout="@layout/pub_publisher_tool_bar" />
+            <ScrollView android:id="@id/scroll_view_input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/pp_layout_content_keboard_top" android:layout_alignParentTop="true">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="15.0dip">
+                        <TextView android:textSize="16.0sp" android:textColor="@color/pp_color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pp_qz_publisher_title" />
+                        <EditText android:textSize="16.0dip" android:textColor="@color/pp_color_333333" android:textColorHint="#ff999999" android:gravity="start" android:id="@id/sw_publish_title" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/pp_qz_publisher_title_hint" android:textCursorDrawable="@drawable/pub_text_curor_drawable" />
+                    </LinearLayout>
+                    <RelativeLayout android:id="@id/sw_publish_description_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="110.0dip">
+                        <com.iqiyi.publisher.ui.view.TagEditText android:textSize="16.0dip" android:textColor="@color/pub_default_text_color" android:textColorHint="#ff999999" android:gravity="start" android:id="@id/sw_publish_feed_text" android:background="@null" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="7.0dip" android:minLines="2" android:editable="true" android:lineSpacingExtra="10.0dip" android:textCursorDrawable="@drawable/pub_text_curor_drawable" paopao:hard_hint_color="@color/qz_publisher_title_color" paopao:real_hint="@string/pp_qz_publisher_hint" />
+                        <GridView android:id="@id/qz_selectimg_list_listview" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="300.0dip" android:layout_marginLeft="6.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="1.0dip" android:listSelector="@android:color/transparent" android:numColumns="4" android:layout_below="@id/sw_publish_feed_text" />
+                        <include android:id="@id/ll_feed_publish_select" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="12.0dip" android:layout_below="@id/sw_publish_feed_text" layout="@layout/pub_media_add_toolbar" />
+                        <com.iqiyi.paopao.middlecommon.views.FeedSmallTail android:id="@id/pp_publish_small_tail_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="70.0dip" android:layout_below="@id/sw_publish_feed_text" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+        <View android:id="@id/pp_gray_layer" android:background="@color/pp_audio_feed_pop_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+</com.iqiyi.publisher.ui.view.resizelayout.QZPublisherAutoHeightLayout>

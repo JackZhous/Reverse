@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#33000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:id="@id/v_main" android:background="@drawable/bind_push_calendar_bg" android:layout_width="270.0dip" android:layout_height="wrap_content" android:layout_marginTop="210.0dip" android:layout_centerHorizontal="true">
+        <TextView android:textSize="18.0sp" android:textColor="#ff333333" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="45.0dip" android:layout_centerHorizontal="true" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/v_bind_push" android:background="@drawable/bind_push_calendar_btn" android:layout_width="160.0dip" android:layout_height="35.0dip" android:layout_marginTop="20.0dip" android:layout_below="@id/tv_title" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/ic_bind_push" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bind_push_calendar_ic_phone" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:id="@id/tv_bind_push" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" />
+        </LinearLayout>
+        <ImageView android:id="@id/v_bind_push_mask" android:visibility="gone" android:layout_width="160.0dip" android:layout_height="35.0dip" android:layout_marginTop="20.0dip" android:src="@drawable/bind_push_calendar_btn_mask" android:layout_below="@id/tv_title" android:layout_centerHorizontal="true" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/v_bind_calendar" android:background="@drawable/bind_push_calendar_btn" android:layout_width="160.0dip" android:layout_height="35.0dip" android:layout_marginTop="20.0dip" android:layout_below="@id/v_bind_push" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/ic_bind_calendar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bind_push_calendar_ic_calendar" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:id="@id/tv_bind_calendar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" />
+        </LinearLayout>
+        <ImageView android:id="@id/v_bind_calendar_mask" android:visibility="gone" android:layout_width="160.0dip" android:layout_height="35.0dip" android:layout_marginTop="20.0dip" android:src="@drawable/bind_push_calendar_btn_mask" android:layout_below="@id/v_bind_push" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:id="@id/v_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:text="最近不再提醒" android:layout_below="@id/v_bind_calendar" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <org.qiyi.basecore.widget.IconViewClose android:id="@id/v_close" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="35.0dip" android:layout_below="@id/v_main" android:layout_centerHorizontal="true" app:iconStrokeWidth="1.5dip" app:iconPadding="13.0dip" app:lineColor="#ffffffff" app:circleBg="true" app:circleColor="#66000000" app:circleStrokeColor="#b2b4b4b4" app:circleStrokeWidth="1.5dip" app:circlePadding="1.0dip" />
+    <ImageView android:id="@id/ic_alarm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="160.0dip" android:layout_marginBottom="6.0dip" android:src="@drawable/bind_push_calendar_ic_alarm" android:layout_centerHorizontal="true" />
+</RelativeLayout>

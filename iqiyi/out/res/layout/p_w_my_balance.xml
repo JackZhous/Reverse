@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/p_w_title_layout" layout="@layout/pay_phone_title" />
+    <RelativeLayout android:id="@id/sview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/p_w_title_layout">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:id="@id/p_w_balance_img" android:layout_width="@dimen/p_dimen_45" android:layout_height="@dimen/p_dimen_45" android:layout_marginTop="@dimen/p_dimen_36" android:src="@drawable/p_w_balance_icon" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="@dimen/p_dimen_14" android:textStyle="bold" android:textColor="@color/p_color_666666" android:id="@id/p_w_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p_dimen_11" android:text="@string/p_w_balance" android:layout_below="@id/p_w_balance_img" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="@dimen/p_dimen_40" android:textColor="@color/p_color_FF7E00" android:id="@id/p_w_balance_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p_dimen_35" android:layout_below="@id/p_w_balance" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="@dimen/p_dimen_18" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/p_w_recharge_tv" android:background="@drawable/corner_radius_45dp_ff7e00" android:layout_width="@dimen/p_dimen_305" android:layout_height="@dimen/p_dimen_45" android:layout_marginTop="@dimen/p_dimen_43" android:text="@string/p_w_rechange" android:layout_below="@id/p_w_balance_tv" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="@dimen/p_dimen_18" android:textStyle="bold" android:textColor="@color/p_color_ff6000" android:gravity="center" android:id="@id/p_w_withdraw_tv" android:background="@drawable/corner_outline_radius45_ff7e00" android:layout_width="@dimen/p_dimen_305" android:layout_height="@dimen/p_dimen_45" android:layout_marginTop="@dimen/p_dimen_20" android:text="@string/p_w_withdraw" android:layout_below="@id/p_w_recharge_tv" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/tk_empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/p_w_title_layout">
+        <include layout="@layout/p_load_data_exception" />
+    </RelativeLayout>
+</RelativeLayout>

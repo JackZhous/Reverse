@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="40" android:drawable="@drawable/auto_install_1" />
+    <item android:duration="40" android:drawable="@drawable/auto_install_2" />
+    <item android:duration="40" android:drawable="@drawable/auto_install_3" />
+    <item android:duration="40" android:drawable="@drawable/auto_install_4" />
+    <item android:duration="40" android:drawable="@drawable/auto_install_5" />
+    <item android:duration="40" android:drawable="@drawable/auto_install_6" />
+    <item android:duration="40" android:drawable="@drawable/auto_install_7" />
+    <item android:duration="40" android:drawable="@drawable/auto_install_8" />
+    <item android:duration="40" android:drawable="@drawable/auto_install_9" />
+    <item android:duration="40" android:drawable="@drawable/auto_install_10" />
+    <item android:duration="40" android:drawable="@drawable/auto_install_11" />
+    <item android:duration="40" android:drawable="@drawable/auto_install_12" />
+    <item android:duration="40" android:drawable="@drawable/auto_install_13" />
+    <item android:duration="40" android:drawable="@drawable/auto_install_14" />
+    <item android:duration="40" android:drawable="@drawable/auto_install_15" />
+    <item android:duration="40" android:drawable="@drawable/auto_install_16" />
+</animation-list>

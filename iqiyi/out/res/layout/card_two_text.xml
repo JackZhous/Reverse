@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="top" android:orientation="horizontal" android:minHeight="40.0dip" style="@style/CardModelBase"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/card_search_text_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/text1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Name" />
+    <TextView android:textColor="@color/card_search_text_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/text2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Name" />
+</LinearLayout>

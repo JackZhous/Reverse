@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/CardModelBase"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/poster" android:layout_width="fill_parent" android:layout_height="85.0dip" android:scaleType="centerCrop" fresco:placeholderImage="@drawable/df_2" fresco:placeholderImageScaleType="fitXY" fresco:pressedStateOverlayImage="@color/card_poster_mask_black_alpha_40" />
+    <RelativeLayout android:id="@id/gift_package_mask" android:background="@color/card_meta_mask_black_alpha_50" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/poster" android:layout_alignTop="@id/poster" android:layout_alignRight="@id/poster" android:layout_alignBottom="@id/poster">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/gift_package_received_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/card_text_size_13dp" android:textColor="@color/color_meta_title" android:gravity="center|left" android:id="@id/meta_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:maxLines="2" android:layout_below="@id/poster" />
+    <TextView android:textSize="@dimen/card_text_size_11dp" android:textColor="@color/color_meta_sub_title" android:gravity="center|left" android:id="@id/meta_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:singleLine="true" android:layout_below="@id/meta_1" />
+</RelativeLayout>

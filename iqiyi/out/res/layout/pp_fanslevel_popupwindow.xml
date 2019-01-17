@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/pp_fanslevel_popwindow" android:paddingTop="@dimen/pp_fanslevel_popwindow_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/pp_fanslevel_popwindow_anim_images" android:layout_width="@dimen/pp_fanslevel_popwindow_anim_images_width" android:layout_height="@dimen/pp_fanslevel_popwindow_anim_images_height" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/pp_fanslevel_popupwindow_light" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/pp_attendance_popupwindow_star_avatar" android:layout_width="100.0dip" android:layout_height="100.0dip" android:src="@drawable/pp_icon_avatar_default" android:scaleType="centerCrop" android:layout_centerInParent="true" fresco:roundAsCircle="true" xmlns:fresco="http://schemas.android.com/apk/res-auto" />
+        <ImageView android:id="@id/yellow_ribbon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-25.0dip" android:layout_below="@id/pp_attendance_popupwindow_star_avatar" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/pp_fanslevel_popupwindow_main_image" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/pp_fanslevel_popupwindow_star" android:background="@drawable/pp_fanslevel_upgrade_star_anim" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/pp_fanslevel_popupwindow_star_all" android:background="@drawable/pp_fanslevel_popupwindow_star_all" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/pp_fanslevel_popwindow_txt_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/pp_fanslevel_popwindow_txt_layout_margin_bottom" />
+    <RelativeLayout android:id="@id/pp_fanslevel_layout_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:gravity="center_horizontal" android:id="@id/on_off_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/pp_fanslevel_popupwindow_bottom_divider_space">
+            <TextView android:textSize="13.0dip" android:textColor="#ffffffff" android:id="@id/on_off_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="开启签到提醒" android:layout_centerVertical="true" />
+            <ToggleButton android:id="@id/on_off_button" android:background="@drawable/pp_fanslevel_sign_toggle_button_bg" android:layout_width="47.0dip" android:layout_height="28.0dip" android:checked="true" android:textOn="" android:textOff="" android:layout_toRightOf="@id/on_off_text" />
+        </RelativeLayout>
+        <TextView android:textSize="15.0sp" android:textColor="#ff0bbe06" android:gravity="center" android:id="@id/pp_fanslevel_upgrade_goto" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/pp_fanslevel_popupwindow_bottom_divider_space" android:text="去道具商城" android:drawableRight="@drawable/pp_circle_arrow_right" android:drawablePadding="5.0dip" android:layout_below="@id/on_off_layout" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/pp_fanslevel_upgrade_close_btn" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginTop="35.0dip" android:src="@drawable/pp_fanslevel_popupwindow_close_btn" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

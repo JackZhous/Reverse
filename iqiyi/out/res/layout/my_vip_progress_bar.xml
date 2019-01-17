@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="9.0dip" android:textStyle="bold" android:textColor="#ffb18f57" android:gravity="center_vertical" android:id="@id/progress_value" android:background="@drawable/my_vip_progress_value_bg" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:id="@id/divider" android:background="#4dffffff" android:layout_width="1.0dip" android:layout_height="5.0dip" android:layout_below="@id/progress_value" />
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/vip_level_start" android:layout_width="20.0dip" android:layout_height="10.0dip" android:layout_marginTop="2.0dip" android:layout_below="@id/progress_value" />
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/vip_level_end" android:layout_width="20.0dip" android:layout_height="10.0dip" android:layout_alignTop="@id/vip_level_start" android:layout_alignParentRight="true" />
+    <ProgressBar android:id="@id/progress_bar" android:layout_width="fill_parent" android:layout_height="4.0dip" android:layout_marginLeft="-0.5dip" android:layout_marginRight="-0.5dip" android:max="100" android:progress="50" android:progressDrawable="@drawable/my_vip_level_progress_bar_bg_g" android:layout_toLeftOf="@id/vip_level_end" android:layout_toRightOf="@id/vip_level_start" android:layout_below="@id/divider" android:layout_centerVertical="true" style="?android:attr/progressBarStyleHorizontal" />
+</RelativeLayout>

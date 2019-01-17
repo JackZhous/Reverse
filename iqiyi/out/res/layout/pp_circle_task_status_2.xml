@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.iqiyi.circle.view.customview.QZTaskHeaderView android:id="@id/qzTaskHead" android:background="@drawable/pp_circle_task_bar_list_header_completed" android:layout_width="fill_parent" android:layout_height="105.0dip" />
+        <include android:id="@id/content_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/qzTaskHead" layout="@layout/pp_qz_circle_task_complete_content" />
+    </RelativeLayout>
+</ScrollView>

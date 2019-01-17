@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/title_bar_container" style="@style/title_bar_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/title_bar_bg" android:background="@color/pp_color_ffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="15.0dip" android:textColor="@color/pp_back_text_color" android:gravity="center" android:id="@id/title_bar_left" android:paddingLeft="@dimen/pp_title_bar_padding_left" android:paddingTop="@dimen/pp_title_bar_back_padding_top" android:paddingRight="@dimen/pp_title_bar_back_padding_right" android:paddingBottom="@dimen/pp_title_bar_back_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:drawableLeft="@drawable/pp_selector_title_bar_back_activated" android:drawablePadding="5.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/pp_title_bar_drop_down_layout" />
+    <TextView android:textSize="15.0dip" android:textColor="@color/pp_back_text_color" android:gravity="center" android:id="@id/title_bar_right" android:paddingRight="@dimen/pp_title_bar_padding_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:id="@id/title_bar_divider_bottom" android:background="@color/pp_color_e6e6e6" android:layout_width="fill_parent" android:layout_height="@dimen/pp_title_bar_bottom_divider_height" android:layout_alignParentBottom="true" />
+</RelativeLayout>

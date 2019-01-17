@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/msg_body" layout="@layout/chat_txt_left" />
+    <include android:id="@id/notification" layout="@layout/chat_alert" />
+</LinearLayout>

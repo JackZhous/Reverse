@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <RelativeLayout android:id="@id/plugin_game_center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/icon_wrapper" android:layout_width="44.0dip" android:layout_height="40.0dip" android:layout_centerHorizontal="true">
+                <ImageView android:id="@id/custom_service_icon" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/phone_custom_service_game_center" android:scaleType="fitCenter" />
+                <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="2.0dip" android:src="@drawable/phone_my_setting_custom_service_choose" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <TextView android:textSize="15.0dip" android:textColor="#ff333333" android:id="@id/custom_service_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/phone_my_setting_custom_service_game_center" android:layout_below="@id/icon_wrapper" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/plugin_app_store" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="54.0dip" android:layout_toRightOf="@id/plugin_game_center">
+            <RelativeLayout android:id="@id/icon_wrapper" android:layout_width="44.0dip" android:layout_height="40.0dip" android:layout_centerHorizontal="true">
+                <ImageView android:id="@id/custom_service_icon" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/phone_custom_service_app_store" android:scaleType="fitCenter" />
+                <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="2.0dip" android:src="@drawable/phone_my_setting_custom_service_choose" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <TextView android:textSize="15.0dip" android:textColor="#ff333333" android:id="@id/custom_service_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/phone_my_setting_custom_service_app_store" android:layout_below="@id/icon_wrapper" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/plugin_qixiu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="54.0dip" android:layout_toRightOf="@id/plugin_app_store">
+            <RelativeLayout android:id="@id/icon_wrapper" android:layout_width="44.0dip" android:layout_height="40.0dip" android:layout_centerHorizontal="true">
+                <ImageView android:id="@id/custom_service_icon" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/phone_custom_service_qixiu" android:scaleType="fitCenter" />
+                <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="2.0dip" android:src="@drawable/phone_my_setting_custom_service_choose" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <TextView android:textSize="15.0dip" android:textColor="#ff333333" android:id="@id/custom_service_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/phone_my_setting_custom_qixiu" android:layout_below="@id/icon_wrapper" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/pp_color_222222" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/layout_header" android:background="@color/pp_color_222222" layout="@layout/pp_common_header" />
+    <FrameLayout android:id="@id/time_video" android:background="@color/pp_color_222222" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_header" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/title_manager" android:title="@string/category_opt_manager" />
+    <item android:id="@id/title_cancel" android:visible="false" android:title="@string/btn_cancel" />
+</menu>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/phone_play_record_filter_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/phone_play_record_filter_container" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="13.0dip" android:textColor="@drawable/phone_play_record_filter_text_color" android:gravity="center_vertical" android:id="@id/phone_play_record_filter_live" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:layout_marginRight="15.0dip" android:text="@string/my_main_record_filter_live" android:layout_toLeftOf="@id/phone_play_record_filter_checkbox" />
+        <CheckBox android:id="@id/phone_play_record_filter_live_checkbox" android:layout_width="19.0dip" android:layout_height="19.0dip" android:button="@drawable/record_checkbox" android:layout_toLeftOf="@id/phone_play_record_filter_live" android:layout_centerVertical="true" />
+        <TextView android:textSize="13.0dip" android:textColor="@drawable/phone_play_record_filter_text_color" android:gravity="center_vertical" android:id="@id/phone_play_record_filter_title" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:layout_marginRight="15.0dip" android:text="@string/my_main_record_filter_short_video" android:layout_alignParentRight="true" />
+        <CheckBox android:id="@id/phone_play_record_filter_checkbox" android:layout_width="19.0dip" android:layout_height="19.0dip" android:button="@drawable/record_checkbox" android:layout_toLeftOf="@id/phone_play_record_filter_title" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <include android:id="@id/phone_play_record_advise" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/phone_play_record_filter_container" layout="@layout/my_main_play_record_advertise" />
+</RelativeLayout>

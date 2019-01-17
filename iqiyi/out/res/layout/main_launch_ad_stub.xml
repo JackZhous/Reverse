@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/frameBootImg" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/welcome_ads_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/welcome_ads_banner_height">
+        <ImageView android:id="@id/bootImage" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <org.qiyi.android.gif.GifImageView android:id="@id/welcome_img_gif" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/linearlayout_ad" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:layout_gravity="center|right|top" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="17.0dip" android:textColor="@color/color_white" android:gravity="center" android:id="@id/accountAdsTime" android:background="@drawable/ad_second" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="20.0dip" />
+            <FrameLayout android:id="@id/layout_accountAdsTime_jump" android:visibility="gone" android:layout_width="150.0dip" android:layout_height="100.0dip">
+                <RelativeLayout android:layout_gravity="center|right|top" android:orientation="horizontal" android:background="@drawable/ad_second_jump" android:layout_width="65.0dip" android:layout_height="25.0dip" android:layout_marginTop="@dimen/splash_ad_countdown_margin_top" android:layout_marginRight="10.0dip">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                        <TextView android:textSize="16.0dip" android:textColor="@color/color_white" android:layout_gravity="center_vertical" android:id="@id/accountAdsTime_jump" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                        <TextView android:textSize="14.0dip" android:textColor="@color/color_white" android:layout_gravity="center_vertical" android:id="@id/accountAdsTime_jumpstr" android:layout_width="30.0dip" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="@string/ads_accountime_jump_str" android:singleLine="true" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </FrameLayout>
+        </RelativeLayout>
+        <ImageView android:layout_gravity="bottom|center|right" android:id="@id/welcome_ads_fullscreen_jump_hint" android:background="@drawable/welcome_ads_fullscreen_jump_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" />
+        <RelativeLayout android:layout_gravity="bottom" android:id="@id/relativelayout_ad_detail" android:background="#4d000000" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/splash_ad_des_height">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/splash_ad_des_padding_left" android:layout_marginRight="50.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <TextView android:textSize="22.0dip" android:textColor="#ffffffff" android:id="@id/textview_ad_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxEms="15" android:singleLine="true" />
+                <TextView android:textSize="15.0dip" android:textColor="#ffffffff" android:id="@id/textview_ad_content" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:maxEms="20" android:singleLine="true" />
+            </LinearLayout>
+            <ImageView android:background="@drawable/welcome_ad_detail_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/splash_ad_des_padding_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/launch_ad_text" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="21.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/WelcomeAdsTag" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/welcome_ads_iqiyi_banner" android:layout_width="fill_parent" android:layout_height="@dimen/welcome_ads_banner_height" android:layout_alignParentBottom="true">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="18.0dip" android:layout_marginBottom="18.0dip" android:scaleType="centerInside" style="@style/WelcomeAdsBannerIcon" />
+    </FrameLayout>
+</RelativeLayout>

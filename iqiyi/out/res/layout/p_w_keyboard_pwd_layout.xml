@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/w_keyb_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="100.0">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="15.0">
+                    <TextView android:textSize="@dimen/p_dimen_12" android:textStyle="bold" android:textColor="@color/p_color_333333" android:gravity="center" android:id="@id/qy_pwd_t1" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="" />
+                    <View android:id="@id/qy_w_bottom_dividing_line1" android:background="@drawable/p_w_keyboard_pwd_selector" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_1" android:layout_marginTop="@dimen/p_dimen_11" />
+                </LinearLayout>
+                <View android:background="@color/white" android:layout_width="0.0dip" android:layout_height="@dimen/p_dimen_50" android:layout_weight="2.0" />
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="15.0">
+                    <TextView android:textSize="@dimen/p_dimen_12" android:textStyle="bold" android:textColor="@color/p_color_333333" android:gravity="center" android:id="@id/qy_pwd_t2" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="" />
+                    <View android:id="@id/qy_w_bottom_dividing_line2" android:background="@drawable/p_w_keyboard_pwd_selector" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_1" android:layout_marginTop="@dimen/p_dimen_11" />
+                </LinearLayout>
+                <View android:background="@color/white" android:layout_width="0.0dip" android:layout_height="@dimen/p_dimen_50" android:layout_weight="2.0" />
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="15.0">
+                    <TextView android:textSize="@dimen/p_dimen_12" android:textStyle="bold" android:textColor="@color/p_color_333333" android:gravity="center" android:id="@id/qy_pwd_t3" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="" />
+                    <View android:id="@id/qy_w_bottom_dividing_line3" android:background="@drawable/p_w_keyboard_pwd_selector" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_1" android:layout_marginTop="@dimen/p_dimen_11" />
+                </LinearLayout>
+                <View android:background="@color/white" android:layout_width="0.0dip" android:layout_height="@dimen/p_dimen_50" android:layout_weight="2.0" />
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="15.0">
+                    <TextView android:textSize="@dimen/p_dimen_12" android:textStyle="bold" android:textColor="@color/p_color_333333" android:gravity="center" android:id="@id/qy_pwd_t4" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="" />
+                    <View android:id="@id/qy_w_bottom_dividing_line4" android:background="@drawable/p_w_keyboard_pwd_selector" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_1" android:layout_marginTop="@dimen/p_dimen_11" />
+                </LinearLayout>
+                <View android:background="@color/white" android:layout_width="0.0dip" android:layout_height="@dimen/p_dimen_50" android:layout_weight="2.0" />
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="15.0">
+                    <TextView android:textSize="@dimen/p_dimen_12" android:textStyle="bold" android:textColor="@color/p_color_333333" android:gravity="center" android:id="@id/qy_pwd_t5" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="" />
+                    <View android:id="@id/qy_w_bottom_dividing_line5" android:background="@drawable/p_w_keyboard_pwd_selector" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_1" android:layout_marginTop="@dimen/p_dimen_11" />
+                </LinearLayout>
+                <View android:background="@color/white" android:layout_width="0.0dip" android:layout_height="@dimen/p_dimen_50" android:layout_weight="2.0" />
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="15.0">
+                    <TextView android:textSize="@dimen/p_dimen_12" android:textStyle="bold" android:textColor="@color/p_color_333333" android:gravity="center" android:id="@id/qy_pwd_t6" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="" />
+                    <View android:id="@id/qy_w_bottom_dividing_line6" android:background="@drawable/p_w_keyboard_pwd_selector" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_1" android:layout_marginTop="@dimen/p_dimen_11" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <EditText android:textSize="1.0sp" android:textColor="#000000ff" android:id="@id/edt_pwdinput" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="45.0dip" android:cursorVisible="false" android:maxLength="6" android:inputType="number" />
+    </FrameLayout>
+</RelativeLayout>

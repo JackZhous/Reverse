@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0dip" android:textColor="#ff4d4d4d" android:gravity="center" android:id="@id/title1" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="最新大片" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/cardtitle" />
+    <TextView android:textSize="13.0dip" android:textColor="@color/player_portrait_operation_text" android:id="@id/title2" android:paddingLeft="4.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/cardtitle" />
+    <ImageView android:id="@id/divider" android:background="#ffe7e7e7" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

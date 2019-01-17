@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/p_w_title_layout" layout="@layout/pay_phone_title" />
+    <RelativeLayout android:id="@id/sview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/p_w_title_layout">
+        <include android:id="@id/p_w_security_info_layout" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_36" layout="@layout/p_w_show_user_security_info_item" />
+        <include android:id="@id/p_w_tel_layout" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_60" android:layout_below="@id/p_w_security_info_layout" layout="@layout/p_w_show_user_security_info_item" />
+        <include android:id="@id/p_w_pwd_layout" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_60" android:layout_below="@id/p_w_tel_layout" layout="@layout/p_w_show_user_security_info_item" />
+        <include android:id="@id/p_w_id_layout" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_60" android:layout_below="@id/p_w_pwd_layout" layout="@layout/p_w_show_user_security_info_item" />
+        <TextView android:textSize="@dimen/p_dimen_18" android:textColor="@android:color/white" android:gravity="center" android:id="@id/p_w_next_tv" android:background="@drawable/corner_radius_45dp_ff7e00" android:visibility="invisible" android:layout_width="@dimen/p_dimen_303" android:layout_height="@dimen/p_dimen_45" android:layout_marginTop="@dimen/p_dimen_30" android:text="@string/cancel_month_next_step" android:layout_below="@id/p_w_id_layout" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/tk_empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/p_w_title_layout">
+        <include layout="@layout/p_load_data_exception" />
+    </RelativeLayout>
+</RelativeLayout>

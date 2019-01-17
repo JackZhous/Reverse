@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/sw_mood_top_space" android:background="@color/pub_transparent" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_alignParentTop="true" />
+    <ImageView android:id="@id/sw_mood_bg_top" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_below="@id/sw_mood_top_space" />
+    <ImageView android:id="@id/sw_mood_bg_bottom" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_below="@id/sw_mood_bg_top" />
+    <ImageView android:id="@id/sw_mood_bottom_space" android:background="@drawable/pub_mood_bg_selected_bottom" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_below="@id/sw_mood_bg_bottom" />
+    <RelativeLayout android:id="@id/sw_mood_background_round" android:layout_width="66.0dip" android:layout_height="66.0dip" android:layout_margin="5.0dip" android:layout_below="@id/sw_mood_top_space" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/sw_mood_catagory_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0sp" android:textColor="#ff333333" android:id="@id/sw_mood_catagory_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-15.0dip" android:layout_marginBottom="0.0dip" android:text="@string/pp_sw_mood_1" android:layout_below="@id/sw_mood_background_round" android:layout_centerHorizontal="true" />
+</RelativeLayout>

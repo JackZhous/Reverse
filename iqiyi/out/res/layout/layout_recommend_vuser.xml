@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/arrow" android:background="@drawable/arrow_top" android:layout_width="14.0dip" android:layout_height="6.0dip" android:layout_marginTop="5.0dip" android:layout_centerHorizontal="true" />
+    <LinearLayout android:id="@id/title_layout" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/arrow">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginTop="20.0dip" android:text="@string/similar_aipindao" />
+    </LinearLayout>
+    <org.qiyi.android.video.ugc.view.RecSubscribeView android:id="@id/list_rec" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title_layout" />
+</RelativeLayout>

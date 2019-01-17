@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/live_channel_layout_1" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" style="@style/CardModelBase"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/iv_live_icon" android:layout_width="46.0dip" android:layout_height="46.0dip" android:scaleType="centerCrop" fresco:placeholderImage="@drawable/phone_category_detail_rec_horizontal_big_default" fresco:placeholderImageScaleType="centerCrop" />
+    <TextView android:textSize="15.0dip" android:textColor="#ff333333" android:id="@id/tv_live_channel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:text="浙江卫视(高清)" android:singleLine="true" android:layout_weight="2.5" />
+    <LinearLayout android:orientation="vertical" android:id="@id/live_channel_layout_living" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_weight="1.5">
+        <TextView android:textSize="13.0dip" android:textColor="@color/green_mormal" android:id="@id/tv_live_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在直播" android:singleLine="true" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/default_gary" android:id="@id/tv_live_next_start_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="10:00" />
+    </LinearLayout>
+    <TextView android:textSize="15.0dip" android:textColor="@android:color/black" android:gravity="center" android:id="@id/live_channel_data_error_tv" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="获取数据出错" android:layout_weight="4.5" />
+    <LinearLayout android:orientation="vertical" android:id="@id/live_channel_layout_programe" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_weight="3.0">
+        <TextView android:textSize="13.0dip" android:textColor="@color/green_mormal" android:id="@id/tv_live_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="真情剧场:美丽的花儿" android:singleLine="true" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/default_gary" android:id="@id/tv_live_next_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="魅力都市" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

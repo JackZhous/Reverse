@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="80.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:Fresco="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/pp_ss_circle_iv" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="12.0dip" android:src="@drawable/pp_icon_avatar_default" android:layout_centerVertical="true" Fresco:placeholderImage="@drawable/pp_icon_avatar_default" Fresco:placeholderImageScaleType="centerCrop" Fresco:failureImage="@drawable/pp_icon_avatar_default" Fresco:failureImageScaleType="centerCrop" Fresco:roundAsCircle="true" />
+    <com.iqiyi.paopao.middlecommon.ui.view.PPMultiNameView android:id="@id/pp_ss_circle_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/pp_ss_circle_iv" android:layout_centerVertical="true" Fresco:showLevelName="false" Fresco:nameTextSize="@dimen/pp_dimen_dp_16" Fresco:nameTextColor="@color/color_333333" />
+</RelativeLayout>

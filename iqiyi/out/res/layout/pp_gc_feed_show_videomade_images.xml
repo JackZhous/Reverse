@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/pp_videomade_play_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/gc_feed_image_res" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" app:placeholderImage="@drawable/pp_general_default_bg" app:placeholderImageScaleType="fitXY" />
+        <ImageView android:id="@id/pp_videomade_play" android:background="@drawable/pp_sight_play_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <include android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/pp_video_player_paused_traffic" />
+    </RelativeLayout>
+    <ImageView android:id="@id/gc_feed_image_un_support_type" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/pp_need_update_icon" android:scaleType="centerCrop" android:layout_below="@id/pp_videomade_play_layout" />
+</RelativeLayout>

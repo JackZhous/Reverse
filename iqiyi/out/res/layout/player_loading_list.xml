@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_gravity="center" android:background="#ffededed" android:layout_width="fill_parent" android:layout_height="35.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/lab_footer_for_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <ProgressBar android:layout_gravity="center_vertical" android:layout_width="@dimen/player_20" android:layout_height="@dimen/player_20" android:layout_margin="3.0dip" android:indeterminateDrawable="@drawable/qiyi_sdk_player_loading_image" />
+        <TextView android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loading_data" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="center" android:id="@id/nocontentTip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textColor="@color/color_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/player_comment_no_more" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@id/errLayout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textColor="@color/color_grey" android:id="@id/contentTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/player_comment_err_tip" />
+        <TextView android:textColor="@color/color_green_line" android:id="@id/reGetData" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/player_getData_refresh" android:layout_toRightOf="@id/contentTip" />
+    </RelativeLayout>
+</RelativeLayout>

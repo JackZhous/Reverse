@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.iqiyi.video.ppq.camcorder.PlayerCamGLView android:id="@id/player_cam_glview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:background="@drawable/pub_self_made_video_rounded_coner_background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/buttons_rl" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/pub_self_made_video_base_activity_buttons_layout" />
+    <include android:id="@id/filter_rl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/pub_self_made_video_base_activity_filter_rl" />
+    <View android:id="@id/mongolia_layer_view" android:background="#99000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.iqiyi.publisher.ui.view.CountDownView android:id="@id/count_down_view" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pub_count_down_3" android:layout_centerInParent="true" />
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/bg_profile_dlg" android:layout_width="270.0dip" android:layout_height="283.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="238.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="#ff333333" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_title" android:layout_width="224.0dip" android:layout_height="50.0dip" android:layout_marginTop="22.0dip" android:text="@string/title_profile_dlg" />
+        <org.qiyi.basecore.widget.QiyiDraweeView android:layout_gravity="center_horizontal" android:id="@id/qdv_avatar" android:layout_width="65.0dip" android:layout_height="65.0dip" android:layout_marginTop="30.0dip" app:placeholderImage="@drawable/def_avatar" app:roundAsCircle="true" />
+        <TextView android:textSize="15.0sp" android:textColor="#ff333333" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_nickname" android:layout_width="224.0dip" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:maxLines="1" />
+    </LinearLayout>
+    <View android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:textSize="18.0sp" android:textColor="#ff0abe06" android:gravity="center" android:id="@id/btn_later" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/dlg_later_btn" android:layout_weight="1.0" />
+        <View android:background="#ffe6e6e6" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+        <Button android:textSize="18.0sp" android:textColor="#ff0abe06" android:gravity="center" android:id="@id/btn_eidt_profile" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/dlg_edit_profile_btn" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

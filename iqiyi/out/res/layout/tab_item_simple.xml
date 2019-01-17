@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="35.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0dip" android:textColor="@drawable/qiyi_text_color_mysetting" android:gravity="center" android:id="@id/star_tab" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:layout_width="wrap_content" android:layout_height="35.0dip" android:text="电影" android:lines="1" android:layout_alignParentLeft="true" />
+    <View android:id="@id/line" android:background="@color/qiyi_green" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_alignLeft="@id/star_tab" android:layout_alignRight="@id/star_tab" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/top_container" android:background="@drawable/coupons_bg_up" android:paddingLeft="15.0dip" android:paddingTop="13.0dip" android:paddingRight="15.0dip" android:paddingBottom="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/stamps_type_icon" android:background="@drawable/phone_square_image_default" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginRight="10.0dip" android:scaleType="fitXY" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/stamps_type_icon" android:layout_alignTop="@id/stamps_type_icon">
+            <TextView android:textSize="@dimen/card_text_size_13dp" android:textColor="@color/default_black" android:id="@id/stamps_type_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="电影点播券" />
+            <TextView android:textSize="@dimen/card_text_size_11dp" android:textColor="@color/color_meta_sub_title" android:ellipsize="end" android:id="@id/stamps_type_meta1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="可解锁任意一部付费电影" android:maxLines="3" />
+            <TextView android:textSize="@dimen/card_text_size_11dp" android:textColor="@color/color_meta_sub_title" android:ellipsize="end" android:id="@id/stamps_type_meta2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="点播结束时间" android:maxLines="3" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/coupons_bg_down" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/top_container">
+        <TextView android:gravity="center_vertical" android:id="@id/stamps_deadline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2016-2-24到期" style="@style/MetaSubTitle" />
+        <TextView android:textSize="@dimen/card_text_size_11dp" android:textColor="@color/green_mormal" android:gravity="center_vertical" android:id="@id/stamps_more_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/coupons_play_continue" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/stamps_outdate_icon" android:visibility="gone" android:layout_width="68.0dip" android:layout_height="67.0dip" android:layout_marginRight="6.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

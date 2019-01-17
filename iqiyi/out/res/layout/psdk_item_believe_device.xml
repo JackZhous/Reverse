@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.qiyi.android.video.ui.account.view.PRelativeLayout android:background="@drawable/psdk_phone_setting_card_item_bg" android:layout_width="fill_parent" android:layout_height="58.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.android.video.ui.account.view.PDraweeView android:id="@id/iv_device_platform" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="15.0dip" android:layout_centerVertical="true" />
+    <org.qiyi.android.video.ui.account.view.PLinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_toRightOf="@id/iv_device_platform" android:layout_centerVertical="true">
+        <org.qiyi.android.video.ui.account.view.PTextView android:textSize="15.0dip" android:textColor="#ff333333" android:id="@id/tv_device_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        <org.qiyi.android.video.ui.account.view.PTextView android:textSize="14.0dip" android:textColor="#ff999999" android:id="@id/tv_device_platform" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:maxLines="1" />
+    </org.qiyi.android.video.ui.account.view.PLinearLayout>
+    <ImageView android:id="@id/iv_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/psdk_phone_my_inc_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <org.qiyi.android.video.ui.account.view.PTextView android:textSize="15.0dip" android:id="@id/tv_mdevice" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/psdk_phone_my_inc_arrow" android:text="@string/psdk_phone_my_account_user_device" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <org.qiyi.android.video.ui.account.view.PTextView android:background="#fff1f1f1" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+</org.qiyi.android.video.ui.account.view.PRelativeLayout>

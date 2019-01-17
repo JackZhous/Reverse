@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/upgrade_dialog" android:background="@drawable/upgrade_custom_dialog_bg" android:paddingTop="20.0dip" android:layout_width="270.0dip" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/upgrade_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="升级提示" />
+        <TextView android:textSize="15.0sp" android:textColor="#ff333333" android:id="@id/upgrade_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="22.0dip" android:text="文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/upgrade_check_install" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="22.0dip">
+            <ImageView android:id="@id/upgrade_check_box" android:background="@drawable/upgrade_check_box" android:layout_width="17.0dip" android:layout_height="17.0dip" android:layout_centerVertical="true" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff666666" android:id="@id/upgrade_check_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="安装爱奇艺动画屋" android:maxLines="1" android:layout_toRightOf="@id/upgrade_check_box" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="#ff999999" android:gravity="center" android:id="@id/upgrade_negative" android:background="@drawable/upgrade_left_button_bg" android:layout_width="135.0dip" android:layout_height="fill_parent" android:text="@string/upgrade_later" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="18.0sp" android:textColor="#ff0bbe06" android:gravity="center" android:id="@id/upgrade_position" android:background="@drawable/upgrade_right_button_bg" android:layout_width="135.0dip" android:layout_height="fill_parent" android:text="@string/upgrade_now" android:layout_alignParentRight="true" />
+            <View android:background="#ffc8c8c8" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentTop="true" />
+            <View android:background="#ffc8c8c8" android:layout_width="0.5dip" android:layout_height="fill_parent" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

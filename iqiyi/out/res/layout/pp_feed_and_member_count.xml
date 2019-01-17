@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/member_count_description" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0dip" android:textColor="@color/user_info_text_gray" android:gravity="center_vertical" android:id="@id/circle_joined_member_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    <View android:layout_gravity="center_vertical" android:id="@id/separater" android:background="@color/cell_separate_line_dark" android:layout_width="1.0px" android:layout_height="12.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+    <TextView android:textSize="12.0dip" android:textColor="@color/user_info_text_gray" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/circle_feed_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="name111" android:singleLine="true" />
+</LinearLayout>

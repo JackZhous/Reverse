@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/phoneTitleLayout" style="@style/top_base_item">
+        <ImageView android:id="@id/title_back_layout" android:src="@drawable/phone_account_back_bg" style="@style/top_title_item" />
+        <TextView android:id="@id/olympic_title" style="@style/top_title" />
+        <TextView android:textSize="16.0dip" android:textColor="#ff0bbe06" android:id="@id/match_filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <org.qiyi.basecore.widget.PagerSlidingTabStrip android:id="@id/olympic_main_tabs" android:background="@color/page_tab_bg" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_below="@id/phoneTitleLayout" app:pstsIndicatorColor="@color/default_grean" app:pstsDividerColor="#00000000" app:pstsIndicatorHeight="3.0px" app:pstsUnderlineHeight="0.0px" app:pstsTabPaddingLeftRight="15.0dip" app:pstsShouldExpand="false" app:pstsScrollToCenter="false" />
+    <View android:id="@id/olympic_main_tabs_split_line" android:background="@color/top_tab_devide_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/olympic_main_tabs" />
+    <android.support.v4.view.ViewPager android:id="@id/olympic_main_vp_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/olympic_main_tabs_split_line" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/olympic_loading_layout" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phoneTitleLayout">
+        <org.qiyi.basecore.widget.CircleLoadingView android:id="@id/lab_footer_circle_loading" android:layout_width="20.0dip" android:layout_height="20.0dip" app:auto_animation="true" app:static_play="true" />
+        <TextView android:textColor="@color/qiyi_dark_grey" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/phone_loading_data_waiting" />
+    </LinearLayout>
+    <include android:id="@id/olympic_empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phoneTitleLayout" layout="@layout/phone_load_data_exception" />
+</RelativeLayout>

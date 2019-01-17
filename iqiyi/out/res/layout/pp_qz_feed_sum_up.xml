@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/pp_ad_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0dip" android:textColor="#ff999999" android:id="@id/qz_feed_from" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="12.5dip" android:layout_marginBottom="12.5dip" android:text="@string/pp_qz_feed_title_circle" android:maxLines="1" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/color_0bbe06" android:ellipsize="end" android:id="@id/qz_feed_source_circle_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.5dip" android:layout_marginBottom="12.5dip" android:maxLines="1" android:maxLength="14" android:layout_toRightOf="@id/qz_feed_from" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/pp_ad_tv_download" android:background="@drawable/pp_ad_download_bg" android:paddingLeft="12.5dip" android:paddingRight="12.5dip" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="7.5dip" android:text="@string/pp_ad_click_to_download" android:singleLine="true" android:includeFontPadding="false" android:maxLength="4" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="13.0dip" android:textColor="@color/color_333333" android:ellipsize="end" android:id="@id/pp_ad_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip" android:maxEms="15" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="10.0dip" android:textColor="@color/pp_color_999999" android:gravity="center" android:id="@id/pp_ad_tv_identificaion" android:background="@drawable/pp_ad_identification_bg" android:layout_width="33.0dip" android:layout_height="15.0dip" android:layout_marginTop="12.5dip" android:layout_marginBottom="12.5dip" android:text="@string/pp_ad_identification" android:layout_toRightOf="@id/pp_ad_name" />
+    </RelativeLayout>
+    <View android:id="@id/pp_detail_ad_divider" android:background="@color/pp_color_f7f7f7" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="7.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/gc_feed_summary_layout" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <RelativeLayout android:id="@id/rl_share" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="14.0dip" android:textColor="#ff666666" android:gravity="center_vertical" android:id="@id/gc_feed_share" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/pp_feed_card_more_share" android:drawableLeft="@drawable/pp_qz_feed_share" android:drawablePadding="5.0dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rl_comment" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="14.0dip" android:textColor="#ff666666" android:gravity="center_vertical" android:id="@id/gc_feed_comment_size" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="评论" android:drawableLeft="@drawable/pp_qz_feed_comments" android:drawablePadding="5.0dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:id="@id/rl_praise" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/gc_feed_praise_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pp_qz_feed_unlike" />
+            <TextView android:textSize="14.0dip" android:textColor="#ff666666" android:gravity="center|left" android:id="@id/gc_feed_praise_tv" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/pp_item_bottom_devider_bottom" android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecard.common.widget.MetaView android:id="@id/video_meta1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <org.qiyi.basecard.common.widget.MetaView android:id="@id/video_meta2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <include layout="@layout/card_video_layout" />
+    <org.qiyi.basecard.v3.widget.CardDanmakuEditView android:id="@id/boot" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+</LinearLayout>

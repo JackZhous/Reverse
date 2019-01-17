@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/player_pp_shape_dialog_bg" android:layout_width="280.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dip" android:textColor="@color/player_pp_item_text_black" android:gravity="center" android:id="@id/feed_put_top" android:layout_width="fill_parent" android:layout_height="54.0dip" android:text="@string/player_pp_feed_card_put_top" />
+    <View android:id="@id/divider_feed_put_top" android:background="@color/player_pp_cell_separate_line_dark" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="18.0dip" android:textColor="@color/player_pp_item_text_black" android:gravity="center" android:id="@id/feed_put_recommend" android:layout_width="fill_parent" android:layout_height="54.0dip" android:text="@string/player_pp_feed_card_put_recommend" />
+    <View android:id="@id/divider_feed_put_recommend" android:background="@color/player_pp_cell_separate_line_dark" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="18.0dip" android:textColor="@color/player_pp_item_text_black" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/feed_more_delete" android:layout_width="fill_parent" android:layout_height="54.0dip" android:text="@string/player_pp_feed_card_more_dele" />
+    <View android:id="@id/divider_feed_dele" android:background="@color/player_pp_cell_separate_line_dark" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="18.0dip" android:textColor="@color/player_pp_item_text_black" android:gravity="center" android:id="@id/feed_more_shutup" android:layout_width="fill_parent" android:layout_height="54.0dip" android:text="@string/player_feed_shutup_opr" />
+    <View android:id="@id/divider_feed_shutup" android:background="@color/player_pp_cell_separate_line_dark" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="18.0dip" android:textColor="@color/player_pp_item_text_black" android:gravity="center" android:id="@id/feed_more_report" android:layout_width="fill_parent" android:layout_height="54.0dip" android:text="@string/player_pp_feed_card_more_report" />
+    <View android:id="@id/divider_feed_report" android:background="@color/player_pp_cell_separate_line_dark" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="18.0dip" android:textColor="@color/player_pp_item_text_black" android:gravity="center" android:id="@id/feed_more_cancel" android:layout_width="fill_parent" android:layout_height="54.0dip" android:text="@string/player_pp_dialog_cancel_play" />
+</LinearLayout>

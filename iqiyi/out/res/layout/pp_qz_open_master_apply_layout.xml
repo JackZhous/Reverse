@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="@color/pp_color_333333" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/pp_welcome_apply_text" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pp_apply_for_circle_master_welcome" android:maxLines="1" android:layout_centerVertical="true" />
+        <View android:id="@id/pp_divider_view" android:background="@color/pp_color_e6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="1.0px" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="@dimen/qz_paoyou_grab_text_size" android:textColor="@color/pp_color_obbe06" android:gravity="center" android:id="@id/qz_apply_circle_master" android:background="@drawable/pp_video_circle_apply_master_bg" android:layout_width="68.0dip" android:layout_height="25.0dip" android:layout_marginRight="10.0dip" android:text="@string/pp_qz_fc_apply_circle_master_btn" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:id="@id/pp_item_bottom_gap" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+</LinearLayout>

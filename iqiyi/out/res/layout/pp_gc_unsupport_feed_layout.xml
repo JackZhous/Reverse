@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/gc_feed_content_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/feed_header_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <include android:id="@id/gc_feed_title_description_area" layout="@layout/pp_gc_feed_title_description" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/unsupport_view" android:background="@color/no_network_back" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="@dimen/pp_feed_left_gap" android:layout_marginTop="7.0dip" android:layout_marginRight="@dimen/pp_feed_left_gap" android:layout_marginBottom="7.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="@color/paopao_network_fail" android:gravity="center" android:layout_gravity="center_vertical" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pp_qz_unsupported_feed_type" android:drawableLeft="@drawable/pp_no_network_warning" android:drawablePadding="8.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/feed_sum_up_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.video.qyskin.view.SkinTitleBar android:id="@id/home_title_bar" android:background="@color/top_bar_bg_transparent" app:showTitle="true" app:homeAsUp="true" app:tb_menu="@menu/title_bar_search_menu" app:showDivider="true" style="@style/title_bar_transparent" />
+    <org.qiyi.basecore.widget.PagerSlidingTabStrip android:textSize="16.0dip" android:id="@id/top_tab_layout" android:layout_below="@id/home_title_bar" app:pstsIndicatorColor="@color/default_grean" app:pstsDividerColor="#00000000" app:pstsIndicatorHeight="3.0dip" app:pstsUnderlineHeight="0.0px" app:pstsShouldExpand="true" app:pstsScrollToCenter="true" style="@style/top_tab_bar_transparent" />
+    <org.qiyi.basecore.widget.QiyiViewPager android:id="@id/phone_category_detail_view_flipper" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/top_tab_layout" />
+</RelativeLayout>

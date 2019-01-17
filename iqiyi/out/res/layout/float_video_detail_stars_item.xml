@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/blockLayout" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.iqiyi.video.image.PlayerDraweView android:layout_gravity="center" android:id="@id/staricon" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+    <TextView android:textSize="13.0dip" android:textStyle="bold" android:textColor="#ff333333" android:ellipsize="end" android:gravity="center" android:id="@id/starname" android:paddingRight="5.0dip" android:layout_width="74.0dip" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="3.0dip" android:singleLine="true" />
+    <TextView android:textSize="13.0dip" android:textColor="#ff666666" android:ellipsize="end" android:gravity="center" android:id="@id/role" android:paddingRight="5.0dip" android:layout_width="74.0dip" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="3.0dip" android:singleLine="true" />
+</LinearLayout>

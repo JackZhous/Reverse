@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dip" android:textColor="#ff333333" android:gravity="center" android:id="@id/meta" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_centerInParent="true" style="@style/MetaSubTitle" />
+    <View android:id="@id/divider" android:background="@color/card_model_line_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/meta" />
+</RelativeLayout>

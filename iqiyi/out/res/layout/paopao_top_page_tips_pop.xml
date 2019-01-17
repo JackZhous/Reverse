@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_paopao_top_page_tips" android:layout_width="248.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="13.0dip" android:textColor="@color/white" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="新增上升榜，新晋榜，快来看看吧" />
+    <org.qiyi.basecore.widget.IconViewClose android:id="@id/close" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="6.0dip" android:layout_marginRight="10.0dip" app:iconStrokeWidth="1.1999817dip" app:iconPadding="5.0dip" app:lineColor="#e5fdfdfd" />
+</LinearLayout>

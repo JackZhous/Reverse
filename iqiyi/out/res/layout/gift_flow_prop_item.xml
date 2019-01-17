@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/gift_flow_selection_frame" android:padding="3.0dip" android:layout_width="125.0dip" android:layout_height="90.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_horizontal" android:layout_width="70.0dip" android:layout_height="50.0dip">
+        <org.iqiyi.video.image.PlayerDraweView android:id="@id/gift_flow_tool_icon" android:layout_width="39.5dip" android:layout_height="39.5dip" android:layout_marginTop="5.0dip" android:scaleType="centerInside" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <ProgressBar android:id="@id/progress_bar_free_prop" android:visibility="invisible" android:layout_width="40.0dip" android:layout_height="2.0dip" android:max="100" android:progressDrawable="@drawable/prop_progress_drawable" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@android:style/Widget.ProgressBar.Horizontal" />
+        <TextView android:textSize="12.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/text_free_gift_num" android:background="@drawable/prop_num_bg" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5.0dip" android:layout_marginRight="-5.0dip" android:layout_alignTop="@id/gift_flow_tool_icon" android:layout_alignRight="@id/gift_flow_tool_icon" />
+    </RelativeLayout>
+    <TextView android:textSize="14.0dip" android:textColor="#ff333333" android:gravity="center" android:id="@id/gift_flow_prop_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="name" />
+    <TextView android:textSize="11.0dip" android:textColor="#ff999999" android:gravity="center" android:id="@id/gift_flow_prop_item_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="price" />
+</LinearLayout>

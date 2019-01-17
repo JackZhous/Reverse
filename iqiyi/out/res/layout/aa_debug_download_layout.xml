@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/debug_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:id="@id/et_max" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:hint="请输入相应值" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/button_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/btn_mp4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="MP4#0" android:layout_weight="1.0" />
+            <Button android:id="@id/btn_f4v" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="F4V#4" android:layout_weight="1.0" />
+            <Button android:id="@id/btn_hcdn" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="HCDN#8" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/layout1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/btn_scan_dir" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="文件夹扫描" android:layout_weight="1.0" />
+            <Button android:id="@id/btn_add_task" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="添加任务" android:layout_weight="1.0" />
+            <Button android:id="@id/btn_download_debug" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="离线测试模式" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/layout2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/btn_copy_data" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="复制数据库" android:layout_weight="1.0" />
+            <Button android:id="@id/btn_file_task" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="文件下载任务" android:layout_weight="1.0" />
+            <Button android:id="@id/btn_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="待定" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/layout3" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/btn_3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="待定" android:layout_weight="1.0" />
+            <Button android:id="@id/btn_4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="待定" android:layout_weight="1.0" />
+            <Button android:id="@id/btn_add_random_task" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="随机视频任务" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/layout4" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/btn_5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="待定" android:layout_weight="1.0" />
+            <Button android:id="@id/btn_6" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="待定" android:layout_weight="1.0" />
+            <Button android:id="@id/btn_7" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="待定" android:layout_weight="1.0" />
+        </LinearLayout>
+        <TextView android:id="@id/tv_sd_load_intro" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/button_layout" />
+        <TextView android:id="@id/tv_debug_info" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:text="测试信息" android:layout_below="@id/button_layout" />
+    </LinearLayout>
+</ScrollView>

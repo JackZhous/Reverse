@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/dataalttext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/gongxin_info" />
+    <CheckBox android:id="@id/dataaltcheck" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:checked="false" android:text="@string/gongxin_checkbox_txt" android:layout_below="@id/dataalttext" />
+    <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="0,1" android:layout_below="@id/dataaltcheck">
+        <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/altdlgbtok" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/gongxin_bt_ok" android:layout_alignParentLeft="true" />
+            <Button android:id="@id/altdlgbtcancel" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/gongxin_bt_cannel" android:layout_alignParentRight="true" />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

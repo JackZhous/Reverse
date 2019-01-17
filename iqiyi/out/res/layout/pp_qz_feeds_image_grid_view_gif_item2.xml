@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:layout_gravity="center" android:id="@id/qz_feeds_image_grid_view_gif_img" android:layout_width="233.0dip" android:layout_height="233.0dip" android:scaleType="centerCrop" app:placeholderImage="@drawable/pp_general_default_bg" app:placeholderImageScaleType="fitXY" app:actualImageScaleType="centerCrop" />
+    <com.iqiyi.paopao.middlecommon.views.LargeImageLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/grid_item_imageview" android:visibility="gone" android:layout_width="233.0dip" android:layout_height="233.0dip" android:scaleType="centerCrop" />
+    <ImageView android:layout_gravity="end|bottom|center" android:id="@id/right_bottom" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/pp_qz_feeds_pic_gif_icon" />
+    <TextView android:textSize="11.0dip" android:textColor="@color/white" android:gravity="center" android:layout_gravity="end|center|top" android:id="@id/total_feed_pics_number" android:background="@drawable/pp_rectangle_round_corner_black_bg" android:paddingLeft="7.0dip" android:paddingTop="2.0dip" android:paddingRight="7.0dip" android:paddingBottom="2.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:text="共x张" />
+</FrameLayout>

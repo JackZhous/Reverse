@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:skin="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/phoneTitleLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <org.qiyi.android.video.skin.view.SkinMainTitleBar android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <org.qiyi.video.qyskin.view.SkinTextView android:id="@id/phoneTitle" android:text="@string/title_discovery" skin:skinColor="titleTextColor" skin:defaultColor="#ffffffff" style="@style/top_title_new" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/top_filter_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/phoneTitleLayout">
+        <org.qiyi.android.video.skin.view.SkinSearchBar android:id="@id/ll_head" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

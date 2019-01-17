@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/pp_loading_result_main" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/pp_divider_line" android:background="#ffe6e6e6" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/pp_page_content" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/pp_iv_loading_result" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pp_global_page_loading_fail" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff666666" android:gravity="center_horizontal" android:id="@id/pp_tv_loading_meta" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pp_loading_network_error_and_retry" android:maxLines="2" />
+        <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/pp_loading_result_go" android:background="@drawable/pp_custom_btn_selector" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginTop="16.0dip" android:text="去看看" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/pp_rl_loading_result_title" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <TextView android:textSize="14.0dip" android:gravity="center_vertical" android:id="@id/pp_tv_loading_back" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:drawableLeft="@drawable/pp_selector_action_bar_back" android:drawablePadding="6.0dip" />
+        <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:ellipsize="end" android:gravity="center" android:id="@id/pp_tv_loading_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxLines="1" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

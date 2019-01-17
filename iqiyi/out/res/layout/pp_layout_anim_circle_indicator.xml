@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.view.ViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.iqiyi.paopao.client.common.view.infiniteindicator.indicator.AnimIndicator android:id="@id/default_center_indicator" android:layout_height="wrap_content" style="@style/PPCenter" />
+    <com.iqiyi.paopao.client.common.view.infiniteindicator.indicator.AnimIndicator android:id="@id/default_center_bottom_indicator" android:layout_height="wrap_content" style="@style/PPCenterBottom" />
+    <com.iqiyi.paopao.client.common.view.infiniteindicator.indicator.AnimIndicator android:id="@id/default_bottom_right_indicator" android:layout_height="@dimen/anim_circle_indicator_height" style="@style/PPBottomRight" />
+    <com.iqiyi.paopao.client.common.view.infiniteindicator.indicator.AnimIndicator android:id="@id/default_bottom_left_indicator" android:layout_height="@dimen/anim_circle_indicator_height" style="@style/PPBottomLeft" />
+    <com.iqiyi.paopao.client.common.view.infiniteindicator.indicator.AnimIndicator android:id="@id/default_center_top_indicator" android:layout_height="@dimen/anim_circle_indicator_height" style="@style/PPCenterTop" />
+    <com.iqiyi.paopao.client.common.view.infiniteindicator.indicator.AnimIndicator android:id="@id/default_center_top_right_indicator" android:layout_height="@dimen/anim_circle_indicator_height" style="@style/PPCenterTopRight" />
+    <com.iqiyi.paopao.client.common.view.infiniteindicator.indicator.AnimIndicator android:id="@id/default_center_top_left_indicator" android:layout_height="@dimen/anim_circle_indicator_height" style="@style/PPCenterTopLeft" />
+</RelativeLayout>

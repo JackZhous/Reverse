@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:paddingLeft="@dimen/card_padding_horizontal" android:paddingTop="8.0dip" android:paddingRight="@dimen/card_padding_horizontal" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/ugc_image" android:background="@drawable/face_icon_xlarge" android:visibility="gone" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginRight="6.0dip" android:scaleType="fitXY" android:layout_centerVertical="true" fresco:roundAsCircle="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/live_meta_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/ugc_image" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true">
+        <LinearLayout android:layout_gravity="center_vertical" android:id="@id/ugc_name_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/card_text_size_13dp" android:textColor="@color/color_meta_title" android:id="@id/live_autor_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+            <include android:layout_gravity="center_vertical" android:id="@id/label1" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginLeft="4.0dip" layout="@layout/unit_hot_live_label_layout" />
+            <include android:layout_gravity="center_vertical" android:id="@id/label2" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginLeft="4.0dip" layout="@layout/unit_hot_live_label_layout" />
+            <include android:layout_gravity="center_vertical" android:id="@id/label3" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginLeft="4.0dip" layout="@layout/unit_hot_live_label_layout" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/live_timer_icon" android:layout_width="14.0dip" android:layout_height="11.0dip" android:layout_marginRight="3.0dip" />
+            <TextView android:textSize="@dimen/card_text_size_11dp" android:textColor="@color/text_hint_color" android:id="@id/live_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+            <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/live_viewer_icon" android:layout_width="14.0dip" android:layout_height="11.0dip" android:layout_marginRight="3.0dip" />
+            <TextView android:textSize="@dimen/card_text_size_11dp" android:textColor="@color/text_hint_color" android:id="@id/live_viewer_num" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff222222" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/reselect_material_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="19.0dip" android:layout_marginBottom="1.0dip" android:src="@drawable/pub_close_btn" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <ImageView android:id="@id/reselect_material_finish" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="1.0dip" android:src="@drawable/pub_do_faceswap_btn" android:layout_alignParentRight="true" />
+    <RelativeLayout android:id="@id/material_scrollview_container" android:background="@drawable/pub_trans_white_panel" android:layout_width="wrap_content" android:layout_height="150.0dip" android:layout_below="@id/reselect_material_close" android:layout_alignParentLeft="true">
+        <android.support.v7.widget.RecyclerView android:id="@id/grid_recycler" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

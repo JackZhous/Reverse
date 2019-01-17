@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom|center" android:id="@id/player_vote_notice_framelayout" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:ellipsize="marquee" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/player_vote_notice_tv" android:background="@drawable/player_vote_notice_tv_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="不会吧，你这就被劝降了？" android:singleLine="true" android:maxLength="17" />
+    <ImageView android:layout_gravity="center|right|top" android:id="@id/player_vote_notice_close_btn" android:background="@drawable/player_vote_close_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

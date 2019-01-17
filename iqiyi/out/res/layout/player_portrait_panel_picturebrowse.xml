@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecore.widget.VerticalPullDownLayoutView android:id="@id/pull_view" android:background="@color/color_transparent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:background="@drawable/qiyi_sdk_player_black_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.iqiyi.qyplayercardview.picturebrowse.ImagePreviewViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/color_white" android:gravity="center" android:id="@id/image_which" android:background="@drawable/portrait_pic_panel_num_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <Button android:textSize="12.0sp" android:textColor="@color/player_download_download_all_unable_text_color" android:id="@id/savebtn" android:background="@drawable/player_feed_preview_btn_save_bg" android:layout_width="60.0dip" android:layout_height="27.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="15.0dip" android:text="@string/save" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </org.qiyi.basecore.widget.VerticalPullDownLayoutView>
+</RelativeLayout>

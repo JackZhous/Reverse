@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip">
+        <ImageView android:id="@id/pp_address_arrow_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pp_right_arrow_grey" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <FrameLayout android:id="@id/address_content_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="18.0dip" android:layout_toLeftOf="@id/pp_address_arrow_view" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <RelativeLayout android:id="@id/address_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="15.0dip">
+                <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/color_333333" android:id="@id/pp_address_tel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\ 13122223333" android:layout_alignParentRight="true" />
+                <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/color_333333" android:ellipsize="end" android:id="@id/pp_address_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="收货地址收货地址收货地址收货地址" android:maxLines="1" android:layout_toLeftOf="@id/pp_address_tel" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="13.0dip" android:textColor="@color/color_333333" android:ellipsize="end" android:id="@id/pp_address_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="11.0dip" android:maxLines="2" android:layout_below="@id/pp_address_title" android:layout_alignParentLeft="true" />
+            </RelativeLayout>
+            <TextView android:textSize="16.0dip" android:textColor="@color/color_333333" android:gravity="center_vertical" android:id="@id/pp_add_new_address" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19.0dip" android:layout_marginBottom="19.0dip" android:text="新增收件地址" />
+        </FrameLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/pp_address_bottom_view" android:layout_width="fill_parent" android:layout_height="3.0dip" android:src="@drawable/pp_address_bottom" android:layout_alignParentBottom="true" />
+    <View android:background="@color/pp_color_e7e7e7" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="12.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

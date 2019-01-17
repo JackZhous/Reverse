@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/outside_circle" android:layout_width="106.0dip" android:layout_height="106.0dip" android:src="@drawable/pub_outside_circle_selector" android:scaleType="center" android:layout_centerInParent="true" />
+    <View android:id="@id/inside_circle" android:background="@drawable/pub_inside_circle_selector" android:layout_width="76.0dip" android:layout_height="76.0dip" android:layout_centerInParent="true" />
+    <ProgressBar android:id="@id/progressBar" android:layout_width="106.0dip" android:layout_height="106.0dip" android:max="100" android:progress="0" android:indeterminate="false" android:progressDrawable="@drawable/pub_circle_progress_bar" android:layout_centerInParent="true" android:layout_centerHorizontal="true" style="?android:attr/progressBarStyleHorizontal" />
+    <TextView android:textSize="16.0sp" android:textColor="#ff0bbe06" android:id="@id/tv_capture_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pp_publisher_click_to_start_camera" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/iv_pause" android:background="@drawable/freestyle_smv_pause" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="18.0dip" android:layout_centerInParent="true" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/rl_video_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:id="@id/page_title" android:background="@color/color_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/page_bottom" android:background="@color/a3_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <org.qiyi.basecore.widget.ptr.widget.PtrSimpleRecyclerView android:id="@id/content_recycler_view_data" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/page_bottom" android:layout_below="@id/page_title" app:load_auto="false" />
+    <ViewStub android:id="@id/error_layout_sub" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/page_bottom" android:layout_below="@id/page_title" />
+    <ViewStub android:id="@id/progress_layout_sub" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/page_bottom" android:layout_below="@id/page_title" />
+</RelativeLayout>

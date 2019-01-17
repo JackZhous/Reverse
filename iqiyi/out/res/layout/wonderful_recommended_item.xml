@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/play_ctrl" android:paddingTop="@dimen/wonderfulRecommendedTitleMarginTop" android:paddingBottom="@dimen/wonderfulRecommendedTitleMarginTop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/play_ctrl_wonderful" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/wonderfulRecommendedTitleSize" android:textColor="#ff3a3a3a" android:id="@id/albumTitle" android:paddingTop="@dimen/wonderfulRecommendedTitleMarginTop" android:paddingBottom="@dimen/wonderfulRecommendedTitleMarginTop" android:layout_width="@dimen/wonderfulRecommendedTitleWidth" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wonderfulRecommendedPlayImageMarginRight" android:layout_marginRight="@dimen/phone_variety_focus_image_padd" android:text="@string/loading_data" android:singleLine="true" android:layout_toRightOf="@id/play_ctrl" android:layout_centerVertical="true" />
+</RelativeLayout>

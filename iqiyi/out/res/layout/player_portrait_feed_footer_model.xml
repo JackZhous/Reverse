@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/feed_footer_layout" android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="12.0dip" android:textColor="@color/player_pp_sw_feed_textcolor" android:gravity="center_vertical" android:id="@id/feed_share" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/player_pp_feed_card_more_share" android:drawableLeft="@drawable/player_feed_share" android:drawablePadding="7.0dip" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="12.0dip" android:textColor="@color/player_pp_sw_feed_textcolor" android:id="@id/feed_comments" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/player_pp_show_comment" android:drawableLeft="@drawable/player_feed_comments" android:drawablePadding="7.0dip" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="12.0dip" android:textColor="@color/player_pp_sw_feed_textcolor" android:id="@id/feed_likes_totalCnt" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/player_pp_show_agree" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/feed_likes_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" android:src="@drawable/player_feed_like" android:layout_toLeftOf="@id/feed_likes_totalCnt" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

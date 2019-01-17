@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/title_layout" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textSize="15.0dip" android:textColor="#ff4d4d4d" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="选集" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageButton android:ellipsize="end" android:id="@id/close" android:background="@drawable/player_common_close" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="7.0dip" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/player_common_title_color" android:ellipsize="end" android:id="@id/sub_title" android:paddingLeft="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="更新信息" android:singleLine="true" android:layout_toLeftOf="@id/close" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/listepisode_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title_layout" />
+</RelativeLayout>

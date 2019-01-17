@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:drawable="@drawable/corner_radius_45dp_c8c8c8" />
+    <item android:drawable="@drawable/corner_radius_45dp_ff7e00" />
+</selector>

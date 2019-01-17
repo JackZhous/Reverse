@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ff222222" android:layout_width="fill_parent" android:layout_height="141.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/btn_capture" android:background="@drawable/camera_capture_bg" android:padding="4.0dip" android:visibility="visible" android:layout_width="75.0dip" android:layout_height="75.0dip" android:src="@drawable/camera_capture" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/btn_confirm" android:visibility="gone" android:layout_width="53.0dip" android:layout_height="53.0dip" android:layout_marginRight="50.0dip" android:src="@drawable/camera_confirm" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/btn_cancel" android:visibility="gone" android:layout_width="53.0dip" android:layout_height="53.0dip" android:layout_marginLeft="50.0dip" android:src="@drawable/camera_cancel" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/btn_album" android:background="@drawable/camera_album_bg" android:padding="8.0dip" android:visibility="gone" android:layout_width="62.0dip" android:layout_height="62.0dip" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <RelativeLayout android:id="@id/view_album" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="46.0dip" android:layout_marginRight="40.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/camera_capture_album" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/camera_album_txt" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

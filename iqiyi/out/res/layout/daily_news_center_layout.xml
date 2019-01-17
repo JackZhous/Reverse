@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff3f3f3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/phoneTitleLayout" style="@style/top_base_item">
+        <TextView android:id="@id/phoneTitleBack" android:drawableLeft="@drawable/phone_account_back_small_bg" style="@style/top_title_item_category" />
+        <TextView android:id="@id/phoneTitle" android:text="@string/title_cate" style="@style/top_title" />
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/phoneSearchSubmit" style="@style/top_search_item" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/content_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phoneTitleLayout">
+        <HorizontalScrollView android:id="@id/tabs_scroll_View" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <org.qiyi.android.video.customview.Tabs android:id="@id/news_tabs" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+        </HorizontalScrollView>
+        <View android:id="@id/line" android:background="#ffe7e7e7" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/tabs_scroll_View" />
+        <android.support.v4.view.ViewPager android:id="@id/news_content_viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/line" />
+    </RelativeLayout>
+    <include android:id="@id/prompt_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phoneTitleLayout" layout="@layout/main_play_err_tip" />
+</LinearLayout>

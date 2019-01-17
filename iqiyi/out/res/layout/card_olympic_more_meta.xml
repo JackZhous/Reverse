@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/color_transparent" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" style="@style/CardModelBase"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/meta1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:ems="2" style="@style/MetaTitle" />
+    <TextView android:gravity="center" android:id="@id/meta2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:lines="1" android:layout_weight="2.0" style="@style/MetaTitle" />
+    <TextView android:gravity="center" android:id="@id/meta3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:lines="1" android:layout_weight="1.0" style="@style/MetaTitle" />
+    <TextView android:gravity="center" android:id="@id/meta4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:lines="1" android:layout_weight="1.0" style="@style/MetaTitle" />
+    <TextView android:gravity="center" android:id="@id/meta5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:lines="1" android:layout_weight="1.0" style="@style/MetaTitle" />
+    <TextView android:gravity="center" android:id="@id/meta6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:ems="2" style="@style/MetaTitle" />
+</LinearLayout>

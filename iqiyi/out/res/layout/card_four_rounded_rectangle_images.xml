@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" style="@style/CardModelBase"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/card_small_rounded_rectangle_image_margin" android:layout_weight="1.0">
+        <org.qiyi.basecore.widget.RoundRectImageView android:id="@id/image_1" android:background="@drawable/phone_qy_ad_default" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" custom:ratio="1.0" />
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/title_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" style="@style/MetaTitle.Small" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/card_small_rounded_rectangle_image_margin" android:layout_marginRight="@dimen/card_small_rounded_rectangle_image_margin" android:layout_weight="1.0">
+        <org.qiyi.basecore.widget.RoundRectImageView android:id="@id/image_2" android:background="@drawable/phone_qy_ad_default" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" custom:ratio="1.0" />
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/title_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" style="@style/MetaTitle.Small" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/card_small_rounded_rectangle_image_margin" android:layout_marginRight="@dimen/card_small_rounded_rectangle_image_margin" android:layout_weight="1.0">
+        <org.qiyi.basecore.widget.RoundRectImageView android:id="@id/image_3" android:background="@drawable/phone_qy_ad_default" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" custom:ratio="1.0" />
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/title_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" style="@style/MetaTitle.Small" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/card_small_rounded_rectangle_image_margin" android:layout_weight="1.0">
+        <org.qiyi.basecore.widget.RoundRectImageView android:id="@id/image_4" android:background="@drawable/phone_qy_ad_default" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" custom:ratio="1.0" />
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/title_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" style="@style/MetaTitle.Small" />
+    </LinearLayout>
+</LinearLayout>

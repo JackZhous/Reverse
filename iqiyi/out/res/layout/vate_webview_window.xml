@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/vote_toolbar" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/wb_closed" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vote_close" android:layout_centerVertical="true" />
+        <TextView android:textSize="15.0dip" android:textColor="#ff333333" android:id="@id/vote_title" android:padding="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="投票" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <WebView android:layout_gravity="center" android:id="@id/votewebview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/vote_toolbar" />
+    <ProgressBar android:id="@id/loadingbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

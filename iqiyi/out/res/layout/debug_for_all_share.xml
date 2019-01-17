@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="28.0dip" android:layout_marginRight="28.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@android:color/holo_red_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="调试分享信息" />
+    <TextView android:textSize="12.0dip" android:textStyle="bold" android:gravity="center" android:layout_width="320.0dip" android:layout_height="wrap_content" android:text="默认展示的为当前信息 可编辑" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <TextView android:textStyle="bold" android:gravity="end|center" android:layout_width="30.0dip" android:layout_height="fill_parent" android:text="title:" />
+        <EditText android:id="@id/share_debug_title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:maxLines="2" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textStyle="bold" android:gravity="end|center" android:layout_gravity="center" android:layout_width="30.0dip" android:layout_height="fill_parent" android:text="des:" />
+        <EditText android:ellipsize="end" android:id="@id/share_debug_des" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:maxLines="3" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textStyle="bold" android:gravity="end|center" android:layout_width="30.0dip" android:layout_height="fill_parent" android:text="url:" />
+        <EditText android:ellipsize="end" android:id="@id/share_debug_url" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:maxLines="4" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textStyle="bold" android:gravity="end|center" android:layout_width="30.0dip" android:layout_height="fill_parent" android:text="imgUrl:" />
+        <EditText android:ellipsize="end" android:id="@id/share_debug_img_url" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:maxLines="4" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textStyle="bold" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Type:" />
+        <RadioGroup android:gravity="center" android:orientation="horizontal" android:id="@id/share_debug_share_type" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioButton android:textColor="@android:color/black" android:id="@id/share_type_video" android:layout_width="0.0dip" android:layout_height="wrap_content" android:checked="true" android:text="视\n频" android:layout_weight="1.0" />
+            <RadioButton android:textColor="@android:color/black" android:id="@id/share_type_webpage" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="网\n页" android:layout_weight="1.0" />
+            <RadioButton android:textColor="@android:color/black" android:id="@id/share_type_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="文\n字" android:layout_weight="1.0" />
+            <RadioButton android:textColor="@android:color/black" android:id="@id/share_type_img" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="图\n片" android:layout_weight="1.0" />
+            <RadioButton android:textColor="@android:color/black" android:id="@id/share_type_gif" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="动\n图" android:layout_weight="1.0" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <Button android:id="@id/share_debug_cancel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="cancel" android:layout_weight="1.0" />
+        <Button android:id="@id/share_debug_repeal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="repeal" android:layout_weight="1.0" />
+        <Button android:id="@id/share_debug_confirm" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="confirm" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

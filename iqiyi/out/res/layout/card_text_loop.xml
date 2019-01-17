@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:paddingLeft="@dimen/card_padding_horizontal" android:paddingRight="@dimen/card_padding_horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/main_image" android:background="@drawable/text_loop_image_default" android:layout_width="85.0dip" android:layout_height="40.0dip" android:scaleType="fitXY" android:layout_centerVertical="true" />
+    <View android:id="@id/divider" android:background="#ffe6e6e6" android:paddingLeft="4.0dip" android:visibility="visible" android:layout_width="0.5dip" android:layout_height="25.0dip" android:layout_toRightOf="@id/main_image" android:layout_centerVertical="true" />
+    <org.qiyi.basecard.common.widget.AutoScrollTextView android:orientation="vertical" android:id="@id/text_loop" android:paddingLeft="7.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_toRightOf="@id/divider" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <include android:id="@id/view1" layout="@layout/unit_text_loop_view" />
+    <include android:id="@id/view2" layout="@layout/unit_text_loop_view" />
+</RelativeLayout>

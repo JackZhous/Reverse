@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff2e2e2e" android:layout_width="fill_parent" android:layout_height="45.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/open_vip_label_bg" android:layout_width="wrap_content" android:layout_height="45.0dip" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <RelativeLayout android:id="@id/open_vip_label_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/open_vip_label_icon" android:layout_width="25.0dip" android:layout_height="25.0dip" android:scaleType="fitXY" android:layout_centerVertical="true" />
+        <TextView android:textColor="@color/color_white" android:gravity="center_vertical" android:id="@id/open_vip_label_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/open_vip_label_icon" android:layout_centerVertical="true" style="@style/CardTitle" />
+    </RelativeLayout>
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/open_vip_label_arrow" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="@dimen/card_padding_horizontal" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

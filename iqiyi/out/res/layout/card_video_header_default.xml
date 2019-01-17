@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/video_header_bg" android:background="@drawable/shape_video_header_bg" android:layout_width="fill_parent" android:layout_height="130.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="5.0dip">
+        <ImageView android:id="@id/video_header_back_btn" android:background="@drawable/card_player_header_back_btn" android:visibility="visible" android:layout_width="20.0dip" android:layout_height="40.0dip" android:layout_marginLeft="3.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/video_header_battery_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <org.qiyi.basecard.common.widget.BatteryView android:layout_gravity="center_horizontal" android:id="@id/card_video_battery_level" android:background="@drawable/card_player_battery" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/color_white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/card_video_battery_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/video_header_btn_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/video_header_battery_layout" android:layout_centerVertical="true">
+            <ImageView android:id="@id/operator_logo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+            <TextView android:id="@id/danmaku_switch" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+            <org.qiyi.basecard.common.widget.ButtonView android:gravity="center" android:id="@id/video_header_share_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" app:left_icon="@drawable/card_player_header_share_btn" app:left_icon_width="40.0dip" app:left_icon_height="40.0dip" />
+            <org.qiyi.basecard.common.widget.ButtonView android:id="@id/video_header_remove_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" app:left_icon="@drawable/card_video_player_btn_remove" app:left_icon_width="18.0dip" app:left_icon_height="18.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/color_white" android:gravity="center|left" android:id="@id/video_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:maxLines="2" android:layout_toLeftOf="@id/video_header_btn_layout" android:layout_toRightOf="@id/video_header_back_btn" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

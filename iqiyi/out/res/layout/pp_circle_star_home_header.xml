@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_top" android:background="@drawable/pp_home_cover_up" android:layout_width="fill_parent" android:layout_height="218.0dip">
+        <ImageView android:id="@id/rl_top_ceil" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <View android:background="@color/ppc_circle_header_cover" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_avatar" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="18.0dip" android:src="@drawable/pp_icon_avatar_default" android:scaleType="centerCrop" app:placeholderImage="@drawable/pp_icon_avatar_default" app:placeholderImageScaleType="centerCrop" app:failureImage="@drawable/pp_icon_avatar_default" app:failureImageScaleType="centerInside" app:actualImageScaleType="centerCrop" app:roundAsCircle="true" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_first_row" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/pp_circle_header_right_padding" android:layout_toRightOf="@id/iv_avatar" android:layout_below="@id/ll_first_row" android:layout_alignLeft="@id/ll_first_row" android:layout_alignTop="@id/iv_avatar">
+                <TextView android:textSize="18.0dip" android:textColor="@color/white" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_gender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:src="@drawable/pp_icon_group_gender_female" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_is_star" android:layout_width="39.0dip" android:layout_height="26.0dip" android:layout_marginLeft="1.0dip" android:src="@drawable/pp_special_user_star" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_is_vip" android:layout_width="@dimen/pp_star_home_gender_icon_height" android:layout_height="@dimen/pp_star_home_gender_icon_height" android:layout_marginLeft="4.0dip" android:src="@drawable/pp_vip" />
+            </LinearLayout>
+            <TextView android:textSize="14.0dip" android:textColor="@color/pp_color_ffffff" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tv_rank" android:background="@drawable/pp_start_home_rank_btn_bg" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_marginTop="10.0dip" android:includeFontPadding="false" android:layout_below="@id/ll_first_row" android:layout_alignLeft="@id/ll_first_row" />
+            <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/ll_third_row" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="@dimen/pp_circle_header_right_padding" android:layout_below="@id/tv_rank" android:layout_alignLeft="@id/tv_rank">
+                <TextView android:textSize="14.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_content_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:text="内容123.万" android:singleLine="true" />
+                <LinearLayout android:id="@id/ll_fans_count" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0dip" android:textColor="@color/white" android:id="@id/tv_fans_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="粉丝:2625万" android:singleLine="true" />
+                    <TextView android:layout_gravity="center_vertical" android:id="@id/tv_go_fans_arrow" android:background="@drawable/pp_star_home_white_arrow" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="4.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_bottom" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="28.0dip" android:layout_below="@id/iv_avatar">
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_message_tab" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="16.0dip" android:textColor="@color/pp_color_ffffff" android:layout_gravity="center_horizontal" android:id="@id/tv_message_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="16" style="@style/user_info_tab_number" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/pp_color_ffffff" android:layout_gravity="center_horizontal" android:id="@id/tv_circle_message_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="消息" style="@style/user_info_tab_text" />
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_circle_count_tab" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="16.0dip" android:textColor="@color/pp_color_ffffff" android:layout_gravity="center_horizontal" android:id="@id/tv_circle_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="32" style="@style/user_info_tab_number" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/pp_color_ffffff" android:layout_gravity="center_horizontal" android:id="@id/tv_circle_count_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="圈子" style="@style/user_info_tab_text" />
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_group_chat_count_tab" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="16.0dip" android:textColor="@color/pp_color_ffffff" android:layout_gravity="center_horizontal" android:id="@id/tv_group_chat_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="66" style="@style/user_info_tab_number" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/pp_color_ffffff" android:layout_gravity="center_horizontal" android:id="@id/tv_group_chat_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="群聊" style="@style/user_info_tab_text" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:id="@id/divider" android:background="#26ffffff" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignTop="@id/ll_bottom" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

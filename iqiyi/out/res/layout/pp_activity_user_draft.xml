@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.iqiyi.paopao.middlecommon.ui.view.titlebar.CommonTitleBar android:id="@id/draftbox_title_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" app:titleBarUnderline="false" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/draftbox_title_bar">
+        <com.iqiyi.paopao.middlecommon.ui.view.ptr.CommonPtrRecyclerView android:id="@id/draft_content_view" android:background="@color/white" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include android:id="@id/draft_fetch_data_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/pp_layout_fetch_data_loading" />
+        <com.iqiyi.paopao.middlecommon.ui.view.loadingview.LoadingResultPage android:gravity="center" android:id="@id/userdraft_loading_result_main" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/user_draft_delete_layout" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+        <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Button android:textSize="14.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/user_draft_delete_allselect" android:background="@android:color/transparent" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="全选" android:layout_weight="1.0" />
+            <View android:background="#ffcccccc" android:layout_width="1.0dip" android:layout_height="14.0dip" />
+            <Button android:textSize="14.0sp" android:textColor="#ff999999" android:gravity="center" android:id="@id/user_draft_delete_confirm" android:background="@android:color/transparent" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:clickable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="删除" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

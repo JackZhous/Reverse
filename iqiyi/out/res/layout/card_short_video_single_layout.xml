@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/phone_search_result_image" android:background="@drawable/phone_search_vertical_horizontal" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="15.0dip" android:scaleType="centerCrop" android:layout_centerVertical="true" fresco:viewAspectRatio="1.72" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignLeft="@id/phone_search_result_image" android:layout_alignTop="@id/phone_search_result_image" android:layout_alignRight="@id/phone_search_result_image" android:layout_alignBottom="@id/phone_search_result_image" layout="@layout/card_poster_mask" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/phone_search_result_image" android:layout_centerVertical="true">
+        <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:ellipsize="end" android:id="@id/phone_search_result_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+        <RelativeLayout android:id="@id/mete_layout1" android:layout_width="wrap_content" android:layout_height="23.0dip" android:layout_below="@id/phone_search_result_title">
+            <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/phone_l_img_1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/tk_card_rank" android:ellipsize="end" android:id="@id/phone_search_result_meta1" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_toRightOf="@id/phone_l_img_1" android:layout_centerVertical="true" />
+            <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/phone_r_img_1" android:visibility="visible" android:layout_width="30.0dip" android:layout_height="23.0dip" android:layout_marginLeft="5.0dip" android:scaleType="fitXY" android:layout_toRightOf="@id/phone_search_result_meta1" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/mete_layout1">
+            <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/phone_l_img_2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/tk_card_rank" android:ellipsize="end" android:id="@id/phone_search_result_meta2" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_toRightOf="@id/phone_l_img_2" />
+            <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/phone_r_img_2" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="15.0dip" android:layout_marginLeft="5.0dip" android:scaleType="fitXY" android:layout_toRightOf="@id/phone_search_result_meta2" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

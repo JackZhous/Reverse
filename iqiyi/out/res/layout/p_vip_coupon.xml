@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/p_color_333333" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/coupon_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_weight="1.0" />
+    <TextView android:textSize="13.0dip" android:textColor="@color/p_color_FF7E00" android:gravity="center" android:layout_gravity="center" android:id="@id/coupone_title2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+    <TextView android:textSize="13.0dip" android:textColor="@color/p_color_999999" android:gravity="center" android:layout_gravity="center" android:id="@id/coupone_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_marginRight="6.0dip" android:drawableRight="@drawable/p_arrow_style1" />
+</LinearLayout>

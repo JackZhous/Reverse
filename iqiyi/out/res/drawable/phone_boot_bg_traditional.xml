@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list android:opacity="opaque"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/boot_bg_black" />
+    <item android:gravity="center|top" android:top="183.0dip">
+        <bitmap android:gravity="center|top" android:src="@drawable/boot_logo_traditional" />
+    </item>
+    <item android:gravity="bottom|center" android:bottom="20.0dip">
+        <bitmap android:gravity="bottom|center" android:src="@drawable/boot_version_traditional" />
+    </item>
+</layer-list>

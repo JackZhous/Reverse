@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_130"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_120">
+        <RelativeLayout android:id="@id/p_w_bank_card_layout" android:background="@color/p_color_ff6000" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_90" android:layout_marginLeft="@dimen/p_dimen_10" android:layout_marginRight="@dimen/p_dimen_10" android:layout_centerVertical="true">
+            <ImageView android:id="@id/p_w_my_bank_card_item_bank_icon" android:layout_width="@dimen/p_dimen_38" android:layout_height="@dimen/p_dimen_38" android:layout_marginLeft="@dimen/p_dimen_13" android:layout_marginTop="@dimen/p_dimen_11" android:src="@drawable/p_w_default_bank_card_icon" />
+            <TextView android:textSize="@dimen/p_dimen_17" android:textColor="@android:color/white" android:id="@id/p_w_my_bank_card_item_bank_name" android:paddingLeft="@dimen/p_dimen_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/p_w_my_bank_card_item_bank_icon" android:layout_alignTop="@id/p_w_my_bank_card_item_bank_icon" />
+            <TextView android:textSize="@dimen/p_dimen_13" android:textColor="@color/p_color_7FFFFFFF" android:id="@id/p_w_my_bank_card_item_card_type" android:paddingLeft="@dimen/p_dimen_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p_dimen_7" android:layout_below="@id/p_w_my_bank_card_item_bank_name" android:layout_alignLeft="@id/p_w_my_bank_card_item_bank_name" />
+            <TextView android:textSize="@dimen/p_dimen_20" android:textColor="@android:color/white" android:id="@id/p_w_my_bank_card_item_card_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/p_dimen_10" android:layout_marginBottom="@dimen/p_dimen_15" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:id="@id/p_w_dividing_line" android:background="@color/p_color_F5F5F5" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_10" />
+</LinearLayout>

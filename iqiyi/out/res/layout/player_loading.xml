@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/progressbarLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ProgressBar android:id="@id/loadingbar" android:layout_width="@dimen/player_20" android:layout_height="@dimen/player_20" android:layout_margin="4.0dip" android:indeterminateDrawable="@drawable/qiyi_sdk_player_loading_image" android:layout_centerVertical="true" />
+        <TextView android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/loadingbar" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</merge>

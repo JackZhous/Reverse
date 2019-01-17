@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/phone_special_play_list_header_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+f <TextView android:textSize="13.0dip" android:textColor="#ff2d1302" android:id="@id/tv_phone_sepcial_play_list_desc" android:padding="10.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_below="@id/phone_special_play_list_header_bg" android:lineSpacingExtra="2.5dip" />
+</RelativeLayout>

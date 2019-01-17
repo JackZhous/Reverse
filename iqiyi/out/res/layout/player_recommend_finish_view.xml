@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.iqiyi.video.image.PlayerDraweView android:id="@id/phoneAlbumAvator" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <org.iqiyi.video.image.PlayerDraweView android:background="@drawable/phone_album_default_r_shadow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/phoneAlbumAvator" android:layout_alignTop="@id/phoneAlbumAvator" />
+    <ImageView android:background="@drawable/phone_album_default_b_shadow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/phoneAlbumAvator" android:layout_alignRight="@id/phoneAlbumAvator" android:layout_alignParentLeft="true" />
+    <ImageView android:background="@drawable/phone_album_listed_selector_bg" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_alignLeft="@id/phoneAlbumAvator" android:layout_alignTop="@id/phoneAlbumAvator" android:layout_alignRight="@id/phoneAlbumAvator" android:layout_alignBottom="@id/phoneAlbumAvator" />
+    <TextView android:textColor="@color/color_white" android:gravity="center_horizontal" android:paddingTop="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/phoneAlbumAvator" android:layout_alignTop="@id/phoneAlbumAvator" />
+    <TextView android:background="@drawable/phone_vip_status" android:paddingTop="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/phoneAlbumAvator" android:layout_alignRight="@id/phoneAlbumAvator" />
+    <RelativeLayout android:background="@drawable/phoneindexfocusgalleryimg" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_alignLeft="@id/phoneAlbumAvator" android:layout_alignRight="@id/phoneAlbumAvator" android:layout_alignBottom="@id/phoneAlbumAvator">
+        <TextView android:textSize="12.0dip" android:textColor="@android:color/white" android:id="@id/phoneAlbumPS" android:paddingLeft="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="14.0dip" android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/phoneAlbumTitle" android:paddingLeft="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/phoneAlbumPS" />
+    </RelativeLayout>
+</RelativeLayout>

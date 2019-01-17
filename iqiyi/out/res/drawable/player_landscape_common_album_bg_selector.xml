@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <stroke android:width="1.0px" android:color="@color/player_color_white_with_alpha_30" />
+            <gradient android:startColor="@color/player_color_white_with_alpha_06" android:endColor="@color/player_color_white_with_alpha_06" />
+        </shape>
+    </item>
+    <item android:state_activated="true">
+        <shape android:shape="rectangle">
+            <stroke android:width="1.0px" android:color="@color/player_color_white_with_alpha_30" />
+            <gradient android:startColor="@color/player_color_white_with_alpha_06" android:endColor="@color/player_color_white_with_alpha_06" />
+        </shape>
+    </item>
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <stroke android:width="1.0px" android:color="@color/player_color_white_with_alpha_30" />
+            <gradient android:startColor="@color/player_color_white_with_alpha_06" android:endColor="@color/player_color_white_with_alpha_06" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <stroke android:width="1.0px" android:color="@color/player_color_white_with_alpha_06" />
+            <gradient android:startColor="#00ffffff" android:endColor="#00ffffff" />
+        </shape>
+    </item>
+</selector>

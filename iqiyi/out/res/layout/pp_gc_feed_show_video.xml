@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/feed_card_qiyi_video" android:background="@color/pp_color_f7f7f7" android:layout_width="fill_parent" android:layout_height="68.0dip" android:layout_marginLeft="@dimen/pp_feed_left_gap" android:layout_marginRight="@dimen/pp_feed_left_gap">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/feed_card_qiyi_video_image" android:layout_width="124.399994dip" android:layout_height="fill_parent" android:scaleType="centerCrop" fresco:placeholderImage="@drawable/pp_general_default_bg" fresco:placeholderImageScaleType="centerInside" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/white" android:gravity="bottom|center|right" android:id="@id/feed_card_qiyi_video_duration" android:background="@drawable/pp_video_c_header_meta_bg" android:paddingRight="7.0dip" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="34.0dip" android:text="10:00" android:layout_alignRight="@id/feed_card_qiyi_video_image" android:layout_alignBottom="@id/feed_card_qiyi_video_image" />
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/feed_card_qiyi_video_type" android:layout_width="39.0dip" android:layout_height="20.0dip" android:layout_alignTop="@id/feed_card_qiyi_video_image" android:layout_alignRight="@id/feed_card_qiyi_video_image" fresco:actualImageScaleType="focusCrop" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_toRightOf="@id/feed_card_qiyi_video_image">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:ellipsize="end" android:id="@id/feed_card_qiyi_video_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/feed_card_qiyi_video_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_below="@id/feed_card_qiyi_video_title" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</merge>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="11.0dip" android:id="@id/time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="23.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/avatar" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="13.0dip" android:layout_below="@id/time" android:layout_alignParentLeft="true" app:placeholderImage="@drawable/def_avatar" app:roundAsCircle="true" />
+    <TextView android:textSize="13.0dip" android:textColor="#ff999999" android:id="@id/username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_toRightOf="@id/avatar" android:layout_below="@id/time" />
+    <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:id="@id/content" android:background="@drawable/bg_txt_msg_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="66.0dip" android:layout_marginBottom="10.0dip" android:layout_toRightOf="@id/avatar" android:layout_below="@id/username" />
+</RelativeLayout>

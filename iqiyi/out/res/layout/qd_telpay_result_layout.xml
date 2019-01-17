@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/corner_radius_20dp_ffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/p_dimen_15" android:textColor="@color/p_color_333333" android:gravity="center" android:id="@id/reult_msg_tv" android:paddingLeft="15.0dip" android:paddingTop="20.0dip" android:paddingRight="15.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/qidou_tele_pay_error" />
+    <ImageView android:background="@color/p_color_e6e6e6" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textSize="16.0dip" android:textColor="@color/p_color_FF7E00" android:gravity="center" android:id="@id/confirm_tv" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/p_ok" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/qy_cmpt_emo_ffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dslv="http://schemas.android.com/apk/res-auto">
+    <com.iqiyi.paopao.middlecommon.ui.view.titlebar.CommonTitleBar android:id="@id/pp_title_bar_expression_store_modify" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.iqiyi.paopao.middlecommon.ui.view.dragSortListView.DragSortListView android:id="@id/dslvList" android:background="@color/qy_cmpt_emo_ffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" android:dividerHeight="0.0px" android:layout_weight="1.0" android:layout_below="@id/pp_title_bar_expression_store_modify" dslv:collapsed_height="1.0px" dslv:drag_scroll_start="0.33" dslv:remove_mode="clickRemove" dslv:float_alpha="0.6" dslv:slide_shuffle_speed="0.3" dslv:drag_enabled="true" dslv:remove_enabled="false" dslv:drag_start_mode="onLongPress" dslv:drag_handle_id="@id/drag_relativelayout" />
+</LinearLayout>

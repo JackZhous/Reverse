@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/mainLauchTopLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/phone_welcome_ad_stub" android:layout="@layout/main_launch_ad_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/phone_welcome_guide_stub" android:layout="@layout/main_launch_guide_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

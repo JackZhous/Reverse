@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/card_top_banner_icon" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="17.0dip" android:src="@drawable/ic_personal_store_default" android:scaleType="fitCenter" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/text_orange_color" android:id="@id/card_top_banner_right_meta" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="12.0dip" android:singleLine="true" android:layout_alignParentRight="true" android:layout_alignWithParentIfMissing="true" />
+    <RelativeLayout android:id="@id/card_top_banner_title_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="14.0dip" android:layout_toLeftOf="@id/card_top_banner_right_meta" android:layout_toRightOf="@id/card_top_banner_icon" android:layout_alignWithParentIfMissing="true">
+        <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="#ff333333" android:ellipsize="end" android:id="@id/card_top_banner_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/card_top_banner_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/card_order_arrow_icon" android:layout_toRightOf="@id/card_top_banner_title" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

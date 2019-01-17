@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0dip" android:gravity="center" android:id="@id/content_text_1" android:layout_width="300.0dip" android:layout_height="45.0dip" android:layout_centerInParent="true" />
+    <View android:background="#ffe6e6e6" android:layout_width="300.0dip" android:layout_height="1.0px" />
+</RelativeLayout>

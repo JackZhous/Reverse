@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/poster" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <org.qiyi.basecard.common.widget.AutoIconSizeMetaView android:id="@id/live_status_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" app:left_icon_showDeed="wapImageWidth" />
+    <org.qiyi.basecard.common.widget.MetaView android:id="@id/live_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/live_status_btn" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignBottom="@id/poster">
+        <org.qiyi.basecard.common.widget.MetaView android:id="@id/live_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <org.qiyi.basecard.common.widget.MetaView android:id="@id/live_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

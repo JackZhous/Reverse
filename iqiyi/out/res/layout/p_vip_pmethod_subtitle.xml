@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:layout_centerInParent="true">
+        <TextView android:textSize="14.0dip" android:textColor="@color/p_color_999999" android:gravity="center" android:id="@id/txt_p1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="其他支付方式" />
+        <ImageView android:layout_width="@dimen/p_dimen_12" android:layout_height="@dimen/p_dimen_7" android:layout_marginLeft="@dimen/p_dimen_3" android:src="@drawable/p_pmethods_more" android:layout_toRightOf="@id/txt_p1" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/ppq_app_background" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_back" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ImageView android:id="@id/tv_back" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/pp_back" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/ppq_title_color" android:gravity="center" android:id="@id/tv__header_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ppq_header_cancel" android:layout_toRightOf="@id/tv_back" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textSize="18.0sp" android:textColor="@color/ppq_title_color" android:gravity="center" android:id="@id/tv_header_title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/ppq_header_title" android:layout_centerInParent="true" />
+</RelativeLayout>

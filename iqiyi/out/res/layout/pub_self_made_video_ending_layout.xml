@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/ending_logo" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pub_self_made_video_ending_logo" />
+        <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="@color/pub_white" android:id="@id/smv_user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="55.0dip" android:layout_marginTop="32.0dip" android:text="" />
+    </RelativeLayout>
+    <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="@color/pub_white" android:gravity="center_horizontal" android:id="@id/sourcetv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="" android:layout_below="@id/ending_logo" android:layout_alignLeft="@id/ending_logo" android:layout_alignRight="@id/ending_logo" />
+</RelativeLayout>

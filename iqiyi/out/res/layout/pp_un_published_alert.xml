@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.iqiyi.circle.view.customview.QZUnPublishedAlertView android:orientation="vertical" android:id="@id/pp_unpublished_alert_layout" android:background="#ffe4e4e4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="13.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="您有发布失败的动态" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/pp_unpublished_del_iv" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:src="@drawable/pp_unpublished_del_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:background="@color/color_cccccc" android:layout_width="1.0px" android:layout_height="12.0dip" android:layout_marginRight="1.0dip" android:layout_toLeftOf="@id/pp_unpublished_del_iv" android:layout_centerVertical="true" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/color_0bbe06" android:gravity="center" android:id="@id/pp_to_user_info_tv" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="7.0dip" android:text="去个人空间查看" android:layout_toLeftOf="@id/pp_unpublished_del_iv" android:layout_centerVertical="true" />
+</com.iqiyi.circle.view.customview.QZUnPublishedAlertView>

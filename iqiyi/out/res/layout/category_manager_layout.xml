@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/status_bar_mask" android:background="@color/title_bar_bg_color" android:layout_width="fill_parent" android:layout_height="@dimen/status_bar_height" />
+    <org.qiyi.video.qyskin.view.SkinTitleBar android:id="@id/home_title_bar" android:background="@color/top_bar_bg_transparent" android:layout_height="wrap_content" app:tb_title="@string/title_cate_new" app:tb_menu="@menu/title_bar_home_top_menu" app:showDivider="true" style="@style/title_bar_base" />
+    <FrameLayout android:id="@id/category_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom|center|right" android:id="@id/player_vote_tip_framelayout" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/player_vote_tip_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:layout_gravity="bottom|center|right" android:id="@id/player_vote_tip_finger" android:background="@drawable/player_vote_tip_finger" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9.0dip" android:layout_marginBottom="23.0dip" />
+    <ImageView android:layout_gravity="center|right|top" android:id="@id/player_vote_tip_close_btn" android:background="@drawable/player_vote_close_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" />
+</FrameLayout>

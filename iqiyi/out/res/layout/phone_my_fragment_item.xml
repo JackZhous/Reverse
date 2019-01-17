@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/fragment_item_layout" android:background="@drawable/fragment_item_bg" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/fragment_item_delete_icon" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="3.0dip" android:src="@drawable/fragment_item_delete_icon" android:scaleType="fitCenter" />
+    <RelativeLayout android:layout_width="105.0dip" android:layout_height="60.0dip" android:layout_marginLeft="13.0dip" android:layout_marginRight="10.0dip">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/fragment_item_cover" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/phone_category_detail_rec_horizontal_small_default" android:scaleType="centerCrop" />
+        <TextView android:textSize="11.0dip" android:textColor="#ffffffff" android:gravity="bottom|center|right" android:id="@id/fragment_item_duration" android:background="@drawable/phone_viewhistory_gradient_bg" android:paddingRight="4.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="45:10" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="2.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="2.0dip">
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="20.0dip">
+            <ImageView android:id="@id/fragment_item_delete" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/phone_my_fragment_delete_icon" android:scaleType="centerInside" android:layout_alignParentRight="true" />
+            <TextView android:textSize="14.0dip" android:textColor="#ff333333" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/fragment_item_title" android:layout_width="fill_parent" android:layout_height="20.0dip" android:text="三生三世十里桃花 第一集" android:maxLines="1" android:layout_toLeftOf="@id/fragment_item_delete" />
+        </RelativeLayout>
+        <TextView android:textSize="11.0dip" android:textColor="#ff999999" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/fragment_item_begin_time" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_marginTop="3.0dip" android:text="片段开始于 00:20:30" android:maxLines="1" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_marginTop="3.5dip" android:weightSum="3.0">
+            <TextView android:textSize="11.0dip" android:textColor="#ff999999" android:gravity="center_vertical" android:id="@id/fragment_item_play_sum" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="23.8万" android:drawableLeft="@drawable/phone_my_fragment_play_icon" android:drawablePadding="5.0dip" android:layout_weight="1.0" />
+            <TextView android:textSize="11.0dip" android:textColor="#ff999999" android:gravity="center_vertical" android:id="@id/fragment_item_comment_sum" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="23.8万" android:drawableLeft="@drawable/phone_my_fragment_comment_icon" android:drawablePadding="5.0dip" android:layout_weight="1.0" />
+            <TextView android:textSize="11.0dip" android:textColor="#ff999999" android:gravity="center_vertical" android:id="@id/fragment_item_like_sum" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="23.8万" android:drawableLeft="@drawable/phone_my_fragment_like_icon" android:drawablePadding="5.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

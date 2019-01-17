@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0dip" android:textColor="@color/white" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center|left" android:id="@id/snackbar_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/design_snackbar_padding_horizontal" android:layout_marginRight="@dimen/design_snackbar_padding_horizontal" android:maxLines="@integer/design_snackbar_text_max_lines" android:layout_weight="1.0" />
+    <Button android:layout_gravity="end|center" android:id="@id/snackbar_action" android:visibility="gone" android:layout_width="@dimen/design_snackbar_action_width" android:layout_height="@dimen/design_snackbar_action_height" android:layout_marginLeft="@dimen/design_snackbar_padding_right_horizontal" android:layout_marginTop="@dimen/design_snackbar_padding_vertical" android:layout_marginRight="@dimen/design_snackbar_padding_right_horizontal" android:layout_marginBottom="@dimen/design_snackbar_padding_vertical" />
+</merge>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/portrait_view_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/multi_camera_anchor" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/portrait_live_tab_ly" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_below="@id/multi_camera_anchor">
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/live_subscribe_anchor" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+        <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/relection_indicator" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/live_subscribe_anchor" android:layout_alignParentLeft="true" android:layout_alignWithParentIfMissing="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/tab_line" android:background="@color/color_gray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/portrait_live_tab_ly" />
+    <org.iqiyi.video.view.IQiYiMainPagerView android:id="@id/viewpage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tab_line" />
+    <RelativeLayout android:id="@id/tips_anchor" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</RelativeLayout>

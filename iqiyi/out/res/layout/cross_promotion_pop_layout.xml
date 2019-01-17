@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/cross_promotion_background" android:background="#80000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/cross_promotion_foreground" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <org.qiyi.basecore.widget.RoundRecFrameLayout android:id="@id/cross_promotion_content" android:layout_width="270.0dip" android:layout_height="wrap_content" app:radius="10.0dip" />
+        <org.qiyi.basecore.widget.IconViewClose android:id="@id/cross_promotion_close" android:padding="4.0dip" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginTop="50.0dip" app:iconStrokeWidth="1.5dip" app:iconPadding="13.0dip" app:lineColor="#ffffffff" app:circleBg="true" app:circleColor="#66000000" app:circleStrokeColor="#b2b4b4b4" app:circleStrokeWidth="1.5dip" app:circlePadding="1.0dip" />
+    </LinearLayout>
+</FrameLayout>

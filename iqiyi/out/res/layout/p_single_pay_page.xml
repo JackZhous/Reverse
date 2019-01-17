@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/sview" android:background="@color/transparent50" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/dialog" android:background="@drawable/corner_radius_10dp_white" android:layout_width="@dimen/p_dimen_270" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/p_dimen_18" android:textColor="@color/p_color_333333" android:ellipsize="end" android:id="@id/title1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="@dimen/p_dimen_22" android:layout_marginRight="20.0dip" android:maxLines="1" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/closeBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p_dimen_10" android:layout_marginRight="@dimen/p_dimen_10" android:src="@drawable/p_close_button_style1" android:layout_alignParentRight="true" />
+        <TextView android:textSize="@dimen/p_dimen_18" android:textColor="@color/p_color_FF7E00" android:ellipsize="end" android:id="@id/title2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p_dimen_10" android:maxLines="1" android:layout_below="@id/title1" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/p_dimen_12" android:textColor="@color/p_color_333333" android:gravity="center" android:id="@id/exp_code_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p_dimen_19" android:layout_marginRight="@dimen/p_dimen_20" android:drawableRight="@drawable/phone_my_inc_arrow" android:layout_below="@id/title2" android:layout_alignParentRight="true" />
+        <View android:id="@id/line1" android:background="@color/p_color_EDEDED" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_0.5" android:layout_marginLeft="@dimen/p_dimen_15" android:layout_marginTop="@dimen/p_dimen_19" android:layout_marginRight="@dimen/p_dimen_15" android:layout_below="@id/exp_code_tv" />
+        <ScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/line1">
+            <LinearLayout android:orientation="vertical" android:id="@id/paymentInfo" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </ScrollView>
+        <TextView android:textSize="@dimen/p_dimen_18" android:textColor="@color/white" android:gravity="center" android:id="@id/submitBtn" android:background="@drawable/corner_radius_10dp_b_ff7e00" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_45" android:layout_marginTop="@dimen/p_dimen_15" android:text="@string/p_submit_pay" android:layout_below="@id/scrollView" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/pp_home_headline_last_see_layout" android:background="@color/pp_color_f7f7f7" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/pp_headline_imageview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/pp_home_headline_lastsee" android:scaleType="centerCrop" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/color_last" android:id="@id/pp_headline_last_see_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="78.0dip" android:text="@string/pp_headline_last_see_refresh" android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/phone_setting_background_layout_lee" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/phoneTitleLayout" style="@style/top_base_item">
+        <TextView android:text="@string/phone_video_square_title_comment" style="@style/top_title" />
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/phoneTitleBack" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/phone_account_back_bg" android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+    <org.qiyi.basecore.widget.ptr.widget.PtrSimpleListView android:id="@id/phone_comments_list" android:paddingTop="7.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/phone_comments_bottom" android:layout_below="@id/phoneTitleLayout" />
+    <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="#ff949494" android:gravity="center_horizontal" android:id="@id/phone_comment_empty_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="没有评论哦，快来抢沙发吧" android:layout_centerInParent="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/phone_comments_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:id="@id/phone_comments_divider_line" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <include android:id="@id/phone_comments_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/comment_my_unit_layout" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/phone_comments_outside_shadow" android:background="@drawable/play_ctrl_bottom_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

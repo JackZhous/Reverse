@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.qiyi.android.video.ui.account.view.AccountResizeLayout android:background="@color/psdk_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_icon_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/phoneTitleLayout" android:layout_centerHorizontal="true" />
+    <org.qiyi.android.video.ui.account.view.PRelativeLayout android:id="@id/rl_getsms" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/iv_icon_logo">
+        <include layout="@layout/psdk_view_getsms" />
+    </org.qiyi.android.video.ui.account.view.PRelativeLayout>
+    <org.qiyi.android.video.ui.account.view.PLinearLayout android:orientation="horizontal" android:id="@id/phone_my_account_bind_phone_protocol" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/rl_getsms" android:layout_centerHorizontal="true">
+        <CheckBox android:layout_gravity="center_vertical" android:id="@id/cb_protocol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@drawable/psdk_phone_account_register_check_bg" />
+        <org.qiyi.android.video.ui.account.view.PTextView android:textSize="14.0dip" android:textColor="#ff666666" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/psdk_phone_my_account_qiyicont" />
+        <org.qiyi.android.video.ui.account.view.PTextView android:textSize="14.0dip" android:textColor="#ff0bbe06" android:layout_gravity="center_vertical" android:id="@id/tv_protocol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/psdk_phone_my_account_qiyicontxy" />
+    </org.qiyi.android.video.ui.account.view.PLinearLayout>
+    <org.qiyi.android.video.ui.account.view.PLinearLayout android:gravity="center" android:id="@id/ll_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/phone_my_account_bind_phone_protocol" android:layout_centerHorizontal="true">
+        <org.qiyi.android.video.ui.account.view.PTextView android:id="@id/tv_help" android:text="@string/psdk_phone_my_account_help" style="@style/psdk_passport_middle_panel_text" />
+    </org.qiyi.android.video.ui.account.view.PLinearLayout>
+    <org.qiyi.android.video.ui.account.login.OtherWayView android:id="@id/other_way_view" style="@style/psdk_passport_bottom_other_way_login" />
+</org.qiyi.android.video.ui.account.view.AccountResizeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/player_multi_camera_cover_selector" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.iqiyi.video.image.PlayerDraweView android:id="@id/land_multi_cover" android:padding="1.0dip" android:duplicateParentState="true" android:layout_width="120.0dip" android:layout_height="67.0dip" />
+    <TextView android:textColor="@drawable/player_multi_camera_title_selector" android:ellipsize="end" android:gravity="left" android:id="@id/land_multi_title" android:background="#80333333" android:paddingTop="3.0dip" android:duplicateParentState="true" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="全屏多机位视频" android:lines="1" android:layout_alignBottom="@id/land_multi_cover" />
+</RelativeLayout>

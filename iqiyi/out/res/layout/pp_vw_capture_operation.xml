@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/ppq_white" android:gravity="center" android:id="@id/tv_capture_notice" android:background="@drawable/pp_toast_red" android:paddingLeft="8.0dip" android:paddingTop="6.0dip" android:paddingRight="8.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="90.0dip" android:text="上滑删除" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <ImageView android:gravity="center" android:id="@id/iv_toast_bottom" android:background="@drawable/pp_toast_bottom_red" android:layout_width="15.0dip" android:layout_height="8.0dip" android:layout_marginTop="0.0dip" android:layout_below="@id/tv_capture_notice" android:layout_centerInParent="true" />
+</RelativeLayout>

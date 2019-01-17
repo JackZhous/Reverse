@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_61"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/p_w_line_left" android:background="@drawable/corner_radius_3dp_right_selector" android:layout_width="@dimen/p_dimen_6" android:layout_height="@dimen/p_dimen_3" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/p_dimen_12" android:textColor="@android:color/white" android:gravity="center" android:id="@id/qy_w_content_mid" android:background="@drawable/oval_radius_19dp_selector" android:layout_width="@dimen/p_dimen_19" android:layout_height="@dimen/p_dimen_19" android:text="@string/p_first_num" android:layout_centerInParent="true" />
+        <View android:id="@id/qy_w_line_right" android:background="@drawable/corner_radius_3dp_left_selector" android:layout_width="@dimen/p_dimen_6" android:layout_height="@dimen/p_dimen_3" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/p_dimen_15" android:textColor="@drawable/p_w_text_ff7e00_999999_selector" android:layout_gravity="center_horizontal" android:id="@id/p_w_notice_info" android:background="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p_dimen_7" android:text="@string/p_w_input_tel_num" />
+</LinearLayout>

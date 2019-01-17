@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:layout_marginTop="17.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="20.0dip" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="@color/pp_color_333333" android:layout_gravity="center_horizontal" android:id="@id/tv_reward_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="随机奖励" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/pp_color_333333" android:layout_gravity="center_horizontal" android:id="@id/tv_reward_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/pp_color_333333" android:layout_gravity="center_horizontal" android:id="@id/tv_reward_tool" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="17.0dip" />
+</LinearLayout>

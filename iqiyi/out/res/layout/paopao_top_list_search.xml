@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/head_layout" android:background="#ffececec" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_search" android:background="@drawable/pinned_search_bg_dark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip">
+        <RelativeLayout android:id="@id/right_button_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@id/im_search" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/paopao_icon_search_bar" android:layout_centerVertical="true" />
+            <TextView android:textSize="13.0dip" android:textColor="@color/text_hint_color" android:gravity="center" android:id="@id/tv_search" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:text="@string/search" android:lines="1" android:layout_toRightOf="@id/im_search" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

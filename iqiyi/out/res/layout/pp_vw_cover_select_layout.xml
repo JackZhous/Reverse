@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/pp_color_222222" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/vw_upload_cover_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_cover" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginTop="20.0dip" android:layout_below="@id/vw_upload_cover_image">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/vw_upload_cover_thumb_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <View android:background="#99000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignLeft="@id/vw_upload_cover_thumb_layout" android:layout_alignTop="@id/vw_upload_cover_thumb_layout" android:layout_alignRight="@id/vw_upload_cover_thumb_layout" android:layout_alignBottom="@id/vw_upload_cover_thumb_layout" android:layout_centerVertical="true" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/vw_upload_cover_select_thumb_layout" android:padding="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_centerVertical="true">
+            <ImageView android:id="@id/vw_upload_cover_select_thumb" android:layout_width="60.0dip" android:layout_height="60.0dip" android:scaleType="centerCrop" />
+            <ImageView android:background="@drawable/pp_green_frame_base_line" android:layout_width="60.0dip" android:layout_height="60.0dip" android:scaleType="centerCrop" android:layout_alignLeft="@id/vw_upload_cover_select_thumb" android:layout_alignTop="@id/vw_upload_cover_select_thumb" android:layout_alignRight="@id/vw_upload_cover_select_thumb" android:layout_alignBottom="@id/vw_upload_cover_select_thumb" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView android:textSize="16.0sp" android:textColor="#ff999999" android:gravity="center" android:id="@id/vw_upload_cover_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/ppq_change_cover" android:layout_below="@id/rl_cover" android:layout_centerHorizontal="true" />
+</RelativeLayout>

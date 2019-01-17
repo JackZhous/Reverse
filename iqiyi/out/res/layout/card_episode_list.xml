@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_weight="5.0" style="@style/CardModelBase"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/episode_list_item1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/unit_episode_list_item" />
+    <include android:id="@id/episode_list_item2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_weight="1.0" layout="@layout/unit_episode_list_item" />
+    <include android:id="@id/episode_list_item3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_weight="1.0" layout="@layout/unit_episode_list_item" />
+    <include android:id="@id/episode_list_item4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_weight="1.0" layout="@layout/unit_episode_list_item" />
+    <include android:id="@id/episode_list_item5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_weight="1.0" layout="@layout/unit_episode_list_item" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/pp_feed_star_come_top_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="#ffff9600" android:gravity="center_vertical" android:id="@id/star_name" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="star" android:drawableRight="@drawable/pp_special_user_star" android:drawablePadding="4.0dip" />
+    <TextView android:textSize="14.0dip" android:textColor="#ff999999" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:layout_marginRight="5.0dip" android:text="赞了动态" android:maxLines="1" android:layout_toRightOf="@id/star_name" />
+    <View android:background="@color/pp_color_e7e7e7" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_alignParentBottom="true" />
+</RelativeLayout>

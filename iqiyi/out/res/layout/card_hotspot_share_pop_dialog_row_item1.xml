@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/card_hotspot_share_item_bg_selector" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/card_hotspot_img" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginBottom="8.0dip" />
+    <TextView android:textSize="11.0dip" android:textColor="@color/card_hotspot_text_color" android:gravity="center" android:id="@id/card_hotspot_share_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/add" layout="@layout/p_vipcoupon_add_coupon_item" />
+    <View android:background="@color/p_color_e6e6e6" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/pt_p1" android:background="@color/white" android:paddingTop="85.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:textSize="14.0dip" android:gravity="center" android:id="@id/txt_ept_p1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/p_vipcoupon_empty" android:adjustViewBounds="true" />
+        <TextView android:textSize="@dimen/p_dimen_14" android:textColor="@color/p_color_666666" android:gravity="center" android:layout_gravity="center" android:id="@id/txt_ept_p2" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="@string/p_vipcoupon_nocoupon" />
+    </LinearLayout>
+</LinearLayout>

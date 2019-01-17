@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/rl_video_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/lab_footer" />
+    <org.qiyi.basecore.widget.ptr.widget.PtrSimpleListView android:id="@id/content_listview_data" android:background="@color/card_item_devider" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/content_rl_no_data_exception" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/phone_load_data_exception" />
+</merge>

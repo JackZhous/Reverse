@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/album_model" android:background="@drawable/player_portrait_common_album_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/content" android:padding="10.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <org.iqiyi.video.image.PlayerDraweView android:id="@id/album_img" android:background="@drawable/player_album_horizontal_dft" android:layout_width="110.0dip" android:layout_height="62.0dip" />
+        <ImageView android:id="@id/playing_flag" android:visibility="gone" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="44.0dip" android:layout_marginTop="20.0dip" android:src="@drawable/player_common_album_playing" />
+        <TextView android:textSize="13.0dip" android:textColor="@color/player_portrait_album_title_selecter" android:ellipsize="end" android:id="@id/album_meta0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:maxLines="2" android:layout_toRightOf="@id/album_img" />
+        <TextView android:textSize="10.0dip" android:textColor="@color/player_portrait_album_subtitle_selecter" android:id="@id/album_meta1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/album_img" android:layout_below="@id/album_meta0" />
+        <TextView android:textSize="10.0dip" android:textColor="@color/player_portrait_album_subtitle_selecter" android:id="@id/album_meta2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="3.0dip" android:layout_toRightOf="@id/album_img" android:layout_alignParentBottom="true" />
+        <ImageView android:id="@id/download_flag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <View android:background="@color/divide_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+</RelativeLayout>

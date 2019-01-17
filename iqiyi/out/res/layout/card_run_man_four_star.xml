@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" style="@style/CardModelBase"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/run_man_star_item1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/unit_roun_image_top_text_bottom2" />
+    <include android:id="@id/run_man_star_item2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_weight="1.0" layout="@layout/unit_roun_image_top_text_bottom2" />
+    <include android:id="@id/run_man_star_item3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_weight="1.0" layout="@layout/unit_roun_image_top_text_bottom2" />
+    <include android:id="@id/run_man_star_item4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_weight="1.0" layout="@layout/unit_roun_image_top_text_bottom2" />
+</LinearLayout>

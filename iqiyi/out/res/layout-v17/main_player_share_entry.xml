@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/linearLayout1" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/ll_share_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/player_share_title" android:id="@id/tex_left_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="25.0dip" android:text="@string/sns_play_share_entry_title" />
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/dialog_cancel" android:layout_width="44.0dip" android:layout_height="44.0dip" android:src="@drawable/account_dialog_close" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+        <FrameLayout android:id="@id/frame_layout" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="66.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/tex_left_title" android:layout_centerHorizontal="true">
+            <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/img" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+            <FrameLayout android:id="@id/show_reward_layout" android:background="#80000000" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <Button android:textSize="13.0dip" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/show_reward_btn" android:background="@drawable/share_show_reward_bg" android:layout_width="80.0dip" android:layout_height="30.0dip" android:text="@string/share_show_reward" />
+            </FrameLayout>
+        </FrameLayout>
+        <GridView android:id="@id/gv_share" android:paddingBottom="7.0dip" android:scrollbars="none" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:numColumns="4" android:layout_below="@id/frame_layout" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_share_loading" android:background="#ffc8c8c8" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="17.0dip" android:textColor="#ff4d4d4d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/share_loading_plugin" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_share_error" android:background="#ffc8c8c8" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="17.0dip" android:textColor="@color/text_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_loading_error" />
+        <TextView android:textSize="17.0dip" android:textColor="#ff85c210" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/share_click_retry" />
+    </LinearLayout>
+</LinearLayout>

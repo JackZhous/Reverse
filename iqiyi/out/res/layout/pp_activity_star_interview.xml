@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.iqiyi.paopao.middlecommon.ui.view.titlebar.CommonTitleBar android:id="@id/pp_feed_star_interview_title_bar" android:background="@color/color_ffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" app:title="@string/pp_feed_star_interview" app:titleBarUnderline="false" />
+    <FrameLayout android:id="@id/pp_star_interview_card_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/pp_feed_star_interview_title_bar" />
+</RelativeLayout>

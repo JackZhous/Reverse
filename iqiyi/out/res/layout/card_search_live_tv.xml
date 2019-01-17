@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="12.0dip" android:paddingTop="20.0dip" android:paddingRight="12.0dip" android:paddingBottom="20.0dip" style="@style/CardModelBase"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/phone_search_live_tv_avator" android:layout_width="50.0dip" android:layout_height="50.0dip" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_centerVertical="true" fresco:placeholderImage="@drawable/star_default_image" fresco:placeholderImageScaleType="centerCrop" fresco:roundAsCircle="true" />
+    <LinearLayout android:gravity="center" android:id="@id/phone_search_live_tv_play_btn" android:background="@drawable/btn_search_play_bg" android:layout_width="96.0dip" android:layout_height="30.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/ic_phone_play_small" android:scaleType="centerInside" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/card_episode_info_play" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="8.0dip" android:layout_toLeftOf="@id/phone_search_live_tv_play_btn" android:layout_toRightOf="@id/phone_search_live_tv_avator" android:layout_alignTop="@id/phone_search_live_tv_avator" android:layout_alignBottom="@id/phone_search_live_tv_avator">
+        <RelativeLayout android:id="@id/phone_search_live_tv_meta_layout1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="13.0sp" android:id="@id/phone_search_live_tv_meta_l1" android:layout_width="50.0dip" android:layout_height="wrap_content" android:text="title1" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/color_meta_title" android:ellipsize="end" android:id="@id/phone_search_live_tv_meta_text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="风中奇缘未删减版" android:maxLines="1" android:layout_toRightOf="@id/phone_search_live_tv_meta_l1" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/phone_search_live_tv_meta_layout2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/phone_search_live_tv_meta_layout1">
+            <TextView android:textSize="11.0sp" android:textColor="@color/default_grean" android:gravity="center_vertical" android:id="@id/phone_search_live_tv_meta_l2" android:layout_width="50.0dip" android:layout_height="wrap_content" android:text="@string/live_ing" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/color_meta_sub_title" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/phone_search_live_tv_meta_text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="年份：2014" android:singleLine="true" android:layout_toRightOf="@id/phone_search_live_tv_meta_l2" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/phone_search_live_tv_meta_layout3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_below="@id/phone_search_live_tv_meta_layout2">
+            <TextView android:textSize="11.0sp" android:textColor="@color/color_meta_sub_title" android:id="@id/phone_search_live_tv_meta_l3" android:layout_width="50.0dip" android:layout_height="wrap_content" android:text="meta2" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/color_meta_sub_title" android:ellipsize="end" android:id="@id/phone_search_live_tv_meta_text3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="主演 : 刘诗诗  彭于晏 胡歌 陈法拉 涵洞 秦昊" android:singleLine="true" android:layout_toRightOf="@id/phone_search_live_tv_meta_l3" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

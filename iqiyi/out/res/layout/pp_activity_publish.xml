@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_publish" android:background="@color/ppq_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_cover_bg" android:layout_width="fill_parent" android:layout_height="220.0dip" android:scaleType="centerCrop" /> //
+<View android:background="@color/ppq_alpha_30" android:layout_width="fill_parent" android:layout_height="220.0dip" /> //
+<include android:id="@id/header" layout="@layout/pp_common_header" />
+    <com.android.share.camera.view.roundview.RoundedImageView android:id="@id/iv_cover_image" android:layout_width="130.0dip" android:layout_height="130.0dip" android:layout_marginBottom="15.0dip" android:layout_alignBottom="@id/iv_cover_bg" android:layout_centerHorizontal="true" />
+    <View android:background="@drawable/pp_cover_setting_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/iv_cover_image" android:layout_alignTop="@id/iv_cover_image" android:layout_alignRight="@id/iv_cover_image" android:layout_alignBottom="@id/iv_cover_image" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_alignBottom="@id/iv_cover_image" android:layout_centerHorizontal="true">
+        <TextView android:textSize="14.0sp" android:textColor="@color/ppq_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="设置封面" android:drawableLeft="@drawable/pp_cover_setting_btn_logo" android:drawablePadding="6.0dip" />
+    </LinearLayout>
+    <com.android.share.camera.view.QiyiEditTextView android:id="@id/edit_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/iv_cover_bg" />
+    <View android:background="@color/ppq_c_e6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/edit_text" />
+    <LinearLayout android:gravity="top" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="15.0dip" android:layout_above="@id/tv_publish">
+        <com.iqiyi.publisher.ui.view.CustomCheckBox android:layout_gravity="center_vertical" android:id="@id/publish_protocol_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pp_protocol_checkbox_unchecked" app:checked="true" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/ugc_shallow_black_color" android:layout_gravity="center_vertical" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ppq_upload_video_read_and_accepted" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/ppq_c_0bbe06" android:layout_gravity="center_vertical" android:id="@id/open_upload_protocol_url" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ppq_upload_video_qiyi_upload_protocol" />
+    </LinearLayout>
+    <TextView android:textSize="18.0sp" android:textColor="@color/ppq_white" android:gravity="center" android:id="@id/tv_publish" android:background="@drawable/pp_tv_publish" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="20.0dip" android:text="@string/ppq_publish" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

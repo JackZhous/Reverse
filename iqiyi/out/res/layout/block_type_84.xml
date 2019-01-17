@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/image1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/buttom_list_Linlayout" android:layout_toRightOf="@id/image1" android:layout_centerVertical="true">
+        <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta1" android:layout_width="wrap_content" android:layout_height="wrap_content" app:text_layout_weight="1" app:text_ellipsize="end" />
+        <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/buttom_list_Linlayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <org.qiyi.basecard.common.widget.ButtonView android:id="@id/button2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <FrameLayout android:id="@id/button2_frameLayout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <org.qiyi.basecard.common.widget.ButtonView android:id="@id/button1" android:layout_width="60.0dip" android:layout_height="20.0dip" />
+        </FrameLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/card_text_size_10dp" android:textColor="@color/while_alpha94" android:gravity="center" android:id="@id/button_2_mete" android:background="@drawable/subscribe_num_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="51.0dip" android:layout_marginBottom="-41.0dip" android:layout_above="@id/buttom_list_Linlayout" android:layout_alignLeft="@id/buttom_list_Linlayout" />
+</RelativeLayout>

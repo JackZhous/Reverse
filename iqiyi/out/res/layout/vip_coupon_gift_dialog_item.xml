@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/vip_newbie_gift_dialog_item_bg" android:layout_width="221.0dip" android:layout_height="52.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="62.0dip" android:layout_height="fill_parent">
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ffff6000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ffff6000" android:id="@id/coupon_item_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip" android:text="" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="13.0sp" android:textColor="#ff666666" android:ellipsize="end" android:id="@id/coupon_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:text="" android:maxLines="1" />
+        <TextView android:textSize="10.0sp" android:textColor="#ff666666" android:ellipsize="end" android:id="@id/coupon_item_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="7.0dip" android:text="" android:maxLines="1" />
+    </LinearLayout>
+</LinearLayout>

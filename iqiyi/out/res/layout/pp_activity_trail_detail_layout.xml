@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.iqiyi.paopao.middlecommon.ui.view.CommentAutoHeightLayout android:orientation="vertical" android:id="@id/trail_detail_root_layout" android:background="@color/user_info_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/pp_detail_comment_btm" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/pp_qiyi_comment_bar" />
+    <com.iqiyi.paopao.middlecommon.ui.view.ptr.CommonPtrRecyclerView android:id="@id/pp_detail_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:divider="@null" android:layout_above="@id/pp_detail_comment_btm" android:layout_alignParentTop="true" />
+    <View android:background="@drawable/pp_home_tab_shadow" android:layout_width="fill_parent" android:layout_height="7.0dip" android:layout_above="@id/pp_detail_comment_btm" />
+    <com.iqiyi.feed.ui.view.FeedDetailTitleBar android:id="@id/pp_trail_title_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:detailType="trail" />
+    <include layout="@layout/pp_feed_back_to_replied_floor" />
+    <com.iqiyi.paopao.middlecommon.ui.view.LoadDataView android:id="@id/pp_detail_load_data_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/qz_already_delete_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/pp_layout_page_expired" />
+    <View android:id="@id/view_pop_bg" android:background="@color/pp_color_9a000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/pp_layout_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/pp_circle_loading_layout" />
+    <include android:id="@id/pp_loading_error_page" android:visibility="gone" layout="@layout/pp_no_network_nocashe_warning_ll" />
+</com.iqiyi.paopao.middlecommon.ui.view.CommentAutoHeightLayout>

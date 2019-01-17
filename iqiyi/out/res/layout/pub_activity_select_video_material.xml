@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.iqiyi.paopao.middlecommon.ui.view.titlebar.CommonTitleBar android:id="@id/pub_title_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" app:titleBarUnderline="false" />
+    <include android:id="@id/layout_fetch_data_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/pub_title_bar" layout="@layout/pp_layout_fetch_data_loading" />
+    <com.iqiyi.paopao.middlecommon.ui.view.loadingview.LoadingResultPage android:gravity="center" android:id="@id/pp_loading_result_main" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/pub_title_bar" />
+    <ListView android:id="@id/pub_top_popular_material_video" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" android:dividerHeight="0.0px" android:layout_below="@id/pub_title_bar" android:fadeScrollbars="false" />
+    <include android:id="@id/side_bar_layout_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginBottom="100.0dip" android:layout_alignParentBottom="true" layout="@layout/pp_global_message_alert_layout" />
+</RelativeLayout>

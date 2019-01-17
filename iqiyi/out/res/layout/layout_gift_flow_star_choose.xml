@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="253.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/top_sepa_line_shadow" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textStyle="bold" android:textColor="#ff333333" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:text="@string/gift_flow_choose_star" />
+        <ImageView android:id="@id/gift_flow_close" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/close_btn_gift_flow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <org.iqiyi.video.livechat.uiUtils.StarChooserView android:id="@id/git_flow_star_container" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="200.0dip" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/message_layout" android:background="@drawable/gift_message_purple" android:layout_width="wrap_content" android:layout_height="40.0dip">
+        <org.iqiyi.video.android.bitmapfun.ui.RoundImageView android:id="@id/gift_message_bar_icon" android:layout_width="34.0dip" android:layout_height="34.0dip" android:layout_marginLeft="4.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <RelativeLayout android:id="@id/layout_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_toRightOf="@id/gift_message_bar_icon" android:layout_centerVertical="true">
+            <TextView android:textSize="11.0sp" android:id="@id/gift_message_bar_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="sender name" />
+            <TextView android:textSize="14.0sp" android:id="@id/gift_receiver" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/gift_message_bar_content" />
+        </RelativeLayout>
+        <org.iqiyi.video.android.bitmapfun.ui.RoundImageView android:id="@id/gift_message_bar_gift_icon" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="-20.0dip" android:layout_toRightOf="@id/layout_content" />
+        <org.iqiyi.video.livechat.uiUtils.NumView android:id="@id/id_num_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_toRightOf="@id/gift_message_bar_gift_icon" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

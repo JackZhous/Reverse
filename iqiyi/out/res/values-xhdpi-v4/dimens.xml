@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="player_cast_portrait_device_name_margin_right">8.0dip</dimen>
+    <dimen name="player_cast_portrait_device_name_max_width">120.0dip</dimen>
+    <dimen name="player_cast_portrait_exit_btn_margin_top">110.0dip</dimen>
+    <dimen name="player_cast_portrait_network_bad_tips_margin_top">10.5dip</dimen>
+    <dimen name="player_cast_portrait_panel_height_tools">173.0dip</dimen>
+    <dimen name="player_cast_portrait_state_tips_margin_top">4.5dip</dimen>
+    <dimen name="welcome_ads_banner_height">93.0dip</dimen>
+    <dimen name="feedback_detail_advice_padding_top_bottom">12.0dip</dimen>
+    <dimen name="feedback_detail_footer_margin_top">5.0dip</dimen>
+    <dimen name="feedback_detail_item_divider_height">0.5dip</dimen>
+    <dimen name="verison_footer_margin_bootom">10.0dip</dimen>
+    <dimen name="version_footer_text_size">10.0dip</dimen>
+</resources>

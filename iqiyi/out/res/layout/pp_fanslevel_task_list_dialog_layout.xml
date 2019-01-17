@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="290.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/pp_dialog_content" android:background="@drawable/pp_fanslevel_begiinner_task_complete_dialog_bg" android:paddingTop="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-13.0dip" android:layout_below="@id/pp_dialog_top">
+        <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="left" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginRight="17.0dip" android:text="我的title" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:gravity="left" android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="17.0dip" android:layout_marginBottom="15.0dip" android:text="" android:layout_below="@id/title" android:lineSpacingExtra="5.0dip" />
+        <ImageView android:id="@id/img" android:layout_width="fill_parent" android:layout_height="104.0dip" android:layout_marginLeft="17.0dip" android:layout_marginRight="17.0dip" android:src="@drawable/pp_general_default_bg" android:scaleType="centerCrop" android:layout_below="@id/description" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/button" android:background="@drawable/pp_fanslevel_begiinner_task_complete_dialog_button_bg" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pp_common_dialog_commit" android:layout_below="@id/img" />
+    </RelativeLayout>
+    <ImageView android:id="@id/pp_dialog_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pp_user_merge_top_icon" android:layout_centerHorizontal="true" />
+</RelativeLayout>

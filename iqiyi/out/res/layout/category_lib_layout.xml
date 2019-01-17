@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecore.widget.ptr.widget.PtrSimpleListView android:id="@id/phone_category_video_lib_list" android:visibility="visible" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@null" android:scrollingCache="false" android:cacheColorHint="@android:color/transparent" android:divider="@null" />
+    <TextView android:textColor="@drawable/qiyi_text_color" android:gravity="center" android:id="@id/phoneEmptyText1" android:background="@color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/phone_category_empty_under_filter" />
+    <include android:id="@id/phone_category_empty_layout2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phoneTitleLayout" layout="@layout/phone_load_data_exception" />
+    <include android:id="@id/phone_category_loading_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phoneTitleLayout" layout="@layout/lab_footer" />
+    <RelativeLayout android:layout_gravity="top" android:id="@id/pinned_view_container" android:background="@color/pinned_head_bg" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/phone_category_lib_pinned_icon" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/ic_tap_down_arraw" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <HorizontalScrollView android:id="@id/phone_category_lib_pinned_listview" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:fillViewport="true" android:layout_toLeftOf="@id/phone_category_lib_pinned_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <LinearLayout android:orientation="horizontal" android:id="@id/phone_category_selected_words_hint_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </HorizontalScrollView>
+        <View android:background="@color/phone_setting_background_layout_lee" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/phone_category_lib_pinned_listview" />
+    </RelativeLayout>
+    <FrameLayout android:layout_gravity="top" android:id="@id/pop_view_container" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:gravity="center" android:id="@id/anim_move_view" android:background="@drawable/category_label_selected_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

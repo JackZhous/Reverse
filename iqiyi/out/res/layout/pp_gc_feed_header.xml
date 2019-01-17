@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/gc_feed_circle_area" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/pp_gc_recommend_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="34.0dip">
+        <ImageView android:id="@id/pp_headline_recommend_icon" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="4.0dip" android:src="@drawable/pp_headline_director_recommend" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0dip" android:textColor="#ff999999" android:gravity="center_vertical" android:id="@id/pp_gc_recommend_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/pp_headline_recommend_icon" />
+        <View android:background="@color/pp_color_e7e7e7" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_below="@id/pp_gc_recommend_layout">
+        <ImageView android:id="@id/gc_feed_flag_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/pic_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/pp_footprint_author" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/pp_author_footprint" />
+            <ImageView android:id="@id/pp_footprint_star" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/pp_star_footprint" />
+            <ImageView android:id="@id/pp_star_pic_or_guardian_wizard" android:visibility="gone" android:layout_width="83.0dip" android:layout_height="57.5dip" android:layout_marginTop="1.0dip" android:scaleType="fitXY" />
+        </LinearLayout>
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/gc_feed_author_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:placeholderImage="@drawable/pp_icon_avatar_default" app:placeholderImageScaleType="centerCrop" app:failureImage="@drawable/pp_icon_avatar_default" app:failureImageScaleType="centerCrop" app:actualImageScaleType="centerCrop" app:roundAsCircle="true" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/pp_avatar_decorate" android:visibility="gone" android:layout_width="62.0dip" android:layout_height="62.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:actualImageScaleType="fitStart" />
+        <ImageView android:id="@id/pp_kol_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pp_kol_fag_by_user_icon" android:layout_alignRight="@id/gc_feed_author_icon" android:layout_alignBottom="@id/gc_feed_author_icon" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="40.0dip" android:layout_toLeftOf="@id/pic_layout" android:layout_toRightOf="@id/gc_feed_author_icon" android:layout_centerVertical="true">
+            <com.iqiyi.paopao.middlecommon.ui.view.PPMultiNameView android:id="@id/gc_feed_author_name" android:layout_width="fill_parent" android:layout_height="wrap_content" app:nameTextSize="@dimen/pp_dimen_dp_14" app:nameTextColor="@color/color_333333" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0dip" android:textColor="@color/color_999999" android:id="@id/gc_feed_release_date" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="12.0dip" android:textColor="@color/color_999999" android:id="@id/gc_feed_view_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

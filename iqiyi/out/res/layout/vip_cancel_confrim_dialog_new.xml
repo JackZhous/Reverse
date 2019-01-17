@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/vip_cancel_renew_dialog_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dip" android:textColor="#ffc8a06a" android:gravity="center" android:id="@id/tips_title_new" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/vip_cancel_confirm_dialog_title_new" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="260.0dip" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginTop="22.0dip" android:layout_marginRight="20.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/loading_img" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginTop="22.0dip" android:src="@drawable/vip_cancel_confirm_loading_icon" />
+        <TextView android:textSize="16.0dip" android:textColor="#ff666666" android:gravity="center_horizontal" android:id="@id/loading_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/vip_cancel_confirm_dialog_new_tips1" android:maxLines="1" />
+        <ImageView android:id="@id/img" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerInside" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/error_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vip_cancel_confirm_dialog_error" />
+        <TextView android:textSize="16.0dip" android:textColor="#ff333333" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/vip_cancel_confirm_dialog_error_tips1" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff666666" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/vip_cancel_confirm_dialog_error_tips2" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip">
+        <TextView android:textSize="16.0dip" android:textColor="#ffd4b27e" android:gravity="center" android:id="@id/confirm_btn_new" android:background="@drawable/vip_cancel_renew_dialog_left_button_new_bg" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="@string/vip_cancel_confirm_dialog_cancel_button" android:layout_weight="1.0" />
+        <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/cancel_btn_new" android:background="@drawable/vip_cancel_renew_dialog_right_button_new_bg" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="@string/vip_cancel_confirm_dialog_close_button" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

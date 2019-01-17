@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.iqiyi.paopao.middlecommon.ui.view.loadingview.LoadingResultPage android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" app:result_type="fail"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

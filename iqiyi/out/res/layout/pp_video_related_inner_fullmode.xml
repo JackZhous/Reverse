@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="140.0dip" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/video_image_frame" android:layout_width="fill_parent" android:layout_height="76.5dip">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/video_image" android:background="@color/color_333333" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pp_video_player_play_btn" />
+        <ImageView android:background="@drawable/pp_detail_relatedvideos_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <TextView android:textSize="11.0dip" android:textColor="@color/color_ffffff" android:id="@id/video_play_count" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1234.5万次播放" android:layout_alignLeft="@id/video_image_frame" android:layout_alignBottom="@id/video_image_frame" />
+    <TextView android:textSize="11.0dip" android:textColor="@color/color_ffffff" android:id="@id/video_play_during" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="02:17" android:layout_alignRight="@id/video_image_frame" android:layout_alignBottom="@id/video_image_frame" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/color_ffffff" android:ellipsize="end" android:id="@id/video_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:lines="2" android:includeFontPadding="false" android:layout_below="@id/video_image_frame" android:lineSpacingExtra="3.0dip" />
+</RelativeLayout>

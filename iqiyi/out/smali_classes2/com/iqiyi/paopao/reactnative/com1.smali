@@ -1,0 +1,73 @@
+.class Lcom/iqiyi/paopao/reactnative/com1;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# instance fields
+.field final synthetic cPj:Lcom/iqiyi/paopao/reactnative/PaoPaoBaseReactActivity;
+
+.field final synthetic cPm:[Ljava/lang/String;
+
+.field final synthetic val$index:I
+
+.field final synthetic val$successCallback:Lcom/facebook/react/bridge/Callback;
+
+
+# direct methods
+.method constructor <init>(Lcom/iqiyi/paopao/reactnative/PaoPaoBaseReactActivity;[Ljava/lang/String;ILcom/facebook/react/bridge/Callback;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/iqiyi/paopao/reactnative/com1;->cPj:Lcom/iqiyi/paopao/reactnative/PaoPaoBaseReactActivity;
+
+    iput-object p2, p0, Lcom/iqiyi/paopao/reactnative/com1;->cPm:[Ljava/lang/String;
+
+    iput p3, p0, Lcom/iqiyi/paopao/reactnative/com1;->val$index:I
+
+    iput-object p4, p0, Lcom/iqiyi/paopao/reactnative/com1;->val$successCallback:Lcom/facebook/react/bridge/Callback;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onClick(Landroid/view/View;)V
+    .locals 4
+
+    invoke-static {}, Lcom/facebook/react/bridge/Arguments;->createMap()Lcom/facebook/react/bridge/WritableMap;
+
+    move-result-object v0
+
+    const-string/jumbo v1, "title"
+
+    iget-object v2, p0, Lcom/iqiyi/paopao/reactnative/com1;->cPm:[Ljava/lang/String;
+
+    iget v3, p0, Lcom/iqiyi/paopao/reactnative/com1;->val$index:I
+
+    aget-object v2, v2, v3
+
+    invoke-interface {v0, v1, v2}, Lcom/facebook/react/bridge/WritableMap;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string/jumbo v1, "index"
+
+    iget v2, p0, Lcom/iqiyi/paopao/reactnative/com1;->val$index:I
+
+    invoke-interface {v0, v1, v2}, Lcom/facebook/react/bridge/WritableMap;->putInt(Ljava/lang/String;I)V
+
+    iget-object v1, p0, Lcom/iqiyi/paopao/reactnative/com1;->val$successCallback:Lcom/facebook/react/bridge/Callback;
+
+    const/4 v2, 0x1
+
+    new-array v2, v2, [Ljava/lang/Object;
+
+    const/4 v3, 0x0
+
+    aput-object v0, v2, v3
+
+    invoke-interface {v1, v2}, Lcom/facebook/react/bridge/Callback;->invoke([Ljava/lang/Object;)V
+
+    return-void
+.end method

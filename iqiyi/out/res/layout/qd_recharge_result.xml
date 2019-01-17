@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/phone_pay_title" layout="@layout/pay_phone_title" />
+    <ScrollView android:id="@id/pageview" android:paddingBottom="60.0dip" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/phone_pay_title">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/page_linear_p0" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="@dimen/p_dimen_48" android:layout_height="@dimen/p_dimen_48" android:layout_marginTop="@dimen/p_dimen_30" android:src="@drawable/loading_style_3" />
+                <TextView android:textSize="@dimen/p_dimen_18" android:textStyle="bold" android:textColor="@color/p_color_333333" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p_dimen_24" android:text="@string/p_qd_recharge_result_success" />
+            </LinearLayout>
+            <ImageView android:background="@color/p_color_f0f0f0" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_0.5" android:layout_marginLeft="@dimen/p_dimen_20" android:layout_marginTop="@dimen/p_dimen_24.5" android:layout_marginRight="@dimen/p_dimen_20" />
+            <LinearLayout android:orientation="vertical" android:id="@id/page_linear_p1" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/p_dimen_20" android:layout_marginRight="@dimen/p_dimen_20" />
+            <ImageView android:background="@color/p_color_f0f0f0" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_0.5" android:layout_marginLeft="@dimen/p_dimen_20" android:layout_marginTop="@dimen/p_dimen_17" android:layout_marginRight="@dimen/p_dimen_20" />
+            <LinearLayout android:orientation="vertical" android:id="@id/page_linear_p2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p_dimen_33">
+                <TextView android:textSize="@dimen/p_dimen_18" android:textStyle="bold" android:textColor="@color/p_color_FF7E00" android:gravity="center" android:layout_gravity="center" android:id="@id/submit" android:background="@drawable/qd_btn_selector" android:layout_width="@dimen/p_dimen_305" android:layout_height="@dimen/p_dimen_45" android:text="@string/p_qd_recharge_result_submit" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

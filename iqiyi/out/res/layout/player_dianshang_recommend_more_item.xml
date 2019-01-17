@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ip_item" android:background="@drawable/player_imall_more_item_bg" android:layout_width="245.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/poster_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" android:layout_centerVertical="true">
+        <org.iqiyi.video.image.PlayerDraweView android:id="@id/ip_icon" android:paddingLeft="1.0px" android:paddingTop="1.0px" android:paddingBottom="1.0px" android:layout_width="61.0dip" android:layout_height="61.0dip" android:scaleType="centerCrop" />
+        <TextView android:id="@id/divide_line" android:background="#ffe6e6e6" android:layout_width="1.0px" android:layout_height="55.0dip" android:layout_toRightOf="@id/ip_icon" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/ip_action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginRight="11.0dip" android:src="@drawable/dianshang_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="13.0dip" android:textColor="#ff333333" android:ellipsize="end" android:id="@id/ip_title" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:maxLines="2" android:layout_toLeftOf="@id/ip_action" android:layout_toRightOf="@id/poster_container" android:layout_alignParentTop="true" />
+    <TextView android:textSize="11.0dip" android:textColor="#ffee394b" android:ellipsize="end" android:id="@id/ip_subTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:maxLines="1" android:layout_toLeftOf="@id/ip_action" android:layout_toRightOf="@id/poster_container" android:layout_alignBottom="@id/poster_container" />
+</RelativeLayout>

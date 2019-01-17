@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/webview_content_RL" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <Button android:id="@id/adswebview_close" android:background="@drawable/qiyi_sdk_player_land_ads_pause_close" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/phone_activity_webview_menu_items" android:background="@drawable/qiyi_sdk_phone_activity_webview_menu_bg" android:visibility="gone" android:layout_width="140.0dip" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginRight="4.0dip" android:layout_alignParentRight="true">
+        <TextView android:textSize="16.0dip" android:textColor="@drawable/qiyi_sdk_phone_activity_platform_bg" android:id="@id/phone_activity_webview_open" android:paddingLeft="20.0dip" android:paddingTop="13.0dip" android:paddingBottom="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="用浏览器打开" />
+        <TextView android:textSize="16.0dip" android:textColor="@drawable/qiyi_sdk_phone_activity_platform_bg" android:id="@id/testual1" android:paddingLeft="20.0dip" android:paddingTop="13.0dip" android:paddingBottom="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="测试地址1" />
+        <TextView android:textSize="16.0dip" android:textColor="@drawable/qiyi_sdk_phone_activity_platform_bg" android:id="@id/testual2" android:paddingLeft="20.0dip" android:paddingTop="13.0dip" android:paddingBottom="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="测试地址2" />
+    </LinearLayout>
+</RelativeLayout>

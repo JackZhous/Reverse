@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/blockLayout" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <include android:id="@id/staricon" android:layout_width="65.0dip" android:layout_height="65.0dip" android:layout_marginTop="12.0dip" layout="@layout/player_portrait_rank_icon" />
+        <ImageView android:id="@id/starcrown" android:background="@drawable/player_portrait_rank_starcrown" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-11.0dip" android:layout_marginRight="1.0dip" android:layout_alignTop="@id/staricon" android:layout_alignRight="@id/staricon" />
+        <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/starrank" android:background="@drawable/player_portrait_rank_starrank_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:text="2" android:layout_alignLeft="@id/staricon" android:layout_alignBottom="@id/staricon" />
+    </RelativeLayout>
+    <TextView android:textSize="11.0dip" android:textColor="#ff333333" android:ellipsize="end" android:gravity="center" android:id="@id/starname" android:background="@drawable/player_portrait_rank_button" android:layout_width="75.0dip" android:layout_height="35.0dip" android:layout_marginTop="12.0dip" android:text="Angalababy" android:singleLine="true" android:layout_below="@id/content" android:layout_centerHorizontal="true" />
+</RelativeLayout>

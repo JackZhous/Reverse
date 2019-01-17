@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/pp_mode_switch_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <View android:id="@id/tv_mode_divider" android:background="@color/pp_color_4dffffff" android:layout_width="0.5dip" android:layout_height="10.0dip" android:layout_centerInParent="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/ppq_capture_progress_bg" android:id="@id/tv_normal_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:text="@string/ppq_normal_mode" android:layout_toLeftOf="@id/tv_mode_divider" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/pp_color_66ffffff" android:id="@id/tv_beauty_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:text="@string/ppq_beauty_mode" android:layout_toRightOf="@id/tv_mode_divider" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

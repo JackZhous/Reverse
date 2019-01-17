@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fl_inner" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <ImageView android:id="@id/pull_to_refresh_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentLeft="true" />
+            <com.iqiyi.paopao.middlecommon.ui.view.pulltorefresh.internal.CircleProgressBar android:id="@id/pull_to_refresh_progress" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="10.0dip" android:indeterminate="false" android:layout_centerInParent="true" app:mlpb_show_arrow="true" app:mlpb_arrow_width="10.0dip" app:mlpb_arrow_height="5.0dip" xmlns:app="http://schemas.android.com/apk/res-auto" />
+            <TextView android:id="@id/line" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+            <TextView android:textAppearance="?android:textAppearance" android:textStyle="bold" android:textColor="#ff676767" android:id="@id/pull_to_refresh_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" android:layout_toRightOf="@id/line" android:layout_alignLeft="@id/line" android:layout_centerVertical="true" />
+            <TextView android:textAppearance="?android:textAppearance" android:textStyle="bold" android:textColor="#ff676767" android:id="@id/pull_to_refresh_sub_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" android:layout_toRightOf="@id/line" android:layout_alignLeft="@id/line" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </FrameLayout>
+</merge>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/card_layout_sound_item" android:background="@drawable/card_sound_item_bg" android:layout_width="160.0dip" android:layout_height="47.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/card_iv_sound_horn" android:layout_width="28.0dip" android:layout_height="20.0dip" android:layout_marginLeft="19.0dip" android:src="@drawable/card_sound_play_animation" android:layout_centerVertical="true" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/card_feed_sound_duration" android:id="@id/card_tv_sound_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="24'" android:layout_toRightOf="@id/card_iv_sound_horn" android:layout_centerVertical="true" />
+</RelativeLayout>

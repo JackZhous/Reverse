@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/sign_in_item_layout" android:layout_width="100.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/current_day" android:background="@drawable/phone_member_sign_in_timeline" android:layout_width="70.0dip" android:layout_height="20.0dip" android:layout_centerHorizontal="true" />
+    <View android:id="@id/left_line" android:background="@drawable/sign_in_line" android:layout_width="fill_parent" android:layout_height="4.0dip" android:layout_marginTop="8.0dip" android:layout_toLeftOf="@id/current_day" android:layout_alignParentLeft="true" />
+    <View android:id="@id/right_line" android:background="@drawable/sign_in_line" android:layout_width="fill_parent" android:layout_height="4.0dip" android:layout_marginTop="8.0dip" android:layout_toRightOf="@id/current_day" android:layout_alignParentRight="true" />
+    <ImageView android:id="@id/gift_get" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginTop="20.0dip" android:layout_below="@id/current_day" android:layout_centerHorizontal="true" />
+    <FrameLayout android:id="@id/gift_layout" android:background="@drawable/sign_in_gift_bg" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginTop="20.0dip" android:layout_below="@id/current_day" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="center" android:id="@id/gift_image" android:layout_width="70.0dip" android:layout_height="70.0dip" android:scaleType="center" />
+    </FrameLayout>
+    <TextView android:textSize="13.0sp" android:textColor="#ff666666" android:gravity="center" android:layout_gravity="center" android:id="@id/gift_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/gift_layout" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.video.qyskin.view.SkinTitleBar android:id="@id/fragment_title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignWithParentIfMissing="true" app:tb_title="@string/fragment_title" app:tb_menu="@menu/title_bar_edit_cancel_menu" />
+    <org.qiyi.basecore.widget.ptr.widget.PtrSimpleRecyclerView android:id="@id/fragment_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_below="@id/fragment_title_layout" />
+    <ViewStub android:id="@id/fragment_empty" android:layout="@layout/phone_my_fragment_empty" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/fragment_title_layout" />
+    <ViewStub android:id="@id/fragment_error" android:layout="@layout/phone_network_error_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/fragment_title_layout" />
+    <ViewStub android:id="@id/fragment_login" android:layout="@layout/phone_my_fragment_login" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/fragment_title_layout" />
+    <org.qiyi.android.video.view.BottomDeleteView android:id="@id/fragment_delete" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="55.0dip" android:layout_height="120.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/novice_task_deer" android:layout_width="55.0dip" android:layout_height="91.0dip" android:layout_centerVertical="true" />
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/novice_task" android:layout_width="25.0dip" android:layout_height="91.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <org.qiyi.basecore.widget.IconViewClose android:id="@id/novice_task_close" android:layout_width="21.0dip" android:layout_height="21.0dip" android:layout_alignLeft="@id/novice_task" app:iconStrokeWidth="1.1999817dip" app:iconPadding="6.5dip" app:lineColor="#ffff5400" app:circleBg="true" app:circleColor="#ccfefefe" app:circleStrokeColor="#ffff5400" app:circleStrokeWidth="1.1999817dip" app:circlePadding="1.0dip" />
+</RelativeLayout>

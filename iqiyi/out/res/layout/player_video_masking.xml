@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/network_root_layout" android:background="@drawable/player_loading_back_bg_portrait" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.iqiyi.video.image.PlayerDraweView android:id="@id/back_ground_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <ImageView android:id="@id/black_back_ground_view" android:background="#50000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/player_msg_layer_net_info_back" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:src="@drawable/qiyi_sdk_player_portrait_btn_back" android:layout_alignParentTop="true" />
+    <RelativeLayout android:id="@id/portrait_style" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_centerInParent="true">
+        <TextView android:textSize="14.0dip" android:gravity="center" android:id="@id/player_network_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialog_2g_nosupport" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/palyer_net_tips_info" android:background="@drawable/player_network_selector" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginTop="22.0dip" android:layout_below="@id/player_network_tip" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/player_net_tips_icon" android:background="@drawable/play_icon" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="-12.0dip" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/white" android:id="@id/player_network_tip_ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/dialog_2g3g_ok_2" android:layout_toRightOf="@id/player_net_tips_icon" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:textSize="14.0dip" android:textColor="@color/phone_setting_background_layout_lee" android:id="@id/player_network_tip_subscribe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="45.0dip" android:layout_below="@id/palyer_net_tips_info" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

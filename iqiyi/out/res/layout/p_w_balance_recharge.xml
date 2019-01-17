@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/p_w_title_layout" layout="@layout/pay_phone_title" />
+    <RelativeLayout android:id="@id/sview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/p_w_title_layout">
+        <RelativeLayout android:id="@id/p_w_bank_card_rel" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_50" android:layout_marginLeft="@dimen/p_dimen_36" android:layout_marginTop="@dimen/p_dimen_31" android:layout_marginRight="@dimen/p_dimen_36">
+            <ImageView android:id="@id/p_w_bank_card_icon" android:paddingRight="@dimen/p_dimen_11" android:visibility="gone" android:layout_width="@dimen/p_dimen_31" android:layout_height="@dimen/p_dimen_20" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/p_dimen_15" android:textColor="@color/p_color_333333" android:id="@id/p_w_card_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/p_w_bank_card_icon" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/p_dimen_15" android:textColor="@color/p_color_333333" android:id="@id/p_w_card_last_num_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/p_w_card_name_tv" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/p_w_arrow_or_add" android:layout_width="@dimen/p_dimen_12" android:layout_height="@dimen/p_dimen_7" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:id="@id/p_w_dividing_line1" android:background="@color/p_color_f0f0f0" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_1" android:layout_marginLeft="@dimen/p_dimen_36" android:layout_marginRight="@dimen/p_dimen_36" android:layout_below="@id/p_w_bank_card_rel" />
+        <RelativeLayout android:id="@id/p_w_recharge_rel" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_50" android:layout_marginLeft="@dimen/p_dimen_36" android:layout_marginTop="@dimen/p_dimen_20" android:layout_marginRight="@dimen/p_dimen_36" android:layout_below="@id/p_w_dividing_line1">
+            <TextView android:textSize="@dimen/p_dimen_15" android:textColor="@color/p_color_333333" android:id="@id/p_w_recharge_amount_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p_w_recharge_amount" android:layout_centerVertical="true" />
+            <EditText android:textSize="@dimen/p_dimen_13" android:textColorHint="@color/p_color_999999" android:id="@id/p_w_recharge_amount_edt" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/p_dimen_16" android:layout_toLeftOf="@id/p_w_close_img" android:layout_toRightOf="@id/p_w_recharge_amount_tv" android:layout_centerVertical="true" android:inputType="number" />
+            <ImageView android:id="@id/p_w_close_img" android:visibility="gone" android:layout_width="@dimen/p_dimen_20" android:layout_height="@dimen/p_dimen_20" android:src="@drawable/icon_clear_edit" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:id="@id/p_w_dividing_line2" android:background="@color/p_color_f0f0f0" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_1" android:layout_marginLeft="@dimen/p_dimen_36" android:layout_marginRight="@dimen/p_dimen_36" android:layout_below="@id/p_w_recharge_rel" />
+        <TextView android:textSize="@dimen/p_dimen_18" android:textColor="@android:color/white" android:gravity="center" android:id="@id/p_w_submit" android:background="@drawable/corner_radius45_ff7e00_ffd8b2_selector" android:layout_width="@dimen/p_dimen_303" android:layout_height="@dimen/p_dimen_45" android:layout_marginTop="@dimen/p_dimen_30" android:text="@string/p_w_recharge_immediately" android:layout_below="@id/p_w_dividing_line2" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/tk_empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/p_w_title_layout">
+        <include layout="@layout/p_load_data_exception" />
+    </RelativeLayout>
+</RelativeLayout>

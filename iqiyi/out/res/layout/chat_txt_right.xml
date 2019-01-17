@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="11.0dip" android:id="@id/time" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="23.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <android.support.v4.widget.Space android:id="@id/right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/avatar" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="13.0dip" android:layout_toLeftOf="@id/right" android:layout_below="@id/time" app:placeholderImage="@drawable/def_avatar" app:roundAsCircle="true" />
+    <TextView android:textSize="13.0dip" android:textColor="#ff999999" android:id="@id/username" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:layout_toLeftOf="@id/avatar" android:layout_below="@id/time" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="66.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="14.0dip" android:layout_marginBottom="10.0dip" android:layout_toLeftOf="@id/avatar" android:layout_below="@id/username">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_status" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="8.0dip" />
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/content" android:background="@drawable/bg_txt_msg_right" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

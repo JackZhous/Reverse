@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/phone_play_record_advise" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" layout="@layout/my_main_play_record_advertise" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/play_record_empty_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="90.0dip" android:src="@drawable/phone_rc_empty" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="13.0dip" android:textColor="#ff666666" android:gravity="center" android:id="@id/empty_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="@string/phone_my_record_login_tips" android:layout_below="@id/play_record_empty_image" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="13.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/login_button" android:background="@drawable/phone_play_record_green_normal" android:visibility="visible" android:layout_width="80.0dip" android:layout_height="30.0dip" android:layout_marginTop="20.0dip" android:text="@string/phone_my_record_login" android:layout_below="@id/empty_text" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</FrameLayout>

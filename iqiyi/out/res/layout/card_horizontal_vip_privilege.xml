@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/color_white" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/contaner_0" android:layout_width="92.0dip" android:layout_height="113.0dip" android:layout_centerHorizontal="true">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:layout_gravity="center_horizontal" android:id="@id/vip_level_icon_0" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" />
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/vip_mark_icon_0" android:visibility="gone" android:layout_width="47.0dip" android:layout_height="15.0dip" android:layout_marginTop="5.0dip" android:layout_alignParentRight="true" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/grey_search" android:gravity="center_horizontal" android:id="@id/level_title_0" android:paddingTop="10.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_below="@id/vip_level_icon_0" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/contaner_1" android:layout_width="92.0dip" android:layout_height="113.0dip" android:layout_below="@id/contaner_0" android:layout_centerHorizontal="true">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:layout_gravity="center_horizontal" android:id="@id/vip_level_icon_1" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" />
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/vip_mark_icon_1" android:visibility="gone" android:layout_width="47.0dip" android:layout_height="15.0dip" android:layout_marginTop="5.0dip" android:layout_alignParentRight="true" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/grey_search" android:gravity="center_horizontal" android:id="@id/level_title_1" android:paddingTop="10.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_below="@id/vip_level_icon_1" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

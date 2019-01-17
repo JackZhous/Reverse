@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/player_pp_qz_feed_vote_option_bg" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="6.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="@color/player_common_green" android:gravity="center" android:id="@id/novoteoptions" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ProgressBar android:id="@id/progress_percent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:max="100" style="?android:attr/progressBarStyleHorizontal" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/player_pp_item_text_black" android:gravity="center" android:id="@id/tv_text" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="11.0sp" android:textColor="@color/player_pp_starlist_title_default" android:id="@id/tv_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

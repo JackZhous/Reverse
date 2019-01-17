@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/subscribe_video_container" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/layout_card_video2" />
+    <include android:layout_width="fill_parent" android:layout_height="35.0dip" layout="@layout/layout_recommend_video_footer" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/phoneNaviLayout" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/navi_container" android:background="@drawable/navi_bg_default" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="@dimen/qiyi_main_bottom_nav_height" android:layout_marginTop="40.0dip">
+        <org.qiyi.android.video.view.NaviUIButton android:layout_gravity="bottom" android:id="@id/navi0" android:text="@string/naviVideo" style="@style/navi_btn_style" />
+        <org.qiyi.android.video.view.NaviUIButton android:layout_gravity="bottom" android:id="@id/navi1" android:text="@string/naviFind" style="@style/navi_btn_style" />
+        <org.qiyi.android.video.view.NaviUIButton android:layout_gravity="bottom" android:id="@id/navi2" android:text="@string/naviVip" style="@style/navi_btn_style" />
+        <org.qiyi.android.video.view.NaviUIButton android:layout_gravity="bottom" android:id="@id/navi3" android:text="@string/naviMy" style="@style/navi_btn_style" />
+        <org.qiyi.android.video.view.NaviUIButton android:layout_gravity="bottom" android:id="@id/navi4" android:text="@string/naviFriend" style="@style/navi_btn_style" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/lab_footer" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.android.video.pay.views.CircleLoadingView android:id="@id/lab_footer_circle_loading" android:layout_width="20.0dip" android:layout_height="20.0dip" app:auto_animation="true" app:static_play="true" />
+    <TextView android:textColor="@color/p_color_3a3a3a" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/loading_data" />
+</LinearLayout>

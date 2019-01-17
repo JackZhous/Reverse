@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="11.0dip" android:textColor="@color/text_hint_color" android:gravity="center" android:id="@id/tip_text" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="@string/custom_refresh_tip" />
+    <ImageView android:id="@id/tip_icon" android:background="@drawable/ic_refresh" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="7.0dip" />
+</LinearLayout>

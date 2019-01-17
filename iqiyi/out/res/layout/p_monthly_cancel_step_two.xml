@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/corner_radius_6dp_white" android:layout_width="300.0dip" android:layout_height="377.0dip">
+        <TextView android:textSize="18.0dip" android:textColor="@color/p_color_cba06a" android:id="@id/title_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginTop="23.0dip" android:layout_marginRight="23.0dip" android:text="@string/cancel_month_title_four" android:layout_centerHorizontal="true" />
+        <RelativeLayout android:gravity="center_horizontal" android:id="@id/content_area" android:layout_width="252.0dip" android:layout_height="215.0dip" android:layout_below="@id/title_one" android:layout_centerHorizontal="true">
+            <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/p_monthly_cancel_loaded_content" />
+        </RelativeLayout>
+        <TextView android:textSize="13.0dip" android:textColor="@color/p_color_333333" android:id="@id/title_two" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="21.0dip" android:layout_marginTop="215.0dip" android:layout_marginRight="21.0dip" android:text="@string/cancel_month_title_five" android:layout_below="@id/title_one" />
+        <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/p_monthly_cancel_buttons" />
+    </RelativeLayout>
+</RelativeLayout>

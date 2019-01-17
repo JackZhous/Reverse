@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/portrait_episode_bannerl_ayout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/episode_frame" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/portrait_episode_bannerl_ayout">
+        <com.iqiyi.qyplayercardview.view.EpisodeTabNewIndicator android:id="@id/episode_indicator" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+    </FrameLayout>
+    <com.iqiyi.qyplayercardview.portraitv3.view.EpisodeViewPager android:layout_gravity="center" android:id="@id/episode_viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/episode_frame" />
+</RelativeLayout>

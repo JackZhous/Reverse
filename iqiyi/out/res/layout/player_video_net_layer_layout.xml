@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/network_root_layout" android:background="@drawable/player_loading_back_bg_portrait" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.iqiyi.video.image.PlayerDraweView android:id="@id/back_ground_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <ImageView android:id="@id/black_back_ground_view" android:background="#90000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/player_msg_layer_net_info_back" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:src="@drawable/qiyi_sdk_player_portrait_btn_back" android:layout_alignParentTop="true" />
+    <RelativeLayout android:id="@id/style_a" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_centerInParent="true">
+        <TextView android:textSize="14.0dip" android:gravity="center" android:id="@id/player_network_tip_a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialog_network_off" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/palyer_net_tips_info_a" android:background="@drawable/player_network_selector" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginTop="22.0dip" android:layout_below="@id/player_network_tip_a" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/left_icon_image_viwe_a" android:background="@drawable/play_icon" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="-12.0dip" android:layout_centerVertical="true" />
+            <TextView android:textSize="15.0dip" android:textColor="@color/white" android:id="@id/net_size_tv_a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/dialog_2g3g_ok_2" android:layout_toRightOf="@id/left_icon_image_viwe_a" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:textSize="14.0dip" android:textColor="@color/phone_setting_background_layout_lee" android:id="@id/player_network_tip_subscribe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="45.0dip" android:layout_below="@id/palyer_net_tips_info_a" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/style_b" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:id="@id/palyer_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <RelativeLayout android:gravity="center" android:id="@id/net_size_layout" android:background="@drawable/player_network_selector" android:layout_width="115.0dip" android:layout_height="30.0dip" android:layout_marginRight="40.0dip">
+                <ImageView android:id="@id/left_icon_image_viwe_b" android:background="@drawable/play_icon" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_centerVertical="true" />
+                <TextView android:textSize="13.0dip" android:textColor="@color/white" android:id="@id/net_size_tv_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialog_2g3g_ok_2" android:layout_toRightOf="@id/left_icon_image_viwe_b" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <TextView android:textSize="13.0dip" android:textColor="#ff23d41e" android:gravity="center" android:id="@id/buy_net_tv_b" android:background="@drawable/player_network_new_ui_right_btn_selector" android:layout_width="115.0dip" android:layout_height="30.0dip" android:text="@string/player_net_layout_buy_text" android:layout_toRightOf="@id/net_size_layout" />
+        </RelativeLayout>
+        <TextView android:textSize="13.0dip" android:id="@id/player_network_tip_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialog_2g_nosupport" android:layout_above="@id/palyer_btn" />
+    </RelativeLayout>
+</RelativeLayout>

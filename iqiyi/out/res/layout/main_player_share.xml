@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/color_grey_light" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/shareTopLayout" android:background="@drawable/play_share_top_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/btn_back" android:background="@drawable/phone_account_back_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+            <Button android:id="@id/btn_share_submit" android:background="@drawable/play_btn_write_send_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/player_10" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/color_white" android:id="@id/text_share_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sns_play_share_title" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@color/color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/player_10" android:layout_marginTop="@dimen/player_05" android:layout_marginRight="@dimen/player_10">
+            <EditText android:gravity="left" android:id="@id/share_text" android:background="@color/color_white" android:padding="5.0dip" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="160.0dip" android:maxLength="280" />
+            <TextView android:textSize="12.0dip" android:textColor="#ff949494" android:gravity="right" android:id="@id/text_count_toast" android:background="@color/color_white" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="最多140个字符" android:layout_below="@id/share_text" />
+        </RelativeLayout>
+        <org.qiyi.basecore.widget.QiyiDraweeView android:background="#ffe7e7e7" android:paddingLeft="@dimen/player_20" android:paddingRight="@dimen/player_20" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:id="@id/itemLayout" android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/player_10" android:layout_marginRight="@dimen/player_10">
+            <RelativeLayout android:id="@id/root_Layout" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/image" android:background="@drawable/phone_category_detail_rec_horizontal_small_default" android:layout_width="@dimen/main_player_share_width" android:layout_height="@dimen/main_player_share_height" android:scaleType="fitXY" />
+                <TextView android:id="@id/mark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/image" android:layout_alignRight="@id/image" />
+                <TextView android:textSize="@dimen/default_small_sub" android:textColor="@color/default_color_small_sub" android:gravity="center" android:id="@id/title1" android:background="@drawable/phone_category_shallow_black_bg" android:padding="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:layout_marginBottom="2.0dip" android:singleLine="true" android:layout_alignRight="@id/image" android:layout_alignBottom="@id/image" />
+                <TextView android:textSize="@dimen/default_middle" android:textColor="@color/default_color_middle" android:ellipsize="end" android:id="@id/title2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="3.0dip" android:maxLines="2" android:layout_toRightOf="@id/image" android:layout_alignTop="@id/image" />
+                <TextView android:textSize="@dimen/default_small" android:textColor="@color/default_color_small" android:ellipsize="end" android:id="@id/title3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_below="@id/title2" android:layout_alignLeft="@id/title2" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:id="@id/checkShareLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/player_10">
+            <TextView android:textSize="@dimen/player_size_16" android:textColor="#ff949494" android:layout_gravity="center_vertical" android:id="@id/share_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/player_08" android:text="@string/sns_play_share_checkhint" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/img_weibo" android:background="@drawable/play_btn_sina_big" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <CheckBox android:id="@id/checkbox_weibo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-12.0dip" android:layout_marginBottom="-12.0dip" android:button="@drawable/play_share_checkbox" android:layout_alignRight="@id/img_weibo" android:layout_alignBottom="@id/img_weibo" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/img_qweibo" android:background="@drawable/play_btn_qweibo_big" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <CheckBox android:id="@id/checkbox_qweibo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-12.0dip" android:layout_marginBottom="-12.0dip" android:button="@drawable/play_share_checkbox" android:layout_alignRight="@id/img_qweibo" android:layout_alignBottom="@id/img_qweibo" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/img_renren" android:background="@drawable/play_btn_renren_big" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <CheckBox android:id="@id/checkbox_renren" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-12.0dip" android:layout_marginBottom="-12.0dip" android:button="@drawable/play_share_checkbox" android:layout_alignRight="@id/img_renren" android:layout_alignBottom="@id/img_renren" />
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@id/checkqiyiLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/player_10" android:layout_marginTop="@dimen/player_10" android:layout_marginRight="@dimen/player_10">
+            <CheckBox android:id="@id/checkbox_qiyi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/play_share_checkbox" />
+            <TextView android:textSize="@dimen/player_size_16" android:textColor="#ff949494" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/sns_play_share_checktext" android:layout_toRightOf="@id/checkbox_qiyi" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

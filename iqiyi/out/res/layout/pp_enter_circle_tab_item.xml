@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/pp_qiyi_title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/pp_tab_icon_layout" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginTop="1.0dip" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/pp_tab_circle" android:visibility="visible" android:layout_width="19.0dip" android:layout_height="19.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="7.5dip" android:src="@drawable/pp_home_tab_gray" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <ImageView android:id="@id/pp_enter_circle_icon" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/pp_enter_circle_unselected" />
+        <ImageView android:id="@id/pp_tab_inner_icon" android:layout_width="6.0dip" android:layout_height="4.0dip" android:layout_marginRight="16.5dip" android:layout_marginBottom="14.5dip" android:src="@drawable/pp_enter_circle_inner_unselected" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <TextView android:textSize="10.0dip" android:textColor="@color/pp_home_navigation_item_text_normal" android:id="@id/pp_qiyi_title_tab_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pp_qiyi_my_circle" android:includeFontPadding="false" android:layout_below="@id/pp_tab_icon_layout" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="12.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/pp_qiyi_title_tab_unread_count_single" android:background="@drawable/im_message_unread_tab_double" android:visibility="invisible" android:layout_width="30.0dip" android:layout_height="24.0dip" android:layout_marginLeft="18.0dip" android:text="96" android:layout_alignLeft="@id/pp_tab_icon_layout" />
+    <ImageView android:id="@id/pp_qiyi_title_tab_red_dot" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginTop="1.0dip" android:src="@drawable/im_icon_red_dot" android:layout_alignLeft="@id/pp_tab_icon_layout" />
+    <ImageView android:id="@id/pp_qiyi_title_tab_star_icon" android:visibility="invisible" android:layout_width="9.0dip" android:layout_height="9.0dip" android:layout_marginLeft="22.0dip" android:layout_marginTop="1.0dip" android:src="@drawable/pp_qiyi_home_star_tag" android:layout_alignLeft="@id/pp_tab_icon_layout" />
+</merge>

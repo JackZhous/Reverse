@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/phone_pay_title" layout="@layout/pay_phone_title" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/phone_pay_title">
+        <RelativeLayout android:id="@id/qdloginlayoutview" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:layout_alignParentTop="true" layout="@layout/qd_logout_view" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/qdpayview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/qd_pay_view" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/tk_empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/p_load_data_exception" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

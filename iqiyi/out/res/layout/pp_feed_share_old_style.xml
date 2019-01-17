@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/pp_feed_share_content_layout" android:background="@color/pp_color_f7f7f7" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginLeft="@dimen/pp_feed_left_gap" android:layout_marginRight="@dimen/pp_feed_left_gap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/qz_share_feed_item_img" android:layout_width="70.0dip" android:layout_height="70.0dip" android:scaleType="centerCrop" app:placeholderImage="@drawable/pp_general_default_bg" />
+    <TextView android:textSize="11.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/qz_share_feed_item_count" android:background="#ba000000" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="18.0dip" android:layout_alignTop="@id/qz_share_feed_item_img" android:layout_alignRight="@id/qz_share_feed_item_img" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/qz_share_feed_item_img" android:layout_centerInParent="true">
+        <TextView android:textSize="16.0dip" android:textColor="#ff333333" android:id="@id/pp_feed_share_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="" android:singleLine="true" />
+        <TextView android:textSize="12.0dip" android:textColor="#ff999999" android:id="@id/pp_feed_share_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

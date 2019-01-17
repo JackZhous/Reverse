@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/naviFind" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?p_navi_find_bg" />
+    <TextView android:id="@id/naviTop_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/naviFind" android:layout_below="@id/naviFind" android:layout_centerHorizontal="true" style="@style/smart_bar_navi_text_style" />
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/Point" android:background="@drawable/phone_common_reddot_ball" android:visibility="invisible" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="16.0dip" android:layout_alignTop="@id/naviFind" android:layout_alignRight="@id/naviFind" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/message_count_hint" android:background="@drawable/phone_common_reddot_ball" android:visibility="gone" android:layout_width="17.0dip" android:layout_height="16.0dip" android:layout_marginRight="9.0dip" android:text="80" android:layout_alignTop="@id/naviFind" android:layout_alignRight="@id/naviFind" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/message_count_more" android:background="@drawable/main_discovery_message_more" android:paddingLeft="1.0dip" android:paddingTop="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" android:text="99" android:layout_alignTop="@id/naviFind" android:layout_alignRight="@id/naviFind" />
+</RelativeLayout>

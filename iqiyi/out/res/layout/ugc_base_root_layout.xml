@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffe7e7e7" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/phoneTitleLayout" style="@style/top_base_item">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/title_back" android:background="@drawable/phone_account_back_bg" style="@style/top_title_item" />
+        <TextView android:id="@id/phoneUgcTitle" android:text="@string/ugc_feed_my_feed_title" style="@style/top_title" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/my_subscription_tab" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/phoneTitleLayout">
+        <RelativeLayout android:id="@id/my_subscription_update_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="15.0dip" android:textColor="@color/default_grean" android:gravity="center" android:id="@id/my_subscription_update" android:paddingTop="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ugc_my_subscription_update" />
+            <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/my_subscription_update_line" android:background="@color/default_grean" android:layout_width="fill_parent" android:layout_height="1.5dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_below="@id/my_subscription_update" />
+            <org.qiyi.basecore.widget.QiyiDraweeView android:background="#66949494" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/my_subscription_update_line" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/my_subscription_user_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="15.0dip" android:textColor="@color/default_black" android:gravity="center" android:id="@id/my_subscription_user" android:paddingTop="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ugc_my_subscription_user" />
+            <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/my_subscription_user_line" android:background="@color/default_grean" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="1.5dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_below="@id/my_subscription_user" />
+            <org.qiyi.basecore.widget.QiyiDraweeView android:background="#66949494" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/my_subscription_user_line" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/extend_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/my_subscription_tab" />
+    <RelativeLayout android:id="@id/emptyLaout" android:background="#ffe7e7e7" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/extend_layout">
+        <org.qiyi.basecore.widget.ptr.widget.PtrSimpleListView android:id="@id/ptr_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff000000" android:gravity="center" android:id="@id/empty_textView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        <RelativeLayout android:id="@id/empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/networkErrorView" layout="@layout/phone_load_data_exception" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <include android:id="@id/phone_category_loading_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phoneTitleLayout" layout="@layout/lab_footer" />
+</RelativeLayout>

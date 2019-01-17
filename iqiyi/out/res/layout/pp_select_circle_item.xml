@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="13.0dip" android:textColor="@drawable/pp_selector_text_item_color" android:gravity="center" android:id="@id/content_of_topic_circle_textView" android:background="@drawable/pp_selector_item_bg_normal" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="11.0dip" android:text="@string/default_publish_circle_name" android:maxLength="10"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

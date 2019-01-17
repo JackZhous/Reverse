@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/product_title" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="12.0dip">
+        <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/p_color_333333" android:gravity="center_vertical" android:id="@id/vipTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p_vip_g_info_2" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/p_dimen_11" android:textColor="@color/p_color_999999" android:id="@id/tip_all" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/p_dimen_4" android:text="@string/p_vip_for_tv" android:layout_toRightOf="@id/vipTitle" android:layout_centerVertical="true" />
+        <TextView android:textSize="13.0dip" android:textColor="@color/p_color_999999" android:gravity="center" android:layout_gravity="center" android:id="@id/expcode_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:drawableRight="@drawable/p_arrow_style1" android:drawablePadding="1.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/product_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-8.0dip" android:layout_below="@id/product_title">
+        <RelativeLayout android:id="@id/product1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip">
+            <include layout="@layout/p_vip_product_unit" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/product2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip">
+            <include layout="@layout/p_vip_product_unit" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/product3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginRight="10.0dip">
+            <include layout="@layout/p_vip_product_unit" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/auto_renew_line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_below="@id/product_line">
+        <LinearLayout android:id="@id/auto_renew_textline" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:id="@id/ar_check_img" android:background="@drawable/p_checked_2" android:layout_width="19.0dip" android:layout_height="19.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="9.0dip" />
+            <TextView android:textSize="13.0dip" android:textColor="@color/p_color_666666" android:id="@id/ar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="@string/p_auto_renew_title" />
+        </LinearLayout>
+        <ImageView android:id="@id/ar_info_img" android:background="@drawable/info_icon1" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="6.0dip" android:layout_marginTop="12.0dip" />
+    </LinearLayout>
+</RelativeLayout>

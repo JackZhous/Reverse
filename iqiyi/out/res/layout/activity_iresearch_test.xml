@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="22.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/title" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="艾瑞统计测试" />
+    <Button android:id="@id/interface_call_test_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="艾瑞接口调用测试" android:layout_alignParentBottom="true" />
+    <Button android:id="@id/data_upload_test_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="艾瑞数据上传测试" android:layout_above="@id/interface_call_test_btn" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/list_btn_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/data_upload_test_btn">
+        <Button android:id="@id/ignore_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="忽略页面" android:layout_weight="1.0" android:layout_alignParentBottom="true" />
+        <Button android:id="@id/check_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="验证页面" android:layout_weight="1.0" android:layout_alignParentBottom="true" />
+    </LinearLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/list_btn_container" android:layout_below="@id/title">
+        <TextView android:textSize="15.0dip" android:textColor="@color/black" android:id="@id/test_result" android:background="@color/white" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+</RelativeLayout>

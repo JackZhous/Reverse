@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="70.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <ImageView android:id="@id/common_ques_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:src="@drawable/question" android:layout_centerVertical="true" />
+        <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/p_color_333333" android:id="@id/common_ques_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/p_common_questions" android:layout_toRightOf="@id/common_ques_icon" android:layout_centerVertical="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/p_arrow_style1" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/p_color_f7f7f7" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

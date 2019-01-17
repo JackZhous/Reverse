@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/gc_feed_title_and_description" android:paddingLeft="@dimen/pp_feed_header_title_left_gap" android:paddingRight="@dimen/pp_feed_header_title_left_gap" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/color_333333" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/paopao_feed_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/pp_feed_title_description_gap" android:maxLines="2" android:lineSpacingExtra="1.0dip" />
+        <TextView android:textSize="18.0dip" android:gravity="center_vertical" android:id="@id/photo_vote_title" android:visibility="gone" android:layout_width="70.0dip" android:layout_height="60.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="@dimen/pp_feed_title_description_gap" android:text="" android:layout_below="@id/paopao_feed_title" />
+        <TextView android:textSize="@dimen/pp_feed_description_text_size" android:textColor="#ff333333" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/paopao_feed_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/pp_feed_description_content_gap" android:maxLines="3" android:layout_toRightOf="@id/photo_vote_title" android:layout_below="@id/paopao_feed_title" android:lineSpacingExtra="3.0dip" />
+    </RelativeLayout>
+</merge>

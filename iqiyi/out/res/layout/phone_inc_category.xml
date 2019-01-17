@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/top_bar_bg_transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/phoneTitleLayout" style="@style/top_base_item_new">
+        <TextView android:id="@id/phoneTitle" android:text="@string/title_cate_new" style="@style/top_title_new" />
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/phone_my_main_title_plus" android:background="@drawable/title_plus" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/top_filter_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/phoneTitleLayout">
+        <org.qiyi.android.video.skin.view.SkinSearchBar android:id="@id/ll_head" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <include android:id="@id/phone_category_empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/top_filter_layout" layout="@layout/phone_load_data_exception" />
+</RelativeLayout>

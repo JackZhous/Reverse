@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" style="@style/CardModelBase"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/layout" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/unit_game_hori_layout" />
+</LinearLayout>

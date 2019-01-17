@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@id/phoneTitleLayout_skin" style="@style/top_base_item"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/vip_title_layout_right" />
+    <org.qiyi.android.video.vip.view.VipPagerSlidingTabStrip android:id="@id/vip_tab_strip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginBottom="3.0dip" android:layout_centerHorizontal="true" app:pstsIndicatorColor="@color/vip_tennis_tab_selected" app:pstsDividerColor="#00000000" app:pstsIndicatorHeight="3.0dip" app:pstsUnderlineHeight="0.0dip" app:pstsTabPaddingLeftRight="12.5dip" app:pstsShouldExpand="false" />
+</RelativeLayout>

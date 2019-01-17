@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/gift_flow_num_pic_landscap" />
+    <TextView android:gravity="center" android:layout_gravity="right" android:id="@id/gift_flow_keyboard_tost" android:background="@drawable/dr_toast_bg_top" android:paddingTop="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="66.0dip" android:text="@string/gift_flow_money_insufficient" />
+</FrameLayout>

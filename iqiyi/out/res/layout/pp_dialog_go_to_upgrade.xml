@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#99000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/title_image" android:layout_width="270.0dip" android:layout_height="68.0dip" android:src="@drawable/pp_confirm_dialog_negative_image" android:scaleType="fitEnd" android:layout_above="@id/ll_dialog_bg" android:layout_centerInParent="true" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_dialog_bg" android:background="@drawable/pp_shade_dialog_bottom_bg" android:layout_width="270.0dip" android:layout_height="wrap_content" android:layout_alignLeft="@id/title_image" android:layout_centerVertical="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:layout_marginTop="17.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="20.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="18.0dip" android:textColor="@color/pp_color_333333" android:layout_gravity="center|left" android:id="@id/tv_remain_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="剩余加油棒 : 0" />
+            <LinearLayout android:layout_gravity="center|left" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <TextView android:textSize="15.0dip" android:textColor="@color/pp_color_666666" android:layout_gravity="center" android:id="@id/tv_send_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="今日已送:2" />
+                <TextView android:textSize="15.0dip" android:textColor="@color/go_to_upgrade_dialog_orange" android:layout_gravity="center" android:id="@id/tv_go_to_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="明细>" />
+            </LinearLayout>
+            <TextView android:textSize="15.0sp" android:textColor="@color/pp_color_333333" android:gravity="center|left" android:layout_gravity="left" android:id="@id/tv_get_rule_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/how_get_more_prop" android:drawableRight="@drawable/pp_circle_task_bar_right_arrow" android:drawablePadding="2.0dip" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/pp_color_666666" android:gravity="left" android:layout_gravity="left" android:id="@id/tv_get_rule" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="1.根据等级每日自动赠送                                 2.做任务升级奖励                                 3.做任务上榜最佳粉丝日榜奖励" android:lineSpacingExtra="5.0dip" />
+        </LinearLayout>
+        <View android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/go_to_upgrade_dialog_orange" android:gravity="center" android:id="@id/tv_go_to_upgrade" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.5dip" android:text="做任务升等级" />
+    </LinearLayout>
+    <ImageView android:id="@id/iv_dialog_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="26.0dip" android:src="@drawable/pp_added_to_circle_dialog_close" android:layout_alignBottom="@id/title_image" android:layout_alignParentRight="true" />
+</RelativeLayout>

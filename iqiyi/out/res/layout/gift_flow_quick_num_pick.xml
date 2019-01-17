@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/gift_flow_quick_num_pic_container" android:layout_width="fill_parent" android:layout_height="44.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#ffe7e7e7" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/gitf_flow_quick_pick_1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="16.0dip" android:textColor="@color/gift_amount_text_grey" android:gravity="center" android:id="@id/gitf_flow_quick_pick_1a" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" android:text="188" />
+        <TextView android:textSize="12.0dip" android:textColor="#ff999999" android:gravity="center" android:id="@id/gitf_flow_quick_pick_1b" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/gift_flow_quick_num_0" />
+    </LinearLayout>
+    <View android:background="#ffe7e7e7" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/gitf_flow_quick_pick_2" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="16.0dip" android:textColor="@color/gift_amount_text_grey" android:gravity="center" android:id="@id/gitf_flow_quick_pick_2a" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" android:text="520" />
+        <TextView android:textSize="12.0dip" android:textColor="#ff999999" android:gravity="center" android:id="@id/gitf_flow_quick_pick_2b" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/gift_flow_quick_num_1" />
+    </LinearLayout>
+    <View android:background="#ffe7e7e7" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/gitf_flow_quick_pick_3" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="16.0dip" android:textColor="@color/gift_amount_text_grey" android:gravity="center" android:id="@id/gitf_flow_quick_pick_3a" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" android:text="918" />
+        <TextView android:textSize="12.0dip" android:textColor="#ff999999" android:gravity="center" android:id="@id/gitf_flow_quick_pick_3b" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/gift_flow_quick_num_2" />
+    </LinearLayout>
+    <View android:background="#ffe7e7e7" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/gitf_flow_quick_pick_4" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="16.0dip" android:textColor="@color/gift_amount_text_grey" android:gravity="center" android:id="@id/gitf_flow_quick_pick_4a" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" android:text="1314" />
+        <TextView android:textSize="12.0dip" android:textColor="#ff999999" android:gravity="center" android:id="@id/gitf_flow_quick_pick_4b" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/gift_flow_quick_num_3" />
+    </LinearLayout>
+    <View android:background="#ffe7e7e7" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/gitf_flow_quick_pick_5" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="16.0dip" android:textColor="@color/gift_amount_text_grey" android:gravity="center" android:id="@id/gitf_flow_quick_pick_5a" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" android:text="3399" />
+        <TextView android:textSize="12.0dip" android:textColor="#ff999999" android:gravity="center" android:id="@id/gitf_flow_quick_pick_5b" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/gift_flow_quick_num_4" />
+    </LinearLayout>
+    <View android:background="#ffe7e7e7" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/gitf_flow_quick_pick_6" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="16.0dip" android:textColor="@color/gift_amount_text_grey" android:gravity="center" android:id="@id/gitf_flow_quick_pick_6a" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" android:text="9213" />
+        <TextView android:textSize="12.0dip" android:textColor="#ff999999" android:gravity="center" android:id="@id/gitf_flow_quick_pick_6b" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/gift_flow_quick_num_5" />
+    </LinearLayout>
+</LinearLayout>

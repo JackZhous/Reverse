@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/qiyi_sdk_player_black_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/player_msg_layer_concurrent_info_back" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:src="@drawable/qiyi_sdk_player_portrait_btn_back" android:layout_alignParentTop="true" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="16.0sp" android:textColor="@color/color_white" android:textColorLink="@color/color_green" android:gravity="center" android:autoLink="email|phone" android:id="@id/player_msg_layer_concurrent_info_tip" android:padding="@dimen/player_04" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/player_msg_layer_concurrent_info_tip">
+            <org.qiyi.basecore.widget.OuterFrameTextView android:textSize="15.0dip" android:textColor="@color/color_white" android:gravity="center" android:id="@id/player_msg_layer_aciton" android:padding="@dimen/player_04" android:paddingLeft="@dimen/player_04" android:paddingRight="@dimen/player_04" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="30.0dip" android:layout_margin="10.0dip" android:text="@string/concurrent_tip_btn_text" android:layout_centerHorizontal="true" app:outer_frame="round_padding" app:out_frame_bg="#ff0bbe06" />
+            <org.qiyi.basecore.widget.OuterFrameTextView android:textSize="15.0dip" android:textColor="#ff0bbe06" android:gravity="center" android:id="@id/player_msg_layer_action1" android:padding="@dimen/player_04" android:paddingLeft="@dimen/player_04" android:paddingRight="@dimen/player_04" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="30.0dip" android:layout_margin="10.0dip" android:layout_centerHorizontal="true" app:outer_frame="round_padding" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

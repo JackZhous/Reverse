@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/message_tips_root" android:background="@color/main_bottom_tips_bg_color" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.IconViewClose android:id="@id/message_tips_close" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:iconStrokeWidth="1.1999817dip" app:iconPadding="10.0dip" app:lineColor="#ffffffff" />
+    <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/message_tips_content" android:layout_width="210.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/message_tips_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25.0dip" android:text="" android:singleLine="true" android:layout_toLeftOf="@id/message_tips_close" android:layout_centerVertical="true" />
+</RelativeLayout>

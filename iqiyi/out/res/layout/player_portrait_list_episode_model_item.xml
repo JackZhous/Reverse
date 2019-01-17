@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingRight="10.0dip" android:layout_width="120.0dip" android:layout_height="103.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.iqiyi.video.image.PlayerDraweView android:id="@id/episode_img" android:layout_width="110.0dip" android:layout_height="62.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <org.iqiyi.video.image.PlayerDraweView android:id="@id/focus_RB_flag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/player_not_number_episode_playing" android:scaleType="center" android:layout_alignLeft="@id/episode_img" android:layout_alignTop="@id/episode_img" android:layout_alignRight="@id/episode_img" android:layout_alignBottom="@id/episode_img" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="13.0dip" android:textColor="@color/player_focus_title_color" android:ellipsize="end" android:gravity="left" android:id="@id/episode_item" android:layout_width="110.0dip" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:lines="2" android:layout_below="@id/episode_img" />
+</RelativeLayout>

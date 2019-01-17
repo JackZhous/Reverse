@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="83.0dip" android:layout_centerHorizontal="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout1" android:layout_width="fill_parent" android:layout_height="46.0dip">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/img1" android:layout_width="32.0dip" android:layout_height="18.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="2.0dip" android:layout_alignParentRight="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_centerHorizontal="true">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/img2" android:layout_width="24.0dip" android:layout_height="24.0dip" android:scaleType="fitCenter" />
+                <TextView android:id="@id/meta1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" style="@style/WalletMeta2" />
+            </LinearLayout>
+            <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/img3" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/wallet_coupon_redpoint" android:scaleType="fitCenter" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:id="@id/meta2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/layout1" android:layout_centerHorizontal="true" style="@style/WalletMeta3" />
+</RelativeLayout>

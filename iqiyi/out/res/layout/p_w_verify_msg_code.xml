@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/p_w_title_layout" layout="@layout/pay_phone_title" />
+    <TextView android:textSize="@dimen/p_dimen_15" android:textColor="@color/p_color_333333" android:layout_gravity="center_vertical" android:id="@id/p_w_verify_msg_code_tel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/p_dimen_35" android:layout_marginTop="@dimen/p_dimen_50" android:layout_marginRight="@dimen/p_dimen_35" android:lineSpacingExtra="@dimen/p_dimen_8" />
+    <include android:id="@id/p_w_verify_msg_code" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_45" android:layout_marginLeft="@dimen/p_dimen_35" android:layout_marginTop="@dimen/p_dimen_27" android:layout_marginRight="@dimen/p_dimen_35" layout="@layout/p_w_keyboard_pwd_layout" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/p_dimen_35" android:layout_marginTop="@dimen/p_dimen_15" android:layout_marginRight="@dimen/p_dimen_35">
+        <TextView android:textSize="@dimen/p_dimen_14" android:textColor="@drawable/p_w_text_ff7e00_999999_selector" android:id="@id/p_w_verify_msg_timer_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

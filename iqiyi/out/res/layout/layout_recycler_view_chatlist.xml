@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/relativeLayout_chat_room" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/live_room_limit_free" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_alignParentTop="true" layout="@layout/player_portrait_limit_free_model" />
+    <RelativeLayout android:id="@id/mainArea" android:background="#fff8f8f8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="48.0dip" android:layout_below="@id/live_room_limit_free">
+        <android.support.v7.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:transcriptMode="normal" />
+        <RelativeLayout android:id="@id/layout_circle_entrance" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="70.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/circle_entrance" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chat_circle_entrance" />
+            <TextView android:textSize="10.0dip" android:textColor="@color/white" android:ellipsize="middle" android:gravity="center" android:id="@id/circle_text" android:clickable="false" android:layout_width="70.0dip" android:layout_height="wrap_content" android:layout_marginBottom="7.0dip" android:maxLines="1" android:maxEms="7" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <TextView android:textColor="@color/green_mormal" android:gravity="center_vertical" android:id="@id/chat_go_to_bottom" android:background="@drawable/chat_go_to_bottom" android:paddingLeft="10.0dip" android:paddingRight="11.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="15.0dip" android:text="回到底部" android:drawableLeft="@drawable/chat_go_to_bottom_arrow" android:drawablePadding="5.0dip" android:layout_alignBottom="@id/recyclerView" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rank_container" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_below="@id/live_room_limit_free" android:layout_alignWithParentIfMissing="true" />
+    <include android:id="@id/bulletin_layer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_below="@id/rank_container" layout="@layout/marqueen_bulletion" />
+    <org.iqiyi.video.livechat.widget.ConnectTipView android:id="@id/connect_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</RelativeLayout>

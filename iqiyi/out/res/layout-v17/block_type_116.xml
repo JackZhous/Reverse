@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" fresco:pressedStateOverlayImage="@color/card_poster_mask_black_alpha_40" />
+    <org.qiyi.basecard.common.widget.ButtonView android:id="@id/btn1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/btn2" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" />
+    <org.qiyi.basecard.common.widget.ButtonView android:id="@id/btn2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/btn3" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" />
+    <org.qiyi.basecard.common.widget.ButtonView android:id="@id/btn3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/meta1" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" fresco:text_maxEms="6" fresco:text_ellipsize="end" />
+</RelativeLayout>

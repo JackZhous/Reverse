@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/entrance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/local_site_icon" android:layout_width="36.0dip" android:layout_height="34.0dip" android:layout_toLeftOf="@id/entrance" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" />
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/local_site_icon_small" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="24.0dip" android:layout_toLeftOf="@id/entrance" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" />
+    <View android:id="@id/line_view" android:background="@color/divide_line_color" android:layout_width="0.5dip" android:layout_height="32.0dip" android:layout_marginRight="15.0dip" android:layout_toLeftOf="@id/local_site_icon" android:layout_centerVertical="true" />
+    <View android:id="@id/line_view_small" android:background="@color/divide_line_color" android:visibility="gone" android:layout_width="0.5dip" android:layout_height="24.0dip" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/local_site_icon_small" android:layout_centerVertical="true" />
+    <include android:id="@id/text_layout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/line_view" android:layout_alignWithParentIfMissing="true" layout="@layout/card_text_link" />
+    <include android:id="@id/text_layout2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/line_view" android:layout_below="@id/text_layout1" android:layout_alignWithParentIfMissing="true" layout="@layout/card_text_link" />
+</RelativeLayout>

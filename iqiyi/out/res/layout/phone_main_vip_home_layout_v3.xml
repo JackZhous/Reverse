@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/phoneTitleLayout" android:background="@color/title_bar_bg" android:layout_width="fill_parent" android:layout_height="@dimen/title_bar_hight">
+        <TextView android:id="@id/top_bar_title_default" android:visibility="visible" android:text="@string/main_vip_tab_title" style="@style/top_title_new" />
+        <include layout="@layout/vip_title_layout_right" />
+        <View android:id="@id/v_divide_line" android:background="#26ffffff" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/top_filter_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/phoneTitleLayout">
+        <org.qiyi.android.video.skin.view.SkinSearchBarVip android:id="@id/ll_head_vip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

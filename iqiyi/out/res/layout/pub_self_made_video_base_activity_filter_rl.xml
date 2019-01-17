@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_current_filter" android:background="@drawable/pub_video_call_with_star_current_filter_corner_shape" android:layout_width="77.0dip" android:layout_height="35.0dip" android:layout_marginBottom="18.0dip" android:layout_above="@id/common_filter_scroll_view" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/iv_filter_finish" android:background="@drawable/pub_self_made_video_base_activity_finish_pressed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_marginBottom="20.0dip" android:layout_above="@id/common_filter_scroll_view" android:layout_alignParentRight="true" />
+    <com.android.share.camera.view.CommonFilterScrollView android:id="@id/common_filter_scroll_view" android:background="#ff222222" android:paddingLeft="6.0dip" android:layout_width="wrap_content" android:layout_height="126.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

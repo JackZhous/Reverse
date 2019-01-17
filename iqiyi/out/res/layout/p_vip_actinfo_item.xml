@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/p_color_ff9000_trans_10" android:layout_width="fill_parent" android:layout_height="27.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/my_main_user_status_icon" android:visibility="visible" android:layout_width="17.0dip" android:layout_height="13.0dip" android:layout_marginLeft="13.0dip" android:src="@drawable/loud_speaker_2" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+    <TextView android:textSize="13.0dip" android:textColor="@color/p_color_FF7E00" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/title_data1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="15.0dip" android:maxLines="1" android:layout_toRightOf="@id/my_main_user_status_icon" />
+    <TextView android:textSize="13.0dip" android:textColor="@color/p_color_666666" android:gravity="center" android:layout_gravity="center" android:id="@id/title_data2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:drawableRight="@drawable/p_arrow_style2" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

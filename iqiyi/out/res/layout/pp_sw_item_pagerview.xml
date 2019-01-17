@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:Fresco="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/sw_feed_full_image_thumb" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" android:layout_centerInParent="true" android:contentDescription="@null" />
+    <ProgressBar android:id="@id/sw_feed_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <com.iqiyi.paopao.middlecommon.ui.view.tileimageview.ClipTileImageView android:id="@id/sw_feed_full_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/pp_app_name" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/photo_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" Fresco:failureImage="@drawable/pp_general_default_bg" Fresco:failureImageScaleType="centerCrop" Fresco:actualImageScaleType="fitCenter" />
+</RelativeLayout>

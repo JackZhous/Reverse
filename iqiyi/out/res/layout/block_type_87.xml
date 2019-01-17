@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clickable="true" android:longClickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/replay_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignTop="@id/ugc_use_name" android:layout_alignBottom="@id/comment_date" />
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/deliver_line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <org.qiyi.basecard.common.widget.MetaView android:id="@id/ugc_use_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignLeft="@id/replay_background" android:layout_alignRight="@id/replay_background" />
+    <org.qiyi.basecard.common.widget.MetaView android:id="@id/comment_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/ugc_use_name" android:layout_alignLeft="@id/replay_background" android:layout_alignRight="@id/replay_background" />
+    <org.qiyi.basecard.common.widget.MetaView android:id="@id/comment_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/comment_content" android:layout_alignLeft="@id/replay_background" />
+    <org.qiyi.basecard.common.widget.ButtonView android:id="@id/comment_reply_button" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/comment_content" android:layout_alignRight="@id/replay_background" />
+</RelativeLayout>

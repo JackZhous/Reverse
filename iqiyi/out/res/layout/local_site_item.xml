@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:textColor="#ff666666" android:gravity="start|center" android:id="@id/localSiteItemTitle" android:background="@color/local_site_background_gray" android:paddingLeft="19.0dip" android:paddingRight="19.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_centerVertical="true" />
+    <View android:id="@id/localSiteItemDivider" android:background="@color/local_site_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="19.0dip" android:textColor="#ff333333" android:gravity="start|center" android:id="@id/localSiteItemText" android:background="@color/white" android:paddingLeft="19.0dip" android:paddingRight="19.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_centerVertical="true" />
+</LinearLayout>

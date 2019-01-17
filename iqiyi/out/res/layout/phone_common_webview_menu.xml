@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/qiyi_sdk_phone_common_webview_more_operation_menu" android:background="#00000000" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/common_webview_menu_parent" android:background="@drawable/tips_dialog_bg" android:layout_width="140.0dip" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="7.0dip" />
+</LinearLayout>

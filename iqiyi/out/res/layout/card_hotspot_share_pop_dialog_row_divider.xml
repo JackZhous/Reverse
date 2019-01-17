@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.qiyi.basecard.v3.widget.DividerTextView android:textSize="13.0dip" android:textColor="#ff999999" android:gravity="left" android:id="@id/separator_text_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="22.0dip" android:text="Text" app:dividerColor="#ffe6e6e6" app:dividerHeight="1.0px" app:dividerTextPadding="11.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/image1" android:background="@drawable/card_poster_weather_default" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_alignTop="@id/ll_content" android:layout_alignBottom="@id/ll_content" fresco:placeholderImageScaleType="centerCrop" />
+    <RelativeLayout android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/rl_change_city_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="10.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_switch" android:background="@drawable/ic_btn_weather_change" android:layout_width="60.0dip" android:layout_height="wrap_content">
+                <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/image2" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="3.0dip" android:src="@drawable/star_default_image" android:scaleType="fitEnd" android:adjustViewBounds="true" android:maxWidth="61.0dip" />
+                <TextView android:textSize="10.0dip" android:textColor="@color/color_white" android:id="@id/weather_textview0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" />
+            </LinearLayout>
+            <TextView android:textSize="10.0dip" android:textColor="@color/color_white" android:layout_gravity="center" android:id="@id/weather_textview1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+        </LinearLayout>
+        <RelativeLayout android:gravity="center_horizontal" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/divide_line" android:layout_below="@id/rl_change_city_name">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/rl_weather_today" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@id/rl_temperature_today">
+                <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/image3" android:layout_width="33.0dip" android:layout_height="33.0dip" android:scaleType="centerCrop" />
+                <TextView android:textSize="11.0dip" android:textColor="@color/color_white" android:id="@id/weather_textview3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/rl_temperature_today" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_toRightOf="@id/rl_weather_today">
+                <TextView android:textSize="42.0dip" android:textColor="@color/color_white" android:id="@id/weather_textview2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_temperature_range" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="11.0dip" android:textColor="@color/color_white" android:id="@id/weather_textview4" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="11.0dip" android:textColor="@color/color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/" />
+                    <TextView android:textSize="11.0dip" android:textColor="@color/color_white" android:id="@id/weather_textview5" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/rl_temperature_today" android:layout_alignTop="@id/rl_temperature_today" android:layout_alignBottom="@id/rl_temperature_today">
+                <org.qiyi.basecore.widget.OuterFrameTextView android:textSize="10.0dip" android:textColor="@color/color_white" android:id="@id/weather_textview11" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" fresco:outer_frame="round_padding" fresco:out_frame_bg="@color/a3_text" />
+                <org.qiyi.basecore.widget.OuterFrameTextView android:textSize="10.0dip" android:textColor="@color/color_white" android:id="@id/weather_textview12" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:singleLine="true" fresco:outer_frame="round_padding" fresco:out_frame_bg="@color/a3_text" />
+                <TextView android:textSize="11.0dip" android:textColor="@color/color_white" android:id="@id/weather_textview6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:lines="1" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/layout3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="11.0dip" android:layout_marginRight="7.0dip" android:layout_alignParentRight="true">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="15.0dip">
+                <TextView android:textSize="10.0dip" android:textColor="@color/color_white" android:id="@id/weather_textview7" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="10.0dip" android:textColor="@color/color_white" android:id="@id/weather_textview8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" />
+                <org.qiyi.basecore.widget.QiyiDraweeView android:layout_width="6.0dip" android:layout_height="10.0dip" android:layout_marginLeft="3.0dip" android:src="@drawable/ic_btn_weather_deail" android:scaleType="fitEnd" android:adjustViewBounds="true" android:maxWidth="61.0dip" />
+            </LinearLayout>
+            <org.qiyi.basecore.widget.QiyiDraweeView android:layout_gravity="center" android:id="@id/image4" android:layout_width="33.0dip" android:layout_height="33.0dip" android:layout_marginTop="13.0dip" android:scaleType="centerCrop" fresco:viewAspectRatio="1.0" />
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="11.0dip" android:textColor="@color/color_white" android:id="@id/weather_textview9" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="11.0dip" android:textColor="@color/color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/" />
+                <TextView android:textSize="11.0dip" android:textColor="@color/color_white" android:id="@id/weather_textview10" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:id="@id/divide_line" android:background="#99ffffff" android:layout_width="1.0dip" android:layout_height="wrap_content" android:layout_toLeftOf="@id/layout3" android:layout_alignTop="@id/layout3" android:layout_alignBottom="@id/layout3" />
+    </RelativeLayout>
+</RelativeLayout>

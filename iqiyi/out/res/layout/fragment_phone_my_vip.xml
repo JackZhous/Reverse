@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/phoneTitleLayout" style="@style/top_base_item">
+        <TextView android:id="@id/title_back_layout" android:background="@drawable/phone_account_back_bg" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:id="@id/phoneTitle" android:text="@string/phone_my_vip_title" style="@style/top_title" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phoneTitleLayout">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/my_vip_virtual_card_layout" android:background="#ffffffff" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                <RelativeLayout android:id="@id/my_vip_virtual_card_bg" android:layout_width="fill_parent" android:layout_height="180.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/my_vip_virtual_card" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/vip_card_default_bg" android:scaleType="fitXY" />
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip">
+                        <ImageView android:id="@id/my_vip_icon" android:layout_width="32.0dip" android:layout_height="32.0dip" />
+                        <TextView android:textSize="16.0sp" android:id="@id/my_vip_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/my_vip_icon" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <ImageView android:id="@id/my_vip_qr_code" android:layout_width="66.0dip" android:layout_height="66.0dip" android:layout_marginLeft="16.0dip" android:layout_marginBottom="45.0dip" android:layout_alignParentBottom="true" />
+                    <TextView android:textSize="10.0sp" android:textColor="#ff666666" android:id="@id/my_vip_expiry_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_toRightOf="@id/my_vip_qr_code" android:layout_alignBottom="@id/my_vip_qr_code" />
+                    <TextView android:textSize="10.0sp" android:textColor="#ff666666" android:id="@id/my_vip_create_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginBottom="2.0dip" android:layout_toRightOf="@id/my_vip_qr_code" android:layout_above="@id/my_vip_expiry_date" />
+                    <TextView android:textSize="10.0sp" android:textColor="#ff666666" android:id="@id/my_vip_grow_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginBottom="2.0dip" android:layout_toRightOf="@id/my_vip_qr_code" android:layout_above="@id/my_vip_create_date" />
+                    <TextView android:textSize="13.0sp" android:id="@id/my_vip_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_toRightOf="@id/my_vip_qr_code" android:layout_alignTop="@id/my_vip_qr_code" />
+                    <ImageView android:id="@id/my_vip_level_icon" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="4.0dip" android:layout_toRightOf="@id/my_vip_username" android:layout_alignBottom="@id/my_vip_username" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/my_vip_sign_layout" android:background="#ffffffff" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/my_vip_virtual_card_layout">
+                <TextView android:textSize="14.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/bt_sign" android:background="@drawable/share_vip_hierarchy_selector" android:visibility="gone" android:layout_width="70.0dip" android:layout_height="32.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_sign" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_toLeftOf="@id/bt_sign">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="15.0dip" android:textColor="@color/color_meta_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已连续签到" />
+                        <TextView android:textSize="15.0dip" android:textColor="@color/vip_gold_color" android:id="@id/tv_myvip_sign_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="-" />
+                        <TextView android:textSize="15.0dip" android:textColor="@color/color_meta_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="天" />
+                    </LinearLayout>
+                    <TextView android:textSize="14.0dip" android:textColor="@color/color_meta_sub_title" android:id="@id/tv_myvip_sign_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" />
+                </LinearLayout>
+                <com.qiyi.card.common.view.DottedLineView android:textColor="@color/top_tab_devide_line_color" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/ll_sign" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/my_vip_button_layout" android:background="#ffffffff" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/my_vip_sign_layout">
+                <FrameLayout android:id="@id/my_vip_button" android:background="#ffd4b27e" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_centerHorizontal="true">
+                    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/phone_my_vip_do_renew" />
+                </FrameLayout>
+                <TextView android:textSize="13.0sp" android:textColor="#ff666666" android:gravity="center_vertical" android:id="@id/my_vip_marketing_content" android:background="#ffffffff" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="32.0dip" android:layout_below="@id/my_vip_button" android:layout_alignLeft="@id/my_vip_button" />
+                <View android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_below="@id/my_vip_button" />
+            </RelativeLayout>
+            <TextView android:textSize="15.0dip" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/my_vip_marketing_text" android:background="@drawable/phone_download_grey_click_bg" android:paddingLeft="14.0dip" android:paddingRight="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="7.0dip" android:text="@string/phone_my_vip_renew_title" android:drawableRight="@drawable/phone_my_inc_arrow" android:layout_below="@id/my_vip_button_layout" />
+            <View android:id="@id/padding_below_marketing_text" android:layout_width="fill_parent" android:layout_height="7.0dip" android:layout_below="@id/my_vip_marketing_text" />
+            <TextView android:textSize="15.0dip" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/my_vip_member_club_text" android:background="@drawable/phone_download_grey_click_bg" android:paddingLeft="14.0dip" android:paddingRight="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/phone_my_vip_member_club" android:drawableRight="@drawable/phone_my_inc_arrow" android:layout_below="@id/padding_below_marketing_text" />
+            <View android:id="@id/divider_line_below_member_club" android:layout_below="@id/my_vip_member_club_text" style="@style/divideLine" />
+            <TextView android:textSize="15.0dip" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/my_vip_growth_text" android:background="@drawable/phone_download_grey_click_bg" android:paddingLeft="14.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/phone_my_vip_growth" android:drawableRight="@drawable/phone_my_inc_arrow" android:layout_below="@id/divider_line_below_member_club" />
+            <View android:id="@id/divider_line_below_growth_text" android:layout_below="@id/my_vip_growth_text" style="@style/divideLine" />
+            <TextView android:textSize="15.0dip" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/my_vip_other_welfare_text" android:background="@drawable/phone_download_grey_click_bg" android:paddingLeft="14.0dip" android:paddingRight="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/phone_my_vip_other_welfare" android:drawableRight="@drawable/phone_my_inc_arrow" android:layout_below="@id/divider_line_below_growth_text" />
+            <View android:layout_width="fill_parent" android:layout_height="7.0dip" android:layout_below="@id/my_vip_other_welfare_text" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.iqiyi.paopao.middlecommon.views.PtrSimpleDrawerView android:id="@id/pp_video_album_ptr" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.iqiyi.paopao.middlecommon.ui.view.pullrefresh.QZDrawerView android:orientation="vertical" android:id="@id/pp_ptr_drawerView_id" android:layout_width="fill_parent" android:layout_height="fill_parent" app:headMax="@dimen/pp_action_title_height">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.iqiyi.paopao.middlecommon.ui.view.recyclerview.PPFamiliarRecyclerView android:id="@id/pp_video_album_recycler_view" android:scrollbars="vertical" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <include android:id="@id/pp_layout_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/pp_circle_loading_layout" />
+                <include android:id="@id/pp_loading_error_page" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/pp_no_network_nocashe_warning_ll" />
+                <include android:id="@id/pp_layout_expired" android:visibility="gone" layout="@layout/pp_layout_page_expired" />
+                <include android:id="@id/pp_no_data_layout" android:visibility="gone" layout="@layout/pp_layout_no_data" />
+            </RelativeLayout>
+            <include layout="@layout/pp_video_album_activity_header" />
+        </com.iqiyi.paopao.middlecommon.ui.view.pullrefresh.QZDrawerView>
+    </com.iqiyi.paopao.middlecommon.views.PtrSimpleDrawerView>
+    <com.iqiyi.paopao.middlecommon.ui.view.titlebar.SuperTitleBar android:id="@id/super_title_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:titleBarStyle="custom" />
+</FrameLayout>

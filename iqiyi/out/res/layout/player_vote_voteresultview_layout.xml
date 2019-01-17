@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom|center" android:id="@id/player_vote_result_framelayout" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip">
+        <ImageView android:background="@drawable/player_vote_left_side_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+            <TextView android:ellipsize="marquee" android:gravity="center" android:id="@id/player_vote_result_question_tv" android:background="#ffe7b70e" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="37.0dip" android:text="阿根廷是否为冠军球队？" android:singleLine="true" android:maxLength="20" android:layout_alignParentTop="true" style="@style/PlayerVotingTextStyle" />
+            <LinearLayout android:gravity="center_vertical" android:background="@drawable/player_vote_question_right_side_bg" android:layout_width="310.0dip" android:layout_height="wrap_content" android:layout_marginTop="-11.0dip" android:layout_below="@id/player_vote_result_question_tv">
+                <TextView android:textColor="#ffe4272c" android:gravity="center_vertical" android:id="@id/player_vote_result_yes_option_tv" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="19.0dip" android:layout_marginRight="9.0dip" android:text="拼事业" android:singleLine="true" android:maxLength="3" style="@style/PlayerVotingTextStyle" />
+                <TextView android:gravity="center|right" android:id="@id/player_vote_result_yes_tv" android:background="#ffe4272c" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="19.0dip" android:minWidth="42.0dip" android:text="50%" android:singleLine="true" android:maxLength="10" android:layout_weight="50.0" style="@style/PlayerVotingTextStyle" />
+                <View android:background="#00000000" android:layout_width="5.0dip" android:layout_height="fill_parent" />
+                <TextView android:gravity="center|left" android:id="@id/player_vote_result_no_tv" android:background="#ff48b6d3" android:paddingLeft="3.0dip" android:layout_width="wrap_content" android:layout_height="19.0dip" android:minWidth="42.0dip" android:text="50%" android:singleLine="true" android:maxLength="10" android:layout_weight="50.0" style="@style/PlayerVotingTextStyle" />
+                <TextView android:textColor="#ff48b6d3" android:gravity="center_vertical" android:id="@id/player_vote_result_no_option_tv" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="19.0dip" android:layout_marginLeft="9.0dip" android:text="拼男人" android:singleLine="true" android:maxLength="3" style="@style/PlayerVotingTextStyle" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center|right|top" android:id="@id/player_vote_result_close_btn" android:background="@drawable/player_vote_close_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

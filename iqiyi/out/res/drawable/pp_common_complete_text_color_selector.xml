@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="false" android:color="@color/pp_common_photo_ffffff" />
+    <item android:state_selected="true" android:color="@color/pp_common_new_action_bar_bg" />
+</selector>

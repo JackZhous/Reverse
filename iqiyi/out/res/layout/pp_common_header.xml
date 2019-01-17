@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/tv_back" android:layout_width="27.0dip" android:layout_height="27.0dip" android:layout_marginLeft="9.0dip" android:src="@drawable/pp_tv_back_base_line_selector" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/ppq_header_green" android:gravity="center" android:id="@id/tv_back_text" android:visibility="invisible" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="13.0dip" android:text="@string/ppq_cancel" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/ppq_white" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ppq_title_preview" android:layout_centerInParent="true" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/ppq_white" android:id="@id/tv_next" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="@string/ppq_title_next" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/iv_save_video" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="@drawable/pp_tv_save_video" android:layout_alignTop="@id/tv_title" android:layout_alignParentRight="true" />
+</RelativeLayout>

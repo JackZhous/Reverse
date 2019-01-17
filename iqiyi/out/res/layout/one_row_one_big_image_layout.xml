@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.qiyi.basecore.widget.QiyiDraweeView android:background="@drawable/one_row_one_big_image_default" android:clickable="true" android:longClickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

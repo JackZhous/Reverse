@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/comment_footer" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/lab_footer_for_list" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <org.qiyi.basecore.widget.CircleLoadingView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_margin="3.0dip" app:auto_animation="true" app:static_play="true" />
+        <TextView android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loading_data" />
+    </LinearLayout>
+    <ImageView android:id="@id/empty_tipicon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="45.0dip" android:src="@drawable/player_comment_empty" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/player_common_text_color_999999" android:gravity="center" android:id="@id/nocontentTip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/player_comment_no_more" android:layout_below="@id/empty_tipicon" />
+</RelativeLayout>

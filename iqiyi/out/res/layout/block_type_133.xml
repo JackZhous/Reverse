@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rank_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <org.qiyi.basecard.common.widget.MetaView android:id="@id/rank" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/mark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/rank" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/img1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/rank_layout" android:layout_centerVertical="true" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/button1" android:layout_toRightOf="@id/img1" android:layout_centerVertical="true">
+        <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/meta1" />
+        <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/meta2" />
+    </RelativeLayout>
+    <org.qiyi.basecard.common.widget.ButtonView android:id="@id/button1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

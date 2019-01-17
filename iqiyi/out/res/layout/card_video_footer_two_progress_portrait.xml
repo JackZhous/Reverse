@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/control_layout" android:background="@drawable/shape_video_footer_bg" android:layout_width="fill_parent" android:layout_height="75.0dip" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/progress_bar_layout" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="6.0dip" android:layout_alignParentBottom="true">
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/layout_video_footer_default_portrait" />
+    </RelativeLayout>
+    <org.qiyi.basecard.common.video.defaults.layer.CardVideoLineProgressBar android:id="@id/line_progress_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

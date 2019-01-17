@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:Fresco="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_chat_avatar" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="7.0dip" Fresco:placeholderImage="@drawable/pp_icon_avatar_default" Fresco:placeholderImageScaleType="centerCrop" Fresco:failureImage="@drawable/pp_icon_avatar_default" Fresco:failureImageScaleType="centerCrop" Fresco:roundAsCircle="true" />
+    <ImageView android:id="@id/iv_chat_avatar_group_owner_mask" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="7.0dip" android:src="@drawable/im_icon_group_owner_avatar" />
+    <ImageView android:id="@id/iv_chat_avatar_star" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="23.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="3.0dip" android:src="@drawable/im_star_line_new" android:scaleType="centerInside" />
+</RelativeLayout>

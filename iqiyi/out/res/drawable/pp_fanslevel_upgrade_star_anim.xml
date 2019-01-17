@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list apk:oneshot="false"
+  xmlns:apk="http://schemas.android.com/apk/res/android">
+    <item apk:duration="300" apk:drawable="@drawable/pp_fanslevel_popupwindow_star1" />
+    <item apk:duration="300" apk:drawable="@drawable/pp_fanslevel_popupwindow_star2" />
+</animation-list>

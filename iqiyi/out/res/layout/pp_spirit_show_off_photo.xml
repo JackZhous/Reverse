@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/show_off_photo_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:fresco="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.iqiyi.circle.widget.BordersImageView android:id="@id/user_avatar" android:padding="0.5dip" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginTop="12.0dip" android:src="@drawable/pp_icon_avatar_default" android:scaleType="centerCrop" fresco:actualImageScaleType="focusCrop" fresco:roundAsCircle="true" xmlns:fresco="http://schemas.android.com/apk/res-auto" />
+        <TextView android:textSize="@dimen/pp_dimen_dp_12" android:textStyle="bold" android:textColor="@color/pp_color_ffffff" android:id="@id/user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:maxLength="10" />
+        <TextView android:textSize="@dimen/pp_dimen_dp_12" android:textColor="@color/pp_color_ffffff" android:ellipsize="middle" android:id="@id/user_today_contribute_doc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:maxLines="1" android:layout_below="@id/user_name" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/pp_dimen_dp_12" android:textColor="@color/pp_color_ffffff" android:id="@id/spirit_cnt_doc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+    </LinearLayout>
+</FrameLayout>

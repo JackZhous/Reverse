@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="150" android:drawable="@drawable/pp_qz_feeds_video_play_anm1" />
+    <item android:duration="150" android:drawable="@drawable/pp_qz_feeds_video_play_anm2" />
+    <item android:duration="150" android:drawable="@drawable/pp_qz_feeds_video_play_anm3" />
+    <item android:duration="150" android:drawable="@drawable/pp_qz_feeds_video_play_anm4" />
+    <item android:duration="150" android:drawable="@drawable/pp_qz_feeds_video_play_anm5" />
+    <item android:duration="150" android:drawable="@drawable/pp_qz_feeds_video_play_anm6" />
+    <item android:duration="150" android:drawable="@drawable/pp_qz_feeds_video_play_anm7" />
+    <item android:duration="150" android:drawable="@drawable/pp_qz_feeds_video_play_anm8" />
+    <item android:duration="150" android:drawable="@drawable/pp_qz_feeds_video_play_anm9" />
+</animation-list>

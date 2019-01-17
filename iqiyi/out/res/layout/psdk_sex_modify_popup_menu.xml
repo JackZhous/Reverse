@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.qiyi.android.video.ui.account.view.PRelativeLayout android:id="@id/root_layout" android:background="@drawable/psdk_uploadpic_menu_mask" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.android.video.ui.account.view.PRelativeLayout android:orientation="vertical" android:id="@id/avatar_popup_menu" android:layout_width="270.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_centerInParent="true">
+        <RadioGroup android:orientation="vertical" android:id="@id/gendergroup" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioButton android:textSize="18.0dip" android:textColor="@drawable/psdk_selector_sexy_text" android:id="@id/boy" android:background="@drawable/psdk_selector_dialog_top" android:paddingLeft="24.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip" android:checked="true" android:button="@null" android:text="男" />
+            <RadioButton android:textSize="18.0dip" android:textColor="@drawable/psdk_selector_sexy_text" android:id="@id/girl" android:background="@drawable/psdk_phone_setting_card_item_bg" android:paddingLeft="24.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip" android:button="@null" android:text="女" />
+            <org.qiyi.android.video.ui.account.view.PView android:background="@color/psdk_ugc_gray_like_color" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        </RadioGroup>
+        <org.qiyi.android.video.ui.account.view.PTextView android:background="@color/psdk_ugc_gray_like_color" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="60.0dip" android:layout_marginRight="15.0dip" />
+        <org.qiyi.android.video.ui.account.view.PLinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_below="@id/gendergroup">
+            <org.qiyi.android.video.ui.account.view.PTextView android:textSize="18.0dip" android:textColor="@color/psdk_default_grean" android:gravity="center" android:id="@id/tv_cancel" android:background="@drawable/psdk_selector_dialog_button_left" android:layout_width="0.0dip" android:layout_height="45.0dip" android:text="@string/psdk_btn_cancel" android:layout_weight="1.0" />
+            <org.qiyi.android.video.ui.account.view.PView android:background="@color/psdk_ugc_gray_like_color" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+            <org.qiyi.android.video.ui.account.view.PTextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/psdk_default_grean" android:gravity="center" android:id="@id/tv_sexy_ok" android:background="@drawable/psdk_selector_dialog_button_right" android:layout_width="0.0dip" android:layout_height="45.0dip" android:text="@string/psdk_btn_OK" android:layout_weight="1.0" />
+        </org.qiyi.android.video.ui.account.view.PLinearLayout>
+    </org.qiyi.android.video.ui.account.view.PRelativeLayout>
+</org.qiyi.android.video.ui.account.view.PRelativeLayout>

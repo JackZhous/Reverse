@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="68.0dip">
+        <View android:id="@id/v_checkbox" android:background="@drawable/bg_checkbox" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="15.0dip" />
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/qdv_avatar" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="16.0dip" app:placeholderImage="@drawable/def_avatar" app:roundAsCircle="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:ellipsize="end" android:id="@id/tv_nickname" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="15.0dip" android:maxLines="1" />
+    </LinearLayout>
+    <View android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

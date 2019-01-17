@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/popupad_frlayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:layout_gravity="bottom" android:id="@id/popupad_img" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitEnd" />
+        <org.qiyi.basecore.widget.IconViewClose android:layout_gravity="center|right|top" android:id="@id/popupad_close_btn" android:layout_width="37.0dip" android:layout_height="37.0dip" app:iconStrokeWidth="1.0dip" app:iconPadding="13.0dip" app:lineColor="#ffefefef" app:circleBg="true" app:circleColor="#7f000000" app:circlePadding="6.0dip" />
+    </FrameLayout>
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/popupad_shadow_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/popupad_shadow_bg" android:layout_above="@id/popupad_frlayout" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/cover" android:background="@drawable/phone_category_detail_rec_vertical_pic_default" android:layout_width="120.0dip" android:layout_height="160.0dip" android:scaleType="fitXY" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/phone_category_text_color" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="王的男人" android:singleLine="true" android:layout_below="@id/cover" android:layout_alignLeft="@id/cover" android:layout_alignRight="@id/cover" />
+        <TextView android:textSize="10.0dip" android:textColor="@color/color_white" android:gravity="center" android:id="@id/title1" android:background="@drawable/phone_category_shallow_black_bg" android:padding="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:layout_marginBottom="2.0dip" android:singleLine="true" android:layout_alignRight="@id/cover" android:layout_alignBottom="@id/cover" />
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/rightmark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_alignTop="@id/cover" android:layout_alignRight="@id/cover" />
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/leftmark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_alignLeft="@id/cover" android:layout_alignTop="@id/cover" />
+    </RelativeLayout>
+</LinearLayout>

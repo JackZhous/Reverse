@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/p_result_img" android:background="@drawable/pay_result_success" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" />
+    <TextView android:textSize="15.0dip" android:textColor="@color/p_color_e3bc81" android:layout_gravity="center" android:id="@id/txt_p2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:text="@string/p_vip_success_new" />
+    <TextView android:textSize="@dimen/p_dimen_12" android:textColor="@color/p_color_00c13b" android:layout_gravity="center_horizontal" android:id="@id/sub_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p_dimen_3" android:layout_marginBottom="@dimen/p_dimen_13" android:text="@string/p_vip_all_type" />
+</LinearLayout>

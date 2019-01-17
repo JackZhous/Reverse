@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/p_w_title_layout" layout="@layout/pay_phone_title" />
+    <TextView android:textSize="@dimen/p_dimen_15" android:textColor="@color/p_color_333333" android:id="@id/p_w_verify_pay_pwd_p1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/p_dimen_35" android:layout_marginTop="@dimen/p_dimen_50" android:layout_marginRight="@dimen/p_dimen_35" android:text="@string/p_w_input_pwd1" android:layout_below="@id/p_w_title_layout" />
+    <LinearLayout android:orientation="vertical" android:id="@id/p_w_verify_pay_pwd_p2" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_45" android:layout_marginLeft="@dimen/p_dimen_35" android:layout_marginTop="@dimen/p_dimen_27" android:layout_marginRight="@dimen/p_dimen_35" android:layout_below="@id/p_w_verify_pay_pwd_p1">
+        <include layout="@layout/p_w_keyboard_pwd_layout" />
+    </LinearLayout>
+    <TextView android:textColor="@color/p_color_ff6000" android:id="@id/p_w_pwd_forget_p3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/p_w_forget_pwd" android:layout_below="@id/p_w_verify_pay_pwd_p2" android:layout_alignRight="@id/p_w_verify_pay_pwd_p2" />
+</RelativeLayout>

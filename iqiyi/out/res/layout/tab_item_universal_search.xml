@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="@drawable/qiyi_text_color_universal_search" android:gravity="center" android:id="@id/universal_search_tab" android:background="@drawable/text_background_round" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="26.0dip" android:lines="1" android:layout_centerVertical="true" />
+    <View android:id="@id/divider" android:visibility="invisible" android:layout_width="1.0dip" android:layout_height="0.0dip" />
+</RelativeLayout>

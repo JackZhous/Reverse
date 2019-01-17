@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffe7e7e7" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_include" layout="@layout/special_title" />
+    <ListView android:id="@id/adlist" android:fadingEdge="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@null" android:divider="@null" android:layout_below="@id/title_include" />
+    <include android:id="@id/phoneADEmptyText" android:visibility="gone" android:layout_centerInParent="true" layout="@layout/phone_load_data_exception" />
+</RelativeLayout>

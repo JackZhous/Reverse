@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/downloadText" android:background="@drawable/round_rect_green_fill" android:layout_width="80.0dip" android:layout_height="30.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="0.0dip" android:text="@string/card_download" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/imageview" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="20.0dip" android:scaleType="centerCrop" fresco:placeholderImage="@drawable/phone_square_image_default" fresco:placeholderImageScaleType="centerCrop" />
+    <TextView android:ellipsize="end" android:gravity="center|left|top" android:id="@id/title1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_toLeftOf="@id/downloadText" android:layout_toRightOf="@id/imageview" style="@style/MetaTitle" />
+    <TextView android:ellipsize="end" android:gravity="center|left|top" android:id="@id/title2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:maxLines="1" android:layout_toLeftOf="@id/downloadText" android:layout_toRightOf="@id/imageview" android:layout_below="@id/title1" style="@style/MetaSubTitle" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_sub_meta" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/downloadText" android:layout_toRightOf="@id/imageview" android:layout_alignBottom="@id/imageview">
+        <org.qiyi.basecore.widget.OuterFrameTextView android:id="@id/sub_meta1" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MetaSubTitle" />
+        <org.qiyi.basecore.widget.OuterFrameTextView android:id="@id/sub_meta2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" style="@style/MetaSubTitle" />
+        <org.qiyi.basecore.widget.OuterFrameTextView android:id="@id/sub_meta3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" style="@style/MetaSubTitle" />
+    </LinearLayout>
+</RelativeLayout>

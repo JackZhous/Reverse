@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/shape_video_footer_bg" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="150.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/card_layer_rate_tip_close" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="17.0dip" android:layout_marginBottom="12.0dip" android:src="@drawable/card_video_player_tip_close" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/color_white" android:id="@id/card_layer_rate_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="26.0dip" android:layout_marginBottom="15.0dip" android:layout_toLeftOf="@id/card_layer_rate_tip_close" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

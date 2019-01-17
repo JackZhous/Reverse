@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="#aa000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <ImageView android:textAppearance="?android:textAppearanceLarge" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/pp_qz_publish_icon" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:text="@string/pp_qz_publisher_button" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/layout_publish_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="18.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/bottom_publish_button" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/pp_dr_sw_floating_btn" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_publish_bar_take_a_video" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="18.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <TextView android:textSize="18.0dip" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@id/bottom_publish_button_take_a_video" android:background="@drawable/pp_dr_sw_floating_take_a_video_btn" android:layout_width="110.0dip" android:layout_height="45.0dip" android:text="@string/pp_take_a_video_btn_text" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_publish_bar2" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:id="@id/transparent_view" android:background="@drawable/pp_home_tab_shadow" android:layout_width="fill_parent" android:layout_height="7.0dip" />
+        <RelativeLayout android:id="@id/bottom_publish_button2_layout" android:background="#ffffffff" android:paddingLeft="12.0dip" android:paddingTop="8.0dip" android:paddingRight="12.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/transparent_view">
+            <TextView android:textSize="14.0dip" android:textColor="#ff999999" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/bottom_publish_button2" android:background="@drawable/pp_publish_input_button_corner" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="35.0dip" android:maxLines="1" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

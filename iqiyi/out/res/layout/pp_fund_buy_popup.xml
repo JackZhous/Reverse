@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.iqiyi.paopao.middlecommon.ui.view.resizelayout.FixedMeasureLayout android:orientation="vertical" android:id="@id/pp_root_view" android:background="#80000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/pp_top_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/pp_content_layout" />
+    <RelativeLayout android:id="@id/pp_content_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="448.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/pp_buy_now" android:layout_alignParentTop="true">
+            <RelativeLayout android:id="@id/pp_content_layout_header" android:paddingLeft="12.0dip" android:paddingTop="15.0dip" android:paddingRight="12.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/pp_fund_icon_iv" android:background="@color/white" android:layout_width="100.0dip" android:layout_height="75.0dip" android:scaleType="centerCrop" app:placeholderImage="@drawable/pp_general_default_bg" app:roundedCornerRadius="6.0dip" />
+                <TextView android:textSize="17.0dip" android:textColor="@color/color_333333" android:id="@id/pp_fund_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="18.0dip" android:maxLines="2" android:layout_toLeftOf="@id/pp_fund_quit_iv" android:layout_toRightOf="@id/pp_fund_icon_iv" android:lineSpacingExtra="4.0dip" />
+                <TextView android:textSize="17.0dip" android:textColor="@color/pp_color_ff8022" android:id="@id/pp_fund_total_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:singleLine="true" android:layout_alignLeft="@id/pp_fund_title_tv" android:layout_alignBottom="@id/pp_fund_icon_iv" />
+                <ImageView android:id="@id/pp_fund_quit_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pp_fund_del_bt" android:layout_alignTop="@id/pp_fund_icon_iv" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <FrameLayout android:paddingLeft="12.0dip" android:layout_width="fill_parent" android:layout_height="1.0px">
+                <View android:background="@color/pp_color_e7e7e7" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.iqiyi.paopao.middlecommon.ui.view.flowLayout.FlowLayout android:id="@id/pp_fund_class_items" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="12.0dip" app:horizontal_spacing="10.0dip" app:vertical_spacing="10.0dip" />
+                        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <RelativeLayout android:id="@id/pp_fund_buy_popup_input_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip">
+                                <TextView android:textSize="16.0dip" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pp_buy_num" android:layout_centerVertical="true" />
+                                <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" layout="@layout/pp_num_add_minus_layout" />
+                            </RelativeLayout>
+                            <View android:background="@color/pp_color_e7e7e7" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="12.0dip" />
+                            <RelativeLayout android:id="@id/pp_postage_layout" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                                <TextView android:textSize="16.0dip" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/pp_buy_postage" android:layout_centerVertical="true" />
+                                <TextView android:textSize="16.0dip" android:textColor="@color/color_666666" android:id="@id/pp_postage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:text="￥20" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                                <View android:background="@color/pp_color_e7e7e7" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="12.0dip" android:layout_alignParentBottom="true" />
+                            </RelativeLayout>
+                            <com.iqiyi.paopao.middlecommon.components.details.views.AddressInfoView android:id="@id/pp_address_info" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                            <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip">
+                                <CheckBox android:textSize="12.0dip" android:textColor="@color/color_999999" android:gravity="center_vertical" android:id="@id/pp_protocal_cb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:text="@string/pp_protocol_cb" android:drawableLeft="@drawable/pp_protocal_cb" android:drawablePadding="6.0dip" />
+                                <TextView android:textSize="12.0dip" android:textColor="@color/color_0bbe06" android:id="@id/pp_to_protocal_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pp_to_protocol_tv" android:layout_toRightOf="@id/pp_protocal_cb" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="16.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/pp_buy_now" android:background="@color/pp_color_ff8002" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="立即购买" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</com.iqiyi.paopao.middlecommon.ui.view.resizelayout.FixedMeasureLayout>

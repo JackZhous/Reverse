@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.iqiyi.publisher.ui.view.CaptureButton android:id="@id/rl_capture" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <com.iqiyi.publisher.ui.view.SMVCaptureButtonWithBreath android:id="@id/rl_capture_with_breath" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:id="@id/rl_finish" android:layout_width="fill_parent" android:layout_height="106.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/iv_finish" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/pub_self_made_video_base_activity_finish_btn_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/prompter_btn" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/pub_prompter_btn" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

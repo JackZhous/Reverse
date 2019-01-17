@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:drawable="@drawable/phone_my_setting_switch_new_disabled" />
+    <item android:state_enabled="true" android:state_selected="true" android:drawable="@drawable/phone_my_setting_switch_selected_new" />
+    <item android:state_enabled="true" android:state_selected="false" android:drawable="@drawable/phone_my_setting_switch_new" />
+    <item android:drawable="@drawable/phone_my_setting_switch_new" />
+</selector>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/CardModelBase"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/left_layout" android:visibility="gone" android:layout_width="35.0dip" android:layout_height="40.0dip" android:layout_marginRight="5.0dip">
+        <org.iqiyi.video.image.PlayerDraweView android:layout_gravity="center_vertical" android:id="@id/left_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/card_text_size_11dp" android:textColor="@color/text_hint_color" android:gravity="center_vertical" android:id="@id/right_text" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_alignParentRight="true" />
+    <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="40.0dip" android:lines="1" android:layout_toLeftOf="@id/right_text" android:layout_toRightOf="@id/left_layout" style="@style/MetaTitle" />
+</RelativeLayout>

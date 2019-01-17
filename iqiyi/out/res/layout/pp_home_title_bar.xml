@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/title_bar_container" style="@style/title_bar_style"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:Fresco="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/title_bar_bg" android:background="@color/pp_color_ffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="15.0dip" android:textColor="@color/pp_back_text_color" android:gravity="center|left" android:id="@id/title_bar_left" android:paddingLeft="@dimen/pp_title_bar_padding_left" android:paddingTop="@dimen/pp_title_bar_back_padding_top" android:paddingRight="@dimen/pp_title_bar_back_padding_right" android:paddingBottom="@dimen/pp_title_bar_back_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pp_title_bar_home_back_txt" android:drawableLeft="@drawable/pp_selector_title_bar_back_activated" android:drawablePadding="4.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/pp_color_333333" android:id="@id/title_bar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/title_red_dot" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="6.0dip" android:src="@drawable/pp_title_bar_home_addressbook_red_dot" android:layout_toRightOf="@id/title_bar_title" android:layout_alignTop="@id/title_bar_title" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/user_icon_layout" android:layout_width="42.0dip" android:layout_height="30.0dip" android:layout_marginLeft="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/tab_bar_user_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="@dimen/pp_title_bar_padding_right" Fresco:placeholderImage="@drawable/pp_icon_avatar_default" Fresco:placeholderImageScaleType="centerCrop" Fresco:failureImage="@drawable/pp_icon_avatar_default" Fresco:failureImageScaleType="centerCrop" Fresco:roundAsCircle="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/pp_publish_feed_fail_icon" android:visibility="gone" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginTop="-2.0dip" android:layout_marginRight="-2.0dip" android:src="@drawable/pp_publish_feed_fail" android:layout_alignTop="@id/user_icon_layout" android:layout_alignRight="@id/user_icon_layout" />
+    <ImageView android:id="@id/pp_home_menu_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/user_icon_layout" android:layout_centerVertical="true" />
+    <View android:id="@id/title_bar_divider_bottom" android:background="@color/pp_color_e6e6e6" android:layout_width="fill_parent" android:layout_height="@dimen/pp_title_bar_bottom_divider_height" android:layout_alignParentBottom="true" />
+</RelativeLayout>

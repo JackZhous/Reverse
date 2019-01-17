@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/CardModelBase"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:paddingLeft="12.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/similar_aipindao" android:layout_centerVertical="true" style="@style/CardTitle" />
+    <FrameLayout android:id="@id/close_card" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:background="@drawable/similar_subscribe_close" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_centerVertical="true" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_horizontal" android:background="@drawable/pp_round_corner_advertise_action_icon_background" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="10.5dip" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/pp_tv_advertise_action_name" android:layout_width="45.0dip" android:layout_height="wrap_content" android:text="了解更多" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/tv_icon" android:layout_width="5.0dip" android:layout_height="10.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/pp_icon_arrow_orent_right" android:layout_toRightOf="@id/pp_tv_advertise_action_name" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:id="@id/tv_nav_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="5.0dip" android:text="" />
+</LinearLayout>

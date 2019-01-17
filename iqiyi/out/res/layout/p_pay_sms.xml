@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/phone_pay_title" layout="@layout/pay_phone_title" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phone_pay_title">
+        <LinearLayout android:orientation="vertical" android:id="@id/phoneMyAccountActCodeLayout" android:paddingBottom="@dimen/p_dimen_66" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p_dimen_32">
+            <LinearLayout android:orientation="vertical" android:id="@id/phone_package_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/phoneMyAccountAccountLayout" android:paddingLeft="@dimen/p_dimen_35" android:paddingRight="@dimen/p_dimen_35" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/p_dimen_15" android:textColor="@color/p_color_333333" android:id="@id/phoneMyAccountAccountName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/phoneMyAccountAccountName" />
+                    <TextView android:textSize="@dimen/p_dimen_15" android:textColor="@color/p_color_333333" android:id="@id/phoneMyAccountAccountContent" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <RelativeLayout android:id="@id/phoneMyAccountRecommendLayout" android:paddingLeft="@dimen/p_dimen_25" android:paddingRight="@dimen/p_dimen_25" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p_dimen_22">
+                    <ImageView android:id="@id/phoneMyAccountRecommendImg" android:layout_width="38.0dip" android:layout_height="38.0dip" android:src="@drawable/p_pay_tw_tel" android:layout_centerVertical="true" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/phoneMyAccountPayTypeLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/p_dimen_5" android:layout_toRightOf="@id/phoneMyAccountRecommendImg">
+                        <TextView android:textSize="@dimen/p_dimen_15" android:textColor="#ff333333" android:id="@id/phoneMyAccountPayTypeBillPay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/phoneMyAccountPayTypeBillPay" />
+                        <TextView android:textSize="@dimen/p_dimen_12" android:textColor="@color/p_color_FF7E00" android:ellipsize="end" android:gravity="center|left" android:id="@id/phoneMyAccountPayTypeSpeeding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/p_dimen_4" android:maxLines="1" />
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/p_dimen_12" android:textColor="@color/p_color_999999" android:id="@id/phoneMyAccountRecommendPackageIntroduction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p_dimen_2" android:text="@string/phoneMyAccountRecommendPackageIntroduction" android:layout_below="@id/phoneMyAccountPayTypeLayout" android:layout_alignLeft="@id/phoneMyAccountPayTypeLayout" />
+                </RelativeLayout>
+                <View android:background="@color/p_color_e6e6e6" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/p_dimen_35" android:layout_marginTop="@dimen/p_dimen_22" android:layout_marginRight="@dimen/p_dimen_35" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/phoneMyAccountNumberInputLayout" android:paddingLeft="@dimen/p_dimen_35" android:paddingRight="@dimen/p_dimen_35" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip">
+                <EditText android:textSize="15.0dip" android:textColor="@color/p_color_333333" android:textColorHint="@color/p_color_999999" android:id="@id/phoneMyAccountNumberInput" android:background="@null" android:layout_width="fill_parent" android:layout_height="45.0dip" android:hint="@string/p_pay_sms_phonenumber_hint" android:singleLine="true" android:inputType="number" />
+                <ImageView android:id="@id/phone_clear_button" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/icon_clear_edit" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="@color/p_color_e6e6e6" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/p_dimen_35" android:layout_marginRight="@dimen/p_dimen_35" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/phoneMyAccountCodeInputLayout" android:paddingLeft="@dimen/p_dimen_35" android:paddingRight="@dimen/p_dimen_35" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip">
+                <EditText android:textSize="15.0dip" android:textColor="@color/p_color_333333" android:textColorHint="@color/p_color_999999" android:id="@id/phoneMyAccountCodeInput" android:background="@null" android:layout_width="0.0dip" android:layout_height="45.0dip" android:hint="@string/p_pay_sms_code_hint" android:singleLine="true" android:layout_weight="1.0" />
+                <TextView android:textSize="15.0dip" android:textColor="@color/p_color_FF7E00" android:gravity="center" android:layout_gravity="center" android:id="@id/vipLoadingcodeImage_refresh" android:background="@null" android:paddingLeft="10.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="45.0dip" android:text="@string/p_pay_sms_getcode" />
+            </LinearLayout>
+            <View android:background="@color/p_color_e6e6e6" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/p_dimen_35" android:layout_marginRight="@dimen/p_dimen_35" />
+            <TextView android:textColor="@color/p_color_ff0000" android:id="@id/phoneMyAccountActCodeStatus" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/p_dimen_35" android:layout_marginTop="8.0dip" android:layout_marginRight="@dimen/p_dimen_35" android:layout_marginBottom="6.0dip" />
+            <TextView android:textSize="18.0dip" android:textColor="@android:color/white" android:state_enabled="false" android:gravity="center" android:id="@id/phoneMyAccountActCodesubmit" android:background="@drawable/p_btn_orange_bg" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="@dimen/p_dimen_35" android:layout_marginRight="@dimen/p_dimen_35" android:text="@string/p_pay_sms_submit" />
+            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/p_dimen_15" android:paddingRight="@dimen/p_dimen_15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="52.0dip">
+                <TextView android:textSize="12.0dip" android:textColor="@color/p_color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p_vip_sms_info0" />
+                <LinearLayout android:orientation="vertical" android:id="@id/p_exp_code_tips" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:text="@string/p_vip_sms_info1" style="@style/CommonTipsContentTextViewStyle.FirstItem" />
+                    <TextView android:text="@string/p_vip_sms_info2" style="@style/CommonTipsContentTextViewStyle" />
+                    <TextView android:text="@string/p_vip_sms_info3" style="@style/CommonTipsContentTextViewStyle" />
+                    <TextView android:text="@string/p_vip_sms_info4" style="@style/CommonTipsContentTextViewStyle" />
+                    <TextView android:text="@string/p_vip_sms_info5" style="@style/CommonTipsContentTextViewStyle" />
+                    <TextView android:text="@string/p_vip_sms_info6" style="@style/CommonTipsContentTextViewStyle" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

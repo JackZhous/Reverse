@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/layout_phone_my_main_and_discovery_footer" android:background="#fff1f1f1" android:paddingBottom="@dimen/verison_footer_margin_bootom" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/version_footer_text_size" android:textColor="#ff999999" android:id="@id/version_footer" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/cooperation_icon" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/version_footer" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/player_portrait_dialog_buyinfo" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="17.0dip" android:textStyle="bold" android:textColor="@color/default_color_big" android:gravity="center" android:id="@id/buyinfo_title" android:paddingLeft="10.0dip" android:paddingTop="20.0dip" android:paddingRight="10.0dip" android:layout_width="270.0dip" android:layout_height="wrap_content" android:text="title" />
+    <TextView android:textSize="@dimen/card_text_size_13dp" android:textColor="@color/default_color_big" android:id="@id/buyinfo_validtime" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/card_text_size_13dp" android:textColor="@color/default_color_big" android:id="@id/buyinfo_coupon_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点播券已用完，续费VIP可获点播券" />
+    <View android:background="@color/player_buy_info_dialog_div" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="10.0dip" />
+    <TextView android:textSize="17.0dip" android:textColor="@color/player_dialog_buy" android:gravity="center" android:id="@id/buyinfo_normal_operation" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="3元购买" />
+    <View android:background="@color/player_buy_info_dialog_div" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="17.0dip" android:textStyle="bold" android:textColor="#ffff8533" android:gravity="center" android:id="@id/buyinfo_vip_operation" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="" />
+    <View android:background="@color/player_buy_info_dialog_div" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="17.0dip" android:textColor="@color/player_dialog_buy" android:gravity="center" android:id="@id/buyinfo_cancel" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/dialog_default_cancel" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/ugc_gray_like_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/phoneTitleLayout" android:focusable="false" style="@style/top_base_item">
+        <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/title_back_layout" android:background="@drawable/phone_account_back_bg" style="@style/top_title_item" />
+        <TextView android:id="@id/phoneTitle" android:text="昵称" style="@style/top_title" />
+        <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/title_save" android:background="@drawable/phone_nickname_save" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="    保存    " android:layout_alignParentRight="true" android:layout_alignParentBottom="@id/phoneTitle" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0dip" android:textColor="#ffda0000" android:gravity="center|left" android:id="@id/warn_text" android:paddingLeft="2.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_below="@id/phoneTitleLayout" />
+    <EditText android:textSize="15.0dip" android:textColor="#ff464646" android:id="@id/phone_modify_nickname_edittext_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:singleLine="true" android:layout_below="@id/warn_text" />
+    <TextView android:textSize="12.0dip" android:gravity="center|left" android:paddingLeft="3.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="支持汉字、英文或数字，4-20个字符" android:layout_below="@id/phone_modify_nickname_edittext_view" />
+</RelativeLayout>

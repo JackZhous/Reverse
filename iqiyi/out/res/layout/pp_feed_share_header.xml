@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/share_person_layout" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/pp_feed_share_author_icon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="@dimen/pp_feed_header_title_left_gap" android:layout_marginRight="5.0dip" android:layout_centerVertical="true" app:placeholderImage="@drawable/pp_icon_avatar_default" app:placeholderImageScaleType="centerCrop" app:failureImage="@drawable/pp_icon_avatar_default" app:failureImageScaleType="centerCrop" app:actualImageScaleType="centerCrop" app:roundAsCircle="true" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/pp_color_333333" android:id="@id/pp_feed_share_author_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/pp_feed_share_author_icon" android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/pp_color_222222" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/act_media_select_video" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:divider="#ffffffff" android:dividerHeight="0.0dip" android:layout_below="@id/header" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_no_video" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/iv_paopao_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pp_general_no_data_icon" android:layout_centerInParent="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/ppq_local_no_video" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/ppq_no_video" android:layout_below="@id/iv_paopao_icon" android:layout_centerInParent="true" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/layout_loading_video" android:background="@color/pp_color_222222" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

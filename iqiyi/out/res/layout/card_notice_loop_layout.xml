@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="45.0dip" android:minHeight="45.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/poster" android:visibility="visible" android:layout_width="43.0dip" android:layout_height="45.0dip" android:scaleType="centerCrop" android:layout_centerVertical="true" />
+    <org.qiyi.basecard.common.widget.AutoScrollTextView android:id="@id/scroll_text" android:layout_width="fill_parent" android:layout_height="45.0dip" />
+    <include android:id="@id/view1" layout="@layout/unit_notice_loop_layout" />
+    <include android:id="@id/view2" layout="@layout/unit_notice_loop_layout" />
+</LinearLayout>

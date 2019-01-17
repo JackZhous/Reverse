@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/ad_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" app:viewAspectRatio="7.14" />
+    <ImageView android:id="@id/ad_tip" android:paddingLeft="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/player_portrait_tab_mark" android:layout_alignTop="@id/ad_image" android:layout_alignParentRight="true" />
+</RelativeLayout>

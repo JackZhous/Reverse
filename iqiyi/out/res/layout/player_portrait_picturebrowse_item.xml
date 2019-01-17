@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.basecore.widget.CircleLoadingView android:layout_gravity="center" android:id="@id/progress" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_centerInParent="true" app:auto_animation="true" app:static_play="true" />
+    <com.iqiyi.qyplayercardview.picturebrowse.PhotoView android:id="@id/feed_full_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+    <com.iqiyi.qyplayercardview.picturebrowse.view.ZoomableDraweeView android:id="@id/feed_gif_image" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerInside" />
+</RelativeLayout>

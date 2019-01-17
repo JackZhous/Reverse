@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="top" android:orientation="horizontal" android:id="@id/pp_video_player_full_mode_title_bar" android:background="@drawable/pp_player_gradient_000000_40" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="130.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/pp_video_player_full_mode_title_bar_back_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pp_player_icon_back_full" />
+        <TextView android:textSize="15.0dip" android:textColor="@color/white" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/pp_video_player_full_mode_title_bar_title_tv" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:text="" android:singleLine="true" android:layout_weight="1.0" />
+        <ImageView android:id="@id/iv_share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/pp_player_icon_share_full" />
+        <RelativeLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/rl_battery_root_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="1.0dip">
+            <RelativeLayout android:id="@id/rl_battery_icon" android:visibility="visible" android:layout_width="20.0dip" android:layout_height="9.0dip" android:layout_centerHorizontal="true">
+                <ImageView android:id="@id/iv_battery_icon_full" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="9.0dip" android:src="@drawable/pp_player_battery_full" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_battery_icon_consumed" android:background="@drawable/pp_player_battery_empty" android:layout_width="20.0dip" android:layout_height="9.0dip">
+                    <ImageView android:id="@id/iv_batter_consumed" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:contentDescription="@string/content_des_for_battery" />
+                    <ImageView android:id="@id/iv_batter_remain" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@color/white" />
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView android:textSize="12.0dip" android:textColor="@color/white" android:id="@id/tv_battery" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.5dip" android:text="15%" android:includeFontPadding="false" android:layout_below="@id/rl_battery_icon" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <TextView android:id="@id/tv_nav_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="" />
+    </LinearLayout>
+</FrameLayout>

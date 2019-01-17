@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/left_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pp_icon_right" android:layout_alignParentTop="true" />
+    <TextView android:textSize="15.0dip" android:textColor="@color/pp_color_666666" android:id="@id/right_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginBottom="5.0dip" android:text="....xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" android:layout_toRightOf="@id/left_iv" />
+</RelativeLayout>

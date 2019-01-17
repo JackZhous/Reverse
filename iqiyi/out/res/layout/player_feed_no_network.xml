@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/palyer_feed_no_network_layout" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/player_feed_no_network" />
+    <TextView android:textSize="14.0dip" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="网络不给力，点击页面再试试吧！" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.qiyi.video.qyskin.view.SkinTitleBar android:id="@id/phoneTitleLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignWithParentIfMissing="true" app:tb_title="@string/title_my_record" app:tb_menu="@menu/title_bar_view_history_menu" />
+    <FrameLayout android:id="@id/frame" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phoneTitleLayout">
+        <org.qiyi.basecore.widget.ptr.widget.PtrSimpleListView android:id="@id/my_root_listview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:textSize="15.0dip" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/phone_play_record_suspension_header" android:background="#f2ffffff" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="13.0dip" android:text="@string/my_main_record_program_update" />
+    </FrameLayout>
+    <include android:id="@id/common_tips_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/phoneTitleLayout" layout="@layout/my_main_bottom_record_header_layout" />
+</RelativeLayout>

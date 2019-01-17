@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/DoubleItemCategoryLayout1" android:background="#ff62b608" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/line" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/category_small_bg_to_line" android:layout_marginRight="@dimen/category_small_text_to_line" android:layout_centerHorizontal="true" />
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/DoubleItemCategoryIcon1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_toLeftOf="@id/line" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/category_small_bg_title_text_size" android:textColor="#ffffffff" android:gravity="center" android:id="@id/DoubleItemCategoryTitle1" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="节目单" android:singleLine="true" android:layout_toRightOf="@id/line" android:layout_centerInParent="true" />
+</RelativeLayout>

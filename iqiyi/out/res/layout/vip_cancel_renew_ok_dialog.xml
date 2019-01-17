@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/vip_cancel_renew_dialog_bg" android:layout_width="300.0dip" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textColor="#ffc8a06a" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:text="@string/vip_cancel_renew_ok_dialog_title" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff666666" android:id="@id/content_txt_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/vip_cancel_renew_ok_dialog_content_1" android:lineSpacingExtra="8.0dip" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff666666" android:id="@id/content_txt_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/vip_cancel_renew_ok_dialog_content_2" android:lineSpacingExtra="8.0dip" />
+        <RelativeLayout android:id="@id/discount_layout" android:background="@drawable/vip_cancel_renew_ok_dialog_img_bg" android:layout_width="269.0dip" android:layout_height="133.0dip" android:layout_marginLeft="20.0dip">
+            <TextView android:textSize="19.0sp" android:textColor="#ff643712" android:id="@id/discount_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="55.0dip" android:text="" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff643712" android:id="@id/discount_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="55.0dip" android:text="" android:layout_toRightOf="@id/discount_price" android:layout_alignBottom="@id/discount_price" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="55.0dip" android:layout_toRightOf="@id/discount_unit" android:layout_alignBottom="@id/discount_unit">
+                <TextView android:textSize="12.0sp" android:textColor="#ff643712" android:id="@id/origin_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                <View android:background="#fff9b243" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_alignLeft="@id/origin_price" android:layout_alignRight="@id/origin_price" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <TextView android:textSize="14.0sp" android:textColor="#ffd4b27e" android:id="@id/price_per_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="5.0dip" android:text="" android:layout_below="@id/discount_price" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="#fffefefe" android:gravity="center" android:id="@id/to_buy_button" android:background="@drawable/vip_cancel_renew_dialog_left_button_bg" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="@string/vip_cancel_renew_ok_dialog_buy_button" android:layout_weight="1.0" />
+            <TextView android:textSize="16.0sp" android:textColor="#ffc9a16d" android:gravity="center" android:id="@id/close_button" android:background="@drawable/vip_cancel_renew_dialog_right_button_bg" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="@string/vip_cancel_renew_ok_dialog_close_button" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/pp_card_video_bottom_bar_bg" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0dip" android:textColor="@color/color_white" android:gravity="center" android:id="@id/durationTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="00:00" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <View android:id="@id/divider_line" android:background="#55ffffff" android:layout_width="1.0px" android:layout_height="11.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="12.0dip" android:layout_toLeftOf="@id/durationTime" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/animPic" android:visibility="visible" android:layout_width="22.0dip" android:layout_height="11.0dip" android:layout_marginRight="1.0dip" android:layout_marginBottom="12.0dip" android:src="@drawable/pp_card_video_play_mark_anmi" android:layout_toLeftOf="@id/divider_line" android:layout_alignParentBottom="true" />
+</RelativeLayout>

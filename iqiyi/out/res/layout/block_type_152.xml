@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.qiyi.basecore.widget.QiyiDraweeView android:id="@id/left_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+    <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta1_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/left_img" />
+    <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta2_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/meta1_layout" />
+    <org.qiyi.basecard.common.widget.MetaView android:id="@id/meta3_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/left_img" android:layout_below="@id/meta1_layout" />
+    <org.qiyi.basecard.common.widget.ButtonView android:id="@id/right_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

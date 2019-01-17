@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#00ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="#00ffffff" android:layout_width="107.0dip" android:layout_height="345.0dip">
+        <TextView android:textSize="15.0dip" android:textColor="@color/tab_name_unselect" android:gravity="center" android:id="@id/tv_star_rank" android:background="@drawable/pp_gc_shape_star_rank_foucus" android:layout_width="80.0dip" android:layout_height="30.0dip" android:text="A-Z" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <com.iqiyi.paopao.client.common.view.CircleStarRankListView android:id="@id/lv_star_rank" android:background="@drawable/pp_star_rank_bg" android:scrollbars="none" android:layout_width="107.0dip" android:layout_height="310.0dip" android:layout_marginBottom="8.0dip" android:listSelector="@drawable/pp_gc_selector_star_rank_lv" android:divider="@color/cell_separate_line_dark" android:dividerHeight="1.0px" android:layout_above="@id/tv_star_rank" android:layout_alignParentRight="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:src="@drawable/pp_star_rank_arrow" android:layout_above="@id/tv_star_rank" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

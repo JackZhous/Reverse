@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tool="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/titleLayout" style="@style/top_base_item">
+        <TextView android:id="@id/add_coupon_back" android:background="@drawable/phone_download_back_selector" style="@style/top_title_item_new" />
+        <TextView android:id="@id/add_coupon_title" android:text="@string/my_wallet_add_coupon" style="@style/top_title_new" />
+    </RelativeLayout>
+    <View android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentTop="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="36.0dip" android:layout_marginTop="32.0dip" android:layout_marginRight="36.0dip">
+        <TextView android:textSize="11.0dip" android:textColor="#ffe32024" android:gravity="center_vertical" android:id="@id/p_coupon_notice" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <EditText android:textSize="15.0dip" android:textColorHint="@color/p_color_999999" android:id="@id/p_coupon_code" android:background="@drawable/p_corner_rect_up" android:paddingBottom="19.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:hint="@string/my_wallet_add_coupon_num" android:singleLine="true" />
+        <View android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+    </LinearLayout>
+    <Button android:enabled="false" android:textSize="18.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/p_coupon_add" android:background="@drawable/p_coupon_add_btn_bg" android:layout_width="303.0dip" android:layout_height="45.0dip" android:layout_marginTop="29.0dip" android:text="@string/my_wallet_add_coupon" />
+</LinearLayout>

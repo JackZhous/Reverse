@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/p_w_title_layout" layout="@layout/pay_phone_title" />
+    <RelativeLayout android:id="@id/p_w_notice_layout" android:background="@color/p_color_fef6e9" android:paddingBottom="@dimen/p_dimen_11" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_38">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/p_dimen_22" android:layout_height="@dimen/p_dimen_22" android:src="@drawable/p_w_loudspeaker" />
+            <ViewFlipper android:id="@id/p_w_viewflipper" android:paddingLeft="@dimen/p_dimen_6" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@id/p_w_title_dividing_line" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_36" />
+    <RelativeLayout android:id="@id/p_w_bind_bank_card_name_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_50" android:layout_marginLeft="@dimen/p_dimen_35" android:layout_marginRight="@dimen/p_dimen_35">
+        <TextView android:textSize="@dimen/p_dimen_15" android:textColor="@color/p_color_333333" android:id="@id/p_w_bind_bank_card_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p_w_user_name" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/p_dimen_15" android:textColor="@color/p_color_333333" android:id="@id/p_w_bind_bank_card_real_name_tv" android:paddingLeft="@dimen/p_dimen_10" android:paddingRight="@dimen/p_dimen_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_toRightOf="@id/p_w_bind_bank_card_name_tv" android:layout_centerVertical="true" />
+        <View android:background="@color/p_color_EDEDED" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_1" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_50" android:layout_marginLeft="@dimen/p_dimen_35" android:layout_marginRight="@dimen/p_dimen_35">
+        <TextView android:textSize="@dimen/p_dimen_15" android:textColor="@color/p_color_333333" android:id="@id/p_w_bind_bank_card_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p_w_bank_card_num" android:layout_centerVertical="true" />
+        <EditText android:textSize="@dimen/p_dimen_15" android:textColor="@color/p_color_333333" android:textColorHint="@color/p_color_999999" android:id="@id/p_w_bind_bank_card_num" android:background="@null" android:paddingLeft="@dimen/p_dimen_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/p_w_bind_bank_card_num" android:lines="1" android:maxLength="23" android:layout_weight="1.0" android:layout_toLeftOf="@id/p_w_close_or_scan_img" android:layout_toRightOf="@id/p_w_bind_bank_card_name" android:layout_centerVertical="true" android:inputType="number" />
+        <ImageView android:id="@id/p_w_close_or_scan_img" android:background="@drawable/p_w_bankcardscan_icon" android:visibility="visible" android:layout_width="@dimen/p_dimen_24" android:layout_height="@dimen/p_dimen_24" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:background="@color/p_color_EDEDED" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_1" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/p_dimen_12" android:textColor="@color/p_color_999999" android:gravity="center|left" android:paddingLeft="@dimen/p_dimen_35" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="@string/p_w_bank_msg" />
+    <Button android:textSize="@dimen/p_dimen_18" android:textColor="@android:color/white" android:layout_gravity="center_horizontal" android:id="@id/p_w_bind_bank_card_next" android:background="@drawable/corner_radius45_ff7e00_ffd8b2_selector" android:layout_width="fill_parent" android:layout_height="@dimen/p_dimen_45" android:layout_marginLeft="@dimen/p_dimen_35" android:layout_marginTop="@dimen/p_dimen_10" android:layout_marginRight="@dimen/p_dimen_35" android:text="@string/cancel_month_next_step" />
+    <TextView android:textColor="@color/p_color_666666" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/p_dimen_10" android:layout_marginTop="@dimen/p_dimen_20" android:layout_marginRight="@dimen/p_dimen_10" android:text="@string/p_w_bind_bank_card_warning" />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="@dimen/pop_google_evaluation_layout_width" android:layout_height="@dimen/pop_google_evaluation_layout_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/pop_google_evaluation_image_bg" android:paddingTop="@dimen/pop_google_evaluation_image_bg_padding_top" android:paddingBottom="@dimen/pop_google_evaluation_image_bg_padding_bottom" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="4.0">
+        <ImageView android:layout_width="@dimen/pop_google_evaluation_image_width" android:layout_height="@dimen/pop_google_evaluation_image_height" android:layout_marginLeft="@dimen/pop_google_evaluation_image_margin_left" android:src="@drawable/pop_google_evaluation_star" android:layout_alignParentTop="true" />
+        <TextView android:textSize="@dimen/pop_google_evaluation_desc_text_size" android:textColor="@color/pop_google_evaluation_dsc_text_color" android:gravity="center" android:id="@id/pop_google_dsc_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pop_google_evaluation_dsc" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/google_evaluation_pop_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0">
+        <TextView android:textSize="@dimen/pop_google_evaluation_btn_text_size" android:textColor="@color/pop_google_evaluation_nice_btn_text_color" android:gravity="center" android:id="@id/pop_google_evaluation_nice_btn" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/pop_google_evaluation_nice_btn_text" android:layout_weight="1.0" />
+        <View android:background="@color/pop_google_evaluation_divide_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <TextView android:textSize="@dimen/pop_google_evaluation_btn_text_size" android:textColor="@color/pop_google_evaluation_bad_btn_text_color" android:gravity="center" android:id="@id/pop_google_evaluation_bad_btn" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/pop_google_evaluation_bad_btn_text" android:layout_weight="1.0" />
+        <View android:background="@color/pop_google_evaluation_divide_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <TextView android:textSize="@dimen/pop_google_evaluation_btn_text_size" android:textColor="@color/pop_google_evaluation_bad_btn_text_color" android:gravity="center" android:id="@id/pop_google_evaluation_later_btn" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/pop_google_evaluation_later_btn_text" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

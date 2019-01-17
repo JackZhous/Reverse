@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/liveTipsView" android:background="@drawable/player_seekbar_tips_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/pleyer_12" android:textColor="#ff0bbe06" android:gravity="center" android:layout_gravity="center_vertical" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/play_control_living_skipto_current" />
+        <TextView android:textSize="@dimen/pleyer_12" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/live_current_time" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="00:00:00" />
+    </LinearLayout>
+    <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:drawableLeft="@drawable/player_seekbar_pop_second" android:drawablePadding="20.0dip" />
+</LinearLayout>

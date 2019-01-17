@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/color_ffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.iqiyi.paopao.middlecommon.ui.view.ptr.CommonPtrListView android:id="@id/pull_to_refresh_list" android:background="@color/color_ffffff" android:visibility="visible" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.0dip" android:divider="@null" android:dividerHeight="0.0dip" android:showDividers="none" />
+    <include android:id="@id/pp_layout_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/pp_circle_loading_layout" />
+    <include android:id="@id/pp_loading_error_page" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/pp_no_network_nocashe_warning_ll" />
+    <include android:id="@id/pp_no_data_layout" android:visibility="gone" layout="@layout/pp_layout_no_data" />
+    <TextView android:textSize="15.0dip" android:textColor="@color/pp_color_23d41e" android:gravity="center" android:id="@id/tv_star_rank" android:background="@drawable/pp_gc_shape_star_rank_default" android:layout_width="80.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="15.0dip" android:text="A-Z" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

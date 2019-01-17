@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.qiyi.card.view.HorizontalListView android:gravity="center" android:id="@id/tabs" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/poster_layout_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/unit_vert_image" />
+        <include android:id="@id/poster_layout_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_weight="1.0" layout="@layout/unit_vert_image" />
+        <include android:id="@id/poster_layout_3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_weight="1.0" layout="@layout/unit_vert_image" />
+    </LinearLayout>
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/unit_three_meta" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/unit_three_sub_meta" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/footer" android:layout_width="fill_parent" android:layout_height="60.0dip" android:minHeight="@dimen/card_bottom_banner_height">
+        <TextView android:gravity="center" android:id="@id/footer_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/icon_more" style="@style/CardBottomBannerText" />
+    </LinearLayout>
+</LinearLayout>

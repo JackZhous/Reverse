@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.qiyi.video.cardview.view.HorizontalListView android:gravity="center" android:layout_gravity="center" android:id="@id/horizontalListView" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/phone_category_filter_divider_line" android:background="@color/phone_setting_background_layout_lee" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:layout_below="@id/horizontalListView" />
+</RelativeLayout>
